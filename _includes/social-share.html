@@ -1,0 +1,17 @@
+<div class="social-share">
+  <h4>Share on</h4>
+  <ul class="list-inline row">
+    <li class="col-xs-12 col-sm-6 col-md-3">
+      <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}{{ page.url }}&title={{ page.title }} - {{ site.title }}&summary={% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" target="_blank" class="linkedin small" title="Share on LinkedIn"><span class="symbol">&#xe052;</span><span> LinkedIn</span></a>
+    </li>
+    <li class="col-xs-12 col-sm-6 col-md-3">
+      <a href="https://twitter.com/intent/tweet?text={{ site.url }}{{ page.url }}" target="_blank" class="twitter" title="Share on Twitter"><span class="symbol">&#xe086;</span><span> Twitter</span></a>
+    </li>
+    <li class="col-xs-12 col-sm-6 col-md-3">
+      <a href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}" target="_blank" class="facebook" title="Share on Facebook"><span class="symbol">&#xe027;</span><span> Facebook</span></a>
+    </li>
+    <li class="col-xs-12 col-sm-6 col-md-3">
+      <a href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}" target="_blank" class="google-plus" title="Share on Google Plus"><span class="symbol">&#xe039;</span><span> Google+</span></a>
+    </li>
+  </ul>
+</div><!-- /.social-share -->

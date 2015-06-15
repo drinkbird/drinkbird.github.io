@@ -1,0 +1,115 @@
+/******************************* Social Icons *******************************/
+
+@font-face {
+    font-family: 'Mono Social Icons Font';
+    src: url('../fonts/MonoSocialIconsFont-1.10.eot');
+    src: url('../fonts/MonoSocialIconsFont-1.10.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/MonoSocialIconsFont-1.10.woff') format('woff'),
+         url('../fonts/MonoSocialIconsFont-1.10.ttf') format('truetype'),
+         url('../fonts/MonoSocialIconsFont-1.10.svg#MonoSocialIconsFont') format('svg');
+    src: url('../fonts/MonoSocialIconsFont-1.10.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.symbol, a.symbol:before {
+    font-family: 'Mono Social Icons Font';
+    -webkit-text-rendering: optimizeLegibility;
+    -moz-text-rendering: optimizeLegibility;
+    -ms-text-rendering: optimizeLegibility;
+    -o-text-rendering: optimizeLegibility;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -ms-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    font-size: $font-size-large;
+}
+
+a.symbol:before {
+    content: attr(title);
+    margin-right: 0.3em;
+    font-size: 130%;
+}
+
+/******************************* Brands *******************************/
+$facebook-color:            #3b5998;
+$flickr-color:              #ff0084;
+$foursquare-color:          #0cbadf;
+$google-plus-color:         #dd4b39;
+$instagram-color:           #4e433c;
+$linkedin-color:            #4875b4;
+$pinterest-color:           #cb2027;
+$rss-color:                 #fa9b39;
+$tumblr-color:              #2c4762;
+$twitter-color:             #55acee;
+$vimeo-color:               #1ab7ea;
+$youtube-color:             #ff3333;
+
+/* Social sharing links */
+/* Social media brand buttons */
+.social-share {
+  margin: 15px 0;
+  ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  $social: 
+  (facebook, $facebook-color),
+  (flickr, $flickr-color),
+  (foursquare, $foursquare-color),
+  (google-plus, $google-plus-color),
+  (instagram, $instagram-color),
+  (linkedin, $linkedin-color),
+  (pinterest, $pinterest-color),
+  (rss, $rss-color),
+  (tumblr, $tumblr-color),
+  (twitter, $twitter-color),
+  (vimeo, $vimeo-color),
+  (youtube, $youtube-color);
+  @each $socialnetwork, $color in $social {
+    .#{$socialnetwork} {
+      background: $color;
+    }    
+  }
+
+  li {
+    text-align: center;
+  }
+
+  a {
+      display: block;      
+      text-decoration: none !important;
+      text-transform: uppercase;
+      font-family: $headings-font-family;
+      font-size: 1em;
+      font-weight: bold;
+      color: #fff;
+      opacity: 0.8;
+      padding: 5px;
+
+      &:hover {
+        opacity: 1;
+      }
+
+      .symbol {
+        font-weight: normal;
+        font-size: 1.4em;
+      }
+
+    }
+    span {
+        display: none;
+        @media #{screen} {
+            display: inline;
+        }
+    }
+    h4 {
+        font-weight: bold;
+        font-size: 1.2em;
+        margin-top: 10px;
+        text-transform: uppercase;
+    }
+}

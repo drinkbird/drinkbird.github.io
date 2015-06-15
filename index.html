@@ -1,0 +1,39 @@
+---
+layout: default
+---
+
+{% for post in paginator.posts limit: 3 %}
+
+  <article class="article-list">
+    <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time>
+    {% if post.link %}
+      <h1 class="link-post"><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a> <a href="{{ post.link }}" target="_blank" title="{{ post.title }}"></a></h1>
+    {% else %}
+      <h1><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h1>
+      <p>{{ post.excerpt | strip_html | truncate: 160 }}</p>
+    {% endif %}
+  </article>
+
+{% endfor %}
+
+<nav>
+  <ul class="pager">
+    {% if paginator.previous_page %}
+      {% if paginator.previous_page == 1 %}
+    <li class="previous small"><a href="/"><span aria-hidden="true">&larr;</span> Older</a></li>
+      {% else %}
+    <li class="previous small"><a href="{{ site.baseurl }}/page{{ paginator.previous_page }}"><span aria-hidden="true">&larr;</span> Older</a></li>
+      {% endif %}
+    {% else %}
+    <li class="previous small disabled"><a href="#"><span aria-hidden="true">&larr;</span> Older</a></li>
+    {% endif %}
+
+    <span class="page_number small">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+    
+    {% if paginator.next_page %}
+    <li class="next small"><a href="{{ site.baseurl }}/page{{ paginator.next_page }}">Newer <span aria-hidden="true">&rarr;</span></a></li>
+    {% else %}
+    <li class="next small disabled"><a href="#">Newer <span aria-hidden="true">&rarr;</span></a></li>
+    {% endif %}
+  </ul>
+</nav>

@@ -1,0 +1,20 @@
+{% if page.image.feature %}
+  
+  {% if page.image.feature contains 'http' %}
+      {% assign imageSource = page.image.feature %}
+  {% else %}
+      {% capture imageSource %}{{site.url}}/images/{{page.image.feature}}{% endcapture %}
+  {% endif %}
+  
+  <div class="image-wrap">
+  
+    <a href="{{ imageSource }}" class="image-popup mfp-with-zoom" title="{{ page.title }}">
+      <img src="{{ imageSource }}" alt="{{ page.title }} feature image" class="img-responsive">
+    </a>
+
+  {% if page.image.credit %}
+    <span class="image-credit small">Photo Credit: <a href="{{ page.image.creditlink }}" target="_blank">{{ page.image.credit }}</a></span>
+  {% endif %}
+
+  </div>
+{% endif %}

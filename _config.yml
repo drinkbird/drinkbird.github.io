@@ -1,0 +1,28 @@
+# Site settings
+title: DrinkBird
+email: tasos@drinkbird.com
+description: "All things Solution Architecture, .NET, and Cloud - by Anastasios Piotopoulos"
+tagline: "All things Solution Architecture, .NET, and Cloud"
+baseurl: ""
+url: "http://blog.drinkbird.com"
+locale: en_US
+
+# Build settings
+markdown: redcarpet
+highlighter: pygments
+permalink: /:title
+paginate: 3
+gems: [jekyll-sitemap]
+
+owner:
+  name: Anastasios Piotopoulos
+  disqus-shortname: drinkbird
+  twitter: piotopoulos
+  facebook: thedrinkbird
+  #googleplus: 
+  github: drinkbird
+  stackoverflow: 2050674/drinkbird
+  linkedin: piotopoulos
+  #youtube: 
+  google:
+    analytics: UA-55022241-1
