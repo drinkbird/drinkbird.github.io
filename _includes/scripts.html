@@ -1,10 +1,10 @@
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="{{ site.url }}/assets/js/jquery-1.11.2.min.js"><\/script>')</script>
-<script src="{{ site.url }}/assets/js/bootstrap.min.js"></script>
-<script src="{{ site.url }}/assets/js/jquery.fitvids.js"></script>
-<script src="{{ site.url }}/assets/js/jquery.magnific-popup.js"></script>
-<script src="{{ site.url }}/assets/js/scripts.min.js"></script>
+<script>window.jQuery || document.write('<script src="{{ site.baseurl }}/assets/js/jquery-1.11.2.min.js"><\/script>')</script>
+<script src="{{ site.baseurl }}/assets/js/bootstrap.min.js"></script>
+<script src="{{ site.baseurl }}/assets/js/jquery.fitvids.js"></script>
+<script src="{{ site.baseurl }}/assets/js/jquery.magnific-popup.js"></script>
+<script src="{{ site.baseurl }}/assets/js/scripts.min.js"></script>
 
 {% if site.owner.google.analytics %}
 {% include google-analytics.html %}
@@ -15,7 +15,7 @@
 {% endif %}
 
 {% if page.mermaid %}
-<link rel="stylesheet" href="{{ site.url }}/assets/css/mermaid.css">
-<script src="{{ site.url }}/assets/js/mermaid.min.js"></script>
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/mermaid.css">
+<script src="{{ site.baseurl }}/assets/js/mermaid.min.js"></script>
 <script>mermaid.initialize({startOnLoad:true});</script>
 {% endif %}

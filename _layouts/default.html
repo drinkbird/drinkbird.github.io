@@ -3,37 +3,14 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
-
   <head>
-    {% include head.html %} 
-
-    {% include open-graph.html %}
+  {% include head.html %}
+  {% include open-graph.html %}
   </head>
-
-  <body>    
-    {% include header.html %}
-
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-9 col-sm-push-3">
-          <div class="content">
-
-            {{ content }}
-
-          </div>
-        </div>
-        <div class="col-sm-3 col-sm-pull-9">
-          <aside class="sidebar">
-
-            {% include sidebar.html %}
-
-          </aside>
-        </div>
-      </div>
-    </div>
-
-    {% include footer.html %}
+  <body>
+  {% include header.html %}
+  {{ content }}
+  {% include footer.html %}
   </body>
-
   {% include scripts.html %}
 </html>

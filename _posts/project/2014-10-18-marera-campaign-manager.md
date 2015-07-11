@@ -1,0 +1,59 @@
+---
+layout: page
+title: "Marera - New Marketing Era"
+excerpt: "A multi-tenant cloud application that utilizes the Microsoft Azure Platform to create digital marketing campaigns with detailed reporting capabilities."
+permalink: /projects/marera
+category: project
+image:
+  feature: marera.png
+featured: true
+---
+
+Marera is a multi-tenant cloud application that utilizes the Microsoft Azure Platform to create digital marketing campaigns (email, sms, push notification etc.) with detailed reporting capabilities. Using parallel computing practices, the system takes advantage of Azure's immense processing power and performs huge campaigns with personalized content in a timely fashion. 
+
+Each tenant / customer has a Dynamics CRM Server / Dynamics CRM Online Service, properly extended to support Marera's features. Those extensions communicate directly with the central cloud infrastructure of the solution, and execute the required actions.
+
+My role as a head developer of this project included:
+
+* Designing the solution''s cloud architecture on Microsoft Azure
+* Implementing all required customizations on Dynamics CRM (Dynamics CRM SDK, C#, JavaScript, jQuery, knockout)
+* Organizing code into reusable libraries for further reuse on future cloud projects (eg: a multi-tenant file manager using Azure Blog storage as a storage service)
+* Developing the worker and web roles of the cloud solution (Azure SDK, C#, JavaScript, jQuery, ASP.NET MVC, Web Forms, DevExpress Web Controls, ASP.NET Web API, WCF, SQL Azure, Azure Queues, Azure Blobs, Azure Table Storage)
+* Designing the autoscale block of the cloud services.
+
+The solution is being used by many Greek coroporations and it is one of the best-selling services of [SiEBEN Ltd](http://www.sieben.gr).
+
+<ul class="list-inline gallery">
+	<li>
+		<a href="{{ site.baseurl }}/images/marera-arch-1-1024x582.png" class="image-popup mfp-with-zoom" title="Marera Architectural Overview 1">
+			<img src="{{ site.baseurl }}/images/marera-arch-1-150x150.png" />
+		</a>
+	</li>
+	<li>
+		<a href="{{ site.baseurl }}/images/marera-arch-2-1024x582.png" class="image-popup mfp-with-zoom" title="Marera Architectural Overview 2">
+			<img src="{{ site.baseurl }}/images/marera-arch-2-150x150.png" />
+		</a>
+	</li>
+	<li>
+		<a href="{{ site.baseurl }}/images/marera3-1024x582.png" class="image-popup mfp-with-zoom" title="The campaign control panel">
+			<img src="{{ site.baseurl }}/images/marera3-150x150.png" />
+		</a>
+	</li>
+	<li>
+		<a href="{{ site.baseurl }}/images/marera1-1024x582.png" class="image-popup mfp-with-zoom" title="An overview of the Priority Queue pattern used in Marera">
+			<img src="{{ site.baseurl }}/images/marera1-150x150.png" />
+		</a>
+	</li>
+	<li>
+		<a href="{{ site.baseurl }}/images/marera2-1024x582.png" class="image-popup mfp-with-zoom" title="An overview of the Retry pattern used in Marera">
+			<img src="{{ site.baseurl }}/images/marera2-150x150.png" />
+		</a>
+	</li>
+	<li>
+		<a href="{{ site.baseurl }}/images/marera clients.png" class="image-popup mfp-with-zoom" title="A subset of Marera's customer list">
+			<img src="{{ site.baseurl }}/images/marera-clients_150_150.png" />
+		</a>
+	</li>
+</ul>
+
+[Project link](http://www.marera.net/)

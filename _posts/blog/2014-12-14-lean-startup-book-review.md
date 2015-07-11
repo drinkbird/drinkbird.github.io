@@ -5,6 +5,7 @@ excerpt: "Even the best idea can be doomed from day one if the entrepreneur is n
 date: 2014-12-14 00:00:00
 permalink: /lean-startup-book-review/
 comments: true
+categories: blog
 image:
   feature: the-lean-startup-eric-ries.jpg
 ---

@@ -1,49 +1,35 @@
-<!--[if lt IE 8]>
-  <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<!--[if lt IE 9]>
+  <div class="alert alert-warning" role="alert">
+    You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.
+  </div>
 <![endif]-->
 
-<header>
+<nav class="navbar navbar-default">
   <div class="container">
-    <div class="blog-header">
-      <div class="brand-full hidden-xs hidden-sm">
-        <div class="row">
-          <div class="col-md-3">
-            <a href="{{ site.baseurl }}/">
-              <div class="ch-item ch-img hidden-xs hidden-sm">
-                <div class="ch-info-wrap">
-                  <div class="ch-info">
-                    <div class="ch-info-front ch-img"></div>
-                    <div class="ch-info-back"></div>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-9">
-            <div class="brand-description text-center">
-              <h1><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
-              <h2>{{ site.tagline }}</h2>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="brand-plain hidden-md hidden-lg">
-        <div class="row">
-          <div class="col-xs-4 col-sm-3">
-            <a href="{{ site.baseurl }}/" title="Home">
-              <img src="{{ site.baseurl }}/assets/media/db-transparent.png" class="pull-left img-circle img-responsive" alt="DrinkBird Logo" />
-            </a>
-          </div>
-          <div class="col-xs-8 col-sm-9">
-            <div class="brand-description text-center">
-              <h1><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
-              <h2>{{ site.tagline }}</h2>
-            </div>
-          </div>
-        </div>
-      </div>
-
+    <div class="navbar-header">
+      <a href="{{ site.baseurl }}/" class="navbar-brand" title="Link to Home">
+        <img src="{{ site.baseurl }}/assets/media/db.svg" class="img-responsive" alt="DrinkBird Logo" />
+      </a>
+      <button title="Toggle navigation" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="glyphicon glyphicon-menu-down"></span>
+      </button>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">    
+      <ul class="nav navbar-nav navbar-right">
+      {% for link in site.links %}
+        <li{% if link.page-key == page.page-key %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ link.url }}">{{ link.title }}</a></li>
+      {% endfor %}      
+      </ul>
     </div>
   </div>
-</header>
+</nav>
+<div class="jumbotron jumbotron-index">
+  <div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <p>{{ site.title }} - {{ site.description }}</p>
+    </div>
+  </div>
+  </div>
+</div>

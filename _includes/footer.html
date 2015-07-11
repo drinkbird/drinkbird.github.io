@@ -1,0 +1,28 @@
+<footer class="site-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-md-push-6">
+        <nav class="nav nav-stacked">
+          <ul class="social large list-inline">
+            {% if site.owner.linkedin %}<li><a href="http://linkedin.com/in/{{ site.owner.linkedin }}" target="_blank" title="LinkedIn"><span class="symbol">&#xe252;</span></a></li>{% endif %}
+            {% if site.owner.github %}<li><a href="http://github.com/{{ site.owner.github }}" target="_blank" title="Github"><span class="symbol">&#xe237;</span></a></li>{% endif %}
+            {% if site.owner.youtube %}<li><a href="https://www.youtube.com/channel/{{ site.owner.youtube }}" target="_blank" title="YouTube"><span class="symbol">&#xe299;</span></a></li>{% endif %}
+            {% if site.owner.stackoverflow %}<li><a href="http://stackoverflow.com/users/{{ site.owner.stackoverflow }}" target="_blank" title="StackOverflow"><span class="symbol">&#xe281;</span></a></li>{% endif %}
+            {% if site.owner.twitter %}<li><a href="http://twitter.com/{{ site.owner.twitter }}" target="_blank" title="Twitter"><span class="symbol">&#xe286;</span></a></li>{% endif %}
+            {% if site.owner.facebook %}<li><a href="http://facebook.com/{{ site.owner.facebook }}" target="_blank" title="Facebook"><span class="symbol">&#xe227;</span></a></li>{% endif %}
+            {% if site.owner.googleplus %}<li><a href="http://plus.google.com/{{ site.owner.googleplus }}" target="_blank" title="Google+"><span class="symbol">&#xe239;</span></a></li>{% endif %}
+            <li><a href="{{ "/feed.xml" | prepend: site.baseurl }}" target="_blank" title="RSS"><span class="symbol">&#xe271;</span></a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="col-md-6 col-md-pull-6">
+        <section class="copyright">
+          Copyright {{ site.owner.name }} &copy; {{ site.time | date: '%Y' }}
+        </section>        
+        <section class="published">
+          Hand-crafted &amp; publised with <a target="_blank" href="http://jekyllrb.com/">Jekyll</a>
+        </section>
+      </div>
+    </div>
+  </div>
+</footer>

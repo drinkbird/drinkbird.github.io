@@ -1,0 +1,10 @@
+{% if post.image.feature %}
+  {% if post.image.feature contains 'http' %}
+      {% assign imageSource = post.image.feature %}
+  {% else %}
+      {% capture imageSource %}{{ site.baseurl }}/images/{{ post.image.feature }}{% endcapture %}
+  {% endif %}  
+  <figure>
+    <img src="{{ imageSource }}" alt="{{ post.title }} feature image" class="img-responsive">
+  </figure>
+{% endif %}

@@ -1,16 +1,17 @@
 ---
 layout: default
 ---
-<div class="post">
-
-  <article class="post-content">
-  	<h1 class="post-title">{{ page.title }}</h1>
-
-    {% include image-feature.html %}
-    
-    {{ content }}
-  </article>
-
-  {% include social-share.html %}
-
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<article class="post-content">
+				<h1 class="post-title">{{ page.title }}</h1>
+				{% include image-feature-post.html %}
+				<div class="post-body">
+					{{ content }}
+				</div>
+				{% include social-share.html %}
+			</article>
+		</div>
+	</div>
 </div>

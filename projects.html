@@ -1,0 +1,39 @@
+---
+layout: default
+page-key: projects
+title: Projects
+permalink: /projects/
+---
+<section class="posts">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1 class="posts-header">{{page.title}}</h1>
+      </div>
+    </div>
+    {% assign count = 0 %}
+    {% for post in site.categories['project'] %}
+    {% assign count = count | plus: 1 %}
+    {% assign result = count | modulo: 2 %}
+    {% if result == 1 %}
+    <div class="row">
+    {% endif %}  
+      <div class="col-md-6">
+        <article class="article-list">
+          <a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}">
+            {% include image-feature-list.html %}
+            <h1>{{ post.title }}</h1>
+          </a>
+          <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time>
+          <p>{{ post.excerpt | strip_html | truncate: 160 }}</p>
+        </article>
+      </div>
+    {% if result == 0 %}
+    </div>
+    {% endif %}
+    {% endfor %}
+    {% if result == 1 %}
+    </div>
+    {% endif %}
+  </div>     
+</section>

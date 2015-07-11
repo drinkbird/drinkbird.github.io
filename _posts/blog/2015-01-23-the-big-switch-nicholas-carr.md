@@ -5,6 +5,7 @@ excerpt: "Rewiring the world from Edison to Google"
 date: 2015-01-23 00:00:00
 permalink: /the-big-switch-nicholas-carr/
 comments: true
+categories: blog
 image:
   feature: the-big-switch.jpg
 ---

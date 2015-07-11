@@ -5,6 +5,7 @@ excerpt: "A bookmark collection of tools I have used over the previous years whi
 date: 2014-10-18 00:00:00
 permalink: /web-development-online-tools-bookmark-collection/
 comments: true
+categories: blog
 image:
   feature: bookmarks-feat.jpg
 ---
