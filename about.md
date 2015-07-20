@@ -10,11 +10,11 @@ image:
 
 ## Background
 
-My name is Anastasios Piotopoulos and I'm a software engineer, focused on the web & the cloud. I currently live in Dublin, Ireland with my fiance, my laptop and a huge stockpile of coffee. I've been writing code almost since I remember myself, starting with [GW Basic](https://en.wikipedia.org/wiki/GW-BASIC). I specialize in solution architecture, C# / .NET and Azure Cloud Services, mostly developing enterprise line-of-business applications, although I'm also comfortable in Java and Ruby. I have about five years of experience in a professional environment and I'm currently pursuing an M.Sc. degree in Software Engineering & Ubiquitous Computing at [UCD](http://www.ucd.ie/). Also, I have recently acquired the title of [MCSD: Web Applications](https://www.microsoft.com/learning/en-au/mcsd-web-apps-certification.aspx). 
+My name is Anastasios Piotopoulos and I'm a passionate software engineer, focused on the web & the cloud. I've been writing code almost since I remember myself, starting with [GW Basic](https://en.wikipedia.org/wiki/GW-BASIC). Today, I specialize in solution architecture with C# / .NET and Azure Cloud Services, although I'm also comfortable in Javascipt, Java and Ruby. 
 
-I mainly blog about quality in software, including every phase of the software lifecycle, from conception to maintenance. My passion is the proper design of the software before even writing a single line of code, avoiding unnecessary technical debt and focusing on performance, testability, re-usability and maintainability. In my humble opinion there is no such thing as *best tool* or *best practice*, as context always matters. I prefer being pragmatic rather than dogmatic and [pick the right tool for the job](http://c2.com/cgi/wiki?PickTheRightToolForTheJob) on a case-by-case basis.
+I mostly blog about [software craftsmanship](https://en.wikipedia.org/wiki/Software_craftsmanship). My passion is the proper design of software before even writing a single line of code, avoiding unnecessary technical debt and focusing on performance, testability, re-usability and maintainability. I always prefer being pragmatic rather than dogmatic and [pick the right tool for the job](http://c2.com/cgi/wiki?PickTheRightToolForTheJob) on a case-by-case basis. I also really enjoy presenting and speaking. I have been a speaker in Microsoft workshop events about Cloud Architecture patterns, practices and use cases. Giving back to the community is one of the most satisfying aspects of software engineering. 
 
-Finally, I really enjoy presenting and speaking. I have been a speaker in Microsoft workshop events about Cloud Architecture patterns, practices and use cases. Giving back to the community is one of the most satisfying aspects of software engineering. You can find more at my [Linkedin profile](http://linkedin.com/in/{{ site.owner.linkedin }}).
+Nowadays you'll find me in Dublin, Ireland where I'm pursuing an M.Sc. degree in Software Engineering & Ubiquitous Computing at [UCD](http://www.ucd.ie/).
 
 <ul class="list-inline gallery">
 	<li>
@@ -44,12 +44,24 @@ Finally, I really enjoy presenting and speaking. I have been a speaker in Micros
 	</li>
 </ul>
 
-## What on earth is the DrinkBird?
-
-As you might have guessed by now, the DrinkBird is me. It's a literal translation of my last name, from Greek to English. Coincidentally, it also aligns with my love for coffee.
-
-*The DrinkBird logo was designed by [SugarBird Creative](http://sugarbird.gr/), an excellent graphics designer agency, highly-experienced in branding and storytelling.*
+## Manifesto for Software Craftsmanship
+> Raising the bar
+> 
+> As aspiring Software Craftsmen we are raising the bar of professional software development by practicing it and helping others learn the craft. Through this work we have come to value:
+>
+> - Not only working software, but also well-crafted software
+> - Not only responding to change, but also steadily adding value
+> - Not only individuals and interactions, but also a community of professionals
+> - Not only customer collaboration, but also productive partnerships
+>
+> That is, in pursuit of the items on the left we have found the items on the right to be indispensable.
+> [Sign the manifesto](http://manifesto.softwarecraftsmanship.org/) if you agree.
 
 ## Disclaimer
 
-**This blog, its content and opinions are my own** and do not represent my employers' or clients' view in any way. Always keep in mind that I might have no idea what I'm talking about.
+**This blog, its content and opinions are my own** and do not represent my employers' or clients' view in any way. Always keep in mind that I might have no idea what I'm talking about `;)`
+
+## Bio
+Anastasios Piotopoulos is a passionate software engineer from Greece who began his journey in coding about two decades ago. He has built everything from small utilities to large-scale cloud solutions that serve several multinational and Greek corporations. He mostly works with C# and Azure, and he is an advocate of the Software Craftsmanship Movement. Nowadays he lives in Dublin, Ireland where he is pursuing an M.Sc. degree in Software Engineering & Ubiquitous Computing at UCD.
+
+![Anastasios Piotopoulos]({{ site.baseurl }}/images/AnastasiosPiotopoulos.jpg)
