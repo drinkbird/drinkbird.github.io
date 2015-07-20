@@ -4,8 +4,8 @@ title: About me
 permalink: /about/
 page-key: about
 image:
-  feature: teamwork.jpg
-  caption: Pair programming
+  feature: about.jpg
+  caption: Coding with Godzilla
 ---
 
 ## Background
