@@ -28,3 +28,38 @@ Some books that target fundamental knowledge utilize specific programming langua
 
 Here is a hand-picked collection of the books that have greatly helped me improve my life, both in a professional and a personal level. I've read most of them more than once. Every single time I get to learn something new by seeing those books in a different light, mostly due to the additional experiences I have acquired between reads. I strongly believe that these books are totally worth your time.
 
+
+
+## [The Pragmatic Programmer](http://geni.us/pragmaticprogrammer)
+
+[![The Pragmatic Programmer]({{ site.baseurl }}/images/covers/020161622X.jpg)](http://geni.us/pragmaticprogrammer)
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+
+## [Clean Code: A Handbook of Agile Software Craftsmanship](http://geni.us/cleancode)
+
+[![Clean Code: A Handbook of Agile Software Craftsmanship]({{ site.baseurl }}/images/covers/0132350882.jpg)](http://geni.us/cleancode)
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+
+## [Code Complete: A Practical Handbook of Software Construction](http://geni.us/codecomplete)
+[![Code Complete: A Practical Handbook of Software Construction]({{ site.baseurl }}/images/covers/0735619670.jpg)](http://geni.us/codecomplete)
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
