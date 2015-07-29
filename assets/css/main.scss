@@ -229,6 +229,17 @@ blockquote {
 	font-size: 20px;
 }
 
+a.cover {
+	display: block;
+	text-align: center;
+	border-top: 1px dashed #ccc;
+	padding-top: 24px;
+
+	> img {
+		display: inline-block;
+	}
+}
+
 @media (min-width: $screen-sm-min) {
 	.jumbotron-index {
 		padding: 50px 0;

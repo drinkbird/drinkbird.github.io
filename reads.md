@@ -28,11 +28,9 @@ Some books that target fundamental knowledge utilize specific programming langua
 
 Here is a hand-picked collection of the books that have greatly helped me improve my life, both in a professional and a personal level. I've read most of them more than once. Every single time I get to learn something new by seeing those books in a different light, mostly due to the additional experiences I have acquired between reads. I strongly believe that these books are totally worth your time.
 
+<a class="cover" target="_blank" href="http://geni.us/softskills"><img class="img-responsive" src="{{ site.baseurl }}/images/covers/1617292397.jpg" alt="Soft Skills: The software developer's life manual" /></a>
 
-
-## [The Pragmatic Programmer](http://geni.us/pragmaticprogrammer)
-
-[![The Pragmatic Programmer]({{ site.baseurl }}/images/covers/020161622X.jpg)](http://geni.us/pragmaticprogrammer)
+## Soft Skills: The software developer's life manual
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -41,10 +39,9 @@ consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
+<a class="cover" target="_blank" href="http://geni.us/pragmaticprogrammer"><img class="img-responsive" src="{{ site.baseurl }}/images/covers/020161622X.jpg" alt="The Pragmatic Programmer" /></a>
 
-## [Clean Code: A Handbook of Agile Software Craftsmanship](http://geni.us/cleancode)
-
-[![Clean Code: A Handbook of Agile Software Craftsmanship]({{ site.baseurl }}/images/covers/0132350882.jpg)](http://geni.us/cleancode)
+## The Pragmatic Programmer
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -53,9 +50,130 @@ consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
+<a class="cover" target="_blank" href="http://geni.us/cleancode"><img class="img-responsive" src="{{ site.baseurl }}/images/covers/0132350882.jpg" alt="Clean Code: A Handbook of Agile Software Craftsmanship" /></a>
 
-## [Code Complete: A Practical Handbook of Software Construction](http://geni.us/codecomplete)
-[![Code Complete: A Practical Handbook of Software Construction]({{ site.baseurl }}/images/covers/0735619670.jpg)](http://geni.us/codecomplete)
+## Clean Code: A Handbook of Agile Software Craftsmanship
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+<a class="cover" target="_blank" href="http://geni.us/agileppp"><img class="img-responsive" src="{{ site.baseurl }}/images/covers/0131857258.jpg" alt="Agile Principles, Patterns, and Practices in C# (Robert C. Martin)" /></a>
+
+## Agile Principles, Patterns, and Practices in C# (Robert C. Martin)
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+<a class="cover" target="_blank" href="http://geni.us/refactoring"><img class="img-responsive" src="{{ site.baseurl }}/images/covers/0201485672.jpg" alt="Refactoring: Improving the Design of Existing Code (Object Technology Series)" /></a>
+
+## Refactoring: Improving the Design of Existing Code (Object Technology Series)
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+<a class="cover" target="_blank" href="http://geni.us/hfdesignpatterns"><img class="img-responsive" src="{{ site.baseurl }}/images/covers/0596007124.jpg" alt="Head First Design Patterns" /></a>
+
+## Head First Design Patterns
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+<a class="cover" target="_blank" href="http://geni.us/dpruby"><img class="img-responsive" src="{{ site.baseurl }}/images/covers/0321490452.jpg" alt="Design Patterns in Ruby" /></a>
+
+## Design Patterns in Ruby
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+<a class="cover" target="_blank" href="http://geni.us/97things"><img class="img-responsive" src="{{ site.baseurl }}/images/covers/0596809484.jpg" alt="97 Things Every Programmer Should Know" /></a>
+
+## 97 Things Every Programmer Should Know
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+<a class="cover" target="_blank" href="http://geni.us/csharpindepth"><img class="img-responsive" src="{{ site.baseurl }}/images/covers/161729134X.jpg" alt="C# in Depth" /></a>
+
+## C# in Depth
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+<a class="cover" target="_blank" href="http://geni.us/aspnetmvc5"><img class="img-responsive" src="{{ site.baseurl }}/images/covers/1430265299.jpg" alt="Pro ASP.Net MVC 5 (Expert's Voice in ASP.Net)" /></a>
+
+## Pro ASP.Net MVC 5 (Expert's Voice in ASP.Net)
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+<a class="cover" target="_blank" href="http://geni.us/jsgoodparts"><img class="img-responsive" src="{{ site.baseurl }}/images/covers/0596517742.jpg" alt="JavaScript: The Good Parts" /></a>
+
+## JavaScript: The Good Parts
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+<a class="cover" target="_blank" href="http://geni.us/leanstartup"><img class="img-responsive" src="{{ site.baseurl }}/images/covers/0307887898.jpg" alt="The Lean Startup" /></a>
+
+## The Lean Startup
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+<a class="cover" target="_blank" href="http://geni.us/steallikeanartist"><img class="img-responsive" src="{{ site.baseurl }}/images/covers/0761169253.jpg" alt="Steal Like An Artist" /></a>
+
+## Steal Like An Artist
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+<a class="cover" target="_blank" href="http://geni.us/interactiondesign"><img class="img-responsive" src="{{ site.baseurl }}/images/covers/1119020751.jpg" alt="Interaction Design" /></a>
+
+## Interaction Design
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
