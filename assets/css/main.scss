@@ -225,6 +225,11 @@ footer.site-footer {
 	}
 }
 
+.post-body > p > img {
+	display: block;
+	margin: 0 auto;
+}
+
 blockquote {
 	font-size: 20px;
 }
@@ -237,6 +242,17 @@ a.cover {
 
 	> img {
 		display: inline-block;
+	}
+}
+
+.book > a {
+	border-top: 1px dashed #ccc;
+	padding-top: 24px;	
+	display: block;
+
+	> img {
+		display: block;
+		margin: 0 auto;
 	}
 }
 
@@ -265,5 +281,9 @@ a.cover {
 	ul.social {
 		margin-bottom: 0;
 		padding-top: 6px;
+	}
+
+	.book > a > img {
+		height: 300px;
 	}
 }
