@@ -26,7 +26,7 @@ Some books that target fundamental knowledge utilize specific programming langua
 
 ## My book collection
 
-Here is a hand-picked collection of the books that have greatly helped me improve my life, both in a professional and a personal level. I've read most of them more than once. Every single time I get to learn something new by seeing those books in a different light, mostly due to the additional experiences I have acquired between reads. I strongly believe that these books are totally worth your time.
+Here is a hand-picked collection of the books that have greatly helped me improve my life, both in a professional and a personal level. I've read most of them more than once. Every single time I get to learn something new by seeing those books in a different light, mostly due to the additional experiences I have acquired between reads. I strongly believe that these books are totally worth the reader's time.
 
 {% assign book_title = "Soft Skills: The software developer's life manual" %}
 {% assign book_url = "http://geni.us/softskills" %}
