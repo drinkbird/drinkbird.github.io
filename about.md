@@ -10,7 +10,7 @@ image:
 
 ## Background
 
-My name is Anastasios Piotopoulos and I'm a passionate software engineer, focused on the web & the cloud. I've been writing code almost since I remember myself, starting with [GW Basic](https://en.wikipedia.org/wiki/GW-BASIC). Today, I specialize in solution architecture with C# / .NET and Azure Cloud Services, although I'm also comfortable in Javascipt, Java and Ruby. 
+My name is Anastasios Piotopoulos and I'm a passionate software engineer, focused on the web & the cloud. I've been building software almost since I remember myself, starting with [GW Basic](https://en.wikipedia.org/wiki/GW-BASIC). Today, I specialize in solution architecture with C# / .NET and Azure Cloud Services, although I'm also comfortable in Javascipt, Java and Ruby. 
 
 I mostly blog about [software craftsmanship](https://en.wikipedia.org/wiki/Software_craftsmanship). My passion is the proper design of software before even writing a single line of code, avoiding unnecessary technical debt and focusing on performance, testability, re-usability and maintainability. I always prefer being pragmatic rather than dogmatic and [pick the right tool for the job](http://c2.com/cgi/wiki?PickTheRightToolForTheJob) on a case-by-case basis. I also really enjoy presenting and speaking. I have been a speaker in Microsoft workshop events about Cloud Architecture patterns, practices and use cases. Giving back to the community is one of the most satisfying aspects of software engineering. 
 
