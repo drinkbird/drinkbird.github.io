@@ -62,6 +62,6 @@ Nowadays you'll find me in Dublin, Ireland where I'm pursuing an M.Sc. degree in
 **This blog, its content and opinions are my own** and do not represent my employers' or clients' view in any way. Always keep in mind that I might have no idea what I'm talking about! `WinkyFace();`
 
 ## Bio
-Anastasios Piotopoulos is a passionate software engineer from Greece who began his journey in coding about two decades ago. He has built everything from small utilities to large-scale cloud solutions that serve several multinational and Greek corporations. He mostly works with C# and Azure, and he is an advocate of the Software Craftsmanship Movement. Nowadays he lives in Dublin, Ireland where he is pursuing an M.Sc. degree in Software Engineering & Ubiquitous Computing at UCD.
+Anastasios Piotopoulos is a passionate software engineer from Greece who began his journey in software construction about two decades ago. He has built everything from small utilities to large-scale cloud solutions that serve several multinational and Greek corporations. He mostly works with C# and Azure, and he is an advocate of the Software Craftsmanship Movement. Nowadays he lives in Dublin, Ireland where he is pursuing an M.Sc. degree in Software Engineering & Ubiquitous Computing at UCD.
 
 ![Anastasios Piotopoulos]({{ site.baseurl }}/images/AnastasiosPiotopoulos.jpg)
