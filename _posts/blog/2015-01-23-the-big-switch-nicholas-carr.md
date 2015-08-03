@@ -7,7 +7,7 @@ permalink: /the-big-switch-nicholas-carr/
 comments: true
 categories: blog
 image:
-  feature: the-big-switch.jpg
+  feature: the-big-switch.png
 ---
 
 Nicholas Carr is a skilled professional author. Since the dawn of his career, Carr is possessed by a vigorous passion for investigating the impacts of technology on society and human cognition, notably focusing on the adverse ones. His work is acclaimed to have caused immense criticism from a number of major IT companies, along with an affluence of mixed reactions from a broader audience (Levy, 2003), primarily as a result of the author’s radical way of thinking. Although his reasoning may be regarded as questionable, it is generally well-substantiated over comprehensive analysis. “The Big Switch”, one of his latest books, is no exception.

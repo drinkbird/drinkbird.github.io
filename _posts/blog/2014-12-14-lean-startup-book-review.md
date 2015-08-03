@@ -7,7 +7,7 @@ permalink: /lean-startup-book-review/
 comments: true
 categories: blog
 image:
-  feature: the-lean-startup-eric-ries.jpg
+  feature: the-lean-startup-eric-ries.png
 ---
 
 ##Introduction
