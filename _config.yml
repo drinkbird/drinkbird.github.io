@@ -19,13 +19,12 @@ links:
   - title: Projects
     url: /projects/
     page-key: projects
+  - title: Books
+    url: /books/
+    page-key: books
   - title: About me
     url: /about/
     page-key: about
-
-#  - title: Resources
-#    url: /resources/
-#    page-key: resources
 
 owner:
   name: Anastasios Piotopoulos
@@ -69,6 +68,14 @@ books:
     url: "http://geni.us/hfdesignpatterns"
     isbn: "0596007124"
     tag: "hfdesignpatterns"
+  - title: "Design patterns: elements of reusable object-oriented software"
+    url: "http://geni.us/gofdp"
+    isbn: "0201633612"
+    tag: "gofdp"  
+  - title: "Design Patterns in Ruby"
+    url: "http://geni.us/dpruby"
+    isbn: "0321490452"
+    tag: "dpruby"  
   - title: "97 Things Every Programmer Should Know"
     url: "http://geni.us/97things"
     isbn: "0596809484"
