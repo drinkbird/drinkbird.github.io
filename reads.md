@@ -4,6 +4,7 @@ title: Recommended books for software developers
 excerpt: These are the books that have changed my life.
 permalink: /books/
 page-key: books
+comments: true
 image:
   feature: books.png
   credit: Freepik
