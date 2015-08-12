@@ -19,3 +19,11 @@ My role as a software developer included:
 * Creating the integration between ASP.NET and Dynamics CRM by generating C# classes from Dynamic CRM entities (eary-bind), and also creating the necessary repositories to consume in ASP.NET MVC.
 * Creating customized plugins and workflows in Dynamics CRM to complete the system's business logic.
 * Creating the application's UI in HTML/CSS and Twitter Bootstrap, using Razor templates.
+
+<ul class="list-inline gallery">
+	<li>
+		<a href="{{ site.baseurl }}/images/peoplecert_full.png" class="image-popup mfp-with-zoom" title="Peoplecert Partner Area">
+			<img src="{{ site.baseurl }}/images/peoplecert_150.png" />
+		</a>
+	</li>
+</ul>
