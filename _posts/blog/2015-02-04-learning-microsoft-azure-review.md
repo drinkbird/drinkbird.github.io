@@ -27,6 +27,6 @@ Geoff provides an excellent starting point for creating sound and maintainable c
 
 I enjoyed the book and I found it valuable. I consider it to be the missing manual for Microsoft Azure. I believe you will enjoy it too!
 
-<a title="Learning Microsoft Azure homepage" href="https://www.packtpub.com/networking-and-servers/learning-microsoft-azure" target="_blank">Link to the book's homepage</a>
+<a href="http://geni.us/learnazure" target="_blank" class="btn btn-warning">Get Learning Microsoft Azure</a>
 
 p.s.: My warmest greetings to the guys at <a href="http://packtpub.com/" target="_blank">Packt Publishing</a>. Thank you for requesting me to review this book. I really had a good time reading it.

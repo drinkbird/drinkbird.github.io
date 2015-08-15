@@ -80,6 +80,8 @@ Numerous cloud providers have already walked past the point where their users ca
 
 In conclusion, the book is recommended for anyone that is not already familiar with the cloud computing model. It is not a technical book, so it is not really recommended for IT professionals, although its socioeconomic extensions could benefit any type of reader.
 
+<a class="btn btn-primary" href="http://geni.us/thebigswitch" target="_blank">Get the Big Switch</a>
+
 ## References
 
 Carr, N., 2003. *Roughtype.com. *[Online] Available at: <span style="text-decoration: underline;">http://www.roughtype.com/?p=644</span>  

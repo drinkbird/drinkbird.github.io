@@ -27,8 +27,6 @@ This book was found to be particularly interesting, even inspiring, as the autho
 > Startup success can be engineered by following the process, which means it can be learned, which means it can be taught.
 > -- <cite>Eric Ries</cite>
 
-<a class="btn btn-primary" href="http://geni.us/leanstartup" target="_blank">Get the Lean Startup book</a>
-
 A startup is described as a human institution designed to create a new product or service under conditions of extreme uncertainty. It is the word *uncertainty* which makes the lean startup approach so appealing to entrepreneurs as it tries to eliminate as much uncertainty as possible from the whole process. It is explained that entrepreneurship is a kind of management, a fact that most people still ignore.
 
 The lean startup methodology was inspired from the revolutionary lean manufacturing technique that Taiichi Ohno and Shigeo Shingo are credited with envisioning at Toyota. Lean manufacturing completely changed the way supply chains and production systems run. Its basic principles include treating each worker as a creative being, shrinking batch sizes, achieving *just-in-time production*, achieving precise inventory control and accelerated cycle times. The main goal of lean thinking is the fast production of quality products with minimal waster. The lean startup adopts the core principles of lean manufacturing and puts it in the context of entrepreneurship. Rather than keeping entrepreneurs focused on producing high-quality goods, a concept called **validated learning** is helping them judge their progress in a vastly different way while figuring out the right thing to build in the fastest way possible. It is apparent that the right product is something that customers really want and are willing to pay for.
@@ -118,7 +116,7 @@ There is incredible failure that precedes every entrepreneurial success. Even th
 
 Entrepreneurship is management, just not the classic management of Fred Taylor. Processes that we take so for granted today, like running a factory or a supply chain, had to be invented. All we know about entrepreneurship today is just the tip of the iceberg, and processes for operating under conditions of extreme uncertainty are still on the works. Eric Ries is renowned for pioneering the lean startup movement (Wikipedia, 2014), a movement that tries to discover those processes and helps startups using capital more efficiently without wasting it by building the wrong things. This book is a compelling evidence of this fact.
 
-<a class="btn btn-primary" href="http://geni.us/leanstartup" target="_blank">Get the Lean Startup book</a>
+<a class="btn btn-primary" href="http://geni.us/leanstartup" target="_blank">Get the Lean Startup</a>
 
 ## References
 
