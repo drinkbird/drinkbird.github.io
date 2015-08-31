@@ -2,7 +2,7 @@
 layout: post
 title: "[Image] Life is too short"
 excerpt: "Grab the wallpaper version"
-date: 2015-06-05 00:00:00
+date: 2015-07-10 00:00:00
 permalink: /life-too-short/
 comments: true
 categories: blog

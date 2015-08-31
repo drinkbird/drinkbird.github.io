@@ -1,14 +1,17 @@
 ---
-layout: page
-title: Recommended books for software developers
+layout: post
+title: "Recommended books for software developers"
 excerpt: These are the books that have changed my life.
+date: 2015-08-07 00:00:00
 permalink: /books/
-page-key: books
 comments: true
+categories: blog
+featured: true
 image:
   feature: books.png
   credit: Freepik
   creditlink: http://www.freepik.com/free-vector/book-collection-in-flat-design_764791.htm
+page-key: books
 ---
 
 ## A few thoughts on books
