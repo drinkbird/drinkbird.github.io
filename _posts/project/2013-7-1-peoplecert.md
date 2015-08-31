@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Peoplecert - Certifying Professionals"
-excerpt: "A web portal for PEOPLECERT's Accredited Partners, written in ASP.NET MVC and Dynamics CRM"
+excerpt: "A web portal exclusively developed for PEOPLECERT's Accredited Partners"
 permalink: /projects/peoplecert
 category: project
 image:

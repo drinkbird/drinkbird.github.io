@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "You@S&B"
-excerpt: "A web application written in ASP.NET MVC, SQL Azure, Azure Websites & Sharepoint."
+excerpt: "A web application tailored to assist S&amp;B with their recruitment process"
 permalink: /projects/sandbyou
 category: project
 image:

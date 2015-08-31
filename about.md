@@ -5,7 +5,6 @@ permalink: /about/
 page-key: about
 image:
   feature: about.jpg
-  caption: Coding with Godzilla
 ---
 
 ## Background
@@ -60,6 +59,6 @@ I mostly blog about [software craftsmanship](https://en.wikipedia.org/wiki/Softw
 **This blog, its content and opinions are my own** and do not represent my employers' or clients' view in any way. Always keep in mind that I might have no idea what I'm talking about! `WinkyFace();`
 
 ## Bio
-Anastasios Piotopoulos is a passionate software engineer from Greece who began his journey in software construction about two decades ago. He has built everything from small utilities to large-scale cloud solutions that serve several multinational and Greek corporations. He mostly works with C# and Azure, and he is an advocate of the Software Craftsmanship Movement.
+Anastasios Piotopoulos is a passionate software engineer, focused on the web and the cloud, who has a lifelong mission of solving problems through building high-quality software. He is an advocate of the Software Craftsmanship Movement, and over the years he has been involved in the construction of everything from small utilities to enterprise-scale cloud solutions.
 
 ![Anastasios Piotopoulos]({{ site.baseurl }}/images/AnastasiosPiotopoulos.jpg)
