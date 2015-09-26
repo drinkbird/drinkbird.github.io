@@ -2,7 +2,7 @@
 layout: page
 title: "Dice Radio on Android"
 excerpt: "An Android native application for serving live audio streaming and user-targeted content from Dice Radio, an online radio station"
-permalink: /projects/dice-android
+permalink: /projects/dice-android/
 category: project
 image:
   feature: diceandroid.png

@@ -2,7 +2,7 @@
 layout: page
 title: "Peoplecert - Certifying Professionals"
 excerpt: "A web portal exclusively developed for PEOPLECERT's Accredited Partners"
-permalink: /projects/peoplecert
+permalink: /projects/peoplecert/
 category: project
 image:
   feature: peoplecert.png

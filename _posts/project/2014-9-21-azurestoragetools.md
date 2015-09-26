@@ -2,7 +2,7 @@
 layout: page
 title: "Azure Storage Tools"
 excerpt: "A C# class library introducing a higher level of abstraction for interfacing with Azure Storage"
-permalink: /projects/azurestoragetools
+permalink: /projects/azurestoragetools/
 category: project
 image:
   feature: azurestoragetools.png

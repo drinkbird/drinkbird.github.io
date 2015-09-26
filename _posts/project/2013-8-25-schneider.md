@@ -2,7 +2,7 @@
 layout: page
 title: "Schneider Electric i-NRG4U"
 excerpt: "An online service aimed to offer exclusive benefits to Schneider Electric's Accredited Partners"
-permalink: /projects/schneider-electric
+permalink: /projects/schneider-electric/
 category: project
 image:
   feature: schneider.png

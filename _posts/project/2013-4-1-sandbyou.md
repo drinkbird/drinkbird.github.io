@@ -2,7 +2,7 @@
 layout: page
 title: "You@S&B"
 excerpt: "A web application tailored to assist S&amp;B with their recruitment process"
-permalink: /projects/sandbyou
+permalink: /projects/sandbyou/
 category: project
 image:
   feature: sandbyou.png
