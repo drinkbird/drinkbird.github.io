@@ -1,7 +1,8 @@
 # Site settings
 title: DrinkBird
 email: tasos@drinkbird.com
-description: "Beating the mediocrity out of software with a stick"
+description: "Beating the mediocrity out of software. With a stick."
+longdescription: "Beating the mediocrity out of software. With a stick. DrinkBird is a blog for software engineers that deeply care about their craft."
 baseurl: ""
 url: "http://blog.drinkbird.com"
 locale: en_US
