@@ -9,9 +9,11 @@ image:
 
 ## Background
 
-My name is Anastasios Piotopoulos and I'm a passionate software engineer, focused on the web & the cloud. I've been building software almost since I remember myself, starting with [GW Basic](https://en.wikipedia.org/wiki/GW-BASIC). I specialize in software architecture with C#, ASP.NET MVC, JavaScript and Azure Cloud Services, although I am also comfortable in Java and Ruby.
+My name is Anastasios Piotopoulos and I'm a passionate software engineer, focused on the web & the cloud. I've been building software almost since I remember myself, starting with [GW Basic](https://en.wikipedia.org/wiki/GW-BASIC). Although I have several years of experience in the IT industry, in 2014 I decided to pause my professional career and pursue an M.Sc. degree in Software Engineering &amp; Ubiquitous Computing from [UCD](http://www.ucd.ie/), in order to further hone my technical &amp; business skills. This challenge was successfully completed in September 2015.
 
-I mostly blog about [software craftsmanship](https://en.wikipedia.org/wiki/Software_craftsmanship). My passion is the proper design of software, avoiding unnecessary technical debt and focusing on code readability, robustness, testability and extensibility, preferably within an agile / SCRUM environment. I always prefer being pragmatic rather than dogmatic and [pick the right tool for the job](http://c2.com/cgi/wiki?PickTheRightToolForTheJob) on a case-by-case basis. I also enjoy presenting and speaking. I have been a speaker in Microsoft workshop events about Cloud Architecture patterns, practices and use cases. Giving back to the community is one of the most satisfying aspects of software engineering. 
+In general, I specialize in software architecture with C#, ASP.NET MVC, JavaScript and Azure Cloud Services, although I am also comfortable in Java and Ruby. My passion is the proper design of software while making the right business decisions, avoiding unnecessary technical debt and focusing on code readability, robustness, testability and extensibility, preferably within an agile / SCRUM environment. I always prefer being pragmatic rather than dogmatic and [pick the right tool for the job](http://c2.com/cgi/wiki?PickTheRightToolForTheJob) on a case-by-case basis.
+
+I also enjoy presenting and speaking. I have been a speaker in Microsoft workshop events about Cloud Architecture patterns, practices and use cases. Giving back to the community is one of the most satisfying aspects of the craft. 
 
 <ul class="list-inline gallery">
 	<li>
