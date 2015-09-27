@@ -61,6 +61,6 @@ I also enjoy presenting and speaking. I have been a speaker in Microsoft worksho
 **This blog, its content and opinions are my own** and do not represent my employers' or clients' view in any way. Always keep in mind that I might have no idea what I'm talking about! `WinkyFace();`
 
 ## Bio
-Anastasios Piotopoulos is a passionate software engineer, focused on the web and the cloud, who has a lifelong mission of solving problems through building high-quality software. He is an advocate of the Software Craftsmanship Movement, and over the years he has been involved in the construction of everything from small utilities to enterprise-scale cloud solutions.
+Anastasios Piotopoulos is a passionate software engineer, focused on the web and the cloud, who has a lifelong mission of solving problems through building high-quality software. He is an advocate of the Software Craftsmanship Movement and in 2015 he earned his master's degree in Software Engineering and Ubiquitous Computing from UCD. Over the years, Anastasios has been involved in the construction of everything from small utilities to enterprise-scale cloud solutions.
 
 ![Anastasios Piotopoulos]({{ site.baseurl }}/images/AnastasiosPiotopoulos.jpg)
