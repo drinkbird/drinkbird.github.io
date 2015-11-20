@@ -1,16 +1,15 @@
 ---
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
-@import url(http://fonts.googleapis.com/css?family=PT+Serif:400,700);
-@import url(http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600,800);
 
 $gray-darker:					darken(#7f8c8d, 15%);
 $brand-primary:					#e67e22;
 $brand-primary-dark:			#3f2808;
 $brand-primary-light:			#f39c12;
 $brand-primary-lighter:			lighten($brand-primary, 40%);
-$brand-secondary:				#00B0D6;
-$brand-secondary-dark:			darken($brand-secondary, 20%);
+$brand-secondary:				#3C8AB8;
+$brand-secondary-dark:			#004C79;
 $black:							#000;
 $white:							#fff;
 $text-color:					$gray-darker;
@@ -20,9 +19,9 @@ $color-gh-js:					#f1e05a;
 $color-gh-html:					#e44b23;
 $color-gh-java:					#b07219;
 
-$font-family-serif:				"PT Serif", Georgia, "Times New Roman", Times, serif;
-$font-family-sans-serif:		"Lato", Helvetica, Arial, sans-serif;
-$font-family-base:				$font-family-serif;
+$font-family-serif:				Georgia, "Times New Roman", Times, serif;
+$font-family-sans-serif:		"Open Sans", Helvetica, Arial, sans-serif;
+$font-family-base:				$font-family-sans-serif;
 $headings-font-family:			$font-family-sans-serif;
 $font-size-base:				20px;
 $line-height-base:				1.6;
@@ -37,7 +36,7 @@ $font-size-h6:					ceil(($font-size-base * 0.85));
 
 /* Navbar Variables **************************************************************************/
 
-$navbar-height:								120px;
+$navbar-height:								100px;
 
 // Basics of a navbar
 $navbar-default-color:						$text-color;
@@ -45,8 +44,8 @@ $navbar-default-bg:							$white;
 $navbar-default-border:						darken($navbar-default-bg, 6.5%);
 
 // Navbar links
-$navbar-default-link-color:					$brand-primary;
-$navbar-default-link-hover-color:			$brand-primary-dark;
+$navbar-default-link-color:					$brand-primary-dark;
+$navbar-default-link-hover-color:			$brand-primary;
 $navbar-default-link-hover-bg:				transparent;
 $navbar-default-link-active-bg:				transparent;
 $navbar-default-link-disabled-color:		#ccc !default;
@@ -71,20 +70,40 @@ $navbar-default-toggle-border-color:		$brand-primary-lighter;
 /* @import "site"; */
 
 
-/* Header */
-nav {
-	font-family: $font-family-sans-serif;
+html,body,button {
+    -moz-osx-font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased
 }
 
-.navbar {
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+	color: $brand-primary-dark;
+}
+
+a {
+	color: $brand-secondary;
+
+	h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+		color: inherit;
+	}
+}
+
+a:active, a:hover {
+    outline: 0;
+}
+
+/* Header */
+.navbar {	
+	font-family: $font-family-sans-serif;
 	margin-bottom: 0;
+	z-index: 1;
 }
 
 .navbar-brand {
 	padding: 5px 0 0 15px;
 
 	img {
-		height: 110px;
+		height: 100px;
 	}
 }
 
@@ -92,6 +111,22 @@ nav {
 	margin-top: 35px;
 	margin-bottom: 35px;
 	color: $brand-primary-light;
+}
+
+.navbar-nav > li > a {
+	text-transform: uppercase;
+	font-size: $font-size-base - 1;
+	font-weight: 800;
+}
+
+.navbar-default .navbar-toggle {
+	border: none;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    color: $brand-primary;
 }
 
 .navbar button .glyphicon,
@@ -104,6 +139,8 @@ a {
 	transition: all 0.3s ease-out;
 }
 
+/* General */
+
 .gly-rotate-180 {
 	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
 	-webkit-transform: rotate(180deg);
@@ -113,23 +150,161 @@ a {
 	transform: rotate(180deg);
 }
 
-.jumbotron-index {
-	@extend .text-center;
-	
-	background-image: url(../media/bgpattern.png);
+.jumbotron {
+	padding-top: 70px;
+	margin-top: -40px;
+	padding-bottom: 20px;
+	transform: skewY(-3deg);
+	background-color: $brand-secondary;
 
-	padding: 10px;
-
-	p {
-		margin: 0;
+	figcaption {
 		color: $white;
+		font-weight: 700;
+		padding-top: 30px;
 		font-family: $headings-font-family;
 		line-height: $font-size-h1;
-		font-size: $font-size-h2;
+		font-size: $font-size-h1;
+		text-transform: uppercase;
 	}
 }
 
-/* General */
+.skew-between {
+	margin-top: 60px;
+	margin-bottom: 60px;
+}
+
+.skew-left-top {
+	display: block;
+	position: relative;
+	top: -42px;
+	margin-top: 100px;
+	margin-bottom: -70px;
+	height: 90px;
+	transform: skewY(3deg);
+}
+
+.skew-left-bottom {
+	display: block;
+	position: relative;
+	bottom: -42px;
+	margin-bottom: 100px;
+	margin-top: -40px;
+	height: 90px;
+	transform: skewY(-3deg);
+}
+
+.background-dark {
+	background-color: $brand-secondary-dark;
+
+	&::before {
+		content: '';
+		background-color: $brand-secondary-dark;
+		@extend .skew-left-top;
+	}
+
+	&::after {
+		content: '';
+		background-color: $brand-secondary-dark;
+		@extend .skew-left-bottom;
+	}
+
+	h1 {
+		text-align: center;
+		font-size: 60px;
+		font-weight: 800;
+		color: $white;
+	}
+}
+
+.content-headline {
+	text-align: center;
+
+	h1 {
+		font-size: 60px;
+		font-weight: 800;
+	}
+
+	p {
+		font-size: 24px;
+		font-weight: 300;
+		line-height: 39px;
+	}
+
+	&.top {
+		margin-top: 50px;
+	}
+
+	figure {
+		display: inline-block;
+	}
+}
+
+.content-featured {
+	h2 {
+		font-weight: 600;
+		font-size: 40px;
+	}
+
+	h1 {
+    	font-size: 38px;
+    	font-weight: 600;
+	}
+
+	p {
+		font-size: 18px;
+		padding-top: 0.8em;
+		font-weight: 400;
+	}
+}
+
+.quote {	
+	blockquote {
+		margin: 20px 0 0;
+		background: rgba(255,255,255,.9);
+		font-style: italic;
+		font-size: 18px;
+		line-height: 28px;
+		padding: 1.2em;
+		position: relative;
+	}
+
+	blockquote:before {
+		left: 14.4em;
+		content: '';
+		position: absolute;
+		bottom: -40px;
+		width: 0;
+		height: 0;
+		border-top: 0 solid transparent;
+		border-bottom: 40px solid transparent;
+		border-left: 50px solid rgba(255,255,255,.9);
+	}
+
+	.quote-info {
+		margin-top: 2em;
+
+		img {
+			width: 100px;
+			height: 100px;
+			border-radius: 50%;
+			float: left;
+			margin-right: 1.5em;
+			border: 2px solid #aaa;
+		}
+
+		.quote-info-name {
+			display: block;
+			color: #fff;
+			padding-top: 2em;
+			line-height: 22px;
+		}
+	}
+}
+
+.quote-left {
+	margin-bottom: 50px;
+}
+
 a {
 	color: $brand-secondary;
 
@@ -149,7 +324,7 @@ figure {
 }
 
 section {	
-	@extend .text-center;
+	text-align: center;
 
 	h1 {
 		font-size: $font-size-h1 * 1.2;
@@ -195,31 +370,28 @@ ul.gallery {
 /* Footer */
 footer.site-footer {
 	@extend .text-center;
-	margin-top: 46px;
+	margin-top: 50px;
 	padding: 16px 10px;
 	position: relative;
-
-	&:after {
-		content: "";
-		width: 100%;
-		position: absolute;
-		height: 10px;
-		background-image: url(../media/bgpattern.png);
-		top: -10px;
-		left: 0;
+	background-color: $brand-secondary-dark;
+	
+	section.copyright, section.published {
+		font-size: $font-size-base - 7.2;
+		font-weight: 600;
+		color: $brand-secondary;
 	}
 
-	section.copyright, section.published {
-		font-size: $font-size-base * 0.8;
+	a:hover {
+		color: #E8F4FA;
+	}
+
+	.logo-footer {
+		height: 40px;
 	}
 }
 
 /* Post */
 .post-content {
-	h1 {
-		font-size: $font-size-h1 * 1.2;		
-	}
-
 	figure {
 		@extend .text-left;
 	}
@@ -271,13 +443,57 @@ a.cover {
 	}
 }
 
-@media (min-width: $screen-sm-min) {
-	.jumbotron-index {
-		padding: 50px 0;
+.books-aside {
+	list-style: none;
+	margin: 0;
+	padding: 0;
 
-		h1 {
-			font-size: $font-size-h1;
+	.book-aside {
+		text-align: center;
+		margin-bottom: 50px;
+
+		img {
+			border: 1px solid $gray;
+			margin: 0 auto;
 		}
+		
+		h4 {
+			font-weight: bold;
+    		font-size: 22px;
+		}
+
+		a.btn {
+			width: 80%;
+			font-size: 16px;
+			font-weight: 600;
+		}
+	}
+}
+
+.author {
+	figure {
+		width: 100%;
+		text-align: center;
+		display: inline-block;
+		margin-bottom: 50px;
+
+		img {
+			width: 70%;
+		}
+
+		figcaption {
+			color: #555;
+			font-weight: 400;
+			margin-top: 0.8em;
+			font-size: 16px;
+		}
+	}
+}
+
+@media (min-width: $screen-sm-min) {	
+	nav.navbar {
+		box-shadow: 0 -2px 10px 0 rgba(0,0,0,.5);
+		border-radius: 0;
 	}
 
 	.navbar-nav > li > a {
@@ -285,20 +501,24 @@ a.cover {
 		padding-top: 39px;
 
 		&:hover {
-			border-top: 5px solid $brand-primary-dark;		
+			border-top: 5px solid $brand-primary;		
 		}
 	}
 
 	.navbar-nav > li.active > a {
-		border-top: 5px solid $brand-primary-dark;
+		border-top: 5px solid $brand-primary;
 	}
 
 	ul.social {
 		margin-bottom: 0;
-		padding-top: 6px;
+		padding-top: 2px;
 	}
 
 	.book > a > img {
 		height: 300px;
+	}
+
+	.quote-right {
+		margin-bottom: 0;
 	}
 }

@@ -2,7 +2,7 @@
 title: DrinkBird
 email: tasos@drinkbird.com
 description: "Beating the mediocrity out of software. With a stick."
-longdescription: "Beating the mediocrity out of software. With a stick. DrinkBird is a blog for software engineers that deeply care about their craft."
+longdescription: "DrinkBird is a blog for software engineers that deeply care about their craft."
 baseurl: ""
 url: "http://blog.drinkbird.com"
 locale: en_US
@@ -40,69 +40,76 @@ owner:
   google:
     analytics: UA-55022241-1
 
-books:
-  - title: "Soft Skills: The software developer's life manual"
+reads:
+  softskills:
+    title: "Soft Skills: The software developer's life manual"
     url: "http://geni.us/softskills"
     isbn: "1617292397"
-    tag: "softskills"
-  - title: "Code Complete: A Practical Handbook of Software Construction"
+  codecomplete:
+    title: "Code Complete: A Practical Handbook of Software Construction"
     url: "http://geni.us/codecomplete"
     isbn: "0735619670"
-    tag: "codecomplete"
-  - title: "Agile Principles, Patterns, and Practices in C# (Robert C. Martin)"
+  agileppp:
+    title: "Agile Principles, Patterns, and Practices in C# (Robert C. Martin)"
     url: "http://geni.us/agileppp"
     isbn: "0131857258"
-    tag: "agileppp"
-  - title: "Clean Code: A Handbook of Agile Software Craftsmanship"
+  cleancode:
+    title: "Clean Code: A Handbook of Agile Software Craftsmanship"
     url: "http://geni.us/cleancode"
     isbn: "0132350882"
-    tag: "cleancode"
-  - title: "The Pragmatic Programmer"
+  pragmaticprogrammer:
+    title: "The Pragmatic Programmer"
     url: "http://geni.us/pragmaticprogrammer"
     isbn: "020161622X"
-    tag: "pragmaticprogrammer"
-  - title: "Refactoring: Improving the Design of Existing Code (Object Technology Series)"
+  refactoring:
+    title: "Refactoring: Improving the Design of Existing Code (Object Technology Series)"
     url: "http://geni.us/refactoring"
     isbn: "0201485672"
-    tag: "refactoring"
-  - title: "Head First Design Patterns"
+  hfdesignpatterns:
+    title: "Head First Design Patterns"
     url: "http://geni.us/hfdesignpatterns"
     isbn: "0596007124"
-    tag: "hfdesignpatterns"
-  - title: "Design patterns: elements of reusable object-oriented software"
+  gofdp:
+    title: "Design patterns: elements of reusable object-oriented software"
     url: "http://geni.us/gofdp"
     isbn: "0201633612"
-    tag: "gofdp"  
-  - title: "Design Patterns in Ruby"
+  dpruby:
+    title: "Design Patterns in Ruby"
     url: "http://geni.us/dpruby"
     isbn: "0321490452"
-    tag: "dpruby"  
-  - title: "97 Things Every Programmer Should Know"
+  97things:
+    title: "97 Things Every Programmer Should Know"
     url: "http://geni.us/97things"
     isbn: "0596809484"
-    tag: "97things"
-  - title: "C# in Depth"
+  csharpindepth:
+    title: "C# in Depth"
     url: "http://geni.us/csharpindepth"
     isbn: "161729134X"
-    tag: "csharpindepth"
-  - title: "Pro ASP.Net MVC 5 (Expert's Voice in ASP.Net)"
+  aspnetmvc5:
+    title: "Pro ASP.Net MVC 5 (Expert's Voice in ASP.Net)"
     url: "http://geni.us/aspnetmvc5"
     isbn: "1430265299"
-    tag: "aspnetmvc5"
-  - title: "JavaScript: The Good Parts"
+  jsgoodparts:
+    title: "JavaScript: The Good Parts"
     url: "http://geni.us/jsgoodparts"
     isbn: "0596517742"
-    tag: "jsgoodparts"
-  - title: "The Lean Startup"
+  leanstartup:
+    title: "The Lean Startup"
     url: "http://geni.us/leanstartup"
     isbn: "0307887898"
-    tag: "leanstartup"
-  - title: "Steal Like An Artist"
+  steallikeanartist:
+    title: "Steal Like An Artist"
     url: "http://geni.us/steallikeanartist"
     isbn: "0761169253"
-    tag: "steallikeanartist"
-  - title: "Interaction Design"
+  interactiondesign:
+    title: "Interaction Design"
     url: "http://geni.us/interactiondesign"
     isbn: "1119020751"
-    tag: "interactiondesign"
-    
+  learnazure:
+    title: "Learning Microsoft Azure"
+    url: "http://geni.us/learnazure"
+    isbn: "1782173374"
+  thebigswitch:
+    title: "The Big Switch"
+    url: "http://geni.us/thebigswitch"
+    isbn: "039334522X"

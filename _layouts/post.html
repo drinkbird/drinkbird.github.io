@@ -5,11 +5,38 @@ layout: default
 	<div class="row">
 		<div class="col-md-12">
 			<article class="post-content">
-				<h1 class="post-title">{{ page.title }}</h1>
-				<time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time>
-				{% include image-feature-post.html %}
-				<div class="post-body">
-					{{ content }}
+				<div class="skew-between">
+					<div class="content-headline">
+						<h1 class="posts-header">{{page.title}}</h1>
+						<time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time>
+						{% include image-feature-post.html %}
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-9">
+						<div class="post-body">
+							{{ content }}
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="author">
+							<figure>
+								<img src="{{ site.baseurl }}/assets/media/drinkbird_shooter.jpg" class="img-circle" alt="Anastasios Piotopoulos" />
+								<figcaption>Written by Anastasios Piotopoulos</figcaption>
+							</figure>
+						</div>
+						{% if page.reads %}
+							<ul class="books-aside">
+							{% for read_key in page.reads %}
+								{% assign book = site.reads[read_key] %}
+								<li>
+									{% include book_aside.html %}
+								</li>
+							{% endfor %}
+							</ul>
+						{% endif %}
+					</div>
 				</div>
 				{% include social-share.html %}
 				<div id="disqus_thread"></div>

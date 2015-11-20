@@ -8,6 +8,8 @@ comments: true
 categories: blog
 image:
   feature: the-lean-startup-eric-ries.png
+reads:
+  - leanstartup
 ---
 
 ##Introduction
@@ -115,8 +117,6 @@ The lean startup methodology is consisted of multiple distinct concepts. The boo
 There is incredible failure that precedes every entrepreneurial success. Even the most promising idea can be doomed from day one if the entrepreneur is not familiar with a suitable process needed to turn that idea into a successful company.
 
 Entrepreneurship is management, just not the classic management of Fred Taylor. Processes that we take so for granted today, like running a factory or a supply chain, had to be invented. All we know about entrepreneurship today is just the tip of the iceberg, and processes for operating under conditions of extreme uncertainty are still on the works. Eric Ries is renowned for pioneering the lean startup movement (Wikipedia, 2014), a movement that tries to discover those processes and helps startups using capital more efficiently without wasting it by building the wrong things. This book is a compelling evidence of this fact.
-
-<a class="btn btn-primary" href="http://geni.us/leanstartup" target="_blank">Get the Lean Startup</a>
 
 ## References
 

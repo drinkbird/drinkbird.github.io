@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: "Recommended books for software developers"
 excerpt: These are the books that have changed my life.
 date: 2015-08-07 00:00:00
@@ -12,8 +12,24 @@ image:
   credit: Freepik
   creditlink: http://www.freepik.com/free-vector/book-collection-in-flat-design_764791.htm
 page-key: books
+reads: 
+  - softskills
+  - codecomplete
+  - agileppp
+  - cleancode
+  - pragmaticprogrammer
+  - refactoring
+  - hfdesignpatterns
+  - gofdp
+  - dpruby
+  - 97things
+  - csharpindepth
+  - aspnetmvc5
+  - jsgoodparts
+  - leanstartup
+  - steallikeanartist
+  - interactiondesign
 ---
-
 ## A few thoughts on books
 
 Some people argue that since technology advances so rapidly, technical books become obsolete the moment they hit the shelves. Such argument simply doesn't stand, as long as books are chosen wisely.
@@ -32,7 +48,8 @@ Some books that target fundamental knowledge utilize specific programming langua
 
 Here is a hand-picked collection of the books that have greatly helped me improve my life, both in a professional and a personal level. I've read most of them more than once. Every single time I get to learn something new by seeing those books in a different light, mostly due to the additional experiences I have acquired between reads. I strongly believe that these books are totally worth the reader's time.
 
-{% for book in site.books %}
+{% for read_key in page.reads %}
+{% assign book = site.reads[read_key] %}
 {% include book.html %}
-{% include books/{{ book.tag }}.html %}
+{% include books/{{ read_key }}.html %}
 {% endfor %}

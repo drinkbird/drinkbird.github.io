@@ -8,6 +8,8 @@ comments: true
 categories: blog
 image:
   feature: the-big-switch.png
+reads:
+  - thebigswitch
 ---
 
 Nicholas Carr is a skilled professional author. Since the dawn of his career, Carr is possessed by a vigorous passion for investigating the impacts of technology on society and human cognition, notably focusing on the adverse ones. His work is acclaimed to have caused immense criticism from a number of major IT companies, along with an affluence of mixed reactions from a broader audience (Levy, 2003), primarily as a result of the author’s radical way of thinking. Although his reasoning may be regarded as questionable, it is generally well-substantiated over comprehensive analysis. “The Big Switch”, one of his latest books, is no exception.
@@ -79,8 +81,6 @@ This book is a decent introduction to the field of cloud computing. As years hav
 Numerous cloud providers have already walked past the point where their users can be considered as early adopters, providing their computing utility worldwide. For all kinds of businesses, especially startup companies, harvesting the power of the cloud can reveal tremendous opportunities for achieving growth. Having limited economic resources, a startup can be highly benefitted by paying only for what it truly needs, avoiding the waste of expensive proprietary computing and networking resources.
 
 In conclusion, the book is recommended for anyone that is not already familiar with the cloud computing model. It is not a technical book, so it is not really recommended for IT professionals, although its socioeconomic extensions could benefit any type of reader.
-
-<a class="btn btn-primary" href="http://geni.us/thebigswitch" target="_blank">Get the Big Switch</a>
 
 ## References
 

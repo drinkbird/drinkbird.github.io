@@ -1,44 +1,109 @@
 ---
 layout: default
 page-key: index
+title: Beating the mediocrity out of software. With a stick.
 ---
-<div class="container">
-	<div class="row">
-		<div class="col-md-6">
-			<section class="posts">
-				<h1 class="posts-header">Featured Post</h1>
-				{% assign count = 0 %}
-				{% for post in site.categories['blog'] %}
-				{% if post.featured and count < 1 %}
-				<article class="article-list">
-					<a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}">
-						{% include image-feature-list.html %}
-						<h1>{{ post.title }}</h1>
-					</a>
-					<p>{{ post.excerpt | strip_html | truncate: 160 }}</p>
-				</article>
-				{% assign count = count | plus: 1 %}
-				{% endif %}
-				{% endfor %}
-			</section>
+<div class="jumbotron">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+      	<figure>
+      		<img src="{{ site.baseurl }}/assets/media/logo_400.png" title="The DrinkBird Logo">
+      		<figcaption>{{ site.description }}</figcaption>
+      	</figure>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="skew-between">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-offset-2 col-md-8 content-headline">
+				<h1>A lifelong mission</h1>
+				<p>Hi, my name is Anastasios and I'm a passionate software engineer, specialized in web and cloud technologies, having a lifelong mission of solving problems through building high-quality software. Furthermore, I love inspiring others to do the same.</p>
+			</div>	
 		</div>
-		<div class="col-md-6">
-			<section class="posts">
-				<h1>Featured Project</h1>
-				{% assign count = 0 %}
-				{% for post in site.categories['project'] %}
-				{% if post.featured and count < 1 %}
-				<article class="article-list">
-					<a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}">
-						{% include image-feature-list.html %}
-						<h1>{{ post.title }}</h1>
-					</a>
-					<p>{{ post.excerpt | strip_html | truncate: 160 }}</p>
-				</article>
-				{% assign count = count | plus: 1 %}
-				{% endif %}
-				{% endfor %}
-			</section>
+	</div>
+</div>
+
+<div class="background-dark">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h1>What people say</h1>	
+			</div>			
+		</div>	
+		<div class="row">
+			<div class="col-md-6">
+				<div class="quote quote-left">
+					<blockquote>
+						Tasos proves that out with his enthusiasm, passion and professionalism, all the intangibles that are vital for real world work.
+					</blockquote>
+					<div class="quote-info">
+						<img alt="Robert Byrne" src="{{ site.baseurl }}/assets/media/rob.jpg" />
+						<span class="quote-info-name">
+							<strong>Robert Byrne</strong> Technical Architect at KeyedIn Solutions, Inc.
+						</span>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="quote">
+					<blockquote>
+						Anastasios is a reliable, truly self-motivated professional who shows engineering discipline and knows how to get the job done.
+					</blockquote>
+					<div class="quote-info">
+						<img alt="Alexandros Fatles" src="{{ site.baseurl }}/assets/media/alex.jpg" />
+						<span class="quote-info-name">
+							<strong>Alexandros Fatles</strong> Software Development Manager at SiEBEN, Ltd.
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="skew-between content-featured">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<section class="posts">
+					<h2>Featured Post</h2>
+					{% assign count = 0 %}
+					{% for post in site.categories['blog'] %}
+					{% if post.featured and count < 1 %}
+					<article class="article-list">
+						<a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}">
+							{% include image-feature-list.html %}
+							<h1>{{ post.title }}</h1>
+						</a>
+						<p>{{ post.excerpt | strip_html | truncate: 160 }}</p>
+					</article>
+					{% assign count = count | plus: 1 %}
+					{% endif %}
+					{% endfor %}
+				</section>
+			</div>
+			<div class="col-md-6">
+				<section class="posts">
+					<h2>Featured Project</h2>
+					{% assign count = 0 %}
+					{% for post in site.categories['project'] %}
+					{% if post.featured and count < 1 %}
+					<article class="article-list">
+						<a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}">
+							{% include image-feature-list.html %}
+							<h1>{{ post.title }}</h1>
+						</a>
+						<p>{{ post.excerpt | strip_html | truncate: 160 }}</p>
+					</article>
+					{% assign count = count | plus: 1 %}
+					{% endif %}
+					{% endfor %}
+				</section>
+			</div>
 		</div>
 	</div>
 </div>

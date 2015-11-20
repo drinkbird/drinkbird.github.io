@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: "A man in a hot air balloon"
 excerpt: "A classic management joke that never gets old"
 date: 2015-01-13 00:00:00

@@ -10,6 +10,10 @@ image:
   feature: change-of-heart.jpg
   credit: ForWallpaper.com
   creditlink: http://www.forwallpaper.com/wallpaper/change-of-heart-473905.html
+reads:
+  - cleancode
+  - refactoring
+  - softskills
 ---
 
 Most software developers are a bit territorial about their code, to say the least. They generally don't like other people messing with their work, since they believe that they are the only ones who can completely understand and judge what they are doing.

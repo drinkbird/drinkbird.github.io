@@ -8,7 +8,8 @@ comments: true
 categories: blog
 image:
   feature: learning-azure.png
-featured: true
+reads:
+  - learnazure
 ---
 
 Cloud computing has already consolidated its presence in the tech industry, and it is quickly becoming a standard choice for hosting enterprise applications. The greatest advantage of the cloud is that resources are provisioned rapidly and on demand, without human intervention on the provider's part. Moreover, every provider offers a wide range of services that can significantly extend the capabilities of hosted applications.
@@ -26,7 +27,5 @@ I found that Chapter 8, regarding worker roles, is one of the most important cha
 Geoff provides an excellent starting point for creating sound and maintainable cloud architectures. Those architectures involve proper separation of concerns and allow various parts of a solution to scale independently. The book is targeted towards intermediate software engineers who are already proficient in OOP and C#. Keep in mind that many of the design decisions described within the book are transferable, meaning that they can also be used while developing solutions for other cloud platforms.
 
 I enjoyed the book and I found it valuable. I consider it to be the missing manual for Microsoft Azure. I believe you will enjoy it too!
-
-<a href="http://geni.us/learnazure" target="_blank" class="btn btn-warning">Get Learning Microsoft Azure</a>
 
 p.s.: My warmest greetings to the guys at <a href="http://packtpub.com/" target="_blank">Packt Publishing</a>. Thank you for requesting me to review this book. I really had a good time reading it.

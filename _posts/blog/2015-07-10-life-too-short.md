@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: "[Image] Life is too short"
 excerpt: "Grab the wallpaper version"
 date: 2015-07-10 00:00:00

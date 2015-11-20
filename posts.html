@@ -3,12 +3,18 @@ layout: default
 page-key: posts
 permalink: /posts/
 title: Posts
+excerpt: "Thoughts and experiences"
 ---
 <section class="posts">
   <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <h1 class="posts-header">{{page.title}}</h1>
+    <div class="skew-between">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="content-headline">
+            <h1 class="posts-header">{{page.title}}</h1>
+            <p>{{page.excerpt}}</p>
+          </div>
+        </div>
       </div>
     </div>
     {% assign count = 0 %}
