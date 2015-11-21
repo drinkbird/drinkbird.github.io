@@ -220,7 +220,7 @@ a {
 	text-align: center;
 
 	h1 {
-		font-size: 60px;
+		font-size: 40px;
 		font-weight: 800;
 	}
 
@@ -269,7 +269,7 @@ a {
 	}
 
 	blockquote:before {
-		left: 14.4em;
+		left: 7em;
 		content: '';
 		position: absolute;
 		bottom: -40px;
@@ -520,5 +520,11 @@ a.cover {
 
 	.quote-right {
 		margin-bottom: 0;
+	}
+
+	.content-headline {
+		h1 {
+			font-size: 60px;
+		}
 	}
 }
