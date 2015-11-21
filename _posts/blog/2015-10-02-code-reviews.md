@@ -13,6 +13,7 @@ image:
 reads:
   - cleancode
   - refactoring
+  - codecomplete
   - softskills
 ---
 
