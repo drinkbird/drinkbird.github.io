@@ -397,6 +397,12 @@ footer.site-footer {
 	}
 }
 
+.post-body{
+	img {
+		@extend .img-responsive;
+	}
+}
+
 .post-body > p > img {
 	display: block;
 	margin: 0 auto;
@@ -478,7 +484,7 @@ a.cover {
 		margin-bottom: 50px;
 
 		img {
-			width: 70%;
+			width: 50%;
 		}
 
 		figcaption {
@@ -490,7 +496,17 @@ a.cover {
 	}
 }
 
-@media (min-width: $screen-sm-min) {	
+@media (min-width: $screen-md-min) {
+	.author {
+		figure {
+			img {
+				width: 70%;
+			}
+		}
+	}
+}
+
+@media (min-width: $screen-sm-min) {
 	nav.navbar {
 		box-shadow: 0 -2px 10px 0 rgba(0,0,0,.5);
 		border-radius: 0;
