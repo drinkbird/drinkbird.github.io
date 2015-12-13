@@ -305,6 +305,10 @@ a {
 	margin-bottom: 50px;
 }
 
+blockquote {
+	border-left: 5px solid $brand-primary-dark;
+}
+
 a {
 	color: $brand-secondary;
 
@@ -347,6 +351,14 @@ ul.gallery {
 
 .mermaid {
 	width: auto !important;
+}
+
+.list-inline {
+	text-align: center;
+
+	figcaption {
+		text-align: center;
+	}
 }
 
 /* Index */

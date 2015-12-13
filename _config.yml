@@ -23,7 +23,7 @@ links:
   - title: Books
     url: /books/
     page-key: books
-  - title: About me
+  - title: About
     url: /about/
     page-key: about
 
