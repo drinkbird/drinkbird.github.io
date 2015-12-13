@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Recommended books for software developers"
-excerpt: These are the books that have changed my life.
+excerpt: "These are the books that have changed my life. Updated: 13-12-2015"
 date: 2015-08-07 00:00:00
 permalink: /books/
 comments: true
@@ -14,6 +14,7 @@ image:
 page-key: books
 reads: 
   - softskills
+  - thecleancoder
   - codecomplete
   - agileppp
   - cleancode
@@ -45,6 +46,8 @@ Having a solid skillset based on fundamentals can help professionals learn new t
 Some books that target fundamental knowledge utilize specific programming languages to illustrate their examples. The readers shouldn't get discouraged or intimidated if they haven't worked with that language before, or if they don't intend to use it in the future. As mentioned above, fundamental knowledge is widely applicable, and that fact extends to other programming languages as well.
 
 ## My book collection
+
+**Updated: 12-12-2015**
 
 Here is a hand-picked collection of the books that have greatly helped me improve my life, both in a professional and a personal level. I've read most of them more than once. Every single time I get to learn something new by seeing those books in a different light, mostly due to the additional experiences I have acquired between reads. I strongly believe that these books are totally worth the reader's time.
 

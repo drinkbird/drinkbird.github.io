@@ -45,6 +45,10 @@ reads:
     title: "Soft Skills: The software developer's life manual"
     url: "http://geni.us/softskills"
     isbn: "1617292397"
+  thecleancoder:
+    title: "The Clean Coder: A Code of Conduct for Professional Programmers (Robert C. Martin)"
+    url: "http://geni.us/thecleancoder"
+    isbn: "0137081073"    
   codecomplete:
     title: "Code Complete: A Practical Handbook of Software Construction"
     url: "http://geni.us/codecomplete"
