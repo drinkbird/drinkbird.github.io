@@ -11,6 +11,7 @@ image:
   credit: ForWallpaper.com
   creditlink: http://www.forwallpaper.com/wallpaper/change-of-heart-473905.html
 reads:
+  - thecleancoder
   - cleancode
   - refactoring
   - codecomplete
@@ -60,6 +61,6 @@ It all starts with self-awareness. Try to observe your own behavior and feelings
 * Someone makes a case about the technology to be used in your next project, or simply starts a discussion about comparing different operating systems or technologies.
 * Someone brags about their career achievements.
 
-The list can be really long, but you get the point. If you really want to achieve great things as a software development, start by being humble and truly value the opinions of others.
+The list can be really long, but you get the point. If you really want to achieve great things as a software developer, start by being humble and truly value the opinions of others.
 
 So what was the latest ego-driven experience you had in software development? Feel free to share in comments below.
