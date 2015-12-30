@@ -104,6 +104,26 @@ a:active, a:hover {
 
 	img {
 		height: 100px;
+		transition: 0.3s;
+	}
+}
+
+.is-sticky {
+	.navbar {
+		min-height: 50px;
+
+		.navbar-brand {
+			height: 50px;
+
+			img {
+				height: 50px;
+			}
+		}
+
+		.navbar-toggle {
+			margin-top: 7px;
+			margin-bottom: 7px;
+		}
 	}
 }
 
@@ -537,6 +557,13 @@ a.cover {
 		border-top: 5px solid $brand-primary;
 	}
 
+	.is-sticky {
+		.navbar-nav > li > a {
+			padding-top: 15px;
+			padding-bottom: 15px;
+		}
+	}
+	
 	ul.social {
 		margin-bottom: 0;
 		padding-top: 2px;
