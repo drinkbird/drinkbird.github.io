@@ -2,7 +2,7 @@
 title: DrinkBird
 email: tasos@drinkbird.com
 description: "Beating the mediocrity out of software. With a stick."
-longdescription: "DrinkBird is a blog for software engineers that deeply care about their craft."
+longdescription: "DrinkBird is a blog for software engineers who deeply care about their craft."
 baseurl: ""
 url: "http://blog.drinkbird.com"
 locale: en_US
@@ -32,11 +32,11 @@ owner:
   disqus-shortname: drinkbird
   twitter: piotopoulos
   facebook: thedrinkbird
-  #googleplus: 
+  #googleplus:
   github: drinkbird
   stackoverflow: 2050674/drinkbird
   linkedin: piotopoulos
-  #youtube: 
+  #youtube:
   google:
     analytics: UA-55022241-1
 
@@ -48,7 +48,7 @@ reads:
   thecleancoder:
     title: "The Clean Coder: A Code of Conduct for Professional Programmers (Robert C. Martin)"
     url: "http://geni.us/thecleancoder"
-    isbn: "0137081073"    
+    isbn: "0137081073"
   codecomplete:
     title: "Code Complete: A Practical Handbook of Software Construction"
     url: "http://geni.us/codecomplete"
