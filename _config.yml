@@ -8,8 +8,11 @@ url: "http://blog.drinkbird.com"
 locale: en_US
 
 # Build settings
-markdown: redcarpet
-highlighter: pygments
+markdown: kramdown
+kramdown:
+    input: GFM
+    syntax_highlighter: rouge
+
 permalink: /:title
 gems: [jekyll-sitemap]
 
