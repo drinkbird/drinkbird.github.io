@@ -3,7 +3,7 @@
 ---
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600,800);
 
-$gray-darker:					darken(#7f8c8d, 15%);
+$gray-darker:					#4a4a4a;
 $brand-primary:					#e67e22;
 $brand-primary-dark:			#3f2808;
 $brand-primary-light:			#f39c12;
@@ -23,8 +23,8 @@ $font-family-serif:				Georgia, "Times New Roman", Times, serif;
 $font-family-sans-serif:		"Open Sans", Helvetica, Arial, sans-serif;
 $font-family-base:				$font-family-sans-serif;
 $headings-font-family:			$font-family-sans-serif;
-$font-size-base:				20px;
-$line-height-base:				1.6;
+$font-size-base:				16px;
+$line-height-base:				1.8;
 $icon-font-path:				"../fonts/";
 
 $font-size-h1:					ceil(($font-size-base * 1.6));
@@ -91,6 +91,16 @@ a {
 a:active, a:hover {
     outline: 0;
 }
+
+pre {
+	font-size: 14px;
+	
+	code {
+		overflow-x: scroll;
+		white-space: pre;
+	}
+}
+
 
 /* Header */
 .navbar {	
@@ -338,6 +348,8 @@ a {
 	}
 }
 
+
+
 figure {
 	@extend .text-center;
 	margin-bottom: 10px;
@@ -426,6 +438,10 @@ footer.site-footer {
 .post-content {
 	figure {
 		@extend .text-left;
+	}
+	
+	a {
+		border-bottom: 1px solid;
 	}
 }
 
