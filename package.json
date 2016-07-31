@@ -1,0 +1,22 @@
+{
+  "name": "drinkbird-blog-theme",
+  "version": "1.0.0",
+  "description": "DrinkBird Blog",
+  "main": "index.js",
+  "scripts": {
+    "uglify": "uglifyjs .\\assets\\js\\scripts.js -o .\\assets\\js\\scripts.min.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/drinkbird/drinkbird.github.io.git"
+  },
+  "author": "Anastasios Piotopoulos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/drinkbird/drinkbird.github.io/issues"
+  },
+  "homepage": "https://github.com/drinkbird/drinkbird.github.io#readme",
+  "devDependencies": {
+    "uglify-js": "^2.7.0"
+  }
+}
