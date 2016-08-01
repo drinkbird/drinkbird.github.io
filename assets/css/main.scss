@@ -524,12 +524,17 @@ a.cover {
 	}
 }
 
+#mc_embed_signup {
+	text-align: center;
+    input.email{width:100%;}
+    input.btn{width:80%;font-size:16px;font-weight:600;display:inline-block;margin:14px 0 50px;}
+}
+
 .author {
 	figure {
 		width: 100%;
 		text-align: center;
 		display: inline-block;
-		margin-bottom: 50px;
 
 		img {
 			width: 50%;

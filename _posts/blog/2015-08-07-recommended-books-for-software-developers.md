@@ -56,3 +56,5 @@ Here is a hand-picked collection of the books that have greatly helped me improv
 {% include book.html %}
 {% include books/{{ read_key }}.html %}
 {% endfor %}
+
+{% include subscribe-inpost.html %}
