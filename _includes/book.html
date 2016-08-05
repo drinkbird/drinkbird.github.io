@@ -1,6 +1,11 @@
 <div class="book">
-	<a target="_blank" href="{{ book.url }}">
+	<div class="book-cover">
 		<img class="img-responsive" src="{{ site.baseurl }}/images/covers/{{ book.isbn }}.jpg" alt="{{ book.title }}" />
-		<h2>{{ book.title }}</h2>
-	</a>
+	</div>
+	<a target="_blank" class="btn btn-info" href="{{ book.url }}" aria-label="View '{{ book.title }}' on Amazon">View on Amazon</a>
+	<h2>{{ book.title }}</h2>
 </div>
+
+{% include books/{{ read_key }}.html %}
+
+-----

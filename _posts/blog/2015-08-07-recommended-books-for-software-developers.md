@@ -54,7 +54,6 @@ Here is a hand-picked collection of the books that have greatly helped me improv
 {% for read_key in page.reads %}
 {% assign book = site.reads[read_key] %}
 {% include book.html %}
-{% include books/{{ read_key }}.html %}
 {% endfor %}
 
 {% include subscribe-inpost.html %}

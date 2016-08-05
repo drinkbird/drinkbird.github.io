@@ -476,24 +476,22 @@ a.cover {
 	-o-transition: all 0.3s ease-out;
 	-webkit-transition: all 0.3s ease-out;
 	transition: all 0.3s ease-out;
+	text-align: center;
 
-	> a {
-	border-top: 1px dashed #ccc;
-	padding-top: 24px;	
-	display: block;
-
+	.book-cover {
 		> img {
-			display: block;
-			margin: 0 auto;
+			display: inline-block;
+			margin-bottom: 20px;
 		}
-	}
-	&:hover {
-		-moz-transition: all 0.3s ease-in;
-		-o-transition: all 0.3s ease-in;
-		-webkit-transition: all 0.3s ease-in;
-		transition: all 0.3s ease-in;
 
-		@include opacity(0.7);
+		&:hover {
+			-moz-transition: all 0.3s ease-in;
+			-o-transition: all 0.3s ease-in;
+			-webkit-transition: all 0.3s ease-in;
+			transition: all 0.3s ease-in;
+
+			@include opacity(1);
+		}
 	}
 }
 
