@@ -15,10 +15,12 @@ page-key: books
 reads: 
   - softskills
   - thecleancoder
+  - smartandgetsthingsdone
   - codecomplete
   - agileppp
   - cleancode
   - pragmaticprogrammer
+  - artofunittesting
   - refactoring
   - hfdesignpatterns
   - gofdp
@@ -29,11 +31,12 @@ reads:
   - jsgoodparts
   - leanstartup
   - steallikeanartist
+  - showyourwork
   - interactiondesign
 ---
-## A few thoughts on books
+## Some books can last for a lifetime
 
-Some people argue that since technology advances so rapidly, technical books become obsolete the moment they hit the shelves. Such argument simply doesn't stand, as long as books are chosen wisely.
+People sometimes argue that since technology advances so rapidly, technical books become obsolete the moment they hit the shelves. Such argument simply doesn't stand, as long as books are chosen wisely.
 
 There are two distinct categories of knowledge: *information* and *fundamentals*. The former includes specific knowledge that helps people deal with certain problems and usually have a short lifespan, such as *how to program in C# 5 using Entity Framework 6*, whereas the latter includes broadly applicable knowledge which isn't constrained to a specific implementation and can last a lifetime, such as *soft skills for software developers*.
 
@@ -41,15 +44,13 @@ Having a solid skillset based on fundamentals can help professionals learn new t
 
 ![The hierarchy of knowledge]({{ site.baseurl }}/images/hierarchy_of_knowledge.png)
 
-### A word of caution
+### Don't judge a book by its ~~cover~~ programming language
 
-Some books that target fundamental knowledge utilize specific programming languages to illustrate their examples. The readers shouldn't get discouraged or intimidated if they haven't worked with that language before, or if they don't intend to use it in the future. As mentioned above, fundamental knowledge is widely applicable, and that fact extends to other programming languages as well.
+Some books that target fundamental knowledge utilize specific programming languages to illustrate their examples. You shouldn't get discouraged or intimidated if you haven't worked with that language before, even if you don't intend to use it in the future. As mentioned above, fundamental knowledge is widely applicable, and that fact also extends to other programming languages and paradigms.
 
-## My book collection
+## My book collection (Updated 06 Aug 2016)
 
-**Updated: 12-12-2015**
-
-Here is a hand-picked collection of the books that have greatly helped me improve my life, both in a professional and a personal level. I've read most of them more than once. Every single time I get to learn something new by seeing those books in a different light, mostly due to the additional experiences I have acquired between reads. I strongly believe that these books are totally worth the reader's time.
+This is a hand-picked collection of the books that have greatly helped me improve my life, both in a professional and a personal level. I've read most of them more than once. Every single time I get to learn something new by seeing those books in a different light, mostly due to the additional experiences I have acquired between reads. I strongly believe that these books are totally worth your time.
 
 {% for read_key in page.reads %}
 {% assign book = site.reads[read_key] %}

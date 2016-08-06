@@ -124,4 +124,15 @@ reads:
     title: "The Working Brain"
     url: "http://geni.us/theworkingbrain"
     isbn: "046509208X"
-    
+  artofunittesting:
+    title: "The Art of Unit Testing: with examples in C#"
+    url: "http://geni.us/artofunittesting"
+    isbn: "1617290890"
+  smartandgetsthingsdone:
+    title: "Smart and Gets Things Done: Joel Spolsky's Concise Guide to Finding the Best Technical Talent"
+    url: "http://geni.us/smartandgetsthingsdone"
+    isbn: "1590598385"
+  showyourwork:
+    title: "Show Your Work!: 10 Ways to Share Your Creativity and Get Discovered"
+    url: "http://geni.us/showyourwork"
+    isbn: "076117897X"

@@ -1,0 +1,3 @@
+Austin Kleon never disappoints. His first book, *Steal like an artist*, is one of the biggest sources of inspiration I've ever come across. It was only natural that his next book would also a blast, and this time is about sharing the results of your inspiration with the world.
+
+We love our work, we're passionate about it, but it's often the case that people arounds us don't know or understand exactly what that is. This book will help you tell your story, get your message across and get discoverd. Don't wait any longer, show your work!
