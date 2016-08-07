@@ -12,6 +12,7 @@ image:
   credit: Freepik
   creditlink: http://www.freepik.com/free-vector/book-collection-in-flat-design_764791.htm
 page-key: books
+subscribe_source: books
 reads: 
   - softskills
   - thecleancoder
