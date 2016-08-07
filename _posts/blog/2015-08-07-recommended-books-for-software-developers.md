@@ -33,6 +33,11 @@ reads:
   - steallikeanartist
   - showyourwork
   - interactiondesign
+nextreads:
+  - effectiveusecases
+  - userstoriesapplied
+  - legacycode
+  - themythicalmanmonth
 ---
 ## Some books can last for a lifetime
 
@@ -55,6 +60,23 @@ This is a hand-picked collection of the books that have greatly helped me improv
 {% for read_key in page.reads %}
 {% assign book = site.reads[read_key] %}
 {% include book.html %}
+{% include books/{{ read_key }}.html %}
+
+-----
+
 {% endfor %}
+
+## Next on my list
+
+<div class="row">
+{% for read_key in page.nextreads %}
+<div class="col-md-3">
+{% assign book = site.reads[read_key] %}
+{% include book.html %}
+</div>
+{% endfor %}
+</div>
+
+-----
 
 {% include subscribe-inpost.html %}

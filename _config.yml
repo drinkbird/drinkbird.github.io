@@ -136,3 +136,24 @@ reads:
     title: "Show Your Work!: 10 Ways to Share Your Creativity and Get Discovered"
     url: "http://geni.us/showyourwork"
     isbn: "076117897X"
+  legacycode:
+    title: "Working Effectively with Legacy Code"
+    url: "http://geni.us/legacycode"
+    isbn: "0131177052"
+  effectiveusecases:
+    title: "Writing Effective Use Cases"
+    url: "http://geni.us/effectiveusecases"
+    isbn: "0201702258"
+  userstoriesapplied:
+    title: "User Stories Applied: For Agile Software Development"
+    url: "http://geni.us/userstoriesapplied"
+    isbn: "0321205685"
+  themythicalmanmonth:
+    title: "The Mythical Man-Month: Essays on Software Engineering, Anniversary Edition (2nd Edition)"
+    url: "http://geni.us/themythicalmanmonth"
+    isbn: "0201835959"
+  theaccidentalcreative:
+    title: "The Accidental Creative: How to Be Brilliant at a Moment's Notice"
+    url: "http://geni.us/theaccidentalcreative"
+    isbn: "1591846242"
+
