@@ -476,22 +476,24 @@ a.cover {
 	-o-transition: all 0.3s ease-out;
 	-webkit-transition: all 0.3s ease-out;
 	transition: all 0.3s ease-out;
-	text-align: center;
 
-	.book-cover {
+	> a {
+		display: block;
+		text-align: center;
+		border: none;
+
 		> img {
 			display: inline-block;
-			margin-bottom: 20px;
 		}
+	}
 
-		&:hover {
-			-moz-transition: all 0.3s ease-in;
-			-o-transition: all 0.3s ease-in;
-			-webkit-transition: all 0.3s ease-in;
-			transition: all 0.3s ease-in;
+	&:hover {
+		-moz-transition: all 0.3s ease-in;
+		-o-transition: all 0.3s ease-in;
+		-webkit-transition: all 0.3s ease-in;
+		transition: all 0.3s ease-in;
 
-			@include opacity(1);
-		}
+		@include opacity(0.7);
 	}
 }
 
@@ -598,7 +600,7 @@ a.cover {
 	}
 
 	.book > a > img {
-		height: 300px;
+		height: 400px;
 	}
 
 	.quote-right {

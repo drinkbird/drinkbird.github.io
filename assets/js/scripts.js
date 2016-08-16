@@ -64,5 +64,5 @@ $(function() {
     // Add target blank to external links
     $("a[href^='http']").attr("target", "_blank");
 
-    $("a[href^='http://geni.us/']").not(".btn").append(" (View on Amazon)");
+    $("a[href^='http://geni.us/']").not(".btn, .book-link").append(" (View on Amazon)");
 });
