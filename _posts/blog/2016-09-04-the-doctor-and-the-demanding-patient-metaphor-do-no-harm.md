@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "The Doctor and the Demanding Patient, aka. Do No Harm"
+title: "The Doctor and the Demanding Patient"
 excerpt: "A metaphor about professionalism in software development"
 permalink: /the-doctor-and-the-demanding-patient-metaphor-do-no-harm/
 comments: true
@@ -36,6 +36,11 @@ Keep in mind that most customers/bosses/managers want the truth, even if they do
 
 Just to be clear, everyone's ultimate goal is to deliver value to the business, and do it without doing harm. Hence, sometimes we have no other choice but to say *no*, even if it comes with a cost.
 
-### Source
+## Source
 
 This metaphor was originally introduced by Robert C. Martin [in his blog](https://sites.google.com/site/unclebobconsultingllc/blogs-by-robert-martin/saying-no), and was further improved in his legendary book, [The Clean Coder](http://geni.us/thecleancoder), a must-read for every professional software developer.
+
+## Other resources
+
+* Next article: [The Surgeon and the Deadline, another metaphor about professionalism in software development](http://blog.drinkbird.com/the-surgeon-and-the-deadline/)
+* [Recommended books for Software Developers](http://blog.drinkbird.com/books/)
