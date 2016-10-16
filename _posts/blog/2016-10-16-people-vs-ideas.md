@@ -11,13 +11,14 @@ image:
 # http://startupstockphotos.com/
 reads:
   - creativityincbook
-  - softskills
   - leanstartup
+  - softskills
+  - theaccidentalcreative
 ---
 
 # What is wrong with this picture?
 
-"I have a great idea for a startup". How often do you hear this phrase? How many people have pitched their idea to you, in hope that you will put your efforts into their startup?
+"I have a great idea for a startup company". How often do you hear this phrase? How many people have pitched their idea to you, in hope that you will put your efforts into their startup?
 
 Traditionally, startups revolve around some *million dollar* idea, something *disruptive* and *innovative* that can *make the world a better place*. Yet pitch after pitch, I couldn't help it but feel that something is very wrong with this picture.
 
@@ -60,9 +61,9 @@ When someone asks you to join a startup, they tend to focus solely on your talen
 What are the chances for that team to be something more than mediocre?
 
 
-# Singular leaders are dangerous
+# Beware of singular leaders
 
-Apart from focusing on the wrong things while recruiting, these people have something else in common: they identify too closely with their idea. Naturally, every founder would prefer to be told that his or her idea is genius. By identifying themselves too closely with their idea, they make themselves prone to taking offence when that idea is challenged.
+Apart from focusing on the wrong things while recruiting, these people have something else in common: they identify too closely with their idea. Naturally, every founder would prefer to be told that his or her idea is genius. By identifying themselves too closely with their idea, they make themselves prone to taking offence when that idea is challenged, when revisions are needed or flows are apparent.
 
 As previously discussed, great ideas are never formed in a vacuum. Also, most successful products are not a result of a single idea. In fact, they are compised of a multitude of ideas, contributed by many different people.
 
@@ -73,46 +74,14 @@ Therefore, those who identify too closely with their idea are setting themselves
 > Great ideas are never found in the genius mind of a singular leader who has the charisma, or brutality, to force his will into existence.
 
 
-## 
+# Final thoughts and references
 
+John Sonmez, author of the best-seller [Soft Skills: The software developer's life manual](http://geni.us/softskills), has published a YouTube video called [Why Your Million Dollar Idea Is Worthless](https://www.youtube.com/watch?v=dj4iYm-lrfg), where he argues that *execution* is more important than the idea. John is right, as execution highly depends on the team behind it.
 
+Scott Adams, creator of Dilbert, captures the essence of this article in a hilarious [comic strip](http://dilbert.com/strip/2015-09-11).
 
-naturally every director would prefer to be told that his film is a masterpiece 
+[Bjarne Stroustrup](https://en.wikiquote.org/wiki/Bjarne_Stroustrup), creator of the C++ programming language, once said: "Design and programming are human activities; forget that and all is lost".
 
-flaws are apparent or revisions are needed.
+To reiterate, next time you are approached by someone to work on their idea, take note on what their approaches and priorities are, and beware of those identifying too closely with their ideas.
 
-You are not your idea and if you identify too closely with your ideas you will take offence when they are challenged. to setup a healthy feedback system you must remove power dynamics
-
-focus on the problem not the person.
-
-
-be alert to shifting dynamics, your future depends on it
-
-
-
-
-
-If you think about it, most successful products are not a result of a single idea, but a multitude of them. 
-
-quality is the best business plan. quality is not a consequence of following some set of behaviors but rather 
-
-
-
-# Identifying the patterns
-
-As it turns out, the vast majority of successful startups share some common characteristics:
-
-* they are built around strong teams, and
-* the final form of their product or service is quite different than its original conception
-
-
-
-
-https://www.linkedin.com/pulse/which-more-valuable-good-ideas-people-benjamin-craddock-pe
-
-https://www.youtube.com/watch?v=dj4iYm-lrfg
-
-
-## Other resources
-
-* [Recommended books for Software Developers](http://blog.drinkbird.com/books/)
+Ideas come from people, therefore people are more important than ideas. It is the focus on people - their work habits, their talents, their values - that is absolutely central to any creative venture.
