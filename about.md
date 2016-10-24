@@ -9,18 +9,21 @@ image:
 
 ## Background
 
-My name is Anastasios Piotopoulos and I'm a passionate software engineer, specialized in web and cloud technologies, having a lifelong mission of solving problems through building high-quality software. I also love inspiring others to do the same.
+My name is Anastasios Piotopoulos. I'm a passionate software engineer and aspirant software architect, specialized in web and cloud technologies, having a lifelong mission of solving problems through building high-quality software.
 
-As an advocate of the Agile Software Development and the Software Craftsmanship Movement, my passion is the proper design of software while making meaningful business decisions, avoiding unnecessary technical debt and focusing on code readability, robustness, testability and extensibility. Over the years I have been involved in the construction of everything from small utilities to enterprise-scale cloud solutions.
+Every successful software design is grown and forged through myriads of decisions, often made by many different people. My passion, therefore, lies in working with a strong team that understands this process, knows how to avoid waste and unnecessary technical debt, and highly focuses on code readability, robustness, testability and extensibility.
 
-Furthermore, I have been a guest speaker at various tech industry events, community meetups and academic lectures. I truly enjoy presenting and speaking about software craftsmanship, clean code, design patterns, development productivity, the lean methodology and much more.
+#### Technologies
+
+One of the principles I live by is being pragmatic rather than dogmatic and [pick the right tool for the job](http://c2.com/cgi/wiki?PickTheRightToolForTheJob) on a case-by-case basis. During my career I have been involved in the construction of everything from simple tooling to enterprise cloud solutions. I have delivered projects using a variety of languages, frameworks and tools, such as Ruby, Java, python, JavaScript, Android and Dynamics CRM.
+
+During the last few years I've been mostly working with C#, ASP.NET MVC, Web API, Angular, TypeScript, NodeJS, Microservices, and Microsoft Azure cloud services. Next stop will possibly be a functional language, such as F# or Clojure.
+
+#### Community involvement
+
+Giving back to the community is one of the most rewarding activities of a software professional. Blogging is something I greatly enjoy, although you will also find me speaking at various events, academic lectures and community meetups, such as [AngularJS Dublin](https://www.meetup.com/AngularJSDublin/), a ~1200-member meetup hosted at Google's Headquarters in Dublin, of which I'm a core organizer.
 
 <ul class="list-inline gallery">
-	<li>
-		<a href="{{ site.baseurl }}/images/1911702_10203144371437762_1399533886_n.jpg" class="image-popup mfp-with-zoom" title="At the Global Azure Bootcamp as a guest speaker, Athens 2014">
-			<img src="{{ site.baseurl }}/images/1911702_10203144371437762_1399533886_n-150x150.jpg" />
-		</a>
-	</li>
 	<li>
 		<a href="{{ site.baseurl }}/images/DSCN6650.jpg" class="image-popup mfp-with-zoom" title="At the Global Azure Bootcamp as a guest speaker, Athens 2014">
 			<img src="{{ site.baseurl }}/images/DSCN6650-150x150.jpg" />
@@ -46,15 +49,16 @@ Furthermore, I have been a guest speaker at various tech industry events, commun
 			<img src="{{ site.baseurl }}/images/nci3_150.jpg" />
 		</a>
 	</li>
+	<li>
+		<a href="{{ site.baseurl }}/images/angularjs_keynote.jpg" class="image-popup mfp-with-zoom" title="Delivering the AngularJS Dublin keynote, Google, Dublin 2016">
+			<img src="{{ site.baseurl }}/images/angularjs_keynote_150x150.jpg" />
+		</a>
+	</li>
 </ul>
 
 ## Too much information
 
-#### Technologies
-
-One of the most important principles I live by is being pragmatic rather than dogmatic and [pick the right tool for the job](http://c2.com/cgi/wiki?PickTheRightToolForTheJob) on a case-by-case basis. Today, I usually work with C#, ASP.NET MVC, JavaScript and Azure Cloud Services, although I also enjoy working in Java and Ruby. Tomorrow, it might be something completely different, who knows?
-
-#### Degrees
+#### Academia
 
 - M.Sc. in Software Engineering and Ubiquitous Computing, University College Dublin, 2015
 	- GPA: 4.1 / 4.2
@@ -68,24 +72,15 @@ One of the most important principles I live by is being pragmatic rather than do
 - Microsoft Certified Solutions Developer: Web Applications
 - Microsoft Certified Technology Specialist: Dynamics CRM 2011 Customization and Configuration
 
-## Manifesto for Agile Software Development
+## What is this blog about?
 
-> We are uncovering better ways of developing software by doing it and helping others do it. Through this work we have come to value:
-> 
-> - _**Individuals and interactions**_ over processes and tools
-> - _**Working software**_ over comprehensive documentation
-> - _**Customer collaboration**_ over contract negotiation
-> - _**Responding to change**_ over following a plan
-> 
-> That is, while there is value in the items on the right, we value the items on the left more.
-> 
-> [Source](http://agilemanifesto.org/)
+The software industry continuously pushes us towards producing more, and faster. That's when priorities get blurry, corners get cut, and mediocre software comes into life. We need to know where to draw the line. We need to take responsibility for our craft. This whole blog boils down to a single message: Let's beat the mediocrity out of software. With a stick. 
 
 ## Disclaimer
 
-**This blog, its content and opinions are my own** and do not represent my employers' or clients' view in any way. Always keep in mind that I might have no idea what I'm talking about! `;)`
+**This blog, its content and opinions are my own** and do not represent my employers' or clients' view in any way. Keep in mind that I might have no idea what I'm talking about.
 
 ## Bio
-Anastasios Piotopoulos is a passionate software engineer, specialized in web and cloud technologies, having a lifelong mission of solving problems through building high-quality software. He also loves inspiring others to do the same, mostly though writing and speaking about software craftsmanship, clean code, design patterns, development productivity, the lean methodology and much more. Over the years, Anastasios has been involved in the construction of everything from small utilities to enterprise-scale cloud solutions.
+Anastasios Piotopoulos is a passionate software engineer, specialized in web and cloud technologies, having a lifelong mission of solving problems through building high-quality software. You can find him blogging at drinkbird.com, or speaking at various events, academic lectures and community meetups, such as AngularJS Dublin of which he's a core organizer. Over the years, Anastasios has been involved in the construction of everything from simple tooling to enterprise cloud solutions.
 
 ![Anastasios Piotopoulos]({{ site.baseurl }}/images/AnastasiosPiotopoulos.jpg)
