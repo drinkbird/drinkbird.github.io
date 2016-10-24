@@ -15,7 +15,7 @@ Every successful software design is grown and forged through myriads of decision
 
 #### Technologies
 
-One of the principles I live by is being pragmatic rather than dogmatic and [pick the right tool for the job](http://c2.com/cgi/wiki?PickTheRightToolForTheJob) on a case-by-case basis. During my career I have been involved in the construction of everything from simple tooling to enterprise cloud solutions. I have delivered projects using a variety of languages, frameworks and tools, such as Ruby, Java, python, JavaScript, Android and Dynamics CRM.
+One of the principles I live by is being pragmatic rather than dogmatic and [pick the right tool for the job](http://c2.com/cgi/wiki?PickTheRightToolForTheJob) on a case-by-case basis. During my career I have been involved in the construction of everything from simple tooling to enterprise cloud solutions. I have delivered projects using a variety of languages, frameworks and tools, such as Ruby, Java, python, JavaScript, iOS, Android, Dynamics CRM and more.
 
 During the last few years I've been mostly working with C#, ASP.NET MVC, Web API, Angular, TypeScript, NodeJS, Microservices, and Microsoft Azure cloud services. Next stop will possibly be a functional language, such as F# or Clojure.
 

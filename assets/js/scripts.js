@@ -69,7 +69,7 @@ $(function() {
 
     // Rotating word effect
     var curNewsIndex = 0;
-    var newsArray = ["Create","Inspire","Monetize","Disrupt","Evolve","Learn","Think","Build","Ship","Design","Analyze","Plan","Code","Produce","Follow","Refine","Deploy","Solve","Test","Appreciate","Craft","Share"];
+    var newsArray = ["Create","Inspire","Collaborate","Disrupt","Evolve","Learn","Think","Build","Ship","Design","Analyze","Plan","Code","Produce","Follow","Refine","Deploy","Solve","Test","Appreciate","Craft","Share","Monetize","Consolidate"];
 
     function setTickerNews(word) {
         $("#c").html(word + "<span>.<\/span>");
