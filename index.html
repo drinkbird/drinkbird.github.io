@@ -2,30 +2,45 @@
 layout: default
 page-key: index
 title: Beating the mediocrity out of software. With a stick.
+subscribe_source: index
 ---
-<div class="jumbotron">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-      	<figure>
-      		<img src="{{ site.baseurl }}/assets/media/logo_400.png" class="img-responsive" title="The DrinkBird Logo">
-      		<figcaption>{{ site.description }}</figcaption>
-      	</figure>
-      </div>
-    </div>
-  </div>
-</div>
 
-<div class="skew-between">
+<div class="jumbotron">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-offset-2 col-md-8 content-headline">
-				<h1>A lifelong mission</h1>
-				<p>Hi, my name is Anastasios and I'm a passionate software engineer, specialized in web and cloud technologies, having a lifelong mission of solving problems through building high-quality software. I also love inspiring others to do the same.</p>
+			<div class="col-md-offset-2 col-md-8 content-headline content-headline-right">
+				<h1 id="c">Mission.</h1>
+				<p>My name is Anastasios and I'm a passionate software engineer, specialized in web and cloud technologies, having a lifelong mission of solving problems through building high-quality software. Join me and let's beat the mediocrity out of software together!</p>
 			</div>
 		</div>
 	</div>
 </div>
+
+<div class="skew-between content-featured">
+	<div class="container">
+		<h2 class="text-center">Featured Posts</h2>
+		<div class="row">
+			{% assign count = 0 %}
+			{% for post in site.categories['blog'] %}
+			{% if post.featured and count < 2 %}
+			<div class="col-md-6">
+				<section class="posts">
+					<article class="article-list">
+						<a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}">
+							{% include image-feature-list.html %}
+							<h1>{{ post.title }}</h1>
+						</a>
+						<p>{{ post.excerpt | strip_html | truncate: 160 }}</p>
+					</article>
+				</section>
+			</div>
+			{% assign count = count | plus: 1 %}
+			{% endif %}
+			{% endfor %}
+		</div>
+	</div>
+</div>
+
 
 <div class="background-dark">
 	<div class="container">
@@ -67,45 +82,17 @@ title: Beating the mediocrity out of software. With a stick.
 	</div>
 </div>
 
-<div class="skew-between content-featured">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-6">
-				<section class="posts">
-					<h2>Featured Post</h2>
-					{% assign count = 0 %}
-					{% for post in site.categories['blog'] %}
-					{% if post.featured and count < 1 %}
-					<article class="article-list">
-						<a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}">
-							{% include image-feature-list.html %}
-							<h1>{{ post.title }}</h1>
-						</a>
-						<p>{{ post.excerpt | strip_html | truncate: 160 }}</p>
-					</article>
-					{% assign count = count | plus: 1 %}
-					{% endif %}
-					{% endfor %}
-				</section>
-			</div>
-			<div class="col-md-6">
-				<section class="posts">
-					<h2>Featured Project</h2>
-					{% assign count = 0 %}
-					{% for post in site.categories['project'] %}
-					{% if post.featured and count < 1 %}
-					<article class="article-list">
-						<a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}">
-							{% include image-feature-list.html %}
-							<h1>{{ post.title }}</h1>
-						</a>
-						<p>{{ post.excerpt | strip_html | truncate: 160 }}</p>
-					</article>
-					{% assign count = count | plus: 1 %}
-					{% endif %}
-					{% endfor %}
-				</section>
-			</div>
-		</div>
-	</div>
+<div class="skew-between">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+      	<figure>
+      		<img src="{{ site.baseurl }}/assets/media/logo_400.png" class="img-responsive" title="The DrinkBird Logo">
+      		<figcaption>{{ site.description }}</figcaption>
+      	</figure>
+		<hr />
+		{% include subscribe-index.html %}
+      </div>
+    </div>
+  </div>
 </div>

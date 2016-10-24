@@ -1,3 +1,4 @@
+'use strict';
 $(function() {
     // FitVids options
 	$("article").fitVids();
@@ -65,4 +66,22 @@ $(function() {
     $("a[href^='http']").attr("target", "_blank");
 
     $("a[href^='http://geni.us/']").not(".btn, .book-link").append(" (View on Amazon)");
+
+    // Rotating word effect
+    var curNewsIndex = 0;
+    var newsArray = ["Create","Inspire","Monetize","Disrupt","Evolve","Learn","Think","Build","Ship","Design","Analyze","Plan","Code","Produce","Follow","Refine","Deploy","Solve","Test","Appreciate","Craft","Share"];
+
+    function setTickerNews(word) {
+        $("#c").html(word + "<span>.<\/span>");
+    }
+
+    function advanceNewsItem() {
+        setTickerNews(newsArray[curNewsIndex]);
+        curNewsIndex++;
+        curNewsIndex >= newsArray.length && (curNewsIndex = 0);
+    }
+    
+    if ($("#c").length) {
+        setInterval(advanceNewsItem, 150);
+    }
 });
