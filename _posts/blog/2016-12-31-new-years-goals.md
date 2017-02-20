@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Not sure which technology to pick up next?"
-excerpt: "Here's a list of recommendations from my personal backlog"
+title: "Which technology to pick up next?"
+excerpt: "Here's a few recommendations from my personal backlog"
 permalink: /which-technology-to-pickup-next
 comments: true
 categories: blog
@@ -47,11 +47,39 @@ You may notice that some of these technologies are not particularly new, but the
 
 ## Functional Programming
 
+Functional programming is not new at all. In fact it can be traced back to 1957 as the first of the three major programming paradigms to be invented (with the other two being Structured and Object Oriented Programming). Functional programs are generally simpler, which makes them easier to write and maintain.
+
+FP helps us avoid a wide range of problems, such as temporal couplings, concurrency issues, and eliminating side effects by imposing discipline on change of state. Why FP has become more important than ever? Here are a few reasons:
+
+* Up until a few years ago, memory was too expensive to make FP practical. Nowadays memory is dirt cheap.
+* Modern functional languages use a number of techniques to manage resources more efficiently, e.g. [*tail call optimization*](http://stackoverflow.com/questions/310974/what-is-tail-call-optimization).
+* Overall, functional code is more succinct than in other paradigms. In other words, we can achieve more with less code, which makes us more productive and also eases the pain of managing large code bases.
+* FP compliments a number of modern technologies, such as Cloud Computing, Microservices and Event Sourcing.
+* Most importantly, functional programs are scalable in nature. In general, they don't rely on mutating variables so they don't have to protect some "shared state". When side effects are not an issue, implementing an algorithm across different cores/processors/machines is much, much easier. Let's see how hardware evolution makes this point even more important.
+
+For a few decades hardware engineers were able to steadily increase the throughput of computer systems by pushing CPU clock rates to higher limits, and that worked quite well until something interesting happened. Take a look at the following chart by [nap.edu](https://www.nap.edu/read/13472/chapter/3#7):
+
+![Microprocessor Trends]({{ site.baseurl }}/images/microprocessor.jpg)
+
+It seems that about ten years ago, harware engineers hit a wall on processor speeds, mostly due to physical limitations of the materials the chips are made of. They couldn't keep increasing throughput with clock rate anymore, so they started multiplying the number of cores per CPU, which means that throughput goes up *only if* we can take advantage of those cores.
+
+That's a major challenge for programmers, as we are -in general- extremely inefficient in writing multithreaded code, and that's exactly why functional languages have suddenly become so popular, even though some of them are quite old. Some of the most well-known are:
+
+* [F# (.NET CLR)](http://fsharp.org/)
+* [Scala (JVM)](https://www.scala-lang.org/)
+* [Haskell](https://www.haskell.org/)
+* [Erlang](http://www.erlang.org/)
+* [Elixir (Erlang VM)](http://elixir-lang.org/)
+* [Clojure (.NET CLR / JVM)](https://clojure.org/)
+
+I strongly encourage you to study about the basic concepts of functional programming and learn at least one functional language, even if you don't intend on using it on your day job. You will soon find out that you can apply numerous functional principles to your standard OOP code, and end up with a much cleaner and much more maintainable code base.
+
+
+## MicroServices
+
 ## Domain Driven Design
 
 ## Event Sourcing
-
-## MicroServices
 
 ## Reactive Programming
 
