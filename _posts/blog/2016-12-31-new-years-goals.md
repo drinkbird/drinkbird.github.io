@@ -40,7 +40,7 @@ For a software engineer, this is the quickest path to obsolence. It is vital tha
 
 As I mentioned above, an efficient way of learning new technologies without being overwhelmed is to create a backlog of technologies you're interested in and formulate yearly plans. You can also define a number of checkpoints within the year to reevaluate and adjust your plan if necessary, e.g. once every quarter.
 
-This article includes a list of the top technologies from my personal backlog. That means that I have little to no experience with most of them, but I've spend enough time to evaluate them and be able to have a meaningful discussion. Please excuse any inaccuracies and feel free to suggest corrections using the comments section below.
+This article includes a list of the top technologies from my personal backlog. That means that I have little experience with most of them, but I've spend enough time to evaluate them and be able to have a meaningful discussion. Please excuse any inaccuracies and feel free to suggest corrections using the comments section below.
 
 You may notice that some of these technologies are not particularly new, but they have become more relevant than ever. That's perfectly normal in the software industry, as when a technology matures, others that compliment it become more relevant and oftentimes evolve in parallel.
 
@@ -75,6 +75,19 @@ That's a major challenge for programmers, as we are -in general- extremely ineff
 I strongly encourage you to study about the basic concepts of functional programming and learn at least one functional language, even if you don't intend on using it on your day job. You will soon find out that you can apply numerous functional principles to your standard OOP code, and end up with a much cleaner and much more maintainable code base.
 
 
+## Reactive Programming
+
+Reactive programming is programming with asynchronous data streams. In a gist, you have the ability to create data streams of anything, such as user inputs, caches and data structures, and then you can listen to those streams and act appropriately.
+
+Furthermore, you have an extensive set of tools and functions to manipulate those streams. If you are already familiar with functional programming you will feel right at home. You can use one or multiple streams as an input to another data stream, and perform purely functional operations such as mapping, merging and filtering.
+
+![Reactive Programming]({{ site.baseurl }}/images/reactive.png)
+
+[Reactive Extensions](http://reactivex.io/languages.html) is a feture-rich, battle-tested API for doing reactive programming. It's used for both server-side and client-side applications and it's implemented accross a wide variety of programming languages, platforms and frameworks. It's so reliable that Google has decided to use the JavaScript flavor of Reactive Extensions, aka [RxJS](https://github.com/Reactive-Extensions/RxJS), as a core dependency of [Angular](https://angular.io/). 
+
+You can find much more information about reactive programming in an excellent [post by André Staltz](https://gist.github.com/staltz/868e7e9bc2a7b8c1f754), from which I've also taken the image above.
+
+
 ## Microservices
 
 In 2006, Werner Vogels - Amazon's CTO, gave a presentation at the JAOO conference where he dicussed -among other things- how small teams build and run services that have their own databases. Fast forward in the future, this structure is now known as DevOps, and the underlying architecture is known as microservices.
@@ -88,24 +101,11 @@ We essentially put features in separate processes and we end up with a network o
 
  about small teams that build and run services that have their own databases. 
 
-## Domain Driven Design
+### CQRS
 
-## Event Sourcing
+### Domain Driven Design
 
-## Reactive Programming
-
-## Cloud Computing
-
-
-
-making the 21st century possible
-what we are doing is indispencible
-you all know more about evolution than you think that you do
-prejudices
-preconcieved notions
-follow the evidence
-high standard on what counts for evidence
-most people default to whatever they consider to be an authority
+### Event Sourcing
 
 
 
