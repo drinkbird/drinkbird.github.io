@@ -75,7 +75,18 @@ That's a major challenge for programmers, as we are -in general- extremely ineff
 I strongly encourage you to study about the basic concepts of functional programming and learn at least one functional language, even if you don't intend on using it on your day job. You will soon find out that you can apply numerous functional principles to your standard OOP code, and end up with a much cleaner and much more maintainable code base.
 
 
-## MicroServices
+## Microservices
+
+In 2006, Werner Vogels - Amazon's CTO, gave a presentation at the JAOO conference where he dicussed -among other things- how small teams build and run services that have their own databases. Fast forward in the future, this structure is now known as DevOps, and the underlying architecture is known as microservices.
+
+Microservices is an emerging paradigm of software modularization. You can find a wide number of definitions, but in a gist, it's the result of applying the [Single Responsibility Principle](https://en.wikipedia.org/wiki/Single_responsibility_principle) at a service level.
+
+
+We essentially put features in separate processes and we end up with a network of communicating processes.
+
+
+
+ about small teams that build and run services that have their own databases. 
 
 ## Domain Driven Design
 
@@ -100,7 +111,7 @@ most people default to whatever they consider to be an authority
 
 
 # 2. Microservices
-these benefits come at certain costs
+  these benefits come at certain costs
 putting features in separate processes and having a network of communicating processes
 eg. unix command line, many programs put in a pipeline
 flexible distribution, scaling
