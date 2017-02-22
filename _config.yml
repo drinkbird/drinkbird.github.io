@@ -168,3 +168,31 @@ reads:
     title: "Creativity, Inc.: Overcoming the Unseen Forces That Stand in the Way of True Inspiration"
     url: "http://geni.us/creativityincbook"
     isbn: "0593070097"
+  fsharpforcsharpdevs:
+    title: "F# for C# Developers (Developer Reference)"
+    url: "http://geni.us/fsharpforcsharpdevs"
+    isbn: "0735670269"
+  microservices:
+    title: "Microservices: Flexible Software Architecture"
+    url: "http://geni.us/microservices"
+    isbn: "0134602412"
+  buildingmicroservices:
+    title: "Building Microservices: Designing Fine-Grained Systems"
+    url: "http://geni.us/buildingmicroservices"
+    isbn: "1491950358"
+  microservicearch:
+    title: "Microservice Architecture: Aligning Principles, Practices, and Culture"
+    url: "http://geni.us/microservicearch"
+    isbn: "1491956259"
+  domaindrivendesign:
+    title: "Domain-Driven Design: Tackling Complexity in the Heart of Software"
+    url: "http://geni.us/domaindrivendesign"
+    isbn: "0321125215"
+  functionalreactive:
+    title: "Functional and Reactive Domain Modeling"
+    url: "http://geni.us/functionalreactive"
+    isbn: "1617292249"
+  streamingarch:
+    title: "Streaming Architecture: New Designs Using Apache Kafka and MapR Streams"
+    url: "http://geni.us/streamingarch"
+    isbn: "1491953926"
