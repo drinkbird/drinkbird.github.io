@@ -115,7 +115,7 @@ In general, we're looking to create models that map well to a problem domain. Ev
 
 It's the problem domain that needs to be understood, because that's the magic sauce in the system being built that differentiates your organization's business from its competitors. If that's not the case, it's probably better to abandon the project and use some off-the-shelf product instead.
 
-If you're going to apply DDD outside of a microservice architecture, then start by reading [Domain Driven Design by Eric Evans](http://geni.us/?). If on the other hand you plan to use it in a microservice driven architecture, you can skip Eric Evans's book and read [Building Microservices: Designing Fine-Grained Systems, by Sam Newman](http://geni.us/?) directly.
+If you're going to apply DDD outside of a microservice architecture, then start by reading [Domain Driven Design, by Eric Evans](http://geni.us/?). If on the other hand you plan to use it in a microservice driven architecture, you can skip Eric Evans's book and read [Building Microservices: Designing Fine-Grained Systems, by Sam Newman](http://geni.us/?) directly.
 
 #### 2. Command and Query Responsibility Segragation (CQRS)
 
@@ -123,33 +123,33 @@ This pattern was first described by [Greg Young](https://twitter.com/gregyoung).
 
 This separation can be valuable for a number of situations, especially in a microservice-driven architecture, but we also need to beware of the extra complexity this pattern brings along.
 
-You can read more at [microsoft.com](https://msdn.microsoft.com/en-us/library/dn568103.aspx).
+You can read more about CQRS at [microsoft.com](https://msdn.microsoft.com/en-us/library/dn568103.aspx).
 
 #### 3. Event Sourcing
 
-In Event Sourcing we use an append-only store to record every single event that describes actions taken on data in a specific domain. That is quite different from traditional applications which typically overwrite older data and only keep the latest version of everything.
+Event Sourcing is an alternative way of storing application data. Typically, we have a store of mutable data and we perform the standard [CRUD operations](https://en.wikipedia.org/wiki/Create,_read,_update_and_delete) to fulfill the needs of the application. In such scenarios, when we edit a record the old values are overwritten and when we delete a record the data is gone forever.
 
-An event-sourced system can be deterministically brought back to a state at any point in time, by simply replaying the stream of events logged in the append-onyly store.
+In Event Sourcing we follow a different approach. We use an append-only store to record every single event that describes actions taken on data in specific domains of the application. As a result, an event-sourced system can be deterministically brought back to a state at any point in time, by simply replaying the stream of events logged in the append-onyly store.
 
+As a programmer you should already be familiar with that strategy, since it's exactly how GIT works. When we commit code, we only commit the changes since the previous commit. A *revision* then is a fixed point in history. When we *check out* a revision, GIT just replays all commits (events) that happened between the active revision and the targeted one.
 
+It's by no means a new concept. Numerous industries have been using it for hundreds of years, such as finance, accounting, insurance, medical and legal. Doctor's won't erase your medical history when they get new information, as like banks won't determine your available funds based on a database column.
 
+Event sourcing brings numerous other benefits to the table. Apart from providing a complete audit history, it can also provide data consistency and improve performance, scalability and responsiveness. Finally, as mentioned in [confluent's blog](https://www.confluent.io/blog/event-sourcing-cqrs-stream-processing-apache-kafka-whats-connection/):
 
-In an event-sourced system, the domain objects -which represent the state of the application-
+> Event sourcing enables building a forward-compatible application architecture — the ability to add more applications in the future that need to process the same event but create a different materialized view.
 
+Wrapping up, there are a few more things that need to be mentioned:
 
- can be recreated at any point in time by simply replaying all the relevant events logged in the append-only store. 
+* CQRS and Event Sourcing are usually mentioned together. Although neither one is a prerequisite for the other, they complement each other really nicely. 
+* Event Sourcing is functional by nature. In FP terms, the current application state is a left fold of previous behaviors, a snapshot is a memoization of the fold, and a projection is a fold over your event log.
+* You don't need to apply Event Sourcing to your whole system. You can instead pick specific domains of the application where ES makes sense, and apply it just there.
+* Two excellent tools to use in Event Sourcing scenarios are [Greg Young's Event Store](https://geteventstore.com/) and [Apache Kafka](https://kafka.apache.org/). Kafka is actually not specific to Event Sourcing, and can be leveraged in a wide range of scenarios.
 
+You can read more about Event Sourcing at [microsoft.com](https://msdn.microsoft.com/en-us/library/dn589792.aspx).
 
+# Conclusion
 
-# 3. Event Sourcing & CQRS
-deterministically bring your system back to a state at any point in time.
-finance, accounting, insurance, medical, legal
-it is by no means a new concept, it has been around for millenia
-current state is a left fold of previous behaviors:   state := foldl(s, history)
-a snapshot is a memoization of the fold
-a projection is a fold over your event log
+There is always something new to learn, and as a software professional you should never stop learning and evolving. I hope this post gave you a few ideas on what to study next, and gave you a number of useful sources for further reading.
 
-
-
-
--- Retrospect
+Use the comment section below and tell me about the top technologies from your backlog, or suggest corrections to any inconsistencies you've come accross in the article. Most importantly, have fun learning!
