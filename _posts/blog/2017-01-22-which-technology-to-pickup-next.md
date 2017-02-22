@@ -10,11 +10,18 @@ image:
   feature: whattopickupnext.png
 reads:
   - fsharpforcsharpdevs
+  - functionalreactive
   - microservices
   - buildingmicroservices
   - microservicearch
   - domaindrivendesign
+  - streamingarch
   - softskills
+  - legacycode
+  - effectiveusecases
+  - userstoriesapplied
+  - artofunittesting
+  - themythicalmanmonth
 ---
 
 Software engineering is a vast, continuously evolving field that one can spend years of learning and practicing before becoming effective and productive.
@@ -68,7 +75,7 @@ For a few decades hardware engineers were able to steadily increase the throughp
 
 It seems that about ten years ago, harware engineers hit a wall on processor speeds, mostly due to physical limitations of the materials the chips are made of. They couldn't keep increasing throughput with clock rate anymore, so they started multiplying the number of cores per CPU, which means that throughput goes up *only if* we can take advantage of those cores.
 
-That's a major challenge for programmers, as we are -in general- extremely inefficient in writing multithreaded code, and that's exactly why functional languages have suddenly become so popular, even though some of them are quite old. Some of the most well-known are:
+That's a major challenge for programmers, as we are -in general- extremely inefficient in writing multithreaded code, and that's exactly why functional languages have suddenly become so popular, even though some of them are quite old. Some of the most used ones in the industry are:
 
 * [F# (.NET CLR)](http://fsharp.org/)
 * [Scala (JVM)](https://www.scala-lang.org/)
@@ -99,7 +106,7 @@ In 2006, Werner Vogels (Amazon's CTO) gave a presentation at the JAOO conference
 
 Microservices is an emerging paradigm of software modularization. In summary, microservices are the result of applying the [Single Responsibility Principle](https://en.wikipedia.org/wiki/Single_responsibility_principle) at a service level.
 
-Instead of developing and deploying an application as a single piece (referred to as *a monolith* in bibliography), we build it as a number of feature-focused services that communicate over a network, and there are numerous benefits associated with this approach.
+Instead of developing and deploying an application as a single piece (referred to as *a monolith* in bibliography), we build it as a number of feature-focused services that communicate over a network. There are numerous benefits associated with this approach.
 
 Each microservice has its own data storage, can be deployed / upgraded / replaced / scaled independently from the rest, and and can also be implemented in different technologies (platforms / programming languages) from the rest. These small pieces of functionality end up formulating the end application.
 
@@ -110,13 +117,13 @@ Most importantly, work can be distributed accross teams more efficiently, since 
 
 Of course the organization adopting the microservices approach has to adapt its structure accordingly, since teams have to organize around business capabilities and not different application tiers or technologies. Furthermore, the organization has to adopt the DevOps mindset and invest on infrastructure automation, as managing all those moving parts manually is proven to be not such a good idea.
 
-There is also a wide number of patterns and practices that play really well in microservice-driven scenarios. Here's a few:
+There is also a wide number of patterns and practices that play really well in microservice-driven scenarios. Next, I'll describe a few of them.
 
 #### 1. Domain Driven Design (DDD)
 
 This architectural approach was first introduced by Eric Evans in his homonymous book, and its all about making the business domain our number one priority. We consider it to be the heart of the application, so everything is build from the domain model out.
 
-In general, we're looking to create models that map well to a problem domain. Everything else, such as persistence layers, user interfaces or messaging between the different parts of the application are considered details and the decisions around them can be deferred for much later.
+In general, we're looking to create models that map well to a problem domain. Everything else, such as persistence layers, user interfaces or messaging between the different parts of the application are considered to be details and the decisions around them can be deferred for much later.
 
 It's the problem domain that needs to be understood, because that's the magic sauce in the system being built that differentiates your organization's business from its competitors. If that's not the case, it's probably better to abandon the project and use some off-the-shelf product instead.
 
@@ -134,9 +141,9 @@ You can read more about CQRS at [microsoft.com](https://msdn.microsoft.com/en-us
 
 Event Sourcing is an alternative way of storing application data. Typically, we have a store of mutable data and we perform the standard [CRUD operations](https://en.wikipedia.org/wiki/Create,_read,_update_and_delete) to fulfill the needs of the application. In such scenarios, when we edit a record the old values are overwritten and when we delete a record the data is gone forever.
 
-In Event Sourcing we follow a different approach. We use an append-only store to record every single event that describes actions taken on data in specific domains of the application. As a result, an event-sourced system can be deterministically brought back to a state at any point in time, by simply replaying the stream of events logged in the append-onyly store.
+In Event Sourcing we follow a different approach. We use an append-only store to record every single event that describes actions taken on data in specific domains of the application. As a result, an event-sourced system can be deterministically brought back to a state at any point in time, by simply replaying the stream of events logged in the append-only store.
 
-As a programmer you should already be familiar with that strategy, since it's exactly how GIT works. When we commit code, we only commit the changes since the previous commit. A *revision* then is a fixed point in history. When we *check out* a revision, GIT just replays all commits (events) that happened between the active revision and the targeted one.
+As a programmer you should already be familiar with that strategy, since it's exactly how [GIT](https://git-scm.com) works. When we commit code, we only commit the changes since the previous commit. A *revision* then is a fixed point in history. When we *check out* a revision, GIT just replays all commits (events) that happened between the active revision and the targeted one.
 
 It's by no means a new concept. Numerous industries have been using it for hundreds of years, such as finance, accounting, insurance, medical and legal. Doctor's won't erase your medical history when they get new information, as like banks won't determine your available funds based on a database column.
 
@@ -155,6 +162,6 @@ You can read more about Event Sourcing at [microsoft.com](https://msdn.microsoft
 
 # Conclusion
 
-There is always something new to learn, and as a software professional you should never stop learning and evolving. I hope this post gave you a few ideas on what to study next, and gave you a number of useful sources for further reading.
+There is always something new to learn, and as a software professional you should never stop learning and evolving. I hope this post gave you a few ideas on what to study next, as well as a number of useful sources for further reading.
 
-Use the comment section below and tell me about the top technologies from your backlog, or suggest corrections to any inconsistencies you've come accross in the article. Most importantly, have fun learning!
+Feel free to use the comment section below and tell me about the top technologies from your backlog, or suggest corrections to any inconsistencies you've come accross in the article. Most importantly, have fun learning!

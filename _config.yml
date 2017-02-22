@@ -188,3 +188,11 @@ reads:
     title: "Domain-Driven Design: Tackling Complexity in the Heart of Software"
     url: "http://geni.us/domaindrivendesign"
     isbn: "0321125215"
+  functionalreactive:
+    title: "Functional and Reactive Domain Modeling"
+    url: "http://geni.us/functionalreactive"
+    isbn: "1617292249"
+  streamingarch:
+    title: "Streaming Architecture: New Designs Using Apache Kafka and MapR Streams"
+    url: "http://geni.us/streamingarch"
+    isbn: "1491953926"
