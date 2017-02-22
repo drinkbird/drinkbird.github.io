@@ -9,6 +9,11 @@ featured: true
 image:
   feature: whattopickupnext.png
 reads:
+  - fsharpforcsharpdevs
+  - microservices
+  - buildingmicroservices
+  - microservicearch
+  - domaindrivendesign
   - softskills
 ---
 
