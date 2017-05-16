@@ -24,7 +24,7 @@ reads:
   - themythicalmanmonth
 ---
 
-If you ask a businessperson what's the most important thing about a project, they will usually tell you that it's delivering *on time* and *on budget*. But what about *quality*? More often than not, it's not even considered as a priority but rather as something *nice to have*
+If you ask a businessperson what's the most important thing about a project, they will usually tell you that it's delivering *on time* and *on budget*. But what about *quality*? More often than not, it's not even considered as a priority but rather as something *nice to have*.
 
 In contrast with other industries though, software development's end products have no material form, their size and complexity are at least tricky to perceive, and parts of them that could make them or break them could be well-hidden within their 1s and 0s. The user interacts through some interface, and that's usually all they see; everything else is hidden underneath.
 
@@ -35,5 +35,17 @@ On top of that, a seemingly small change in a project's requirements can easily 
 
 The constant pressure for producing new features and fixing bugs under tight deadlines can easily blur our judgement. These activities may require extensive rework of the existing code base, but usually there is also some dirty shortcut that might get the job done with just a few lines of code.
 
-Lowering our standards when quality work seems out of reach feels like a natural reaction under all that pressure. After all it's all about delivering results... or is it?
+It might create some mess and break a few tests but we can just skip those and clean up the code later. It's all about moving fast and delivering results...
+
+<img src="https://imgs.xkcd.com/comics/move_fast_and_break_things.png" alt="Move Fast and Break Things" />
+<p class="text-center">Image source: <a href="https://xkcd.com/1428/">xkcd.com</a></p>
+
+Or even better, we can opt-out of running tests altogether! Can't get more agile than that...
+
+![Roll Safe with Tests]({{ site.baseurl }}/images/tests-roll-safe.png)
+
+Sarcasm aside, lowering our standards when quality work seems out of reach feels like a natural reaction under all that pressure. The rush to produce results - *any results* - before the deadline leads to poor decisions, messy code bases, unhappy developers, and most importantly, unhappy users.
+
+
+
 
