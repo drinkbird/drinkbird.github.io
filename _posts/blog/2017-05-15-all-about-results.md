@@ -77,10 +77,23 @@ Novice developers want to learn as much as they can, experiment with different a
 
 It's not unusual for such a person to create more debt than the actual value he/she brings to the table, and yet that's fine as it's part of their learning journey and something to be expected. The point here is that young programmers usually focus on building up their career, but their goals don't necessarily include the long-term success of the project they happen to be working on.
 
+When working with such people try to be extra patient and understanding. Provide good guidance and explain as much as possible, in order to set a good example and lead them towards becoming better professionals. Mentoring novice programmers has actually been one of the most rewarding elements of my career; it's fun and I usually end up learning something new when I engage into conversations with them.
+
 ### Hipsters
+
+Programming hipsters count more as "know it all" posers rather than actual computer scientists. They strategically avoid industry standards, battle-tested approaches, or widely used libraries, often characterizing them as "too mainstream".
+
+Instead, they prefer to keep reinventing the wheel and roll their own implementations, which of course are done in the most complex and inefficient way possible to demonstrate their superior intellect. Of course nobody else can maintain their solutions, which backfire sooner or later anyway.
 
 ![Hipsort]({{ site.baseurl }}/images/hipsort.png)
 <p class="text-center">Original image source: <a href="http://www.broadsheet.ie/tag/typewriter/">broadsheet.ie</a></p>
+
+In case they decide to not implement everything from scratch, they will typically try to use something that's still in alpha or beta, and has no support structure or community.
+
+Programming hipsters are found among the most reliable sources of technical debt. They never really care about the project, but rather  
+
+There's not much you can do when called to work with such a person, apart from raising your con
+
 
 ### Dinosaurs
 
