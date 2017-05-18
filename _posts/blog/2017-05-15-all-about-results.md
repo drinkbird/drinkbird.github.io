@@ -77,7 +77,7 @@ Novice developers want to learn as much as they can, experiment with different a
 
 It's not unusual for such a person to create more debt than the actual value he/she brings to the table, and yet that's fine as it's part of their learning journey and something to be expected. The point here is that young programmers usually focus on building up their career, but their goals don't necessarily include the long-term success of the project they happen to be working on.
 
-When working with such people try to be extra patient and understanding. Provide good guidance and explain as much as possible, in order to set a good example and lead them towards becoming better professionals. Mentoring novice programmers has actually been one of the most rewarding elements of my career; it's fun and I usually end up learning something new when I engage into conversations with them.
+When working with such people try to be extra patient and understanding. Provide good guidance and explain as much as possible, in order to set a good example and lead them towards becoming better professionals. Mentoring novice programmers has actually been one of the most rewarding elements of my career; apart from being fun, I usually end up learning something new myself.
 
 ### Hipsters
 
@@ -90,15 +90,28 @@ Instead, they prefer to keep reinventing the wheel and roll their own implementa
 
 In case they decide to not implement everything from scratch, they will typically try to use something that's still in alpha or beta, and has no support structure or community.
 
-Programming hipsters are found among the most reliable sources of technical debt. They never really care about the project, but rather  
+Programming hipsters are guaranteed sources of technical debt for any kind of project, big or small. It's their niche. The only reason they would care about a project's success would be to show off more effectively and hope for recognition. Not exactly the kind of results you would expect from a software professional.
 
-There's not much you can do when called to work with such a person, apart from raising your con
+Unfortunately, some of them have made their way into places you would never expect to find them. If you are unlucky enough to work with one, just be aware of what to expect. Eventually, someone will have to clean up after them, and there's a good opportunity that this someone is you.
 
+### Cave-Coders
 
-### Dinosaurs
+They started their career with a *bang*, but it turned out to be a firework. These people focused too much and too long on a limited number of technologies or techniques and never bothered to keep up with the industry, usually claiming they were "too busy" or that "old ways are the best".
+
+While software development is in general a highly-opinionated profession, there is one hard rule: **keep learning or leave the industry**. Holding forever on what you learned once upon a time and refusing to evolve is like running with your car on a highway forever and never bother checking your gas tank level. Failure guaranteed.
+
+Cave coders are easy to spot, typically because they use obsolete languages, libraries, tooling, operating systems etc., that are not even being supported by their manufacturers anymore. Their code usually has no tests, and one little change can cause terrible regressions.
+
+One thing they are very efficient at is making excuses for sticking to their ways and not evolving. They won't read technical books because *"theory is alright but what happens in the real world is another story"*. They won't read blogs, tutorials, or go to conferences because *"what others do in their projects solve their own specific problems, not ours"*.
 
 ![Fossil Keyboard]({{ site.baseurl }}/images/fossil-keyboard.jpg)
 <p class="text-center">Image source: <a href="http://boingboing.net/2009/04/06/fossil-keyboard.html">boingboing.net</a></p>
+
+In general, hey won't accept anything they are not already familiar with. The worse part is that many of them recognize their inability or unwillingness to train on new technologies and eventually jump into management roles, where they usually don't have to code a lot (or at all) but they can more efficiently steer their teams towards a cliff.
+
+If you come across such people try to minimize contact. If they become your manager, run. And ju=ust to be clear, being a cave-coder does not imply a certain age. I'd say that anyone working in the industry for more than about 7-10 years is in danger of falling into this category.
+
+Cave-coders would care about a project's long-term success only if it comes with personal benefits and job security. Speaking of which, ...
 
 ### Job Security Specialists
 
