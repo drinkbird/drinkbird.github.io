@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Managing expectations while prototyping software"
-excerpt: "The seeming completeness of a showcased prototype can lead to stakeholders having unrealistic expectations. Let's examine how to best manage these expectations."
+excerpt: "The seeming completeness of a showcased prototype can lead to unrealistic expectations by both the stakeholders and the programmers."
 permalink: /managing-expectations-while-prototyping-software
 comments: true
 categories: blog
