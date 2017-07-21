@@ -32,7 +32,7 @@ It's all about results, and although perfectly reasonable, it doesn't mention an
 
 Low-quality projects suffer from various defects and regressions. They are hard to maintain, hard to extend, and most importantly they frustrate or even harm their users and stakeholders.
 
-The real question is, who's really responsible for keeping a project's quality high? Let's expose some common misconceptions about software engineering and discuss the engineer's true role in the evolution of a software system.
+The real question is, who's really responsible for keeping a project's quality high? Let's expose some common misconceptions about software engineering and discuss your true role as an engineer in relation to the life cycle of a software system.
 
 # The first word of software is 'soft'
 
@@ -40,9 +40,11 @@ It's essential for us to keep in mind the intention for inventing software in th
 
 There are two values of software: the value of its *behavior* and the value of its *structure* (softness). Which of these two values is the most important, you ask? If you have worked in the software industry for more than a day, you will know that software requirements tend to change a lot.
 
+![SOLID]({{ site.baseurl }}/images/solid-jenga.jpg)
+
 Stakeholders and users expect to have the ability to change the behavior of a program without paying high cost. This means that a program that's hard to change can become useless very quickly. On the other hand, a program that's easy to change is much more valuable, as it can keep adapting to new requirements and it will continue to work over the lifetime of the system.
 
-Therefore, structure should be given priority over behavior in all but the most urgent circumstances, and this brings us to the next point.
+Therefore, structure should be given priority over behavior in all but the most urgent situations. We will discuss such situations below, but first we need to make an important point.
 
 # We are not done when the program works
 
@@ -54,19 +56,58 @@ Eventually, they realize how slow they are actually going and how hard it is to 
 
 You know where this vicious cycle leads to, you have seen it before. What these programmers leave behind is a trail of horrible, unmaintainable, unreadable, tangled and fragile code full of hacks, shortcuts and terrible tradeoffs.
 
-There are two values of software: the value of its *behavior* and the value of its *structure*. Implementing some behavior is just the first (and easiest) step. The next step is to clean the code and get its structure right. As Kent Beck puts it:
+![Road stripes]({{ site.baseurl }}/images/stripes.jpg)
+
+We've already discussed the values of *behavior* and *structure*. Now we'll put them into more context. Implementing some behavior is just the first (and easiest) step. The next one is to clean the code and get its structure right. As Kent Beck puts it:
 
 > First make it work.
 > Then make it right.
 > -- Kent Beck
 
+We first make it work because structure supports behavior, so we need to have that behavior in order to figure out how good structure would look like. On the other hand, structure is more important than behavior, so we prioritize fixing problems of structure over problems of behavior.
+
+In a gist, we get a story to work, then we get its structure right, and we don't work on the next story until that structure is right. In other words, the structure of the current story has higher priority than the behavior of the next story.
+
+You may ask yourself, what if that process is not in place where you work? What if you're not told to work that way? What's your true role in all this?
+
+# As engineers, we are also stakeholders of the system
+
+That's right, as engineers we have a stake at the success of the system you work on. Our entire career, our reputation, even our job itself depends on the success of our projects.
+
+Nowadays most software companies award their engineers with stocks and stock options, a fact that further proves the above claim. These companies know well that their engineers are in fact also stakeholders - they just want them to feel it too.
+
+As stakeholders we have a say in how a system is designed, structured, developed and evolved. It's our fingers on the keyboard, and it's our head on the line too.
+
+But we're more than just stakeholders; we're engineers, and one of the main reasons we were hired is because we know how to build software systems well, we know how to structure them in such a way that they last, and with that knowledge comes the responsibility to build the best product we can.
+
+
+
+ of your ability to know when things are about to go wrong. You know how to detect numerous problems before they happen, so it's part of your responsibilities to speak up when you smell trouble.
+
+
+
+
+
+
+# You don't need permission to do your job right
+
+Your role in relation to the life cycle of a software system is twofold.
+
+On the one hand, you are an engineer. You 
+
+
+
+
+
+
+
+
+
 As for the matter of speed, Robert C. Martin gives us a crystal clear answer:
 
 > In software, it never pays to rush. The only way to go fast is to go well. - Robert C. Martin
 
-As already mentioned, structure has bigger priority over behavior, therefore the job is not done until that second part is finished - making it right.
-
-
+ What if you're told to just keep delivering features and ignore everything else until you are told otherwise?
 
 # A software startup is not an urgent situation
 
@@ -81,6 +122,12 @@ They would be a lot better off - they would get done a lot faster with a lot few
 
 
 a production issue that costs the company 10.000$ a minute.
+
+
+
+
+
+You may be asking yourself, what if your boss doesn't give you the time required to do your job right? What is your true role in all this?
 
 
 
