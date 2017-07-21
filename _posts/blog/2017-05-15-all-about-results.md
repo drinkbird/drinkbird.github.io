@@ -30,11 +30,33 @@ Ask your boss what does she think is the most important aspect of a software pro
 
 It's all about results, and although perfectly reasonable, it doesn't mention anything about another - absolutely vital - ingredient of every single project: *quality*.
 
-Low-quality projects suffer from various defects and regressions, they are hard to maintain, hard to extend, and most importantly they frustrate or even harm their users and stakeholders.
+Low-quality projects suffer from various defects and regressions. They are hard to maintain, hard to extend, and most importantly they frustrate or even harm their users and stakeholders.
 
-The real question is, who's really responsible for keeping a project's quality high?
+The real question is, who's really responsible for keeping a project's quality high? Let's expose some common misconceptions about software engineering and discuss the engineer's true role in the evolution of a software system.
 
-Let's expose some common misconceptions about software engineering and discuss the engineer's true role.
+# We are not done when the program works
+
+Many programmers work in a way that aligns with what we described as the boss's definition of importance, thinking that their value as professionals comes from speed of development.
+
+They know they are paid a lot, so they get stressed about delivering a lot of functionality within short amounts of time. As a result they typically focus on just getting the code to work. Once they achieve it, they immediately jump to their next task in hope to go as fast as possible.
+
+Eventually, they realize how slow they are actually going and how hard it is to deliver new functionality, especially without causing regressions with every single change. That makes them feel like they are failing, which in turn causes them to rush even more.
+
+You know where this vicious cycle leads to, you have seen it before. What these programmers leave behind is a trail of horrible, unmaintainable, unreadable, tangled and fragile code full of hacks, shortcuts and terrible tradeoffs.
+
+There are two values of software: the value of its *behavior* and the value of its *structure*. Implementing some behavior is just the first (and easiest) step. The next step is to clean the code and get its structure right. As Kent Beck puts it:
+
+> First make it work.
+> Then make it right.
+> -- Kent Beck
+
+As for the question of speed, Robert C. Martin gives us a crystal clear answer:
+
+> In software, it never pays to rush. The only way to go fast is to go well. - Robert C. Martin
+
+Therefore, the job is not done until that second part is finished - making it right.
+
+# Structure VS Behavior
 
 
 
