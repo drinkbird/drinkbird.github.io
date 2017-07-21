@@ -1,13 +1,15 @@
 ---
 layout: post
 title: "It's all about results... or is it?"
-excerpt: "The art of trading short term gain for long term pain"
+excerpt: "Also known as 'The Mother of all Defects'"
 permalink: /all-about-results
 comments: true
 categories: blog
 featured: true
 image:
-  feature: whattopickupnext.png
+  feature: speed-kills.jpg
+  credit: youngcardriver.com
+  creditlink: "http://youngcardriver.com/driving/speed-kills/"
 reads:
   - fsharpforcsharpdevs
   - functionalreactive
@@ -24,7 +26,23 @@ reads:
   - themythicalmanmonth
 ---
 
-If you ask a businessperson what's the most important thing about a project, they will usually tell you that it's delivering *on time* and *on budget*. But what about *quality*? More often than not, it's not even considered as a priority but rather as something *nice to have*.
+Ask your boss what does she think is the most important aspect of a software project, and the response will usually be something along the lines of delivering a number of promised features *on time* and *on budget*.
+
+It's all about results, and although perfectly reasonable, it doesn't mention anything about another - absolutely vital - ingredient of every single project: *quality*.
+
+Low-quality projects suffer from various defects and regressions, they are hard to maintain, hard to extend, and most importantly they frustrate or even harm their users and stakeholders.
+
+The real question is, who's really responsible for keeping a project's quality high?
+
+Let's expose some common misconceptions about software engineering and discuss the engineer's true role.
+
+
+
+
+
+
+
+But what about *quality*? More often than not, it's not even considered as a priority but rather as something *nice to have*.
 
 In contrast with other industries though, software development's end products have no material form, their size and complexity are at least tricky to perceive, and parts of them that could make them or break them could be well-hidden within their 1s and 0s. The user interacts through some interface, and that's usually all they see; everything else is hidden underneath.
 
