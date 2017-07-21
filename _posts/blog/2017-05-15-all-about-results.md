@@ -34,6 +34,16 @@ Low-quality projects suffer from various defects and regressions. They are hard 
 
 The real question is, who's really responsible for keeping a project's quality high? Let's expose some common misconceptions about software engineering and discuss the engineer's true role in the evolution of a software system.
 
+# The first word of software is 'soft'
+
+It's essential for us to keep in mind the intention for inventing software in the first place. We conceived it as a vehicle of making the behavior of computers and machines easy to change. By producing software that's hard to change we essentially beat the purpose of its very existence.
+
+There are two values of software: the value of its *behavior* and the value of its *structure* (softness). Which of these two values is the most important, you ask? If you have worked in the software industry for more than a day, you will know that software requirements tend to change a lot.
+
+Stakeholders and users expect to have the ability to change the behavior of a program without paying high cost. This means that a program that's hard to change can become useless very quickly. On the other hand, a program that's easy to change is much more valuable, as it can keep adapting to new requirements and it will continue to work over the lifetime of the system.
+
+Therefore, structure should be given priority over behavior in all but the most urgent circumstances, and this brings us to the next point.
+
 # We are not done when the program works
 
 Many programmers work in a way that aligns with what we described as the boss's definition of importance, thinking that their value as professionals comes from speed of development.
@@ -50,14 +60,27 @@ There are two values of software: the value of its *behavior* and the value of i
 > Then make it right.
 > -- Kent Beck
 
-As for the question of speed, Robert C. Martin gives us a crystal clear answer:
+As for the matter of speed, Robert C. Martin gives us a crystal clear answer:
 
 > In software, it never pays to rush. The only way to go fast is to go well. - Robert C. Martin
 
-Therefore, the job is not done until that second part is finished - making it right.
+As already mentioned, structure has bigger priority over behavior, therefore the job is not done until that second part is finished - making it right.
 
-# Structure VS Behavior
 
+
+# A software startup is not an urgent situation
+
+requiring you to write messy, inflexible software. In fact the opposite is true. One thing that's absolutely certain about a software startup is that you are producing the wrong product. No product survives contact with the users. As soon as you put a product in the users' hands you will find out that you have built the product wrong in a hundred million ways and if you can't change it because you've made a mess you are doomed.
+
+they have this mentality that they are in some kind of devilishly urgent rush and they just have to get to the finish line and leave a huge mess in their wake.
+
+The truth is that that mess slows them down long before they get to the finish line causing all kinds of problems, and defects, and slowdowns, which makes them rush even more, making an even bigger mess.
+
+They would be a lot better off - they would get done a lot faster with a lot fewer problems if they just protected the structure of the system from harm.
+
+
+
+a production issue that costs the company 10.000$ a minute.
 
 
 
