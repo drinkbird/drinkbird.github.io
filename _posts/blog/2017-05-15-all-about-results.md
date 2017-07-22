@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "It's all about results... or is it?"
-excerpt: "Also known as 'The Mother of all Defects'"
+excerpt: "Also known as 'Speed: The Mother of all Software Defects'"
 permalink: /all-about-results
 comments: true
 categories: blog
@@ -32,7 +32,7 @@ It's all about results, and although perfectly reasonable, it doesn't mention an
 
 Low-quality projects suffer from various defects and regressions. They are hard to maintain, hard to extend, and most importantly they frustrate or even harm their users and stakeholders.
 
-The real question is, who's really responsible for keeping a project's quality high? Let's expose some common misconceptions about software engineering and discuss your true role as an engineer in relation to the life cycle of a software system.
+The real question is, who's really responsible for keeping a project's quality high? Let's expose some common misconceptions about software engineering and discuss your true role as an engineer.
 
 # The first word of software is 'soft'
 
@@ -42,11 +42,11 @@ There are two values of software: the value of its *behavior* and the value of i
 
 ![SOLID]({{ site.baseurl }}/images/solid-jenga.jpg)
 
-Stakeholders and users expect to have the ability to change the behavior of a program without paying high cost. This means that a program that's hard to change can become useless very quickly. On the other hand, a program that's easy to change is much more valuable, as it can keep adapting to new requirements and it will continue to work over the lifetime of the system.
+Stakeholders and users expect to have the ability to change the behavior of a program without paying high cost. This means that a program that's hard to change can become useless very quickly. On the other hand, a program that's easy to change is much more valuable, as it can keep adapting to new requirements and keep working over the lifetime of the system.
 
 Therefore, structure should be given priority over behavior in all but the most urgent situations. We will discuss such situations below, but first we need to make an important point.
 
-# We are not done when the program works
+# You are not done when the program works
 
 Many programmers work in a way that aligns with what we described as the boss's definition of importance, thinking that their value as professionals comes from speed of development.
 
@@ -64,42 +64,60 @@ We've already discussed the values of *behavior* and *structure*. Now we'll put 
 > Then make it right.
 > -- Kent Beck
 
-We first make it work because structure supports behavior, so we need to have that behavior in order to figure out how good structure would look like. On the other hand, structure is more important than behavior, so we prioritize fixing problems of structure over problems of behavior.
+You should first make it work because structure supports behavior, so you need to have that behavior in place in order to figure out how good structure would look like. On the other hand, structure is more important than behavior, so you should prioritize fixing problems of structure over problems of behavior.
 
-In a gist, we get a story to work, then we get its structure right, and we don't work on the next story until that structure is right. In other words, the structure of the current story has higher priority than the behavior of the next story.
+So the structure of the current story has higher priority than the behavior of the next story. In other words, you get a story to work, then you get its structure right, and you don't work on the next story until that structure is right.
 
-You may ask yourself, what if that process is not in place where you work? What if you're not told to work that way? What's your true role in all this?
+You may be asking, what happens when your boss doesn't give you the time to do you job properly? What should you do when that process is not even in place where you work? What is your true role?
 
-# As engineers, we are also stakeholders of the system
+# You are a stakeholder of the system
 
-That's right, as engineers we have a stake at the success of the system you work on. Our entire career, our reputation, even our job itself depends on the success of our projects.
+That's right. As an engineer you have a stake at the success of the system you work on. Your entire career, your reputation, even your employment depends on the success of your projects.
 
-Nowadays most software companies award their engineers with stocks and stock options, a fact that further proves the above claim. These companies know well that their engineers are in fact also stakeholders - they just want them to feel it too.
+Nowadays most software companies award their engineers with stocks and stock options, a fact that further proves that claim. These companies know well that their engineers are in fact stakeholders and they want them to feel it too.
 
-As stakeholders we have a say in how a system is designed, structured, developed and evolved. It's our fingers on the keyboard, and it's our head on the line too.
+And as a stakeholder you have a say in how a system is designed, structured, developed and evolved. It's your fingers on the keyboard and your head on the line too.
 
-But we're more than just stakeholders; we're engineers, and one of the main reasons we were hired is because we know how to build software systems well, we know how to structure them in such a way that they last, and with that knowledge comes the responsibility to build the best product we can.
+![Digging]({{ site.baseurl }}/images/digging.jpg)
+
+But you're more than just a stakeholder. You're an engineer, and with that comes the duty to create systems in ways that do no harm to either behavior or structure.
+
+# Protecting the system's structural quality is your responsibility
+
+It's not your boss's job to worry about the quality of the system's structure; it's your job. Your boss simply assumes that you always protect the structural quality while implement really urgent behaviors.
+
+Does your boss understand the SOLID principles? Does your boss understand Dependency Inversion, Design Patterns, Test Driven Development? Does your boss understand the principles of good software design? Or is your boss's understanding limited only to behavior? 
+
+One of the main reasons you were hired is because you know how to build software systems well, you know how to structure them in such a way that they last, and with that knowledge comes the responsibility to build the best product you can.
+
+On top of that, you were also hired for your ability to know when things are about to go wrong. You know how to detect numerous problems before they happen, so it's part of your responsibilities to speak up when you smell trouble.
+
+You may now be asking, what if your boss insists that you forget about the structure and just focus on behavior?
+
+# You should refuse taking action that opposes your duties
+
+You should refuse to take action that purposefully harms the structural quality of the system. You have the right to refuse because you are a stakeholder. You have the duty to refuse because you are an engineer.
+
+Yes, there will probably be some confrontation, and yes, it will most likely be uncomfortable, but most managers expect to negotiate to get the things they want. They don't admit it, but they appreciate people who do the same. It won't be professional on your end to just cave in and simply agree on everything.
+
+[As an engineer you have responsibilities that no boss can override](http://blog.drinkbird.com/the-doctor-and-the-demanding-patient-metaphor-do-no-harm/). You don't need permission to do your duty, you just do it. Taking responsibility for things of great importance and sticking to your guns to protect them is the professional thing to do. On that extend, no software system should ship unless a software engineer approves it. It's the exact same principle as with [civil engineers](https://en.wikipedia.org/wiki/Civil_engineering) and buildings.
+
+Of course it's not all black and white. There will be situations that you're very close to the goal, and your customer expects the solution tomorrow. In such cases where you know that the system only suffers from minor structural defects, you can go ahead and ship it.
+
+**BUT**, once you ship, the next step is to cleanup the system and fix these structural problems *before* you implement any new behavior. By knowingly allowing defects to accumulate you act unprofessionally, allowing all future behaviors to be built upon defective structure.
+
+The same goes for hotfixes and really urgent situations. Urgent means something that could be proven catastrophic for your company or system and should be fixed right away, eg. a bug that makes your company lose 10000$ per minute. On that extend:
+
+# A software startup is not an urgent situation
 
 
-
- of your ability to know when things are about to go wrong. You know how to detect numerous problems before they happen, so it's part of your responsibilities to speak up when you smell trouble.
-
+# Engineers who take no responsibility should be paid minimum wage
 
 
+# Summary
 
 
-
-# You don't need permission to do your job right
-
-Your role in relation to the life cycle of a software system is twofold.
-
-On the one hand, you are an engineer. You 
-
-
-
-
-
-
+# References
 
 
 
@@ -126,11 +144,7 @@ a production issue that costs the company 10.000$ a minute.
 
 
 
-
-You may be asking yourself, what if your boss doesn't give you the time required to do your job right? What is your true role in all this?
-
-
-
+protecting the structure also protects behavior (regressions).
 
 
 
