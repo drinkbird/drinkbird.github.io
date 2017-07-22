@@ -88,6 +88,9 @@ It's not your boss's job to worry about the quality of the system's structure; i
 
 Does your boss understand the SOLID principles? Does your boss understand Dependency Inversion, Design Patterns, Test Driven Development? Does your boss understand the principles of good software design? Or is your boss's understanding limited only to behavior? 
 
+![Tasks](https://imgs.xkcd.com/comics/tasks.png)
+<p class="text-center">Image source: <a href="https://xkcd.com/1425/">xkcd.com</a></p>
+
 One of the main reasons you were hired is because you know how to build software systems well, you know how to structure them in such a way that they last, and with that knowledge comes the responsibility to build the best product you can.
 
 On top of that, you were also hired for your ability to know when things are about to go wrong. You know how to detect numerous problems before they happen, so it's part of your responsibilities to speak up when you smell trouble.
@@ -100,15 +103,24 @@ You should refuse to take action that purposefully harms the structural quality 
 
 Yes, there will probably be some confrontation, and yes, it will most likely be uncomfortable, but most managers expect to negotiate to get the things they want. They don't admit it, but they appreciate people who do the same. It won't be professional on your end to just cave in and simply agree on everything.
 
-[As an engineer you have responsibilities that no boss can override](http://blog.drinkbird.com/the-doctor-and-the-demanding-patient-metaphor-do-no-harm/). You don't need permission to do your duty, you just do it. Taking responsibility for things of great importance and sticking to your guns to protect them is the professional thing to do. On that extend, no software system should ship unless a software engineer approves it. It's the exact same principle as with [civil engineers](https://en.wikipedia.org/wiki/Civil_engineering) and buildings.
+![Negotiating]({{ site.baseurl }}/images/negotiation.jpg)
+<p class="text-center">Image source: <a href="http://www.stoneupdate.com/news-info/company-insider/979-caesarstone-fends-off-kibbutz-challenge">stoneupdate.com</a></p>
+
+As an engineer you have [responsibilities that no boss can override](http://blog.drinkbird.com/the-doctor-and-the-demanding-patient-metaphor-do-no-harm/). You don't need permission to do your duty, you just do it. Taking responsibility for things of great importance and sticking to your guns to protect them is the professional thing to do. On that extend, no software system should ship unless a software engineer approves it. It's the exact same principle as with [civil engineers](https://en.wikipedia.org/wiki/Civil_engineering) and buildings.
 
 Of course it's not all black and white. There will be situations that you're very close to the goal, and your customer expects the solution tomorrow. In such cases where you know that the system only suffers from minor structural defects, you can go ahead and ship it.
 
 **BUT**, once you ship, the next step is to cleanup the system and fix these structural problems *before* you implement any new behavior. By knowingly allowing defects to accumulate you act unprofessionally, allowing all future behaviors to be built upon defective structure.
 
-The same goes for hotfixes and really urgent situations. Urgent means something that could be proven catastrophic for your company or system and should be fixed right away, eg. a bug that makes your company lose 10000$ per minute. On that extend:
+![Under the rug]({{ site.baseurl }}/images/rug.png)
+<p class="text-center">Original image source: <a href="https://quotesfest.com/download/77684fb5326153258b28cc6c8e52e04e0ec91e5b.html">quotesfest.com</a></p>
+
+The same goes for hotfixes and really urgent situations. *Urgent* refers to something that could be proven catastrophic for your company or system and should be fixed right away, eg. a production bug that makes your company lose 10000$ per minute. On that extend:
 
 # A software startup is not an urgent situation
+
+![Move Fast and Break Things](https://imgs.xkcd.com/comics/move_fast_and_break_things.png)
+<p class="text-center">Image source: <a href="https://xkcd.com/1428/">xkcd.com</a></p>
 
 
 # Engineers who take no responsibility should be paid minimum wage
