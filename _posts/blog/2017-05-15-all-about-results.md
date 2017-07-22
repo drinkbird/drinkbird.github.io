@@ -11,19 +11,22 @@ image:
   credit: youngcardriver.com
   creditlink: "http://youngcardriver.com/driving/speed-kills/"
 reads:
-  - fsharpforcsharpdevs
-  - functionalreactive
-  - microservices
-  - buildingmicroservices
-  - microservicearch
-  - domaindrivendesign
-  - streamingarch
-  - softskills
+  - thecleancoder
+  - agileppp
+  - cleancode
+  - refactoring
   - legacycode
+  - leanstartup
+  - artofunittesting
+  - softskills
+  - themythicalmanmonth
   - effectiveusecases
   - userstoriesapplied
-  - artofunittesting
-  - themythicalmanmonth
+  - domaindrivendesign
+  - pragmaticprogrammer
+  - gofdp
+  - 97things
+  - softskills
 ---
 
 Ask your boss what does she think is the most important aspect of a software project, and the response will usually be something along the lines of delivering a number of promised features *on time* and *on budget*.
@@ -110,223 +113,72 @@ As an engineer you have [responsibilities that no boss can override](http://blog
 
 On that extend, no software system should ship unless a software engineer approves it. It's the exact same principle as with [civil engineers](https://en.wikipedia.org/wiki/Civil_engineering) and buildings.
 
-And what if you're afraid of losing your job? You should keep this in mind:
-
-# Programmers who take no responsibility should be paid minimum wage
-
-Of course it's your boss's right to fire you if they don't agree with your methods, but if your professionalism leads you to lose your job, chances are that you work for the wrong boss in the first place.
-
-It's up to you to decide what kind of programmer you want to be, but
+That of course doesn't mean that you should be inflexible. After all, you and the business have a common goal - success - and you both succeed and fail as a team, so...
 
 # Know the rules well, so you can break them efficiently
 
-Of course it's not all black and white. There will be situations that you're very close to the goal, and your customer expects the solution tomorrow.
+It's not all black and white. There will be situations that you're very close to the goal, and your customer expects the solution tomorrow.
 
-In such cases where you know that the structure is close, and the system only suffers from minor structural defects, you can go ahead and ship it.
+In such cases where you know that the structure is close, and the system suffers from minor structural defects only, you can go ahead and ship it.
 
-**BUT**, once you ship, the next step is to cleanup the system and fix these structural problems *before* you implement any new behavior. By knowingly allowing defects to accumulate you act unprofessionally, allowing all future behaviors to be built upon defective structure.
+**But**, once you ship, the next step is to cleanup the system and fix these structural problems *before* you implement any new behavior. By knowingly allowing defects to accumulate you act unprofessionally, allowing all future behaviors to be built upon defective structure.
 
 ![Under the rug]({{ site.baseurl }}/images/rug.png)
 <p class="text-center">Original image source: <a href="https://quotesfest.com/download/77684fb5326153258b28cc6c8e52e04e0ec91e5b.html">quotesfest.com</a></p>
 
-The same goes for hotfixes and really urgent situations. *Urgent* refers to something that could be proven catastrophic for your company or system and should be fixed right away, eg. a production bug that makes your company lose 10000$ per minute. On that extend:
+The same goes for hotfixes and really urgent situations. And *urgent* refers to something that could be proven catastrophic for your company or system and should be fixed right away, eg. a production bug that makes your company lose 10000$ per minute.
+
+It's extremely rare for properly engineered systems to suffer from such defects. As for new functionality, it's *important* but not *urgent*, and these are two different things. On that extend... 
 
 # A software startup is not an urgent situation
+
+Unfortunately most software startups have a very specific mindset that urges them to write messy, inflexible software as quickly as possible.
+
+It is as if they are competing at some race and have to get to the finish line first, whatever means necessary, leaving a huge trail of debris in their wake.
 
 ![Move Fast and Break Things](https://imgs.xkcd.com/comics/move_fast_and_break_things.png)
 <p class="text-center">Image source: <a href="https://xkcd.com/1428/">xkcd.com</a></p>
 
+One thing that's certain about a software startup is that you're going to build the wrong product. No product survives intact from the hands of users. As soon as you expose your product to the users you'll realize that you have built it wrong in a million ways, and you'll need to change it and adapt, again and again.
 
+Remember what makes software *soft*? Good structure! If your system suffers from defects and you can't change it because you have made a mess, you are bound to fail.
 
+Messy code slows down software startups long before they get to the finish line. They cause all kinds of problems, defects and slowdowns. This makes them rush even more, causing even more harm, and leading them to the same death spiral we discussed previously - just much sooner.
+
+These startups would be much better off, and they would go much faster, if they acted professionally and protected the structure of the system from harm.
+
+> In software, it never pays to rush. The only way to go fast is to go well.<br/> -- Robert C. Martin
+
+Don't confuse that rush with that of the business side to discover and build the right product. That should not affect the engineering side, as there are [proven techniques](http://blog.drinkbird.com/lean-startup-book-review/) for building the right product incrementally, and only engage engineering when absolutely necessary. That way there are no excuses for making a mess.
+
+# What if you don't want all that responsibility?
+
+Unfortunately, lots of programmers feel that way. They simply want to be told what to do and just do it. They try to avoid confrontation at all cost. They never say no, no matter how justified this answer would be, in favor of job security or more money.
+
+These people usually end up keeping a passive-aggressive stance that not only doesn't help the business, but ends up causing even more problems.
+
+`¯\_(ツ)_/¯`
+
+That kind of behavior is partly justified for juniors because they might not know any better, but not for anybody else.
+
+Programmers who feel that way should be paid minimum wage, because that's exactly how much their work output is worth.
+
+Of course it's your boss's right to fire you if they don't agree with your methods, but if your professionalism leads your boss to fire you, chances are that you work for the wrong boss in the first place.
 
 # Summary
 
+It's you, the engineer, who's responsible for maintaining the structural quality of the system you work on. The business side just asks for behaviors while always assuming that you keep the structural quality high.
+
+You negotiate if needed for your rights as a stakeholder, and you stand by your duties as an engineer. You make tradeoffs when necessary, but never more tradeoffs that you can afford.
+
+<div style="width:100%;height:0;padding-bottom:41%;position:relative;"><iframe src="https://giphy.com/embed/Lvand4cUuA6xG" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/life-seth-rogen-this-is-the-end-Lvand4cUuA6xG">via GIPHY</a></p>
+
+The code that you produce should always be your best work, and you should never allow the structure and behavior of the system to get out of hand.
+
+Remember, speed kills, it's the mother of all software defects. You can be all about results, but make sure that you don't just focus on behavior while letting the structure rot. This is not just unprofessional, but usually leads to harming the business, the customers and the users.
+
+Don't be that guy.
 
 # References
 
-
-
-As for the matter of speed, Robert C. Martin gives us a crystal clear answer:
-
-> In software, it never pays to rush. The only way to go fast is to go well. - Robert C. Martin
-
- What if you're told to just keep delivering features and ignore everything else until you are told otherwise?
-
-# A software startup is not an urgent situation
-
-requiring you to write messy, inflexible software. In fact the opposite is true. One thing that's absolutely certain about a software startup is that you are producing the wrong product. No product survives contact with the users. As soon as you put a product in the users' hands you will find out that you have built the product wrong in a hundred million ways and if you can't change it because you've made a mess you are doomed.
-
-they have this mentality that they are in some kind of devilishly urgent rush and they just have to get to the finish line and leave a huge mess in their wake.
-
-The truth is that that mess slows them down long before they get to the finish line causing all kinds of problems, and defects, and slowdowns, which makes them rush even more, making an even bigger mess.
-
-They would be a lot better off - they would get done a lot faster with a lot fewer problems if they just protected the structure of the system from harm.
-
-
-
-a production issue that costs the company 10.000$ a minute.
-
-
-
-
-protecting the structure also protects behavior (regressions).
-
-
-
-But what about *quality*? More often than not, it's not even considered as a priority but rather as something *nice to have*.
-
-In contrast with other industries though, software development's end products have no material form, their size and complexity are at least tricky to perceive, and parts of them that could make them or break them could be well-hidden within their 1s and 0s. The user interacts through some interface, and that's usually all they see; everything else is hidden underneath.
-
-On top of that, a seemingly small change in a project's requirements can easily translate to great amounts of additional manhours, or what's been asked can simply be impossible to implement. The tricky part, though, is effectively communicating these kinds of problems to the business, [who sometimes won't take *no* for an answer](http://blog.drinkbird.com/the-doctor-and-the-demanding-patient-metaphor-do-no-harm/).
-
-![Tasks](https://imgs.xkcd.com/comics/tasks.png)
-<p class="text-center">Image source: <a href="https://xkcd.com/1425/">xkcd.com</a></p>
-
-## Blurred lines
-
-The constant pressure for [producing new features and fixing bugs under tight deadlines](http://blog.drinkbird.com/the-surgeon-and-the-deadline/) can easily blur our judgement. These activities may require extensive rework of the existing code base, but usually there is also some dirty shortcut that might get the job done with just a few lines of code.
-
-It might create some mess and break a few tests but you can just skip those and clean up the code later. It's all about being agile, moving fast and delivering results...
-
-![Move Fast and Break Things](https://imgs.xkcd.com/comics/move_fast_and_break_things.png)
-<p class="text-center">Image source: <a href="https://xkcd.com/1428/">xkcd.com</a></p>
-
-Or even better, you can opt-out of running tests altogether! Can't get more agile than that...
-
-![Roll Safe with Tests]({{ site.baseurl }}/images/tests-roll-safe.png)
-
-## Staying out of debt
-
-Sarcasm aside, lowering your standards when quality work seems out of reach feels like a natural reaction, but in reality it's an unbalanced tradeoff, a short term-gain in exchange for some long-term pain, also known as *technical debt*.
-
-The problem with debt is that it needs to be paid off, *with interest*. Left unpaid, technical debt can easily pile up and lead to technical bankruptcy, when making a change in code ends up being more expensive than the value this change provides.
-
-Having engineering discipline, [being team a player](http://blog.drinkbird.com/bursting-the-bubble-of-ego/), and operating professionally under pressure are all prerequisites for your project's long-term success, *given that you care about that*.
-
-Wait, what?
-
-![Confused]({{ site.baseurl }}/images/squirrel-confused.png)
-<!-- https://pixabay.com/en/squirrel-reading-books-surprise-304021/ -->
-
-## Why wouldn't someone care about their project's long-term success?
-
-I'm glad you asked.
-
-As the software industry keeps growing exponentially, there is a big push to get more and more people into it. Inevitably, it also becomes more and more difficult for companies to find talented people with the right mindset. Therefore, hiring standards keep relaxing while at the same time the average quality of developers keeps dropping.
-
-Especially when combined with all the challenges mentioned earlier in the article, that fact brings some interesting side effects into the mix, causing a number of behavioral patterns to emerge. Let's describe some of the most prominent ones.
-
-### Novices
-
-Uncle Bob has written an excellent [article](http://blog.cleancoder.com/uncle-bob/2014/06/20/MyLawn.html) about how the industry is overall dominated by novice developers, and is in fact going to remain in a state of perpetual immaturity - indefinitely. Given the demographics presented in the article, the ratio of novice to experienced developers within the average software company is *16:1*!
-
-Novice developers want to learn as much as they can, experiment with different approaches / programming languages / frameworks, apply what they just saw at a blog / tutorial / book / conference without necessarily solving a real problem or be aware of the risks, and they typically produce tons of brute-force style code, often by copying and pasting snippets from the internet.
-
-![Google-Fu]({{ site.baseurl }}/images/googlefu.jpg)
-
-It's not unusual for such a person to create more debt than the actual value he/she brings to the table, and yet that's fine as it's part of their learning journey and something to be expected. The point here is that young programmers usually focus on building up their career, but their goals don't necessarily include the long-term success of the project they happen to be working on.
-
-When working with such people try to be extra patient and understanding. Provide good guidance and explain as much as possible, in order to set a good example and lead them towards becoming better professionals. Mentoring novice programmers has actually been one of the most rewarding elements of my career; apart from being fun, I usually end up learning something new myself.
-
-### Hipsters
-
-Programming hipsters count more as "know it all" posers rather than actual computer scientists. They strategically avoid industry standards, battle-tested approaches, or widely used libraries, often characterizing them as "too mainstream".
-
-Instead, they prefer to keep reinventing the wheel and roll their own implementations, which of course are done in the most complex and inefficient way possible to demonstrate their superior intellect. Of course nobody else can maintain their solutions, which backfire sooner or later anyway.
-
-![Hipsort]({{ site.baseurl }}/images/hipsort.png)
-<p class="text-center">Original image source: <a href="http://www.broadsheet.ie/tag/typewriter/">broadsheet.ie</a></p>
-
-In case they decide to not implement everything from scratch, they will typically try to use something that's still in alpha or beta, and has no support structure or community.
-
-Programming hipsters are guaranteed sources of technical debt for any kind of project, big or small. It's their niche. The only reason they would care about a project's success would be to show off more effectively and hope for recognition. Not exactly the kind of results you would expect from a software professional.
-
-Unfortunately, some of them have made their way into places you would never expect to find them. If you are unlucky enough to work with one, just be aware of what to expect. Eventually, someone will have to clean up after them, and there's a good opportunity that this someone is you.
-
-### Cave-Coders
-
-They started their career with a *bang*, but it turned out to be a firework. These people focused too much and too long on a limited number of technologies or techniques and never bothered to keep up with the industry, usually claiming they were "too busy" or that "old ways are the best".
-
-While software development is in general a highly-opinionated profession, there is one hard rule: **keep learning or leave the industry**. Holding forever on what you learned once upon a time and refusing to evolve is like running with your car on a highway forever and never bother checking your gas tank level. Failure guaranteed.
-
-Cave coders are easy to spot, typically because they use obsolete languages, libraries, tooling, operating systems etc., that are not even being supported by their manufacturers anymore. Their code usually has no tests, and one little change can cause terrible regressions.
-
-One thing they are very efficient at is making excuses for sticking to their ways and not evolving. They won't read technical books because *"theory is alright but what happens in the real world is another story"*. They won't read blogs, tutorials, or go to conferences because *"what others do in their projects solve their own specific problems, not ours"*.
-
-![Fossil Keyboard]({{ site.baseurl }}/images/fossil-keyboard.jpg)
-<p class="text-center">Image source: <a href="http://boingboing.net/2009/04/06/fossil-keyboard.html">boingboing.net</a></p>
-
-In general, hey won't accept anything they are not already familiar with. The worse part is that many of them recognize their inability or unwillingness to train on new technologies and eventually jump into management roles, where they usually don't have to code a lot (or at all) but they can more efficiently steer their teams towards a cliff.
-
-If you come across such people try to minimize contact. If they become your manager, run. And ju=ust to be clear, being a cave-coder does not imply a certain age. I'd say that anyone working in the industry for more than about 7-10 years is in danger of falling into this category.
-
-Cave-coders would care about a project's long-term success only if it comes with personal benefits and job security. Speaking of which, ...
-
-### Job Security Specialists
-
-![Fossil Keyboard]({{ site.baseurl }}/images/computer-user-roots.jpg)
-<p class="text-center">Image source: <a href="https://geroldblog.com/2011/11/04/humor/computer-user-roots/">geroldblog.com</a></p>
-
-### Gold Diggers
-
-![Under the rug]({{ site.baseurl }}/images/rug.png)
-<p class="text-center">Original image source: <a href="https://quotesfest.com/download/77684fb5326153258b28cc6c8e52e04e0ec91e5b.html">quotesfest.com</a></p>
-
-
-
-
-
-in order to keep the business temporarily happy, as themselves keep crossing off items from their personal agendas.
-
-Their motives may vary, but the end result is always the same; any project they touch ends up with loads of technical debt, or even bankrupt. It's usually not too long before small regressions start causing problems, but the root causes are typically swept under the rug .
-
-
-
-
- Although the business keeps getting some short-term benefits for a while, the amount of debt makes it harder and harder for new changes to be integrated to the codebase. 
-
-keeps receiving their short-term benefits for some time, it's usually too late 
-
-
-
-
-
-*I highly doubt that somebody who reads this blog falls into that category. In case you do, [welcome to your tape](http://www.urbandictionary.com/define.php?term=Welcome%20to%20your%20Tape).*
-
-
-
-
-### Novices & Mentors
-
-For an young and inexperienced programmer, the energy, enthusiasm and curiosity for the job often leads to code being produced by the kilo (or the pound, depending on where you live), mostly by copying and pasting from books and Stack Overflow. It's not unusual for such a person to create more mess than the actual value he/she brings to the table. And yet that's fine, as it's part of their learning journey and something to be anticipated.
-
-![Google-Fu]({{ site.baseurl }}/images/googlefu.jpg)
-
-The problem is in the numbers. Uncle Bob has written an excellent [article](http://blog.cleancoder.com/uncle-bob/2014/06/20/MyLawn.html) about how the industry is overall dominated by novice developers, and is in fact going to remain in a state of perpetual immaturity - indefinitely. Given the demographics presented in the article, the ratio of novice to experienced developers within the average software company is *16:1*!
-
-For the experienced person, that ratio is a whole different challenge. They don't just have to deliver on time and on budget, but mentor the novices and clean up after their mistakes too. Such a situation can easily get out of control. It can eventually drive the experienced person to lose perspective, forget about the project's long-term success, and instead focus on making it through the day having a working build.
-
-On the other hand, young programmers want to learn as much as they can, experiment with different approaches / programming languages / frameworks, apply what they just read in a blog / saw at a conference without usually solving a real problem or calculating the risk first, and overall build up on their experience and reputation. In other words, a young programmer's goals don't necessarily involve the long-term success of the project they happen to be working on.
-
-### Hipsters
-
-
-### Dinosaurs & job security enthusiasts
-
-
-
-
-
-
-
-
-
-
-
-
-
-The rush to produce results - *any results* - before the deadline leads to poor decisions, messy code bases, regressions, unhappy developers, and most importantly, unhappy users.
-
-
-
-
+Almost the entirety of this article's content comes from Robert C. Martin's [Clean Coders video series](https://cleancoders.com/videos). I highly encourage you to sign up and purchase all Uncle Bob's videos, as they contain extremely valuable knowledge for our craft. The video series is also available in [Safari Books Online](https://www.safaribooksonline.com/library/view/clean-coder-clean/9780134843803/).
