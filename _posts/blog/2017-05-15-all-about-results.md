@@ -106,9 +106,23 @@ Yes, there will probably be some confrontation, and yes, it will most likely be 
 ![Negotiating]({{ site.baseurl }}/images/negotiation.jpg)
 <p class="text-center">Image source: <a href="http://www.stoneupdate.com/news-info/company-insider/979-caesarstone-fends-off-kibbutz-challenge">stoneupdate.com</a></p>
 
-As an engineer you have [responsibilities that no boss can override](http://blog.drinkbird.com/the-doctor-and-the-demanding-patient-metaphor-do-no-harm/). You don't need permission to do your duty, you just do it. Taking responsibility for things of great importance and sticking to your guns to protect them is the professional thing to do. On that extend, no software system should ship unless a software engineer approves it. It's the exact same principle as with [civil engineers](https://en.wikipedia.org/wiki/Civil_engineering) and buildings.
+As an engineer you have [responsibilities that no boss can override](http://blog.drinkbird.com/the-doctor-and-the-demanding-patient-metaphor-do-no-harm/). You don't need permission to do your duty, you just do it. Taking responsibility for things of great importance and sticking to your guns to protect them is the professional thing to do.
 
-Of course it's not all black and white. There will be situations that you're very close to the goal, and your customer expects the solution tomorrow. In such cases where you know that the system only suffers from minor structural defects, you can go ahead and ship it.
+On that extend, no software system should ship unless a software engineer approves it. It's the exact same principle as with [civil engineers](https://en.wikipedia.org/wiki/Civil_engineering) and buildings.
+
+And what if you're afraid of losing your job? You should keep this in mind:
+
+# Programmers who take no responsibility should be paid minimum wage
+
+Of course it's your boss's right to fire you if they don't agree with your methods, but if your professionalism leads you to lose your job, chances are that you work for the wrong boss in the first place.
+
+It's up to you to decide what kind of programmer you want to be, but
+
+# Know the rules well, so you can break them efficiently
+
+Of course it's not all black and white. There will be situations that you're very close to the goal, and your customer expects the solution tomorrow.
+
+In such cases where you know that the structure is close, and the system only suffers from minor structural defects, you can go ahead and ship it.
 
 **BUT**, once you ship, the next step is to cleanup the system and fix these structural problems *before* you implement any new behavior. By knowingly allowing defects to accumulate you act unprofessionally, allowing all future behaviors to be built upon defective structure.
 
@@ -123,7 +137,6 @@ The same goes for hotfixes and really urgent situations. *Urgent* refers to some
 <p class="text-center">Image source: <a href="https://xkcd.com/1428/">xkcd.com</a></p>
 
 
-# Engineers who take no responsibility should be paid minimum wage
 
 
 # Summary
