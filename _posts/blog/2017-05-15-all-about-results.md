@@ -182,4 +182,4 @@ This is not only unprofessional, but also leads to harming the business, the cus
 
 # References
 
-Almost the entirety of this article's contents comes from Robert C. Martin's [Clean Coders video series](https://cleancoders.com/videos). I highly encourage you to get the whole video series and watch it again and again, as it contains extremely valuable knowledge for our craft. It is also available in [Safari Books Online](https://www.safaribooksonline.com/library/view/clean-coder-clean/9780134843803/).
+Almost the entirety of this article's contents come from Robert C. Martin's [Clean Coders video series](https://cleancoders.com/videos). I highly encourage you to get the whole video series and watch it again and again, as it contains extremely valuable knowledge for our craft. It is also available in [Safari Books Online](https://www.safaribooksonline.com/library/view/clean-coder-clean/9780134843803/).
