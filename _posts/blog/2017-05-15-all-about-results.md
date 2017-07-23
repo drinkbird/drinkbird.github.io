@@ -28,6 +28,10 @@ reads:
   - hfdesignpatterns
   - 97things
   - softskills
+  - dpruby
+  - csharpindepth
+  - interactiondesign
+  - showyourwork
   - codecomplete
 ---
 
@@ -160,11 +164,29 @@ Unfortunately, lots of programmers feel that way. They simply want to be told wh
 
 These people usually end up keeping a passive-aggressive stance that not only doesn't help the business, but ends up causing even more problems.
 
-`¯\_(ツ)_/¯`
+![Passive-aggressive]({{ site.baseurl }}/images/passive-aggressive.jpg)
 
 Programmers who feel that way should be paid minimum wage, because that's how much their work output is worth - if not less.
 
 Of course it's your boss's right to fire you if they don't agree with your methods, but if your professionalism makes you lose your job, chances are that you work for the wrong boss in the first place.
+
+# And what if you don't work on an important piece of software?
+
+At this point you may be wondering, does everything discussed still apply for any kind of software, or just for high-risk systems? What if you are working on a chat application, or a simplistic web portal where users can order t-shirts?
+
+What if someone using your chat application has a heart attack and the last thing he does is to send a message for help? What would happen if that message goes nowhere because your software is problematic?
+
+What if your t-shirt portal leaks sensitive information that will be used by somebody to steal your customers' money?
+
+The software you are working on may not have the potential to [kill people](https://en.wikipedia.org/wiki/2009%E2%80%9311_Toyota_vehicle_recalls), but it's very easy to underestimate the harm it can cause.
+
+> Tech excellence should be a goal of every company involved with software development, no matter if that's part of their main business or not.
+
+Unfortunately, lots of them have a strategy of hiring many low-cost programmers instead of fewer but highly-skilled ones, thinking that quantity is more important that quality.
+
+<div style="width:100%;height:0;padding-bottom:70%;position:relative;"><iframe src="https://giphy.com/embed/rAm0u2k17rM3e" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/pokemon-school-college-rAm0u2k17rM3e">via GIPHY</a></p>
+
+What these companies actually achieve is to be in a constant state of fire fighting and bug triaging. Their programmers are constantly burned out, and their work environment is nothing but healthy. Needless to say that you don't want to be one of these programmers.
 
 # Summary
 
