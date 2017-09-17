@@ -9,19 +9,27 @@ image:
 
 ## Background
 
-My name is Anastasios Piotopoulos. I'm a passionate software engineer and aspirant software architect, specialized in web and cloud technologies, having a lifelong mission of solving problems through building high-quality software.
+I'm Anastasios (Tasos) Piotopoulos, a passionate software engineer (M.Sc.) and aspiring architect, specialized in web and cloud technologies. My lifelong mission is solving problems through building high-quality software.
 
-Every successful software design is grown and forged through myriads of decisions, often made by many different people. My passion, therefore, lies in working with a strong team that understands this process, knows how to avoid waste and unnecessary technical debt, and highly focuses on code readability, robustness, testability and extensibility.
+Every successful software design is grown and forged through myriads of decisions, often made by many different people. My passion, therefore, lies in working with a strong team that understands this process, knows how to avoid waste and unnecessary technical debt, has a strong sense of responsibility and collective ownership, and also highly focuses on code readability, robustness, testability and extensibility.
+
+#### What is this blog about?
+
+The software industry continuously pushes us towards producing more, and faster, often disregarding quality. That's when priorities get blurry, corners get cut, and mediocre software comes into life. Then instead of solving interesting problems, teams waste their time and energy fighting with bugs and production issues, until technical debt becomes impossible to repay and projects go bankrupt.
+
+As software professionals we need to have engineering discipline, be ready to fight for the long term success of our projects, stop counting productivity by the lines of committed code, and start seeing the bigger picture.
+
+In this blog I distill some of my knowledge from the industry and literature, in hope to motivate and inspire both new and seasoned programmers to be the best versions of themselves and excel in the industry.
 
 #### Technologies
 
-One of the principles I live by is being pragmatic rather than dogmatic and [pick the right tool for the job](http://c2.com/cgi/wiki?PickTheRightToolForTheJob) on a case-by-case basis. During my career I have been involved in the construction of everything from simple tooling to enterprise cloud solutions. I have delivered projects using a variety of languages, frameworks and tools, such as Ruby, Java, python, JavaScript, iOS, Android, Dynamics CRM and more.
+One of the principles I live by is being pragmatic rather than dogmatic and [pick the right tool for the job](http://c2.com/cgi/wiki?PickTheRightToolForTheJob) on a case-by-case basis. During my career I have been involved in the construction of everything from simple tooling to enterprise cloud solutions, and have delivered projects using a variety of languages, platforms, libraries and tools, such as C#/F#/.NET, Scala, Kafka, Containers, JavaScript / TypeScript, Java, Ruby, python, Objective C, iOS, Android, Dynamics CRM and more.
 
-During the last few years I've been mostly working with C#, ASP.NET MVC, Web API, Angular, TypeScript, NodeJS, Microservices, and Microsoft Azure cloud services. Next stop will possibly be a functional language, such as F# or Clojure.
+During the last few years I've been mostly working with distributed systems, Microservices, Event Sourcing, Domain Driven Design, and architectural patterns for the cloud, mostly around resiliency, scalability and testing. Lately, I've been exploring functional programming with F# and Scala, and have been working towards combining the best of both worlds (OOP & FP).
 
 #### Community involvement
 
-Giving back to the community is one of the most rewarding activities of a software professional. Blogging is something I greatly enjoy, although you will also find me speaking at various events, academic lectures and community meetups, such as [AngularJS Dublin](https://www.meetup.com/AngularJSDublin/), a ~1200-member meetup hosted at Google's Headquarters in Dublin, of which I'm a core organizer.
+Giving back to the community is one of the most rewarding activities of a software professional. Blogging is something I greatly enjoy, although you will also find me speaking at various events, academic lectures and community meetups. I'm also organizer of [AngularJS Dublin](https://www.meetup.com/AngularJSDublin/), one of the largest technology meetups in Dublin, hosted at Google's Headquarters.
 
 <ul class="list-inline gallery">
 	<li>
@@ -72,15 +80,12 @@ Giving back to the community is one of the most rewarding activities of a softwa
 - Microsoft Certified Solutions Developer: Web Applications
 - Microsoft Certified Technology Specialist: Dynamics CRM 2011 Customization and Configuration
 
-## What is this blog about?
-
-The software industry continuously pushes us towards producing more, and faster. That's when priorities get blurry, corners get cut, and mediocre software comes into life. We need to know where to draw the line. We need to take responsibility for our craft. This whole blog boils down to a single message: Let's beat the mediocrity out of software. With a stick. 
-
 ## Disclaimer
 
-**This blog, its content and opinions are my own** and do not represent my employers' or clients' view in any way. Keep in mind that I might have no idea what I'm talking about.
+**This blog, its content and opinions are my own** and do not represent my employers' or clients' view in any way. Also keep in mind that I might have no idea what I'm talking about.
 
 ## Bio
-Anastasios Piotopoulos is a passionate software engineer, specialized in web and cloud technologies, having a lifelong mission of solving problems through building high-quality software. You can find him blogging at drinkbird.com, or speaking at various events, academic lectures and community meetups, such as AngularJS Dublin of which he's a core organizer. Over the years, Anastasios has been involved in the construction of everything from simple tooling to enterprise cloud solutions.
+
+Anastasios (Tasos) Piotopoulos is a passionate software engineer (M.Sc.) and aspiring architect, specialized in web and cloud technologies. His lifelong mission is solving problems through building high-quality software. He's also a blogger, speaker and a meetup organizer. Over the years, Anastasios has been involved in the construction of everything from simple tooling to enterprise cloud solutions.
 
 ![Anastasios Piotopoulos]({{ site.baseurl }}/images/AnastasiosPiotopoulos.jpg)
