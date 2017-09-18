@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "High code churn is not your friend"
-excerpt: "Do you feel more productive by making huge commits?"
+title: "Code churn is not your friend"
+excerpt: "Have you fallen into the productivity trap?"
 permalink: /code-churn
 comments: true
 categories: blog
@@ -35,13 +35,17 @@ reads:
   - codecomplete
 ---
 
-## Problem space
-
 In the [previous article](#) we discussed about a high-impact mistake of most software companies, especially startups, and that is focusing on behavior while letting the structure of the system degrade.
 
-In this article we're going to talk about a sneaky problem within the software lifecycle, especially for systems that have been around for a while, and that is *high code churn*.
+In this article we're going to discuss about an oftenly overlooked problem of the software development process, one that can cause great instability and grief if left unchecked, and that is high *code churn*.
 
-By `code churn` we generally refer to the lines of code added, modified or removed from a code base, from one version to another. The scope of `version` is usually either a single commit / pull request, or the difference between two releases.
+## The problem
+
+By *code churn* we generally refer to the lines of code added, modified or removed from a code base, from one version to another. We can think of *versions* as any two points in time, such as two released versions of the software, or any given commit / pull request and its parent.
+
+A high volume of code churn is a symptom of unhealthy codebases and / or teams. It is somewhat acceptable for new projects, when their core behavior and structure are still in flux and in the process of being forged through numerous decisions and iterations. But once the dust settles and the system stabilizes, there should be a very good reason for introducing a high volume of churn (there usually isn't).
+
+
 
 Why is high code churn such a problem? 
 - instability - viscosity - unmaintainability - knowledge spread
@@ -86,3 +90,5 @@ Every new line of code that goes into a codebase is another line of code that yo
 
 
 // Viscosity
+
+// https://giphy.com/gifs/xOmBBnZNN1oRy?utm_source=media-link&utm_medium=landing&utm_campaign=Media%20Links&utm_term=https://www.google.com/
