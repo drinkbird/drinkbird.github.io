@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "High code churn is not your friend"
-excerpt: "Have you fallen into the productivity trap?"
+excerpt: "3+1 sources of churn you need to keep an eye for"
 permalink: /code-churn
 comments: true
 categories: blog
@@ -54,14 +54,17 @@ Things get more interesting when a codebase is not adequetly covered by unit, in
 
 Such high-viscosity, unreliable systems are quite prone to failure. They can leave companies exposed to their customers and stakeholders, or even lead them to bankrupcy. It's systems like these that prematurely turn programmers into managers.
 
+///
 What could be the root cause of high code churn? As it turns out it's usually a symptom of other, deeper problems within a codebase / team. Let's examine some of these problems.
 
 
-## Vanity metrics of productivity - Take #1
+## 1. Writing code fast
 
 Productivity, such a topic! How often do you feel that productivity is the single thing that matters at your workplace?
 
 As programmers we are generally quite nearsighted about what really makes us productive. Many of us believe that our productivity derives from our ability to write as much code as possible, as fast as possible.
+
+<div style="width:100%;height:0;padding-bottom:100%;position:relative;"><iframe src="https://giphy.com/embed/JIX9t2j0ZTN9S" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
 
 One problem with that line of thought is that writing code is only a small part of the overall software engineering process. Let's name a few more parts:
 
@@ -85,32 +88,36 @@ One problem with that line of thought is that writing code is only a small part 
 
 Even if we assume that every new line of code has a clear puprose, is easily readable and defect-free, we can still realize that writing code fast would only have a negligible positive effect on the overall productivity of a team.
 
-In reality, most new lines of code written under a distorted urge of productivity don't present these values. As previously discussed, that way of thinking is harmful for productivity, both the individual's and the team's.
+In reality, most new lines of code written under a distorted urge of productivity don't present these values. As previously discussed, that way of thinking is actually harmful for productivity, both the individual's and the team's.
 
-Every new line of code that goes into a codebase is another line of code that you and your team has to maintain. Every new box in your architectural diagram is a new potential point of failure. Hence, there has to be a really good reason for uptaking this extra weight.
+We shouldn't forget that every new line of code that goes into a codebase is another line of code that us and our team has to maintain. Every new box in our architectural diagram is a new potential point of failure. Hence, there has to be a really good reason for uptaking this extra weight.
 
 > Measuring software productivity by lines of code is like measuring progress on an airplane by how much it weighs. -- Bill Gates
 
-Instead of focusing on the speed of writing, we should instead be focusing on the speed of reading.
+Also, instead of focusing on the speed of writing, we should instead be focusing on the speed of reading.
 
+## 2. The Zone
 
-## Vanity metrics of productivity - Take #2
+The zone.
 
-In some companies, code churn measurements are not used as a means of evaluating the density of defects, but rather as indicators of development effort. There is often an unspoken rule that the highest committer is also the most productive member of a team.
+## 3. Poor management and Professional churners
+
+In some companies, code churn measurements are not used as a means of evaluating the density of defects, but rather as indicators of development effort. There is often an unspoken rule that the top committer is also the most productive member of a team.
 
 Can you spot the paradox?
 
-Such workplaces drive programmers towards causing more churn, even if that means just moving chunks of code around. The more their name appears on the source control history and the more code they add or change, the more productive they are seen as.
+Such workplaces essentially push programmers towards causing more churn. It's usually the inexperienced programmers that take the bait and try to make their name appear on the source control history as much as possible, even if it means just moving chunks of code around. The more the churn they cause, the more productive they are seen as.
+
+It's the same ones who will jump in first to fix a production bug and collect more stars from the management. On the other hand the management doesn't realize that those people's churn is often the root cause of defects in the first place.
 
 <div style="width:100%;height:0;padding-bottom:101%;position:relative;"><iframe src="https://giphy.com/embed/xOmBBnZNN1oRy" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
 
-The moment a production bug emerges, these programmers will typically jump first to fix it, just to get more attention from the management. What the latter fails to realize though, is that those people's churn is often the root cause of defects in the first place.
+Another symptom of professional churners is their constant attempt to reinvent the wheel and develop everything themselves, no matter if a given problem has been well-defined and well-solved by the rest of the industry. Imagine your team building a house and one of your crew to spending his time trying to assemble a washing machine from scratch.
 
-On the other hand, principled programmers who only commit what's absolutely necessary and produce high-quality work with minimal defects, usually fly under the management's radar in such environments.
+It's always easy to learn on somebody else's dollar. Developers' time is extremely expensive and should be spent wisely. We should only build things that are unique to what we do and can be considered a strategic asset, otherwise we should simply buy commercial components, or use opensourced ones.
 
-As company culture is extremely hard to change, such toxic workplaces are best to be avoided. Fortunately in most cases it's easy to get in touch with people already working at a given company, read glassdoor comments if available, and most importantly, ask the proper questions during the interview process.
+It's our obligation to mentor less experienced and less principled programmers, and help them understand how churning can hurt them and the project. We should always be willing to sit down and offer help when is needed. Leading by example is the best way to help them develop a strong sense of professionalism.
 
-
-## Leaky abstractions
+## Bonus: Leaky abstractions
 
 How to oppose that urge of producing more code? We need to always program with intention.
