@@ -98,7 +98,23 @@ Also, instead of focusing on the speed of writing, we should instead be focusing
 
 ## 2. The Zone
 
-The zone.
+The Zone is a state of consciousness characterized by sharp focus, increased attention and boosted mental performance. It's also the state where athletes and musicians perform the best. But it's not just them.
+
+Although not always possible to achieve, many programmers push themselves intentionally into the Zone. 
+
+
+
+
+And when they finally do, they feel more productive than ever
+
+
+ thoughts flow so effortlessly that they can't stop themselves writing lines of code by the bulk.
+
+
+
+
+ feel the most productive. Thoughts flow effortlessly and we have trouble stopping our fingers from writing code.
+
 
 ## 3. Poor management and Professional churners
 
@@ -118,6 +134,6 @@ It's always easy to learn on somebody else's dollar. Developers' time is extreme
 
 It's our obligation to mentor less experienced and less principled programmers, and help them understand how churning can hurt them and the project. We should always be willing to sit down and offer help when is needed. Leading by example is the best way to help them develop a strong sense of professionalism.
 
-## Bonus: Leaky abstractions
+## +1. Leaky abstractions
 
 How to oppose that urge of producing more code? We need to always program with intention.
