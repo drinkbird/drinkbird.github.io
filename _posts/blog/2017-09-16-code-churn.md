@@ -96,24 +96,18 @@ We shouldn't forget that every new line of code that goes into a codebase is ano
 
 Also, instead of focusing on the speed of writing, we should instead be focusing on the speed of reading.
 
+
 ## 2. The Zone
 
-The Zone is a state of consciousness characterized by sharp focus, increased attention and boosted mental performance. It's also the state where athletes and musicians perform the best. But it's not just them.
+The Zone (also known as Flow) is a state of consciousness we often reach after concentrating on a task for some time without being interrupted. Attention is increased, focus gets sharper and thoughts flow effortlessly. Athletes and musicians achieve their best performance in that state.
 
-Although not always possible to achieve, many programmers push themselves intentionally into the Zone. 
+It's a popular belief amongst programmers that we as well perform our best while in the Zone. Although that's a decent assumption, it's not a very accurate one, as musicians and athletes perform well in that state because they practice hard on mostly repeatable actions, excercising both muscle and standard memory.
 
+On the other hand, in programming we don't have to deal with instictive reactions, nor to retype chunks of code from memory. On the contrary, it'a highly creative process that involves hard and long thinking with regular breaks, as our brain can't withstand working non-stop at high capacity for very long.
 
+The Zone is a state that leaves little room for deep thinking and creates a strong urge to keep moving, writing and changing as much code as possible. High churn is practically guaranteed.
 
-
-And when they finally do, they feel more productive than ever
-
-
- thoughts flow so effortlessly that they can't stop themselves writing lines of code by the bulk.
-
-
-
-
- feel the most productive. Thoughts flow effortlessly and we have trouble stopping our fingers from writing code.
+The best balance to strike for high quality work is focusing for a predetermined amount of time, then taking a small break, then repeat the cycle again. I've found the [pomodoro technique]() to provide the best results for sustainable, intensive work.
 
 
 ## 3. Poor management and Professional churners
@@ -134,6 +128,9 @@ It's always easy to learn on somebody else's dollar. Developers' time is extreme
 
 It's our obligation to mentor less experienced and less principled programmers, and help them understand how churning can hurt them and the project. We should always be willing to sit down and offer help when is needed. Leading by example is the best way to help them develop a strong sense of professionalism.
 
+
 ## +1. Leaky abstractions
+
+
 
 How to oppose that urge of producing more code? We need to always program with intention.
