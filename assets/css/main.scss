@@ -472,12 +472,19 @@ footer.site-footer {
 	img {
 		@extend .img-responsive;
 	}
+
+	& > p > img {
+		display: block;
+		margin: 20px auto 0;
+	}
+
+	.giphy {
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
 }
 
-.post-body > p > img {
-	display: block;
-	margin: 0 auto;
-}
+.post-body 
 
 blockquote {
 	font-size: 20px;
