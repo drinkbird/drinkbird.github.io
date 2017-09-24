@@ -42,11 +42,11 @@ It's now time to discuss an often overlooked symptom of serious, underlying prob
 
 By *code churn* we generally refer to the lines of code added, modified or removed from a codebase between two versions of the software, or between any given commit / pull request and its parent.
 
-As [research](https://www.researchgate.net/publication/2816801_Code_Churn_A_Measure_for_Estimating_the_Impact_of_Code_Change) has shown, there is a strong connection between high code churn and the number of defects discovered while testing, hence such measurements are great for predicting a system's fault density.
+As [research](https://www.researchgate.net/publication/2816801_Code_Churn_A_Measure_for_Estimating_the_Impact_of_Code_Change) has shown, there is a strong connection between high volumes of code churn and the number of defects discovered while testing, hence such measurements are great for predicting a system's fault density.
 
-High churn forces the system to live in a constant state of flux where bugs are easily introduced, the chance of merge conflicts is always high, and knowledge spreads thin as it becomes harder for programmers to keep track of what is being changed in the codebase.
+By making changes in an uncontrollable fashion we force a system to live in a constant state of flux where bugs are easily introduced, the chance of merge conflicts is always high, and knowledge spreads thin amongst a team, as it becomes harder and harder for programmers to keep track of what is happening in their codebase.
 
-Let's examine some prevailing root causes of high code churn next.
+Let's examine some of the prevailing root causes of such a situation.
 
 
 ### 1. The urge for writing code fast
@@ -87,7 +87,7 @@ We shouldn't forget that every new line of code that goes into a system is anoth
 
 > Measuring software productivity by lines of code is like measuring progress on an airplane by how much it weighs. -- Bill Gates
 
-Instead of focusing on the speed of writing, we should instead be focusing on the speed of reading, as reading existing code is what we typically spend most of our time on.
+Instead of focusing on the speed of writing, we should be focusing on the speed of reading, as reading existing code is what we typically spend most of our time on.
 
 
 ### 2. Being in the Zone
@@ -119,9 +119,9 @@ In some companies, code churn measurements are not used as a means of evaluating
 
 Can you spot the paradox?
 
-Such workplaces essentially push programmers towards causing more churn. It's usually the inexperienced programmers that take the bait and try to make their name appear on the source control history as much as possible, even if it means just moving chunks of code around. The more the churn they cause, the more productive they are seen as.
+Such workplaces essentially push programmers towards stirring-up the codebase. It's usually the inexperienced programmers that take the bait and try to make their name appear on the source control history as much as possible, even if it means just moving chunks of code around. The more pointless changes they make, the more productive they are seen as.
 
-It's also the same people who will do whatever it takes to be the first ones to patch a production issue and collect more stars from the management, making a bigger mess in the process. What the management doesn't often realize is that those people's uncontrolled churn is the root cause of many such issues.
+It's also the same people who will do whatever it takes to be the first ones to patch a production issue and collect more stars from the management, making a bigger mess in the process. What the management doesn't often realize is that those people's unrestrained stir-up is the root cause of many such issues.
 
 <div class="giphy">
 <div style="width:100%;height:0;padding-bottom:101%;position:relative;"><iframe src="https://giphy.com/embed/xOmBBnZNN1oRy" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
@@ -137,7 +137,7 @@ We should only build things that are unique to what our business does and can be
 
 It's always easy to experiment and learn on someone else's dollar, but as true professionals we should admit when there is no actual problem to be solved and push towards spending our time on things that really worth our employer's investment.
 
-It's also our obligation to mentor less experienced and less principled programmers, and help them understand how uncontrolled churn can hurt themselves and their projects. On that end, we shouldn't forget that leading by example is much more effective than confrontation.
+It's also our obligation to mentor less experienced and less principled programmers, and help them understand how arbitrarily stirring-up the code can hurt themselves and their projects. On that end, we shouldn't forget that leading by example is much more effective than confrontation.
 
 
 ### +1. Leaky abstractions
@@ -173,7 +173,7 @@ Refactoring is the third and equally important part of the Red-Green-Refactor cy
 
 It does not appear on a schedule, but rather we do it every time we work on a user story as a matter of discipline, exactly as doctors wash their hands before and after they operate on a patient.
 
-For that reason we expect churn to be as targeted and minimal as the scope of a well-defined story.
+For that reason we expect changes in code to be as targeted and minimal as the scope of a well-defined story.
 
 <div class="giphy">
 <div style="width:100%;height:0;padding-bottom:75%;position:relative;"><iframe src="https://giphy.com/embed/iRTWQWg3cSEfe" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
@@ -203,8 +203,8 @@ It's systems like these that prematurely turn programmers into managers.
 
 Always keep an eye for high churn in your codebase. Avoid using it as a metric for individual programmers' performance, but rather treat it as a red flag and start looking for the underlying cause as soon as you realize that your system suffers from it.
 
-Sometimes the cause of high churn is cultural and sometimes purely technical. Make sure you understand what you're dealing with before you take any action, but also make sure that you *do* take some action.
+Sometimes the root cause is cultural and sometimes purely technical. Make sure you understand what you're dealing with before you take any action, but also make sure that you *do* take some action.
 
 The more a codebase decays, the more difficult and costly it becomes to fix it. If you ignore the symptoms and let the decay spread, it won't be long before the cost of maintaining your system surpasses the benefits the business enjoys out of it.
 
-Remember that the most effective way of solving a problem is to prevent it from happening in the first place. In the case of high code churn, that boils down to discipline and professionalism.
+Remember that the most effective way of solving a problem is to prevent it from happening in the first place. In the case of addressing intensive codebase stir-ups, it boils down to discipline and professionalism.
