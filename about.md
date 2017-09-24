@@ -11,13 +11,13 @@ image:
 
 I'm Anastasios (Tasos) Piotopoulos, a passionate software engineer (M.Sc.) and aspiring architect, specialized in web and cloud technologies. My lifelong mission is solving problems through building high-quality software.
 
-Every successful software design is grown and forged through myriads of decisions, often made by many different people. My passion, therefore, lies in working with a strong team that understands this process, knows how to avoid waste and unnecessary technical debt, has a strong sense of responsibility and collective ownership, and also highly focuses on code readability, robustness, testability and extensibility.
+Every successful software design is grown and forged through myriads of decisions, often made by many different people. My passion, therefore, lies in working with a principled team that understands this process, knows how to avoid waste and unnecessary technical debt, has a strong sense of responsibility and collective ownership, and also highly focuses on code readability, robustness, testability and extensibility.
 
 #### What is this blog about?
 
 The software industry continuously pushes us towards producing more, and faster, often disregarding quality. That's when priorities get blurry, corners get cut, and mediocre software comes into life. Then instead of solving interesting problems, teams waste their time and energy fighting with bugs and production issues, until technical debt becomes impossible to repay and projects go bankrupt.
 
-As software professionals we need to have engineering discipline, be ready to fight for the long term success of our projects, stop counting productivity by the lines of committed code, and start seeing the bigger picture.
+As software professionals we need to be principled, have engineering discipline, be ready to fight for the long term success of our projects, stop counting productivity by the lines of committed code, and start seeing the bigger picture.
 
 In this blog I distill some of my knowledge from the industry and literature, in hope to motivate and inspire both new and seasoned programmers to be the best versions of themselves and excel in the industry.
 

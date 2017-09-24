@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "High code churn is not your friend"
-excerpt: "3+1 sources of churn you need to keep an eye for"
+excerpt: "3+1 root causes of high code churn that can kill your project"
 permalink: /code-churn
 comments: true
 categories: blog
@@ -12,11 +12,13 @@ image:
 #  credit: pixabay
 #  creditlink: "https://pixabay.com/en/truck-concrete-mixer-truck-heavy-2194948/" # https://pixabay.com/p-146916/ # CC0
 reads:
+  - xunit
   - thecleancoder
   - agileppp
   - cleancode
   - refactoring
   - legacycode
+  - codecomplete
   - leanstartup
   - artofunittesting
   - softskills
@@ -28,17 +30,12 @@ reads:
   - gofdp
   - hfdesignpatterns
   - 97things
-  - softskills
   - dpruby
-  - csharpindepth
-  - interactiondesign
-  - showyourwork
-  - codecomplete
 ---
 
-In the [previous article](http://blog.drinkbird.com/all-about-results) we discussed about a high-impact mistake of most software companies, especially startups, and that is focusing on behavior while letting the structure of the system decay.
+In the [previous article](http://blog.drinkbird.com/all-about-results) we discussed about a high-impact mistake of many software companies, especially startups, and that is focusing on a program's behavior while letting its structure decay.
 
-It's now time to discuss an often overlooked symptom of serious, underlying problems of software projects, and that is *high code churn*. 
+It's now time to discuss an often overlooked symptom of serious, underlying problems of software projects: *high code churn*. 
 
 
 ## Why is high code churn considered alarming?
@@ -191,7 +188,7 @@ A good automated test suite has our backs, since it allows us to always keep ref
 
 In the absence of tests, we have much less confidence about improving the structure of our code as we progress, hence refactoring is often left as a high-risk, low-importance task for the future.
 
-> Imagine trying to learn to be a trapeze artist in the circus without having that big net that allows us to make mistakes; we'd never progress beyond swinging back and forth! <br/>-- ‎Gerard Meszaros, [XUnit Test Patterns](todo)
+> Imagine trying to learn to be a trapeze artist in the circus without having that big net that allows us to make mistakes; we'd never progress beyond swinging back and forth! <br/>-- ‎Gerard Meszaros, [XUnit Test Patterns](http://geni.us/xunit)
 
 In codebases where churn volume is high but coverage by unit, integration and acceptance tests is not adequate, technical debt prevails and the cost of corrective maintenance skyrockets. In such scenarios, teams typically end up spending most of their time and energy firefighting, rather than evolving the system by solving interesting business problems.
 

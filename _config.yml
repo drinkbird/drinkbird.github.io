@@ -1,7 +1,7 @@
 # Site settings
 title: DrinkBird
 email: tasos@drinkbird.com
-description: "Beating the mediocrity out of software. With a stick."
+description: "Stories of principled software engineering by Anastasios Piotopoulos"
 longdescription: "DrinkBird is a blog for software engineers who deeply care about their craft."
 baseurl: ""
 url: "http://blog.drinkbird.com"
@@ -196,3 +196,7 @@ reads:
     title: "Streaming Architecture: New Designs Using Apache Kafka and MapR Streams"
     url: "http://geni.us/streamingarch"
     isbn: "1491953926"
+  xunit:
+    title: "xUnit Test Patterns: Refactoring Test Code"
+    url: "http://geni.us/xunit"
+    isbn: "0131495054"
