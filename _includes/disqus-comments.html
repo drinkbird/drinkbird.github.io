@@ -2,6 +2,12 @@
 <script type="text/javascript">
     var disqus_shortname = '{{ site.owner.disqus-shortname }}';
 
+    var disqus_config = function () {
+        this.page.url = '{{ site.url }}{{ site.baseurl }}{{ page.url }}';
+        this.page.identifier = '{{ page.permalink }}';
+        this.page.title = '{{ page.title }} - {{ site.title }}';
+    };
+
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
         dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
