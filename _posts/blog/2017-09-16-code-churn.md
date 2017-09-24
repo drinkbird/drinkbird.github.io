@@ -103,11 +103,11 @@ The Zone (also known as Flow) is a state of consciousness we often reach after c
 
 It's a popular belief amongst programmers that we as well perform our best while in the Zone. Although that's a decent assumption, it's not a very accurate one, as musicians and athletes perform well in that state because they practice hard on mostly repeatable actions, excercising both muscle and standard memory.
 
-On the other hand, in programming we don't have to deal with instictive reactions, nor to retype chunks of code from memory. On the contrary, it'a highly creative process that involves hard and long thinking with regular breaks, as our brain can't withstand working non-stop at high capacity for very long.
+Programming is quite different, as we don't have to deal with instictive reactions, nor to retype chunks of code from memory. On the contrary, it'a highly creative process that involves hard and long thinking with regular breaks, as our brain can't withstand working non-stop at high capacity for very long.
 
-The Zone is a state that leaves little room for deep thinking and creates a strong urge to keep moving, writing and changing as much code as possible. High churn is practically guaranteed.
+The Zone is a state that leaves little room for deep thinking and creates a strong urge to keep moving, writing and changing as much code as possible. High churn is practically guaranteed. On the other hand we still need to be able to concentrate without having interruptions that take us out of the headspace.
 
-The best balance to strike for high quality work is focusing for a predetermined amount of time, then taking a small break, then repeat the cycle again. I've found the [pomodoro technique]() to provide the best results for sustainable, intensive work.
+The [pomodoro technique](https://en.wikipedia.org/wiki/Pomodoro_Technique) combines the best of both worlds. The idea is to focus on a single task for a predetermined amount of time (usually 25 minutes), then take a small break (usually 5 minutes), and repeat that cycle several times per day. Hence it allows us to concentrate enough to get the job done without being dragged into the Zone trap and start churning like there's no tomorrow.
 
 
 ## 3. Poor management and Professional churners
@@ -130,6 +130,18 @@ It's our obligation to mentor less experienced and less principled programmers, 
 
 
 ## +1. Leaky abstractions
+
+Imagine that you make a seemingly simple change to your code, but now you find yourself in an interesting situation.
+
+only to realize that it affected another layer that also had to change, and then another, and then yet another? 
+Just as houses have rooms, codebases have abstraction layers.
+
+
+If the abstractions are well-designed, each one has a well-defined role and doesn't leave its internal implementation or limitations exposed to the rest of the application.
+
+When abstractions are leaky, the system's viscosity increases and each change has one or more knock-on side effects.
+
+
 
 
 
