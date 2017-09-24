@@ -6,6 +6,7 @@ permalink: /code-churn
 comments: true
 categories: blog
 featured: true
+mermaid: true
 image:
   feature: churn.png
 #  credit: pixabay
@@ -52,13 +53,14 @@ Things get more interesting when a codebase is not adequetly covered by unit, in
 
 <div style="width:100%;height:0;padding-bottom:56%;position:relative;"><iframe src="https://giphy.com/embed/3o6UBpHgaXFDNAuttm" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
 
+///
 Such high-viscosity, unreliable systems are quite prone to failure. They can leave companies exposed to their customers and stakeholders, or even lead them to bankrupcy. It's systems like these that prematurely turn programmers into managers.
 
 ///
 What could be the root cause of high code churn? As it turns out it's usually a symptom of other, deeper problems within a codebase / team. Let's examine some of these problems.
 
 
-## 1. Writing code fast
+### 1. Writing code fast
 
 Productivity, such a topic! How often do you feel that productivity is the single thing that matters at your workplace?
 
@@ -94,10 +96,10 @@ We shouldn't forget that every new line of code that goes into a codebase is ano
 
 > Measuring software productivity by lines of code is like measuring progress on an airplane by how much it weighs. -- Bill Gates
 
-Also, instead of focusing on the speed of writing, we should instead be focusing on the speed of reading.
+Instead of focusing on the speed of writing, we should instead be focusing on the speed of reading, as reading code is what we end up doing most of our time.
 
 
-## 2. The Zone
+### 2. The Zone
 
 The Zone (also known as Flow) is a state of consciousness we often reach after concentrating on a task for some time without being interrupted. Attention is increased, focus gets sharper and thoughts flow effortlessly. Athletes and musicians achieve their best performance in that state.
 
@@ -110,7 +112,7 @@ The Zone is a state that leaves little room for deep thinking and creates a stro
 The [pomodoro technique](https://en.wikipedia.org/wiki/Pomodoro_Technique) combines the best of both worlds. The idea is to focus on a single task for a predetermined amount of time (usually 25 minutes), then take a small break (usually 5 minutes), and repeat that cycle several times per day. Hence it allows us to concentrate enough to get the job done without being dragged into the Zone trap and start churning like there's no tomorrow.
 
 
-## 3. Poor management and Professional churners
+### 3. Poor management and Professional churners
 
 In some companies, code churn measurements are not used as a means of evaluating the density of defects, but rather as indicators of development effort. There is often an unspoken rule that the top committer is also the most productive member of a team.
 
@@ -129,20 +131,27 @@ It's always easy to learn on somebody else's dollar. Developers' time is extreme
 It's our obligation to mentor less experienced and less principled programmers, and help them understand how churning can hurt them and the project. We should always be willing to sit down and offer help when is needed. Leading by example is the best way to help them develop a strong sense of professionalism.
 
 
-## +1. Leaky abstractions
+### +1. Leaky abstractions
 
-Imagine that you make a seemingly simple change to your code, but now you find yourself in an interesting situation.
+Have you ever found yourself changing one little thing in one side of a project only to realize that it had a knock-on effect to several other layers? That's a strong indicator of not adhering to the [Dependency Inversion Principle](https://en.wikipedia.org/wiki/Dependency_inversion_principle):
 
-only to realize that it affected another layer that also had to change, and then another, and then yet another? 
-Just as houses have rooms, codebases have abstraction layers.
+* High-level modules should not depend on low-level modules. Both should depend on abstractions.
+* Abstractions should not depend on details. Details should depend on abstractions.
+
+*Leaky abstractions* are those that *do* depend on details. Every module depending on such abstractions gets tighly-coupled to such details, resulting in high-viscosity, fragile systems that is often easier to add a hack than change the code in a way that fits the program's design.
+
+As an example, imagine an MVC application that handles user registrations and has the following flow of control structure:
+
+<div class="mermaid">
+graph TD;
+    uc[User Controller]-->ubl[User Business Logic];
+    ubl-->urp[User Repository];
+    urp-->upsql[User SQL Persistance];
+</div>
+
+What would happen if the the SQL implementation details of the persistance layer were leaked all the way up to the business layer? If we had to make changes to the SQL-specific code, such as restructuring tables for better performance, or even swapping the SQL implementation altogether in favor of another technology, both the repository and business logic layers would have to change as well.
+
+High code churn is often a symptom of not adhering to the Dependency Inversion Principle and having lots of leaky abstractions. Abstract responsibly.
 
 
-If the abstractions are well-designed, each one has a well-defined role and doesn't leave its internal implementation or limitations exposed to the rest of the application.
-
-When abstractions are leaky, the system's viscosity increases and each change has one or more knock-on side effects.
-
-
-
-
-
-How to oppose that urge of producing more code? We need to always program with intention.
+## What about the churn caused by refactoring?
