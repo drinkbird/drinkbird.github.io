@@ -9,9 +9,11 @@ image:
 
 ## Background
 
-I'm Anastasios (Tasos) Piotopoulos, a passionate software engineer (M.Sc.) and aspiring architect, specialized in web and cloud technologies. My lifelong mission is solving problems through building high-quality software.
+I'm Anastasios (Tasos) Piotopoulos, a passionate software engineer and aspiring software architect with a lifelong mission of solving complex problems through building high-quality software.
 
-Every successful software design is grown and forged through myriads of decisions, often made by many different people. My passion, therefore, lies in working with a principled team that understands this process, knows how to avoid waste and unnecessary technical debt, has a strong sense of responsibility and collective ownership, and also highly focuses on code readability, robustness, testability and extensibility.
+Over the years I have been involved in the construction of everything from simple tooling to enterprise cloud-native solutions, and through that experience it has become clear that successful software systems are grown and forged through myriads of decisions, often made by many different people.
+
+My passion, therefore, lies in working with a principled team that understands this process, has a strong sense of responsibility and collective ownership, knows how to avoid waste and unnecessary technical debt, and also highly focuses on code readability, robustness, testability and extensibility.
 
 #### What is this blog about?
 
@@ -23,7 +25,7 @@ In this blog I distill some of my knowledge from the industry and literature, in
 
 #### Technologies
 
-One of the principles I live by is being pragmatic rather than dogmatic and [pick the right tool for the job](http://c2.com/cgi/wiki?PickTheRightToolForTheJob) on a case-by-case basis. During my career I have been involved in the construction of everything from simple tooling to enterprise cloud solutions, and have delivered projects using a variety of languages, platforms, libraries and tools, such as C#/F#/.NET, Scala, Kafka, Containers, JavaScript / TypeScript, Java, Ruby, python, Objective C, iOS, Android, Dynamics CRM and more.
+One of the principles I live by is being pragmatic rather than dogmatic and [pick the right tool for the job](http://c2.com/cgi/wiki?PickTheRightToolForTheJob) on a case-by-case basis. During my career I have delivered projects using a variety of languages, platforms, libraries and tools, such as C#/F#/.NET, Scala, Kafka, Containers, JavaScript / TypeScript, Java, Ruby, python, Objective C, iOS, Android, Dynamics CRM and more.
 
 During the last few years I've been mostly working with distributed systems, Microservices, Event Sourcing, Domain Driven Design, and architectural patterns for the cloud, mostly around resiliency, scalability and testing. Lately, I've been exploring functional programming with F# and Scala, and have been working towards combining the best of both worlds (OOP & FP).
 
@@ -86,6 +88,6 @@ Giving back to the community is one of the most rewarding activities of a softwa
 
 ## Bio
 
-Anastasios (Tasos) Piotopoulos is a passionate software engineer (M.Sc.) and aspiring architect, specialized in web and cloud technologies. His lifelong mission is solving problems through building high-quality software. He's also a blogger, speaker and a meetup organizer. Over the years, Anastasios has been involved in the construction of everything from simple tooling to enterprise cloud solutions.
+Anastasios (Tasos) Piotopoulos is a passionate software engineer and aspiring software architect with a lifelong mission of solving complex problems through building high-quality software. Over the years, he has been involved in the construction of everything from simple tooling to enterprise cloud-native solutions. Anastasios has a master's degree in Software Engineering and Ubiquitous Computing from University College Dublin and he currently works at Jet.com as a Senior Back End Engineer.
 
 ![Anastasios Piotopoulos]({{ site.baseurl }}/images/AnastasiosPiotopoulos.jpg)
