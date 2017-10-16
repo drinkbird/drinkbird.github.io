@@ -9,7 +9,7 @@ image:
 
 ## Background
 
-I'm Anastasios (Tasos) Piotopoulos, a passionate software engineer and aspiring technical architect with a lifelong mission of solving complex problems through building high-quality software.
+I'm Anastasios (Tasos) Piotopoulos, a passionate software engineer and aspiring technical architect with a lifelong mission of solving complex problems through delivering high-quality software.
 
 Over the years I have been involved in the construction of everything from simple tooling to enterprise cloud-native solutions, and through that experience it has become clear that successful software systems are grown and forged through myriads of decisions, often made by many different people.
 
@@ -88,6 +88,6 @@ Giving back to the community is one of the most rewarding activities of a softwa
 
 ## Short Bio
 
-Anastasios (Tasos) Piotopoulos is a passionate software engineer and aspiring technical architect with a lifelong mission of solving complex problems through building high-quality software. Over the years, he has been involved in the construction of everything from simple tooling to enterprise cloud-native solutions. Anastasios has a Master's degree in Software Engineering and Ubiquitous Computing from University College Dublin and he currently works at Jet.com as a Senior Back End Engineer.
+Anastasios (Tasos) Piotopoulos is a passionate software engineer and aspiring technical architect with a lifelong mission of solving complex problems through delivering high-quality software. Over the years, he has been involved in the construction of everything from simple tooling to enterprise cloud-native solutions. Anastasios has a Master's degree in Software Engineering and Ubiquitous Computing from University College Dublin and he currently works at Jet.com as a Senior Back End Engineer.
 
 ![Anastasios Piotopoulos]({{ site.baseurl }}/images/AnastasiosPiotopoulos.jpg)
