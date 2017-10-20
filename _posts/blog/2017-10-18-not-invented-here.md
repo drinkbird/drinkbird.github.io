@@ -1,15 +1,15 @@
 ---
 layout: post
-title: "Software components: build or buy?"
-excerpt: "The actual cost of each choice might be different than you think"
-permalink: /build-vs-buy
+title: "NIH: Reinventing the wheel is immoral"
+excerpt: "The Not Invented Here syndrome is a disease for the software industry. Learn how to spot it and eliminate it."
+permalink: /not-invented-here
 comments: true
 categories: blog
 featured: true
 image:
-  feature: debttrap.png
+  feature: NIH.png
 #  credit: pixabay
-#  creditlink: "https://pixabay.com/en/case-money-mousetrap-snap-to-96184/" # CC0
+#  creditlink: "https://pixabay.com/en/no-stopping-sign-road-sign-signage-910003/" # CC0
 reads:
   - cleanarchitecture
   - xunit
@@ -35,7 +35,33 @@ reads:
 
 Every modern software service or product is comprised of several different moving parts, from simple tooling to runtimes, frameworks, libraries, messaging systems, data stores, web servers, load balancers, caches and much more. Companies hire us, software engineers, to put that puzzle together and help them fulfill their business goals, which usually include making or saving money.
 
-Oftentimes part of our job is to decide (or influence the decision) on whether to build a given component in-house, or use an opensource / proprietary solution off the shelf. Although such decisions depend on the context in which they are made, we have principles to guide us. Whatever we decide, we need to ensure that:
+Oftentimes part of our job is to decide (or influence the decision) on whether to build a given component in-house, or use an existing opensource / proprietary solution off the shelf. Each choice comes with its own cost and risk, and the answer is not always straightforward, but ultimately we are responsible for providing an educated and fully-informed input.
+
+Unfortunately, that's where the *Not Invented Here* (NIH) syndrome kicks in, causing so many of us to fail spectacularly.
+
+![Reinvent all the things]({{ site.baseurl }}/images/reinvent.png)
+
+
+
+
+
+
+
+
+Since the main theme of our job description is problem solving, most of us automatically lean towards the in-house approach. We think that 
+
+# Proprietary solutions
+
+Pros:
+*  
+
+
+ Therefore, to make an informed decision we need to see the full picture, put some of our biases aside, and act with our system's best interest in mind.
+
+
+
+
+
 
 * we are fully-aware of the different cost and risk that each choice bears
 * we clearly communicate that information to our team members and tech leads
@@ -47,3 +73,4 @@ Let's discuss each point in more detail.
 # The different cost and risk of each choice
 
 
+context and principles.
