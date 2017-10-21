@@ -37,28 +37,28 @@ Every modern software service or product is comprised of several different movin
 
 Oftentimes part of our job is to decide (or influence the decision) on whether to build a given component in-house, or use an existing opensource / proprietary solution off the shelf. Each choice comes with its own cost and risk, and the answer is not always straightforward, but ultimately we are responsible for providing an educated and fully-informed input.
 
-Unfortunately, that's where the *Not Invented Here* (NIH) syndrome kicks in, causing so many of us to fail spectacularly.
+In many cases, such a decision might affect the system's overall cost, quality, security, timeline, required talent etc. Needless to say that it cannot be taken lightly.
+
+Unfortunately, the industry is plagued by a cognitive bias called the *Not Invented Here* syndrome (NIH). This makes us reject all possible existing solutions by default, and drives us towards reinventing the wheel.
 
 ![Reinvent all the things]({{ site.baseurl }}/images/reinvent.png)
 
+In-house implementation pros:
+* no license issues
+
+Pitfalls:
+In-house implementations regarded as more flexible
+In-house implementations regarded as cheaper
+In-house implementations regarded as better (overhead, lack of documentation, lack of tests)
+In-house implementations regarded as more secure (security through obscurity)
+In-house implementations regarded as interesting challenges for the team (learning on someone else's dollar)
+Bonus: CV-Driven Development
 
 
+WASTE
+graveyard of ambitious wheel reinventions
 
-
-
-
-
-Since the main theme of our job description is problem solving, most of us automatically lean towards the in-house approach. We think that 
-
-# Proprietary solutions
-
-Pros:
-*  
-
-
- Therefore, to make an informed decision we need to see the full picture, put some of our biases aside, and act with our system's best interest in mind.
-
-
+focus on building business logic.
 
 
 
@@ -66,9 +66,6 @@ Pros:
 * we are fully-aware of the different cost and risk that each choice bears
 * we clearly communicate that information to our team members and tech leads
 * we put our system's best interests before our personal ones (after all, [as engineers we are also stakeholders](http://blog.drinkbird.com/all-about-results) of the systems we work on)
-
-Let's discuss each point in more detail.
-
 
 # The different cost and risk of each choice
 
