@@ -10,6 +10,7 @@ image:
   feature: NIH.png
 #  credit: pixabay
 #  creditlink: "https://pixabay.com/en/no-stopping-sign-road-sign-signage-910003/" # CC0
+# image: https://pixabay.com/en/balance-swing-equality-measurement-2108024/
 reads:
   - cleanarchitecture
   - xunit
@@ -57,9 +58,9 @@ If we were building a new house we would buy ready-made cabinets, doors, windows
 
 When building software systems we are supposed to do the same thing. It makes no sense to write our own mechanisms for things like logging, caching, dependency injection, user authentication / authorization, XML/JSON serialization, load balancing, analytics, web apis, and many many more.
 
-Yet so many of us fall into the NIH trap, often causing irreversible damage to our system and business. What kind of thinking could lead us into such a mess? Let's examine some common misconceptions.
+Yet so many of us fall into the NIH trap, often causing irreversible damage to our system and business. What kind of thinking could lead us into such a mess? Let's examine some common preconceptions.
 
-## Misconception 1: In-house implementations are faster to develop
+## Preconception 1: In-house implementations are faster to develop
 
 We tend to believe that writing our own code is faster than learning how to use someone else's. And because we're always too busy, we feel that we don't have enough time to properly evaluate existing solutions. 
 
@@ -73,23 +74,27 @@ Any solution should come *at minimum* with a good suite of automated tests and s
 
 Speed-wise, we should also be thinking about how good our team is with estimations. Do we miss our targets often? Do we spend most of our time fixing bugs, while core business behaviors are left waiting in the backlog? If any of that is true, it's probably not a good idea to put more work our way, especially if we can avoid it by using an existing implementation.
 
-## Misconception 2: In-house implementations are cheaper
+## Preconception 2: In-house implementations are cheaper
 
+What if using an existing solution comes with a paid license or support plan? Wouldn't then be cheaper to build rather than buy?
 
+A commercial license is typically priced at a small fracture of the total design, implementation and maintenance costs of a given software solution. We could argue that we are only interested in a subset of the features available in that solution, and if we were to build them ourselves we wouldn't have to productionalize them independently. Although valid, these points don't prove which choice is cheaper.
 
+The most underestimated costs are those of maintenance. As mentioned previously, we tend to end up with half-baked solutions in favor of short-term speed. What we end up with is a mess that is very expensive to maintain, extend, or onboard people with. The moment it leaves our hands it becomes legacy, and the next time somebody in the team or company needs something similar will probably end up with yet another custom implementation. The cost is already high, without even considering the potential cost of a bug ending up in production.
 
+![Balancing costs]({{ site.baseurl }}/images/balance-2108024_1280.jpg)
 
+Let's not forget opensource. For every standard component of a software system there are typically multiple opensource offerings we can take advantage of, and most of them can be used for free. Most importantly, we have the option to look at their source code, contribute, or even fork them and drive them towards a different direction if needed.
 
+Many opensource solutions come with optional support plans. Through these we can get answer to specific questions, recommendations, and first class support when a problem occurs. That is also usually cheaper than having to develop, document, test and maintain the code ourselves.
 
-
-Before committing to a new implementation we should think hard about why existing solutions don't work for us.
-
+Although obvious, I have to mention that development time is quite expensive, which means that custom solutions that are slower to develop (properly) are also more expensive.
 
 
 
 * In-house implementations regarded as more controlled
 * In-house implementations regarded as cheaper (licensing)
-* In-house implementations regarded as better (overhead, lack of documentation, lack of tests, battle tested)
+* In-house implementations regarded as better (overhead, lack of documentation, lack of tests, battle tested, expertise)
 * In-house implementations regarded as more secure (security through obscurity)
 * Bonus: CV-Driven Development (learning on someone else's dollar)
 
@@ -125,7 +130,7 @@ Just keep in mind that the ease and simplicity of scaling that we can get today 
 
 innovation bears the burden of proof
 
-
+# boundaries / abstractions / dependencies
 
 
 half-baked solutions is the most reliable way to self-sabotage our systems
