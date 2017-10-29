@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "NIH: Reinventing the wheel is immoral"
-excerpt: "The Not Invented Here syndrome is a disease for the software industry. Learn how to spot it and eliminate it."
+excerpt: "The Not Invented Here syndrome is a disease for the software industry. Learn how to spot it and prevent it."
 permalink: /not-invented-here
 comments: true
 categories: blog
@@ -11,6 +11,7 @@ image:
 #  credit: pixabay
 #  creditlink: "https://pixabay.com/en/no-stopping-sign-road-sign-signage-910003/" # CC0
 # image: https://pixabay.com/en/balance-swing-equality-measurement-2108024/
+# image: https://pixabay.com/en/padlock-castle-key-security-closed-934429/
 reads:
   - cleanarchitecture
   - xunit
@@ -80,9 +81,11 @@ What if using an existing solution comes with a paid license or support plan? Wo
 
 A commercial license is typically priced at a small fracture of the total design, implementation and maintenance costs of a given software solution. We could argue that we are only interested in a subset of the features available in that solution, and if we were to build them ourselves we wouldn't have to productionalize them independently. Although valid, these points don't prove which choice is cheaper.
 
-The most underestimated costs are those of maintenance. As mentioned previously, we tend to end up with half-baked solutions in favor of short-term speed. What we end up with is a mess that is very expensive to maintain, extend, or onboard people with. The moment it leaves our hands it becomes legacy, and the next time somebody in the team or company needs something similar will probably end up with yet another custom implementation. The cost is already high, without even considering the potential cost of a bug ending up in production.
+The most underestimated costs are those of maintenance. As mentioned previously, we tend to end up with half-baked solutions in favor of short-term speed. What we end up with is a mess that is very expensive to maintain, extend, or onboard people with.
 
-![Balancing costs]({{ site.baseurl }}/images/balance-2108024_1280.jpg)
+The moment such an implementation leaves our hands it becomes legacy, and the next time somebody in the team or company needs something similar will probably end up with yet another custom one. That cost is already high, without even considering the implications of a bug ending up in production.
+
+![Balancing costs]({{ site.baseurl }}/images/balance-2108024_640.jpg)
 
 Let's not forget opensource. For every standard component of a software system there are typically multiple opensource offerings we can take advantage of, and most of them can be used for free. Most importantly, we have the option to look at their source code, contribute, or even fork them and drive them towards a different direction if needed.
 
@@ -90,12 +93,43 @@ Many opensource solutions come with optional support plans. Through these we can
 
 Although obvious, I have to mention that development time is quite expensive, which means that custom solutions that are slower to develop (properly) are also more expensive.
 
+## Preconception 3: In-house implementations are more secure
+
+Security is a huge concern of software systems. Especially when exposing a service over the internet, we need to make sure that we are doing everything we can to protect our customers and organization. Some think that third-party implementations are by definition less secure than in-house ones. That is a big trap.
+
+We tend to think of in-house solutions as more secure mostly because the implementation details are hidden from public eyes, therefore any potential flaws won't be known to attackers. In Security Engineering this point of view is called [security through obscurity](https://en.wikipedia.org/wiki/Security_through_obscurity), and has been rejected by security experts as far back as 1851.
+
+![Useless lock]({{ site.baseurl }}/images/padlock-934429_640.jpg)
+
+Popular third-party implementations have been battle-tested again and again, in numerous different scenarios. Especially in opensource solutions, there many more people examining the source code and spotting possible vulnerabilities compared to in-house implementations.
+
+The main point is, we should never assume that our implementations are more secure than alternatives, unless security experts are involved and security audits are done regularly.
+
+## Preconception 4: In-house implementations are more innovative
+
+Let's just pull this band-aid fast:
+
+> Outside innovation is always bigger than inside innovation
+
+Unfortunately, there are many organizations claiming to be innovative without having a clue what that word really means. Most of these cases refer to in-house implementations that don't solve any new problems, but someone somehow somewhere convinced their boss or team that it's a good idea to reinvent the wheel.
+
+And because those implementations are usually not that important for fulfilling the main mission of an organization, the resources allocated to it are not even close to what a proper solution would need. We've already discussed the consequences of half-baked implementations in previous sections.
+
+![Innovation imagined VS Innovation budgeted]({{ site.baseurl }}/images/innovation.jpg)
+
+Innovation boils down to having a community around you and not solving everything by yourself. It's like a spoken language; the more the people who speak it, the stronger it gets.
+
+That's why many [top organizations in the industry have opensourced large parts of their stack](https://github.com/collections/open-source-organizations). They don't just help the community, but also themselves by tapping to the collective effort of numerous other organizations and individuals.
+
+Most importantly, innovation bears the weight of proof. Academics have been practicing [the scientific method](https://en.wikipedia.org/wiki/Scientific_method) since the 17th century, and it's not a coincidence that most breakthroughs in both Computer Science and Software Engineering have been guided by academic research.
+
+Truly [innovative organizations follow the same steps](https://research.google.com/pubs/papers.html), publishing scientific papers (or funding scientific researches), getting peer reviews, accepting external contributions and proving their hypotheses in a formal and structured way.
+
+----------------------------------------------------------
 
 
 * In-house implementations regarded as more controlled
-* In-house implementations regarded as cheaper (licensing)
 * In-house implementations regarded as better (overhead, lack of documentation, lack of tests, battle tested, expertise)
-* In-house implementations regarded as more secure (security through obscurity)
 * Bonus: CV-Driven Development (learning on someone else's dollar)
 
 innovative?
