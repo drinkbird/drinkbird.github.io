@@ -61,17 +61,17 @@ Yet so many of us fall into the NIH trap, often causing irreversible damage to o
 
 ## Misconception 1: In-house implementations are faster to develop
 
-We tend to believe that writing our own code is faster than learning how to use someone else's. And because we're always too busy, we feel that there is not much time to look into and evaluate existing solutions. 
+We tend to believe that writing our own code is faster than learning how to use someone else's. And because we're always too busy, we feel that we don't have enough time to properly evaluate existing solutions. 
 
 ![Too busy]({{ site.baseurl }}/images/too-busy.jpg)
 
-When we do look into them, the evaluation process is often superficial and biased. We only spend a few moments brushing over the basics just to quickly reject them as inelegant or unsuitable, as the idea of a shiny new implementation has already taken over our thoughts, even to the extend that we feel a proverbial hand patting us on the back for the great job we're about to do.
+When we do evaluate an existing solution, the process is often superficial and biased. We only spend a few moments brushing over the basics just to quickly reject them as inelegant, complex or unsuitable. The idea of a shiny new implementation quickly takes over, and a proverbial hand starts patting us on the back for the great job we're about to do.
 
-What really happens is that in-house implementations *feel* like they are quicker to develop - in our head. In reality the only fast part is when we come up with a rough idea of what needs to be done. Well, the execution phase is a whole different story.
+What really happens is that in-house implementations *feel* like they are quicker to develop, but usually the fast part is coming up with a rough idea of what needs to be done. Dealing with detailed planning, execution, quality assurance and maintenance phases, though, is a whole different story.
 
-We should first ask ourselves, are we prepared to fully commit to the task? Good executions come *at minimum* with an extensive suite of automated tests and good documentation. If we intend to skip those parts in hope to go faster, we have already lost. Creating half-baked solutions is the most reliable way to self-sabotage our systems. The speed benefits are only temporary and come with great cost, one that significantly slows us down just a bit later.
+Any solution should come *at minimum* with a good suite of automated tests and sufficient documentation, and skipping any of that in hope to go faster is a recipe for disaster. Such speed benefits are only short-term, and the technical debt we create of ourselves slows us down significantly just a few steps later.
 
-Speed-wise, we should also think about how good we are with estimations. Do we often miss our target dates? Do we spend most of our time fixing bugs, while core business behaviors are left waiting in the backlog? If any of that is true, it's probably not a good idea to put more work our way, especially if we can avoid it by using an existing solution.
+Speed-wise, we should also be thinking about how good our team is with estimations. Do we miss our targets often? Do we spend most of our time fixing bugs, while core business behaviors are left waiting in the backlog? If any of that is true, it's probably not a good idea to put more work our way, especially if we can avoid it by using an existing implementation.
 
 ## Misconception 2: In-house implementations are cheaper
 
@@ -124,3 +124,8 @@ context and principles.
 Just keep in mind that the ease and simplicity of scaling that we can get today is built on decades of hard work and pioneering of our predecessors.
 
 innovation bears the burden of proof
+
+
+
+
+half-baked solutions is the most reliable way to self-sabotage our systems
