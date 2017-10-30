@@ -142,13 +142,15 @@ Under most circumstances, building such components from scratch is a waste of re
 
 # Reinventing the wheel is immoral
 
+In a previous story we discussed that [as engineers we are also stakeholders](http://blog.drinkbird.com/all-about-results) of the systems we work on, which means that we bear a significant amount of responsibility for ensuring their long-term success and prosperity.
+
+As we discussed, there are many common preconceptions about in-house implementations. We need to make sure that we are fully aware of them before affecting any relevant decisions in our team or organization.
+
+Reinventing the wheel is not just a waste of resources. It also diverts our focus from implementing business use cases to dealing with development and operations work we could have avoided in the first place. That gives our competitors an advantage, as we move slower and face more problems than them. Self-sabotaging our systems in such a way is highly immoral.
+
 ![Reinventing the wheel is the most reliable way to be left behind]({{ site.baseurl }}/images/reinventing.jpg)
 <p class="text-center">Image source: <a href="https://www.aic.cuhk.edu.hk/web8/Reinventing%20the%20wheel.htm">aic.cuhk.edu.hk</a></p>
 
-Am I the chosen one?
+The worst form of the *Not Invented Here* syndrome is doing projects just for the sake of enriching our CV. This is also called *CV-Driven Development*. Every software engineer has to, at least once, implement a compiler, a cache, a view engine, and various other common components from scratch, for training purposes. **These exercises should only take place during personal time and not be put into production**.
 
-cv-driven development
-
-Left unchecked, the NIH syndrome can turn a codebase into a graveyard of ambitious half-baked projects.
-
-[as engineers we are also stakeholders](http://blog.drinkbird.com/all-about-results) of the systems we work on
+Left unchecked, the NIH syndrome can turn a codebase into a graveyard of ambitious half-baked projects. Although it's always easier to learn on someone else's dollar, it's also highly immoral.
