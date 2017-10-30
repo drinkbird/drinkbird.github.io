@@ -14,15 +14,16 @@ image:
 # image: https://pixabay.com/en/padlock-castle-key-security-closed-934429/
 reads:
   - cleanarchitecture
-  - xunit
   - thecleancoder
-  - agileppp
   - cleancode
+  - xunit
+  - agileppp
   - refactoring
   - legacycode
   - codecomplete
   - leanstartup
   - artofunittesting
+  - cleanarchitecture
   - softskills
   - themythicalmanmonth
   - effectiveusecases
@@ -109,11 +110,11 @@ The main point is, we should never assume that our implementations are more secu
 
 Let's just pull this band-aid fast:
 
-> Outside innovation is always bigger than inside innovation
+> Outside innovation is always bigger than Inside innovation
 
 Unfortunately, there are many organizations claiming to be innovative without having a clue what that word really means. Most of these cases refer to in-house implementations that don't solve any new problems, but someone somehow somewhere convinced their boss or team that it's a good idea to reinvent the wheel.
 
-And because those implementations are usually not that important for fulfilling the main mission of an organization, the resources allocated to it are not even close to what a proper solution would need. We've already discussed the consequences of half-baked implementations in previous sections.
+And because those implementations are usually not that important for fulfilling the main mission of an organization, the resources allocated to them are not even close to what a proper solution would need. We've already discussed the consequences of half-baked implementations in previous sections.
 
 ![Innovation imagined VS Innovation budgeted]({{ site.baseurl }}/images/innovation.jpg)
 
@@ -125,46 +126,29 @@ Most importantly, innovation bears the weight of proof. Academics have been prac
 
 Truly [innovative organizations follow the same steps](https://research.google.com/pubs/papers.html), publishing scientific papers (or funding scientific researches), getting peer reviews, accepting external contributions and proving their hypotheses in a formal and structured way.
 
-----------------------------------------------------------
+## Preconception 5: In-house implementations are better aligned to our business needs
 
+Although it sounds reasonable, this preconception is also easy to misunderstand.
 
-* In-house implementations regarded as more controlled
-* In-house implementations regarded as better (overhead, lack of documentation, lack of tests, battle tested, expertise)
-* Bonus: CV-Driven Development (learning on someone else's dollar)
+A typical software system is composed of several components, arranged within many different layers of abstraction. At the center we can find the use cases, the whole purpose for the system's existence. 
 
-innovative?
+All other components are secondary and revolve around the use cases. Components like databases, frameworks, messaging systems, web frameworks - even the web itself - are implementation details.
 
+*You can read more about software architecture in Robert C. Martin's excellent latest book, [Clean Architecture: A Craftsman's Guide to Software Structure and Design](http://geni.us/cleanarchitecture)*
 
+Under most circumstances, building such components from scratch is a waste of resources, and it's much more preferable to use commercial or opensource third-party implementations instead. That way it becomes a matter of customizing and composing those components together to formulate our unique system.
 
-imaginary scaling problems
+> We should only build a component in-house if it's unique to what we do and can be considered as a strategic asset. We should buy or use opensource if our use of the component is not that special. 
 
+# Reinventing the wheel is immoral
 
-
-
-
-WASTE
-
-In many companies NIH is a major source of wasted resources. Left unchecked, it can turn a codebase into a graveyard of ambitious half-baked projects.
-
-focus on building business logic.
+![Reinventing the wheel is the most reliable way to be left behind]({{ site.baseurl }}/images/reinventing.jpg)
+<p class="text-center">Image source: <a href="https://www.aic.cuhk.edu.hk/web8/Reinventing%20the%20wheel.htm">aic.cuhk.edu.hk</a></p>
 
 Am I the chosen one?
 
+cv-driven development
 
-* we are fully-aware of the different cost and risk that each choice bears
-* we clearly communicate that information to our team members and tech leads
-* we put our system's best interests before our personal ones (after all, [as engineers we are also stakeholders](http://blog.drinkbird.com/all-about-results) of the systems we work on)
+Left unchecked, the NIH syndrome can turn a codebase into a graveyard of ambitious half-baked projects.
 
-# The different cost and risk of each choice
-
-
-context and principles.
-
-Just keep in mind that the ease and simplicity of scaling that we can get today is built on decades of hard work and pioneering of our predecessors.
-
-innovation bears the burden of proof
-
-# boundaries / abstractions / dependencies
-
-
-half-baked solutions is the most reliable way to self-sabotage our systems
+[as engineers we are also stakeholders](http://blog.drinkbird.com/all-about-results) of the systems we work on
