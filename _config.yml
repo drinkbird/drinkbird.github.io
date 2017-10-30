@@ -200,3 +200,7 @@ reads:
     title: "xUnit Test Patterns: Refactoring Test Code"
     url: "http://geni.us/xunit"
     isbn: "0131495054"
+  cleanarchitecture:
+    title: "Clean Architecture: A Craftsman's Guide to Software Structure and Design"
+    url: "http://geni.us/cleanarchitecture"
+    isbn: "0134494164"
