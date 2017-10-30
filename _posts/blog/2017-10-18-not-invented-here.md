@@ -20,20 +20,13 @@ reads:
   - agileppp
   - refactoring
   - legacycode
-  - codecomplete
   - leanstartup
-  - artofunittesting
+  - domaindrivendesign
   - cleanarchitecture
   - softskills
   - themythicalmanmonth
   - effectiveusecases
   - userstoriesapplied
-  - domaindrivendesign
-  - pragmaticprogrammer
-  - gofdp
-  - hfdesignpatterns
-  - 97things
-  - dpruby
 ---
 
 Every modern software service or product is comprised of several different moving parts, from simple tooling to runtimes, frameworks, libraries, messaging systems, data stores, web servers, load balancers, caches and much more. Companies hire us, software engineers, to put that puzzle together and help them fulfill their business goals, which usually include making or saving money.
@@ -151,6 +144,8 @@ Reinventing the wheel is not just a waste of resources. It also diverts our focu
 ![Reinventing the wheel is the most reliable way to be left behind]({{ site.baseurl }}/images/reinventing.jpg)
 <p class="text-center">Image source: <a href="https://www.aic.cuhk.edu.hk/web8/Reinventing%20the%20wheel.htm">aic.cuhk.edu.hk</a></p>
 
-The worst form of the *Not Invented Here* syndrome is doing projects just for the sake of enriching our CV. This is also called *CV-Driven Development*. Every software engineer has to, at least once, implement a compiler, a cache, a view engine, and various other common components from scratch, for training purposes. **These exercises should only take place during personal time and not be put into production**.
+The worst form of the *Not Invented Here* syndrome is doing projects just for the sake of enriching our CV. This is also called *CV-Driven Development*.
+
+Every software engineer has to, at least once, implement a compiler, a cache, a view engine, and various other common components from scratch, for training purposes. **These exercises should only take place during personal time and should definitely not be put into production**.
 
 Left unchecked, the NIH syndrome can turn a codebase into a graveyard of ambitious half-baked projects. Although it's always easier to learn on someone else's dollar, it's also highly immoral.
