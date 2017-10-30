@@ -43,9 +43,13 @@ Unfortunately, the industry is plagued by a cognitive bias called [the Not Inven
 
 Today we have many spectacular solutions at our disposal. We are able to perform extremely hard tasks with ease, due to decades of hard work and pioneering by our predecessors.
 
-In any given software stack, all common and recurring problems have already been solved. The solutions come in many forms, such as high-level language features, functions within a platform's standard client library, or third-party components. When consuming an external system there is usually an accompanying client library to help us. When working on the cloud there are myriads of services and features we can snap together and formulate elegant solutions.
+In any given software stack, all common and recurring problems have already been solved. The solutions come in many forms, such as high-level language features, functions within a platform's standard client library, or third-party components.
 
-That's really extraordinary. It means that we can avoid tons of expensive technical work that others have already done for us, as it generally doesn't make sense to waste resources coding things we can buy or get ready-made. Instead, we can focus on spending our time doing what we were hired for in the first place, that is delivering value by coding our business rules into working software.
+When consuming an external system there is usually an accompanying client library to help us. When working on the cloud there are myriads of services and features we can snap together and formulate elegant solutions.
+
+That's really extraordinary. It means that we can avoid tons of expensive technical work that others have already done for us, as it generally doesn't make sense to waste resources coding things we can buy or get ready-made.
+
+Instead, we can focus on spending our time doing what we were hired for in the first place, and that is delivering value by coding our business rules into working software.
 
 ![Isaac Newton Quote. If I have seen further than others it is by standing upon the shoulders of giants.]({{ site.baseurl }}/images/isaac-newton-giants.jpg)
 
@@ -61,13 +65,13 @@ We tend to believe that writing our own code is faster than learning how to use 
 
 ![Too busy]({{ site.baseurl }}/images/too-busy.jpg)
 
-When we do evaluate an existing solution, the process is often superficial and biased. We only spend a few moments brushing over the basics just to quickly reject them as inelegant, complex or unsuitable. The idea of a shiny new implementation quickly takes over, and a proverbial hand starts patting us on the back for the great job we're about to do.
+When we do evaluate an existing solution, the process is often superficial and biased. We only spend a few moments brushing over the basics just to quickly reject them as inelegant, complex or unsuitable. The idea of a shiny new implementation quickly takes over, and a proverbial hand starts patting us on the back for the great work we're about to do.
 
-What really happens is that in-house implementations *feel* like they are quicker to develop, but usually the fast part is coming up with a rough idea of what needs to be done. Dealing with detailed planning, execution, quality assurance and maintenance phases, though, is a whole different story.
+In reality, in-house implementations *feel* like they are quicker to develop, but the only fast part is coming up with a rough idea of what needs to be done. Dealing with detailed planning, execution, quality assurance and maintenance phases, though, is a whole different story.
 
-Any solution should come *at minimum* with a good suite of automated tests and sufficient documentation, and skipping any of that in hope to go faster is a recipe for disaster. Such speed benefits are only short-term, and the technical debt we create of ourselves slows us down significantly just a few steps later.
+Any solution should come *at minimum* with a good suite of automated tests and sufficient documentation. Skipping any of that in hope to go faster is a recipe for disaster, as such speed benefits are only short-term, and the technical debt we create of ourselves slows us down significantly just a few steps later.
 
-Speed-wise, we should also be thinking about how good our team is with estimations. Do we miss our targets often? Do we spend most of our time fixing bugs, while core business behaviors are left waiting in the backlog? If any of that is true, it's probably not a good idea to put more work our way, especially if we can avoid it by using an existing implementation.
+Speed-wise, we should also be thinking about how good our team is with estimations. Do we miss our targets a bit too often? Do we spend most of our time fixing bugs, while core business behaviors are stuck in the backlog? If any of that is true, it's probably not a good idea to put more work our way, especially if we can avoid it by using an existing implementation.
 
 ## Preconception 2: In-house implementations are cheaper
 
@@ -75,43 +79,45 @@ What if using an existing solution comes with a paid license or support plan? Wo
 
 A commercial license is typically priced at a small fracture of the total design, implementation and maintenance costs of a given software solution. We could argue that we are only interested in a subset of the features available in that solution, and if we were to build them ourselves we wouldn't have to productionalize them independently. Although valid, these points don't prove which choice is cheaper.
 
-The most underestimated costs are those of maintenance. As mentioned previously, we tend to end up with half-baked solutions in favor of short-term speed. What we end up with is a mess that is very expensive to maintain, extend, or onboard people with.
+The most underestimated costs are those of maintenance. As mentioned previously, oftentimes we end up with half-baked solutions in favor of short-term speed. These prove to be very expensive to maintain, extend, or onboard people with.
 
-The moment such an implementation leaves our hands it becomes legacy, and the next time somebody in the team or company needs something similar will probably end up with yet another custom one. That cost is already high, without even considering the implications of a bug ending up in production.
+The moment such an implementation leaves our hands it becomes legacy, and the next time somebody in the team or organization needs something similar, usually ends up with yet another custom one. That cost quite high, without even considering the implications of a defect ending up in production.
 
 ![Balancing costs]({{ site.baseurl }}/images/balance-2108024_640.jpg)
 
 Let's not forget opensource. For every standard component of a software system there are typically multiple opensource offerings we can take advantage of, and most of them can be used for free. Most importantly, we have the option to look at their source code, contribute, or even fork them and drive them towards a different direction if needed.
 
-Many opensource solutions come with optional support plans. Through these we can get answer to specific questions, recommendations, and first class support when a problem occurs. That is also usually cheaper than having to develop, document, test and maintain the code ourselves.
+Many opensource solutions come with optional support plans. Through these, we can get direct answer to specific questions, recommendations, and first class support when a problem occurs. That is also usually cheaper than having to develop, document, test and maintain the code ourselves.
 
-Although obvious, I have to mention that development time is quite expensive, which means that custom solutions that are slower to develop (properly) are also more expensive.
+Even better, the larger the community is behind an opensource project, the easier it is to find answers to our questions fast and for free, eg. through [Stack Overflow](https://stackoverflow.com).
+
+Although obvious, it needs to be mentioned that development time is quite expensive, which means that custom solutions that are slower to develop (properly) are also more expensive.
 
 ## Preconception 3: In-house implementations are more secure
 
-Security is a huge concern of software systems. Especially when exposing a service over the internet, we need to make sure that we are doing everything we can to protect our customers and organization. Some think that third-party implementations are by definition less secure than in-house ones. That is a big trap.
+Security is a huge concern for software systems. Especially when exposing a service over the internet, we need to make sure that we do everything we can to protect our customers and organization. Some think that third-party implementations are by definition less secure than in-house ones. That's a big misconception.
 
-We tend to think of in-house solutions as more secure mostly because the implementation details are hidden from public eyes, therefore any potential flaws won't be known to attackers. In Security Engineering this point of view is called [security through obscurity](https://en.wikipedia.org/wiki/Security_through_obscurity), and has been rejected by security experts as far back as 1851.
+We tend to think of in-house solutions as more secure mostly because the implementation details are hidden from public eyes, therefore any potential flaws won't be directly visible to attackers. In Security Engineering this point of view is called [security through obscurity](https://en.wikipedia.org/wiki/Security_through_obscurity), and has been rejected by security experts as far back as 1851.
 
 ![Useless lock]({{ site.baseurl }}/images/padlock-934429_640.jpg)
 
 Popular third-party implementations have been battle-tested again and again, in numerous different scenarios. Especially in opensource solutions, there many more people examining the source code and spotting possible vulnerabilities compared to in-house implementations.
 
-The main point is, we should never assume that our implementations are more secure than alternatives, unless security experts are involved and security audits are done regularly.
+The main point is, we should never assume that our implementations are more secure than alternatives just because they are developed in-house. That is, unless security experts are involved and security audits are performed on a regular basis.
 
 ## Preconception 4: In-house implementations are more innovative
 
-Let's just pull this band-aid fast:
+Let's just rip off the band-aid:
 
 > Outside innovation is always bigger than Inside innovation
 
 Unfortunately, there are many organizations claiming to be innovative without having a clue what that word really means. Most of these cases refer to in-house implementations that don't solve any new problems, but someone somehow somewhere convinced their boss or team that it's a good idea to reinvent the wheel.
 
-And because those implementations are usually not that important for fulfilling the main mission of an organization, the resources allocated to them are not even close to what a proper solution would need. We've already discussed the consequences of half-baked implementations in previous sections.
+And because those implementations are usually not that important for fulfilling the main mission of an organization, the resources allocated to them are much less than what's actually needed. We've already discussed the consequences of half-baked implementations in previous sections.
 
 ![Innovation imagined VS Innovation budgeted]({{ site.baseurl }}/images/innovation.jpg)
 
-Innovation boils down to having a community around you and not solving everything by yourself. It's like a spoken language; the more the people who speak it, the stronger it gets.
+Innovation boils down to having a community around you and not solving everything by yourself. It's like a spoken language; the more the people who speak it, the stronger it is.
 
 That's why many [top organizations in the industry have opensourced large parts of their stack](https://github.com/collections/open-source-organizations). They don't just help the community, but also themselves by tapping to the collective effort of numerous other organizations and individuals.
 
@@ -119,11 +125,11 @@ Most importantly, innovation bears the weight of proof. Academics have been prac
 
 Truly [innovative organizations follow the same steps](https://research.google.com/pubs/papers.html), publishing scientific papers (or funding scientific researches), getting peer reviews, accepting external contributions and proving their hypotheses in a formal and structured way.
 
-## Preconception 5: In-house implementations are better aligned to our business needs
+## Preconception 5: In-house implementations are better aligned to business needs
 
-Although it sounds reasonable, this preconception is also easy to misunderstand.
+Although it sounds reasonable, this preconception is easy to misunderstand.
 
-A typical software system is composed of several components, arranged within many different layers of abstraction. At the center we can find the use cases, the whole purpose for the system's existence. 
+A typical software system is composed of several components, arranged within many different layers of abstraction. At the heart we can find the use cases, the whole purpose for the system's existence. 
 
 All other components are secondary and revolve around the use cases. Components like databases, frameworks, messaging systems, web frameworks - even the web itself - are implementation details.
 
@@ -135,7 +141,7 @@ Under most circumstances, building such components from scratch is a waste of re
 
 # Reinventing the wheel is immoral
 
-In a previous story we discussed that [as engineers we are also stakeholders](http://blog.drinkbird.com/all-about-results) of the systems we work on, which means that we bear a significant amount of responsibility for ensuring their long-term success and prosperity.
+In a previous story we discussed that [as engineers we are also stakeholders](http://blog.drinkbird.com/all-about-results) of the systems we work on, which means that we bear much responsibility for ensuring their long-term success and prosperity.
 
 As we discussed, there are many common preconceptions about in-house implementations. We need to make sure that we are fully aware of them before affecting any relevant decisions in our team or organization.
 
