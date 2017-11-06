@@ -22,7 +22,9 @@ kramdown:
     syntax_highlighter: rouge
 
 permalink: /:title
-gems: [jekyll-sitemap]
+gems:
+  - jekyll-sitemap
+  - jekyll-redirect-from
 
 links:
   - title: Stories

@@ -2,7 +2,8 @@
 layout: post
 title: "The Doctor and the Demanding Patient"
 excerpt: "A metaphor about professionalism in software development"
-permalink: /the-doctor-and-the-demanding-patient-metaphor-do-no-harm/
+permalink: /do-no-harm
+redirect_from: /the-doctor-and-the-demanding-patient-metaphor-do-no-harm/
 comments: true
 categories: blog
 featured: true
