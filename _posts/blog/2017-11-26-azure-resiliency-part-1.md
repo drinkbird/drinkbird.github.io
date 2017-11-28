@@ -72,7 +72,7 @@ Therefore, it's quite important to ask the proper questions early in the process
 
 # Redundancy for Azure resources
 
-Several Azure resources can be set up with redundancy out of the box to be resilient. Here are some examples:
+Many Azure resources can be set up with redundancy out of the box to be resilient. Here are some examples:
 
 * [Azure Storage](https://azure.microsoft.com/en-us/services/storage/) by default keeps 3 copies of our data within the same region, so if one copy fails, Azure will automatically use one of the healthy copies to create a new one. We have more options for redundancy, each associated with a different cost. For example, we can create a *geo redundant* storage account, where in addition to the 3 copies within the same region, Azure keeps another 3 replicas at a different, predetermined region. That way, if our entire primary region goes down or the service is simply unreachable, we can keep working from the secondary location.
 * [Azure SQL Database](https://azure.microsoft.com/en-us/services/sql-database/) lets us replicate data all around the world. In addition to our primary database, we can have up to 4 secondary replicas we can use for reads. If for some reason the primary database fails, Azure can promote one of the replicas and our application can keep working. Additionally, we can have automatic backups and perform point-in-time restores on demand.
@@ -80,5 +80,12 @@ Several Azure resources can be set up with redundancy out of the box to be resil
 * [Azure Virtual Machines](https://azure.microsoft.com/en-us/services/virtual-machines/) can be put into *availability sets*. Azure makes sure that VMs in two different availability sets have separate power, cooling and networking, and also are not restarted together in case Microsoft needs to update the infrastructure (eg. the hypervisor). Recently, Azure introduced a new feature called [*availability zones*](https://blogs.msdn.microsoft.com/igorpag/2017/10/08/why-azure-availability-zones/) which replaces availability sets and provides even better resiliency characteristics.
 * [Azure App Service](https://azure.microsoft.com/en-us/services/app-service/), one of the most popular Azure resources, lets us scale an application horizontally by simply flipping a virtual switch. It also puts a load balancer in front of the app in a transparent way, in order to distribute requests across all the running instances. In addition, if any of the replicas fail, Azure will automatically spin up a new one and replace the faulty one.
 
-To make informed decisions we need to research all those resources and resiliency options, and determine what is best for our specific use cases. As each option comes with a different cost, we also need to include the business into the decision process.
+Of course in order to make informed decisions we first need to research the available resources and their resiliency options, and determine what is best for our specific use cases.
 
+# Conclusion
+
+In the first part of the Azure Resiliency Patterns article series we discussed about the characteristics of resilient applications in the cloud, and also talked about the key ingredient for resiliency, which is redundancy.
+
+Many Azure resources come with resiliency features out of the box, and offered either transparently or in the form of configuration options. Since there is a different cost associated with each choice, and each application has different resiliency requirements, we need to involve the business early during the design process.
+
+In the next part of the series we'll address a very common concern of cloud systems design: *connection resiliency*. As always, you can get free e-mail updates when new stories are published by entering your e-mail address below.
