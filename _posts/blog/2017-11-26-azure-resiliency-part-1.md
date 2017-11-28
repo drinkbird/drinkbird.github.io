@@ -7,22 +7,15 @@ comments: true
 categories: blog
 featured: true
 image:
-  feature: resiliency.jpg
+  feature: redundancy-cover.jpg
 #  credit: pixabay
 reads:
   - cleanarchitecture
+  - domaindrivendesign
   - thecleancoder
   - cleancode
-  - xunit
   - agileppp
-  - refactoring
-  - legacycode
   - leanstartup
-  - domaindrivendesign
-  - cleanarchitecture
-  - softskills
-  - themythicalmanmonth
-  - effectiveusecases
   - userstoriesapplied
 ---
 
@@ -60,7 +53,7 @@ That's because both resiliency values have a common key ingredient.
 
 # Redundancy
 
-![The key ingredient: redundancy]({{ site.baseurl }}/images/redundancy.jpg)
+![The key ingredient: redundancy]({{ site.baseurl }}/images/redundancy-cover.jpg)
 
 *Redundancy* is the key ingredient for staying resilient in the cloud. The more resilient we need a system to be, the more resources and redundancy it needs, and the more expensive it gets.
 
@@ -68,9 +61,11 @@ Part of our role as engineers is to establish how much our business is willing t
 
 > The degree of resiliency a system needs is a *business decision*, one that significantly influences the architecture and technical decisions that we make for the system.
 
-Therefore, it's quite important to ask the proper questions early in the process of building a system, and also keep revisiting these decisions regularly, as both business and technical requirements change and evolve over time.
+Therefore, it's quite important to ask the proper questions early in the design process, and also keep revisiting these decisions regularly, as both business and technical requirements change and evolve over time.
 
 # Redundancy for Azure resources
+
+![Microsoft Azure Logo]({{ site.baseurl }}/images/Azure.png)
 
 Many Azure resources can be set up with redundancy out of the box to be resilient. Here are some examples:
 
@@ -88,4 +83,6 @@ In the first part of the Azure Resiliency Patterns article series we discussed a
 
 Many Azure resources come with resiliency features out of the box, and offered either transparently or in the form of configuration options. Since there is a different cost associated with each choice, and each application has different resiliency requirements, we need to involve the business early during the design process.
 
-In the next part of the series we'll address a very common concern of cloud systems design: *connection resiliency*. As always, you can get free e-mail updates when new stories are published by entering your e-mail address below.
+In the next part of the series we'll address a very common concern of cloud systems design: *connection resiliency*.
+
+As always, you can get free e-mail updates when new stories are published by entering your e-mail address below.
