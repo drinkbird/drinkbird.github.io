@@ -5,3 +5,5 @@ We all know how terrible the recruiting process of most companies is. Even profe
 But you're a developer. Why would this be any of your concern? Knowing what the recruitment process is meant to be, can help you identify companies that do it right. Chances are that these companies will be great to work at. Not just because they will know their stuff, but also because your colleagues will have been hired through the same, reliable process.
 
 On the other hand, you will also learn how to ask the right questions during the interview, and identify red flags that will help you avoid wasting time at a company that's not aligned with what you are looking for.
+
+<span class="label label-default">Professionalism</span>

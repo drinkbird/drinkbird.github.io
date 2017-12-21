@@ -1,3 +1,5 @@
 This is a great collection of tips from a wide range of industry professionals, including Michael Feathers, Pete Goodliffe and Diomidis Spinellis. It provides practical knowledge and principles that can be applied to all types of software projects.
 
 A great advantage of this book is that each chapter is autonomous and relatively short (1-2 pages long), so it's convenient to read between pomodoro sessions during the day.
+
+<span class="label label-default">Professionalism</span> <span class="label label-default">Technical (Various Levels)</span>

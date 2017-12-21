@@ -4,3 +4,5 @@ Instead on focusing on code, the authors present a number of practical approache
 
 As [Ward Cunningham](https://en.wikipedia.org/wiki/Ward_Cunningham), the father of wiki, said:
 > If I'm putting together a project, it's the authors of this book that I want... And failing that I'd settle for people who've read their book."
+
+<span class="label label-default">Professionalism</span> <span class="label label-default">Technical (Beginner - Intermediate)</span>

@@ -3,3 +3,5 @@ Every language has good and bad parts, and JavaScript has its fair share of the 
 In *JavaScript: The Good Parts*, Douglas Crockford outlines a great number of good ideas that make JavaScript a beautiful language, and also points out which parts should be avoided at all costs. It's a small but dense book, not necessarily easy to read, but it's definitely a must.
 
 For those who would like to get even deeper into JavaScript, there's also [JavaScript: The Definitive Guide](http://geni.us/jsdef) by David Flanagan.
+
+<span class="label label-default">Technical (Beginner - Intermediate)</span>
