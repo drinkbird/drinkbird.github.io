@@ -58,11 +58,13 @@ Some books that target fundamental knowledge utilize specific programming langua
 
 This is a hand-picked collection of the books that have greatly helped me improve my life, both in a professional and a personal level. I've read most of them more than once. Every single time I get to learn something new by seeing those books in a different light, mostly due to the additional experiences I have acquired between reads. I strongly believe that these books are totally worth your time.
 
+-----
+
 {% for read_key in page.reads %}
 <div id="{{read_key}}"></div>
 {% assign book = site.reads[read_key] %}
+{% assign book_key = read_key %}
 {% include book.html %}
-{% include books/{{ read_key }}.html %}
 
 -----
 
@@ -70,15 +72,16 @@ This is a hand-picked collection of the books that have greatly helped me improv
 
 ## Next on my list
 
-<div class="row">
+-----
+
 {% for read_key in page.nextreads %}
-<div class="col-md-3">
+<div id="{{read_key}}"></div>
 {% assign book = site.reads[read_key] %}
+{% assign book_key = null %}
 {% include book.html %}
-</div>
-{% endfor %}
-</div>
 
 -----
+
+{% endfor %}
 
 {% include subscribe-inpost.html %}

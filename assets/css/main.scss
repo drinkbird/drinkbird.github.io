@@ -13,6 +13,7 @@ $brand-secondary-dark:			#004C79;
 $black:							#000;
 $white:							#fff;
 $text-color:					$gray-darker;
+$border-radius-base:			0;
 
 $color-gh-csharp:				#178600;
 $color-gh-js:					#f1e05a;
@@ -33,6 +34,10 @@ $font-size-h3:					ceil(($font-size-base * 1.2));
 $font-size-h4:					ceil(($font-size-base * 1.1));
 $font-size-h5:					$font-size-base !default;
 $font-size-h6:					ceil(($font-size-base * 0.85));
+
+$btn-info-color:                 #fff !default;
+$btn-info-bg:                    #333;
+$btn-info-border:                darken(#333, 5%) !default;
 
 /* Navbar Variables **************************************************************************/
 
@@ -101,6 +106,12 @@ pre {
 	}
 }
 
+button, input[type=submit] {
+	-webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
 
 /* Header */
 .navbar {	
@@ -206,7 +217,7 @@ a {
 	figure {
 		figcaption {
 			color: $brand-primary-dark;
-			font-size: $font-size-h1;
+			font-size: $font-size-h3;
 		}
 	}
 
@@ -463,7 +474,7 @@ footer.site-footer {
 		@extend .text-left;
 	}
 	
-	a {
+	a:not(.btn) {
 		text-decoration: underline;
 	}
 }
@@ -502,28 +513,19 @@ a.cover {
 }
 
 .book {
-	-moz-transition: all 0.3s ease-out;
-	-o-transition: all 0.3s ease-out;
-	-webkit-transition: all 0.3s ease-out;
-	transition: all 0.3s ease-out;
-
-	> a {
-		display: block;
-		text-align: center;
-		border: none;
-
-		> img {
-			display: inline-block;
-		}
+	a.btn {
+		text-decoration: none;
+		display: inline-block;
+		margin-top: 5px;
+		margin-bottom: 15px;
 	}
+}
 
-	&:hover {
-		-moz-transition: all 0.3s ease-in;
-		-o-transition: all 0.3s ease-in;
-		-webkit-transition: all 0.3s ease-in;
-		transition: all 0.3s ease-in;
-
-		@include opacity(0.7);
+@media (min-width: $screen-md-min) {
+	.book {
+		h2 {
+			margin-top: 0;
+		}
 	}
 }
 
@@ -538,11 +540,6 @@ a.cover {
 
 		a {
 			text-decoration: none;
-			color: inherit;
-
-			&:hover {
-				color: inherit;
-			}
 		}
 
 		img {
@@ -554,12 +551,6 @@ a.cover {
 			font-weight: bold;
     		font-size: 22px;
 		}
-
-		a.btn {
-			width: 80%;
-			font-size: 16px;
-			font-weight: 600;
-		}
 	}
 }
 
@@ -569,11 +560,11 @@ a.cover {
 }
 
 .mc_embed_signup_sidebar {
-    input.btn{width:80%;font-size:16px;font-weight:600;display:inline-block;margin:14px 0 50px;}
+    input.btn{width:80%;font-size:16px;display:inline-block;margin:14px 0 50px;}
 }
 
 .mc_embed_signup_postbody {
-    input.btn{width:80%;font-size:16px;font-weight:600;display:inline-block;margin:14px 0 30px;}
+    input.btn{width:80%;font-size:16px;display:inline-block;margin:14px 0 30px;}
 	border: 3px dashed #46B8DA;
 	background-color: #F0F9FF;
 }

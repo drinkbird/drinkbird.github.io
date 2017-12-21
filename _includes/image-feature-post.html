@@ -7,7 +7,7 @@
   <figure>
     <img src="{{ imageSource }}" alt="{{ page.title }} feature image" class="img-responsive">
   {% if page.image.credit %}
-    <figcaption>Photo Credit: <a href="{{ page.image.creditlink }}" target="_blank">{{ page.image.credit }}</a></figcaption>
+    <figcaption>Image by <a href="{{ page.image.creditlink }}" target="_blank">{{ page.image.credit }}</a></figcaption>
   {% endif %}
   {% if page.image.caption %}
     <figcaption>{{ page.image.caption }}</figcaption>

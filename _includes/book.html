@@ -1,7 +1,17 @@
 <div class="book">
-	<a target="_blank" href="{{ book.url }}" class="book-link" aria-label="View '{{ book.title }}' on Amazon">
-		<img class="img-responsive" src="http://images.amazon.com/images/P/{{ book.isbn }}.jpg" alt="{{ book.title }}" />
-		<h2>{{ book.title }}</h2>
-		<h4>(Click to view on Amazon)</h4>
-	</a>
+	<div class="row">
+		<div class="col-md-3">
+			<img class="img-responsive" src="http://images.amazon.com/images/P/{{ book.isbn }}.jpg" alt="{{ book.title }}" />
+		</div>
+		<div class="col-md-9">
+			<h2>{{ book.title }}</h2>
+			
+			<a target="_blank" href="{{ book.url }}" class="btn btn-info" aria-label="Buy '{{ book.title }}' on Amazon">Buy on Amazon</a>
+
+			{% if book_key %}
+			{% capture book_description %}{% include books/{{ book_key }}.md %}{% endcapture %}
+			{{ book_description | markdownify }}
+			{% endif %}
+		</div>
+	</div>	
 </div>
