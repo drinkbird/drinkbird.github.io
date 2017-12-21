@@ -1,3 +1,5 @@
-What is the difference between good and bad code? How bad code can be transformed to good code? What are the best practices for formatting code, naming things, writing tests, or implementing error handling without clouding the business logic?
+As programmers we tend to optimize for writing code fast, which is unfortunate as we typically spend up to 80% of our time reading and changing existing code. We should instead optimize for *reading* code fast, and be able to make changes easier without causing regressions. You could say that we need to be producing software that is actually `soft`!
 
-This book is another must by Robert C. Martin (aka Uncle Bob). It is highly recommended for every developer, project manager, team leader, or system analyst who is interested in producing better code.
+What is the difference between good and bad code? How bad code can be transformed to good code? What are the best practices for formatting, naming things, writing tests, or implementing error handling without clouding the business logic?
+
+This book is another must-read by Robert C. Martin (aka Uncle Bob). It is highly recommended for programmers, technical architects and team leaders who are interested in producing better, high-quality and highly-effective code.
