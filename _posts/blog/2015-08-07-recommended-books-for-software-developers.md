@@ -28,17 +28,26 @@ reads:
   - dpruby
   - 97things
   - csharpindepth
-  - aspnetmvc5
-  - jsgoodparts
+  - aspnetcoremvc
   - leanstartup
   - steallikeanartist
   - showyourwork
   - interactiondesign
+  - buildingmicroservices
+  - cleanarchitecture
+  - theaccidentalcreative
+  - xunit
+  - fsharp3
+  - dataintensive
 nextreads:
-  - effectiveusecases
+  - peopleware
+  - themythicalmanmonth
   - userstoriesapplied
   - legacycode
-  - themythicalmanmonth
+  - clrviacsharp
+oldreads:
+  - aspnetmvc5
+  - jsgoodparts
 ---
 
 ## Not all books have the same lifespan
@@ -66,23 +75,37 @@ This is a hand-picked collection of books that have greatly helped me skyrocket 
 -----
 
 {% for read_key in page.reads %}
-<div id="{{read_key}}"></div>
 {% assign book = site.reads[read_key] %}
 {% assign book_key = read_key %}
+{% assign display_book_description = true %}
 {% include book.html %}
 
 -----
 
 {% endfor %}
 
-## Next on my list
+## My next reads
 
 -----
 
 {% for read_key in page.nextreads %}
-<div id="{{read_key}}"></div>
 {% assign book = site.reads[read_key] %}
-{% assign book_key = null %}
+{% assign book_key = read_key %}
+{% assign display_book_description = false %}
+{% include book.html %}
+
+-----
+
+{% endfor %}
+
+## Older recommendations
+
+-----
+
+{% for read_key in page.oldreads %}
+{% assign book = site.reads[read_key] %}
+{% assign book_key = read_key %}
+{% assign display_book_description = true %}
 {% include book.html %}
 
 -----

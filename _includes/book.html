@@ -1,4 +1,5 @@
 <div class="book">
+	<div class="book-anchor" id="{{book_key}}"></div>
 	<div class="row">
 		<div class="col-md-3">
 			<img class="img-responsive" src="http://images.amazon.com/images/P/{{ book.isbn }}.jpg" alt="{{ book.title }}" />
@@ -8,7 +9,7 @@
 			
 			<a target="_blank" href="{{ book.url }}" class="btn btn-info" aria-label="Buy '{{ book.title }}' on Amazon">Buy on Amazon</a>
 
-			{% if book_key %}
+			{% if display_book_description %}
 			{% capture book_description %}{% include books/{{ book_key }}.md %}{% endcapture %}
 			{{ book_description | markdownify }}
 			{% endif %}

@@ -519,6 +519,12 @@ a.cover {
 		margin-top: 5px;
 		margin-bottom: 15px;
 	}
+
+	.book-anchor {
+		display: block;
+		position: relative;
+		top: -90px;
+	}
 }
 
 @media (min-width: $screen-md-min) {

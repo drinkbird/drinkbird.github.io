@@ -106,6 +106,10 @@ reads:
     title: "Pro ASP.Net MVC 5 (Expert's Voice in ASP.Net)"
     url: "http://geni.us/aspnetmvc5"
     isbn: "1430265299"
+  aspnetcoremvc:
+    title: "Pro ASP.NET Core MVC"
+    url: "http://geni.us/aspnetcoremvc"
+    isbn: "1484203984"
   jsgoodparts:
     title: "JavaScript: The Good Parts"
     url: "http://geni.us/jsgoodparts"
@@ -206,3 +210,23 @@ reads:
     title: "Clean Architecture: A Craftsman's Guide to Software Structure and Design"
     url: "http://geni.us/cleanarchitecture"
     isbn: "0134494164"
+  fsharp3:
+    title: "Programming F# 3.0: A Comprehensive Guide for Writing Simple Code to Solve Complex Problems"
+    url: "http://geni.us/fsharp3"
+    isbn: "1449320295"
+  dataintensive:
+    title: "Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems"
+    url: "http://geni.us/dataintensive"
+    isbn: "1449373321"
+  clrviacsharp:
+    title: "CLR via C# (4th Edition) (Developer Reference)"
+    url: "http://geni.us/clrviacsharp"
+    isbn: "0735667454"
+  peopleware:
+    title: "Peopleware: Productive Projects and Teams (3rd Edition)"
+    url: "http://geni.us/peopleware"
+    isbn: "0321934113"
+  realworldfp:
+    title: "Real-World Functional Programming: With Examples in F# and C#"
+    url: "http://geni.us/realworldfp"
+    isbn: "1933988924"
