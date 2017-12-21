@@ -1,5 +1,3 @@
 John Sonmez, a successful engineer with vast experience on the field, does a great job in providing quality advice and unique insights on numerous topics such as career development, personal branding, learning, productivity, finance, even fitness and psychology. It is broken down into many small chapters, which make it easier to read and digest.
 
 I was totally amazed by Soft Skills. It gave me a fresh perspective on professionalism and life in general, and encouraged me to become a better version of myself.
-
-<span class="label label-default">Professionalism</span>

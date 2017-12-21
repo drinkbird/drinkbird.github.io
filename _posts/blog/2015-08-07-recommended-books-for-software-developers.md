@@ -13,9 +13,10 @@ image:
   creditlink: http://www.freepik.com/free-vector/book-collection-in-flat-design_764791.htm
 page-key: books
 subscribe_source: books
-reads: 
-  - thecleancoder
+reads:
+  - careerguide
   - softskills
+  - thecleancoder
   - smartandgetsthingsdone
   - codecomplete
   - agileppp
@@ -45,6 +46,7 @@ nextreads:
   - userstoriesapplied
   - legacycode
   - clrviacsharp
+  - realworldfp
 oldreads:
   - aspnetmvc5
   - jsgoodparts
@@ -61,6 +63,8 @@ Knowledge is divided into two categories, *information* and *fundamentals*. The 
 Especially books around people and behavior can be relevant for a lifetime, as technology changes but people don't.
 
 Having a solid skill set based on fundamentals can help us learn new technologies on demand, rapidly adapt to new requirements and ultimately live a more fulfilled professional life. Skills based on information have to be built on top of fundamentals.
+
+I have also included a few exceptional books that live in the cross section between information and fundamentals. These are tagged as `Niche` and make the most sense for people who work day to day with these specific technologies.
 
 ### Don't judge a book by its ~~cover~~ programming language
 
