@@ -9,13 +9,13 @@
 			<div>
 				<a target="_blank" href="{{ book.url }}" class="btn btn-info" aria-label="Buy '{{ book.title }}' on Amazon">Buy on Amazon</a>
 			</div>
-			
+
 			{% if display_book_description %}
 			{% capture book_description %}{% include books/{{ book_key }}.md %}{% endcapture %}
 			{{ book_description | markdownify }}
 			{% endif %}
 
-			{% for tag in book.tags %}<span class="label label-default">{{ tag }}</span> {% endfor %}
+			Tags: {% for tag in book.tags %}<span class="label label-info">{{ tag }}</span> {% endfor %}
 		</div>
 	</div>	
 </div>

@@ -15,6 +15,12 @@ $white:							#fff;
 $text-color:					$gray-darker;
 $border-radius-base:			0;
 
+$brand-success:        			#5cb85c !default;
+$brand-info:           			$brand-secondary;
+$brand-warning:					$brand-primary;
+$brand-danger:					#d9534f !default;
+
+
 $color-gh-csharp:				#178600;
 $color-gh-js:					#f1e05a;
 $color-gh-html:					#e44b23;
@@ -36,8 +42,8 @@ $font-size-h5:					$font-size-base !default;
 $font-size-h6:					ceil(($font-size-base * 0.85));
 
 $btn-info-color:                 #fff !default;
-$btn-info-bg:                    #333;
-$btn-info-border:                darken(#333, 5%) !default;
+$btn-info-bg:                    $brand-primary-dark;
+$btn-info-border:                darken($brand-primary-dark, 5%) !default;
 
 /* Navbar Variables **************************************************************************/
 
