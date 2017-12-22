@@ -43,9 +43,8 @@ links:
 owner:
   name: Anastasios Piotopoulos
   disqus-shortname: drinkbird
-  twitter: piotopoulos
+  twitter: thedrinkbird
   facebook: thedrinkbird
-  #googleplus:
   github: drinkbird
   stackoverflow: 2050674/drinkbird
   linkedin: piotopoulos
@@ -58,70 +57,117 @@ reads:
     title: "Soft Skills: The software developer's life manual"
     url: "http://geni.us/softskills"
     isbn: "1617292397"
+    tags:
+      - Career Development
   thecleancoder:
     title: "The Clean Coder: A Code of Conduct for Professional Programmers (Robert C. Martin)"
     url: "http://geni.us/thecleancoder"
     isbn: "0137081073"
+    tags:
+      - Career Development
+      - Not focused on code
   codecomplete:
     title: "Code Complete: A Practical Handbook of Software Construction"
     url: "http://geni.us/codecomplete"
     isbn: "0735619670"
+    tags:
+      - Technical (Beginner - Intermediate)
   agileppp:
     title: "Agile Principles, Patterns, and Practices in C# (Robert C. Martin)"
     url: "http://geni.us/agileppp"
     isbn: "0131857258"
+    tags:
+      - Technical (Advanced)
   cleancode:
     title: "Clean Code: A Handbook of Agile Software Craftsmanship"
     url: "http://geni.us/cleancode"
     isbn: "0132350882"
+    tags:
+      - Technical (Intermediate)
   pragmaticprogrammer:
     title: "The Pragmatic Programmer"
     url: "http://geni.us/pragmaticprogrammer"
     isbn: "020161622X"
+    tags:
+      - Technical (Beginner - Intermediate)
+      - Career Development
   refactoring:
     title: "Refactoring: Improving the Design of Existing Code (Object Technology Series)"
     url: "http://geni.us/refactoring"
     isbn: "0201485672"
+    tags:
+      - Technical (Intermediate)
   hfdesignpatterns:
     title: "Head First Design Patterns"
     url: "http://geni.us/hfdesignpatterns"
     isbn: "0596007124"
+    tags:
+      - Technical (Beginner - Intermediate)
   gofdp:
     title: "Design patterns: elements of reusable object-oriented software"
     url: "http://geni.us/gofdp"
     isbn: "0201633612"
+    tags:
+      - Technical (Advanced)
   dpruby:
     title: "Design Patterns in Ruby"
     url: "http://geni.us/dpruby"
     isbn: "0321490452"
+    tags:
+      - Technical (Intermediate)
   97things:
     title: "97 Things Every Programmer Should Know"
     url: "http://geni.us/97things"
     isbn: "0596809484"
+    tags:
+      - Career Development
+      - Technical (Various Levels)
   csharpindepth:
     title: "C# in Depth"
     url: "http://geni.us/csharpindepth"
     isbn: "161729134X"
+    tags:
+      - Technical (Intermediate - Advanced)
+      - Niche
   aspnetmvc5:
     title: "Pro ASP.Net MVC 5 (Expert's Voice in ASP.Net)"
     url: "http://geni.us/aspnetmvc5"
     isbn: "1430265299"
+    tags:
+      - Technical (Beginner - Intermediate)
+      - Niche
+  aspnetcoremvc:
+    title: "Pro ASP.NET Core MVC"
+    url: "http://geni.us/aspnetcoremvc"
+    isbn: "1484203984"
+    tags:
+      - Technical (Beginner - Intermediate)
+      - Niche
   jsgoodparts:
     title: "JavaScript: The Good Parts"
     url: "http://geni.us/jsgoodparts"
     isbn: "0596517742"
+    tags:
+      - Technical (Beginner - Intermediate)
   leanstartup:
     title: "The Lean Startup"
     url: "http://geni.us/leanstartup"
     isbn: "0307887898"
+    tags:
+      - Product Development
   steallikeanartist:
     title: "Steal Like An Artist"
     url: "http://geni.us/steallikeanartist"
     isbn: "0761169253"
+    tags:
+      - Inspiration
   interactiondesign:
     title: "Interaction Design"
     url: "http://geni.us/interactiondesign"
     isbn: "1119020751"
+    tags:
+      - User Experience
+      - Product Development
   learnazure:
     title: "Learning Microsoft Azure"
     url: "http://geni.us/learnazure"
@@ -138,14 +184,20 @@ reads:
     title: "The Art of Unit Testing: with examples in C#"
     url: "http://geni.us/artofunittesting"
     isbn: "1617290890"
+    tags:
+      - Technical (Beginner - Intermediate)
   smartandgetsthingsdone:
     title: "Smart and Gets Things Done: Joel Spolsky's Concise Guide to Finding the Best Technical Talent"
     url: "http://geni.us/smartandgetsthingsdone"
     isbn: "1590598385"
+    tags:
+      - Career Development
   showyourwork:
     title: "Show Your Work!: 10 Ways to Share Your Creativity and Get Discovered"
     url: "http://geni.us/showyourwork"
     isbn: "076117897X"
+    tags:
+      - Career Development
   legacycode:
     title: "Working Effectively with Legacy Code"
     url: "http://geni.us/legacycode"
@@ -166,6 +218,8 @@ reads:
     title: "The Accidental Creative: How to Be Brilliant at a Moment's Notice"
     url: "http://geni.us/theaccidentalcreative"
     isbn: "1591846242"
+    tags:    
+      - Inspiration
   creativityincbook:
     title: "Creativity, Inc.: Overcoming the Unseen Forces That Stand in the Way of True Inspiration"
     url: "http://geni.us/creativityincbook"
@@ -182,6 +236,9 @@ reads:
     title: "Building Microservices: Designing Fine-Grained Systems"
     url: "http://geni.us/buildingmicroservices"
     isbn: "1491950358"
+    tags:
+      - Technical (Beginner - Intermediate)
+      - Not focused on code
   microservicearch:
     title: "Microservice Architecture: Aligning Principles, Practices, and Culture"
     url: "http://geni.us/microservicearch"
@@ -202,7 +259,44 @@ reads:
     title: "xUnit Test Patterns: Refactoring Test Code"
     url: "http://geni.us/xunit"
     isbn: "0131495054"
+    tags:
+      - Technical (Intermediate - Advanced)
   cleanarchitecture:
     title: "Clean Architecture: A Craftsman's Guide to Software Structure and Design"
     url: "http://geni.us/cleanarchitecture"
     isbn: "0134494164"
+    tags:
+      - Technical (Intermediate)
+      - Not focused on code
+  fsharp3:
+    title: "Programming F# 3.0: A Comprehensive Guide for Writing Simple Code to Solve Complex Problems"
+    url: "http://geni.us/fsharp3"
+    isbn: "1449320295"
+    tags:
+      - Technical (Beginner - Intermediate)
+      - Niche
+  dataintensive:
+    title: "Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems"
+    url: "http://geni.us/dataintensive"
+    isbn: "1449373321"
+    tags:
+      - Technical (Intermediate - Advanced)
+  clrviacsharp:
+    title: "CLR via C# (4th Edition) (Developer Reference)"
+    url: "http://geni.us/clrviacsharp"
+    isbn: "0735667454"
+  peopleware:
+    title: "Peopleware: Productive Projects and Teams (3rd Edition)"
+    url: "http://geni.us/peopleware"
+    isbn: "0321934113"
+  realworldfp:
+    title: "Real-World Functional Programming: With Examples in F# and C#"
+    url: "http://geni.us/realworldfp"
+    isbn: "1933988924"
+  careerguide:
+    title: "The Complete Software Developer's Career Guide"
+    url: "http://geni.us/careerguide"
+    isbn: "0999081411"
+    tags:
+      - Career Development
+      - Not focused on code
