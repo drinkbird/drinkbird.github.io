@@ -15,7 +15,9 @@
 			{{ book_description | markdownify }}
 			{% endif %}
 
+			{% if book.tags %}
 			Tags: {% for tag in book.tags %}<span class="label label-info">{{ tag }}</span> {% endfor %}
+			{% endif %}
 		</div>
 	</div>	
 </div>
