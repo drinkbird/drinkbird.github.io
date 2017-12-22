@@ -1,51 +1,52 @@
 ---
 layout: page
 title: "Recommended books for software developers"
-excerpt: "These are the books that have changed my life. Updated: 11-08-2016"
-date: 2015-08-07 00:00:00
+excerpt: "These are the books that have changed my life. Updated December 2017"
 permalink: /books/
 comments: true
 categories: blog
 featured: true
 image:
-  feature: books.png
-  credit: Freepik
-  creditlink: http://www.freepik.com/free-vector/book-collection-in-flat-design_764791.htm
+  feature: books2.png
+# https://pixabay.com/en/book-rack-shelf-furniture-design-2943383/
+# books.png:
+# credit: Freepik
+# creditlink: http://www.freepik.com/free-vector/book-collection-in-flat-design_764791.htm
 page-key: books
 subscribe_source: books
 reads:
   - careerguide
+  - cleanarchitecture
+  - buildingmicroservices
+  - dataintensive
+  - cleancode
+  - 97things
   - softskills
   - thecleancoder
   - smartandgetsthingsdone
-  - codecomplete
-  - agileppp
-  - cleancode
   - pragmaticprogrammer
+  - codecomplete
   - artofunittesting
+  - xunit
   - refactoring
   - hfdesignpatterns
   - gofdp
   - dpruby
-  - 97things
-  - csharpindepth
-  - aspnetcoremvc
   - leanstartup
+  - theaccidentalcreative
   - steallikeanartist
   - showyourwork
   - interactiondesign
-  - buildingmicroservices
-  - cleanarchitecture
-  - theaccidentalcreative
-  - xunit
+  - agileppp
+  - aspnetcoremvc
+  - csharpindepth
   - fsharp3
-  - dataintensive
 nextreads:
   - peopleware
   - themythicalmanmonth
   - userstoriesapplied
-  - legacycode
   - clrviacsharp
+  - legacycode
   - realworldfp
 oldreads:
   - aspnetmvc5
