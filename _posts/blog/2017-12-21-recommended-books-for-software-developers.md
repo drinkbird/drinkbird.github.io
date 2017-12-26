@@ -75,8 +75,6 @@ Some books that target fundamental knowledge utilize specific programming langua
 
 This is a hand-picked collection of books that have greatly helped me skyrocket my career and become a better professional. I've read most of them more than once, as the additional experiences I acquire between reads help me see those books in a different light, so and every single time I get to learn something new. I strongly believe that these books worth your time and deserve a spot at your bookcase.
 
-*Full disclosure: when you buy books using the links below I receive some Amazon credits. It doesn't cost you anything extra, but it helps me buy more books <3*
-
 -----
 
 {% for read_key in page.reads %}

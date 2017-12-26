@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Privacy Policy for DrinkBird
+title: Privacy Policy and Disclosure for DrinkBird
 permalink: /privacy-policy/
 ---
 
@@ -16,11 +16,11 @@ Like many other Web sites, drinkbird.com makes use of log files. These files mer
 
 drinkbird.com uses cookies to store information about visitors' preferences, to record user-specific information on which pages the site visitor accesses or visits, and to personalize or customize our web page content based upon visitors' browser type or other information that the visitor sends via their browser.
 
-# Our Advertising Partners
+# Our Advertising Partners - Disclosure
  
 Some of our advertising partners may use cookies and web beacons on our site. Our advertising partners include:
 
-- Amazon: *The owner of this website, Anastasios Piotopoulos, is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Amazon properties including, but not limited to, amazon.com, amazon.co.uk, amazon.ca, amazon.fr, amazon.de, amazon.it and amazon.es.*
+- We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.
 
 These third party ad servers or ad networks use technology in their respective advertisements and links that appear on drinkbird.com and which are sent directly to your browser. They automatically receive your IP address when this occurs. Other technologies (such as cookies, JavaScript, or Web Beacons) may also be used by our site's third-party ad networks to measure the effectiveness of their advertising campaigns and/or to personalize the advertising content that you see on the site.
 
@@ -56,6 +56,6 @@ By using our website, you hereby consent to our privacy policy and agree to its 
 
 # Update
 
-This Privacy Policy was last updated on: Friday, August 6th, 2016.
+This Privacy Policy was last updated on: Tuesday, December 26th, 2017.
 
 *Should we update, amend or make any changes to our privacy policy, those changes will be posted here.*
