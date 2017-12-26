@@ -65,7 +65,7 @@ $(function() {
     // Add target blank to external links
     $("a[href^='http']").attr("target", "_blank");
 
-    $("a[href^='http://geni.us/']").not(".btn, .book-link").append(" (Buy on Amazon)");
+    $("a[href^='http://geni.us/']").not(".btn, .book-link").append(" (View on Amazon)");
 
     // Rotating word effect
     var curNewsIndex = 0;
