@@ -1,15 +1,15 @@
 ---
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600,800);
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto');
 
 $gray-darker:					#4a4a4a;
 $brand-primary:					#e67e22;
 $brand-primary-dark:			#3f2808;
 $brand-primary-light:			#f39c12;
 $brand-primary-lighter:			lighten($brand-primary, 40%);
-$brand-secondary:				#3C8AB8;
-$brand-secondary-dark:			#004C79;
+$brand-secondary:				#2196f3;
+$brand-secondary-dark:			#1565C0;
 $black:							#000;
 $white:							#fff;
 $text-color:					$gray-darker;
@@ -19,17 +19,17 @@ $brand-success:        			#5cb85c !default;
 $brand-info:           			$brand-secondary;
 $brand-warning:					$brand-primary;
 $brand-danger:					#d9534f !default;
-
+$brand-footer:					#BBDEFB;
 
 $color-gh-csharp:				#178600;
 $color-gh-js:					#f1e05a;
 $color-gh-html:					#e44b23;
 $color-gh-java:					#b07219;
 
-$font-family-serif:				Georgia, "Times New Roman", Times, serif;
-$font-family-sans-serif:		"Open Sans", Helvetica, Arial, sans-serif;
-$font-family-base:				$font-family-sans-serif;
-$headings-font-family:			$font-family-sans-serif;
+$font-family-secondary:			"Roboto", Helvetica, Arial, sans-serif;
+$font-family-primary:			"Open Sans", Helvetica, Arial, sans-serif;
+$font-family-base:				$font-family-secondary;
+$headings-font-family:			$font-family-primary;
 $font-size-base:				16px;
 $line-height-base:				1.8;
 $icon-font-path:				"../fonts/";
@@ -42,8 +42,8 @@ $font-size-h5:					$font-size-base !default;
 $font-size-h6:					ceil(($font-size-base * 0.85));
 
 $btn-info-color:                 #fff !default;
-$btn-info-bg:                    $brand-primary-dark;
-$btn-info-border:                darken($brand-primary-dark, 5%) !default;
+$btn-info-bg:                    $brand-secondary;
+$btn-info-border:                $brand-secondary-dark !default;
 
 /* Navbar Variables **************************************************************************/
 
@@ -112,16 +112,44 @@ pre {
 	}
 }
 
-button, input[type=submit] {
-	-webkit-transition: all 0.3s ease-out;
-    -moz-transition: all 0.3s ease-out;
-    -o-transition: all 0.3s ease-out;
-    transition: all 0.3s ease-out;
+textarea, textarea.form-control, input.form-control, input[type=text], input[type=password], input[type=email], input[type=number], [type=text].form-control, [type=password].form-control, [type=email].form-control, [type=tel].form-control, [contenteditable].form-control {
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    -webkit-appearance: none;
+    -webkit-box-shadow: inset 0 -1px 0 #ddd;
+    box-shadow: inset 0 -1px 0 #ddd;
+	font-size: 16px;
+	text-align: center;
 }
+
+textarea:focus, textarea.form-control:focus, input.form-control:focus, input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, input[type=number]:focus, [type=text].form-control:focus, [type=password].form-control:focus, [type=email].form-control:focus, [type=tel].form-control:focus, [contenteditable].form-control:focus {
+    -webkit-box-shadow: inset 0 -2px 0 $brand-secondary;
+    box-shadow: inset 0 -2px 0 $brand-secondary;
+}
+
+button, input[type=submit], .btn {
+	border: none;
+	white-space: nowrap;
+    padding: 6px 16px;
+	font-size: 13px;
+	font-family: $font-family-secondary;
+	line-height: 1.846;
+	letter-spacing: 0.1px;
+	text-transform: uppercase;
+
+	-webkit-box-shadow: 1px 1px 4px rgba(0,0,0,0.4);
+	box-shadow: 1px 1px 4px rgba(0,0,0,0.4);	
+	-webkit-transition: all 0.4s ease-out;
+    -moz-transition: all 0.4s ease-out;
+    -o-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out;
+}
+
 
 /* Header */
 .navbar {	
-	font-family: $font-family-sans-serif;
+	font-family: $font-family-secondary;
 	margin-bottom: 0;
 	z-index: 1;
 }
@@ -131,7 +159,7 @@ button, input[type=submit] {
 
 	img {
 		height: 100px;
-		transition: 0.3s;
+		transition: 0.4s;
 	}
 }
 
@@ -309,19 +337,19 @@ a {
 
 .content-featured {
 	h2 {
-		font-weight: 600;
+		font-weight: normal;
 		font-size: 40px;
 	}
 
 	h1 {
     	font-size: 38px;
-    	font-weight: 600;
+    	font-weight: normal;
 	}
 
 	p {
 		font-size: 18px;
 		padding-top: 0.8em;
-		font-weight: 400;
+		font-weight: normal;
 	}
 }
 
@@ -387,14 +415,13 @@ a {
 	}
 }
 
-
-
 figure {
 	@extend .text-center;
 	margin-bottom: 10px;
 
 	img, .img-responsive {
 		display: inline-block;
+		margin-bottom: 10px;
 	}
 }
 
@@ -451,6 +478,12 @@ ul.gallery {
 	}
 }
 
+figure.logo {
+	img {
+		max-width: 300px;
+	}
+}
+
 /* Footer */
 footer.site-footer {
 	@extend .text-center;
@@ -458,17 +491,22 @@ footer.site-footer {
 	padding: 16px 10px;
 	position: relative;
 	background-color: $brand-secondary-dark;
+	font-family: $font-family-primary;
 	
 	section.copyright, section.published {
 		font-size: $font-size-base - 7.2;
 		font-weight: 600;
-		color: $brand-secondary;
+		color: $brand-footer;
 	}
 
-	a:hover {
-		color: #E8F4FA;
-	}
+	a {
+		color: $brand-footer;
 
+		&:hover {
+			color: $white;
+		}	
+	}
+	
 	.logo-footer {
 		height: 40px;
 	}
@@ -568,17 +606,36 @@ a.cover {
 
 #mc_embed_signup {
 	text-align: center;
-    input.email{width:100%;}
+	input.email {
+		width: 100%;
+		border-color: #d2d1d1;
+	}
+
+	input.mce_inline_error {
+		border-color: $brand-danger !important;
+	}
+	
+	div.mce_inline_error {
+		background-color: inherit !important;
+		color: $brand-danger !important;
+		font-family: $font-family-primary !important;
+		font-weight: normal !important;
+	}
 }
 
 .mc_embed_signup_sidebar {
-    input.btn{width:80%;font-size:16px;display:inline-block;margin:14px 0 50px;}
+    input.btn {
+		display:inline-block;
+		margin:14px 0 50px;
+	}
 }
 
 .mc_embed_signup_postbody {
-    input.btn{width:80%;font-size:16px;display:inline-block;margin:14px 0 30px;}
-	border: 3px dashed #46B8DA;
-	background-color: #F0F9FF;
+    input.btn {
+		display:inline-block;
+		margin:14px 0 30px;
+	}
+	background-color: #E3F2FD;
 }
 
 .author {

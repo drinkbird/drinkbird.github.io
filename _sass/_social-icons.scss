@@ -84,13 +84,21 @@ $youtube-color:             #ff3333;
       text-decoration: none !important;
       text-transform: uppercase;
       font-family: $headings-font-family;
-      font-size: 1em;
+      font-size: 14px;
       font-weight: bold;
       color: #fff;
       opacity: 0.8;
       padding: 5px;
 
+      -webkit-box-shadow: 1px 1px 4px rgba(0,0,0,0.4);
+      box-shadow: 1px 1px 4px rgba(0,0,0,0.4);	
+      -webkit-transition: all 0.4s ease-out;
+      -moz-transition: all 0.4s ease-out;
+      -o-transition: all 0.4s ease-out;
+      transition: all 0.4s ease-out;
+
       &:hover {
+        color: #fff;
         opacity: 1;
       }
 
