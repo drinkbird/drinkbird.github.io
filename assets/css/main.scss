@@ -569,7 +569,7 @@ footer.site-footer {
 	}
 }
 
-.post-body{
+.post-body {
 	img {
 		@extend .img-responsive;
 	}
@@ -577,6 +577,7 @@ footer.site-footer {
 	& > p > img {
 		display: block;
 		margin: 20px auto 0;
+		max-width: 100%;
 	}
 
 	.giphy {
@@ -585,7 +586,13 @@ footer.site-footer {
 	}
 }
 
-.post-body 
+@media (min-width: $screen-sm-min) {
+	.post-body {
+		& > p > img {
+			max-width: 70%;
+		}
+	}
+}
 
 blockquote {
 	font-size: 20px;

@@ -17,8 +17,7 @@ reads:
   - cleancode
   - 97things
   - softskills
-  - thecleancoder 
-  - smartandgetsthingsdone
+  - thecleancoder
 # https://about.gitlab.com/handbook/values/
 ---
 
