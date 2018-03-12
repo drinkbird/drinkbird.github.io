@@ -18,8 +18,6 @@ layout: default
 					<div class="col-md-9">
 						<div class="post-body">
 							{{ content }}
-							<hr/>
-							{% include subscribe-inpost.html %}
 						</div>
 					</div>
 					<div class="col-md-3">
@@ -29,7 +27,6 @@ layout: default
 								<figcaption>Written by <a href="{{ site.baseurl }}/about/">Anastasios Piotopoulos</a><br/>Senior Software Engineer,<br/>M.Sc. in Software Engineering &amp; Ubiquitous Computing</figcaption>
 							</figure>
 						</div>
-						{% include subscribe.html %}
 						{% if page.reads %}
 							<ul class="books-aside">
 							{% for read_key in page.reads %}

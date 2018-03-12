@@ -33,7 +33,3 @@ The following 3 books are by far the best resources on software architecture you
 {% endfor %}
 
 Got any book suggestions of your own? Don't hesitate to drop a line in the comments below! And if you're hungry for more, have a look at at my full hand-picked collection of [recommended books for software developers]({{ site.url }}/books/). Happy new year, and happy reading!
-
------
-
-{% include subscribe-inpost.html %}

@@ -111,8 +111,4 @@ This is a hand-picked collection of books that have greatly helped me skyrocket 
 {% assign display_book_description = true %}
 {% include book.html %}
 
------
-
 {% endfor %}
-
-{% include subscribe-inpost.html %}
