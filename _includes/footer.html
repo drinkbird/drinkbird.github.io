@@ -4,14 +4,14 @@
       <div class="col-md-5 col-md-push-7">
         <nav class="nav nav-stacked">
           <ul class="social large list-inline">
-            {% if site.owner.linkedin %}<li><a href="http://linkedin.com/in/{{ site.owner.linkedin }}" target="_blank" title="LinkedIn"><span class="symbol">&#xe252;</span></a></li>{% endif %}
-            {% if site.owner.github %}<li><a href="http://github.com/{{ site.owner.github }}" target="_blank" title="Github"><span class="symbol">&#xe237;</span></a></li>{% endif %}
-            {% if site.owner.youtube %}<li><a href="https://www.youtube.com/channel/{{ site.owner.youtube }}" target="_blank" title="YouTube"><span class="symbol">&#xe299;</span></a></li>{% endif %}
-            {% if site.owner.stackoverflow %}<li><a href="http://stackoverflow.com/users/{{ site.owner.stackoverflow }}" target="_blank" title="StackOverflow"><span class="symbol">&#xe281;</span></a></li>{% endif %}
-            {% if site.owner.twitter %}<li><a href="http://twitter.com/{{ site.owner.twitter }}" target="_blank" title="Twitter"><span class="symbol">&#xe286;</span></a></li>{% endif %}
-            {% if site.owner.facebook %}<li><a href="http://facebook.com/{{ site.owner.facebook }}" target="_blank" title="Facebook"><span class="symbol">&#xe227;</span></a></li>{% endif %}
-            {% if site.owner.googleplus %}<li><a href="http://plus.google.com/{{ site.owner.googleplus }}" target="_blank" title="Google+"><span class="symbol">&#xe239;</span></a></li>{% endif %}
-            <li><a href="{{ "/feed.xml" | prepend: site.baseurl }}" target="_blank" title="RSS"><span class="symbol">&#xe271;</span></a></li>
+            {% if site.owner.linkedin %}<li><a href="http://linkedin.com/in/{{ site.owner.linkedin }}" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a></li>{% endif %}
+            {% if site.owner.github %}<li><a href="http://github.com/{{ site.owner.github }}" target="_blank" title="Github"><i class="fab fa-github"></i></a></li>{% endif %}
+            {% if site.owner.youtube %}<li><a href="https://www.youtube.com/channel/{{ site.owner.youtube }}" target="_blank" title="YouTube"><i class="fab fa-youtube"></i></a></li>{% endif %}
+            {% if site.owner.stackoverflow %}<li><a href="http://stackoverflow.com/users/{{ site.owner.stackoverflow }}" target="_blank" title="StackOverflow"><i class="fab fa-stack-overflow"></i></a></li>{% endif %}
+            {% if site.owner.twitter %}<li><a href="http://twitter.com/{{ site.owner.twitter }}" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a></li>{% endif %}
+            {% if site.owner.facebook %}<li><a href="http://facebook.com/{{ site.owner.facebook }}" target="_blank" title="Facebook"><i class="fab fa-facebook-square"></i></a></li>{% endif %}
+            {% if site.owner.googleplus %}<li><a href="http://plus.google.com/{{ site.owner.googleplus }}" target="_blank" title="Google+"><i class="fab fa-google-plus-g"></i></a></li>{% endif %}
+            <li><a href="{{ "/feed.xml" | prepend: site.baseurl }}" target="_blank" title="RSS"><i class="fas fa-rss"></i></a></li>
           </ul>
         </nav>
       </div>

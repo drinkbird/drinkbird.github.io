@@ -1,17 +1,22 @@
-<div class="social-share">
-  <h2>Share on</h2>
-  <ul class="list-inline row">
-    <li class="col-xs-12 col-sm-6 col-md-3">
-      <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}{{ site.baseurl }}{{ page.url }}" target="_blank" class="linkedin small"><span class="symbol">&#xe052;</span><span> LinkedIn</span></a>
+<div class="social-share-slim">
+  <ul>
+    <li>
+      <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}{{ site.baseurl }}{{ page.url }}" target="_blank" title="Update"><i class="fab fa-linkedin-in"></i></a>
     </li>
-    <li class="col-xs-12 col-sm-6 col-md-3">
-      <a href="https://twitter.com/intent/tweet?text={{ site.url }}{{ site.baseurl }}{{ page.url }}" target="_blank" class="twitter"><span class="symbol">&#xe086;</span><span> Twitter</span></a>
+    <li>
+      <a href="https://twitter.com/intent/tweet?text={{ site.url }}{{ site.baseurl }}{{ page.url }}" target="_blank" title="Tweet"><i class="fab fa-twitter"></i></a>
     </li>
-    <li class="col-xs-12 col-sm-6 col-md-3">
-      <a href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ site.baseurl }}{{ page.url }}" target="_blank" class="facebook"><span class="symbol">&#xe027;</span><span> Facebook</span></a>
+    <li>
+      <a href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ site.baseurl }}{{ page.url }}" target="_blank" title="Share"><i class="fab fa-facebook-square"></i></a>
     </li>
-    <li class="col-xs-12 col-sm-6 col-md-3">
-      <a href="https://plus.google.com/share?url={{ site.url }}{{ site.baseurl }}{{ page.url }}" target="_blank" class="google-plus"><span class="symbol">&#xe039;</span><span> Google+</span></a>
+    <li>
+      <a href="https://reddit.com/submit?url={{ site.url }}{{ site.baseurl }}{{ page.url }}&title={{ page.title }}" target="_blank" title="Post"><i class="fab fa-reddit-alien"></i></a>
+    </li>
+    <li>
+      <a href="https://plus.google.com/share?url={{ site.url }}{{ site.baseurl }}{{ page.url }}" target="_blank" title="Share"><i class="fab fa-google-plus-g"></i></a>
+    </li>
+    <li>
+      <a href="mailto:?subject={{ page.title }}&amp;body={{ site.url }}{{ site.baseurl }}{{ page.url }}" title="Email"><i class="far fa-envelope"></i></a>
     </li>
   </ul>
 </div>
