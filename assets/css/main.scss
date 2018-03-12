@@ -675,7 +675,17 @@ a.cover {
 	.author {
 		figure {
 			img {
-				width: 60%;
+				width: 70%;
+			}
+		}
+	}
+
+	.jumbotron {
+		.author {
+			figure {
+				img {
+					width: 60%;
+				}
 			}
 		}
 	}
