@@ -239,10 +239,10 @@ a {
 
 .jumbotron {
 	color: $white;
-	padding-top: 90px;
-	margin-top: -60px;
-	padding-bottom: 20px;
-	transform: skewY(-2deg);
+	margin-top: -110px;
+    padding-top: 150px;
+    margin-bottom: 0;
+    padding-bottom: 0;
 	text-shadow: 0 0 15px #3C3C3C;
 	background: url('../media/ny_cover_small.jpg');
 	background-color: $brand-secondary;
