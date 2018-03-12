@@ -9,7 +9,7 @@ image:
 
 ## Background
 
-Hi, I'm Anastasios (Tasos) Piotopoulos, a passionate software engineer & aspiring technical architect. I write this blog, organize meetups and workshops, mentor novice engineers, and solve complex problems through delivering high-quality software.
+I'm Anastasios (Tasos) Piotopoulos, a passionate software engineer & aspiring technical architect. I write this blog, organize meetups and workshops, mentor fellow engineers, and solve complex problems through delivering high-quality software.
 
 Over the years I have been involved in the construction of everything from simple tooling to enterprise cloud-native solutions, and through that experience it has become clear that successful software systems are grown and forged through myriads of decisions, often made by many different people.
 

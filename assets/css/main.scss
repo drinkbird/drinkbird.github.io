@@ -1,16 +1,16 @@
 ---
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
-@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto');
+@import url('https://fonts.googleapis.com/css?family=Vollkorn');
 
 $gray-darker:					#4a4a4a;
 $brand-primary:					#e67e22;
+$brand-primary-darker:			#8B5220;
+$brand-primary-lighter:			lighten($brand-primary, 40%);
 $brand-primary-dark:			#3f2808;
 $brand-primary-dark-lighter:	rgba(63,40,8,0.11);
-$brand-primary-light:			#f39c12;
-$brand-primary-lighter:			lighten($brand-primary, 40%);
-$brand-secondary:				#2196f3;
-$brand-secondary-dark:			#1565C0;
+$brand-secondary:				#056aa9;
+$brand-secondary-dark:			#082A3F;
 $black:							#000;
 $white:							#fff;
 $text-color:					$gray-darker;
@@ -27,10 +27,11 @@ $color-gh-js:					#f1e05a;
 $color-gh-html:					#e44b23;
 $color-gh-java:					#b07219;
 
-$font-family-secondary:			"Roboto", Helvetica, Arial, sans-serif;
-$font-family-primary:			"Open Sans", Helvetica, Arial, sans-serif;
+$font-family-secondary:			"Vollkorn", Helvetica, Arial, sans-serif;
+$font-family-primary:			$font-family-secondary;
 $font-family-base:				$font-family-secondary;
 $headings-font-family:			$font-family-primary;
+$navbar-font-family:			Tahoma, Geneva, sans-serif;
 $font-size-base:				16px;
 $line-height-base:				1.8;
 $icon-font-path:				"../fonts/";
@@ -52,11 +53,11 @@ $navbar-height:								100px;
 
 // Basics of a navbar
 $navbar-default-color:						$text-color;
-$navbar-default-bg:							$white;
-$navbar-default-border:						darken($navbar-default-bg, 6.5%);
+$navbar-default-bg:							$brand-secondary;
+$navbar-default-border:						none;
 
 // Navbar links
-$navbar-default-link-color:					$brand-primary-dark;
+$navbar-default-link-color:					$white;
 $navbar-default-link-hover-color:			$brand-primary;
 $navbar-default-link-hover-bg:				transparent;
 $navbar-default-link-active-bg:				transparent;
@@ -153,9 +154,10 @@ button, input[type=submit], .btn {
 }
 
 .navbar {	
-	font-family: $font-family-secondary;
+	font-family: $navbar-font-family;
 	margin-bottom: 0;
 	z-index: 999;
+	border: none;
 }
 
 .navbar-brand {
@@ -189,7 +191,13 @@ button, input[type=submit], .btn {
 .navbar-toggle {
 	margin-top: 35px;
 	margin-bottom: 35px;
-	color: $brand-primary-light;
+	padding: 14px 18px 10px;
+	color: $brand-primary-darker;
+	background-color: $white;
+
+	&:hover, &:active, &:focus {
+		background-color: $white !important;
+	}
 }
 
 .navbar-nav > li > a {
@@ -241,6 +249,10 @@ a {
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 	background-position-y: 50%;
+
+	a {
+		color: $white;
+	}
 	
 	p {
 		font-size: 19px;
@@ -381,7 +393,7 @@ a {
 	blockquote {
 		background: rgba(255,255,255,.9);
 		font-style: italic;
-		font-size: 18px;
+		font-size: 17px;
 		line-height: 28px;
 		padding: 1.2em;
 		position: relative;
