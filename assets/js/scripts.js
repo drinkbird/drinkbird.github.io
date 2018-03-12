@@ -44,7 +44,7 @@ $(function() {
     }
 
     // Sticky navbar
-    $("nav.navbar").sticky({topSpacing:0});
+    $("#nav-wrapper").sticky({topSpacing:0});
     
     // Waypoints
     var waypoints = $('article > .social-share').waypoint(function(direction) {

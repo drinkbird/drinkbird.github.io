@@ -148,10 +148,14 @@ button, input[type=submit], .btn {
 
 
 /* Header */
+#nav-wrapper {
+	z-index: 999;
+}
+
 .navbar {	
 	font-family: $font-family-secondary;
 	margin-bottom: 0;
-	z-index: 1;
+	z-index: 999;
 }
 
 .navbar-brand {
@@ -230,23 +234,44 @@ a {
 	padding-top: 90px;
 	margin-top: -60px;
 	padding-bottom: 20px;
-	transform: skewY(-3deg);
+	transform: skewY(-2deg);
+	text-shadow: 0 0 15px #3C3C3C;
 	background-color: $brand-secondary;
+	background: url('../media/ny_cover_small.jpg');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-position-y: 50%;
+	
+	p {
+		font-size: 19px;
+		font-weight: 100;
+		line-height: 1.5em;
+	}
+}
 
-	figcaption {
-		color: $white;
-		font-weight: 700;
-		padding-top: 30px;
-		font-family: $headings-font-family;
-		line-height: $font-size-h1;
-		font-size: $font-size-h1;
-		text-transform: uppercase;
+#c {
+	font-size: 40px;
+	margin-top: 0;
+	text-shadow: 0 0 15px #3C3C3C;
+}
+
+@media (min-width: $screen-md-min) {
+	.jumbotron {
+		background: url('../media/ny_cover.jpg');
+		background-repeat: no-repeat;
+		background-size: 100% auto;
+		background-position-y: 50%;
+	}
+}
+
+@media (min-width: $screen-lg-min) {
+	.jumbotron {
+		background-position-y: 70%;
 	}
 }
 
 .skew-between {
 	margin-top: 60px;
-	margin-bottom: 60px;
 
 	figure {
 		figcaption {
@@ -282,18 +307,7 @@ a {
 
 .background-dark {
 	background-color: $brand-secondary-dark;
-
-	&::before {
-		content: '';
-		background-color: $brand-secondary-dark;
-		@extend .skew-left-top;
-	}
-
-	&::after {
-		content: '';
-		background-color: $brand-secondary-dark;
-		@extend .skew-left-bottom;
-	}
+	margin-bottom: 60px;
 
 	h1 {
 		text-align: center;
@@ -661,7 +675,7 @@ a.cover {
 	.author {
 		figure {
 			img {
-				width: 70%;
+				width: 60%;
 			}
 		}
 	}

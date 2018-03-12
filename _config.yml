@@ -26,6 +26,8 @@ gems:
   - jekyll-sitemap
   - jekyll-redirect-from
 
+exclude: [node_modules]
+
 links:
   - title: Stories
     url: /posts/

@@ -3,24 +3,25 @@
     You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.
   </div>
 <![endif]-->
-
-<nav class="navbar navbar-default">
-  <div class="container">
-    <div class="navbar-header">
-      <a href="{{ site.baseurl }}/" class="navbar-brand" title="Link to Home">
-        <img src="{{ site.baseurl }}/assets/media/db.svg" class="img-responsive" alt="DrinkBird Logo" />
-      </a>
-      <button title="Toggle navigation" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="glyphicon glyphicon-menu-hamburger"></span>
-      </button>
+<div id="nav-wrapper">
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+        <a href="{{ site.baseurl }}/" class="navbar-brand" title="Link to Home">
+          <img src="{{ site.baseurl }}/assets/media/db.svg" class="img-responsive" alt="DrinkBird Logo" />
+        </a>
+        <button title="Toggle navigation" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="glyphicon glyphicon-menu-hamburger"></span>
+        </button>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">    
+        <ul class="nav navbar-nav navbar-right">
+        {% for link in site.links %}
+          <li{% if link.page-key == page.page-key %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ link.url }}">{{ link.title }}</a></li>
+        {% endfor %}      
+        </ul>
+      </div>
     </div>
-    <div id="navbar" class="navbar-collapse collapse">    
-      <ul class="nav navbar-nav navbar-right">
-      {% for link in site.links %}
-        <li{% if link.page-key == page.page-key %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ link.url }}">{{ link.title }}</a></li>
-      {% endfor %}      
-      </ul>
-    </div>
-  </div>
-</nav>
+  </nav>
+</div>

@@ -87,7 +87,8 @@
             s.stickyElement
               .css('width', newWidth)
               .css('position', 'fixed')
-              .css('top', newTop);
+              .css('top', newTop)
+              .css('min-height', '110px');
 
             s.stickyElement.parent().addClass(s.className);
 
