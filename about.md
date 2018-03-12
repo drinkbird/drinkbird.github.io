@@ -9,7 +9,7 @@ image:
 
 ## Background
 
-I'm Anastasios (Tasos) Piotopoulos, a passionate software engineer & aspiring technical architect. I write this blog, organize meetups and workshops, mentor fellow engineers, and solve complex problems through delivering high-quality software.
+I'm Anastasios (Tasos) Piotopoulos, a passionate software engineer & aspiring technical architect. I help fellow technology professionals take their Software Industry career to the next level. I also write this blog, organize meetups and workshops, speak at events and academic lectures, and solve complex problems through delivering high-quality software.
 
 Over the years I have been involved in the construction of everything from simple tooling to enterprise cloud-native solutions, and through that experience it has become clear that successful software systems are grown and forged through myriads of decisions, often made by many different people.
 
@@ -25,13 +25,13 @@ In this blog I distill some of my knowledge from the industry and literature, in
 
 #### Technologies
 
-One of the principles I live by is being pragmatic rather than dogmatic and [pick the right tool for the job](http://c2.com/cgi/wiki?PickTheRightToolForTheJob) on a case-by-case basis. During my career I have delivered projects using a variety of languages, platforms, libraries and tools, such as C#/F#/.NET, Scala, Kafka, Containers, JavaScript / TypeScript, Java, Ruby, python, Objective C, iOS, Android, Dynamics CRM and more.
+One of the principles I live by is being pragmatic rather than dogmatic and [pick the right tool for the job](http://c2.com/cgi/wiki?PickTheRightToolForTheJob) on a case-by-case basis. During my career I have delivered projects using a variety of languages, platforms, libraries and tools, such as C#/F#/.NET, Scala, Kafka, Containers, Java, Ruby, Python, JavaScript, TypeScript, Objective C, iOS, Android, Dynamics CRM and more.
 
 During the last few years I've been mostly working with distributed systems, Microservices, Event Sourcing, Domain Driven Design, and architectural patterns for the cloud, mostly around resiliency, scalability and testing. Lately, I've been exploring functional programming with F# and Scala, and have been working towards combining the best of both worlds (OOP & FP).
 
-#### Community involvement
+#### Speaking and Workshops
 
-Giving back to the community is one of the most rewarding activities of a software professional. Blogging is something I greatly enjoy, although you will also find me speaking at various events, academic lectures and community meetups. I'm also organizer of [AngularJS Dublin](https://www.meetup.com/AngularJSDublin/), one of the largest technology meetups in Dublin, hosted at Google's Headquarters.
+Giving back to the community is one of the most rewarding activities of a Software Industry professional. Although blogging is something I greatly enjoy, you will also find me speaking at various events, academic lectures and community meetups. I regularly organize [AngularJS Dublin](https://www.meetup.com/AngularJSDublin/), one of the largest technology meetups in Ireland.
 
 <ul class="list-inline gallery">
 	<li>
@@ -84,10 +84,12 @@ Giving back to the community is one of the most rewarding activities of a softwa
 
 ## Disclaimer
 
-**This blog, its content and opinions are my own** and do not represent my employers' or clients' view in any way. Also keep in mind that I might have no idea what I'm talking about.
+**This blog, its content and opinions are my own** and do not represent my employers' or clients' view in any way. Also keep in mind that I might have no idea what I'm talking about, so use the provided information and advice at your own risk.
 
 ## Short Bio
 
-Anastasios (Tasos) Piotopoulos is a passionate software engineer and aspiring technical architect with a lifelong mission of solving complex problems through delivering high-quality software. Over the years, he has been involved in the construction of everything from simple tooling to enterprise cloud-native solutions. Anastasios has a Master's degree in Software Engineering and Ubiquitous Computing from University College Dublin and he currently works at Jet.com as a Senior Back End Engineer.
+Anastasios (Tasos) Piotopoulos is a passionate software engineer and aspiring technical architect who helps fellow technology professionals take their Software Industry career to the next level. He also blogs at drinkbird.com, organizes meetups and workshops, speaks at events and academic lectures, and solves complex problems through delivering high-quality software.
+
+Over the years, Anastasios has been involved in the construction of everything from simple tooling to enterprise cloud-native solutions. He has a Master's degree in Software Engineering and Ubiquitous Computing from University College Dublin, and he currently works at Jet.com and Walmart.com as a Senior Back End Engineer. 
 
 ![Anastasios Piotopoulos]({{ site.baseurl }}/images/AnastasiosPiotopoulos.jpg)
