@@ -236,8 +236,8 @@ a {
 	padding-bottom: 20px;
 	transform: skewY(-2deg);
 	text-shadow: 0 0 15px #3C3C3C;
-	background-color: $brand-secondary;
 	background: url('../media/ny_cover_small.jpg');
+	background-color: $brand-secondary;
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 	background-position-y: 50%;
@@ -258,6 +258,7 @@ a {
 @media (min-width: $screen-md-min) {
 	.jumbotron {
 		background: url('../media/ny_cover.jpg');
+		background-color: $brand-secondary;
 		background-repeat: no-repeat;
 		background-size: 100% auto;
 		background-position-y: 50%;
@@ -307,12 +308,19 @@ a {
 
 .background-dark {
 	background-color: $brand-secondary-dark;
-	margin-bottom: 60px;
+	margin-bottom: 30px;
 
 	h1 {
 		text-align: center;
 		font-size: 60px;
-		font-weight: 800;
+		font-weight: normal;
+		color: $white;
+	}
+	
+	h2 {
+		text-align: center;
+		font-size: 40px;
+		font-weight: normal;
 		color: $white;
 	}
 }
@@ -367,9 +375,10 @@ a {
 	}
 }
 
-.quote {	
+.quote {
+	margin-bottom: 50px;
+
 	blockquote {
-		margin: 20px 0 0;
 		background: rgba(255,255,255,.9);
 		font-style: italic;
 		font-size: 18px;
@@ -412,8 +421,10 @@ a {
 	}
 }
 
-.quote-left {
-	margin-bottom: 50px;
+@media (min-width: $screen-md-min) {
+	.quote {
+		margin-bottom: 30px;
+	}
 }
 
 blockquote {
@@ -620,6 +631,9 @@ a.cover {
 
 #mc_embed_signup {
 	text-align: center;
+	float: left;
+	width: 100%;
+
 	input.email {
 		width: 100%;
 		border-color: #d2d1d1;
