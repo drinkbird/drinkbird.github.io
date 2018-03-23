@@ -4,34 +4,33 @@ title: About
 permalink: /about/
 page-key: about
 image:
-  feature: about.jpg
+  feature: about_google2.jpg
 ---
 
 ## Background
+I'm Anastasios (Tasos) Piotopoulos, a passionate software engineer &amp; aspiring technical architect (M.Sc.) who also provides career guidance for technology professionals. I write this blog, organize meetups and workshops, speak at events and academic lectures, and solve complex problems through delivering high-quality software.
 
-I'm Anastasios (Tasos) Piotopoulos, a passionate software engineer & aspiring technical architect. I help fellow technology professionals take their Software Industry career to the next level. I also write this blog, organize meetups and workshops, speak at events and academic lectures, and solve complex problems through delivering high-quality software.
+Over the years I have been involved in the construction of everything from simple tooling to enterprise cloud-native solutions. I have a Master's degree in Software Engineering and Ubiquitous Computing from University College Dublin, and I currently work at [Jet.com](https://jet.com) and [Walmart.com](https://walmart.com)¹ as a Senior Software Engineer. 
 
-Over the years I have been involved in the construction of everything from simple tooling to enterprise cloud-native solutions, and through that experience it has become clear that successful software systems are grown and forged through myriads of decisions, often made by many different people.
-
-My passion, therefore, lies in working with a principled team that understands this process, has a strong sense of responsibility and collective ownership, knows how to avoid waste and unnecessary technical debt, and also highly focuses on code readability, robustness, testability and extensibility.
+¹ Top [Fortune 500](http://fortune.com/fortune500/) company for 2017
 
 #### What is this blog about?
 
-The software industry continuously pushes us towards producing more, and faster, often disregarding quality. That's when priorities get blurry, corners get cut, and mediocre software comes into life. Then instead of solving interesting problems, teams waste their time and energy fighting with bugs and production issues, until technical debt becomes impossible to repay and projects go bankrupt.
+As technology professionals we are constantly pushed towards producing more and faster. When performing under pressure we tend to cut corners, make tradeoffs that we can't really afford, and generally we treat quality as an afterthought. That works for a while, but soon reality catches up; instead of providing value by solving business problems, we waste our resources and energy dealing with defects and regressions. Eventually, productivity grants to a halt and even the smallest change becomes a risky, expensive challenge. Exhausted from burnouts, we escape by hopping to a new job, only to find ourselves in the middle of yet another death march.
 
-As software professionals we need to be principled, have engineering discipline, be ready to fight for the long term success of our projects, stop counting productivity by the lines of committed code, and start seeing the bigger picture.
+It's not meant to be that way. We can do better.
 
-In this blog I distill some of my knowledge from the industry and literature, in hope to motivate and inspire both new and seasoned programmers to be the best versions of themselves and excel in the industry.
+In this blog I distill some of my knowledge from the industry and literature, with the intent to motivate and inspire both new and seasoned techies to actively plan and manage their professional life, reinforce both their technical and soft skills, and help them become the best version of themselves.
 
 #### Technologies
 
-One of the principles I live by is being pragmatic rather than dogmatic and [pick the right tool for the job](http://c2.com/cgi/wiki?PickTheRightToolForTheJob) on a case-by-case basis. During my career I have delivered projects using a variety of languages, platforms, libraries and tools, such as C#/F#/.NET, Scala, Kafka, Containers, Java, Ruby, Python, JavaScript, TypeScript, Objective C, iOS, Android, Dynamics CRM and more.
+One of the principles I live by is being pragmatic rather than dogmatic and [pick the right tool for the job](http://c2.com/cgi/wiki?PickTheRightToolForTheJob) on a case-by-case basis. During my career I have delivered projects using a variety of languages, platforms, libraries and tools, such as C#/F#/.NET, Scala, Java, Ruby, Python, JavaScript, TypeScript, Objective C, iOS, Android, Dynamics CRM, Kafka, Consul, Docker, Nomad and more.
 
 During the last few years I've been mostly working with distributed systems, Microservices, Event Sourcing, Domain Driven Design, and architectural patterns for the cloud, mostly around resiliency, scalability and testing. Lately, I've been exploring functional programming with F# and Scala, and have been working towards combining the best of both worlds (OOP & FP).
 
 #### Speaking and Workshops
 
-Giving back to the community is one of the most rewarding activities of a Software Industry professional. Although blogging is something I greatly enjoy, you will also find me speaking at various events, academic lectures and community meetups. I regularly organize [AngularJS Dublin](https://www.meetup.com/AngularJSDublin/), one of the largest technology meetups in Ireland.
+Giving back to the community is one of the most rewarding activities of a Software Industry professional. Although blogging is something I greatly enjoy, you will also find me speaking at various events, academic lectures and community meetups. Furthermore, I organize [Angular Dublin](https://www.meetup.com/AngularJSDublin/), one of the most popular technology meetups in Ireland.
 
 <ul class="list-inline gallery">
 	<li>
@@ -84,12 +83,12 @@ Giving back to the community is one of the most rewarding activities of a Softwa
 
 ## Disclaimer
 
-**This blog, its content and opinions are my own** and do not represent my employers' or clients' view in any way. Also keep in mind that I might have no idea what I'm talking about, so use the provided information and advice at your own risk.
+**This blog, its content and opinions are my own** and do not represent my employers' or clients' view in any way. Also keep in mind that I might have no idea what I'm talking about, so use the information and advice I provide at your own risk.
 
 ## Short Bio
 
-Anastasios (Tasos) Piotopoulos is a passionate software engineer and aspiring technical architect who helps fellow technology professionals take their Software Industry career to the next level. He also blogs at drinkbird.com, organizes meetups and workshops, speaks at events and academic lectures, and solves complex problems through delivering high-quality software.
+Anastasios (Tasos) Piotopoulos is a passionate software engineer and aspiring technical architect who also provides career guidance for technology professionals. He blogs at drinkbird.com, organizes meetups and workshops, speaks at events and academic lectures, and solves complex problems through delivering high-quality software.
 
-Over the years, Anastasios has been involved in the construction of everything from simple tooling to enterprise cloud-native solutions. He has a Master's degree in Software Engineering and Ubiquitous Computing from University College Dublin, and he currently works at Jet.com and Walmart.com as a Senior Back End Engineer. 
+Over the years, Anastasios has been involved in the construction of everything from simple tooling to enterprise cloud-native solutions. He has a Master's degree in Software Engineering and Ubiquitous Computing from University College Dublin, and he currently works at Jet.com and Walmart.com as a Senior Software Engineer. 
 
 ![Anastasios Piotopoulos]({{ site.baseurl }}/images/AnastasiosPiotopoulos.jpg)

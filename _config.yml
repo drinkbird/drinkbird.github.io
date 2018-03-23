@@ -1,8 +1,8 @@
 # Site settings
 title: DrinkBird
 email: tasos@drinkbird.com
-description: "Take your Software Industry career to the next level"
-longdescription: "Take your Software Industry career to the next level, by Anastasios (Tasos) Piotopoulos"
+description: "Career guidance for technology professionals"
+longdescription: "Career guidance for technology professionals, by Anastasios (Tasos) Piotopoulos"
 baseurl: ""
 url: "http://blog.drinkbird.com"
 locale: en_US
