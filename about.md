@@ -8,7 +8,7 @@ image:
 ---
 
 ## Background
-I'm Anastasios (Tasos) Piotopoulos, a passionate software engineer &amp; aspiring technical architect (M.Sc.) who also provides career guidance for technology professionals. I write this blog, organize meetups and workshops, speak at events and academic lectures, and solve complex problems through delivering high-quality software.
+I'm Anastasios (Tasos) Piotopoulos, a passionate software engineer &amp; aspiring technical architect (M.Sc.) who offers guidance and tutorials for technology professionals. I write this blog, organize meetups and workshops, speak at events and academic lectures, and solve complex problems through delivering high-quality software.
 
 Over the years I have been involved in the construction of everything from simple tooling to enterprise cloud-native solutions. I have a Master's degree in Software Engineering and Ubiquitous Computing from University College Dublin, and I currently work at [Jet.com](https://jet.com) and [Walmart.com](https://walmart.com)¹ as a Senior Software Engineer. 
 
@@ -20,7 +20,7 @@ As technology professionals we are constantly pushed towards producing more and 
 
 It's not meant to be that way. We can do better.
 
-In this blog I distill some of my knowledge from the industry and literature, with the intent to motivate and inspire both new and seasoned techies to actively plan and manage their professional life, reinforce both their technical and soft skills, and help them become the best version of themselves.
+In this blog I distill some of my thoughts and experiences from the tech industry and literature, with the intent to motivate and inspire both new and seasoned techies to actively plan and manage their professional life, reinforce both their technical and soft skills, and help them become the best version of themselves.
 
 #### Technologies
 
@@ -87,7 +87,7 @@ Giving back to the community is one of the most rewarding activities of a Softwa
 
 ## Short Bio
 
-Anastasios (Tasos) Piotopoulos is a passionate software engineer and aspiring technical architect who also provides career guidance for technology professionals. He blogs at drinkbird.com, organizes meetups and workshops, speaks at events and academic lectures, and solves complex problems through delivering high-quality software.
+Anastasios (Tasos) Piotopoulos is a passionate software engineer and aspiring technical architect who offers guidance and tutorials for technology professionals. He blogs at drinkbird.com, organizes meetups and workshops, speaks at events and academic lectures, and solves complex problems through delivering high-quality software.
 
 Over the years, Anastasios has been involved in the construction of everything from simple tooling to enterprise cloud-native solutions. He has a Master's degree in Software Engineering and Ubiquitous Computing from University College Dublin, and he currently works at Jet.com and Walmart.com as a Senior Software Engineer. 
 

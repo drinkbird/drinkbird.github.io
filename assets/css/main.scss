@@ -1,7 +1,7 @@
 ---
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
-@import url('https://fonts.googleapis.com/css?family=Vollkorn');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 $gray-darker:					#4a4a4a;
 $brand-primary:					#e67e22;
@@ -9,29 +9,31 @@ $brand-primary-darker:			#8B5220;
 $brand-primary-lighter:			lighten($brand-primary, 40%);
 $brand-primary-dark:			#3f2808;
 $brand-primary-dark-lighter:	rgba(63,40,8,0.11);
-$brand-secondary:				#056aa9;
-$brand-secondary-dark:			#082A3F;
+$brand-secondary:				#0078d7;
+$brand-secondary-dark:			#002050;
 $black:							#000;
 $white:							#fff;
 $text-color:					$gray-darker;
 $border-radius-base:			0;
+$brand-gray:					#ececec;
+$brand-gray-darker:				#d2d2d2;
 
 $brand-success:        			#5cb85c !default;
 $brand-info:           			$brand-secondary;
 $brand-warning:					$brand-primary;
 $brand-danger:					#d9534f !default;
-$brand-footer:					#BBDEFB;
+$brand-footer:					#505050;
 
 $color-gh-csharp:				#178600;
 $color-gh-js:					#f1e05a;
 $color-gh-html:					#e44b23;
 $color-gh-java:					#b07219;
 
-$font-family-secondary:			"Vollkorn", Helvetica, Arial, sans-serif;
+$font-family-secondary:			"Open Sans", Helvetica, Arial, sans-serif;
 $font-family-primary:			$font-family-secondary;
 $font-family-base:				$font-family-secondary;
 $headings-font-family:			$font-family-primary;
-$navbar-font-family:			Tahoma, Geneva, sans-serif;
+$navbar-font-family:			$font-family-secondary;
 $font-size-base:				16px;
 $line-height-base:				1.8;
 $icon-font-path:				"../fonts/";
@@ -53,7 +55,7 @@ $navbar-height:								100px;
 
 // Basics of a navbar
 $navbar-default-color:						$text-color;
-$navbar-default-bg:							$brand-secondary-dark;
+$navbar-default-bg:							$brand-secondary;
 $navbar-default-border:						none;
 
 // Navbar links
@@ -90,6 +92,10 @@ html,body,button {
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	color: $brand-primary-dark;
+}
+
+h4 {
+	margin-top: 28px;
 }
 
 a {
@@ -201,9 +207,7 @@ button, input[type=submit], .btn {
 }
 
 .navbar-nav > li > a {
-	text-transform: uppercase;
-	font-size: $font-size-base - 1;
-	font-weight: 800;
+	font-weight: normal;
 }
 
 .navbar-default .navbar-toggle {
@@ -214,6 +218,7 @@ button, input[type=submit], .btn {
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
     color: $brand-primary;
+	font-weight: 800;
 }
 
 .navbar button .glyphicon,
@@ -244,7 +249,7 @@ a {
     margin-bottom: 0;
     padding-bottom: 0;
 	text-shadow: 0 0 15px #3C3C3C;
-	background-color: $brand-secondary;
+	background-color: $brand-secondary-dark;
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 	background-position-y: 50%;
@@ -268,10 +273,7 @@ a {
 
 @media (min-width: $screen-md-min) {
 	.jumbotron {
-		background-color: $brand-secondary;
-		background-repeat: no-repeat;
 		background-size: 100% auto;
-		background-position-y: 50%;
 	}
 }
 
@@ -318,6 +320,25 @@ a {
 
 .background-dark {
 	background-color: $brand-secondary-dark;
+	margin-bottom: 30px;
+
+	h1 {
+		text-align: center;
+		font-size: 60px;
+		font-weight: normal;
+		color: $white;
+	}
+	
+	h2 {
+		text-align: center;
+		font-size: 40px;
+		font-weight: normal;
+		color: $white;
+	}
+}
+
+.background-light {
+	background-color: $brand-secondary;
 	margin-bottom: 30px;
 
 	h1 {
@@ -523,9 +544,10 @@ figure.logo {
 /* Footer */
 footer.site-footer {
 	margin-top: 20px;
+	color: $brand-footer;
 
 	#footer-upper {
-		background-color: $brand-secondary;
+		background-color: $brand-gray-darker;
 		padding: 20px 0;
 	}
 
@@ -533,25 +555,20 @@ footer.site-footer {
 		@extend .text-center;
 		padding: 20px 0;
 		position: relative;
-		background-color: $brand-secondary-dark;
+		background-color: $brand-gray;
 		font-family: $font-family-primary;
 		
 		section.copyright, section.published {
 			font-size: 10px;
 			font-weight: normal;
-			color: $brand-footer;
-		}
-
-		a {
-			color: $brand-footer;
-
-			&:hover {
-				color: $white;
-			}	
 		}
 		
 		.logo-footer {
 			height: 40px;
+		}
+
+		a {
+			color: #4a4a4a;
 		}
 	}
 }
@@ -698,24 +715,21 @@ a.cover {
 		font-weight: normal !important;
 	}
 
-	p {
-		color: $white;
-	}
-
 	h2 {
 		text-align: center;
 		font-size: 40px;
 		font-weight: normal;
-		color: $white;
 		margin-top: 0;
 	}
 
-    input, .btn {
-		background-color: $brand-footer;
+	input[type=email] {
+		-webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+		box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+		width: 100%;
 	}
 
-	.form-group-last {
-		margin-bottom: 0;
+	button {
+		padding: 9px 16px 10px;
 	}
 }
 
@@ -764,7 +778,8 @@ a.cover {
 				width: 32px;
 				height: 32px;
 				font-size: 15px;
-				padding-top: 5px;
+				padding-top: 3px;
+				padding-left: 1px;
 				display: block;
 			}
 		}
