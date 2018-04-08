@@ -580,7 +580,7 @@ footer.site-footer {
 	}
 	
 	a:not(.btn) {
-		text-decoration: underline;
+		text-decoration: none;
 	}
 }
 
@@ -667,8 +667,13 @@ a.cover {
 		
 		h4 {
 			font-weight: bold;
-    		font-size: 22px;
-		}
+			font-size: 22px;
+			
+			.header-suffix {
+				font-weight: normal;
+				font-size: 16px
+			}
+		}		
 	}
 }
 

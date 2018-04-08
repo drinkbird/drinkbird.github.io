@@ -30,8 +30,8 @@ layout: default
 						{% if page.reads %}
 							<ul class="books-aside">
 							{% for read_key in page.reads %}
-								{% assign book = site.reads[read_key] %}
-								<li>
+								{% assign book = site.reads[read_key] %}								
+								<li class="{% if forloop.index > 3 %}hidden-sm{% endif %}">
 									{% include book_aside.html %}
 								</li>
 							{% endfor %}

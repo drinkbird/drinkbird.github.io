@@ -18,6 +18,7 @@ reads:
   - 97things
   - softskills
   - thecleancoder
+  - themythicalmanmonth
 # https://about.gitlab.com/handbook/values/
 ---
 
