@@ -91,4 +91,4 @@ Anastasios (Tasos) Piotopoulos is a passionate software engineer and aspiring te
 
 Over the years, Anastasios has been involved in the construction of everything from simple tooling to enterprise cloud-native solutions. He has a Master's degree in Software Engineering and Ubiquitous Computing from University College Dublin, and he currently works at Jet.com and Walmart.com as a Senior Software Engineer. 
 
-![Anastasios Piotopoulos]({{ site.baseurl }}/assets/media/drinkbird_hand.jpg)
+![Anastasios Piotopoulos]({{ site.baseurl }}/assets/media/drinkbird_shot.jpg)
