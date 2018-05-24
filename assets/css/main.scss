@@ -547,7 +547,7 @@ footer.site-footer {
 	color: $brand-footer;
 
 	#footer-upper {
-		background-color: $brand-gray-darker;
+		background-color: $brand-secondary-dark;
 		padding: 20px 0;
 	}
 
@@ -718,6 +718,7 @@ a.cover {
 	text-align: center;
 	float: left;
 	width: 100%;
+	color: white;
 
 	input.mce_inline_error {
 		border-color: $brand-danger !important;
@@ -732,9 +733,10 @@ a.cover {
 
 	h2 {
 		text-align: center;
-		font-size: 40px;
+		font-size: 30px;
 		font-weight: normal;
 		margin-top: 0;
+		color: white;
 	}
 
 	input[type=email] {
