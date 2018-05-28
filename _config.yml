@@ -4,7 +4,7 @@ email: tasos@drinkbird.com
 description: "Guidance and tutorials for technology professionals"
 longdescription: "Guidance and tutorials for technology professionals, by Anastasios (Tasos) Piotopoulos"
 baseurl: ""
-url: "http://blog.drinkbird.com"
+url: "https://blog.drinkbird.com"
 locale: en_US
 
 defaults:
