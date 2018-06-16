@@ -10,9 +10,9 @@ image:
   feature: collaboration.jpg
 # https://pixabay.com/en/action-analysis-business-2277292/
 reads:
+  - agiledev
   - careerguide
   - cleanarchitecture
-  - buildingmicroservices
   - dataintensive
   - cleancode
   - 97things

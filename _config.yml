@@ -306,4 +306,8 @@ reads:
     title: "Domain-Driven Design: Tackling Complexity in the Heart of Software"
     url: "http://geni.us/dddericevans"
     isbn: "0321125215"
+  agiledev:
+    title: "Practices of an Agile Developer: Working in the Real World (Pragmatic Bookshelf) (Pragmatic Programmers)"
+    url: "http://geni.us/agiledev"
+    isbn: "097451408X"
     
