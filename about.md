@@ -8,9 +8,9 @@ image:
 ---
 
 ## Background
-I'm Anastasios (Tasos) Piotopoulos, a passionate software engineer &amp; aspiring technical architect (M.Sc.) who offers guidance and tutorials for technology professionals. I write this blog, organize meetups and workshops, speak at events and academic lectures, and solve complex problems through delivering high-quality software.
+I'm Tasos Piotopoulos (Anastasios), a professional software engineer and aspiring technical architect (M.Sc.) with over 12 years of industry experience. I write this blog, organize meetups and workshops, speak at events and academic lectures, and solve complex problems through delivering high-quality software.
 
-Over the years I have been involved in the construction of everything from simple tooling to enterprise cloud-native solutions. I have a Master's degree in Software Engineering and Ubiquitous Computing from University College Dublin, and I currently work at [Jet.com](https://jet.com) and [Walmart.com](https://walmart.com)¹ as a Senior Software Engineer. 
+Over the years I have been involved in the construction of everything from simple tooling to enterprise cloud-native solutions. I have a master's degree in Software Engineering and Ubiquitous Computing from University College Dublin, and I currently work at [Jet.com](https://jet.com) and [Walmart.com](https://walmart.com)¹ as a Senior Software Engineer. 
 
 ¹ Top [Fortune 500](http://fortune.com/fortune500/) company for 2017
 
@@ -20,13 +20,13 @@ As technology professionals we are constantly pushed towards producing more and 
 
 It's not meant to be that way. We can do better.
 
-In this blog I distill some of my thoughts and experiences from the tech industry and literature, with the intent to motivate and inspire both new and seasoned techies to actively plan and manage their professional life, reinforce both their technical and soft skills, and help them become the best version of themselves.
+In this blog I distill some of my thoughts and experiences from the tech industry and literature, with the intent to motivate and inspire both new and seasoned technology professionals to actively plan and manage their career, reinforce both their technical and soft skills, and help them towards becoming the best version of themselves.
 
 #### Technologies
 
-One of the principles I live by is being pragmatic rather than dogmatic and [pick the right tool for the job](http://c2.com/cgi/wiki?PickTheRightToolForTheJob) on a case-by-case basis. During my career I have delivered projects using a variety of languages, platforms, libraries and tools, such as C#/F#/.NET, Scala, Java, Ruby, Python, JavaScript, TypeScript, Objective C, iOS, Android, Dynamics CRM, Kafka, Consul, Docker, Nomad and more.
+One of the principles I live by is being pragmatic rather than dogmatic and [pick the right tool for the job](http://c2.com/cgi/wiki?PickTheRightToolForTheJob) on a case-by-case basis. During my career I have delivered projects using a variety of languages, platforms, libraries and tools, such as C#/F#/.NET, Scala, Java, Ruby, Python, JavaScript, TypeScript, iOS / Objective C, Android / Java, Kafka, Consul, Docker, Nomad, Dynamics CRM and more.
 
-During the last few years I've been mostly working with distributed systems, Microservices, Event Sourcing, Domain Driven Design, and architectural patterns for the cloud, mostly around resiliency, scalability and testing. Lately, I've been exploring functional programming with F# and Scala, and have been working towards combining the best of both worlds (OOP & FP).
+During the last few years I've been mostly working with distributed systems, Microservices, Event Sourcing, Domain Driven Design, and architectural patterns for the cloud, mostly around resiliency, scalability and testing. Lately, I've been exploring functional programming with F# and Scala, and have been working towards combining the best of both worlds (OOP & FP), while embracing the DevOps culture.
 
 #### Speaking and Workshops
 
@@ -83,12 +83,12 @@ Giving back to the community is one of the most rewarding activities of a Softwa
 
 ## Disclaimer
 
-**This blog, its content and opinions are my own** and do not represent my employers' or clients' view in any way. Also keep in mind that I might have no idea what I'm talking about, so use the information and advice I provide at your own risk.
+**This blog, its content and opinions are my own** and do not represent my employers' or clients' view in any way. Also keep in mind that I might have no idea what I'm talking about, so use the information and advice provided here at your own risk.
 
 ## Short Bio
 
-Anastasios (Tasos) Piotopoulos is a passionate software engineer and aspiring technical architect who offers guidance and tutorials for technology professionals. He blogs at drinkbird.com, organizes meetups and workshops, speaks at events and academic lectures, and solves complex problems through delivering high-quality software.
+Tasos Piotopoulos (Anastasios) is a professional software engineer and aspiring technical architect with over 12 years of industry experience. He blogs at drinkbird.com, organizes meetups and workshops, speaks at events and academic lectures, and solves complex problems through delivering high-quality software.
 
-Over the years, Anastasios has been involved in the construction of everything from simple tooling to enterprise cloud-native solutions. He has a Master's degree in Software Engineering and Ubiquitous Computing from University College Dublin, and he currently works at Jet.com and Walmart.com as a Senior Software Engineer. 
+Over the years, Tasos has been involved in the construction of everything from simple tooling to enterprise cloud-native solutions. He has a master's degree in Software Engineering and Ubiquitous Computing from University College Dublin, and he currently works at Jet.com and Walmart.com as a Senior Software Engineer. 
 
-![Anastasios Piotopoulos]({{ site.baseurl }}/assets/media/drinkbird_shot.jpg)
+![Tasos Piotopoulos]({{ site.baseurl }}/assets/media/drinkbird_shot.jpg)

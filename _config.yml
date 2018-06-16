@@ -1,8 +1,8 @@
 # Site settings
 title: DrinkBird
 email: tasos@drinkbird.com
-description: "Guidance and tutorials for technology professionals"
-longdescription: "Guidance and tutorials for technology professionals, by Anastasios (Tasos) Piotopoulos"
+description: "Distilled thoughts from the tech industry and literature"
+longdescription: "Distilled thoughts from the tech industry and literature, by Tasos Piotopoulos (Anastasios)"
 baseurl: ""
 url: "https://blog.drinkbird.com"
 locale: en_US
@@ -43,7 +43,7 @@ links:
     page-key: about
 
 owner:
-  name: Anastasios Piotopoulos
+  name: Tasos Piotopoulos
   disqus-shortname: drinkbird
   twitter: thedrinkbird
   facebook: thedrinkbird
