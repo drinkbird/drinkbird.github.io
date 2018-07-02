@@ -43,4 +43,4 @@ Dice Radio Web Portal was extended using Microsoft Web API to expose a RESTful A
 	</li>
 </ul>
 
-[Project link (Google Play Store)](https://play.google.com/store/apps/details?id=com.drinkbird.diceradio)
+[Project link (Google Play Store)](https://play.google.com/store/apps/details?id=com.drinkbird.diceradio2)
