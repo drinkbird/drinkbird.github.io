@@ -310,4 +310,11 @@ reads:
     title: "Practices of an Agile Developer: Working in the Real World (Pragmatic Bookshelf) (Pragmatic Programmers)"
     url: "http://geni.us/agiledev"
     isbn: "097451408X"
-    
+  devops:
+    title: "The Devops Handbook: How to Create World-Class Agility, Reliability, and Security in Technology Organizations"
+    url: "http://geni.us/devops"
+    isbn: "1942788002"
+  thephoenix:
+    title: "The Phoenix Project: A Novel about It, Devops, and Helping Your Business Win"
+    url: "http://geni.us/thephoenix"
+    isbn: "1942788290"
