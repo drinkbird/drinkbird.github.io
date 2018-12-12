@@ -575,6 +575,38 @@ footer.site-footer {
 
 /* Post */
 .post-content {
+	.content-headline {
+		padding-bottom: 20px;
+	}
+
+	h2 {
+		font-size: 24px;
+		font-weight: bold;
+		padding-bottom: 20px;
+	}
+
+	p {
+		font-size: 20px;
+		padding-bottom: 20px;
+	}
+
+	ul,ol {
+		padding-bottom: 10px;
+
+		li {
+			font-size: 20px;
+			padding-bottom: 10px;
+		}
+	}
+
+	blockquote {
+		padding-bottom: 20px;
+		
+		p {
+			padding-bottom: 0;
+		}
+	}
+
 	figure {
 		@extend .text-left;
 	}
@@ -591,13 +623,13 @@ footer.site-footer {
 
 	& > p > img {
 		display: block;
-		margin: 20px auto 0;
+		margin: 40px auto 0;
 		max-width: 100%;
 	}
 
 	.giphy {
-		margin-top: 20px;
-		margin-bottom: 20px;
+		margin-top: 40px;
+		margin-bottom: 40px;
 	}
 }
 
