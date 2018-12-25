@@ -30,7 +30,9 @@ excerpt: "Distilled thoughts from the tech industry and literature"
             {% include image-feature-list.html %}
             <h1>{{ post.title }}</h1>
           </a>
+          {% comment %}
           <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time>
+          {% endcomment %}
           <p>{{ post.excerpt | strip_html | truncate: 160 }}</p>
         </article>
       </div>
