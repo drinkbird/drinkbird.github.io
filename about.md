@@ -8,27 +8,32 @@ image:
 ---
 
 ## Background
-I'm Tasos Piotopoulos (Anastasios), a professional software engineer and aspiring technical architect (M.Sc.) with over 12 years of industry experience. I write this blog, organize meetups and workshops, speak at events and academic lectures, and solve complex problems through delivering high-quality software.
 
-Over the years I have been involved in the construction of everything from simple tooling to enterprise cloud-native solutions. I have a master's degree in Software Engineering and Ubiquitous Computing from University College Dublin, and I currently work at [Jet.com](https://jet.com) and [Walmart.com](https://walmart.com)¹ as a Senior Software Engineer. 
+I'm Tasos Piotopoulos, a professional software engineer & aspiring technical architect (M.Sc.) with a track record of building hassle-free enterprize cloud solutions and a passion for helping others step up their engineering game.
+
+I've been working in the software industry since 2005, and nowadays I blog, create tutorials, organize meetups and workshops, speak at events and academic lectures, and solve complex problems through delivering high-quality software.
+
+My Master's degree is in Software Engineering and Ubiquitous Computing, from University College Dublin, and I currently work at [jet.com](https://jet.com) / [Walmart eCommerce](https://walmart.com)¹ as a Squad Lead and Senior Software Engineer. 
 
 ¹ Top [Fortune 500](http://fortune.com/fortune500/) company for 2017
 
-#### What is this blog about?
+### What is this blog about?
 
-As technology professionals we are constantly pushed towards producing more and faster. When performing under pressure we tend to cut corners, make tradeoffs that we can't really afford, and generally we treat quality as an afterthought. That works for a while, but soon reality catches up; instead of providing value by solving business problems, we waste our resources and energy dealing with defects and regressions. Eventually, productivity grants to a halt and even the smallest change becomes a risky, expensive challenge. Exhausted from burnouts, we escape by hopping to a new job, only to find ourselves in the middle of yet another death march.
+As technology professionals we are constantly pushed towards producing more and faster. When performing under pressure we tend to cut corners, make tradeoffs that we can't really afford, and generally we treat quality as an afterthought.
 
-It's not meant to be that way. We can do better.
+That works for a while, but soon reality catches up; instead of providing value by solving business problems, we waste our time and energy dealing with defects and regressions. Eventually, productivity grants to a halt and even the smallest change becomes a risky, expensive challenge. Exhausted from burnouts, we escape by hopping to a new job, only to find ourselves in the middle of yet another death march.
 
-In this blog I distill some of my thoughts and experiences from the tech industry and literature, with the intent to motivate and inspire both new and seasoned technology professionals to actively plan and manage their career, reinforce both their technical and soft skills, and help them towards becoming the best version of themselves.
+We can do better.
 
-#### Technologies
+In this blog I distill some of my thoughts and experiences from the tech industry and literature, as well as create practical tutorials, with the intent to motivate and inspire both new and seasoned technology professionals to actively manage their career, reinforce both their technical and soft skills, and help them in their quest of becoming the best version of themselves.
 
-One of the principles I live by is being pragmatic rather than dogmatic and [pick the right tool for the job](http://c2.com/cgi/wiki?PickTheRightToolForTheJob) on a case-by-case basis. During my career I have delivered projects using a variety of languages, platforms, libraries and tools, such as C#/F#/.NET, Scala, Java, Ruby, Python, JavaScript, TypeScript, iOS / Objective C, Android / Java, Kafka, Consul, Docker, Nomad, Dynamics CRM and more.
+### Technologies
 
-During the last few years I've been mostly working with distributed systems, Microservices, Event Sourcing, Domain Driven Design, and architectural patterns for the cloud, mostly around resiliency, scalability and testing. Lately, I've been exploring functional programming with F# and Scala, and have been working towards combining the best of both worlds (OOP & FP), while embracing the DevOps culture.
+One of the principles I live by is being pragmatic rather than dogmatic and [pick the right tool for the job](http://c2.com/cgi/wiki?PickTheRightToolForTheJob) on a case-by-case basis. During my career I have delivered projects using a variety of languages, platforms, libraries and tools, such as .NET, dotnet core & JVM based languages, cloud / distributed systems technologies (Azure, Kafka, Consul, Docker, Kubernetes, Nomad, CI/CD), mobile technologies (iOS, Android) and more.
 
-#### Speaking and Workshops
+Lately I've been mostly focused on the Microservices architecture with Event Sourcing, Domain Driven Design, and architectural patterns for the cloud, mostly around resiliency, scalability and testing. I've also been exploring functional programming with F# and Scala, and have been working towards combining the best of both worlds (OOP & FP), while embracing the culture of DevOps.
+
+### Speaking and Workshops
 
 Giving back to the community is one of the most rewarding activities of a Software Industry professional. Although blogging is something I greatly enjoy, you will also find me speaking at various events, academic lectures and community meetups. Furthermore, I organize [Angular Dublin](https://www.meetup.com/AngularJSDublin/), one of the most popular technology meetups in Ireland.
 
@@ -67,16 +72,16 @@ Giving back to the community is one of the most rewarding activities of a Softwa
 
 ## Too much information
 
-#### Academia
+### Academia
 
 - M.Sc. in Software Engineering and Ubiquitous Computing, University College Dublin, 2015
 	- GPA: 4.1 / 4.2
 	- First-class honours (1:1)
-- B.Sc. in Computer and Telecommunications Engineering, Techological Educational Institute of Thessaly, 2011
+- B.Sc. in Computer and Telecommunications Engineering, Technological Educational Institute of Thessaly, 2011
 	- Grade: 8.91 / 10
 	- First-class honours (1:1)
 
-#### Certifications
+### Certifications
 
 - Microsoft Certified Solutions Developer: Web Applications
 - Microsoft Certified Technology Specialist: Dynamics CRM 2011 Customization and Configuration
@@ -87,8 +92,10 @@ Giving back to the community is one of the most rewarding activities of a Softwa
 
 ## Short Bio
 
-Tasos Piotopoulos (Anastasios) is a professional software engineer and aspiring technical architect with over 12 years of industry experience. He blogs at drinkbird.com, organizes meetups and workshops, speaks at events and academic lectures, and solves complex problems through delivering high-quality software.
+Tasos Piotopoulos is a professional software engineer and aspiring technical architect with a track record of building hassle-free enterprize cloud solutions and a passion for helping others step up their engineering game.
 
-Over the years, Tasos has been involved in the construction of everything from simple tooling to enterprise cloud-native solutions. He has a master's degree in Software Engineering and Ubiquitous Computing from University College Dublin, and he currently works at Jet.com and Walmart.com as a Senior Software Engineer. 
+He has been working in the software industry since 2005, and nowadays he blogs at drinkbird.com, creates tutorials, organizes meetups and workshops, speaks at events and academic lectures, and solves complex problems through delivering high-quality software.
+
+His Master's degree is in Software Engineering and Ubiquitous Computing, from University College Dublin, and he currently works at jet.com / Walmart eCommerce as a Squad Lead and Senior Software Engineer. 
 
 ![Tasos Piotopoulos]({{ site.baseurl }}/assets/media/drinkbird_shot.jpg)
