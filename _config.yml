@@ -1,8 +1,8 @@
 # Site settings
 title: DrinkBird
 email: tasos@drinkbird.com
-description: "Distilled thoughts from the tech industry and literature"
-longdescription: "Distilled thoughts from the tech industry and literature, by Tasos Piotopoulos (Anastasios)"
+description: "Step up your engineering game"
+longdescription: "Step up your engineering game | Stories and tutorials for software engineers by Tasos Piotopoulos"
 baseurl: ""
 url: "https://blog.drinkbird.com"
 locale: en_US
@@ -50,7 +50,7 @@ owner:
   github: drinkbird
   stackoverflow: 2050674/drinkbird
   linkedin: piotopoulos
-  #youtube:
+  youtube: DrinkBirdBlog
   google:
     analytics: UA-55022241-1
 
@@ -241,6 +241,13 @@ reads:
     tags:
       - Technical (Beginner - Intermediate)
       - Not focused on code
+  microservicespatterns:
+    title: "Microservice Patterns: With examples in Java"
+    url: "http://geni.us/microservicespatterns"
+    isbn: "1617294543"
+    tags:
+      - Technical (Intermediate - Advanced)
+      - Applicable to many programming languages
   microservicearch:
     title: "Microservice Architecture: Aligning Principles, Practices, and Culture"
     url: "http://geni.us/microservicearch"
