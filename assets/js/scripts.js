@@ -1,7 +1,7 @@
 'use strict';
 $(function() {
     // FitVids options
-	$("article").fitVids();
+	$('iframe[src*="youtube"]').parent().fitVids();
 
     // Add lightbox class to all image links
     $(".post-body a[href$='.jpg'], .post-body a[href$='.jpeg'], .post-body a[href$='.JPG'], .post-body a[href$='.png'], .post-body a[href$='.gif']").addClass("image-popup");
