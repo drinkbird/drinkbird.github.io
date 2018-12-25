@@ -33,6 +33,8 @@ Microservices have been adopted by the industry as a significant approach to bui
 
 Along the way, you will get introduced to a number of DevOps practices that will help you manage the full lifecycle of your application, from laptop to cloud and into the hands of your customers, while using state of the art tooling that comes out of the box with Azure.
 
+Includes lots of great technologies like Azure DevOps, Docker, Kubernetes, SendGrid, Azure Cosmos DB, Redis and much more.
+
 <p><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/aB3OzV0HlIM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
 
 As mentioned above, you can find out more and get the full course at one of the following channels:
