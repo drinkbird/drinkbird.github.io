@@ -87,7 +87,7 @@ This is a hand-picked collection of books that have greatly helped me skyrocket 
 
 {% endfor %}
 
-## My next reads
+## Other reads
 
 -----
 
