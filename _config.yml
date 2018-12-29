@@ -329,3 +329,11 @@ reads:
     title: "Made to Stick: Why Some Ideas Survive and Others Die"
     url: "http://geni.us/madetostick-amazon"
     isbn: "1400064287"
+  onwritingwell-amazon:
+    title: "On Writing Well, 30th Anniversary Edition: An Informal Guide to Writing Nonfiction"
+    url: "http://geni.us/onwritingwell-amazon"
+    isbn: "B0090RVGW0"
+  accelerate-amazon:
+    title: "Accelerate: The Science of Lean Software and DevOps: Building and Scaling High Performing Technology Organizations"
+    url: "http://geni.us/accelerate-amazon"
+    isbn: "B07B9F83WM"

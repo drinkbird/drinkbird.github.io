@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Interview with John Papa at Voxxed Days Athens"
-excerpt: "A motivational discussion full of wonderful advice for technology professionals"
+excerpt: "A motivational discussion with wonderful career advice for technology professionals"
 permalink: /john-papa-interview-voxxed-days-athens-2018/
 comments: true
 categories: blog
@@ -11,7 +11,24 @@ image:
   credit: Voxxed Days Athens
   creditlink: https://www.flickr.com/photos/158766490@N04/albums/with/72157697086737724
 reads:
+  - agiledev
+  - onwritingwell-amazon
+  - accelerate
+  - peopleware
+  - careerguide
+  - themythicalmanmonth
+  - showyourwork
+  - softskills
+  - thecleancoder
   - madetostick-amazon
+  - microservicespatterns
+  - codecomplete
+  - thephoenix
+  - dataintensive
+  - functionalreactive
+  - buildingmicroservices
+  - cleanarchitecture
+
 ---
 
 Earlier this year I attended the Voxxed Days Athens conference and had the pleasure to meet [John Papa](https://johnpapa.net/).
@@ -86,17 +103,43 @@ For that reason, I asked for his advice to somebody who wants to do that for a l
 
 *Like, has anybody ever said to you, "Tasos, how does Angular do change detection?". If it takes you twenty minutes to explain it, you've lost them. And it doesn't mean that you can't take longer... So [this book](http://geni.us/madetostick-amazon) explains these things and it really broke down for me a lot of things that I used to think; I realized I was wrong.*
 
-*I don't need an hour to tell you how to do something. You know in a talk, the most attentive somebody is, is in the first minute. Think about movies you've watched. You notice that movies today, the beginning scene is always very exciting. Like a James Bond movie, dropping out of a planes, and fighting, and it's because they want to get you sucked in. If you look at movies thirty years ago, the opening five minutes was credits. Can you imagine today watching a movie (with that many credits)? Like, "really?".*
+*I don't need an hour to tell you how to do something. You know in a talk, the most attentive somebody is, is in the first minute. Think about movies you've watched. You notice that movies today, the beginning scene is always very exciting. Like a James Bond movie, dropping out of a planes, and fighting, and it's because they want to get you sucked in. If you look at movies thirty years ago, the opening five minutes was credits. Can you imagine today watching a movie* (with that many credits)*? Like, "really?".*
 
 *So I look at talks like that. When you're practicing talks, always start with something that's really compelling. Don't get up there and go "My name is John and I live in a small house and I have four children and I like to wear black shirts and I like to shave...". Nobody cares! Makes sense?*
 
-John's advice made perfect sense to me, and paid off really quickly. As a matter of fact, not long after the interview I published my first [online video course]({{ site.baseurl }}/azure-java-microservices-video-course-packt/) about microservices, and I'm already planning some conference talks for next year.
-
 ## On choosing technologies
+
+One big problem we face as software engineers is how to choose our technologies, and we often suffer from what's called *developaralysis*: we don't know what to work with, we feel that we can't catch up, and that we can never know enough to stay relevant.
+
+John traditionally works with lots of different technologies, therefore I asked him for tips and advice on how a professional can make informed decisions and invest time to the right technologies.
+
+**John Papa**: *That's a hard one, for everybody, and I think it depends upon your personality and your work habits. I'll tell you what I do.*
+
+*First thing is you have to be comfortable that you're never going to learn them all. You just can't. There's way too much and I think a lot of people, the reason they feel that way, like the paralysis, is because they see a hundred new things, they feel like they have to know them all. And therefore they learn none of them because it feels so bad. So learn that it's okay not to know every framework, every tool, every library.*
+
+*But then what I do is I try to pick one or two that speak to me, something I enjoy, and then I watch social media, Twitter, LinkedIn, all open-source slack channels. And when I hear people talking about something a lot that I'm not seeing, I wait to see - it's like a trend. And If I see a lot of people talking about it and they're excited, not just you're talking about "I hate it", I start taking a look.*
 
 ![Interview with John Papa at Voxxed Days Athens - 3 of 3]({{ site.baseurl }}/images/voxxed2018-john-papa-3.jpg)
 *Image by [Voxxed Days Athens](https://www.flickr.com/photos/158766490@N04/albums/with/72157697086737724)*
 
+*I did this with NGRX recently, about seven-eight months ago. Didn't really get into it, it didn't solve a problem I had. I had already solved this problem with other things, but I know a lot of people liked it and after a while I was like "Okay I think I need to make time and look at this". So I set aside time and it was a month later. I had some time to look, and I realized what people liked, what they didn't, I made my own opinion.*
+
+*I probably learn two or three new things each year like this. For me it's easier if I try it; reading about it, watching a video, I usually start there, but if in ten-twenty minutes I can't go write code, I usually leave it.*
+
+*So it's hard* (the answer) *...*
+
+> *I think it's to figure out what would make you interested in learning something new, try that, and just be ok with the other 99 things not being there. Because you know what? Half of those won't be here next year.*
+
 ## Conclusion
 
-You can watch the full [interview on YouTube](https://www.youtube.com/watch?v=VyXqm8E2F1Q).
+John's advice made perfect sense to me, and I'm really thankful for our discussion, which you can also [watch on YouTube](https://www.youtube.com/watch?v=VyXqm8E2F1Q).
+
+It also paid off really quickly. As a matter of fact, not long after the interview, I published my first [online video course]({{ site.baseurl }}/azure-java-microservices-video-course-packt/) about microservices, and I'm already planning some conference talks for next year. 
+
+At the same conference I also got to talk to [Venkat Subramaniam](https://twitter.com/venkat_s), [Ted Neward](https://twitter.com/tedneward), [Christina Aldan](https://twitter.com/luckygirliegirl) and more, but that's a story for another time.
+
+I highly encourage everyone to attend conferences like [Voxxed Days](https://voxxeddays.com/) and get inspired by such prominent personalities of the dev community.
+
+So which was your favorite part of the interview? What do you think about John's advice? Don't hesitate to leave your comments below!
+
+Cheers,<br/>Tasos
