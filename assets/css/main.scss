@@ -615,6 +615,11 @@ footer.site-footer {
 	a:not(.btn) {
 		text-decoration: none;
 	}
+
+	img + em {
+		text-align: center;
+		display: block;
+	}
 }
 
 .post-body {
