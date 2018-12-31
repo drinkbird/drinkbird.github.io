@@ -62,7 +62,7 @@ Knowing how hard it is to pick a good team, or even harder to actually build one
 
 *And in developer relations I always tell my team "don't look at other people doing the job to figure what you should do". It's very easy to say "Oh, I like what John Papa is doing, what Simona Cotin is doing, I'll do that".*
 
-> *Find what you're best at, find what you enjoy the most, what your passion is, find what you can get paid for, and when you have those three things and you can find somewhere that has all three, that's the best place to be.*
+> *Find what you're best at, find what you enjoy the most - what your passion is, find what you can get paid for, and when you have those three things and you can find somewhere that has all three, that's the best place to be.*
 
 *So when you're looking for a job, or when you're looking to hire people, I ask people not what they know but I ask what they enjoy the most.*
 
