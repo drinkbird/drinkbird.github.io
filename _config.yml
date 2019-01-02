@@ -241,6 +241,12 @@ reads:
     tags:
       - Technical (Beginner - Intermediate)
       - Not focused on code
+  buildingmicroservices2:
+    title: "Building Microservices Second Edition: Designing Fine-Grained Systems"
+    url: "http://geni.us/buildingmicroservices2"
+    isbn: "1492034029"
+    tags:
+      - Technical (Beginner - Intermediate)
   microservicespatterns:
     title: "Microservice Patterns: With examples in Java"
     url: "http://geni.us/microservicespatterns"
@@ -337,3 +343,15 @@ reads:
     title: "Accelerate: The Science of Lean Software and DevOps: Building and Scaling High Performing Technology Organizations"
     url: "http://geni.us/accelerate-amazon"
     isbn: "B07B9F83WM"
+  dotnetmicroservices:
+    title: ".NET Microservices: Architecture for Containerized .NET Applications"
+    url: "https://docs.microsoft.com/en-us/dotnet/standard/microservices-architecture/"
+    coverUrl: "https://docs.microsoft.com/en-us/dotnet/standard/microservices-architecture/media/cover.png"
+  tao-amazon:
+    title: "The Tao of Microservices"
+    url: "http://geni.us/tao-amazon"
+    isbn: "1617293148"
+  azure-java-microservices:
+    title: "Microservices Development on Azure with Java [Video Course]"
+    url: "https://blog.drinkbird.com/azure-java-microservices-video-course-packt/"
+    coverUrl: "https://blog.drinkbird.com/images/azure-java-microservices-cover.jpg"
