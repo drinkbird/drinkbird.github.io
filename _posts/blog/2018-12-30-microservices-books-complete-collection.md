@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "The complete collection of Microservices books"
+title: "The Complete Collection of Microservices Books"
 excerpt: "More than enough resources to keep you happily busy in 2019"
 permalink: /microservices-books-complete-collection/
 comments: true
@@ -10,41 +10,82 @@ image:
   feature: microservices-books.jpg
 reads:
 ---
-Microservices, what a topic! Everybody seems to be doing it, but if you ask a hundred people to describe their approach you will probably get as many deviating answers.
+Microservices, what a topic!
 
-Why? As I see it, the problem is twofold.
+Everybody seems to be developing microservices, but if you ask a hundred people to describe their approach you will most likely get as many deviating answers.
 
-On one hand, software engineers tend to constantly feel overwhelmed with work, and operate under the impression that there is no time for anything else, including self-improvement. Many of us just grind, only to keep facing similar (often identical) problems with others. Growth is self-sabotaged as we don't learn from each other, and we often end up with expensive, hard to maintain snowflakes.
+The reasons are many, but it all boils down to *proper education*.
 
-On the other hand, over the past decade the microservices architectural style has been evolving so fast that there is an ever-growing number of posts that or already are, or are quickly becoming, obsolete. It has become confusing for anyone to clearly see the bigger picture, especially for newcomers who often feel totally lost.
+Blog posts and YouTube videos can be valuable sources of information, but I've found the signal-to-noise ratio to be quite low,  so I don't spend much of my time on these.
 
+On the other hand, any work that is peer-reviewed and goes through a publishing process has a much better chance of giving a high return on investment.
 
+In this post I provide the complete list of Microservices books that I have found to be of good value, and I'm confident that will help you get your skills to the next level.
 
+## Microservice Patterns: With examples in Java, by Chris Richardson
 
+{% assign read_key = "microservicespatterns" %}
+{% assign book = site.reads[read_key] %}
+{% include book_inarticle.html %}
 
-, that obsolete posts keep accumulating in every corner of the internet, significantly lowering the signal to noise ratio.  
+## .NET Microservices: Architecture for Containerized .NET Applications, by Cesar de la Torre, Bill Wagner, Mike Rousos (free ebook)
 
+{% assign read_key = "dotnetmicroservices" %}
+{% assign book = site.reads[read_key] %}
+{% include book_inarticle.html %}
 
+## Building Microservices Second edition, by Sam Newman
 
- and frankly it has become exceptionally challenging for newcomers to get the big picture. The ever-growing number of divergent opinions posted all over the internet makes the signal to noise ratio extremely low.
+{% assign read_key = "buildingmicroservices" %}
+{% assign book = site.reads[read_key] %}
+{% include book_inarticle.html %}
 
+## The Tao of Microservices, by Richard Rodger
 
+{% assign read_key = "tao-amazon" %}
+{% assign book = site.reads[read_key] %}
+{% include book_inarticle.html %}
 
- mostly because of all those divergent opinions posted on the internet over time.
+## Microservices: Flexible Software Architecture, by Eberhard Wolff
 
+{% assign read_key = "microservices" %}
+{% assign book = site.reads[read_key] %}
+{% include book_inarticle.html %}
 
+## Domain-Driven Design: Tackling Complexity in the Heart of Software, by Eric Evans
 
+{% assign read_key = "dddericevans" %}
+{% assign book = site.reads[read_key] %}
+{% include book_inarticle.html %}
 
+## Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems, by Martin Kleppmann
 
-. Nowadays it's exceptionally hard to get a proper full picture on the internet, especially if you are just starting out, because of all the diverging opinions 
+{% assign read_key = "dataintensive" %}
+{% assign book = site.reads[read_key] %}
+{% include book_inarticle.html %}
 
+## The Devops Handbook, by Gene Kim, Patrick Debois, John Willis
 
+{% assign read_key = "devops" %}
+{% assign book = site.reads[read_key] %}
+{% include book_inarticle.html %}
 
- With new tech and new experience comes 
+## Bonus: Microservices Development on Azure with Java [Video Course], by Tasos Piotopoulos
 
+{% assign read_key = "azure-java-microservices" %}
+{% assign book = site.reads[read_key] %}
+{% include book_inarticle.html %}
 
+## Conclusion
 
-his architectural style has been continuously evolving over the past few years, but this evolution is mostly reflected on greenfield projects. Since microservice-based projects tend to be comprised of many subprojects and executables, it becomes more challenging to adjust existing services but also easier to develop new ones using revised approaches. Yet everything has to be maintained.
+These resources can keep you happily busy for months, and depending on your reading pace, it could be much more than a full year. A good goal would be roughly one book per month, or two months.
 
+My advice is, carve out between 30 or 60 minutes of reading a day, maybe while commuting or during lunch, and I can guarantee that you will start noticing a big performance difference at work very soon.
 
-Long story short, **innovation is always bigger on the outside** and those who realize it 
+If you enjoyed the post and you would like seeing more of my content, feel free to [subscribe](http://eepurl.com/b_W2G9) to the DrinkBird newsletter so I can keep you posted.
+
+Have you already read any of the books above? Is there any other good book about Microservices that you think it's missing from the list? Let me know by dropping a comment below.
+
+And if you're hungry for more, have a look at at my full hand-picked collection of [recommended books for software developers]({{ site.url }}/books/). Happy new year, and happy reading!
+
+Cheers,<br>Tasos
