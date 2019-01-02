@@ -34,7 +34,7 @@ If you can only pick one book to read this year, this is it.
 {% assign book = site.reads[read_key] %}
 {% include book_inarticle.html %}
 
-## .NET Microservices: Architecture for Containerized .NET Applications, by Cesar de la Torre, Bill Wagner, Mike Rousos (free ebook)
+## .NET Microservices: Architecture for Containerized .NET Applications, by Cesar de la Torre, Bill Wagner and Mike Rousos (free ebook)
 
 Despite being targeted to dotnet core, I found the theory in this book to be exceptionally well presented and independent of the stack.
 
@@ -104,15 +104,25 @@ As of today, this is the most well-written, comprehensive and modern book about 
 {% assign book = site.reads[read_key] %}
 {% include book_inarticle.html %}
 
-## The Devops Handbook, by Gene Kim, Patrick Debois, John Willis
+## The Devops Handbook, by Gene Kim, Patrick Debois and John Willis
 
+Whether you take full ownership of deploying and operating microservices in production, or someone else does it for you, it's essential that you have a good understanding of the DevOps culture, and take every given opportunity to improve and better align with it.
 
+Within a true DevOps culture, development, operations and product people work close together towards a common goal: delivering high-quality, reliable software that enables an organization to conduct its business. This book is the fastest way to get a good grasp of what's involved.
+
+To find out more about DevOps and the problems it tries to solve, you can also check out my post [10 indicators that your tech culture is broken (and what you can do about it)]({{ site.baseurl }}/devops/).
 
 {% assign read_key = "devops" %}
 {% assign book = site.reads[read_key] %}
 {% include book_inarticle.html %}
 
 ## Bonus: Microservices Development on Azure with Java [Video Course], by Tasos Piotopoulos
+
+If you enjoy video courses, I have just the thing for you.
+
+I recently published this course with the intend to make it easier for people to get started with microservices, and demonstrate a number of hands-on examples that put many of the underlying concepts into perspective.
+
+Although the code examples are in Java, you can easily map them to another stack you might be confident in (eg. dotnet core). The focus is primarily on the design of microservices, and also on the Azure cloud platform which I honestly find so valuable that I can't live without anymore.
 
 {% assign read_key = "azure-java-microservices" %}
 {% assign book = site.reads[read_key] %}
