@@ -132,7 +132,7 @@ John traditionally works with lots of different technologies, therefore I asked 
 
 ## Conclusion
 
-John's advice made perfect sense to me, and I'm really thankful for our discussion, which you can also [watch on YouTube](https://www.youtube.com/watch?v=VyXqm8E2F1Q).
+John's advice made perfect sense to me, and I'm really thankful for our discussion, which you can also [watch on YouTube](https://www.youtube.com/watch?v=c2UZjZF6j0A).
 
 It also paid off really quickly. As a matter of fact, not long after the interview, I published my first [online video course]({{ site.baseurl }}/azure-java-microservices-video-course-packt/) about microservices, and I'm already planning some conference talks for next year. 
 
