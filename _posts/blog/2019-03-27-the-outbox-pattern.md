@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Using the Transactional Outbox pattern"
-excerpt: "Reliably publishing messages and events to a bus"
-permalink: /transactional-outbox-pattern/
+title: "Microservices communications: How to reliably publish to a message broker"
+excerpt: "Avoid a common pitfall of microservices design"
+permalink: /reliable-microservices-messaging/
 comments: true
 categories: blog
 featured: true
@@ -31,19 +31,27 @@ reads:
 
 ## The context
 
-In distributed systems, sometimes a service needs to publish events/messages to a bus like Kafka, RabbitMQ or Azure Service Bus, in order to notify other services that something interesting has happened.
+In microservices design (and distributed systems in general) we sometimes need a service to publish events/messages to a message broker/bus in order to notify other services that something interesting has happened.
 
-Perhaps a user has subscribed to our newsletter and the Email Sender service needs to know so it can send a welcome email, or the Reservation Analytics service needs to keep track of all the reservations and cancellations within our restaurants platform.
+Perhaps a user has subscribed to our newsletter and the Email Sender service needs to know so it can send a welcome email, or the Reservation Analytics service needs to be aware of all the reservations and cancellations within our restaurants platform to keep the business informed.
+
+No matter which messaging solution we choose, eg. Kafka, RabbitMQ, Azure Service Bus, there is a common design problem that we need to be aware of, and avoid.
 
 ## The problem
 
-In such cases the publishing service has to reliably persist the new changes to its own database and in addition publish some messages/events to the bus; we need either both operations to succeed or none of them should.
+Imagine that an interesting change is about to happen in our system; let's say a user has filled out their information and is about to click the `Register` button. Upon processing this request, the `User` service needs to perform two main actions:
 
-It might sound essential that these actions are performed together, but that's easier said than done as we might run into the following problems:
+1. persist the new user's information to its own database, and
+1. publish a `UserRegistered` event to a message broker
 
-- The bus might be down or unreachable.
-- The database persistance step succeeds but the service dies before it has a chance to publish to the bus.
-- In certain situations we might want to republish messages/events.
+Both steps are important for our system to function properly, so they should either both succeed or fail. For example, if the user info gets persisted but the event doesn't get published, then the `Subscription` service won't know about the new user, so it won't activate her trial subscription.
+
+It might sound essential that these actions are performed together, but doing it that way we might run into a number of problems. For example:
+
+1. __The message broker might be down or unreachable__: A message broker is an independent system with its own uptime and SLA, which means it could be down when we attempt to talk to it. We also communicate with it over the network, which is unreliable [by definition](https://en.wikipedia.org/wiki/Fallacies_of_distributed_computing), which means that the broker could be unreachable when we try to send a message.
+1. __The service process gets killed mid-way__: As soon as the database persistence step completes, the service dies unexpectedly. The message publishing step doesn't happen at all.
+1. __The request has to be processed fast__: Talking to a database *and* a message broker means that we talk to two different systems over a network, which adds to the total response time. If our service's response SLA is tight, this might become an issue.
+1. __Edge case: We need to republish old events__: Imagine that we have just deployed a new microservice and it needs to catch up with all events that occured within the last 30 days. The *TTL* (time to live) for messages in the broker is 7 days, so most of the events have disappeared. We need a way to republish these missing events without changing the state of any elements in the database. If those two actions are coupled, we won't be able to do what we need.
 
 ## The solution
 
