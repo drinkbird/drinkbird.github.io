@@ -13,7 +13,7 @@ image:
 reads:
   - agiledev
   - onwritingwell-amazon
-  - accelerate
+  - accelerate-amazon
   - peopleware
   - careerguide
   - themythicalmanmonth
