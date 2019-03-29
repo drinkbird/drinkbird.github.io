@@ -620,6 +620,13 @@ footer.site-footer {
 		text-align: center;
 		display: block;
 	}
+
+	.anchor {
+		display: block;
+    	position: relative;
+    	top: -250px;
+    	visibility: hidden;
+	}
 }
 
 .post-body {
