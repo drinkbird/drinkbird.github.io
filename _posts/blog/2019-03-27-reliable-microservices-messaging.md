@@ -61,15 +61,13 @@ The premise of all the solutions presented here is embracing the [eventual consi
 
 That way we can guarantee that services will get to know about the changes they are interested in, just not at the exact time they happen but rather a few moments later (*eventually*). After all, sacrificing consistency in favor of high availability and partition tolerance is generally a good idea for [cloud applications¹](#anchor1).
 
-In addition, the service's database essentially becomes the source of truth for messages/events emitted to other consumers. This allows us not just to have better visibility into what and when something gets published, but also have greater control of republishing.
-
-Let's have a look at some patterns next.
+In addition, the service's database becomes the source of truth for messages/events emitted to other consumers. This allows us not just to have better visibility into what and when something gets published, but also be able to republish items if necessary. Let's look into more details.
 
 ### The Transactional Outbox Pattern
 
-A service that uses a relational database to manage its state can take advantage of local ACID transactions when performing data changes. During the transaction, and in addition to the standard changes, we can insert messages/events into a special `Outbox` table, initially marking them as unsent.
+A service that uses a relational database to manage its state can take advantage of local ACID transactions when performing data changes. In addition to the standard changes during the transaction, we can also insert message/event records into a special `Outbox` table.
 
-Having that structure in place allows us to have a separate `Relay` service that polls the Outbox table, detects any unsent messages, sends them in batches and finally marks them as sent, all within a separate local transaction.
+Having that structure in place allows us to have a separate `Relay` service that polls the Outbox table, detects any unsent messages, sends them in batches and finally marks them as sent; all within a separate local ACID transaction.
 
 
 
