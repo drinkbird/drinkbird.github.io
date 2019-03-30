@@ -1,13 +1,13 @@
 ---
 layout: post
 title: "Microservices communications: How to reliably publish messages to a bus"
-excerpt: "Learn how to avoid double writes, a common pitfall of microservices design"
+excerpt: "Learn how to avoid double writes, a common pitfall of microservices and distributed systems design"
 permalink: /reliable-microservices-messaging/
 comments: true
 categories: blog
 featured: true
 image:
-  feature: outbox-pattern.png
+  feature: microservices-messaging.jpg
 reads:
   - microservicespatterns
   - agiledev
@@ -53,7 +53,7 @@ Therefore, it might sound essential that the two steps above are performed toget
 * __When requests have to be processed fast__: Talking to a database *and* a message broker means that we talk to two different systems over a network, which adds to the total response time. If our service's response SLA is tight, this might become an issue.
 * __When we need to re-publish old events__: Imagine that we have just deployed a new microservice and it needs to catch up with all events that occurred within the last 30 days. The *TTL* (time to live) for messages in the broker is 7 days, so most of the events have disappeared. We need a way to republish these missing events without changing the state of any elements in the database. If those two actions are coupled we have a problem.
 
-## The Solution
+## The Solution(s)
 
 There are a few patterns we can leverage to avoid double writes. Which one to choose depends on the situation, as we need to consider some design aspects of our system, most importantly the database technology used by the service in question.
 
@@ -61,15 +61,17 @@ The premise of all the solutions presented here is embracing the [eventual consi
 
 That way we can guarantee that services will get to know about the changes they are interested in, just not at the exact time they happen but rather a few moments later (*eventually*). After all, sacrificing consistency in favor of high availability and partition tolerance is generally a good idea for [cloud applications¹](#anchor1).
 
-Now let's discuss each potential solution individually.
+In addition, the service's database essentially becomes the source of truth for messages/events emitted to other consumers. This allows us not just to have better visibility into what and when something gets published, but also have greater control of republishing.
+
+Let's have a look at some patterns next.
 
 ### The Transactional Outbox Pattern
 
-A service that uses a relational database to manage its state can take advantage of local ACID transactions perform data changes. As part of such a transaction we can additionally insert messages/events into a special `Outbox` table.
+A service that uses a relational database to manage its state can take advantage of local ACID transactions when performing data changes. During the transaction, and in addition to the standard changes, we can insert messages/events into a special `Outbox` table, initially marking them as unsent.
 
-These records contain a boolean `IsPublished` flag, set to `false` by default.
+Having that structure in place allows us to have a separate `Relay` service that polls the Outbox table, detects any unsent messages, sends them in batches and finally marks them as sent, all within a separate local transaction.
 
-Finally, a separate `Relay` service scans the `Outbox` table 
+
 
 ### The Full Event Sourcing Pattern
 
@@ -82,4 +84,4 @@ Finally, a separate `Relay` service scans the `Outbox` table
 - 2 Phase commit is not an option.
 
 <div class="anchor" id="anchor1"></div>
-* ¹ For more information on the subject I suggest that you read about [The CAP Theorem](https://en.wikipedia.org/wiki/CAP_theorem). Note that within a microservices based application, not all of the components need to follow the same consistency model. For example, a `Payments` component could favor consistency over availability.
+* ¹ For more information on the subject you can read about [The CAP Theorem](https://en.wikipedia.org/wiki/CAP_theorem). Note that within a microservices based application, not all of the components need to follow the same consistency model. For example, a `Payments` component could favor consistency over availability.
