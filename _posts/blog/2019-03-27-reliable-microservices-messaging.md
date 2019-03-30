@@ -99,17 +99,20 @@ Transactional Log Tailing is also a good option since with Event Sourcing it's m
 
 I have successfully used both relational (Azure SQL) and NoSQL/document-oriented (Azure Cosmos DB) databases as an event store. The jury is still out regarding which approach is better, as there are cost, scalability and other factors to consider, depending on the system in question. You need to remember that with software engineering there are no silver bullets.
 
-## The Non-Solutions
+## The Non-Solution
 
-- 2PC
-- Synchronous HTTP calls
+`Distributed Transactions` using the `Two-Phase Commit` protocol (2PC) is not an option for microservice-based applications. Not only it restricts our options for Database / Message Bus products as they need to explicitly support the protocol, but can also significantly reduce the availability of our system as all components have to be online and reachable at the same time for a commit to succeed.
 
+## Reliable messaging is vital to maintaining data consistency
 
-### Anti-pattern: 2-Phase Commit
+Although distributed transactions have to be avoided, some business transactions may need to span across many microservices, each one having their own private database. In such cases, we need to use the [Saga](https://dzone.com/articles/microservices-and-the-saga-pattern-part-1) pattern, which heavily relies on messaging.
 
-- Transaction log mining
-- Change feed
-- 2 Phase commit is not an option.
+The point is that messaging is vital to microservices design, therefore we need to make sure that is done properly.
+
+## Conclusion
+
+TBA
+- studying material
 
 <div class="anchor" id="anchor1"></div>
 * ¹ For more information on the subject you can read about [The CAP Theorem](https://en.wikipedia.org/wiki/CAP_theorem). Note that within a microservices based application, not all of the components need to follow the same consistency model. For example, a `Payments` component could favor consistency over availability.
