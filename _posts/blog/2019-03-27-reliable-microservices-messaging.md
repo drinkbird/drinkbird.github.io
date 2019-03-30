@@ -87,6 +87,9 @@ When working with Cosmos DB, the `Relay` service taps into the Change Feed API a
 
 ### The Full Event Sourcing Pattern
 
+With Event Sourcing we persist the state of a business entity, such as a `Reservation` or a `User`, as a stream of state-changing events. To make a change to a business entity we append a new event to the stream, and to recreate an entity's state we replay all events in the stream.
+
+Since with Event Sourcing we don't edit records but rather only insert new ones, we only change state in an inherently atomic way.
 
 
 ### Anti-pattern: 2-Phase Commit
