@@ -39,9 +39,9 @@ No matter which messaging solution we choose, eg. Kafka, RabbitMQ, Azure Service
 
 ## The problem
 
-Imagine that an interesting change is about to happen in our system; let's say a user has filled out their information and is about to click the `Register` button. Upon processing this request, the `User` service needs to perform two main actions:
+Imagine that an interesting change is about to happen in our system; let's say a user has filled out their information and is about to click the `Register` button. Upon processing this request, the `User` service needs to perform two actions:
 
-1. persist the new user's information to its own database, and
+1. persist the new user's information to its database, and
 1. publish a `UserRegistered` event to a message broker
 
 Both steps are important for our system to function properly, so they should either both succeed or fail. For example, if the user info gets persisted but the event doesn't get published, then the `Subscription` service won't know about the new user and it won't activate their associated trial subscription.
@@ -65,15 +65,29 @@ In addition, the service's database becomes the source of truth for messages/eve
 
 ### The Transactional Outbox Pattern
 
-A service that uses a relational database to manage its state can take advantage of local ACID transactions when performing data changes. In addition to the standard changes during the transaction, we can also insert message/event records into a special `Outbox` table.
+For applications that use a relational database to manage their state, we can use a special `Outbox` table as a staging area for messages to be published.
 
-Having that structure in place allows us to have a separate `Relay` service that polls the Outbox table, detects any unsent messages, sends them in batches and finally marks them as sent; all within a separate local ACID transaction.
+We use local ACID transactions to make changes to the application's state, and as part of such a transaction we also insert a message/event record into the Outbox table.
 
+Then we can have a separate `Relay` process that reads messages from the Outbox table and publishes them to a message bus within a separate local ACID transaction.
 
+It's a highly convenient pattern, especially when we need from an existing application to start publishing events. Most importantly, this patterns allows us to work directly with high-level events, in contrast with some other patterns as we'll see next.
+
+On the other hand, there is additional programming work to be done when writing/reading outbox messages, so there's always the chance that a developer forgets to update this part when making changes to the main application logic and data.
+
+### The Transactional Log Tailing Pattern
+
+For applications using a database that supports log tailing, we can have a `Relay` process that taps into the transaction logs, transforms detected changes into messages/events and publishes them to a message bus. Although this approach is similar to the Transactional Outbox, it comes with different pros and cons.
+
+On the one hand there is less development work involved, as we don't need to make any additional inserts when persisting state. On the other hand, the transaction logs are usually in a raw, lower-level format and there is some work involved to transform them to high-level events.
+
+This approach works for both relational and NoSQL databases, as long as they support the log tailing feature. A good example of a NoSQL implementation of this pattern is [Microsoft Azure Cosmos DB](https://docs.microsoft.com/en-us/azure/cosmos-db/introduction) with the [Change Feed](https://docs.microsoft.com/en-us/azure/cosmos-db/change-feed) feature.
+
+When working with Cosmos DB, the `Relay` service taps into the Change Feed API and receives notifications for data changes, which can then publish to a message bus. The Change Feed feature also works great with the full Event Sourcing pattern, as we'll see next.
 
 ### The Full Event Sourcing Pattern
 
-### The Transactional Log Tailing Pattern
+
 
 ### Anti-pattern: 2-Phase Commit
 
