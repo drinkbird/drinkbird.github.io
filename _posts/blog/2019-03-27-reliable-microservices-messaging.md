@@ -53,7 +53,7 @@ Therefore, it might sound essential that the two steps above are performed toget
 * __When requests have to be processed fast__: Talking to a database *and* a message broker means that we talk to two different systems over a network, which adds to the total response time. If our service's response SLA is tight, this might become an issue.
 * __When we need to re-publish old events__: Imagine that we have just deployed a new microservice and it needs to catch up with all events that occurred within the last 30 days. The *TTL* (time to live) for messages in the broker is 7 days, so most of the events have disappeared. We need a way to republish these missing events without changing the state of any elements in the database. If those two actions are coupled we have a problem.
 
-## The Solution(s)
+## The Solutions
 
 There are a few patterns we can leverage to avoid double writes. Which one to choose depends on the situation, as we need to consider some design aspects of our system, most importantly the database technology used by the service in question.
 
@@ -87,9 +87,22 @@ When working with Cosmos DB, the `Relay` service taps into the Change Feed API a
 
 ### The Full Event Sourcing Pattern
 
-With Event Sourcing we persist the state of a business entity, such as a `Reservation` or a `User`, as a stream of state-changing events. To make a change to a business entity we append a new event to the stream, and to recreate an entity's state we replay all events in the stream.
+With [Event Sourcing](https://martinfowler.com/eaaDev/EventSourcing.html) we persist the state of a business entity, such as a `Reservation` or a `User`, as a stream of state-changing events. To make a change to a business entity we append a new event to the stream, and to recreate an entity's state we replay all events in the stream.
 
-Since with Event Sourcing we don't edit records but rather only insert new ones, we only change state in an inherently atomic way.
+Since with Event Sourcing we don't edit records but rather only insert new ones, we only change state in an inherently atomic way. The challenge lies in publishing events to a bus in an atomic way as well.
+
+When working with Event Sourcing, we refer to the database as the `Event Store`. Although there are products specialized in storing events, such as [Greg Young's Event Store](https://eventstore.org/), we can essentially use most SQL or NoSQL database products and adjust the implementation to account for each database's strengths and weaknesses.
+
+The way we publish events reliably depends on the Event Store. For example, with a SQL implementation we can have an `Events` table to store domain events, and a flag that indicates whether a record has been published. It's similar to the Outbox pattern, but we don't need an additional entry.
+
+Transactional Log Tailing is also a good option since with Event Sourcing it's much easier to know exactly what to listen for and act upon. Finally, when using Cosmos DB as an Event Store, the Change Feed feature fits naturally into the design.
+
+I have successfully used both relational (Azure SQL) and NoSQL/document-oriented (Azure Cosmos DB) databases as an event store. The jury is still out regarding which approach is better, as there are cost, scalability and other factors to consider, depending on the system in question. You need to remember that with software engineering there are no silver bullets.
+
+## The Non-Solutions
+
+- 2PC
+- Synchronous HTTP calls
 
 
 ### Anti-pattern: 2-Phase Commit
