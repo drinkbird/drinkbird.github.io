@@ -109,11 +109,11 @@ That is where the [Saga](https://dzone.com/articles/microservices-and-the-saga-p
 
 ## Conclusion
 
-Messaging is in the heart of microservice-based applications, so we need to make sure that is done properly, in a reliable and predictable way. There are a few different solutions we can leverage, depending on the database technology we use, its supported features, plus a number of design aspects of our system. Finally, when we need to keep data persistent across microservices we should avoid 2PC and use Sagas instead, which heavily relies on messaging.
+Messaging is in the heart of microservice-based application design, so we need to make sure that is done in a reliable and predictable way. To that end there are several solutions we can leverage, depending on the database technology we use and its features, plus a number of design aspects of our system. Finally, when we need to keep data consistent across microservices we should avoid 2PC and use Sagas instead, which heavily relies on messaging.
 
-To see those patterns plus many more in great detail, while stepping up your engineering game, you can check out my [Complete Collection of Microservices Books]({{ site.baseurl }}/microservices-books-complete-collection/) and learn from the best.
+Want to build expertise in microservices? Check out my [complete Collection of Microservices Books]({{ site.baseurl }}/microservices-books-complete-collection/) and don't hesitate to drop me a line and let me know what you think.
 
-Don't hesitate to drop me a line and let me know wbat you think. Until next time! 
+Until next time! Cheers, Tasos. 
 
 <div class="anchor" id="anchor1"></div>
 * ¹ For more information on the subject you can read about [The CAP Theorem](https://en.wikipedia.org/wiki/CAP_theorem). Note that within a microservices based application, not all of the components need to follow the same consistency model. For example, a `Payments` component could favor consistency over availability.
