@@ -6,6 +6,7 @@ permalink: /reliable-microservices-messaging/
 comments: true
 categories: blog
 featured: true
+mermaid: true
 image:
   feature: microservices-messaging.jpg
 reads:
@@ -46,6 +47,13 @@ Imagine that an interesting change is about to happen in our system; let's say a
 
 Both steps are important for our system to function properly, so they should either both succeed or fail. For example, if the user info gets persisted but the event doesn't get published, then the `Subscription` service won't know about the new user and it won't activate their associated trial subscription.
 
+<div class="mermaid">
+graph TD;
+    req(Request)-->svc[Service];
+    svc[Service]-- Write 1 - OK -->db[Database];
+    svc[Service]-. Write 2 - Fail .->bus[Message Bus];
+</div>
+
 Therefore, it might sound essential that the two steps above are performed together, but this *double write* can lead to a number of problems. For example:
 
 * __When the message broker is be down or unreachable__: A message broker is an independent system with its own uptime and SLA, which means it could be down when we attempt to talk to it. We also communicate with it over the network, which is unreliable [by definition](https://en.wikipedia.org/wiki/Fallacies_of_distributed_computing), which means that the broker could be unreachable when we try to send a message.
@@ -53,7 +61,7 @@ Therefore, it might sound essential that the two steps above are performed toget
 * __When requests have to be processed fast__: Talking to a database *and* a message broker means that we talk to two different systems over a network, which adds to the total response time. If our service's response SLA is tight, this might become an issue.
 * __When we need to re-publish old events__: Imagine that we have just deployed a new microservice and it needs to catch up with all events that occurred within the last 30 days. The *TTL* (time to live) for messages in the broker is 7 days, so most of the events have disappeared. We need a way to republish these missing events without changing the state of any elements in the database. If those two actions are coupled we have a problem.
 
-## The Solutions
+## Solutions
 
 There are a few patterns we can leverage to avoid double writes. Which one to choose depends on the situation, as we need to consider some design aspects of our system, most importantly the database technology used by the service in question.
 
@@ -71,15 +79,36 @@ We use local ACID transactions to make changes to the application's state, and a
 
 Then we can have a separate `Relay` process that reads messages from the Outbox table and publishes them to a message bus within a separate local ACID transaction.
 
+<div class="mermaid">
+graph TD;
+    req(Request) --> bm[Business Microservice];
+    bm[Business Microservice] -- Database Transaction --> Database;
+    Relay -- Poll --> Database
+    Relay -- Publish --> mb[Message Bus]
+
+    subgraph Database Transaction
+        s[Business Microservice] -- Edit Customer record --> ct[Customer Table]
+        s[Business Microservice] -- Add CustomerEdited event --> ob[Outbox Events]
+    end
+</div>
+
 It's a highly convenient pattern, especially when we need from an existing application to start publishing events. Most importantly, this patterns allows us to work directly with high-level events, in contrast with some other patterns as we'll see next.
 
 On the other hand, there is additional programming work to be done when writing/reading outbox messages, so there's always the chance that a developer forgets to update this part when making changes to the main application logic and data.
 
 ### 2. The Transactional Log Tailing Pattern
 
-For applications using a database that supports log tailing, we can have a `Relay` process that taps into the transaction logs, transforms detected changes into messages/events and publishes them to a message bus. Although this approach is similar to the Transactional Outbox, it comes with different pros and cons.
+For applications that use a database supporting log tailing, we can have a `Relay` process that taps into the transaction logs, transforms detected changes into messages/events and publishes them to a message bus. Although this approach is similar to the Transactional Outbox, it comes with different pros and cons.
 
 On the one hand there is less development work involved, as we don't need to make any additional inserts when persisting state. On the other hand, the transaction logs are usually in a raw, lower-level format and there is some work involved to transform them to high-level events.
+
+<div class="mermaid">
+graph TD;
+    req(Request) --> bm[Business Microservice];
+    bm[Business Microservice] -- Database Transaction --> Database;
+    Relay -- Observe Log --> Database
+    Relay -- Transform and Publish --> mb[Message Bus]
+</div>
 
 This approach works for both relational and NoSQL databases, as long as they support the log tailing feature. A good example of a NoSQL implementation of this pattern is [Microsoft Azure Cosmos DB](https://docs.microsoft.com/en-us/azure/cosmos-db/introduction) with the [Change Feed](https://docs.microsoft.com/en-us/azure/cosmos-db/change-feed) feature.
 
@@ -93,7 +122,15 @@ Since with Event Sourcing we don't edit records but rather only insert new ones,
 
 When working with Event Sourcing, we refer to the database as the `Event Store`. Although there are products specialized in storing events, such as [Greg Young's Event Store](https://eventstore.org/), we can essentially use most SQL or NoSQL database products and adjust the implementation to account for each database's strengths and weaknesses.
 
-The way we publish events reliably depends on the Event Store. For example, with a SQL implementation we can have an `Events` table to store domain events, and a flag that indicates whether a record has been published. It's similar to the Outbox pattern, but we don't need an additional entry.
+The way we publish events reliably depends on the Event Store. For example, with a SQL implementation we can have an `Events` table to store domain events, and a flag that indicates whether a record has been published. It's similar to the Outbox pattern, but we don't need additional entries.
+
+<div class="mermaid">
+graph TD;
+    req(Request) --> bm[Business Microservice];
+    bm[Business Microservice] -- Database Transaction --> Database;
+    Relay -- Observe Log / Poll Events Table --> Database
+    Relay -- Transform and Publish --> mb[Message Bus]
+</div>
 
 Transactional Log Tailing is also a good option since with Event Sourcing it's much easier to know exactly what to listen for and act upon. Finally, when using Cosmos DB as an Event Store, the Change Feed feature fits naturally into the design.
 
