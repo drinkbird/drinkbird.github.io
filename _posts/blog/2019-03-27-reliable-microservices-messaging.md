@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Microservices communications: How to reliably publish messages to a bus"
-excerpt: "Learn how to avoid double writes, a common pitfall of microservices and distributed systems design"
+title: "Microservices communications: Publishing messages to a bus in a reliable way"
+excerpt: "Learn how to avoid double writes, a common pitfall of microservices design"
 permalink: /reliable-microservices-messaging/
 comments: true
 categories: blog
@@ -63,7 +63,7 @@ That way we can guarantee that services will get to know about the changes they 
 
 In addition, the service's database becomes the source of truth for messages/events emitted to other consumers. This allows us not just to have better visibility into what and when something gets published, but also be able to republish items if necessary. Let's look into more details.
 
-### The Transactional Outbox Pattern
+### 1. The Transactional Outbox Pattern
 
 For applications that use a relational database to manage their state, we can use a special `Outbox` table as a staging area for messages to be published.
 
@@ -75,7 +75,7 @@ It's a highly convenient pattern, especially when we need from an existing appli
 
 On the other hand, there is additional programming work to be done when writing/reading outbox messages, so there's always the chance that a developer forgets to update this part when making changes to the main application logic and data.
 
-### The Transactional Log Tailing Pattern
+### 2. The Transactional Log Tailing Pattern
 
 For applications using a database that supports log tailing, we can have a `Relay` process that taps into the transaction logs, transforms detected changes into messages/events and publishes them to a message bus. Although this approach is similar to the Transactional Outbox, it comes with different pros and cons.
 
@@ -85,7 +85,7 @@ This approach works for both relational and NoSQL databases, as long as they sup
 
 When working with Cosmos DB, the `Relay` service taps into the Change Feed API and receives notifications for data changes, which can then publish to a message bus. The Change Feed feature also works great with the full Event Sourcing pattern, as we'll see next.
 
-### The Full Event Sourcing Pattern
+### 3. The Full Event Sourcing Pattern
 
 With [Event Sourcing](https://martinfowler.com/eaaDev/EventSourcing.html) we persist the state of a business entity, such as a `Reservation` or a `User`, as a stream of state-changing events. To make a change to a business entity we append a new event to the stream, and to recreate an entity's state we replay all events in the stream.
 
@@ -99,20 +99,21 @@ Transactional Log Tailing is also a good option since with Event Sourcing it's m
 
 I have successfully used both relational (Azure SQL) and NoSQL/document-oriented (Azure Cosmos DB) databases as an event store. The jury is still out regarding which approach is better, as there are cost, scalability and other factors to consider, depending on the system in question. You need to remember that with software engineering there are no silver bullets.
 
-## The Non-Solution
+## More reasons why reliable messaging is so important
 
-`Distributed Transactions` using the `Two-Phase Commit` protocol (2PC) is not an option for microservice-based applications. Not only it restricts our options for Database / Message Bus products as they need to explicitly support the protocol, but can also significantly reduce the availability of our system as all components have to be online and reachable at the same time for a commit to succeed.
+`Distributed Transactions` using the `Two-Phase Commit Protocol` (2PC) is not an option for microservice-based applications. Not only it restricts our options for Databases, Message Buses, etc. as they need to explicitly support the protocol, but can also significantly reduce the availability of our system as for a distributed commit to succeed it needs all participating components to be online and reachable.
 
-## Reliable messaging is vital to maintaining data consistency
+Some business transactions may still need to span across many microservices. Since each microservice has its own private database and Distributed Transactions have to be avoided by design, there has to be another way of keeping data consistent.
 
-Although distributed transactions have to be avoided, some business transactions may need to span across many microservices, each one having their own private database. In such cases, we need to use the [Saga](https://dzone.com/articles/microservices-and-the-saga-pattern-part-1) pattern, which heavily relies on messaging.
-
-The point is that messaging is vital to microservices design, therefore we need to make sure that is done properly.
+That is where the [Saga](https://dzone.com/articles/microservices-and-the-saga-pattern-part-1) pattern comes into play. Although the patern's details are outside the scope of this post, the important thing to note is that Sagas heavily rely on messaging. That is one more reason why messaging is so important for microservice-based applications, so we need to take extra care that is done in a reliable fashion.
 
 ## Conclusion
 
-TBA
-- studying material
+Messaging is in the heart of microservice-based applications, so we need to make sure that is done properly, in a reliable and predictable way. There are a few different solutions we can leverage, depending on the database technology we use, its supported features, plus a number of design aspects of our system. Finally, when we need to keep data persistent across microservices we should avoid 2PC and use Sagas instead, which heavily relies on messaging.
+
+To see those patterns plus many more in great detail, while stepping up your engineering game, you can check out my [Complete Collection of Microservices Books]({{ site.baseurl }}/microservices-books-complete-collection/) and learn from the best.
+
+Don't hesitate to drop me a line and let me know wbat you think. Until next time! 
 
 <div class="anchor" id="anchor1"></div>
 * ¹ For more information on the subject you can read about [The CAP Theorem](https://en.wikipedia.org/wiki/CAP_theorem). Note that within a microservices based application, not all of the components need to follow the same consistency model. For example, a `Payments` component could favor consistency over availability.
