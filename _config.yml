@@ -22,7 +22,7 @@ kramdown:
     syntax_highlighter: rouge
 
 permalink: /:title
-gems:
+plugins:
   - jekyll-sitemap
   - jekyll-redirect-from
 
