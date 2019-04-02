@@ -77,6 +77,8 @@ Note that by using these patterns, the event consumers need to ensure `idempoten
 <div class="anchor" id="anchor1"></div>
 ¹ For more information on the subject you can read about [The CAP Theorem](https://en.wikipedia.org/wiki/CAP_theorem). Note that within a microservices based application, not all of the components need to follow the same consistency model. For example, a `Payments` component could favor consistency over availability.
 
+Note that in Domain Driven Design terms, we only talk about eventual consistency between microservices / aggregate roots, not within the same one. An architect should be careful when designing subdomains to keep consistency levels inside one context, and apply proper failure semantics across different domains. *(Many thanks to Hrvoje Hudoletnjak for contributing this paragraph to the article.)*
+
 ### 1. The Transactional Outbox Pattern
 
 For applications that use a relational database to manage their state, we can use a special `Outbox` table as a staging area for messages to be published.
@@ -160,7 +162,7 @@ Messaging is in the heart of microservice-based application design, so we need t
 
 To that end there are several solutions we can leverage, depending on the database technology we use and its features, plus a number of design aspects of our system.
 
-We need to ensure that message/event consumers are idempotent, meaning that they should process each event only once, no matter how many times they come across it in the bus.
+Message/event consumers need to handle events idempotently, meaning that the downstream processing needs to ensure that no undesired duplication of effects happens, no matter how many times they come across it in the bus. *(Many thanks to Ruben Bartelink for contributing this paragraph to the article.)*
 
 Finally, when we need to keep data consistent across microservices we should embrace Eventual Consistency, avoid 2PC and use Sagas instead. The Saga pattern heavily relies on messaging.
 
