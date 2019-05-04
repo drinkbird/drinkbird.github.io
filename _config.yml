@@ -1,8 +1,8 @@
 # Site settings
 title: DrinkBird
 email: tasos@drinkbird.com
-description: "Step up your engineering game"
-longdescription: "Step up your engineering game | Stories and tutorials for software engineers by Tasos Piotopoulos"
+description: "I drink coffee and I build things"
+longdescription: "I drink coffee and I build things | A software engineering blog by Tasos Piotopoulos"
 baseurl: ""
 url: "https://blog.drinkbird.com"
 locale: en_US

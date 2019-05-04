@@ -2,6 +2,7 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 $gray-darker:					#4a4a4a;
 $brand-primary:					#e67e22;
@@ -29,11 +30,11 @@ $color-gh-js:					#f1e05a;
 $color-gh-html:					#e44b23;
 $color-gh-java:					#b07219;
 
-$font-family-secondary:			"Open Sans", Helvetica, Arial, sans-serif;
-$font-family-primary:			$font-family-secondary;
-$font-family-base:				$font-family-secondary;
-$headings-font-family:			$font-family-primary;
-$navbar-font-family:			$font-family-secondary;
+$font-family-primary:			"Times New Roman", serif;
+$font-family-secondary:			$font-family-primary;
+$font-family-base:				$font-family-primary;
+$headings-font-family:			"Open Sans", Helvetica, Arial, sans-serif;
+$navbar-font-family:			"Montserrat", Helvetica, Arial, sans-serif;
 $font-size-base:				16px;
 $line-height-base:				1.8;
 $icon-font-path:				"../fonts/";
@@ -581,21 +582,21 @@ footer.site-footer {
 	}
 
 	h2 {
-		font-size: 24px;
+		font-size: 28px;
 		font-weight: bold;
 		padding-bottom: 20px;
 	}
 
 	p {
-		font-size: 20px;
-		padding-bottom: 20px;
+		font-size: 21px;
+		padding-bottom: 30px;
 	}
 
 	ul,ol {
 		padding-bottom: 10px;
 
 		li {
-			font-size: 20px;
+			font-size: 21px;
 			padding-bottom: 10px;
 		}
 	}
@@ -869,6 +870,9 @@ a.cover {
 	}
 
 	.jumbotron {
+		a:hover {
+			color:rgba(255, 255, 255, 0.5);
+		}
 		.author {
 			figure {
 				img {
