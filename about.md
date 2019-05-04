@@ -13,9 +13,9 @@ I'm Tasos Piotopoulos, a professional software engineer & aspiring technical arc
 
 I've been working in the software industry since 2005, and nowadays I blog, create tutorials, organize meetups and workshops, speak at events and academic lectures, and solve complex problems through delivering high-quality software.
 
-My Master's degree is in Software Engineering and Ubiquitous Computing, from University College Dublin, and I currently work at [jet.com](https://jet.com) / [Walmart eCommerce](https://walmart.com)¹ as a Squad Lead and Senior Software Engineer. 
+My Master's degree is in Software Engineering and Ubiquitous Computing from University College Dublin, and I currently work at [Jet.com](https://jet.com) / [Walmart eCommerce](https://walmart.com)¹ as a Tech Lead and Staff Software Engineer. 
 
-¹ Top [Fortune 500](http://fortune.com/fortune500/) company for 2017
+¹ [Fortune 1](http://fortune.com/fortune500/) company
 
 ### What is this blog about?
 
@@ -25,7 +25,11 @@ That works for a while, but soon reality catches up; instead of providing value 
 
 We can do better.
 
-In this blog I distill some of my thoughts and experiences from the tech industry and literature, as well as create practical tutorials, with the intent to motivate and inspire both new and seasoned technology professionals to actively manage their career, reinforce both their technical and soft skills, and help them in their quest of becoming the best version of themselves.
+In this blog I distill some of my thoughts and experiences from the Tech Industry and literature, as well as present some practical guides and tutorials, with the intent to motivate, inspire, and help both new and seasoned technology professionals to cultivate their technical and soft skills. The Industry is shaped by each of us, so every improvement - either big or small - can go a long way.
+
+### Why DrinkBird?
+
+It's the direct translation of my last name, from Greek to English.
 
 ### Technologies
 
@@ -96,6 +100,6 @@ Tasos Piotopoulos is a professional software engineer and aspiring technical arc
 
 He has been working in the software industry since 2005, and nowadays he blogs at drinkbird.com, creates tutorials, organizes meetups and workshops, speaks at events and academic lectures, and solves complex problems through delivering high-quality software.
 
-His Master's degree is in Software Engineering and Ubiquitous Computing, from University College Dublin, and he currently works at jet.com / Walmart eCommerce as a Squad Lead and Senior Software Engineer. 
+His Master's degree is in Software Engineering and Ubiquitous Computing, from University College Dublin, and he currently works at Jet.com / Walmart eCommerce as a Tech Lead and Staff Software Engineer. 
 
 ![Tasos Piotopoulos]({{ site.baseurl }}/assets/media/drinkbird_shot.jpg)
