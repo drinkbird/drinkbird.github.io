@@ -125,9 +125,9 @@ reads:
       - Career Development
       - Technical (Various Levels)
   csharpindepth:
-    title: "C# in Depth"
-    url: "http://geni.us/csharpindepth"
-    isbn: "161729134X"
+    title: "C# in Depth, 4th Edition"
+    url: "https://geni.us/csharpindepth4e"
+    isbn: "1617294535"
     tags:
       - Technical (Intermediate - Advanced)
       - Niche
@@ -355,3 +355,20 @@ reads:
     title: "Microservices Development on Azure with Java [Video Course]"
     url: "https://blog.drinkbird.com/azure-java-microservices-video-course-packt/"
     coverUrl: "https://blog.drinkbird.com/images/azure-java-microservices-cover.jpg"
+  aspnet-core-inaction:
+    title: "ASP.NET Core in Action"
+    url: "https://geni.us/aspnetcoreinaction"
+    isbn: "1617294616"
+  domain-modeling-made-functional:
+    title: "Domain Modeling Made Functional"
+    url: "https://geni.us/domainmodelingfsharp"
+    isbn: "1680502549"
+  releaseit:
+    title: "Release It! 2nd Edition"
+    url: "https://geni.us/releaseit"
+    isbn: "1680502395"
+  continuous-api-management:
+    title: "Continuous API Management"
+    url: "https://geni.us/apimanagement"
+    isbn: "1492043559"
+    
