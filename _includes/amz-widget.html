@@ -1,0 +1,28 @@
+<div class="amz-widget">
+    <div class="book-image">
+        <img class="img-responsive" src="https://images-na.ssl-images-amazon.com/images/P/{{ book.isbn }}.jpg" alt="{{ book.title }}" />			
+    </div>
+    <div class="amz-widget-body">
+        <table class="table">
+            <tbody>
+                <tr>
+                    <td colspan="2">
+                        <span class="amz-widget-product-name">{{ book.title }}</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="amz-widget-fixed-container">
+                            <img src="{{ site.baseurl }}/assets/media/amazon_logo_xs.png" alt="Amazon Logo" />
+                        </div>
+                    </td>
+                    <td>
+                        <div class="text-right">
+                            <a target="_blank" href="{{ book.url }}" class="btn btn-info" aria-label="View '{{ book.title }}' on Amazon">View</a>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
