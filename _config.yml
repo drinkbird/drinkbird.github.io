@@ -371,4 +371,16 @@ reads:
     title: "Continuous API Management"
     url: "https://geni.us/apimanagement"
     isbn: "1492043559"
-    
+  stylish-fsharp:
+    title: "Stylish F#: Crafting Elegant Functional Code for .NET and .NET Core"
+    url: "https://geni.us/stylishfsharp"
+    isbn: "1484239997"
+  accelerate:
+    title: "Accelerate: The Science of Lean Software and DevOps: Building and Scaling High Performing Technology Organizations"
+    url: "https://geni.us/accelerate"
+    isbn: "1942788339"
+  building-evolutionary-architectures:
+    title: "Building Evolutionary Architectures"
+    url: "https://geni.us/evolutionary"
+    isbn: "1491986360"
+  
