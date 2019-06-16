@@ -57,291 +57,291 @@ owner:
 reads:
   softskills:
     title: "Soft Skills: The software developer's life manual"
-    url: "http://geni.us/softskills"
+    url: "https://geni.us/softskills"
     isbn: "1617292397"
     tags:
       - Career Development
   thecleancoder:
     title: "The Clean Coder: A Code of Conduct for Professional Programmers (Robert C. Martin)"
-    url: "http://geni.us/thecleancoder"
+    url: "https://geni.us/thecleancoder"
     isbn: "0137081073"
     tags:
       - Career Development
       - Not focused on code
   codecomplete:
     title: "Code Complete: A Practical Handbook of Software Construction"
-    url: "http://geni.us/codecomplete"
+    url: "https://geni.us/codecomplete"
     isbn: "0735619670"
     tags:
       - Technical (Beginner - Intermediate)
   agileppp:
     title: "Agile Principles, Patterns, and Practices in C# (Robert C. Martin)"
-    url: "http://geni.us/agileppp"
+    url: "https://geni.us/agileppp"
     isbn: "0131857258"
     tags:
       - Technical (Advanced)
   cleancode:
     title: "Clean Code: A Handbook of Agile Software Craftsmanship"
-    url: "http://geni.us/cleancode"
+    url: "https://geni.us/cleancode"
     isbn: "0132350882"
     tags:
       - Technical (Intermediate)
   pragmaticprogrammer:
     title: "The Pragmatic Programmer"
-    url: "http://geni.us/pragmaticprogrammer"
+    url: "https://geni.us/pragmaticprogrammer"
     isbn: "020161622X"
     tags:
       - Technical (Beginner - Intermediate)
       - Career Development
   refactoring:
     title: "Refactoring: Improving the Design of Existing Code (Object Technology Series)"
-    url: "http://geni.us/refactoring"
+    url: "https://geni.us/refactoring"
     isbn: "0201485672"
     tags:
       - Technical (Intermediate)
   hfdesignpatterns:
     title: "Head First Design Patterns"
-    url: "http://geni.us/hfdesignpatterns"
+    url: "https://geni.us/hfdesignpatterns"
     isbn: "0596007124"
     tags:
       - Technical (Beginner - Intermediate)
   gofdp:
     title: "Design patterns: elements of reusable object-oriented software"
-    url: "http://geni.us/gofdp"
+    url: "https://geni.us/gofdp"
     isbn: "0201633612"
     tags:
       - Technical (Advanced)
   dpruby:
     title: "Design Patterns in Ruby"
-    url: "http://geni.us/dpruby"
+    url: "https://geni.us/dpruby"
     isbn: "0321490452"
     tags:
       - Technical (Intermediate)
   97things:
     title: "97 Things Every Programmer Should Know"
-    url: "http://geni.us/97things"
+    url: "https://geni.us/97things"
     isbn: "0596809484"
     tags:
       - Career Development
       - Technical (Various Levels)
   csharpindepth:
-    title: "C# in Depth"
-    url: "http://geni.us/csharpindepth"
-    isbn: "161729134X"
+    title: "C# in Depth, 4th Edition"
+    url: "https://geni.us/csharpindepth4e"
+    isbn: "1617294535"
     tags:
       - Technical (Intermediate - Advanced)
       - Niche
   aspnetmvc5:
     title: "Pro ASP.Net MVC 5 (Expert's Voice in ASP.Net)"
-    url: "http://geni.us/aspnetmvc5"
+    url: "https://geni.us/aspnetmvc5"
     isbn: "1430265299"
     tags:
       - Technical (Beginner - Intermediate)
       - Niche
   aspnetcoremvc:
     title: "Pro ASP.NET Core MVC"
-    url: "http://geni.us/aspnetcoremvc"
+    url: "https://geni.us/aspnetcoremvc"
     isbn: "1484203984"
     tags:
       - Technical (Beginner - Intermediate)
       - Niche
   jsgoodparts:
     title: "JavaScript: The Good Parts"
-    url: "http://geni.us/jsgoodparts"
+    url: "https://geni.us/jsgoodparts"
     isbn: "0596517742"
     tags:
       - Technical (Beginner - Intermediate)
   leanstartup:
     title: "The Lean Startup"
-    url: "http://geni.us/leanstartup"
+    url: "https://geni.us/leanstartup"
     isbn: "0307887898"
     tags:
       - Product Development
   steallikeanartist:
     title: "Steal Like An Artist"
-    url: "http://geni.us/steallikeanartist"
+    url: "https://geni.us/steallikeanartist"
     isbn: "0761169253"
     tags:
       - Inspiration
   interactiondesign:
     title: "Interaction Design"
-    url: "http://geni.us/interactiondesign"
+    url: "https://geni.us/interactiondesign"
     isbn: "1119020751"
     tags:
       - User Experience
       - Product Development
   learnazure:
     title: "Learning Microsoft Azure"
-    url: "http://geni.us/learnazure"
+    url: "https://geni.us/learnazure"
     isbn: "1782173374"
   thebigswitch:
     title: "The Big Switch"
-    url: "http://geni.us/thebigswitch"
+    url: "https://geni.us/thebigswitch"
     isbn: "039334522X"
   theworkingbrain:
     title: "The Working Brain"
-    url: "http://geni.us/theworkingbrain"
+    url: "https://geni.us/theworkingbrain"
     isbn: "046509208X"
   artofunittesting:
     title: "The Art of Unit Testing: with examples in C#"
-    url: "http://geni.us/artofunittesting"
+    url: "https://geni.us/artofunittesting"
     isbn: "1617290890"
     tags:
       - Technical (Beginner - Intermediate)
   smartandgetsthingsdone:
     title: "Smart and Gets Things Done: Joel Spolsky's Concise Guide to Finding the Best Technical Talent"
-    url: "http://geni.us/smartandgetsthingsdone"
+    url: "https://geni.us/smartandgetsthingsdone"
     isbn: "1590598385"
     tags:
       - Career Development
   showyourwork:
     title: "Show Your Work!: 10 Ways to Share Your Creativity and Get Discovered"
-    url: "http://geni.us/showyourwork"
+    url: "https://geni.us/showyourwork"
     isbn: "076117897X"
     tags:
       - Career Development
   legacycode:
     title: "Working Effectively with Legacy Code"
-    url: "http://geni.us/legacycode"
+    url: "https://geni.us/legacycode"
     isbn: "0131177052"
   effectiveusecases:
     title: "Writing Effective Use Cases"
-    url: "http://geni.us/effectiveusecases"
+    url: "https://geni.us/effectiveusecases"
     isbn: "0201702258"
   userstoriesapplied:
     title: "User Stories Applied: For Agile Software Development"
-    url: "http://geni.us/userstoriesapplied"
+    url: "https://geni.us/userstoriesapplied"
     isbn: "0321205685"
   themythicalmanmonth:
     title: "The Mythical Man-Month: Essays on Software Engineering, Anniversary Edition (2nd Edition)"
-    url: "http://geni.us/themythicalmanmonth"
+    url: "https://geni.us/themythicalmanmonth"
     isbn: "0201835959"
   theaccidentalcreative:
     title: "The Accidental Creative: How to Be Brilliant at a Moment's Notice"
-    url: "http://geni.us/theaccidentalcreative"
+    url: "https://geni.us/theaccidentalcreative"
     isbn: "1591846242"
     tags:    
       - Inspiration
   creativityincbook:
     title: "Creativity, Inc.: Overcoming the Unseen Forces That Stand in the Way of True Inspiration"
-    url: "http://geni.us/creativityincbook"
+    url: "https://geni.us/creativityincbook"
     isbn: "0593070097"
   fsharpforcsharpdevs:
     title: "F# for C# Developers (Developer Reference)"
-    url: "http://geni.us/fsharpforcsharpdevs"
+    url: "https://geni.us/fsharpforcsharpdevs"
     isbn: "0735670269"
   microservices:
     title: "Microservices: Flexible Software Architecture"
-    url: "http://geni.us/microservices"
+    url: "https://geni.us/microservices"
     isbn: "0134602412"
   buildingmicroservices:
     title: "Building Microservices: Designing Fine-Grained Systems"
-    url: "http://geni.us/buildingmicroservices"
+    url: "https://geni.us/buildingmicroservices"
     isbn: "1491950358"
     tags:
       - Technical (Beginner - Intermediate)
       - Not focused on code
   buildingmicroservices2:
     title: "Building Microservices Second Edition: Designing Fine-Grained Systems"
-    url: "http://geni.us/buildingmicroservices2"
+    url: "https://geni.us/buildingmicroservices2"
     isbn: "1492034029"
     tags:
       - Technical (Beginner - Intermediate)
   microservicespatterns:
     title: "Microservice Patterns: With examples in Java"
-    url: "http://geni.us/microservicespatterns"
+    url: "https://geni.us/microservicespatterns"
     isbn: "1617294543"
     tags:
       - Technical (Intermediate - Advanced)
       - Applicable to many programming languages
   microservicearch:
     title: "Microservice Architecture: Aligning Principles, Practices, and Culture"
-    url: "http://geni.us/microservicearch"
+    url: "https://geni.us/microservicearch"
     isbn: "1491956259"
   domaindrivendesign:
     title: "Domain-Driven Design: Tackling Complexity in the Heart of Software"
-    url: "http://geni.us/domaindrivendesign"
+    url: "https://geni.us/domaindrivendesign"
     isbn: "0321125215"
   functionalreactive:
     title: "Functional and Reactive Domain Modeling"
-    url: "http://geni.us/functionalreactive"
+    url: "https://geni.us/functionalreactive"
     isbn: "1617292249"
   streamingarch:
     title: "Streaming Architecture: New Designs Using Apache Kafka and MapR Streams"
-    url: "http://geni.us/streamingarch"
+    url: "https://geni.us/streamingarch"
     isbn: "1491953926"
   xunit:
     title: "xUnit Test Patterns: Refactoring Test Code"
-    url: "http://geni.us/xunit"
+    url: "https://geni.us/xunit"
     isbn: "0131495054"
     tags:
       - Technical (Intermediate - Advanced)
   cleanarchitecture:
     title: "Clean Architecture: A Craftsman's Guide to Software Structure and Design"
-    url: "http://geni.us/cleanarchitecture"
+    url: "https://geni.us/cleanarchitecture"
     isbn: "0134494164"
     tags:
       - Technical (Intermediate)
       - Not focused on code
   fsharp3:
     title: "Programming F# 3.0: A Comprehensive Guide for Writing Simple Code to Solve Complex Problems"
-    url: "http://geni.us/fsharp3"
+    url: "https://geni.us/fsharp3"
     isbn: "1449320295"
     tags:
       - Technical (Beginner - Intermediate)
       - Niche
   dataintensive:
     title: "Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems"
-    url: "http://geni.us/dataintensive"
+    url: "https://geni.us/dataintensive"
     isbn: "1449373321"
     tags:
       - Technical (Intermediate - Advanced)
   clrviacsharp:
     title: "CLR via C# (4th Edition) (Developer Reference)"
-    url: "http://geni.us/clrviacsharp"
+    url: "https://geni.us/clrviacsharp"
     isbn: "0735667454"
   peopleware:
     title: "Peopleware: Productive Projects and Teams (3rd Edition)"
-    url: "http://geni.us/peopleware"
+    url: "https://geni.us/peopleware"
     isbn: "0321934113"
   realworldfp:
     title: "Real-World Functional Programming: With Examples in F# and C#"
-    url: "http://geni.us/realworldfp"
+    url: "https://geni.us/realworldfp"
     isbn: "1933988924"
   careerguide:
     title: "The Complete Software Developer's Career Guide"
-    url: "http://geni.us/careerguide"
+    url: "https://geni.us/careerguide"
     isbn: "0999081411"
     tags:
       - Career Development
       - Not focused on code
   dddericevans:
     title: "Domain-Driven Design: Tackling Complexity in the Heart of Software"
-    url: "http://geni.us/dddericevans"
+    url: "https://geni.us/dddericevans"
     isbn: "0321125215"
   agiledev:
     title: "Practices of an Agile Developer: Working in the Real World (Pragmatic Bookshelf) (Pragmatic Programmers)"
-    url: "http://geni.us/agiledev"
+    url: "https://geni.us/agiledev"
     isbn: "097451408X"
   devops:
     title: "The Devops Handbook: How to Create World-Class Agility, Reliability, and Security in Technology Organizations"
-    url: "http://geni.us/devops"
+    url: "https://geni.us/devops"
     isbn: "1942788002"
   thephoenix:
     title: "The Phoenix Project: A Novel about It, Devops, and Helping Your Business Win"
-    url: "http://geni.us/thephoenix"
+    url: "https://geni.us/thephoenix"
     isbn: "1942788290"
   madetostick-amazon:
     title: "Made to Stick: Why Some Ideas Survive and Others Die"
-    url: "http://geni.us/madetostick-amazon"
+    url: "https://geni.us/madetostick-amazon"
     isbn: "1400064287"
   onwritingwell-amazon:
     title: "On Writing Well, 30th Anniversary Edition: An Informal Guide to Writing Nonfiction"
-    url: "http://geni.us/onwritingwell-amazon"
+    url: "https://geni.us/onwritingwell-amazon"
     isbn: "B0090RVGW0"
   accelerate-amazon:
     title: "Accelerate: The Science of Lean Software and DevOps: Building and Scaling High Performing Technology Organizations"
-    url: "http://geni.us/accelerate-amazon"
+    url: "https://geni.us/accelerate-amazon"
     isbn: "B07B9F83WM"
   dotnetmicroservices:
     title: ".NET Microservices: Architecture for Containerized .NET Applications"
@@ -349,9 +349,38 @@ reads:
     coverUrl: "https://docs.microsoft.com/en-us/dotnet/standard/microservices-architecture/media/cover.png"
   tao-amazon:
     title: "The Tao of Microservices"
-    url: "http://geni.us/tao-amazon"
+    url: "https://geni.us/tao-amazon"
     isbn: "1617293148"
   azure-java-microservices:
     title: "Microservices Development on Azure with Java [Video Course]"
     url: "https://blog.drinkbird.com/azure-java-microservices-video-course-packt/"
     coverUrl: "https://blog.drinkbird.com/images/azure-java-microservices-cover.jpg"
+  aspnet-core-inaction:
+    title: "ASP.NET Core in Action"
+    url: "https://geni.us/aspnetcoreinaction"
+    isbn: "1617294616"
+  domain-modeling-made-functional:
+    title: "Domain Modeling Made Functional"
+    url: "https://geni.us/domainmodelingfsharp"
+    isbn: "1680502549"
+  releaseit:
+    title: "Release It! 2nd Edition"
+    url: "https://geni.us/releaseit"
+    isbn: "1680502395"
+  continuous-api-management:
+    title: "Continuous API Management"
+    url: "https://geni.us/apimanagement"
+    isbn: "1492043559"
+  stylish-fsharp:
+    title: "Stylish F#: Crafting Elegant Functional Code for .NET and .NET Core"
+    url: "https://geni.us/stylishfsharp"
+    isbn: "1484239997"
+  accelerate:
+    title: "Accelerate: The Science of Lean Software and DevOps: Building and Scaling High Performing Technology Organizations"
+    url: "https://geni.us/accelerate"
+    isbn: "1942788339"
+  building-evolutionary-architectures:
+    title: "Building Evolutionary Architectures"
+    url: "https://geni.us/evolutionary"
+    isbn: "1491986360"
+  

@@ -146,13 +146,14 @@ button, input[type=submit], .btn {
 	line-height: 1.846;
 	letter-spacing: 0.1px;
 	text-transform: uppercase;
-
+/*
 	-webkit-box-shadow: 1px 1px 4px rgba(0,0,0,0.4);
 	box-shadow: 1px 1px 4px rgba(0,0,0,0.4);	
 	-webkit-transition: all 0.4s ease-out;
     -moz-transition: all 0.4s ease-out;
     -o-transition: all 0.4s ease-out;
     transition: all 0.4s ease-out;
+*/
 }
 
 
@@ -675,7 +676,6 @@ a.cover {
 		text-decoration: none;
 		display: inline-block;
 		margin-top: 5px;
-		margin-bottom: 15px;
 	}
 
 	.book-anchor {
@@ -683,12 +683,57 @@ a.cover {
 		position: relative;
 		top: -90px;
 	}
+
+	.book-image {
+		text-align: center;
+
+		> img {
+			display: inline-block;
+		}
+	}
+
+	.table-responsive {
+		border: none;
+	}
+
+	.amz-widget {
+		font-family: $headings-font-family;
+		font-size: 12px;
+		border-left: 1px solid $brand-gray-darker;
+		margin: 10px 0;
+
+		td {
+			border: none !important;
+		}
+
+		.amz-widget-fixed-container {
+			position: relative;
+			display: inline-block;
+
+			& > img {
+				padding: 10px 5px 10px 0;
+			}
+		}
+
+		.btn-info:hover {
+			transition: none;
+			background-color: $brand-danger;
+		}
+	}
 }
 
 @media (min-width: $screen-md-min) {
 	.book {
 		h2 {
 			margin-top: 0;
+		}
+
+		.book-image {
+			text-align: left;
+		}
+
+		.amz-widget {
+			margin: 0;
 		}
 	}
 }
