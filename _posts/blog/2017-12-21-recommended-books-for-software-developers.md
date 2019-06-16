@@ -1,7 +1,7 @@
 ---
 layout: page
-title: "Recommended books for software developers"
-excerpt: "These are the books that have changed my life. Updated December 2017"
+title: "Recommended books for Software Industry professionals"
+excerpt: "A collection of reads for Software Engineers, DevOps Engineers, Architects and Managers. Updated June 2019"
 permalink: /books/
 comments: true
 categories: blog
@@ -37,6 +37,7 @@ reads:
   - steallikeanartist
   - showyourwork
   - interactiondesign
+  - nojsyet1
   - agileppp
   - aspnetcoremvc
   - csharpindepth

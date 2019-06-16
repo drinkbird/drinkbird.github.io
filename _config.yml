@@ -383,4 +383,28 @@ reads:
     title: "Building Evolutionary Architectures"
     url: "https://geni.us/evolutionary"
     isbn: "1491986360"
+  nojsyet1:
+    title: "You Don't Know JS: Up & Going"
+    url: "https://geni.us/nojsyet1"
+    isbn: "1491924462"
+  nojsyet2:
+    title: "You Don't Know JS: Scope & Closures"
+    url: "https://geni.us/nojsyet2"
+    isbn: "1449335586"
+  nojsyet3:
+    title: "You Don't Know JS: this & Object Prototypes"
+    url: "https://geni.us/nojsyet3"
+    isbn: "1491904151"
+  nojsyet4:
+    title: "You Don't Know JS: Types & Grammar"
+    url: "https://geni.us/nojsyet4"
+    isbn: "1491904194"
+  nojsyet5:
+    title: "You Don't Know JS: Async & Performance"
+    url: "https://geni.us/nojsyet5"
+    isbn: "1491904224"
+  nojsyet6:
+    title: "You Don't Know JS: ES6 & Beyond"
+    url: "https://geni.us/nojsyet6"
+    isbn: "1491904240"
   
