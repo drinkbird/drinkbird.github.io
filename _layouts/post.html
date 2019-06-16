@@ -23,21 +23,8 @@ layout: default
 						</div>
 					</div>
 					<div class="col-md-3">
-						<div class="author">
-							<figure>
-								<img src="{{ site.baseurl }}/assets/media/drinkbird_shot.jpg" class="img-circle" alt="Anastasios Piotopoulos" />
-								<figcaption>Written by <a href="{{ site.baseurl }}/about/">Tasos Piotopoulos</a><br/>Software Engineer, Technical Architect (MSc)</figcaption>
-							</figure>
-						</div>
-
-						<div class="row subscribe-aside">
-							<div class="col-md-12">
-								<h2>Become a DrinkBird insider</h2>
-								<p>Get updates on my newest stories, tutorials, interesting books I come across and more.<br/><small>Your privacy, guaranteed. Unsubscribe any time.</small></p>
-								<p><a class="button btn btn-info" href="http://eepurl.com/b_W2G9" target="_blank">Subscribe</a></p>
-							</div>
-						</div>
-
+						{% include author.html %}
+						{% include subscribe-aside.html %}
 						{% if page.reads %}
 							<ul class="books-aside">
 							{% for read_key in page.reads %}

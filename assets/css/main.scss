@@ -590,7 +590,7 @@ footer.site-footer {
 
 	p {
 		font-size: 21px;
-		padding-bottom: 30px;
+		padding-bottom: 21px;
 	}
 
 	ul,ol {
@@ -669,6 +669,12 @@ a.cover {
 	> img {
 		display: inline-block;
 	}
+}
+
+.anchor {
+	display: block;
+	position: relative;
+	top: -90px;
 }
 
 .book {
