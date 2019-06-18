@@ -1,16 +1,16 @@
-<div class="book">
+<div class="book" data-tags="{{ book_tags | join: ',' }}">
 	<div class="book-anchor" id="{{book_key}}"></div>
 	<div class="row">
 		<div class="col-md-3">
 			{% include amz-widget.html %}
 		</div>
 		<div class="col-md-9">
-			<h2>{{ book.title }}</h2>
+			<h3>{{ book.title }}</h3>
 
-			{% if display_book_description %}
+			{% if book_display_description %}
 			{% capture book_description %}{% include books/{{ book_key }}.md %}{% endcapture %}
 			{{ book_description | markdownify }}
 			{% endif %}
 		</div>
-	</div>	
+	</div>
 </div>

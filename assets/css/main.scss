@@ -677,11 +677,38 @@ a.cover {
 	top: -90px;
 }
 
+.row.display-flex {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+
+.row.display-flex > [class*='col-'] {
+	display: flex;
+	align-items: stretch;
+}
+
+.collection-anchor {
+	display: block;
+	position: relative;
+	top: -90px;
+}
+
 .book {
+	display: flex;
+    align-items: stretch;
+	margin-bottom: 21px;
+
+	h3 {
+		margin-top: 0;
+		padding-bottom: 21px;
+	}
+
 	a.btn {
 		text-decoration: none;
 		display: inline-block;
 		margin-top: 5px;
+		width: 100%;
 	}
 
 	.book-anchor {
@@ -703,21 +730,31 @@ a.cover {
 	}
 
 	.amz-widget {
+		display: flex;
+    	align-items: stretch;
+    	flex-direction: column;
+		justify-content: flex-end;
+	
 		font-family: $headings-font-family;
 		font-size: 12px;
-		border-left: 1px solid $brand-gray-darker;
+		border-left: 1px solid $gray-lighter;
 		margin: 10px 0;
+
+		.table {
+			margin-bottom: 0;
+		}
 
 		td {
 			border: none !important;
 		}
 
-		.amz-widget-fixed-container {
-			position: relative;
-			display: inline-block;
+		.amz-widget-product-name {
+			min-height: 60px;
+		}
 
-			& > img {
-				padding: 10px 5px 10px 0;
+		.btn-info {
+			.svg-inline--fa {
+				vertical-align: -0.28em;
 			}
 		}
 

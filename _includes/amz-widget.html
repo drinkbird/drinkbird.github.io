@@ -1,24 +1,30 @@
 <div class="amz-widget">
     <div class="book-image">
-        <img class="img-responsive" src="https://images-na.ssl-images-amazon.com/images/P/{{ book.isbn }}.jpg" alt="{{ book.title }}" />			
+        {% if book.url contains "geni.us" %}
+        <img class="img-responsive" src="https://images-na.ssl-images-amazon.com/images/P/{{ book.isbn }}.jpg" alt="{{ book.title }}" />
+        {% else %}
+        <img class="img-responsive" src="{{ book.coverUrl }}" alt="{{ book.title }}" />
+        {% endif %}
     </div>
     <div class="amz-widget-body">
         <table class="table">
             <tbody>
                 <tr>
-                    <td colspan="2">
-                        <span class="amz-widget-product-name">{{ book.title }}</span>
+                    <td class="amz-widget-product-name">
+                        {{ book.title }}
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <div class="amz-widget-fixed-container">
-                            <img src="{{ site.baseurl }}/assets/media/amazon_logo_xs.png" alt="Amazon Logo" />
-                        </div>
-                    </td>
-                    <td>
                         <div class="text-right">
-                            <a target="_blank" href="{{ book.url }}" class="btn btn-info" aria-label="View '{{ book.title }}' on Amazon">View</a>
+                            {% if book.url contains "geni.us" %}
+                            <a target="_blank" href="{{ book.url }}" class="btn btn-info" title="View '{{ book.title }}' on Amazon" aria-label="View '{{ book.title }}' on Amazon">
+                                <i class="fab fa-amazon"></i> View
+                            {% else %}
+                            <a target="_blank" href="{{ book.url }}" class="btn btn-info" title="View '{{ book.title }}'" aria-label="View '{{ book.title }}'">
+                                <i class="fas fa-book-open"></i> View
+                            {% endif %}
+                            </a>
                         </div>
                     </td>
                 </tr>

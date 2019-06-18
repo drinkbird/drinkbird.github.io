@@ -1,0 +1,47 @@
+---
+layout: default
+---
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<article class="post-content">
+				<div class="skew-between">
+					<div class="content-headline">
+						<h1 class="posts-header">{{page.title}}</h1>
+						{% include social-share.html %}
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-9">
+						<div class="post-body">
+                            {{ content }}
+						</div>
+					</div>
+					<div class="col-md-3">
+						{% include author.html %}
+					</div>
+                </div>
+                
+				<div class="row">
+                    <div class="col-md-12">
+                        <hr>
+                        {% for book_key in page.books %}
+                        {% assign book = site.reads[book_key] %}
+                        {% assign book_display_description = true %}
+                        {% include book.html %}
+                        <hr>
+						{% endfor %}
+						
+						<p>
+							<a href="{{ site.baseurl }}/books">View more book collections</a>
+						</p>
+                    </div>
+				</div>
+
+				{% include social-share.html %}
+				<div id="disqus_thread"></div>
+			</article>
+		</div>
+	</div>
+</div>

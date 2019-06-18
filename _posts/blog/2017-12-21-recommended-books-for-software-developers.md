@@ -1,7 +1,7 @@
 ---
 layout: page
-title: "Recommended books for professionals of the Software Industry"
-excerpt: "A collection of reads for Software Engineers, DevOps Engineers, Architects and Managers. Updated June 2019."
+title: "Recommended books for Software Industry professionals"
+excerpt: "Book collections for Software Engineers, DevOps Engineers, Architects and Managers. Updated June 2019."
 permalink: /books/
 comments: true
 categories: blog
@@ -11,6 +11,12 @@ image:
 # creditlink: http://www.freepik.com/free-vector/book-collection-in-flat-design_764791.htm
 page-key: books
 subscribe_source: books
+book_collections:
+  - software-engineering-career-building-professionalism
+  - software-engineering-technical-enterprise-architecture
+  - software-engineering-microservices
+  - product-project-management
+
 reads:
   - careerguide
   - cleanarchitecture
@@ -46,21 +52,27 @@ nextreads:
   - clrviacsharp
   - legacycode
   - realworldfp
-oldreads:
-  - aspnetmvc5
-  - jsgoodparts
 ---
 
 {% capture intro %}
-## Updated June 2019
+<div class="collection-anchor" id="collection-top"></div>
+**Updated June 2019**
 
-This hand-picked collection of books has helped my skyrocket my career in the Software Industry. Apart from pushing me to become a better professional, they have also inspired me to pursue personal goals and overall achieve more in life. This intro used to be much longer, but I have decided to move [my thoughts on books](#thoughts) to the end, and cut right to the chase instead.
+These hand-picked book collections have helped my skyrocket my career in the Software Industry. Apart from pushing me to become a better professional, they have also inspired me to pursue personal goals and overall achieve more in life. This intro used to be much longer, and all the book descriptions used to be in this page, but I have decided to move [my thoughts on books](#thoughts) to the end and book descriptions at their respective collection's page.
 
 Whether you are a Software Engineer, DevOps Engineer, Architect or Manager, I guarantee that you can find something that deserves a spot in your personal book collection. Most of the books in this list I have read more than once, as the experiences I acquire between reads help me see that knowledge in a different light.
 
 > You can only connect the dots looking backwards. -- Steve Jobs
 
-I tend to update this list about once a year. To get notified when this happens, you can <a href="http://eepurl.com/b_W2G9" target="_blank">subscribe to the DrinkBird newsletter</a> (this is a very low frequency newsletter).
+I tend to update this list about once a year. To get notified when this happens, you can <a href="http://eepurl.com/b_W2G9" target="_blank">subscribe to the DrinkBird newsletter</a> (a very low frequency newsletter).
+
+Jump to collection:
+
+<ul>
+{% for book_collection_key in page.book_collections %}{% assign book_collection = site.books | where: 'slug', book_collection_key | first %}
+<li><a href="#collection-{{ book_collection.slug }}">{{ book_collection.title }}</a></li>
+{% endfor %}
+</ul>
 
 {% endcapture %}
 
@@ -74,49 +86,39 @@ I tend to update this list about once a year. To get notified when this happens,
   </div>
 </div>
 
------
-
-{% for read_key in page.reads %}
-{% assign book = site.reads[read_key] %}
-{% assign book_key = read_key %}
-{% assign display_book_description = true %}
-{% include book.html %}
+{% for book_collection_key in page.book_collections %}
+  {% assign book_collection = site.books | where: 'slug', book_collection_key | first %}
 
 -----
+
+<div class="collection-anchor" id="collection-{{book_collection_key}}"></div>
+
+## {{ book_collection.title }}
+{{ book_collection.content | markdownify }}
+
+<a href="{{ book_collection.url }}">View full book descriptions</a>
+
+  {% assign collection_books = book_collection.books %}
+<div class="row display-flex">
+  {% for book_key in collection_books %}
+    {% assign book = site.reads[book_key] %}
+  <div class="col-xs-6 col-sm-4 col-md-3">
+    {% include book-short.html %}
+  </div>
+  {% endfor %}
+</div>
+
+<a href="#collection-top">Back to top</a>
 
 {% endfor %}
-
-## Other reads
-
------
-
-{% for read_key in page.nextreads %}
-{% assign book = site.reads[read_key] %}
-{% assign book_key = read_key %}
-{% assign display_book_description = false %}
-{% include book.html %}
-
------
-
-{% endfor %}
-
-## Older recommendations
-
------
-
-{% for read_key in page.oldreads %}
-{% assign book = site.reads[read_key] %}
-{% assign book_key = read_key %}
-{% assign display_book_description = true %}
-{% include book.html %}
-
-{% endfor %}
-
 
 -----
 
 <div class="anchor" id="thoughts"></div>
-## Not all books have the same lifespan
+
+## Thoughts on books
+
+### Not all books have the same lifespan
 
 Some people believe that since technology advances so rapidly, books become obsolete the moment they hit the shelves. Although that's true in some occasions, it ignores an important distinction between different book types.
 
@@ -132,4 +134,14 @@ I have also included a few exceptional books that live in the cross section betw
 
 ### Don't judge a book by its ~~cover~~ programming language
 
-Some books that target fundamental knowledge utilize specific programming languages to illustrate their examples. You shouldn't get discouraged and reject the book if you haven't worked with that language before, or even if you don't intend to use it in the future. Fundamental knowledge is widely applicable, and you might notice that reading material about a different programming language makes you a stronger programmer at your main one.
+It is common for books that target fundamental knowledge to utilize specific programming languages to illustrate their examples. Some people get discouraged and reject the book if they haven't worked with that language before, or have no intention of using it in the future.
+
+Fundamental knowledge is widely applicable. Learning a concept or technique in one technology stack and transferring the implementation to another should be business as usual. Smart engineers have no such limits.
+
+### Success is a process, not a moment
+
+Investing in your craft takes a lot of time and effort. Reading one book won't bring you success overnight, but creating a habit of reading books regularly - along with plenty of practice - will definitely transform you to a better engineer and stronger professional.
+
+Which books have contributed to your own success? Let me know by leaving a comment below.
+
+Did you find this post useful? Spread the word by sharing it on social media.

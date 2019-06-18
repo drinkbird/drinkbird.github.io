@@ -7,13 +7,23 @@ baseurl: ""
 url: "https://blog.drinkbird.com"
 locale: en_US
 
+collections:
+  books:
+    output: true
+    permalink: /books/:name
+
 defaults:
   -
     scope:
       path: ""
-      layout: "post"
     values:
-      subscribe_source: "inpost"
+      layout: "post"
+  -
+    scope:
+      path: ""
+      type: "books"
+    values:
+      layout: "book-collection"
 
 # Build settings
 markdown: kramdown

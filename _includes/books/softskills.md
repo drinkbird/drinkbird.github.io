@@ -4,4 +4,4 @@ John Sonmez does a great job in providing quality advice and unique insights on 
 
 I was totally amazed by Soft Skills. It gave me a fresh perspective on professionalism and life in general, and encouraged me to become a better version of myself while thriving as a programmer.
 
-If you have already read and enjoyed Soft Skills, make sure to check out John's newest hit, [The Complete Software Developer's Career Guide]({{ site.url }}/books/#careerguide).
+If you have already read and enjoyed Soft Skills, make sure to check out John's newest hit, [The Complete Software Developer's Career Guide](#careerguide).

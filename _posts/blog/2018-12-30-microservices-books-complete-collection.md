@@ -60,9 +60,9 @@ It is a relatively short book (I managed to finish it in less than a week) which
 
 ## The Tao of Microservices, by Richard Rodger
 
-This book presents a fresh approach on architecting microservices-based systems, in a succint, honest and conscise way that cuts right to the chase.
+This book presents a fresh approach on architecting microservices-based systems, in a succinct, honest and concise way that cuts right to the chase.
 
-The detailed case study of the *nodezoo.com* system, including source code and documentation and accompanied by many great ideas one can utilize in the real world, makes this book stand out and worth exporing, even if you have already read every other book in the topic.
+The detailed case study of the *nodezoo.com* system, including source code and documentation and accompanied by many great ideas one can utilize in the real world, makes this book stand out and worth exploring, even if you have already read every other book in the topic.
 
 Especially if you work with Node and Javascript, you will find the code examples particularly valuable.
 
@@ -74,7 +74,7 @@ Especially if you work with Node and Javascript, you will find the code examples
 
 This was actually the first book I read about microservices, a couple of years ago.
 
-Although a bit dated now, it still includes a ton of useful information, and can be proven quite valuable especially for anyone who's interested in working with the AWS cloud platoform and the Netflix Java stack.
+Although a bit dated now, it still includes a ton of useful information, and can be proven quite valuable especially for anyone who's interested in working with the AWS cloud platform and the Netflix Java stack.
 
 {% assign read_key = "microservices" %}
 {% assign book = site.reads[read_key] %}
@@ -120,7 +120,7 @@ To find out more about DevOps and the problems it tries to solve, you can also c
 
 If you enjoy video courses, I have just the thing for you.
 
-I recently published this course with the intend to make it easier for people to get started with microservices, and demonstrate a number of hands-on examples that put many of the underlying concepts into perspective.
+I published this course with the intend to make it easier for people to get started with microservices, and demonstrate a number of hands-on examples that put many of the underlying concepts into perspective.
 
 Although the code examples are in Java, you can easily map them to another stack you might be confident in (eg. dotnet core). The focus is primarily on the design of microservices, and also on the Azure cloud platform which I honestly find so valuable that I can't live without anymore.
 
