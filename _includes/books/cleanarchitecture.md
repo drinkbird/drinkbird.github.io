@@ -4,4 +4,4 @@ Find what architecture is really about, and most importantly what it's not about
 
 Whether you are tasked with designing a new architecture or executing someone else's design, Clean Architecture is where you want to start from. It's a pleasant read that I was able to finish cover to cover within just a few days.
 
-PS: If you haven't already, check out the the other two book of the series: [Clean Code]({{ site.url }}/books/#cleancode) and [The Clean Coder]({{ site.url }}/books/#thecleancoder) (note that these books are not prerequisites for reading Clean Architecture).
+PS: If you haven't already, check out the the other two book of the series: [Clean Code](https://geni.us/cleancode) and [The Clean Coder](https://geni.us/thecleancoder) (note that these books are not prerequisites for reading Clean Architecture).

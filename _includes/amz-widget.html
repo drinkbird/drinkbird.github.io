@@ -1,9 +1,9 @@
 <div class="amz-widget">
     <div class="book-image">
-        {% if book.url contains "geni.us" %}
-        <img class="img-responsive" src="https://images-na.ssl-images-amazon.com/images/P/{{ book.isbn }}.jpg" alt="{{ book.title }}" />
-        {% else %}
+        {% if book.coverUrl %}
         <img class="img-responsive" src="{{ book.coverUrl }}" alt="{{ book.title }}" />
+        {% else %}
+        <img class="img-responsive" src="https://images-na.ssl-images-amazon.com/images/P/{{ book.isbn }}.jpg" alt="{{ book.title }}" />
         {% endif %}
     </div>
     <div class="amz-widget-body">

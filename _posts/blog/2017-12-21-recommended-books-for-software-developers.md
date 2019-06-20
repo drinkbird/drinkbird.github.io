@@ -12,10 +12,9 @@ image:
 page-key: books
 subscribe_source: books
 book_collections:
-  - software-engineering-career-building-professionalism
-  - software-engineering-technical-enterprise-architecture
-  - software-engineering-microservices
-  - product-project-management
+  - software-engineering-architecture-microservices
+  - software-engineering-career-building-professionalism-inspiration
+  - governance-product-technical-project-management
 
 reads:
   - careerguide
@@ -64,7 +63,7 @@ Whether you are a Software Engineer, DevOps Engineer, Architect or Manager, I gu
 
 > You can only connect the dots looking backwards. -- Steve Jobs
 
-I tend to update this list about once a year. To get notified when this happens, you can <a href="http://eepurl.com/b_W2G9" target="_blank">subscribe to the DrinkBird newsletter</a> (a very low frequency newsletter).
+I tend to update this list about once or twice a year. To get notified when this happens, you can <a href="http://eepurl.com/b_W2G9" target="_blank">subscribe to the DrinkBird newsletter</a> (a very low frequency newsletter).
 
 Jump to collection:
 
@@ -130,7 +129,7 @@ Especially books around people and behavior can be relevant for a lifetime, as t
 
 Having a solid skill set based on fundamentals can help us learn new technologies on demand, rapidly adapt to new requirements and ultimately live a more fulfilled professional life. Skills based on information have to be built on top of fundamentals.
 
-I have also included a few exceptional books that live in the cross section between information and fundamentals. These are tagged as `Niche` and make the most sense for people who work day to day with these specific technologies.
+*Note: I have included a few exceptional books that live in the cross section between information and fundamentals. I make an effort to keep those in my lists only as long as they remain relevant.*
 
 ### Don't judge a book by its ~~cover~~ programming language
 
@@ -142,6 +141,6 @@ Fundamental knowledge is widely applicable. Learning a concept or technique in o
 
 Investing in your craft takes a lot of time and effort. Reading one book won't bring you success overnight, but creating a habit of reading books regularly - along with plenty of practice - will definitely transform you to a better engineer and stronger professional.
 
-Which books have contributed to your own success? Let me know by leaving a comment below.
+Got any book suggestions of your own? Don't hesitate to drop a line in the comments below!
 
-Did you find this post useful? Spread the word by sharing it on social media.
+Did you find this post useful? If so, spread the word by giving it a share. Thank you!

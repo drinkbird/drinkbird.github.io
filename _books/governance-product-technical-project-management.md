@@ -1,12 +1,18 @@
 ---
-title: Product Management and Project Management Books
+title: Governance, Product Management and Technical Project Management Books
 books:
-    - codecomplete
-    - artofunittesting
-    - xunit
-    - refactoring
-    - hfdesignpatterns
-    - gofdp
+    - accelerate
+    - leanstartup
+    - continuous-api-management
+    - themythicalmanmonth
+    - thephoenix
+    - devops
+    - releaseit
+    - userstoriesapplied
+    - managinghumans
+    - peopleware
+    - creativityincbook
+    - smartandgetsthingsdone
 ---
 
 Whether you are a Software Engineer, DevOps Engineer, Architect or Manager, I guarantee that you can find something that deserves a spot in your personal book collection. Most of the books in this list I have read more than once, as the experiences I acquire between reads help me see that knowledge in a different light.

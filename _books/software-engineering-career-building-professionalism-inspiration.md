@@ -1,10 +1,16 @@
 ---
-title: Software Engineering - Career Building and Professionalism Books
+title: Software Engineering - Career Building, Professionalism and Inspiration Books
 books:
     - softskills
     - thecleancoder
     - agiledev
     - careerguide
+    - steallikeanartist
+    - showyourwork
+    - keepgoing
+    - theaccidentalcreative
+    - onwritingwell-amazon
+    - madetostick-amazon
 ---
 
 Whether you are a Software Engineer, DevOps Engineer, Architect or Manager, I guarantee that you can find something that deserves a spot in your personal book collection. Most of the books in this list I have read more than once, as the experiences I acquire between reads help me see that knowledge in a different light.
