@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Recommended books for Software Industry professionals"
-excerpt: "Book collections for Software Engineers, DevOps Engineers, Architects and Managers. Updated June 2019."
+excerpt: "Book collections on Software Engineering, DevOps, Architecture and Management. Updated June 2019."
 permalink: /books/
 comments: true
 categories: blog
@@ -13,6 +13,7 @@ page-key: books
 subscribe_source: books
 book_collections:
   - software-engineering-architecture-microservices
+  - software-engineering-software-development
   - software-engineering-career-building-professionalism-inspiration
   - governance-product-technical-project-management
 
@@ -143,4 +144,4 @@ Investing in your craft takes a lot of time and effort. Reading one book won't b
 
 Got any book suggestions of your own? Don't hesitate to drop a line in the comments below!
 
-Did you find this post useful? If so, spread the word by giving it a share. Thank you!
+Did you enjoy this post? Spread the word by giving it a share, and happy coding! `:)`
