@@ -3,18 +3,25 @@ title: Governance, Product Management and Technical Project Management Books
 books:
     - accelerate
     - leanstartup
-    - continuous-api-management
-    - themythicalmanmonth
-    - thephoenix
     - devops
+    - thephoenix
+    - continuous-api-management
     - releaseit
     - userstoriesapplied
     - managinghumans
-    - peopleware
+#    - peopleware
+#    - themythicalmanmonth
     - creativityincbook
     - smartandgetsthingsdone
 ---
 
-Whether you are a Software Engineer, DevOps Engineer, Architect or Manager, I guarantee that you can find something that deserves a spot in your personal book collection. Most of the books in this list I have read more than once, as the experiences I acquire between reads help me see that knowledge in a different light.
+Software is everywhere; in your phone, microwave, [car](https://www.thejournal.ie/audi-chief-executive-volkswagen-4077535-Jun2018/) and [airplane](https://www.bloomberg.com/news/articles/2019-06-28/boeing-s-737-max-software-outsourced-to-9-an-hour-engineers). **Everywhere**.
 
-This hand-picked collection of books has helped my skyrocket my career in the Software Industry. Apart from pushing me to become a better professional, they have also inspired me to pursue personal goals and overall achieve more in life. This intro used to be much longer, but I have decided to move my thoughts on books to the end, and cut right to the chase instead.
+If your business depends on software and you have any kind of authority, you are responsible for treating software engineering with respect and making sure that you understand what it takes to utilize it efficiently and reliably. Human lives may depend on it.
+
+> We are turning the U.S. Air Force into a software company that happens to deliver airpower. <br>
+> -- Adam Furtado, Chief Product Officer at [Kessel Run / U.S. Air Force](https://kesselrun.af.mil/), UXDX 2018
+
+If the world's largest bureaucracy can undergo such a significant digital transformation, then so can your business.
+
+If every CTO, VP, director, product stakeholder, manager and engineer were to read even a subset of books in this list, our industry would be in a much better shape, whether you realize that your organization is a *technology* one, or still kid yourself that is not.
