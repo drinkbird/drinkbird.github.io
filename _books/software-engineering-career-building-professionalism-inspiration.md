@@ -5,6 +5,7 @@ books:
     - thecleancoder
     - agiledev
     - careerguide
+    - 97things
     - steallikeanartist
     - showyourwork
     - keepgoing

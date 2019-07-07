@@ -19,4 +19,4 @@ Microservices, what a topic! Everybody seems to be developing microservices, but
 
 Blog posts and YouTube videos can be valuable sources of information, but I've found the signal-to-noise ratio to be quite low so I don't spend much of my time there. On the other hand, I've realized that peer-reviewed work that has gone through a publishing process has a much better chance of offering a high return on investment.
 
-Having survived a few years of designing, developing, shipping and operating numerous cloud-native microservices at scale makes me truly appreciate the books that have helped me stepping up my engineering game. I'm confident that this collection will help you get your skills to the next level as well.
+Having survived a few years of designing, developing, shipping and operating numerous cloud-native microservices at scale makes me truly appreciate the books that have helped me stepping up my engineering game. I'm confident that this collection will help you get your architecture skills to the next level.
