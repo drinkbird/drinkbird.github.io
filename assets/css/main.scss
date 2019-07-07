@@ -1,8 +1,7 @@
 ---
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans');
 
 $gray-darker:					#4a4a4a;
 $brand-primary:					#e67e22;
@@ -30,13 +29,13 @@ $color-gh-js:					#f1e05a;
 $color-gh-html:					#e44b23;
 $color-gh-java:					#b07219;
 
-$font-family-primary:			"Times New Roman", serif;
+$font-family-primary:			'Nunito Sans', sans-serif;
 $font-family-secondary:			$font-family-primary;
 $font-family-base:				$font-family-primary;
-$headings-font-family:			"Open Sans", Helvetica, Arial, sans-serif;
-$navbar-font-family:			"Montserrat", Helvetica, Arial, sans-serif;
-$font-size-base:				16px;
-$line-height-base:				1.8;
+$headings-font-family:			$font-family-primary;
+$navbar-font-family:			$font-family-primary;
+$font-size-base:				18px;
+$line-height-base:				1.61;
 $icon-font-path:				"../fonts/";
 
 $font-size-h1:					ceil(($font-size-base * 1.6));
