@@ -3,7 +3,7 @@ layout: default
 page-key: projects
 title: Projects
 permalink: /projects/
-excerpt: "Some of the projects I've been involved with during the last few years"
+excerpt: "Some of the projects I've been involved with"
 ---
 <section class="posts">
   <div class="container">
@@ -30,7 +30,7 @@ excerpt: "Some of the projects I've been involved with during the last few years
             {% include image-feature-list.html %}
             <h1>{{ post.title }}</h1>
           </a>
-          <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time>
+          {% comment %}<time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time>{% endcomment %}
           <p>{{ post.excerpt | strip_html | truncate: 160 }}</p>
         </article>
       </div>
