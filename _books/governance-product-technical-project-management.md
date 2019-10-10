@@ -2,6 +2,7 @@
 title: Governance, Product Management and Technical Project Management Books
 books:
     - accelerate
+    - cleanagile
     - leanstartup
     - devops
     - thephoenix
