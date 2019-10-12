@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Recommended books for Software Industry professionals"
-excerpt: "Book collections on Software Engineering, DevOps, Architecture and Management. Updated June 2019."
+excerpt: "Book collections on Software Engineering, DevOps, Architecture and Management. Updated October 2019."
 permalink: /books/
 comments: true
 categories: blog
