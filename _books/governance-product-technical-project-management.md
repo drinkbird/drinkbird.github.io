@@ -11,9 +11,9 @@ books:
     - userstoriesapplied
     - managinghumans
 #    - peopleware
-#    - themythicalmanmonth
-    - creativityincbook
+    - themythicalmanmonth
     - smartandgetsthingsdone
+    - creativityincbook
 ---
 
 Software is everywhere; in your phone, microwave, [car](https://www.thejournal.ie/audi-chief-executive-volkswagen-4077535-Jun2018/) and [airplane](https://www.bloomberg.com/news/articles/2019-06-28/boeing-s-737-max-software-outsourced-to-9-an-hour-engineers). **Everywhere**.
