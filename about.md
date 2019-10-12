@@ -9,33 +9,21 @@ image:
 
 ## Background
 
-I'm Tasos Piotopoulos, a professional software engineer & aspiring technical architect (M.Sc.) with a track record of building hassle-free enterprize cloud solutions and a passion for helping others step up their engineering game.
+I'm Tasos Piotopoulos, a professional software engineer & aspiring technical architect (M.Sc.) with a track record of building hassle-free enterprise cloud solutions during my 12+ years of industry experience, and a passion for helping others step up their engineering game.
 
-I've been working in the software industry since 2005, and nowadays I blog, create tutorials, organize meetups and workshops, speak at events and academic lectures, and solve complex problems through delivering high-quality software.
+I blog at drinkbird.com, produce online courses, organize meetups and workshops, speak at events and academic lectures, and solve complex problems through delivering high-quality software.
 
-My Master's degree is in Software Engineering and Ubiquitous Computing from University College Dublin, and I currently work at [Jet.com](https://jet.com) / [Walmart eCommerce](https://walmart.com)¹ as a Tech Lead and Staff Software Engineer. 
+My Master's degree is in Software Engineering and Ubiquitous Computing from University College Dublin, and I currently work at [Walmart Labs](https://walmart.com)¹ (former [Jet.com](https://jet.com)) in Dublin - Ireland as a Technical Lead (ECB5 Staff Software Engineer). 
 
-¹ [Fortune 1](http://fortune.com/fortune500/) company
-
-### What is this blog about?
-
-As technology professionals we are constantly pushed towards producing more and faster. When performing under pressure we tend to cut corners, make tradeoffs that we can't really afford, and generally we treat quality as an afterthought.
-
-That works for a while, but soon reality catches up; instead of providing value by solving business problems, we waste our time and energy dealing with defects and regressions. Eventually, productivity grants to a halt and even the smallest change becomes a risky, expensive challenge. Exhausted from burnouts, we escape by hopping to a new job, only to find ourselves in the middle of yet another death march.
-
-We can do better.
-
-In this blog I distill some of my thoughts and experiences from the Tech Industry and literature, as well as present some practical guides and tutorials, with the intent to motivate, inspire, and help both new and seasoned technology professionals to cultivate their technical and soft skills. The Industry is shaped by each of us, so every improvement - either big or small - can go a long way.
-
-### Why DrinkBird?
-
-It's the direct translation of my last name, from Greek to English.
+¹ Walmart is a [Fortune 1](http://fortune.com/fortune500/) company
 
 ### Technologies
 
-One of the principles I live by is being pragmatic rather than dogmatic and [pick the right tool for the job](http://c2.com/cgi/wiki?PickTheRightToolForTheJob) on a case-by-case basis. During my career I have delivered projects using a variety of languages, platforms, libraries and tools, such as .NET, dotnet core & JVM based languages, cloud / distributed systems technologies (Azure, Kafka, Consul, Docker, Kubernetes, Nomad, CI/CD), mobile technologies (iOS, Android) and more.
+One of the principles I live by is being pragmatic rather than dogmatic and [pick the right tool for the job](http://c2.com/cgi/wiki?PickTheRightToolForTheJob) on a case-by-case basis. During my career I have delivered projects using a variety of languages, platforms, libraries and tools, such as .NET & JVM based languages (F#, C#, Scala, Java), cloud / distributed systems technologies (Azure, Kafka, Docker, Kubernetes, Consul, Nomad, CI/CD), mobile technologies (iOS, Android), just to name a few.
 
-Lately I've been mostly focused on the Microservices architecture with Event Sourcing, Domain Driven Design, and architectural patterns for the cloud, mostly around resiliency, scalability and testing. I've also been exploring functional programming with F# and Scala, and have been working towards combining the best of both worlds (OOP & FP), while embracing the culture of DevOps.
+During the last few years I've been mostly working with distributed systems within a DevOps culture, including Microservices, Event Sourcing, Domain Driven Design (DDD), Test Driven Development (TDD), and quality cloud architectural patterns to increase resiliency, scalability, observability and testability.
+
+Lately, I've been exploring functional programming with Scala and F#, and have been working towards combining the best of both worlds (OOP & FP), while leading a small team to deliver high-quality modern systems within Walmart.
 
 ### Speaking and Workshops
 
@@ -90,16 +78,30 @@ Giving back to the community is one of the most rewarding activities of a Softwa
 - Microsoft Certified Solutions Developer: Web Applications
 - Microsoft Certified Technology Specialist: Dynamics CRM 2011 Customization and Configuration
 
+### What is this blog about?
+
+As technology professionals we are constantly pushed towards producing more and faster. When performing under pressure we tend to cut corners, make tradeoffs that we can't really afford, and generally we treat quality as an afterthought.
+
+That works for a while, but soon reality catches up; instead of providing value by solving business problems, we waste our time and energy dealing with defects and regressions. Eventually, productivity grants to a halt and even the smallest change becomes a risky, expensive challenge. Exhausted from burnouts, we escape by hopping to a new job, only to find ourselves in the middle of yet another death march.
+
+We can do better.
+
+In this blog I distill some of my thoughts and experiences from the Tech Industry and literature, as well as present some practical guides and tutorials, with the intent to motivate, inspire, and help both new and seasoned technology professionals to cultivate their technical and soft skills. The Industry is shaped by each of us, so every improvement - either big or small - can go a long way.
+
+### Why DrinkBird?
+
+It's the direct translation of my last name, from Greek to English.
+
 ## Disclaimer
 
 **This blog, its content and opinions are my own** and do not represent my employers' or clients' view in any way. Also keep in mind that I might have no idea what I'm talking about, so use the information and advice provided here at your own risk.
 
 ## Short Bio
 
-Tasos Piotopoulos is a professional software engineer and aspiring technical architect with a track record of building hassle-free enterprize cloud solutions and a passion for helping others step up their engineering game.
+Tasos Piotopoulos is a professional software engineer & aspiring technical architect (M.Sc.) with a track record of building hassle-free enterprise cloud solutions during his 12+ years of industry experience, and a passion for helping others step up their engineering game.
 
-He has been working in the software industry since 2005, and nowadays he blogs at drinkbird.com, creates tutorials, organizes meetups and workshops, speaks at events and academic lectures, and solves complex problems through delivering high-quality software.
+He blogs at drinkbird.com, produces online courses, organizes meetups and workshops, speaks at events and academic lectures, and solves complex problems through delivering high-quality software.
 
-His Master's degree is in Software Engineering and Ubiquitous Computing, from University College Dublin, and he currently works at Jet.com / Walmart eCommerce as a Tech Lead and Staff Software Engineer. 
+His Master's degree is in Software Engineering and Ubiquitous Computing, from University College Dublin, and he currently works at Walmart Labs (formerly Jet.com) in Dublin - Ireland as a Technical Lead. 
 
 ![Tasos Piotopoulos]({{ site.baseurl }}/assets/media/drinkbird_shot.jpg)
