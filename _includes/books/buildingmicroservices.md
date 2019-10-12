@@ -1,5 +1,5 @@
-Ah, microservices, what a topic! Everybody seems to be doing it, but in their own, "unique" ways.
+Sam Newman has put together an excellent guide which is now considered a classic, explaining all the ins and outs of moving from monolithic systems to smaller, fine-grained and self-contained services.
 
-Sam Newman has put together an excellent guide on microservices, explaining all the ins and outs of moving from monolithic systems to smaller, fine-grained and self-contained services. Of course this approach comes with a whole new set of practices, challenges and plenty of potential pitfalls, which the book does a great job depicting.
+I highly recommend this book, especially for those who haven't worked with microservices before or have just gotten a taste and would like to see the bigger picture.
 
-Whether you are already working with distributed systems, or you are planning to do in the near future, this book can put things into perspective and give you a good taste of what to expect. It also comes with plenty of external references so you can keep expanding your knowledge on specific subjects if you need to.
+It is a relatively short book, and I managed to finish it in less than a week. It doesn't focus on code but rather makes the case about the new set of practices, challenges and plenty of potential pitfalls that come with this given architectural style.

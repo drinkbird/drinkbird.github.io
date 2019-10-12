@@ -1,0 +1,5 @@
+DevOps is in the heart of every digital transformation story. Within a true DevOps culture, Development, Operations and Product work closely together towards a common goal: delivering high-quality, reliable software that enables an organization to conduct its business in an agile, reliable, secure and effective way. 
+
+The DevOps Handbook is addressed to both technical and non-technical leaders and stakeholders. It provides a rich context about what DevOps is, the problems it tries to solve, plus a number of recommended strategies for adopting it.
+
+It is worth to mention that Gene Kim and Patrick Debois are also co-authors of [Accelerate: Building and Scaling High Performing Technology Organizations](https://geni.us/accelerate), and Gene Kim is also a co-author of [The Phoenix Project: A Novel about It, Devops, and Helping Your Business Win](https://geni.us/thephoenix). For more information about DevOps you can also check my article [10 indicators that your tech culture is broken (and what you can do about it)]({{ site.baseurl }}/devops/). 
