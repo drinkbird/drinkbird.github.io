@@ -56,7 +56,7 @@ nextreads:
 
 {% capture intro %}
 <div class="collection-anchor" id="collection-top"></div>
-**Updated June 2019**
+**Updated October 2019**
 
 These hand-picked book collections have helped my skyrocket my career in the Software Industry. Apart from pushing me to become a better professional, they have also inspired me to pursue personal goals and overall achieve more in life. This intro used to be much longer, and all the book descriptions used to be in this page, but I have decided to move [my thoughts on books](#thoughts) to the end and book descriptions at their respective collection's page.
 
