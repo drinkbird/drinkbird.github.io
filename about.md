@@ -9,7 +9,7 @@ image:
 
 ## Background
 
-I'm Tasos Piotopoulos, a professional software engineer & aspiring technical architect (M.Sc.) with a track record of building hassle-free enterprise cloud solutions during my 12+ years of industry experience, and a passion for helping others step up their engineering game.
+I'm Tasos Piotopoulos, a force multiplier for software teams. As a software engineering lead & aspiring technical architect (M.Sc.), I have a track record of building hassle-free enterprize cloud solutions and a passion for helping others step up their engineering game.
 
 I blog at drinkbird.com, produce online courses, organize meetups and workshops, speak at events and academic lectures, and solve complex problems through delivering high-quality software.
 
@@ -98,10 +98,10 @@ It's the direct translation of my last name, from Greek to English.
 
 ## Short Bio
 
-Tasos Piotopoulos is a professional software engineer & aspiring technical architect (M.Sc.) with a track record of building hassle-free enterprise cloud solutions during his 12+ years of industry experience, and a passion for helping others step up their engineering game.
+Tasos Piotopoulos is a force multiplier for software teams. As a software engineering lead & aspiring technical architect (M.Sc.), Tasos has a track record of building hassle-free enterprize cloud solutions and a passion for helping others step up their engineering game.
 
 He blogs at drinkbird.com, produces online courses, organizes meetups and workshops, speaks at events and academic lectures, and solves complex problems through delivering high-quality software.
 
-His Master's degree is in Software Engineering and Ubiquitous Computing, from University College Dublin, and he currently works at Walmart Labs (formerly Jet.com) in Dublin - Ireland as a Technical Lead. 
+His Master's degree is in Software Engineering and Ubiquitous Computing, from University College Dublin, and he currently works at Walmart Labs (formerly Jet.com) in Dublin, Ireland as a technical lead. 
 
 ![Tasos Piotopoulos]({{ site.baseurl }}/assets/media/drinkbird_shot.jpg)
