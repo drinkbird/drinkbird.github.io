@@ -18,11 +18,11 @@
                     <td>
                         <div class="text-right">
                             {% if book.url contains "geni.us" %}
-                            <a target="_blank" href="{{ book.url }}" class="btn btn-info" title="View '{{ book.title }}' on Amazon" aria-label="View '{{ book.title }}' on Amazon">
-                                <i class="fab fa-amazon"></i> View
+                            <a target="_blank" href="{{ book.url }}" class="btn btn-info" title="View '{{ book.title }}' on Amazon (affiliate link)" aria-label="View '{{ book.title }}' on Amazon (affiliate link)">
+                                View on <i class="fab fa-amazon"></i> <small style="text-transform: capitalize;">(affiliate link)</small>
                             {% else %}
                             <a target="_blank" href="{{ book.url }}" class="btn btn-info" title="View '{{ book.title }}'" aria-label="View '{{ book.title }}'">
-                                <i class="fas fa-book-open"></i> View
+                                View <i class="fas fa-book-open"></i>
                             {% endif %}
                             </a>
                         </div>

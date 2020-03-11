@@ -65,7 +65,6 @@ $(function() {
     // Add target blank to external links
     $("a[href^='http']").attr("target", "_blank");
 
-    $(".post-body a[href^='http://geni.us/']").not(".btn, .book-link").append(' (<i class="fab fa-amazon"></i>)');
     $(".book-aside a[href^='http://geni.us/'], .book-inarticle a[href^='http://geni.us/']").find('h4').append(' <span class="header-suffix"><i class="fab fa-amazon"></i></span>');
 
     // Rotating word effect

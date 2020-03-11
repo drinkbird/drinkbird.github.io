@@ -127,7 +127,7 @@ In general, we're looking to create models that map well to a problem domain. Ev
 
 It's the problem domain that needs to be understood, because that's the magic sauce in the system being built that differentiates your organization's business from its competitors. If that's not the case, it's probably better to abandon the project and use some off-the-shelf product instead.
 
-If you're going to apply DDD outside of a microservice architecture, then start by reading [Domain Driven Design, by Eric Evans](http://geni.us/dddericevans). If on the other hand you plan to use it in a microservice driven architecture, you can skip Eric Evans's book and read [Building Microservices: Designing Fine-Grained Systems, by Sam Newman](http://geni.us/buildingmicroservices) directly.
+If you're going to apply DDD outside of a microservice architecture, then start by reading {% include link.html title="Domain Driven Design, by Eric Evans" url="http://geni.us/dddericevans" %}. If on the other hand you plan to use it in a microservice driven architecture, you can skip Eric Evans's book and read {% include link.html title="Building Microservices: Designing Fine-Grained Systems, by Sam Newman" url="http://geni.us/buildingmicroservices" %} directly.
 
 #### 2. Command and Query Responsibility Segragation (CQRS)
 
