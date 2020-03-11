@@ -38,7 +38,7 @@ And although the answer keeps staring them in the eye, most places don’t do an
 
 ## DevOps to the rescue
 
-Fortunately, some others know better. Here’s an excerpt from [The DevOps Handbook](http://geni.us/devops):
+Fortunately, some others know better. Here’s an excerpt from {% include link.html title="The DevOps Handbook" url="http://geni.us/devops" %}:
 
 > In 2009, Etsy had thirty-five employees and was generating $87 million in revenue, but after they “barely survived the holiday retail season,” they started transforming virtually every aspect of how the organization worked, eventually turning the company into one of the most admired DevOps organizations and set the stage for a successful 2015 IPO.
 
@@ -73,9 +73,9 @@ Here are 10 indicators that an organization's tech culture is broken. Such an or
 
 > Architects who don’t code are not architects; they are something else… -- Robert C. Martin
 
-If you recognize any of these red flags at your workplace, I strongly suggest that you read [The DevOps Handbook](http://geni.us/devops) cover to cover. If you enjoy it, tell your team too!
+If you recognize any of these red flags at your workplace, I strongly suggest that you read {% include link.html title="The DevOps Handbook" url="http://geni.us/devops" %} cover to cover. If you enjoy it, tell your team too!
 
-In case you are hungry for more (and I guarantee that you will), I highly recommend that you read [The Phoenix Project](http://geni.us/thephoenix) next.
+In case you are hungry for more (and I guarantee that you will), I highly recommend that you read {% include link.html title="The Phoenix Project" url="http://geni.us/thephoenix" %} next.
 
 ## Closing thoughts
 

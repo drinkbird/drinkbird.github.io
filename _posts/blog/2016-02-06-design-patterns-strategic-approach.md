@@ -42,7 +42,7 @@ Every successful software design progresses in small and focused phases. Our pur
 
 Asking the right questions is essential for keeping us on track. We always need to provide a clear answer on *why* we need to apply a specific pattern, *what* is the benefit we are pursuing, *how* we are planning to implement the pattern in the specific programming language we are using, and most importantly, *when* is the proper time to take action.
 
-The last question is probably the trickiest to answer, because conditions leading to the application of a pattern are usually not quite apparent. That's when studying the brain can be more than revealing. In his book [The Working Brain](http://geni.us/theworkingbrain), Aleksandr R. Luria, a famous neuropsychologist and developmental psychologist, presents an intriguing view on how humans solve problems: 
+The last question is probably the trickiest to answer, because conditions leading to the application of a pattern are usually not quite apparent. That's when studying the brain can be more than revealing. In his book {% include link.html title="The Working Brain" url="http://geni.us/theworkingbrain" %}, Aleksandr R. Luria, a famous neuropsychologist and developmental psychologist, presents an intriguing view on how humans solve problems: 
 
 > "Man not only reacts passively to incoming information, but creates intentions, forms plans and programmes of his actions, inspects their performance, and regulates his behavior so that it conforms to these plans and programmes; finally, he verifies his conscious activity, comparing the effects of his actions with the original intentions and correcting any mistakes he has made." -- Aleksandr R. Luria
 
@@ -63,7 +63,7 @@ While design patterns catalog books deal with generic examples, real-world imple
 
 However, *it is never too late to refactor the design* and apply a pattern later in the process. When a working implementation is already available, we are able to examine it thoroughly and apply patterns as solutions to specific local problems. This is exactly where patterns fit the best.
 
-Of course, we need to have a strong technical background in software design patterns beforehand. Catalog books such as [Design patterns : elements of reusable object-oriented software](http://geni.us/gofdp) are still the strongest weapon in our arsenal for achieving that. 
+Of course, we need to have a strong technical background in software design patterns beforehand. Catalog books such as {% include link.html title="Design patterns : elements of reusable object-oriented software" url="http://geni.us/gofdp" %} are still the strongest weapon in our arsenal for achieving that. 
 
 ## Conclusion
 

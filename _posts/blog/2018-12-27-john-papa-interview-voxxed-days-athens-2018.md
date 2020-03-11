@@ -92,7 +92,7 @@ For that reason, I asked for his advice to somebody who wants to do that for a l
 
 *I practice it at work, I practice it at meetups, there's a program called Toastmasters for people to go and learn how to speak, I read some books on the topic too.*
 
-*There's a great book I love, it's called [Made to stick](http://geni.us/madetostick-amazon). It's a very short book and it's all about how some ideas get in your head, like commercials, and they don't leave you.*
+*There's a great book I love, it's called {% include link.html title="Made to stick" url="http://geni.us/madetostick-amazon" %}. It's a very short book and it's all about how some ideas get in your head, like commercials, and they don't leave you.*
 
 *Have you ever watched a commercial and you think about it for days later? It's about why does that happen. And the book talks about very simple things, like did they pull on an emotion for you? Was that something you felt inside? Is it a simple idea?*
 
@@ -101,7 +101,7 @@ For that reason, I asked for his advice to somebody who wants to do that for a l
 
 *If it takes you more than fifteen seconds to explain it, you don't have more than fifteen seconds in a commercial, right? So if you can't explain it to me in fifteen seconds...*
 
-*Like, has anybody ever said to you, "Tasos, how does Angular do change detection?". If it takes you twenty minutes to explain it, you've lost them. And it doesn't mean that you can't take longer... So [this book](http://geni.us/madetostick-amazon) explains these things and it really broke down for me a lot of things that I used to think; I realized I was wrong.*
+*Like, has anybody ever said to you, "Tasos, how does Angular do change detection?". If it takes you twenty minutes to explain it, you've lost them. And it doesn't mean that you can't take longer... So this book explains these things and it really broke down for me a lot of things that I used to think; I realized I was wrong.*
 
 *I don't need an hour to tell you how to do something. You know in a talk, the most attentive somebody is, is in the first minute. Think about movies you've watched. You notice that movies today, the beginning scene is always very exciting. Like a James Bond movie, dropping out of a planes, and fighting, and it's because they want to get you sucked in. If you look at movies thirty years ago, the opening five minutes was credits. Can you imagine today watching a movie* (with that many credits)*? Like, "really?".*
 

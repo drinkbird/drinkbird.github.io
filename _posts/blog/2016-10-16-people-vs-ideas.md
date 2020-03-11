@@ -27,7 +27,7 @@ Although I'm a passionate supporter of innovation, something about these people'
 
 # Where do good ideas come from?
 
-In his book, [Creativity, Inc.](http://geni.us/creativityincbook), Catmull tells an interesting story. During his talks he'd ask his audience the following question: "Which is more valuable: good ideas or good people?". In other words, "Would you rather have a great team, or a great idea?".
+In his book, {% include link.html title="Creativity, Inc." url="http://geni.us/creativityincbook" %}, Catmull tells an interesting story. During his talks he'd ask his audience the following question: "Which is more valuable: good ideas or good people?". In other words, "Would you rather have a great team, or a great idea?".
 
 Interestingly enough, the responses were always split 50-50, with half of the people preferring the one over the other. And this was true for any type of audience, from executives to high school students.
 
@@ -73,7 +73,7 @@ By identifying themselves too closely with their idea, they make themselves pron
 
 As previously discussed, great ideas are never formed in a vacuum. Also, most successful products are not a result of a single idea. In fact, they are comprised of a multitude of ideas, contributed by many different people.
 
-In his book, [The Lean Startup](http://geni.us/leanstartup), Eric Ries urges entrepreneurs to create a minimum viable product and use it as a subject of rapid experimentation in order to clarify whether their hypothesis or vision is true or not. Then, depending on the findings, they need to pivot or persevere, and repeat the whole process over and over again.
+In his book, {% include link.html title="The Lean Startup" url="http://geni.us/leanstartup" %}, Eric Ries urges entrepreneurs to create a minimum viable product and use it as a subject of rapid experimentation in order to clarify whether their hypothesis or vision is true or not. Then, depending on the findings, they need to pivot or persevere, and repeat the whole process over and over again.
 
 By examining any number of successful startups, we can confirm that suspicion; the final form of their product or service is quite different from its original conception.
 
@@ -84,7 +84,7 @@ Therefore, those who identify too closely with their idea are setting themselves
 
 # Final thoughts and references
 
-John Sonmez, author of the best-seller [Soft Skills: The software developer's life manual](http://geni.us/softskills), has published a YouTube video called [Why Your Million Dollar Idea Is Worthless](https://www.youtube.com/watch?v=dj4iYm-lrfg), where he argues that *execution* is more important than the idea. John is right, as execution highly depends on the team behind it.
+John Sonmez, author of the best-seller {% include link.html title="Soft Skills: The software developer's life manual" url="http://geni.us/softskills" %}, has published a YouTube video called [Why Your Million Dollar Idea Is Worthless](https://www.youtube.com/watch?v=dj4iYm-lrfg), where he argues that *execution* is more important than the idea. John is right, as execution highly depends on the team behind it.
 
 Scott Adams, creator of Dilbert, captures the essence of this article in a hilarious [comic strip](http://dilbert.com/strip/2015-09-11).
 

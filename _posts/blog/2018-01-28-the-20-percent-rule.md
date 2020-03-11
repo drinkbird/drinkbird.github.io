@@ -42,7 +42,7 @@ Organizations that don't actively and systematically pay down on technical debt,
 
 ![Entropy]({{ site.baseurl }}/images/entropy.jpg)
 
-And it's not just software that degrades over time. As Mike Rother describes in his book [Toyota Kata](http://it-books.club/books/toyota-kata/isbn/0071635238), due to chaos and entropy, processes that are not continuously improved degrade as well. Organizations that are unable or unwilling to realize that truth, don't just keep suffering from their current problems, but their suffering grows over time.
+And it's not just software that degrades over time. As Mike Rother describes in his book {% include link.html title="Toyota Kata" url="https://geni.us/toyotakata-amazon" %}, due to chaos and entropy, processes that are not continuously improved degrade as well. Organizations that are unable or unwilling to realize that truth, don't just keep suffering from their current problems, but their suffering grows over time.
 
 This leads us to an interesting conclusion:
 
@@ -64,9 +64,9 @@ Venkat emphasizes that numerous organizations tend to forget this and work peopl
 
 ## The 20% Rule
 
-The following is an excerpt from the [The DevOps Handbook](http://it-books.club/books/the-devops-handbook/isbn/1942788002), a massive hit and must-read for everyone involved in decision making within a technology organization[²](#ex2).
+The following is an excerpt from the {% include link.html title="The DevOps Handbook" url="https://geni.us/devops" %}, a massive hit and must-read for everyone involved in decision making within a technology organization[²](#ex2).
 
-*After the near-death experience of eBay in the late 1990s, Marty Cagan, author of [Inspired: How To Create Products Customers Love](http://it-books.club/books/inspired/isbn/1119387507), the seminal book on product design and management, codified the following lesson:*
+*After the near-death experience of eBay in the late 1990s, Marty Cagan, author of {% include link.html title="Inspired: How To Create Products Customers Love" url="https://geni.us/inspired-amazon" %}, the seminal book on product design and management, codified the following lesson:*
 
 *The deal [between product owners and] engineering goes like this: Product management takes 20% of the team’s capacity right off the top and gives this to engineering to spend as they see fit. They might use it to rewrite, re-architect, or re-factor problematic parts of the code base...whatever they believe is necessary to avoid ever having to come to the team and say, ‘we need to stop and rewrite [all our code].’ If you’re in really bad shape today, you might need to make this 30% or even more of the resources. However, I get nervous when I find teams that think they can get away with much less than 20%.*
 
