@@ -16,17 +16,9 @@ Like many other Web sites, drinkbird.com makes use of log files. These files mer
 
 drinkbird.com uses cookies to store information about visitors' preferences, to record user-specific information on which pages the site visitor accesses or visits, and to personalize or customize our web page content based upon visitors' browser type or other information that the visitor sends via their browser.
 
-# Our Advertising Partners - Disclosure
+# Disclosure
  
-Some of our advertising partners may use cookies and web beacons on our site. Our advertising partners include:
-
-- We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com, Amazon.ca, Amazon.co.uk, Amazon.de, Amazon.fr, Amazon.co.jp, Amazon.it, Amazon.es and affiliated sites.
-- The short version: As an Amazon Associate I earn from qualifying purchases.
-
-These third party ad servers or ad networks use technology in their respective advertisements and links that appear on drinkbird.com and which are sent directly to your browser. They automatically receive your IP address when this occurs. Other technologies (such as cookies, JavaScript, or Web Beacons) may also be used by our site's third-party ad networks to measure the effectiveness of their advertising campaigns and/or to personalize the advertising content that you see on the site.
-
-drinkbird.com has no access to or control over these cookies that are used by third-party advertisers.
-
+As an Amazon Associate I earn from qualifying purchases.
 
 # Third Party Privacy Policies
 
