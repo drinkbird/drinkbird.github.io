@@ -86,9 +86,9 @@ reads:
     url: "https://geni.us/cleancode"
     isbn: "0132350882"
   pragmaticprogrammer:
-    title: "The Pragmatic Programmer"
-    url: "https://geni.us/pragmaticprogrammer"
-    isbn: "020161622X"
+    title: "The Pragmatic Programmer: 20th Anniversary Edition"
+    url: "https://geni.us/pragprog20amazon"
+    isbn: "0135957052"
   refactoring:
     title: "Refactoring: Improving the Design of Existing Code (Object Technology Series)"
     url: "https://geni.us/refactoring"
