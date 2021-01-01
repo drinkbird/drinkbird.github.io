@@ -15,7 +15,7 @@ reads:
   - microservicearch
 ---
 
-I'm excited to announce that my course *Microservices Development on Azure with Java* has been released by Packt Publishing.
+I'm excited to announce that my course *Microservices Development on Azure with Java* has been released by Packt Publishing. (Released October 2018)
 
 ![Course cover image]({{ site.baseurl }}/images/azure-java-microservices-cover.jpg)
 
@@ -24,8 +24,8 @@ Although the code examples are in Java, you can easily translate the demonstrate
 You can find out more and get the full course at one of the following channels:
 
 - [Packt Publishing](https://www.packtpub.com/virtualization-and-cloud/microservices-development-azure-java-video)
-- [Udemy](https://www.udemy.com/microservices-development-on-azure-with-java/)
-- [Safari Books Online (O'Reilly)](https://www.oreilly.com/library/view/microservices-development-on/9781789808858/)
+- ~~[Udemy](https://www.udemy.com/microservices-development-on-azure-with-java/)~~
+- ~~[Safari Books Online (O'Reilly)](https://www.oreilly.com/library/view/microservices-development-on/9781789808858/)~~
 
 This course will jumpstart your journey of building, deploying and operating containerized Java microservices into the cloud, using Docker and the Azure Kubernetes Service, while leveraging several building blocks of an open and flexible cloud platform that provides excellent support for Java.
 
@@ -40,8 +40,8 @@ Includes lots of great technologies like Azure DevOps, Docker, Kubernetes, SendG
 As mentioned above, you can find out more and get the full course at one of the following channels:
 
 - [Packt Publishing](https://www.packtpub.com/virtualization-and-cloud/microservices-development-azure-java-video)
-- [Udemy](https://www.udemy.com/microservices-development-on-azure-with-java/)
-- [Safari Books Online (O'Reilly)](https://www.oreilly.com/library/view/microservices-development-on/9781789808858/)
+- ~~[Udemy](https://www.udemy.com/microservices-development-on-azure-with-java/)~~
+- ~~[Safari Books Online (O'Reilly)](https://www.oreilly.com/library/view/microservices-development-on/9781789808858/)~~
 
 All code and supporting files can be found on [GitHub](https://github.com/PacktPublishing/Microservices-Development-on-Azure-with-Java).
 

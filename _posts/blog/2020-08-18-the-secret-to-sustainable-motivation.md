@@ -12,6 +12,7 @@ reads:
   - steallikeanartist
   - showyourwork
   - keepgoing
+  - theaccidentalcreative
   - pragmaticprogrammer
   - thecleancoder
   - softskills

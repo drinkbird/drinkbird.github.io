@@ -23,3 +23,5 @@ And since software development is a team sport, inspiring and influencing others
 In this collection you will find the books that forged me from a laborer into a professional.
 
 > Laborers are hired to take direction. Professionals are hired to ensure that the direction chosen makes sense. -- Robert C. Martin
+
+Full disclosure: the following are <strong>Amazon affiliate links</strong>. Using them to purchase a book won't cost you extra, but will help me buy more books.

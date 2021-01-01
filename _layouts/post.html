@@ -23,9 +23,15 @@ layout: default
 						</div>
 					</div>
 					<div class="col-md-3">
+						<div class="post-aside">
 						{% include author.html %}
+						<hr/>
 						{% include subscribe-aside.html %}
 						{% if page.reads %}
+						<hr/>
+						<div class="page-reads">
+							<h3>Recommended Books</h3>
+							<p>Full disclosure: the following are <strong>Amazon affiliate links</strong>. Using them to purchase a book won't cost you extra, but will help me buy more books.</p>
 							<ul class="books-aside">
 							{% for read_key in page.reads %}
 								{% assign book = site.reads[read_key] %}								
@@ -34,7 +40,9 @@ layout: default
 								</li>
 							{% endfor %}
 							</ul>
+						</div>
 						{% endif %}
+						</div>
 					</div>
 				</div>
 				{% include social-share.html %}

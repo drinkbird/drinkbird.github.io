@@ -26,3 +26,5 @@ If your business depends on software and you have any kind of authority, you are
 If the world's largest bureaucracy can undergo such a significant digital transformation, then so can your business.
 
 If every CTO, VP, director, product stakeholder, manager and engineer were to read even a subset of books in this list, our industry would be in a much better shape, whether you realize that your organization is a *technology* one, or still kid yourself that is not.
+
+Full disclosure: the following are <strong>Amazon affiliate links</strong>. Using them to purchase a book won't cost you extra, but will help me buy more books.

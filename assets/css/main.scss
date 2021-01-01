@@ -550,7 +550,7 @@ footer.site-footer {
 
 	#footer-upper {
 		background-color: $brand-secondary-dark;
-		padding: 20px 0;
+		padding: 20px 0 0 0;
 	}
 
 	#footer-lower {
@@ -647,6 +647,16 @@ footer.site-footer {
 	}
 }
 
+.post-aside {
+	hr {
+		margin-top: 0px;
+	}
+
+	.page-reads > p {
+		font-size: 15px;
+	}
+}
+
 @media (min-width: $screen-sm-min) {
 	.post-body {
 		& > p > img {
@@ -734,8 +744,8 @@ a.cover {
 
 	.amz-widget {
 		display: flex;
-    	align-items: stretch;
-    	flex-direction: column;
+		align-items: stretch;
+		flex-direction: column;
 		justify-content: flex-end;
 	
 		font-family: $headings-font-family;
@@ -743,27 +753,25 @@ a.cover {
 		border-left: 1px solid $gray-lighter;
 		margin: 10px 0;
 
-		.table {
-			margin-bottom: 0;
+		img {
+			transition: all 0.4s ease-out;
+			opacity: 1;
 		}
 
+		:hover {
+			img {
+				opacity: 0.6;
+				transition: all 0.4s ease-out;
+			}	
+		}
+		
 		td {
 			border: none !important;
 		}
 
 		.amz-widget-product-name {
-			min-height: 60px;
-		}
-
-		.btn-info {
-			.svg-inline--fa {
-				vertical-align: -0.28em;
-			}
-		}
-
-		.btn-info:hover {
-			transition: none;
-			background-color: $brand-danger;
+			padding: 5px;
+			font-size: 14px;
 		}
 	}
 }
@@ -828,10 +836,20 @@ a.cover {
 .subscribe-aside {
 	text-align: center;
 	margin-top: 0;
-	margin-bottom: 20px;
+	margin-bottom: 0;
 
 	h2 {
 		margin-top: 0;
+		padding-bottom: 0;
+	}
+
+	.btn {
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+
+	p {
+		margin-bottom: 0;
 	}
 }
 
