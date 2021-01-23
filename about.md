@@ -9,25 +9,25 @@ image:
 
 ## Background
 
-I'm Tasos Piotopoulos, a force multiplier for software teams. As a software engineering lead & aspiring technical architect (M.Sc.), I have a track record of building hassle-free enterprize cloud solutions and a passion for helping others step up their engineering game.
+I'm Tasos Piotopoulos, a force multiplier for software delivery teams. As a technical lead I have a track record of solving complex problems through delivering high-quality solutions, and a passion for helping others grow professionally. While working in the Tech Industry since 2005, I have been personally responsible for both making and saving tens of millions of dollars for my customers and employers, a number that only keeps growing.
 
-I blog at drinkbird.com, produce online courses, organize meetups and workshops, speak at events and academic lectures, and solve complex problems through delivering high-quality software.
+I currently work at [Walmart Global Tech](https://walmart.com)¹ (former [Jet.com](https://jet.com)) in Dublin, Ireland, as a Technical Lead, successfully delivering numerous large-scale enterprise projects within the Supply Chain and Market Intelligence organizations, while leading engineering teams of many sizes. I also hold a Master's degree is in Software Engineering and Ubiquitous Computing from University College Dublin.
 
-My Master's degree is in Software Engineering and Ubiquitous Computing from University College Dublin, and I currently work at [Walmart Labs](https://walmart.com)¹ (former [Jet.com](https://jet.com)) in Dublin - Ireland as a Technical Lead (ECB5 Staff Software Engineer). 
+Technology-wise, I mostly focus on Cloud-Native Distributed Systems in conjunction with Site Reliability Engineering and DevOps practices. Over the years I have delivered projects using a variety of practices, languages, platforms, libraries, and tools, such as Microservices, Event Sourcing, Domain Driven Design (DDD), JVM & .NET based languages (Scala, Java, F#, C#), cloud / DS technologies (Azure, GCP, Kafka, Kafka Connect, Docker, Kubernetes, Consul, Nomad, CI/CD, Hadoop / HIVE, Spark, Flink), and mobile technologies (iOS, Android), just to name a few.
+
+In addition, I blog at drinkbird.com, publish online courses, organize technology meetups and workshops, speak at events and academic lectures, and read lots of books to help me grow further.
 
 ¹ Walmart is a [Fortune 1](http://fortune.com/fortune500/) company
 
-### Technologies
+### What is this blog about?
 
-One of the principles I live by is being pragmatic rather than dogmatic and [pick the right tool for the job](http://c2.com/cgi/wiki?PickTheRightToolForTheJob) on a case-by-case basis. During my career I have delivered projects using a variety of languages, platforms, libraries and tools, such as .NET & JVM based languages (F#, C#, Scala, Java), cloud / distributed systems technologies (Azure, Kafka, Docker, Kubernetes, Consul, Nomad, CI/CD), mobile technologies (iOS, Android), just to name a few.
+As technology professionals we are constantly pushed towards producing more and faster. When performing under pressure we tend to cut corners, make tradeoffs that we can't really afford, and generally we treat quality as an afterthought.
 
-During the last few years I've been mostly working with distributed systems within a DevOps culture, including Microservices, Event Sourcing, Domain Driven Design (DDD), Test Driven Development (TDD), and quality cloud architectural patterns to increase resiliency, scalability, observability and testability.
+That works for a while, but soon reality catches up; instead of providing value by solving business problems, we waste our time and energy dealing with defects and regressions. Eventually, productivity grants to a halt and even the smallest change becomes a risky, expensive challenge. Exhausted from burnouts, we escape by hopping to a new job, only to find ourselves in the middle of yet another death march.
 
-Lately, I've been exploring functional programming with Scala and F#, and have been working towards combining the best of both worlds (OOP & FP), while leading a small team to deliver high-quality modern systems within Walmart.
+We can do better.
 
-### Speaking and Workshops
-
-Giving back to the community is one of the most rewarding activities of a Software Industry professional. Although blogging is something I greatly enjoy, you will also find me speaking at various events, academic lectures and community meetups. Furthermore, I organize [Angular Dublin](https://www.meetup.com/AngularJSDublin/), one of the most popular technology meetups in Ireland.
+In this blog I distill some of my thoughts and experiences from the Tech Industry and literature, as well as present some practical guides and tutorials, with the intent to motivate, inspire, and help both new and seasoned technology professionals to cultivate both their technical and soft skills. The Industry is shaped by each of us, and any improvement, either big or small, can go a long way.
 
 <ul class="list-inline gallery">
 	<li>
@@ -73,21 +73,6 @@ Giving back to the community is one of the most rewarding activities of a Softwa
 	- Grade: 8.91 / 10
 	- First-class honours (1:1)
 
-### Certifications
-
-- Microsoft Certified Solutions Developer: Web Applications
-- Microsoft Certified Technology Specialist: Dynamics CRM 2011 Customization and Configuration
-
-### What is this blog about?
-
-As technology professionals we are constantly pushed towards producing more and faster. When performing under pressure we tend to cut corners, make tradeoffs that we can't really afford, and generally we treat quality as an afterthought.
-
-That works for a while, but soon reality catches up; instead of providing value by solving business problems, we waste our time and energy dealing with defects and regressions. Eventually, productivity grants to a halt and even the smallest change becomes a risky, expensive challenge. Exhausted from burnouts, we escape by hopping to a new job, only to find ourselves in the middle of yet another death march.
-
-We can do better.
-
-In this blog I distill some of my thoughts and experiences from the Tech Industry and literature, as well as present some practical guides and tutorials, with the intent to motivate, inspire, and help both new and seasoned technology professionals to cultivate their technical and soft skills. The Industry is shaped by each of us, so every improvement - either big or small - can go a long way.
-
 ### Why DrinkBird?
 
 It's the direct translation of my last name, from Greek to English.
@@ -98,10 +83,10 @@ It's the direct translation of my last name, from Greek to English.
 
 ## Short Bio
 
-Tasos Piotopoulos is a force multiplier for software teams. As a software engineering lead & aspiring technical architect (M.Sc.), Tasos has a track record of building hassle-free enterprize cloud solutions and a passion for helping others step up their engineering game.
+Tasos Piotopoulos is a force multiplier for software delivery teams, with a track record of solving complex problems through delivering high-quality solutions, and a passion for helping others grow professionally.
 
-He blogs at drinkbird.com, produces online courses, organizes meetups and workshops, speaks at events and academic lectures, and solves complex problems through delivering high-quality software.
+He currently works as a Technical Lead at Walmart Global Tech, successfully delivering numerous enterprise-scale projects within the Supply Chain and Market Intelligence organizations, while leading teams of many sizes. He also holds a Master's degree is in Software Engineering and Ubiquitous Computing from University College Dublin.
 
-His Master's degree is in Software Engineering and Ubiquitous Computing, from University College Dublin, and he currently works at Walmart Labs (formerly Jet.com) in Dublin, Ireland as a technical lead. 
+In addition, Tasos blogs at drinkbird.com, creates online courses, organizes meetups and workshops, speaks at events and academic lectures, and reads lots of books to help him grow further. 
 
 ![Tasos Piotopoulos]({{ site.baseurl }}/assets/media/drinkbird_shot.jpg)
