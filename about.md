@@ -9,7 +9,7 @@ image:
 
 ## Background
 
-I'm Tasos Piotopoulos, a force multiplier for software delivery teams, with a track record of solving complex problems through delivering high-quality solutions, and a passion for helping others grow professionally.
+I'm Tasos Piotopoulos, a force multiplier for software delivery teams, with a track record of solving complex problems through delivering high-quality solutions and a passion for helping others grow professionally.
 
 While working in the Tech Industry since 2005 and leading engineering teams of many sizes, I have been responsible for both making and saving tens of millions of dollars for my customers and employers, building a portfolio that includes everything from start-ups to the largest enterprises. I also hold a Master's degree is in Software Engineering and Ubiquitous Computing from University College Dublin.
 
@@ -81,7 +81,7 @@ It's the direct translation of my last name, from Greek to English.
 
 ## Short Bio
 
-Tasos Piotopoulos is a force multiplier for software delivery teams, with a track record of solving complex problems through delivering high-quality solutions, and a passion for helping others grow professionally.
+Tasos Piotopoulos is a force multiplier for software delivery teams, with a track record of solving complex problems through delivering high-quality solutions and a passion for helping others grow professionally.
 
 While working in the Tech Industry since 2005 and leading engineering teams of many sizes, Tasos have been responsible for both making and saving tens of millions of dollars for his customers and employers, building a portfolio that includes everything from start-ups to the largest enterprises. He also holds a Master's degree is in Software Engineering and Ubiquitous Computing from University College Dublin.
 
