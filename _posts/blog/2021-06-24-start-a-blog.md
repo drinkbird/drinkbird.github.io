@@ -18,7 +18,7 @@ reads:
   - thecleancoder
 ---
 
-A blog is like a an extended resume on steroids, and may be the most valuable thing you can do for your career. Provided that you do it the right way, getting your ideas exposed publicly can be a powerful way of building knowledge and reputation.
+A blog is like an extended resume on steroids and may be the most valuable thing you can do for your career. Provided that you do it the right way, getting your ideas exposed publicly can be a powerful way of building knowledge and reputation.
 
 Creating an article forces you to think, to research a given topic further, and then express your ideas in writing. This doesn't only increase your knowledge about that topic, but also improves your writing, storytelling and teaching skills.
 
