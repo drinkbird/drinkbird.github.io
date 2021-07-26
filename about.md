@@ -11,11 +11,11 @@ image:
 
 I'm Tasos Piotopoulos, a force multiplier for software delivery teams, with a track record of solving complex problems through delivering high-quality solutions and a passion for helping others grow professionally.
 
-While working in the Tech Industry since 2005 and leading engineering teams of many sizes, I have been responsible for both making and saving tens of millions of dollars for my customers and employers, building a portfolio that includes everything from start-ups to the largest enterprises. I also hold a Master's degree is in Software Engineering and Ubiquitous Computing from University College Dublin.
+While working in the Tech Industry since 2005 and leading engineering teams of many sizes, I have been responsible for both making and saving tens of millions of dollars for my customers and employers, building a diverse portfolio that includes everything from start-ups to the largest enterprises. I also hold a Master's degree is in Software Engineering and Ubiquitous Computing from University College Dublin.
 
 Technology-wise, I mostly focus on Cloud-Native Distributed Systems in conjunction with Site Reliability Engineering and DevOps practices. Over the years I have delivered projects using a variety of approaches, languages, libraries, and tools, such as Microservices, Event Sourcing, Domain Driven Design (DDD), JVM & .NET based languages (Scala, Java, F#, C#), cloud & data platforms (Azure, GCP, Kafka, Kafka Connect, Docker, Kubernetes, Consul, Nomad, CI/CD, Hadoop / HIVE, Spark, Flink), as well as mobile technologies (iOS, Android), just to name a few.
 
-In addition, I blog at drinkbird.com, publish online courses, organize technology meet-ups and workshops, speak at events and academic lectures, and read lots of books to help me grow further. You can find me on [LinkedIn](https://linkedin.com/in/piotopoulos), where I'm always happy to accept new connections.
+In addition, I blog, publish online courses, organize technology meet-ups and workshops, speak at events and academic lectures, and read lots of books to help me grow further. You can find me on on my blog, [drinkbird.com](https://blog.drinkbird.com), and on [LinkedIn](https://linkedin.com/in/piotopoulos).
 
 ### What is this blog about?
 
@@ -83,8 +83,8 @@ It's the direct translation of my last name, from Greek to English.
 
 Tasos Piotopoulos is a force multiplier for software delivery teams, with a track record of solving complex problems through delivering high-quality solutions and a passion for helping others grow professionally.
 
-While working in the Tech Industry since 2005 and leading engineering teams of many sizes, Tasos have been responsible for both making and saving tens of millions of dollars for his customers and employers, building a portfolio that includes everything from start-ups to the largest enterprises. He also holds a Master's degree is in Software Engineering and Ubiquitous Computing from University College Dublin.
+While working in the Tech Industry since 2005 and leading engineering teams of many sizes, Tasos have been responsible for both making and saving tens of millions of dollars for his customers and employers, building a diverse portfolio that includes everything from startups to the largest enterprises. He also holds a Master's degree is in Software Engineering and Ubiquitous Computing from University College Dublin.
 
-In addition, Tasos blogs on drinkbird.com, publishes online courses, organizes meet-ups and workshops, speaks at events and academic lectures, and reads lots of books to help him grow further. You can find him on [LinkedIn](https://linkedin.com/in/piotopoulos), where he is always happy to accept new connections.
+In addition, Tasos blogs, publishes online courses, organizes meet-ups and workshops, speaks at events and academic lectures, and reads lots of books to help him grow further. You can find him on his blog, [drinkbird.com](https://blog.drinkbird.com), and on [LinkedIn](https://linkedin.com/in/piotopoulos).
 
 ![Tasos Piotopoulos]({{ site.baseurl }}/assets/media/drinkbird_shot.jpg)
