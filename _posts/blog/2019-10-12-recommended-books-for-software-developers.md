@@ -54,12 +54,13 @@ nextreads:
   - realworldfp
 ---
 
+
 {% capture intro %}
 <div class="collection-anchor" id="collection-top"></div>
 
-These hand-picked book collections have helped my skyrocket my career in the Software Industry. Apart from pushing me to become a better professional, they have also inspired me to pursue personal goals and overall achieve more in life. This intro used to be much longer, and all the book descriptions used to be in this page, but I have decided to move [my thoughts on books](#thoughts) to the end and book descriptions at their respective collection's page.
+These hand-picked book collections have helped me skyrocket my career in the Software Industry. Apart from pushing me to become a better professional, they have also inspired me to pursue personal goals and achieve more in life. This intro used to be much longer, and all the book descriptions used to be on this page, but I have decided to move [my thoughts on books](#thoughts) to the end and book descriptions to their respective collection's page.
 
-Whether you are a Software Engineer, DevOps Engineer, Architect or Manager, I guarantee that you can find something that deserves a spot in your personal book collection. Most of the books in this list I have read more than once, as the experiences I acquire between reads help me see that knowledge in a different light.
+Whether you are a Software Engineer, DevOps Engineer, Architect or Manager, I guarantee that you can find something that deserves a spot in your personal book collection. I have read most of the books in this list more than once, as the experiences I acquire between reads help me see that knowledge in a different light.
 
 > You can only connect the dots looking backwards. -- Steve Jobs
 
@@ -125,21 +126,21 @@ Knowledge is divided into two categories, *information* and *fundamentals*. The 
 
 ![The hierarchy of knowledge]({{ site.baseurl }}/images/hierarchy_of_knowledge.png)
 
-Especially books around people and behavior can be relevant for a lifetime, as technology changes but people don't.
+Especially books about people and behaviour can be relevant for a lifetime, as technology changes but people don't.
 
-Having a solid skill set based on fundamentals can help us learn new technologies on demand, rapidly adapt to new requirements and ultimately live a more fulfilled professional life. Skills based on information have to be built on top of fundamentals.
+A solid skill set based on fundamentals can help us learn new technologies on demand, rapidly adapt to new requirements and ultimately live a more fulfilled professional life. We have to build skills based on information on top of fundamentals.
 
-*Note: I have included a few exceptional books that live in the cross section between information and fundamentals. I make an effort to keep those in my lists only as long as they remain relevant.*
+*Note: I have included a few exceptional books that live in the cross-section between information and fundamentals. I try to keep those in my lists only as long as they remain relevant.*
 
 ### Don't judge a book by its ~~cover~~ programming language
 
-It is common for books that target fundamental knowledge to utilize specific programming languages to illustrate their examples. Some people get discouraged and reject the book if they haven't worked with that language before, or have no intention of using it in the future.
+It is common for books that target fundamental knowledge to utilise specific programming languages to illustrate their examples. Some people get discouraged and reject the book if they haven't worked with that language or have no intention of using it in the future.
 
 Fundamental knowledge is widely applicable. Learning a concept or technique in one technology stack and transferring the implementation to another should be business as usual. Smart engineers have no such limits.
 
 ### Success is a process, not a moment
 
-Investing in your craft takes a lot of time and effort. Reading one book won't bring you success overnight, but creating a habit of reading books regularly - along with plenty of practice - will definitely transform you to a better engineer and stronger professional.
+Investing in your craft takes a lot of time and effort. Reading one book won't bring you success overnight, but creating a habit of reading books regularly - along with plenty of practice - will transform you into a better engineer and stronger professional.
 
 Got any book suggestions of your own? Don't hesitate to drop a line in the comments below!
 
