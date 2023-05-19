@@ -5,7 +5,7 @@ excerpt: "Unraveling the art of making complexity understandable"
 permalink: /the-curse-of-knowledge/
 comments: true
 categories: blog
-featured: false
+featured: true
 image:
   feature: tappers-listeners.png
 reads:
