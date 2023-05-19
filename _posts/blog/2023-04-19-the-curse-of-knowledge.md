@@ -60,19 +60,19 @@ When we know something so well, it becomes second nature, and we struggle to und
 
 The first step towards breaking free from the 'Curse of Knowledge' involves organizational changes that facilitate clear, low-context communication. Let's see some strategies that can help us achieve this:
 
-1) Foster a Safe Space for Queries and Clarifications
+*1) Foster a Safe Space for Queries and Clarifications*
 
 Fostering a culture where asking questions, seeking clarifications, and admitting to gaps in understanding is encouraged, can make a substantial difference. It's essential to assure team members that no question is 'stupid' and that speaking up about uncertainties is welcomed and appreciated. Such a safe space for inquiries not only promotes active learning but also helps uncover any 'knowledge gaps' that could be hampering the team. This proactive approach ensures that no team member gets left behind due to a lack of context or understanding.
 
-2) Embrace Plain Language
+*2) Embrace Plain Language*
 
 Sometimes, it's tempting to flex our technical vocabulary. But when the goal is clarity, simplicity wins. Plain language, defined by clear, concise words and short sentences, can make complex ideas more accessible to a broader audience.
 
-3) Encourage Diverse Perspectives
+*3) Encourage Diverse Perspectives*
 
 Teams are diverse, and so are the ways in which people understand and interpret information. Encourage team members to share their perspectives, understandings and assumptions. This practice can expose any gaps or ambiguities in the communication, helping the team align on a shared understanding.
 
-4) Create Robust and Clear Documentation
+*4) Create Robust and Clear Documentation*
 
 Documentation serves as a reference point that team members can revert to whenever needed. Ensure that it's written in low-context language that's accessible to all, regardless of their familiarity with the topic. Avoid jargon and acronyms wherever possible, and provide clear explanations for all elements involved. Test-drive the content with a colleague who hasn't worked on your project - how does it read?
 
@@ -80,29 +80,29 @@ Documentation serves as a reference point that team members can revert to whenev
 
 Personal communication strategies also play a significant role in navigating the 'Curse of Knowledge.' Here are a few tactics to consider:
 
-1) Mind the Gap and Validate Understanding
+*1) Mind the Gap and Validate Understanding*
 
 Acknowledge that a knowledge gap may exist between you and the person you're communicating with. Once you're aware of this, you can consciously adjust your language and explanations to cater to their level of understanding.
 
 Also never assume the listener has fully understood your explanation. Regularly ask for feedback or get them to explain the concept back to you. This way, you can identify and address misunderstandings promptly.
 
-2) Leverage Analogies and Metaphors
+*2) Leverage Analogies and Metaphors*
 
 Analogies and metaphors can serve as bridges, connecting the unfamiliar to the familiar. By relating complex concepts to something the listener already understands, you can make your explanations more digestible. For example, you might explain a 'cache' as a secret stash of snacks that's quicker to access than the kitchen.
 
-3) Break It Down: Chunking
+*3) Break It Down: Chunking*
 
 Chunking is the process of breaking down complex information into smaller, manageable parts or 'chunks.' Instead of explaining an entire system at once, start with one module. Once that's understood, move on to the next one and show how they interact. This approach reduces cognitive overload and makes it easier to comprehend and remember the information. In other words, chunking allows us to digest complex systems one bite at a time, just like you would tackle an extra-large pizza. You wouldn't try to swallow it whole, right? Please say no...
 
 Revisiting our shipping system scenario, our first step was to delve into the intricacies of carriers. We explored their operations, clarified terms such as "cutoff time", and differentiated between "ground" and "air" shipping, noting the unique restrictions each method posed. Only once we had this foundational knowledge did we begin to comprehend the complexities of our shipping system. We investigated how delivery date estimates were presented on a product's description page and how these translated into a delivery date promise on the order page, among other things. This piecemeal approach helped us methodically understand and improve the system.
 
-4) Visualize It
+*4) Visualize It*
 
 A picture, as they say, is worth a thousand words. Visual aids such as diagrams, charts, and illustrations can help convey complex concepts in a more digestible manner. They can also serve as a reference for the team throughout the project. Tools such as whiteboards, digital sketching tools, and diagramming software can be helpful in this regard.
 
 The power of whiteboarding is often underestimated. Countless times, I've been part of circular, verbal discussions about system flows that only became productive after a sketch was introduced. With our shipping system, for instance, our real breakthrough came when we started to visually map out various components and interactions. For example, we diagrammed how an order connects to the shipping system, then to the carrier selection process, the addressing system for identifying missing zip codes, and finally to the Zebra labeling service for actual shipping label printing. This visual representation became a crucial step towards our understanding and enhancement of the system.
 
-5. Repeat, Review, Recap
+*5) Repeat, Review, Recap*
 
 Repetition is the key to retention. It's useful to reiterate critical points, summarize information at the end of meetings or discussions, and review important details at different stages of a project. This ensures everyone is clear on their tasks and the overall project direction.
 
@@ -114,15 +114,15 @@ These strategies are not exhaustive, but they provide a great starting point for
 
 The 'Curse of Knowledge' isn't just an individual problem; it permeates the organization. Hence, it’s not just about adopting the right strategies; it's about cultivating a culture that inherently encourages inclusive knowledge sharing. Here are a few cultural aspects that can help in this regard:
 
-1) Psychological Safety: Encourage a culture where team members feel safe expressing their thoughts, asking questions, and admitting mistakes. Psychological safety fosters open communication, allowing teams to collectively address the 'Curse of Knowledge.'
+*1) Psychological Safety*: Encourage a culture where team members feel safe expressing their thoughts, asking questions, and admitting mistakes. Psychological safety fosters open communication, allowing teams to collectively address the 'Curse of Knowledge.'
 
-2) Empathy and Respect: A culture of empathy and respect can also be a powerful antidote. When team members respect each other's perspectives and empathize with their challenges, it can encourage clearer, more inclusive communication.
+*2) Empathy and Respect*: A culture of empathy and respect can also be a powerful antidote. When team members respect each other's perspectives and empathize with their challenges, it can encourage clearer, more inclusive communication.
 
-3) Growth Mindset: Cultivate a growth mindset within the team. This mindset values learning and sees challenges as opportunities to grow. With a growth mindset, team members will be more willing to step out of their comfort zones, seek help when needed, and share their knowledge with others.
+*3) Growth Mindset*: Cultivate a growth mindset within the team. This mindset values learning and sees challenges as opportunities to grow. With a growth mindset, team members will be more willing to step out of their comfort zones, seek help when needed, and share their knowledge with others.
 
-4) Team Learning: Make collective learning a norm. Regular knowledge sharing sessions, team training, or collaborative problem-solving can foster a culture that values and encourages knowledge sharing.
+*4) Team Learning*: Make collective learning a norm. Regular knowledge sharing sessions, team training, or collaborative problem-solving can foster a culture that values and encourages knowledge sharing.
 
-5) Reward Transparency and Collaboration: Recognize and reward team members who exemplify clear communication, collaboration, and transparency. This can motivate others to do the same.
+*5) Reward Transparency and Collaboration*: Recognize and reward team members who exemplify clear communication, collaboration, and transparency. This can motivate others to do the same.
 
 Remember, transforming culture isn’t an overnight process. It takes time, consistency, and patience. But by fostering a culture that inherently combats the 'Curse of Knowledge,' you can build a team that communicates effectively and inclusively, irrespective of the complexities they're tackling.
 
