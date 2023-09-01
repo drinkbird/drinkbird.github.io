@@ -1,14 +1,16 @@
 ---
 layout: post
-title: "Azure Resiliency Patterns - Part 1: The Key Ingredient"
+title: "Azure Resiliency Patterns: The Key Ingredient"
 excerpt: "What do we mean by resiliency, why is it so important for cloud systems, and what is it primarily based upon?"
-permalink: /azure-resiliency-part-1
+permalink: /azure-resiliency
 comments: true
 categories: blog
 featured: true
 image:
   feature: redundancy-cover.jpg
 #  credit: pixabay
+redirect_from:
+  - /azure-resiliency-part-1
 reads:
   - cleanarchitecture
   - domaindrivendesign
@@ -79,10 +81,6 @@ Of course, in order to make informed decisions we first need to do some research
 
 # Conclusion
 
-In the first part of the Azure Resiliency Patterns article series we discussed about the characteristics of resilient applications in the cloud, and also talked about the key ingredient for resiliency, which is redundancy.
+In this article we discussed about the characteristics of resilient applications in the cloud, and also talked about the key ingredient for resiliency, which is redundancy.
 
 Many Azure resources come with resiliency features out of the box, and offered either transparently or in the form of configuration options. Since there are different costs associated with each choice, and each application has different resiliency requirements, we need to involve the business early during the design process.
-
-In the next part of the series we'll address a very common concern of cloud systems design: *connection resiliency*.
-
-As always, you can get free e-mail updates when new stories are published by entering your e-mail address below.
