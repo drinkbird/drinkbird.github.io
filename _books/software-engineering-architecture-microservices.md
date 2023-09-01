@@ -21,4 +21,4 @@ Blog posts and YouTube videos can be valuable sources of information, but I've f
 
 Having survived a few years of designing, developing, shipping and operating numerous cloud-native microservices at scale makes me truly appreciate the books that have helped me stepping up my engineering game. I'm confident that this collection will help you get your architecture skills to the next level.
 
-Full disclosure: the following are <strong>Amazon affiliate links</strong>. Using these links to buy books won't cost you more, but it will help me purchase more books. Thank you for your support!.
+Full disclosure: the following are <strong>Amazon affiliate links</strong>. Using them to purchase a book won't cost you extra, but will help me buy more books.

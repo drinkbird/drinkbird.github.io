@@ -24,4 +24,4 @@ In this collection you can find some legendary books that have left their mark o
 
 Towards the end you will notice a few books about functional programming with .NET and F#, a niche that I have been working with for a few years now. At first I felt like a fish out of water, but once I got the hang of it I was able to build really cool software and improve my overall skills in software development.
 
-Full disclosure: the following are <strong>Amazon affiliate links</strong>. Using these links to buy books won't cost you more, but it will help me purchase more books. Thank you for your support!.
+Full disclosure: the following are <strong>Amazon affiliate links</strong>. Using them to purchase a book won't cost you extra, but will help me buy more books.

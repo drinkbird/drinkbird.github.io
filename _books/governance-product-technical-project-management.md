@@ -27,4 +27,4 @@ If the world's largest bureaucracy can undergo such a significant digital transf
 
 If every CTO, VP, director, product stakeholder, manager and engineer were to read even a subset of books in this list, our industry would be in a much better shape, whether you realize that your organization is a *technology* one, or still kid yourself that is not.
 
-Full disclosure: the following are <strong>Amazon affiliate links</strong>. Using these links to buy books won't cost you more, but it will help me purchase more books. Thank you for your support!.
+Full disclosure: the following are <strong>Amazon affiliate links</strong>. Using them to purchase a book won't cost you extra, but will help me buy more books.

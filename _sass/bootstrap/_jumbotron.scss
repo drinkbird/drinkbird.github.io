@@ -1,11 +1,10 @@
-@use 'sass:math';
 //
 // Jumbotron
 // --------------------------------------------------
 
 
 .jumbotron {
-  padding: $jumbotron-padding math.div($jumbotron-padding, 2);
+  padding: $jumbotron-padding ($jumbotron-padding / 2);
   margin-bottom: $jumbotron-padding;
   color: $jumbotron-color;
   background-color: $jumbotron-bg;
@@ -16,7 +15,7 @@
   }
 
   p {
-    margin-bottom: math.div($jumbotron-padding, 2);
+    margin-bottom: ($jumbotron-padding / 2);
     font-size: $jumbotron-font-size;
     font-weight: 200;
   }

@@ -24,4 +24,4 @@ In this collection you will find the books that forged me from a laborer into a 
 
 > Laborers are hired to take direction. Professionals are hired to ensure that the direction chosen makes sense. -- Robert C. Martin
 
-Full disclosure: the following are <strong>Amazon affiliate links</strong>. Using these links to buy books won't cost you more, but it will help me purchase more books. Thank you for your support!.
+Full disclosure: the following are <strong>Amazon affiliate links</strong>. Using them to purchase a book won't cost you extra, but will help me buy more books.

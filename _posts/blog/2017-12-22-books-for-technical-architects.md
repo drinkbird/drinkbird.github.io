@@ -20,7 +20,7 @@ Having survived an intensive year of designing, developing, shipping and operati
 
 The following 3 books are by far the best resources on software architecture you can add to your *TODO* list. They are ideal for all software engineers and technical architects who deal with any kind of cloud / distributed systems.
 
-Full disclosure: the following are <strong>Amazon affiliate links</strong>. Using these links to buy books won't cost you more, but it will help me purchase more books. Thank you for your support!.
+Full disclosure: the following are <strong>Amazon affiliate links</strong>. Using them to purchase a book won't cost you extra, but will help me buy more books.
 
 -----
 
