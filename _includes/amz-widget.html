@@ -8,7 +8,11 @@
         {% if book.coverUrl %}
             <img class="img-responsive" src="{{ book.coverUrl }}" alt="{{ book.title }}" />
         {% else %}
-            <img class="img-responsive" src="https://images-na.ssl-images-amazon.com/images/P/{{ book.isbn }}.jpg" alt="{{ book.title }}" />
+            {% if book.imgid %}
+		<img class="img-responsive" src="https://images-na.ssl-images-amazon.com/images/I/{{ book.imgid }}.jpg" alt="{{ book.title }}" />
+			{% else %}
+		<img class="img-responsive" src="https://images-na.ssl-images-amazon.com/images/P/{{ book.isbn }}.jpg" alt="{{ book.title }}" />
+			{% endif %}
         {% endif %}
         </div>
         <div class="amz-widget-body">

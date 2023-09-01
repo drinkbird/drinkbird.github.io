@@ -1,7 +1,11 @@
 <div class="book-inarticle text-center">
 	<a class="book-link" target="_blank" href="{{ book.url }}" aria-label="View '{{ book.title }}'{% if book.url contains 'geni.us' %} on Amazon {% endif %} (affiliate link)">
 		{% if book.url contains 'geni.us' %}
+			{% if book.imgid %}
+		<img class="img-responsive text-center" src="https://images-na.ssl-images-amazon.com/images/I/{{ book.imgid }}.jpg" alt="{{ book.title }}" />
+			{% else %}
 		<img class="img-responsive text-center" src="https://images-na.ssl-images-amazon.com/images/P/{{ book.isbn }}.jpg" alt="{{ book.title }}" />
+			{% endif %}
 		{% else %}
 		<img class="img-responsive text-center" src="{{ book.coverUrl }}" alt="{{ book.title }}" />
 		{% endif %}

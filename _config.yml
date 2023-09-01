@@ -361,4 +361,16 @@ reads:
     title: "Algorithms to live by"
     url: "https://geni.us/algos-amazon"
     isbn: "0007547994"
+  communicationforengineers:
+    title: "Communication for Engineers"
+    url: "https://geni.us/comms"
+    imgid: "618AcEIpzKL"
+  remote:
+    title: "Remote: Office not required"
+    url: "https://geni.us/remote-amazon"
+    isbn: "9780091954673"
+  habit:
+    title: "The Power of Habit"
+    url: "https://geni.us/GuOVF"
+    isbn: "1847946240"
     
