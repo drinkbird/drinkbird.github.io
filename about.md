@@ -7,25 +7,25 @@ image:
   feature: about_google2.jpg
 ---
 
-## Background
+### Background
 
-I'm Tasos Piotopoulos, a force multiplier for software delivery teams with a track record of solving complex problems by delivering high-quality solutions and a passion for helping others grow professionally.
+Hello, I'm Tasos Piotopoulos! As a Lead Software Engineer, I function as a force multiplier for software delivery teams. My multifaceted role encompasses hands-on coding, steering technical architecture, and guiding engineers to achieve their fullest potential. Since entering the tech scene in 2005, I've tackled complex challenges and delivered high-quality solutions across a diverse set of industries. But my efforts go beyond just the technical aspects; I'm deeply invested in developing professionals in both their hard and soft skills.
 
-While working in the Tech Industry since 2005 and leading engineering teams of many sizes, I have been responsible for making and saving tens of millions of dollars for my customers and employers, building a diverse portfolio that includes everything from start-ups to the largest enterprises. I also hold a Master's degree in Software Engineering and Ubiquitous Computing from University College Dublin.
+Leading engineering teams of various sizes, I've overseen technology projects that have either saved or generated tens of millions of dollars for businesses ranging from startups to Fortune 500 companies. Armed with a Master's degree in Software Engineering and Distributed Systems from University College Dublin, I also apply academic rigor to tackle real-world problems.
 
-Technology-wise, I mostly focus on Cloud-Native Distributed Systems in conjunction with Site Reliability Engineering and DevOps practices. Over the years, I have delivered projects using a variety of approaches, languages, libraries, and tools, such as Microservices, Event Sourcing, Domain Driven Design (DDD), JVM & .NET based languages (Scala, Java, F#, C#), cloud & data platforms (Azure, GCP, Kafka, Kafka Connect, Docker, Kubernetes, Consul, Nomad, CI/CD, Hadoop / HIVE, Spark, Flink), as well as mobile technologies (iOS, Android), just to name a few.
+In terms of technical expertise, my skill set spans Cloud-Native Distributed Systems, Site Reliability Engineering, and DevOps practices. Throughout my career, I've been hands-on with multiple programming languages such as Scala, Java, F#, and C#, and familiarized myself with key tools and platforms like Azure, GCP, AWS, MongoDB Atlas, Kafka, Docker, and Kubernetes.
 
-In addition, I blog, publish online courses, organise technology meet-ups and workshops, speak at events and academic lectures, and read lots of books to help me grow further. You can find me on my blog, [drinkbird.com](https://blog.drinkbird.com), and on [LinkedIn](https://linkedin.com/in/piotopoulos).
+But the quest for growth isn't solely a personal mission; I aim to uplift others along the way. Through blogging, creating online courses, hosting tech meet-ups, and speaking at various platforms, I'm committed to sharing valuable insights and experiences. Let's connect and learn together. Find me here on [drinkbird.com](https://blog.drinkbird.com) or on [LinkedIn](https://linkedin.com/in/piotopoulos).
 
 ### What is this blog about?
 
-As technology professionals, we are constantly pushed towards producing more and faster. When performing under pressure, we tend to cut corners, make tradeoffs that we can't afford, and generally treat quality as an afterthought.
+The tech landscape is not just about code; it's about leadership, too. You don't have to choose between being a great engineer and an inspiring leader — you can be both. In a profession where speed often trumps quality and shortcuts are the norm, it's easy to lose sight of the bigger picture. And all too often, we find ourselves mired in technical debt, team burnout, and dwindling productivity.
 
-That works for a while, but soon reality catches up; instead of providing value by solving business problems, we waste our time and energy dealing with defects and regressions. Eventually, productivity grants to a halt and even the smallest change becomes a risky, expensive challenge. Exhausted from burnout, we escape by hopping to a new job, only to find ourselves in the middle of yet another death march.
+This stops here.
 
-We can do better.
+Welcome to a blog dedicated to empowering engineers to lead, in code and in character. Here, you'll find not just tutorials and technical guides but also advice on soft skills, leadership, and career growth. Whether you're a new graduate or a seasoned pro, there's something here to help you level up both your technical expertise and your ability to inspire and guide a team.
 
-In this blog, I distil some of my thoughts and experiences from the Tech Industry and literature, as well as present some practical guides and tutorials, with the intent to motivate, inspire, and help new and seasoned technology professionals cultivate both their technical and soft skills. Each of us shapes the Industry, and any improvement, either big or small, can go a long way.
+Your transformation into a tech leader starts now. Ready to join the journey? You're in the right place.
 
 <ul class="list-inline gallery">
     <li>
@@ -60,31 +60,24 @@ In this blog, I distil some of my thoughts and experiences from the Tech Industr
     </li>
 </ul>
 
-## Too much information
+## Academic Credentials
 
-### Academia
+I have a Master's degree in Software Engineering and Distributed Systems from University College Dublin, where I graduated with first-class honours. I also have a B.Sc. in Computer and Telecommunications Engineering from the Technological Educational Institute of Thessaly, graduating with first-class honours.
 
-- M.Sc. in Software Engineering and Ubiquitous Computing, University College Dublin, 2015
-    - GPA: 4.1 / 4.2
-    - First-class honours (1:1)
-- B.Sc. in Computer and Telecommunications Engineering, Technological Educational Institute of Thessaly, 2011
-    - Grade: 8.91 / 10
-    - First-class honours (1:1)
+## Why DrinkBird?
 
-### Why DrinkBird?
-
-It's the direct translation of my last name from Greek to English.
+It's not just a catchy name. It's a nod to my Greek heritage and translates my last name into English.
 
 ## Disclaimer
 
-**This blog, its content and opinions are my own** and do not represent my employers' or clients' views in any way. Also, remember that I might not know what I'm talking about, so use the information and advice provided here at your own risk.
+The views and opinions on this blog are solely mine and do not reflect those of my employer or clients. Reader discretion is advised.
 
 ## Short Bio
 
-Tasos Piotopoulos is a force multiplier for software delivery teams, with a track record of solving complex problems through delivering high-quality solutions and a passion for helping others grow professionally.
+Tasos Piotopoulos is a Lead Software Engineer who empowers engineering teams to excel both technically and as leaders. With a career spanning since 2005, Tasos has a proven record of delivering high-impact projects across a diverse range of industries, generating or saving tens of millions of dollars in the process. His role combines hands-on coding, technical architecture, and coaching engineers to be the best versions of themselves. 
 
-While working in the Tech Industry since 2005 and leading engineering teams of many sizes, Tasos has been responsible for making and saving tens of millions of dollars for his customers and employers, building a diverse portfolio that includes everything from startups to the largest enterprises. He also holds a Master's degree in Software Engineering and Ubiquitous Computing from University College Dublin.
+Educationally grounded with a Master's degree in Software Engineering and Distributed Systems from University College Dublin, Tasos applies academic principles to solve real-world challenges. Beyond his work, he is dedicated to helping professionals grow in their career — blogging, creating online courses, hosting tech meet-ups, and speaking at various events. 
 
-In addition, Tasos blogs, publishes online courses, organises meet-ups and workshops, speaks at events and academic lectures, and reads lots of books to help him grow further. You can find him on his blog, [drinkbird.com](https://blog.drinkbird.com), and on [LinkedIn](https://linkedin.com/in/piotopoulos).
+Connect with Tasos to join a community focused on empowering engineers to lead. You can find him on [drinkbird.com](https://blog.drinkbird.com) and [LinkedIn](https://linkedin.com/in/piotopoulos).
 
 ![Tasos Piotopoulos]({{ site.baseurl }}/assets/media/drinkbird_shot.jpg)
