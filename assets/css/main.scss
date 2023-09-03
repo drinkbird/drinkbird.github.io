@@ -34,7 +34,7 @@ $font-family-secondary:			$font-family-primary;
 $font-family-base:				$font-family-primary;
 $headings-font-family:			$font-family-primary;
 $navbar-font-family:			$font-family-primary;
-$font-size-base:				18px;
+$font-size-base:				20px;
 $line-height-base:				1.61;
 $icon-font-path:				"../fonts/";
 
@@ -292,6 +292,7 @@ a {
 		figcaption {
 			color: $brand-primary-dark;
 			font-size: $font-size-h3;
+			
 		}
 	}
 
@@ -362,7 +363,7 @@ a {
 	text-align: center;
 
 	h1 {
-		font-size: 40px;
+		font-size: 48px;
 		font-weight: 800;
 	}
 
@@ -588,15 +589,15 @@ footer.site-footer {
 	}
 
 	p {
-		font-size: 21px;
-		padding-bottom: 21px;
+		font-size: 20px;
+		padding-bottom: 20px;
 	}
 
 	ul,ol {
 		padding-bottom: 10px;
 
 		li {
-			font-size: 21px;
+			font-size: 20px;
 			padding-bottom: 10px;
 		}
 	}
@@ -631,6 +632,10 @@ footer.site-footer {
 }
 
 .post-body {
+	p {
+		padding: 0;
+	}
+
 	img {
 		@extend .img-responsive;
 	}
@@ -641,6 +646,12 @@ footer.site-footer {
 		max-width: 100%;
 	}
 
+	& > p > img+em {
+		color: rgba(0, 0, 0, 0.6);
+		font-size: 14px;
+		margin-top: 8px;
+	}
+
 	.giphy {
 		margin-top: 40px;
 		margin-bottom: 40px;
@@ -648,6 +659,8 @@ footer.site-footer {
 }
 
 .post-aside {
+	margin-top: 86px;
+
 	hr {
 		margin-top: 0px;
 	}
@@ -732,6 +745,7 @@ a.cover {
 
 	.book-image {
 		text-align: center;
+		max-width: 500px;
 
 		> img {
 			display: inline-block;
@@ -849,6 +863,7 @@ a.cover {
 	}
 
 	p {
+		font-size: 16px;
 		margin-bottom: 0;
 	}
 }
@@ -929,10 +944,40 @@ a.cover {
 		}
 
 		figcaption {
-			color: #555;
-			font-weight: 400;
 			margin-top: 0.8em;
+			font-size: 14px;
+			color: rgba(0, 0, 0, 0.9);
+		}
+	}
+}
+
+.author-inline {
+	figure > div > a > div {
+		display: block;
+		float: left;
+		margin-right: 10px;
+
+		& > img {
+			display: block;
+			width: 60px;
+			height: 20p;
+			height: 60px;
+		}
+	}
+	figure > figcaption {
+		& > .name {
 			font-size: 16px;
+			padding-top: 6px;
+	
+			& > a {
+				font-weight: 800;
+				color: rgb(0, 0, 0);
+			}
+		}
+
+		& > .title {
+			font-size: 14px;
+			color: rgba(0, 0, 0, 0.6);
 		}
 	}
 }
@@ -1029,18 +1074,6 @@ a.cover {
 
 	.quote-right {
 		margin-bottom: 0;
-	}
-}
-
-@media (min-width: $screen-xs-min) {
-	.content-headline {
-		h1 {
-			font-size: 60px;
-		}
-		p {
-			font-size: 24px;
-			line-height: 39px;
-		}
 	}
 }
 

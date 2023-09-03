@@ -32,9 +32,6 @@ reads:
   - cleanarchitecture
   - madetostick-amazon
   - onwritingwell-amazon
-  - communicationforengineers
-  - habit
-  - remote
 ---
 
 ## Introduction: The remote work evolution
