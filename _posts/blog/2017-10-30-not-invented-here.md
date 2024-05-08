@@ -133,7 +133,7 @@ A typical software system is composed of several components, arranged within man
 
 All other components are secondary and revolve around the use cases. Components like databases, frameworks, messaging systems, web frameworks - even the web itself - are implementation details.
 
-*You can read more about software architecture in Robert C. Martin's excellent latest book, {% include link.html title="Clean Architecture: A Craftsman's Guide to Software Structure and Design" url="http://geni.us/cleanarchitecture" %}*
+*You can read more about software architecture in Robert C. Martin's excellent latest book, {% include link.html title="Clean Architecture: A Craftsman's Guide to Software Structure and Design" url="https://www.amazon.com/Clean-Architecture-Craftsmans-Software-Structure/dp/0134494164?tag=drin04-20" %}*
 
 Under most circumstances, building such components from scratch is a waste of resources, and it's much more preferable to use commercial or opensource third-party implementations instead. That way it becomes a matter of customizing and composing those components together to formulate our unique system.
 

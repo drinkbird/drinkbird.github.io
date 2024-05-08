@@ -39,7 +39,7 @@ Just to be clear, everyone's ultimate goal is to deliver value to the business, 
 
 ## Source
 
-This metaphor was originally introduced by Robert C. Martin [in his blog](https://sites.google.com/site/unclebobconsultingllc/blogs-by-robert-martin/saying-no), and was further improved in his legendary book, {% include link.html title="The Clean Coder" url="http://geni.us/thecleancoder" %}, a must-read for every professional software developer.
+This metaphor was originally introduced by Robert C. Martin [in his blog](https://sites.google.com/site/unclebobconsultingllc/blogs-by-robert-martin/saying-no), and was further improved in his legendary book, {% include link.html title="The Clean Coder" url="http://www.amazon.co.uk/dp/0137081073?tag=drin04-20" %}, a must-read for every professional software developer.
 
 ## Other resources
 

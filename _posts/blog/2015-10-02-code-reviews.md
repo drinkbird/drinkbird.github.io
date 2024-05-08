@@ -27,7 +27,7 @@ A typical programming exercise in college doesn't require more than 500 lines of
 
 It's hard to explain to a new computer science graduate or someone who has only worked in relatively small projects why you need engineering discipline, design patterns, conventions and well-established procedures. The type of effort described above doesn't simply require the same kind of skills in a larger scale, but a completely new skill set altogether.
 
-In addition, as mentioned in Steven McConnell's book, {% include link.html title="Code Complete 2" url="http://geni.us/codecomplete" %}, the cost of fixing defects in software, both in terms of money and human effort, increases dramatically between the various phases of the software's life cycle. When a defect is detected early, during the Requirements phase, it has a cost of X. The same defect, if caught during the Architecture phase it can cost up to 3X, during the Construction phase between 5X and 10X, during the System Test phase 10X, and finally during the Post-Release phase between 10X and 100X.
+In addition, as mentioned in Steven McConnell's book, {% include link.html title="Code Complete 2" url="http://www.amazon.co.uk/dp/0735619670?tag=drin04-20" %}, the cost of fixing defects in software, both in terms of money and human effort, increases dramatically between the various phases of the software's life cycle. When a defect is detected early, during the Requirements phase, it has a cost of X. The same defect, if caught during the Architecture phase it can cost up to 3X, during the Construction phase between 5X and 10X, during the System Test phase 10X, and finally during the Post-Release phase between 10X and 100X.
 
 It is apparent that the magnitude of responsibility, as well as the amount of quality work that needs to be done on any real world project, cannot be an one-man show. Truly great results *always* originate from team effort. But what could possibly be the biggest obstacle of high-quality teamwork?
 
@@ -41,11 +41,11 @@ deterioration and technical debt. It directly affects our decision making proces
 
 In his [blog](http://blogs.msdn.com/b/peterhal/archive/2006/01/04/509302.aspx), Peter Hallam mentions that as software developers, we tend to spend more than 70% of our time understanding existing code, as this is a fundamental prerequisite in maintaining, correcting or extending a system. Now, imagine what could happen if every one of us would always produce code that clearly shows its intentions, that can be easily read and understood by anyone, and it's so expressive that comments could be regarded as mere noise.
 
-There are two particular quotes befitting exactly this way of thinking. Martin Fowler, in his book {% include link.html title="Refactoring" url="http://geni.us/refactoring" %}, says: 
+There are two particular quotes befitting exactly this way of thinking. Martin Fowler, in his book {% include link.html title="Refactoring" url="http://www.amazon.co.uk/dp/0201485672?tag=drin04-20" %}, says: 
 
 > Any fool can write code that a computer can understand. Good programmers write code that humans can understand.
 
-On the other hand, Robert C. Martin, in his book {% include link.html title="Clean Code" url="http://geni.us/cleancode" %}, says:
+On the other hand, Robert C. Martin, in his book {% include link.html title="Clean Code" url="http://www.amazon.co.uk/dp/0132350882?tag=drin04-20" %}, says:
 
 > Every time you express yourself in code, you should pat yourself on the back. Every time you write a comment, you should grimace and feel the failure of your ability of expression.
 

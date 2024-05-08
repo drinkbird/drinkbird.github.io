@@ -42,9 +42,9 @@ And speaking of messy code bases...
 
 ## Source
 
-As with the previous article, metaphor was originally introduced by Robert C. Martin in his legendary book, {% include link.html title="The Clean Coder" url="http://geni.us/thecleancoder" %}, a must-read for every professional software developer.
+As with the previous article, metaphor was originally introduced by Robert C. Martin in his legendary book, {% include link.html title="The Clean Coder" url="http://www.amazon.co.uk/dp/0137081073?tag=drin04-20" %}, a must-read for every professional software developer.
 
-The last quote about speed is from the book {% include link.html title="97 Things Every Programmer Should Know" url="http://geni.us/97things" %}, where Uncle Bob gives solid advice on software professionalism, alongside numerous other excellent authors.
+The last quote about speed is from the book {% include link.html title="97 Things Every Programmer Should Know" url="http://www.amazon.co.uk/dp/0596809484?tag=drin04-20" %}, where Uncle Bob gives solid advice on software professionalism, alongside numerous other excellent authors.
 
 ## Other resources
 

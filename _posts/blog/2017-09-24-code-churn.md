@@ -188,7 +188,7 @@ A good automated test suite has our backs, since it allows us to always keep ref
 
 In the absence of tests, we have much less confidence about improving the structure of our code as we progress, hence refactoring is often left as a high-risk, low-importance task for the future.
 
-> Imagine trying to learn to be a trapeze artist in the circus without having that big net that allows us to make mistakes; we'd never progress beyond swinging back and forth! <br/>-- ‎Gerard Meszaros, {% include link.html title="XUnit Test Patterns" url="http://geni.us/xunit" %}
+> Imagine trying to learn to be a trapeze artist in the circus without having that big net that allows us to make mistakes; we'd never progress beyond swinging back and forth! <br/>-- ‎Gerard Meszaros, {% include link.html title="XUnit Test Patterns" url="https://www.amazon.com/xUnit-Test-Patterns-Refactoring-Code/dp/0131495054?tag=drin04-20" %}
 
 In code bases where churn volume is high but coverage by unit, integration and acceptance tests is not adequate, technical debt prevails and the cost of corrective maintenance skyrockets. In such scenarios, teams typically end up spending most of their time and energy firefighting, rather than evolving the system by solving interesting business problems.
 

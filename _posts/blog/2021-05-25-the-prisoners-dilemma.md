@@ -93,6 +93,6 @@ Don't just expect others to act; do your part and lead by example. Build trust, 
 
 Whenever possible, look for games where the dominant strategy is integrity, then just act naturally. And the one thing that I really want to leave you with is that, in a sense, the best thing we can do for ourselves is to stop caring only about ourselves.
 
-p.s. The Prisoner's Dilemma is extensively described in the book {% include link.html title="Algorithms to Live By" url="https://geni.us/algos-amazon" %}, which I highly recommend.
+p.s. The Prisoner's Dilemma is extensively described in the book {% include link.html title="Algorithms to Live By" url="https://www.amazon.co.uk/Algorithms-Live-Computer-Science-Decisions/dp/0007547994?tag=drin04-20" %}, which I highly recommend.
 
 Until next time!

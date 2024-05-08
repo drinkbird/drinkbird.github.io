@@ -107,7 +107,7 @@ Now, how's that for nailing the lingua franca of remote engineering?
 ![Laptop camera vs. external camera positioned at eye level. Can you see the difference?]({{ site.baseurl }}/images/remote-2.png)
 *Laptop camera vs. external camera positioned at eye level. Can you see the difference?*
 
-*Further reading*: {% include link.html title="Communication for Engineers, by Chris Laffra" url="https://geni.us/comms" %}
+*Further reading*: {% include link.html title="Communication for Engineers, by Chris Laffra" url="https://www.amazon.co.uk/Communication-Engineers-developers-communicator-productivity/dp/B08W7SNN69?tag=drin04-20" %}
 
 ## 3. Discipline and time management: The organisational pillars of remote engineering
 
@@ -138,7 +138,7 @@ Organisational management is not just a personal productivity hack; it's a profe
 ![Presenting about Productivity and the Pomodoro technique at University College Dublin]({{ site.baseurl }}/images/remote-3.png)
 *Presenting about Productivity and the Pomodoro technique at University College Dublin*
 
-*Further reading*: {% include link.html title="The Power of Habit: Why We Do What We Do, and How to Change, by Charles Duhigg" url="https://geni.us/GuOVF" %}
+*Further reading*: {% include link.html title="The Power of Habit: Why We Do What We Do, and How to Change, by Charles Duhigg" url="https://www.amazon.co.uk/Power-Habit-Why-What-Change/dp/1847946240?tag=drin04-20" %}
 
 ## 4. Fostering remote relationships: Building trust from a distance
 
@@ -165,7 +165,7 @@ In remote work, being close doesn't mean being near; it means being there. Show 
 ![Looking for competition in Music League]({{ site.baseurl }}/images/remote-4.png)
 *Looking for competition in Music League*
 
-*Further reading*: {% include link.html title="Remote: Office Not Required, by David Heinemeier Hansson and Jason Fried" url="https://geni.us/remote-amazon" %}
+*Further reading*: {% include link.html title="Remote: Office Not Required, by David Heinemeier Hansson and Jason Fried" url="https://www.amazon.co.uk/Remote-Required-David-Heinemeier-Hansson/dp/0091954673?tag=drin04-20" %}
 
 ## Conclusion
 

@@ -92,7 +92,7 @@ For that reason, I asked for his advice to somebody who wants to do that for a l
 
 *I practice it at work, I practice it at meetups, there's a program called Toastmasters for people to go and learn how to speak, I read some books on the topic too.*
 
-*There's a great book I love, it's called {% include link.html title="Made to stick" url="http://geni.us/madetostick-amazon" %}. It's a very short book and it's all about how some ideas get in your head, like commercials, and they don't leave you.*
+*There's a great book I love, it's called {% include link.html title="Made to stick" url="https://www.amazon.com/Made-Stick-Ideas-Survive-Others/dp/1400064287?tag=drin04-20" %}. It's a very short book and it's all about how some ideas get in your head, like commercials, and they don't leave you.*
 
 *Have you ever watched a commercial and you think about it for days later? It's about why does that happen. And the book talks about very simple things, like did they pull on an emotion for you? Was that something you felt inside? Is it a simple idea?*
 
