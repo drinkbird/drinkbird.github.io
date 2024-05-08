@@ -65,312 +65,312 @@ owner:
     analytics: G-1P3RKC5DS0
 
 reads:
+  azure-java-microservices:
+    title: Microservices Development on Azure with Java [Video Course]
+    url: https://blog.drinkbird.com/azure-java-microservices-video-course-packt/
+    coverUrl: https://blog.drinkbird.com/images/azure-java-microservices-cover.jpg
+  buildingmicroservices2:
+    title: 'Building Microservices Second Edition: Designing Fine-Grained Systems'
+    url: https://www.amazon.co.uk/Building-Microservices-Second-Sam-Newman/dp/1492034029?tag=drin04-20
+    isbn: "1492034029"
+  themythicalmanmonth:
+    title: 'The Mythical Man-Month: Essays on Software Engineering, Anniversary Edition (2nd Edition)'
+    url: https://www.amazon.com/Mythical-Man-Month-Software-Engineering-Anniversary/dp/0201835959?tag=drin04-20
+    isbn: "0201835959"
+  dpruby:
+    title: Design Patterns in Ruby
+    url: http://www.amazon.co.uk/dp/0321490452?tag=drin04-20
+    isbn: "0321490452"
+  stylish-fsharp:
+    title: 'Stylish F#: Crafting Elegant Functional Code for .NET and .NET Core'
+    url: https://www.amazon.co.uk/Stylish-Crafting-Elegant-Functional-Code/dp/1484239997?tag=drin04-20
+    isbn: "1484239997"
+  theworkingbrain:
+    title: The Working Brain
+    url: http://www.amazon.co.uk/The-Working-Brain-Introduction-Neuropsychology/dp/046509208X?tag=drin04-20
+    isbn: 046509208X
+  microservicearch:
+    title: 'Microservice Architecture: Aligning Principles, Practices, and Culture'
+    url: https://www.amazon.com/Microservice-Architecture-Aligning-Principles-Practices/dp/1491956259?tag=drin04-20
+    isbn: "1491956259"
+  thecleancoder:
+    title: 'The Clean Coder: A Code of Conduct for Professional Programmers (Robert C. Martin)'
+    url: http://www.amazon.co.uk/dp/0137081073?tag=drin04-20
+    isbn: "0137081073"
   softskills:
     title: "Soft Skills: The software developer's life manual"
-    url: "https://geni.us/softskills"
+    url: http://www.amazon.co.uk/dp/1617292397?tag=drin04-20
     isbn: "1617292397"
-  thecleancoder:
-    title: "The Clean Coder: A Code of Conduct for Professional Programmers (Robert C. Martin)"
-    url: "https://geni.us/thecleancoder"
-    isbn: "0137081073"
-  codecomplete:
-    title: "Code Complete: A Practical Handbook of Software Construction"
-    url: "https://geni.us/codecomplete"
-    isbn: "0735619670"
-  agileppp:
-    title: "Agile Principles, Patterns, and Practices in C# (Robert C. Martin)"
-    url: "https://geni.us/agileppp"
-    isbn: "0131857258"
-  cleancode:
-    title: "Clean Code: A Handbook of Agile Software Craftsmanship"
-    url: "https://geni.us/cleancode"
-    isbn: "0132350882"
-  pragmaticprogrammer:
-    title: "The Pragmatic Programmer: 20th Anniversary Edition"
-    url: "https://geni.us/pragprog20amazon"
-    isbn: "0135957052"
-  refactoring:
-    title: "Refactoring: Improving the Design of Existing Code (Object Technology Series)"
-    url: "https://geni.us/refactoring"
-    isbn: "0201485672"
-  hfdesignpatterns:
-    title: "Head First Design Patterns"
-    url: "https://geni.us/hfdesignpatterns"
-    isbn: "0596007124"
-  gofdp:
-    title: "Design patterns: elements of reusable object-oriented software"
-    url: "https://geni.us/gofdp"
-    isbn: "0201633612"
-  dpruby:
-    title: "Design Patterns in Ruby"
-    url: "https://geni.us/dpruby"
-    isbn: "0321490452"
-  97things:
-    title: "97 Things Every Programmer Should Know"
-    url: "https://geni.us/97things"
-    isbn: "0596809484"
-  csharpindepth:
-    title: "C# in Depth, 4th Edition"
-    url: "https://geni.us/csharpindepth4e"
-    isbn: "1617294535"
-  aspnetmvc5:
-    title: "Pro ASP.Net MVC 5 (Expert's Voice in ASP.Net)"
-    url: "https://geni.us/aspnetmvc5"
-    isbn: "1430265299"
-  aspnetcoremvc:
-    title: "Pro ASP.NET Core MVC"
-    url: "https://geni.us/aspnetcoremvc"
-    isbn: "1484203984"
-  jsgoodparts:
-    title: "JavaScript: The Good Parts"
-    url: "https://geni.us/jsgoodparts"
-    isbn: "0596517742"
-  leanstartup:
-    title: "The Lean Startup"
-    url: "https://geni.us/leanstartup"
-    isbn: "0307887898"
-  steallikeanartist:
-    title: "Steal Like An Artist"
-    url: "https://geni.us/steallikeanartist"
-    isbn: "0761169253"
-  interactiondesign:
-    title: "Interaction Design"
-    url: "https://geni.us/interactiondesign"
-    isbn: "1119020751"
-  learnazure:
-    title: "Learning Microsoft Azure"
-    url: "https://geni.us/learnazure"
-    isbn: "1782173374"
-  thebigswitch:
-    title: "The Big Switch"
-    url: "https://geni.us/thebigswitch"
-    isbn: "039334522X"
-  theworkingbrain:
-    title: "The Working Brain"
-    url: "https://geni.us/theworkingbrain"
-    isbn: "046509208X"
-  artofunittesting:
-    title: "The Art of Unit Testing: with examples in C#"
-    url: "https://geni.us/artofunittesting"
-    isbn: "1617290890"
-  smartandgetsthingsdone:
-    title: "Smart and Gets Things Done: Joel Spolsky's Concise Guide to Finding the Best Technical Talent"
-    url: "https://geni.us/smartandgetsthingsdone"
-    isbn: "1590598385"
-  showyourwork:
-    title: "Show Your Work!: 10 Ways to Share Your Creativity and Get Discovered"
-    url: "https://geni.us/showyourwork"
-    isbn: "076117897X"
-  legacycode:
-    title: "Working Effectively with Legacy Code"
-    url: "https://geni.us/legacycode"
-    isbn: "0131177052"
-  effectiveusecases:
-    title: "Writing Effective Use Cases"
-    url: "https://geni.us/effectiveusecases"
-    isbn: "0201702258"
-  userstoriesapplied:
-    title: "User Stories Applied: For Agile Software Development"
-    url: "https://geni.us/userstoriesapplied"
-    isbn: "0321205685"
-  themythicalmanmonth:
-    title: "The Mythical Man-Month: Essays on Software Engineering, Anniversary Edition (2nd Edition)"
-    url: "https://geni.us/themythicalmanmonth"
-    isbn: "0201835959"
-  theaccidentalcreative:
-    title: "The Accidental Creative: How to Be Brilliant at a Moment's Notice"
-    url: "https://geni.us/theaccidentalcreative"
-    isbn: "1591846242"
-  creativityincbook:
-    title: "Creativity, Inc.: Overcoming the Unseen Forces That Stand in the Way of True Inspiration"
-    url: "https://geni.us/creativityincbook"
-    isbn: "0593070097"
-  fsharpforcsharpdevs:
-    title: "F# for C# Developers (Developer Reference)"
-    url: "https://geni.us/fsharpforcsharpdevs"
-    isbn: "0735670269"
-  microservices:
-    title: "Microservices: Flexible Software Architecture"
-    url: "https://geni.us/microservices"
-    isbn: "0134602412"
-  buildingmicroservices:
-    title: "Building Microservices: Designing Fine-Grained Systems"
-    url: "https://geni.us/buildingmicroservices"
-    isbn: "1491950358"
-  buildingmicroservices2:
-    title: "Building Microservices Second Edition: Designing Fine-Grained Systems"
-    url: "https://geni.us/buildingmicroservices2"
-    isbn: "1492034029"
-  microservicespatterns:
-    title: "Microservice Patterns: With examples in Java"
-    url: "https://geni.us/microservicespatterns"
-    isbn: "1617294543"
-  microservicearch:
-    title: "Microservice Architecture: Aligning Principles, Practices, and Culture"
-    url: "https://geni.us/microservicearch"
-    isbn: "1491956259"
-  domaindrivendesign:
-    title: "Domain-Driven Design: Tackling Complexity in the Heart of Software"
-    url: "https://geni.us/domaindrivendesign"
-    imgid: "81W--zzdAhL"
-  functionalreactive:
-    title: "Functional and Reactive Domain Modeling"
-    url: "https://geni.us/functionalreactive"
-    isbn: "1617292249"
-  streamingarch:
-    title: "Streaming Architecture: New Designs Using Apache Kafka and MapR Streams"
-    url: "https://geni.us/streamingarch"
-    isbn: "1491953926"
-  xunit:
-    title: "xUnit Test Patterns: Refactoring Test Code"
-    url: "https://geni.us/xunit"
-    isbn: "0131495054"
-  cleanarchitecture:
-    title: "Clean Architecture: A Craftsman's Guide to Software Structure and Design"
-    url: "https://geni.us/cleanarchitecture"
-    isbn: "0134494164"
-  fsharp3:
-    title: "Programming F# 3.0: A Comprehensive Guide for Writing Simple Code to Solve Complex Problems"
-    url: "https://geni.us/fsharp3"
-    isbn: "1449320295"
-  dataintensive:
-    title: "Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems"
-    url: "https://geni.us/dataintensive"
-    isbn: "1449373321"
-  clrviacsharp:
-    title: "CLR via C# (4th Edition) (Developer Reference)"
-    url: "https://geni.us/clrviacsharp"
-    isbn: "0735667454"
-  peopleware:
-    title: "Peopleware: Productive Projects and Teams (3rd Edition)"
-    url: "https://geni.us/peopleware"
-    isbn: "0321934113"
-  realworldfp:
-    title: "Real-World Functional Programming: With Examples in F# and C#"
-    url: "https://geni.us/realworldfp"
-    isbn: "1933988924"
-  careerguide:
-    title: "The Complete Software Developer's Career Guide"
-    url: "https://geni.us/careerguide"
-    isbn: "0999081411"
-  dddericevans:
-    title: "Domain-Driven Design: Tackling Complexity in the Heart of Software"
-    url: "https://geni.us/dddericevans"
-    isbn: "0321125215"
-  agiledev:
-    title: "Practices of an Agile Developer: Working in the Real World (Pragmatic Bookshelf) (Pragmatic Programmers)"
-    url: "https://geni.us/agiledev"
-    isbn: "097451408X"
-  devops:
-    title: "The Devops Handbook: How to Create World-Class Agility, Reliability, and Security in Technology Organizations"
-    url: "https://geni.us/devops"
-    isbn: "1942788002"
-  thephoenix:
-    title: "The Phoenix Project: A Novel about It, Devops, and Helping Your Business Win"
-    url: "https://geni.us/thephoenix"
-    isbn: "1942788290"
-  madetostick-amazon:
-    title: "Made to Stick: Why Some Ideas Survive and Others Die"
-    url: "https://geni.us/madetostick-amazon"
-    isbn: "1400064287"
-  onwritingwell-amazon:
-    title: "On Writing Well, 30th Anniversary Edition: An Informal Guide to Writing Nonfiction"
-    url: "https://geni.us/onwritingwell-amazon"
-    isbn: "B0090RVGW0"
-  accelerate-amazon:
-    title: "Accelerate: The Science of Lean Software and DevOps: Building and Scaling High Performing Technology Organizations"
-    url: "https://geni.us/accelerate-amazon"
-    isbn: "B07B9F83WM"
-  dotnetmicroservices:
-    title: ".NET Microservices: Architecture for Containerized .NET Applications"
-    url: "https://docs.microsoft.com/en-us/dotnet/standard/microservices-architecture/"
-    coverUrl: "https://docs.microsoft.com/en-us/dotnet/standard/microservices-architecture/media/cover.png"
-  tao-amazon:
-    title: "The Tao of Microservices"
-    url: "https://geni.us/tao-amazon"
-    isbn: "1617293148"
-  azure-java-microservices:
-    title: "Microservices Development on Azure with Java [Video Course]"
-    url: "https://blog.drinkbird.com/azure-java-microservices-video-course-packt/"
-    coverUrl: "https://blog.drinkbird.com/images/azure-java-microservices-cover.jpg"
-  aspnet-core-inaction:
-    title: "ASP.NET Core in Action"
-    url: "https://geni.us/aspnetcoreinaction"
-    isbn: "1617294616"
-  domain-modeling-made-functional:
-    title: "Domain Modeling Made Functional"
-    url: "https://geni.us/domainmodelingfsharp"
-    isbn: "1680502549"
-  releaseit:
-    title: "Release It! 2nd Edition"
-    url: "https://geni.us/releaseit"
-    isbn: "1680502395"
-  continuous-api-management:
-    title: "Continuous API Management"
-    url: "https://geni.us/apimanagement"
-    isbn: "1492043559"
-  stylish-fsharp:
-    title: "Stylish F#: Crafting Elegant Functional Code for .NET and .NET Core"
-    url: "https://geni.us/stylishfsharp"
-    isbn: "1484239997"
-  accelerate:
-    title: "Accelerate: The Science of Lean Software and DevOps: Building and Scaling High Performing Technology Organizations"
-    url: "https://geni.us/accelerate"
-    isbn: "1942788339"
-  building-evolutionary-architectures:
-    title: "Building Evolutionary Architectures"
-    url: "https://geni.us/evolutionary"
-    isbn: "1491986360"
   nojsyet1:
     title: "You Don't Know JS: Up & Going"
-    url: "https://geni.us/nojsyet1"
+    url: https://www.amazon.co.uk/You-Dont-Know-JS-Yet/dp/B084DFZ6GW?tag=drin04-20
     isbn: "1491924462"
-  nojsyet2:
-    title: "You Don't Know JS: Scope & Closures"
-    url: "https://geni.us/nojsyet2"
-    isbn: "1449335586"
+  releaseit:
+    title: Release It! 2nd Edition
+    url: https://www.amazon.co.uk/Release-Design-Deploy-Production-Ready-Software/dp/1680502395?tag=drin04-20
+    isbn: "1680502395"
+  leanstartup:
+    title: The Lean Startup
+    url: http://www.amazon.co.uk/dp/0307887898?tag=drin04-20
+    isbn: "0307887898"
+  gofdp:
+    title: 'Design patterns: elements of reusable object-oriented software'
+    url: http://www.amazon.co.uk/dp/0201633612?tag=drin04-20
+    isbn: "0201633612"
+  jsgoodparts:
+    title: 'JavaScript: The Good Parts'
+    url: http://www.amazon.co.uk/dp/0596517742?tag=drin04-20
+    isbn: "0596517742"
+  thebigswitch:
+    title: The Big Switch
+    url: http://www.amazon.co.uk/dp/0393333949?tag=drin04-20
+    isbn: 039334522X
+  refactoring:
+    title: 'Refactoring: Improving the Design of Existing Code (Object Technology Series)'
+    url: http://www.amazon.co.uk/dp/0201485672?tag=drin04-20
+    isbn: "0201485672"
+  codecomplete:
+    title: 'Code Complete: A Practical Handbook of Software Construction'
+    url: http://www.amazon.co.uk/dp/0735619670?tag=drin04-20
+    isbn: "0735619670"
+  domaindrivendesign:
+    title: 'Domain-Driven Design: Tackling Complexity in the Heart of Software'
+    url: https://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215?tag=drin04-20
+    imgid: 81W--zzdAhL
+  microservices:
+    title: 'Microservices: Flexible Software Architecture'
+    url: https://www.amazon.com/Microservices-Flexible-Architecture-Eberhard-Wolff/dp/0134602412?tag=drin04-20
+    isbn: "0134602412"
+  buildingmicroservices:
+    title: 'Building Microservices: Designing Fine-Grained Systems'
+    url: https://www.amazon.com/Building-Microservices-Designing-Fine-Grained-Systems/dp/1491950358?tag=drin04-20
+    isbn: "1491950358"
+  legacycode:
+    title: Working Effectively with Legacy Code
+    url: https://www.amazon.com/Working-Effectively-Legacy-Michael-Feathers/dp/0131177052?tag=drin04-20
+    isbn: "0131177052"
   nojsyet3:
     title: "You Don't Know JS: this & Object Prototypes"
-    url: "https://geni.us/nojsyet3"
+    url: https://www.amazon.co.uk/You-Dont-Know-JS-Prototypes/dp/1491904151?tag=drin04-20
     isbn: "1491904151"
-  nojsyet4:
-    title: "You Don't Know JS: Types & Grammar"
-    url: "https://geni.us/nojsyet4"
-    isbn: "1491904194"
+  aspnet-core-inaction:
+    title: ASP.NET Core in Action
+    url: https://www.amazon.co.uk/ASP-NET-Core-Action_p1-Andrew-Lock/dp/1617294616?tag=drin04-20
+    isbn: "1617294616"
+  streamingarch:
+    title: 'Streaming Architecture: New Designs Using Apache Kafka and MapR Streams'
+    url: https://www.amazon.com/Streaming-Architecture-Designs-Apache-Streams/dp/1491953926?tag=drin04-20
+    isbn: "1491953926"
   nojsyet5:
     title: "You Don't Know JS: Async & Performance"
-    url: "https://geni.us/nojsyet5"
+    url: https://www.amazon.co.uk/You-Dont-Know-JS-Performance/dp/1491904224?tag=drin04-20
     isbn: "1491904224"
+  accelerate:
+    title: 'Accelerate: The Science of Lean Software and DevOps: Building and Scaling High Performing Technology Organizations'
+    url: https://www.amazon.co.uk/Accelerate-Software-Performing-Technology-Organizations/dp/1942788339?tag=drin04-20
+    isbn: "1942788339"
+  functionalreactive:
+    title: Functional and Reactive Domain Modeling
+    url: https://www.amazon.com/Functional-Reactive-Domain-Modeling-Debasish/dp/1617292249?tag=drin04-20
+    isbn: "1617292249"
+  agileppp:
+    title: Agile Principles, Patterns, and Practices in C# (Robert C. Martin)
+    url: http://www.amazon.co.uk/dp/0131857258?tag=drin04-20
+    isbn: "0131857258"
+  steallikeanartist:
+    title: Steal Like An Artist
+    url: http://www.amazon.co.uk/dp/0761169253?tag=drin04-20
+    isbn: "0761169253"
+  cleancode:
+    title: 'Clean Code: A Handbook of Agile Software Craftsmanship'
+    url: http://www.amazon.co.uk/dp/0132350882?tag=drin04-20
+    isbn: "0132350882"
   nojsyet6:
     title: "You Don't Know JS: ES6 & Beyond"
-    url: "https://geni.us/nojsyet6"
+    url: https://www.amazon.co.uk/You-Dont-Know-JS-Beyond/dp/1491904240?tag=drin04-20
     isbn: "1491904240"
+  nojsyet4:
+    title: "You Don't Know JS: Types & Grammar"
+    url: https://www.amazon.co.uk/You-Dont-Know-JS-Yet/dp/B086GD45ZG?tag=drin04-20
+    isbn: "1491904194"
   keepgoing:
-    title: "Keep Going"
-    url: "https://geni.us/keepgoing"
+    title: Keep Going
+    url: https://www.amazon.co.uk/Keep-Going-Austin-Kleon/dp/1523506644?tag=drin04-20
     isbn: "1523506644"
+  theaccidentalcreative:
+    title: "The Accidental Creative: How to Be Brilliant at a Moment's Notice"
+    url: https://www.amazon.com/Accidental-Creative-Brilliant-Moments-Notice/dp/1591846242?tag=drin04-20
+    isbn: "1591846242"
+  madetostick-amazon:
+    title: 'Made to Stick: Why Some Ideas Survive and Others Die'
+    url: https://www.amazon.com/Made-Stick-Ideas-Survive-Others/dp/1400064287?tag=drin04-20
+    isbn: "1400064287"
+  peopleware:
+    title: 'Peopleware: Productive Projects and Teams (3rd Edition)'
+    url: https://www.amazon.com/Peopleware-Productive-Projects-Teams-3rd/dp/0321934113?tag=drin04-20
+    isbn: "0321934113"
+  dddericevans:
+    title: 'Domain-Driven Design: Tackling Complexity in the Heart of Software'
+    url: https://www.amazon.co.uk/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215?tag=drin04-20
+    isbn: "0321125215"
+  cleanarchitecture:
+    title: "Clean Architecture: A Craftsman's Guide to Software Structure and Design"
+    url: https://www.amazon.com/Clean-Architecture-Craftsmans-Software-Structure/dp/0134494164?tag=drin04-20
+    isbn: "0134494164"
+  accelerate-amazon:
+    title: 'Accelerate: The Science of Lean Software and DevOps: Building and Scaling High Performing Technology Organizations'
+    url: https://www.amazon.co.uk/Accelerate-Software-Performing-Technology-Organizations-ebook/dp/B07B9F83WM?tag=drin04-20
+    isbn: B07B9F83WM
+  onwritingwell-amazon:
+    title: 'On Writing Well, 30th Anniversary Edition: An Informal Guide to Writing Nonfiction'
+    url: https://www.amazon.co.uk/Writing-Well-30th-Anniversary-Nonfiction-ebook/dp/B0090RVGW0?tag=drin04-20
+    isbn: B0090RVGW0
+  nojsyet2:
+    title: "You Don't Know JS: Scope & Closures"
+    url: https://www.amazon.co.uk/You-Dont-Know-JS-Yet/dp/B086GD45ZG?tag=drin04-20
+    isbn: "1449335586"
+  interactiondesign:
+    title: Interaction Design
+    url: http://www.amazon.co.uk/dp/1119020751?tag=drin04-20
+    isbn: "1119020751"
+  smartandgetsthingsdone:
+    title: "Smart and Gets Things Done: Joel Spolsky's Concise Guide to Finding the Best Technical Talent"
+    url: https://www.amazon.com/Smart-Gets-Things-Done-Technical/dp/1590598385?tag=drin04-20
+    isbn: "1590598385"
+  building-evolutionary-architectures:
+    title: Building Evolutionary Architectures
+    url: https://www.amazon.co.uk/Building-Evolutionary-Architectures-Neal-Ford/dp/1491986360?tag=drin04-20
+    isbn: "1491986360"
+  careerguide:
+    title: The Complete Software Developer's Career Guide
+    url: https://www.amazon.com/Complete-Software-Developers-Career-Guide/dp/0999081411?tag=drin04-20
+    isbn: "0999081411"
+  effectiveusecases:
+    title: Writing Effective Use Cases
+    url: https://www.amazon.com/Writing-Effective-Cases-Alistair-Cockburn/dp/0201702258?tag=drin04-20
+    isbn: "0201702258"
+  thephoenix:
+    title: 'The Phoenix Project: A Novel about It, Devops, and Helping Your Business Win'
+    url: https://www.amazon.co.uk/Phoenix-Project-Devops-Helping-Business/dp/1942788290?tag=drin04-20
+    isbn: "1942788290"
+  userstoriesapplied:
+    title: 'User Stories Applied: For Agile Software Development'
+    url: https://www.amazon.com/User-Stories-Applied-Software-Development/dp/0321205685?tag=drin04-20
+    isbn: "0321205685"
+  continuous-api-management:
+    title: Continuous API Management
+    url: https://www.amazon.co.uk/Continuous-API-Management-Mehdi-Medjaoui/dp/1492043559?tag=drin04-20
+    isbn: "1492043559"
+  clrviacsharp:
+    title: CLR via C# (4th Edition) (Developer Reference)
+    url: https://www.amazon.com/CLR-via-4th-Developer-Reference/dp/0735667454?tag=drin04-20
+    isbn: "0735667454"
+  aspnetmvc5:
+    title: Pro ASP.Net MVC 5 (Expert's Voice in ASP.Net)
+    url: http://www.amazon.co.uk/dp/1430265299?tag=drin04-20
+    isbn: "1430265299"
+  pragmaticprogrammer:
+    title: 'The Pragmatic Programmer: 20th Anniversary Edition'
+    url: https://www.amazon.co.uk/Pragmatic-Programmer-journey-mastery-Anniversary/dp/0135957052?tag=drin04-20
+    isbn: "0135957052"
   managinghumans:
-    title: "Managing Humans: Biting and Humorous Tales of a Software Engineering Manager"
-    url: "https://geni.us/managinghumans"
+    title: 'Managing Humans: Biting and Humorous Tales of a Software Engineering Manager'
+    url: https://www.amazon.co.uk/Managing-Humans-Humorous-Software-Engineering/dp/1484221575?tag=drin04-20
     isbn: "1484221575"
-  cleanagile:
-    title: "Clean Agile: Back to Basics (Robert C. Martin)"
-    url: "https://geni.us/cleanagile-amazon"
-    isbn: "0135781868"
-  algostoliveby:
-    title: "Algorithms to live by"
-    url: "https://geni.us/algos-amazon"
-    isbn: "0007547994"
-  communicationforengineers:
-    title: "Communication for Engineers"
-    url: "https://geni.us/comms"
-    imgid: "618AcEIpzKL"
-  remote:
-    title: "Remote: Office not required"
-    url: "https://geni.us/remote-amazon"
-    isbn: "9780091954673"
+  fsharp3:
+    title: 'Programming F# 3.0: A Comprehensive Guide for Writing Simple Code to Solve Complex Problems'
+    url: https://www.amazon.co.uk/Programming-F-3-0-Chris-Smith/dp/1449320295?tag=drin04-20
+    isbn: "1449320295"
+  artofunittesting:
+    title: 'The Art of Unit Testing: with examples in C#'
+    url: https://www.amazon.com/Art-Unit-Testing-examples/dp/1617290890?tag=drin04-20
+    isbn: "1617290890"
+  dataintensive:
+    title: 'Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems'
+    url: https://www.amazon.com/Designing-Data-Intensive-Applications-Reliable-Maintainable/dp/1449373321?tag=drin04-20
+    isbn: "1449373321"
+  learnazure:
+    title: Learning Microsoft Azure
+    url: http://www.amazon.co.uk/dp/1782173374?tag=drin04-20
+    isbn: "1782173374"
+  showyourwork:
+    title: 'Show Your Work!: 10 Ways to Share Your Creativity and Get Discovered'
+    url: https://www.amazon.com/Show-Your-Work-Creativity-Discovered/dp/076117897X?tag=drin04-20
+    isbn: 076117897X
+  aspnetcoremvc:
+    title: Pro ASP.NET Core MVC
+    url: https://www.amazon.com/Pro-ASP-NET-Core-ADAM-FREEMAN/dp/1484203984?tag=drin04-20
+    isbn: "1484203984"
+  tao-amazon:
+    title: The Tao of Microservices
+    url: https://www.amazon.com/Tao-Microservices-Richard-Rodger/dp/1617293148?tag=drin04-20
+    isbn: "1617293148"
   habit:
-    title: "The Power of Habit"
-    url: "https://geni.us/GuOVF"
+    title: The Power of Habit
+    url: https://www.amazon.co.uk/Power-Habit-Why-What-Change/dp/1847946240?tag=drin04-20
     isbn: "1847946240"
+  realworldfp:
+    title: 'Real-World Functional Programming: With Examples in F# and C#'
+    url: https://www.amazon.com/Real-World-Functional-Programming-Tomas-Petricek/dp/1933988924?tag=drin04-20
+    isbn: "1933988924"
+  domain-modeling-made-functional:
+    title: Domain Modeling Made Functional
+    url: https://www.amazon.co.uk/Domain-Modeling-Made-Functional-Domain-Driven/dp/1680502549?tag=drin04-20
+    isbn: "1680502549"
+  97things:
+    title: 97 Things Every Programmer Should Know
+    url: http://www.amazon.co.uk/dp/0596809484?tag=drin04-20
+    isbn: "0596809484"
+  microservicespatterns:
+    title: 'Microservice Patterns: With examples in Java'
+    url: https://www.amazon.com/Microservices-Patterns-examples-Chris-Richardson/dp/1617294543?tag=drin04-20
+    isbn: "1617294543"
+  devops:
+    title: 'The Devops Handbook: How to Create World-Class Agility, Reliability, and Security in Technology Organizations'
+    url: https://www.amazon.com/DevOps-Handbook-World-Class-Reliability-Organizations/dp/1942788002?tag=drin04-20
+    isbn: "1942788002"
+  dotnetmicroservices:
+    title: '.NET Microservices: Architecture for Containerized .NET Applications'
+    url: https://docs.microsoft.com/en-us/dotnet/standard/microservices-architecture/
+    coverUrl: https://docs.microsoft.com/en-us/dotnet/standard/microservices-architecture/media/cover.png
+  communicationforengineers:
+    title: Communication for Engineers
+    url: https://www.amazon.co.uk/Communication-Engineers-developers-communicator-productivity/dp/B08W7SNN69?tag=drin04-20
+    imgid: 618AcEIpzKL
+  hfdesignpatterns:
+    title: Head First Design Patterns
+    url: http://www.amazon.co.uk/dp/0596007124?tag=drin04-20
+    isbn: "0596007124"
+  csharpindepth:
+    title: C# in Depth, 4th Edition
+    url: http://www.amazon.co.uk/dp/161729134X?tag=drin04-204e
+    isbn: "1617294535"
+  xunit:
+    title: 'xUnit Test Patterns: Refactoring Test Code'
+    url: https://www.amazon.com/xUnit-Test-Patterns-Refactoring-Code/dp/0131495054?tag=drin04-20
+    isbn: "0131495054"
+  cleanagile:
+    title: 'Clean Agile: Back to Basics (Robert C. Martin)'
+    url: https://www.amazon.co.uk/dp/0135781868?tag=drin04-20
+    isbn: "0135781868"
+  creativityincbook:
+    title: 'Creativity, Inc.: Overcoming the Unseen Forces That Stand in the Way of True Inspiration'
+    url: https://www.amazon.com/Creativity-Inc-Overcoming-Unseen-Inspiration/dp/0812993012?tag=drin04-20
+    isbn: "0593070097"
+  algostoliveby:
+    title: Algorithms to live by
+    url: https://www.amazon.co.uk/Algorithms-Live-Computer-Science-Decisions/dp/0007547994?tag=drin04-20
+    isbn: "0007547994"
+  remote:
+    title: 'Remote: Office not required'
+    url: https://www.amazon.co.uk/Remote-Required-David-Heinemeier-Hansson/dp/0091954673?tag=drin04-20
+    isbn: "9780091954673"
+  agiledev:
+    title: 'Practices of an Agile Developer: Working in the Real World (Pragmatic Bookshelf) (Pragmatic Programmers)'
+    url: https://www.amazon.co.uk/Practices-Agile-Developer-Pragmatic-Programmers/dp/097451408X?tag=drin04-20
+    isbn: 097451408X
+  fsharpforcsharpdevs:
+    title: F# for C# Developers (Developer Reference)
+    url: https://www.amazon.com/F-C-Developers-Developer-Reference/dp/0735670269?tag=drin04-20
+    isbn: "0735670269"
     
