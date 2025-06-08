@@ -1,8 +1,8 @@
 # Site settings
 title: DrinkBird
 email: tasos@drinkbird.com
-description: "Empowering Engineers to Lead"
-longdescription: "A software engineering blog by Tasos Piotopoulos"
+description: "Lead better, build better"
+longdescription: "An engineering leadership blog by Tasos Piotopoulos"
 baseurl: ""
 url: "https://blog.drinkbird.com"
 locale: en_US
