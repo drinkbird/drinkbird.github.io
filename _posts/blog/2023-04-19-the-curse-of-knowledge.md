@@ -20,11 +20,11 @@ reads:
   - thecleancoder
 ---
 
-Imagine trying to bake a cake. Now imagine doing that without a recipe, in a foreign language, and you're the only one who can taste it. Sounds like a herculean task, right? That's what software engineering often feels like when we're trying to communicate complex technical concepts. It's not just about navigating through the maze of technical jargon or diving deep into the intricate details of a project. The main culprit behind our struggles to express and understand these complexities is something known as the "Curse of Knowledge."
+Imagine trying to bake a cake. Now imagine doing that without a recipe, in a foreign language, and you're the only one who can taste it. Sounds like a herculean task, right? That's what software engineering often feels like when we're trying to communicate complex technical concepts. It's more than navigating through the maze of technical jargon or diving deep into the intricate details of a project. The main culprit behind our struggles to express and understand these complexities is something known as the "Curse of Knowledge."
 
 "Curse of Knowledge" might sound like something straight out of a Hogwarts textbook, but it's no magic trick. It's a cognitive bias that trips us up when we become so deeply entangled in our own expertise that we start assuming everyone else is on the same page. It's like a programmer talking in Python to someone who only understands Assembly or a project manager throwing around terms like 'agile', 'scrum', and 'backlog grooming' to the uninitiated.
 
-But the ‘Curse’ goes beyond causing communication hiccups; it's a hurdle that can significantly dampen our productivity. In this blog, we'll explore what the 'Curse of Knowledge' is, why it poses such a challenge in technical fields like software development, and how we can overcome it. Ready for the ride? Let's start by understanding how the 'Curse' manifests itself in our everyday life, and how we can recognize its traces in our communication.
+But the ‘Curse' goes beyond causing communication hiccups; it's a hurdle that can significantly dampen our productivity. In this blog, we'll explore what the 'Curse of Knowledge' is, why it poses such a challenge in technical fields like software development, and how we can overcome it. Ready for the ride? Let's start by understanding how the 'Curse' manifests itself in our everyday life, and how we can recognize its traces in our communication.
 
 ## Navigating Knowledge Labyrinths
 
@@ -36,7 +36,7 @@ Yet, for me and the rest of the team, his explanation felt more like a journey t
 
 In software development, such high-context communication is unfortunately commonplace. Discussions can often assume familiarity with advanced terminologies, specific project histories, and context that others may lack. As a result, even seasoned developers can find themselves feeling lost when thrust into a new project or technology.
 
-The implications of this communication hurdle are far from trivial. Misunderstandings or miscommunications can cause significant delays in project timelines, increase the error rate, and even result in incorrect solutions being developed. But it's not just the tangible impacts that matter. This 'Curse of Knowledge' can also spawn frustration, instill a sense of incompetence, and cause a breakdown in team morale.
+The implications of this communication hurdle are far from trivial. Misunderstandings or miscommunications can cause significant delays in project timelines, increase the error rate, and even result in incorrect solutions being developed. But it's not only the tangible impacts that matter. This 'Curse of Knowledge' can spawn frustration, instill a sense of incompetence, and cause a breakdown in team morale.
 
 To add to the complexity, internal documentation and wikis often suffer from the same curse. They are typically authored by experts who inadvertently assume a certain level of understanding or context from the reader. The shortcomings of these resources often surface at the most inconvenient times, like when someone else is trying to use the documentation to solve a problem or understand a process.
 
@@ -46,7 +46,7 @@ Understanding this context is crucial before we delve into potential solutions. 
 
 ## Cracking the Curse: The Stanford Experiment
 
-The 'Curse of Knowledge' isn't just a concept devised by a bunch of developers struggling to understand their team lead's sophisticated explanations. It's a well-documented cognitive bias, brought to light by a now-famous experiment conducted at Stanford University.
+The 'Curse of Knowledge' isn't a concept devised by a bunch of developers struggling to understand their team lead's sophisticated explanations. It's a well-documented cognitive bias, brought to light by a now-famous experiment conducted at Stanford University.
 
 In 1990, a group of Stanford University psychologists introduced a simple game. They split the participants into two roles: 'tappers' and 'listeners.' The 'tappers' would select a well-known song and tap out its rhythm. The 'listeners' then had to guess the song purely from the tapping rhythm.
 
@@ -112,7 +112,7 @@ These strategies are not exhaustive, but they provide a great starting point for
 
 ## Spreading the Antidote: Cultivating a Culture of Inclusive Knowledge
 
-The 'Curse of Knowledge' isn't just an individual problem; it permeates the organization. Hence, it’s not just about adopting the right strategies; it's about cultivating a culture that inherently encourages inclusive knowledge sharing. Here are a few cultural aspects that can help in this regard:
+The 'Curse of Knowledge' isn't an individual problem but permeates the organization. Hence, it's not as simple as adopting the right strategies but more about cultivating a culture that inherently encourages inclusive knowledge sharing. Here are a few cultural aspects that can help in this regard:
 
 *1) Psychological Safety*: Encourage a culture where team members feel safe expressing their thoughts, asking questions, and admitting mistakes. Psychological safety fosters open communication, allowing teams to collectively address the 'Curse of Knowledge.'
 
@@ -124,7 +124,7 @@ The 'Curse of Knowledge' isn't just an individual problem; it permeates the orga
 
 *5) Reward Transparency and Collaboration*: Recognize and reward team members who exemplify clear communication, collaboration, and transparency. This can motivate others to do the same.
 
-Remember, transforming culture isn’t an overnight process. It takes time, consistency, and patience. But by fostering a culture that inherently combats the 'Curse of Knowledge,' you can build a team that communicates effectively and inclusively, irrespective of the complexities they're tackling.
+Remember, transforming culture isn't an overnight process. It takes time, consistency, and patience. But by fostering a culture that inherently combats the 'Curse of Knowledge,' you can build a team that communicates effectively and inclusively, irrespective of the complexities they're tackling.
 
 ## Conclusion: Breaking the Curse, Together
 
