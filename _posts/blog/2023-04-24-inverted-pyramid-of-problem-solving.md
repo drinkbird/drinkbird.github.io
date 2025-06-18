@@ -28,7 +28,7 @@ The transition from college coding to professional software engineering was, how
 
 As I progressed through my career, I discovered that the journey of a software engineer isn't a flat line—it's an inverted pyramid. Picture a pyramid turned upside-down, each level representing a new stage in problem-solving maturity, with a widening scope of influence and impact as you ascend.
 
-## Stage 1: The Couch Potato — "I'll just wait here for instructions."
+## Stage 1: The Couch Potato - "I'll just wait here for instructions."
 
 ![The couch potato]({{ site.baseurl }}/images/invpyr-stage1.png)
 
@@ -40,13 +40,13 @@ However, while it's a necessary and often formative stage, the Couch Potato mode
 
 This stage has its value, though. It's where we all start, cutting our teeth on assigned tasks, learning the ropes, and becoming proficient in our chosen programming languages. We grow from these experiences, but to maximize our impact as software engineers, we must strive to evolve, to climb higher up the pyramid. And the first step towards doing that is to transform from a passive observer to a vigilant firefighter, which leads us to the next stage of our journey.
 
-## Stage 2: The Firefighter — "Houston, We Have a Problem."
+## Stage 2: The Firefighter - "Houston, We Have a Problem."
 
 ![The Firefighter]({{ site.baseurl }}/images/invpyr-stage2.png)
 
 As we ascend the inverted pyramid, we step into the "Firefighter" stage. Here, the challenges are akin to the unexpected flames a firefighter would face, appearing without warning and demanding immediate attention.
 
-In this stage, you're not just handed problems to solve. Instead, you organically identify potential issues, much like a firefighter looking out for smoke. It might be noticing a defect in your product or foreseeing an issue with your team's current course of action. This ability is built over time, as exposure to various challenges helps your limbic brain make connections, developing what you could call a "gut instinct" for problem detection.
+Your role at this stage involves more than solving assigned problems. You organically identify potential issues, much like a firefighter looking out for smoke. It might be noticing a defect in your product or foreseeing an issue with your team's current course of action. This ability is built over time, as exposure to various challenges helps your limbic brain make connections, developing what you could call a "gut instinct" for problem detection.
 
 The Firefighter stage calls for a shift from passive problem-solving to a proactive, problem-identifying approach. It demands analytical thinking, a keen understanding of the larger system, and the initiative to not only identify but also evaluate the severity of problems.
 
@@ -56,7 +56,7 @@ While this stage offers a broader impact than the Couch Potato stage, it has its
 
 This stage represents a substantial step in your growth as a software engineer, but it should not be your final destination. Yes, you're identifying problems now, but the next stage of our journey requires us to go one step further: from identifying problems to suggesting solutions, thus morphing us from firefighters to innovators.
 
-## Stage 3: The Innovator — "Here's what we can do."
+## Stage 3: The Innovator - "Here's what we can do."
 
 ![The Innovator]({{ site.baseurl }}/images/invpyr-stage3.png)
 
@@ -70,7 +70,7 @@ Now, your role takes on a more vibrant hue. You are proactively conceptualizing 
 
 But remember, the Innovator stage isn't the summit of our pyramid. It's a critical leap forward, but there's still more to aspire to. There's a stage above that requires us to think strategically and present various solutions for a single problem, marking our evolution into true strategists. Let's keep climbing!
 
-## Stage 4: The Strategist — "Here are a few ways we can approach this."
+## Stage 4: The Strategist - "Here are a few ways we can approach this."
 
 ![The Strategist]({{ site.baseurl }}/images/invpyr-stage4.png)
 
@@ -84,7 +84,7 @@ While this stage requires a deeper understanding of the system, it's not about b
 
 This approach undoubtedly enriches the problem-solving process and improves the team's collective decision-making. But we're not done yet. Now, let's take the final step to reach the apex of our pyramid, where we blend conviction with flexibility and truly become visionaries.
 
-## Stage 5: The Visionary — "I believe this is our best way forward, but let's discuss."
+## Stage 5: The Visionary - "I believe this is our best way forward, but let's discuss."
 
 ![The Visionary]({{ site.baseurl }}/images/invpyr-stage5.png)
 
@@ -98,7 +98,7 @@ Having a preference and advocating for it shows that you've considered the diffe
 
 This approach fosters an environment where the best ideas win, decisions are made collectively, and everyone feels heard and invested in the outcome. However, remember that reaching the Visionary stage doesn't mean your journey is over. Climbing to the top of the pyramid is not the only goal. Maintaining your position and continuing to develop your skills is the desired destination. You may oscillate between stages, or find new heights to explore. The key is to keep evolving, keep learning, and keep contributing to your team's success.
 
-## Bonus Stage: The Thought-Provoker — "Here's a problem. What do you think we should do about this?"
+## Bonus Stage: The Thought-Provoker - "Here's a problem. What do you think we should do about this?"
 
 ![The Thought-Provoker]({{ site.baseurl }}/images/invpyr-stage6.png)
 
