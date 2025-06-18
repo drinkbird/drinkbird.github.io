@@ -22,23 +22,23 @@ reads:
 
 About two decades ago, I was just a college student who found immense pleasure in crafting lines of code during my free time. A chance encounter with a friend led to a recommendation, and before I knew it, I had bagged my first software engineering job. The thought of transforming my hobby into a career felt akin to the excitement of unboxing a new gadget or stumbling upon a shortcut in your favorite video game. It was a rush of emotions - curiosity, anticipation, and a hint of stage fright.
 
-After all, at its core, the art of software engineering is about problem-solving – taking a complex issue, breaking it down into manageable parts, and crafting an elegant solution. As I quickly discovered, this process rarely involves simply following a list of predefined instructions.
+After all, at its core, the art of software engineering is about problem-solving - taking a complex issue, breaking it down into manageable parts, and crafting an elegant solution. As I quickly discovered, this process rarely involves simply following a list of predefined instructions.
 
 The transition from college coding to professional software engineering was, however, much rougher than a game of Flappy Bird. At the outset, I expected the company to spoon-feed me tasks and solutions to implement, following the classic 'monkey see, monkey do' approach. Little did I know, I was in for a surprise.
 
 As I progressed through my career, I discovered that the journey of a software engineer isn't a flat line—it's an inverted pyramid. Picture a pyramid turned upside-down, each level representing a new stage in problem-solving maturity, with a widening scope of influence and impact as you ascend.
 
-## Stage 1: The Couch Potato — "I’ll just wait here for instructions."
+## Stage 1: The Couch Potato — "I'll just wait here for instructions."
 
 ![The couch potato]({{ site.baseurl }}/images/invpyr-stage1.png)
 
 Now, reflecting back, I recognize that I started my career in what I now affectionately call the "Couch Potato" stage. Here, much like a couch potato flipping through channels, I passively waited for my superiors to feed me tasks and tell me how to perform them.
 
-There's an undeniable simplicity to this stage, a comfort in its clarity. It is a stage where you're given a problem with its solution, and your mission is to execute it as skillfully as possible. In this stage, the emphasis is on refining technical skills and learning to implement solutions effectively. There's something satisfying about this mode of work, it’s similar to solving a puzzle where all the pieces are given to you, and your job is to assemble them.
+There's an undeniable simplicity to this stage, a comfort in its clarity. It is a stage where you're given a problem with its solution, and your mission is to execute it as skillfully as possible. In this stage, the emphasis is on refining technical skills and learning to implement solutions effectively. There's something satisfying about this mode of work, it's similar to solving a puzzle where all the pieces are given to you, and your job is to assemble them.
 
-However, while it’s a necessary and often formative stage, the Couch Potato mode isn't without its limitations. Staying in this stage can curtail your growth, keeping you boxed into a reactive role. It limits your potential influence and impact, turning you into a passive player on the team rather than an active contributor.
+However, while it's a necessary and often formative stage, the Couch Potato mode isn't without its limitations. Staying in this stage can curtail your growth, keeping you boxed into a reactive role. It limits your potential influence and impact, turning you into a passive player on the team rather than an active contributor.
 
-This stage has its value, though. It’s where we all start, cutting our teeth on assigned tasks, learning the ropes, and becoming proficient in our chosen programming languages. We grow from these experiences, but to maximize our impact as software engineers, we must strive to evolve, to climb higher up the pyramid. And the first step towards doing that is to transform from a passive observer to a vigilant firefighter, which leads us to the next stage of our journey.
+This stage has its value, though. It's where we all start, cutting our teeth on assigned tasks, learning the ropes, and becoming proficient in our chosen programming languages. We grow from these experiences, but to maximize our impact as software engineers, we must strive to evolve, to climb higher up the pyramid. And the first step towards doing that is to transform from a passive observer to a vigilant firefighter, which leads us to the next stage of our journey.
 
 ## Stage 2: The Firefighter — "Houston, We Have a Problem."
 
@@ -46,7 +46,7 @@ This stage has its value, though. It’s where we all start, cutting our teeth o
 
 As we ascend the inverted pyramid, we step into the "Firefighter" stage. Here, the challenges are akin to the unexpected flames a firefighter would face, appearing without warning and demanding immediate attention.
 
-In this stage, you're not just handed problems to solve. Instead, you organically identify potential issues, much like a firefighter looking out for smoke. It might be noticing a defect in your product or foreseeing an issue with your team’s current course of action. This ability is built over time, as exposure to various challenges helps your limbic brain make connections, developing what you could call a "gut instinct" for problem detection.
+In this stage, you're not just handed problems to solve. Instead, you organically identify potential issues, much like a firefighter looking out for smoke. It might be noticing a defect in your product or foreseeing an issue with your team's current course of action. This ability is built over time, as exposure to various challenges helps your limbic brain make connections, developing what you could call a "gut instinct" for problem detection.
 
 The Firefighter stage calls for a shift from passive problem-solving to a proactive, problem-identifying approach. It demands analytical thinking, a keen understanding of the larger system, and the initiative to not only identify but also evaluate the severity of problems.
 
@@ -62,11 +62,11 @@ This stage represents a substantial step in your growth as a software engineer, 
 
 At this juncture on our inverted pyramid, we encounter what I dub as the "Innovator" stage. This stage is the stepping stone to transforming from a problem-pointer to a problem-solver.
 
-You might have come across the saying, “Don’t come to me with problems, come with solutions.”. Sure, if this statement is a recurring theme at your workplace, it may be time to spruce up your LinkedIn profile. However, hidden within this oft-misused sentiment lies an essential progression in our problem-solving journey: the pivot from identifying issues to proposing solutions.
+You might have come across the saying, “Don't come to me with problems, come with solutions.”. Sure, if this statement is a recurring theme at your workplace, it may be time to spruce up your LinkedIn profile. However, hidden within this oft-misused sentiment lies an essential progression in our problem-solving journey: the pivot from identifying issues to proposing solutions.
 
-As an Innovator, you're not only adept at spotting issues, but you're also comfortable enough with the system to propose at least one viable solution for every problem you identify. You aren't just pointing out the defects or hurdles; instead, you're actively involved in thinking about and suggesting ways to tackle these issues.
+As an Innovator, you're not only adept at spotting issues, but you're also comfortable enough with the system to propose at least one viable solution for every problem you identify. Instead of pointing out the defects or hurdles, you're actively involved in thinking about and suggesting ways to tackle these issues.
 
-Now, your role takes on a more vibrant hue. You are not just reacting to problems but proactively conceptualizing strategies. You use your skills and your familiarity with the system to anticipate problems and design solutions, understanding their potential impact.
+Now, your role takes on a more vibrant hue. You are proactively conceptualizing strategies instead of merely reacting to problems. You use your skills and your familiarity with the system to anticipate problems and design solutions, understanding their potential impact.
 
 But remember, the Innovator stage isn't the summit of our pyramid. It's a critical leap forward, but there's still more to aspire to. There's a stage above that requires us to think strategically and present various solutions for a single problem, marking our evolution into true strategists. Let's keep climbing!
 
@@ -84,11 +84,11 @@ While this stage requires a deeper understanding of the system, it's not about b
 
 This approach undoubtedly enriches the problem-solving process and improves the team's collective decision-making. But we're not done yet. Now, let's take the final step to reach the apex of our pyramid, where we blend conviction with flexibility and truly become visionaries.
 
-## Stage 5: The Visionary — "I believe this is our best way forward, but let’s discuss."
+## Stage 5: The Visionary — "I believe this is our best way forward, but let's discuss."
 
 ![The Visionary]({{ site.baseurl }}/images/invpyr-stage5.png)
 
-At last, we have arrived at the pinnacle of our inverted pyramid – the "Visionary" stage. In the immortal words of Spock from Star Trek, “Change is the essential process of all existence.” As a Visionary, you've mastered the art of balancing conviction with flexibility. You propose multiple solutions to problems, understand their trade-offs, have a clear preference for one, and can effectively advocate for it. Still, you remain open to other perspectives, willing to adjust your preference if a more compelling solution emerges from the discussion.
+At last, we have arrived at the pinnacle of our inverted pyramid - the "Visionary" stage. In the immortal words of Spock from Star Trek, “Change is the essential process of all existence.” As a Visionary, you've mastered the art of balancing conviction with flexibility. You propose multiple solutions to problems, understand their trade-offs, have a clear preference for one, and can effectively advocate for it. Still, you remain open to other perspectives, willing to adjust your preference if a more compelling solution emerges from the discussion.
 
 This stage embodies the epitome of impactful problem-solving. Here, you are not only a problem identifier, a solution generator, or a strategy presenter, but you also serve as a thoughtful leader, guiding the decision-making process.
 
@@ -96,7 +96,7 @@ Imagine being a guide leading a team up a challenging mountain trail. You've don
 
 Having a preference and advocating for it shows that you've considered the different options, compared their trade-offs, and formed a reasoned judgment about the best course of action. It also means you're ready to take responsibility for the decision. Yet, the willingness to change your mind highlights your humility and recognition of the collective wisdom of the team.
 
-This approach fosters an environment where the best ideas win, decisions are made collectively, and everyone feels heard and invested in the outcome. However, remember that reaching the Visionary stage doesn't mean your journey is over. The inverted pyramid of problem-solving isn't just about climbing to the top, but also about maintaining your position and continuing to develop your skills. You may oscillate between stages, or find new heights to explore. The key is to keep evolving, keep learning, and keep contributing to your team's success.
+This approach fosters an environment where the best ideas win, decisions are made collectively, and everyone feels heard and invested in the outcome. However, remember that reaching the Visionary stage doesn't mean your journey is over. Climbing to the top of the pyramid is not the only goal. Maintaining your position and continuing to develop your skills is the desired destination. You may oscillate between stages, or find new heights to explore. The key is to keep evolving, keep learning, and keep contributing to your team's success.
 
 ## Bonus Stage: The Thought-Provoker — "Here's a problem. What do you think we should do about this?"
 
@@ -108,7 +108,7 @@ During these moments, it's easy to feel like we've tumbled down the pyramid, rig
 
 What makes the difference is a simple yet powerful follow-up question: "What do you think we should do about this?" By asking this question, you're doing two important things. First, you're acknowledging the problem and indicating your intention to address it, rather than simply pointing it out. Second, you're inviting collaboration, fostering a shared sense of responsibility, and empowering others to contribute to the solution.
 
-This isn't just a way to save face when you're drawing a blank. It's a genuine strategy for problem-solving, one that recognizes the power of collective thinking and the value of diverse perspectives. Plus, it changes the dynamic of the conversation. You're no longer just the one who's good at pointing out problems, but the one who actively seeks to solve them and encourages others to do the same.
+Although this approach could help you save face when you're drawing a blank, it's also a genuine strategy for problem-solving, one that recognizes the power of collective thinking and the value of diverse perspectives. Plus, it changes the dynamic of the conversation. You're no longer the one who's only good at pointing out problems, but the one who actively seeks to solve them and encourages others to do the same.
 
 So the next time you encounter a problem that leaves you scratching your head, remember the Thought-Provoker stage. Use it as an opportunity to engage your colleagues in a dialogue and collaboratively find the way forward. After all, problem-solving is a team sport, and the best victories are the ones we achieve together.
 
@@ -118,7 +118,7 @@ So the next time you encounter a problem that leaves you scratching your head, r
 
 From a novice "Couch Potato" to a decisive "Visionary" and a "Thought-Provoker", the journey of a software engineer is a transformative adventure, marked by continuous growth and evolving problem-solving skills. The inverted pyramid of problem-solving illustrates this progression, shedding light on the different stages of maturity and their corresponding roles and responsibilities.
 
-But remember, this pyramid is not a rigid ladder with fixed steps. It's an evolving framework, a compass that helps guide your journey. It's natural to oscillate between stages or discover new ones along the way. What's important is that you continue to strive for growth, both as an individual and a team member. After all, problem-solving isn't just about having the right answers. It's about asking the right questions, fostering collaboration, and continually learning and adapting.
+But remember, this pyramid is not a rigid ladder with fixed steps. It's an evolving framework, a compass that helps guide your journey. It's natural to oscillate between stages or discover new ones along the way. What's important is that you continue to strive for growth, both as an individual and a team member. After all, problem-solving isn't only about having the right answers. It's about asking the right questions and fostering collaboration, while continuously learning and adapting.
 
 Moreover, don't forget the power of the "Thought-Provoker" stage, a secret weapon that can be unleashed when faced with a challenging problem. It reminds us that we don't always have to have all the answers. Instead, inviting others to share their perspectives and collaborate in the problem-solving process can lead to more effective and inclusive solutions.
 
