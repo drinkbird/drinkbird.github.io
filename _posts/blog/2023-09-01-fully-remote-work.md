@@ -48,7 +48,7 @@ What does this mean for you as an engineer considering a remote setting? Over th
 
 ## 1. Crafting your home office: The foundation of remote work
 
-A dedicated home office sets the stage for remote work success. The goal? A room of your own, complete with a door to shut out distractions and create a concentration haven. Not just a space but a sanctuary designed to amplify your work and well-being.
+A dedicated home office sets the stage for remote work success. The goal? A room of your own, complete with a door to shut out distractions and create a concentration haven. Not a simple space but a sanctuary designed to amplify your work and well-being.
 
 Configuring your space is an act of aligning ergonomics and comfort with productivity. You don't have to break the bank to make your workspace functional and inspiring, and certainly what I describe here is the ideal state. If you have the resources, spare no expense, as the investment will pay back for itself in no time. Here's a pragmatic rundown on gear that can make a substantial difference in your daily grind:
 
@@ -88,7 +88,7 @@ Fostering a high-trust environment is key. Starting with a default trust in your
 
 ### The living document: Shared docs for sync and async
 
-Leverage shared documents to enhance both synchronous and asynchronous communication. For individual discussions, keep a live, shared document with each teammate. Before your meetings, both of you can drop agenda items into this "living agenda." During the conversation, capture key takeaways in real-time; doing it on the spot, not after, elevates the quality of communication. Extend this practice to group settings too, like your weekly team sync or project updates. Make these documents accessible to everyone involved. Transparency isn't just a buzzword; it's a trust-builder. Create these docs even before a project kicks off and work in the open. It's a win-win: your team gains insights while having the opportunity to contribute early on, and trust within the group skyrockets.
+Leverage shared documents to enhance both synchronous and asynchronous communication. For individual discussions, keep a live, shared document with each teammate. Before your meetings, both of you can drop agenda items into this "living agenda." During the conversation, capture key takeaways in real-time; doing it on the spot, not after, elevates the quality of communication. Extend this practice to group settings too, like your weekly team sync or project updates. Make these documents accessible to everyone involved. Transparency is more than a buzzword: it's a trust-builder. Create these docs even before a project kicks off and work in the open. It's a win-win: your team gains insights while having the opportunity to contribute early on, and trust within the group skyrockets.
 
 ### Cut the noise: Assumption verification documents
 
@@ -100,7 +100,7 @@ To really hit the nail on the head on engineering communication, you've got to b
 
 ### The professional's mini guide to A+ video conferencing
 
-Quality audio and video don't just project professionalism; they also reduce distractions and help conversations be more productive. Now, about that camera - position it at eye level to avoid that unflattering up-the-nose angle and to keep your posture in check. That's also why a laptop built-in cam won't cut it here. And for a real pro move in 1:1s, switch off your self-view during calls to make the interaction feel more genuine. How to maintain the illusion of eye contact? Position two small windows just beneath your camera: one for the meeting's shared notes document and the other for your colleague's video feed. Boom!
+Quality audio and video project professionalism, reduce distractions and help conversations be more productive. Now, about that camera - position it at eye level to avoid that unflattering up-the-nose angle and to keep your posture in check. That's also why a laptop built-in cam won't cut it here. And for a real pro move in 1:1s, switch off your self-view during calls to make the interaction feel more genuine. How to maintain the illusion of eye contact? Position two small windows just beneath your camera: one for the meeting's shared notes document and the other for your colleague's video feed. Boom!
 
 Now, how's that for nailing the lingua franca of remote engineering?
 
@@ -133,7 +133,7 @@ The fuzzy borders between work and personal time in a remote setting make it ess
 
 Transparency is crucial when working remotely. If you’re unsure about task prioritisation, consult your manager for guidance. Keep your team in the loop about your weekly capacity and clearly state what can be realistically achieved. This involves being explicit when tasks need to be deprioritised or dropped. Be aware of who's waiting for what, and manage expectations accordingly. Remember, capturing context and decisions in shared documents is a game changer for delivering quality results predictably. Knowing how to manage and communicate about priorities doesn't just make you a disciplined individual but a dependable team member.
 
-Organisational management is not just a personal productivity hack; it's a professional requirement in the remote work landscape. And your time is irreplaceable, so "don't just count the hours; make the hours count!"
+Organisational management is not just a personal productivity hack; it's a professional requirement in the remote work landscape. And your time is irreplaceable, so "Don't just count the hours. Make the hours count!"
 
 ![Presenting about Productivity and the Pomodoro technique at University College Dublin]({{ site.baseurl }}/images/remote-3.png)
 *Presenting about Productivity and the Pomodoro technique at University College Dublin*
@@ -169,7 +169,7 @@ In remote work, being close doesn't mean being near; it means being there. Show 
 
 ## Conclusion
 
-So there you have it - a playbook for remote work, from setting up your digital dojo to building relationships so solid you'd think they were built by LEGO. But hey, even if you're an office aficionado, these tips are just as crucial if your colleagues are remote, whether they're in different time zones or just another floor of your skyscraper-sized office. As we tread further into this digital era, 'remote' is less a place and more a state of work. Being able to effectively communicate, manage your time, and build relationships across screens and miles is not just a remote work skill; it's a 21st-century work skill.
+So there you have it - a playbook for remote work, from setting up your digital dojo to building relationships so solid you'd think they were built by LEGO. But hey, even if you're an office aficionado, these tips are just as crucial if your colleagues are remote, whether they're in different time zones or just another floor of your skyscraper-sized office. As we tread further into this digital era, 'remote' is less a place and more a state of work. Being able to effectively communicate, manage your time, and build relationships across screens and miles is a top 21st-century work skillset.
 
-If this guide was as helpful as that first sip of Monday morning coffee, don't keep it to yourself. Share it, tweet it, slack it - spread the love, folks. Until next time,
+If this guide was as helpful as that first sip of Monday morning coffee, don't keep it to yourself. Share it and spread the love folks. Until next time,
 Tasos
