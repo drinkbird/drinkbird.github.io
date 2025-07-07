@@ -20,11 +20,7 @@ reads:
   - codecomplete
   - pragmaticprogrammer
   - agiledev
-  - leanstartup
-  - careerguide
   - legacycode
-  - effectiveusecases
-  - userstoriesapplied
 ---
 
 It always starts quietly enough. One team takes on the customer portal, another handles authentication, and somewhere a platform group builds tools that nobody explicitly requested, but everyone will eventually need. As time passes, these boundaries between teams harden and become visible seams in the system itself. Communication flows smoothly within each unit, but it slows and sometimes stalls at the edges. The evidence appears in duplicated integrations, mismatched naming, critical paths that wind through multiple teams, and a growing backlog of cross-team handoffs that never seems to shrink.

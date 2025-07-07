@@ -166,7 +166,7 @@ Given how central behavior is to team effectiveness, what's one puzzling challen
 
 Remember that OB isn't about memorizing theories, but rather about building a habit of thoughtful observation and evidence-based action. It is essential knowledge for everyone who works for, with or leads other people today. And it doesn't promise easy answers, but it does offer a framework for asking better questions, which often is where real progress begins.
 
-In upcoming posts, I'll dig into several OB topics like why Conway's Law means your org chart might be your biggest architectural constraint, how psychological safety can turn code reviews from battlegrounds into growth sessions, what really fuels (or kills) engineering motivation, and why OB is more critical than ever in the age of AI. Writing these is part of my own ongoing effort to debug my own leadership and level up, and I hope you'll learn alongside me.
+In upcoming posts, I'll dig into several OB topics like [why Conway's Law means your org chart might be your biggest architectural constraint](https://blog.drinkbird.com/conways-law/), how psychological safety can turn code reviews from battlegrounds into growth sessions, what really fuels (or kills) engineering motivation, and why OB is more critical than ever in the age of AI. Writing these is part of my own ongoing effort to debug my own leadership and level up, and I hope you'll learn alongside me.
 
 So, which OB challenge do you want to tackle first in your environment?
 
