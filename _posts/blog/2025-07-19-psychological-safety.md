@@ -39,7 +39,7 @@ Fear breeds compliance, but engineering isn't compliance work.
 
 # What effective engineering actually requires
 
-Engineering is a decision-making discipline. Should we trade long-term maintainability for short-term delivery? Should we tolerate ambiguity in the spec or push for clarity? What level of testing matches the risk? These aren't mechanical tasks and rely on judgment.
+Engineering is a decision-making discipline shaped by ambiguity. Should we trade long-term maintainability for short-term delivery? Should we tolerate gaps in the spec or push for clarity? What level of testing matches the risk? These aren't mechanical tasks and call for judgment under uncertainty.
 
 That judgment directly depends on *psychological safety*, defined in {% include link.html title="Amy Edmondson's The Fearless Organization" tag="thefearlessorg" %} as *the shared belief that it's safe to speak up*. It's not a personal trait, but rather a team norm that enables people to challenge plans, admit risks and flag uncertainty before it becomes debt.
 
