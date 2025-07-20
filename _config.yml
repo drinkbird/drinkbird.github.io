@@ -364,6 +364,7 @@ reads:
   remote:
     title: 'Remote: Office not required'
     url: https://www.amazon.co.uk/Remote-Required-David-Heinemeier-Hansson/dp/0091954673?tag=drin04-20
+    coverUrl: https://m.media-amazon.com/images/I/71Z6P7HnsgL._SY522_.jpg
     isbn: "9780091954673"
   agiledev:
     title: 'Practices of an Agile Developer: Working in the Real World (Pragmatic Bookshelf) (Pragmatic Programmers)'
@@ -373,4 +374,11 @@ reads:
     title: F# for C# Developers (Developer Reference)
     url: https://www.amazon.com/F-C-Developers-Developer-Reference/dp/0735670269?tag=drin04-20
     isbn: "0735670269"
-    
+  radicalcandor:
+    title: "Radical Candor: Be a Kick-Ass Boss Without Losing Your Humanity"
+    url: https://www.amazon.com/Radical-Candor-Revised-Kick-Ass-Humanity/dp/1250235375?tag=drin04-20
+    isbn: "1250235375"
+  thefearlessorg:
+    title: "The Fearless Organization: Creating Psychological Safety in the Workplace for Learning, Innovation, and Growth"
+    url: https://www.amazon.com/Fearless-Organization-Psychological-Workplace-Innovation/dp/1119477247?tag=drin04-20
+    isbn: "1119477247"

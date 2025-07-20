@@ -1,5 +1,5 @@
 <div class="amz-widget">
-{% if book.url contains "geni.us" %}
+{% if book.url contains "amazon.com" %}
     <a target="_blank" href="{{ book.url }}" class="" aria-label="View '{{ book.title }}' on Amazon">
 {% else %}
     <a target="_blank" href="{{ book.url }}" class="" aria-label="View '{{ book.title }}'">
@@ -17,7 +17,7 @@
         </div>
         <div class="amz-widget-body">
             <div class="amz-widget-product-name">
-            {% if book.url contains "geni.us" %}
+            {% if book.url contains "amazon.com" %}
                 View '{{ book.title }}' on Amazon
             {% else %}
                 View '{{ book.title }}'
