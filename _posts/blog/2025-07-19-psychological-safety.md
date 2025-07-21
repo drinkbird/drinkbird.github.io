@@ -17,8 +17,6 @@ reads:
   - accelerate-amazon
   - communicationforengineers
   - agiledev
-  - softskills
-  - remote
   - thefearlessorg
   - radicalcandor
   - turntheshiparound
