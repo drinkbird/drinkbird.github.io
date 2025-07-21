@@ -1,1 +1,9 @@
-{% if include.url contains "geni.us" %}<a target="_blank" href="{{ include.url }}" title="View '{{ include.title }}' on Amazon (affiliate link)" aria-label="View '{{ include.title }}' on Amazon (affiliate link)">{{ include.title }} <small>(Amazon affiliate link)</small></a>{% else %}<a target="_blank" href="{{ include.url }}" title="View '{{ include.title }}'" aria-label="View '{{ include.title }}'">{{ include.title }}</a>{% endif %}
+{% assign include_url = include.url %}{% if include.tag %}
+  {% if site.reads[include.tag] %}
+    {% assign include_url = site.reads[include.tag].url %}
+  {% endif %}
+{% endif %}{% if include_url contains "amazon.com" %}
+<a target="_blank" href="{{ include_url }}" title="View '{{ include.title }}' on Amazon (affiliate link)" aria-label="View '{{ include.title }}' on Amazon (affiliate link)">{{ include.title }} <small>(Amazon affiliate link)</small></a>
+{% else %}
+<a target="_blank" href="{{ include_url }}" title="View '{{ include.title }}'" aria-label="View '{{ include.title }}'">{{ include.title }}</a>
+{% endif %}
