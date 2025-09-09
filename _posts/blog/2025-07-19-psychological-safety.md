@@ -63,7 +63,7 @@ Sometimes the stress is self-imposed, shaped by past experiences, role ambiguity
 
 ## What fear-based leadership looks like (and why it fails)
 
-Fear-based leadership is often mistaken for decisiveness. Teams stop pushing back and eadlines are met with nods instead of nuance. In such a toxic environment overtime gets rewarded while burnout is reframed as grit.
+Fear-based leadership is often mistaken for decisiveness. Teams stop pushing back and deadlines are met with nods instead of nuance. In such a toxic environment overtime gets rewarded while burnout is reframed as grit.
 
 But fear is dysfunction, not firmness. When leaders create or tolerate fear, they lose access to the most valuable part of the team, which is its ability to spot problems early, challenge assumptions, and propose better ways forward.
 
