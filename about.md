@@ -4,28 +4,26 @@ title: About
 permalink: /about/
 page-key: about
 image:
-  feature: about_google2.jpg
+  feature: about_ontherock.jpg
 ---
 
 ### Background
 
-Hello, I'm Tasos Piotopoulos! As a Lead Software Engineer, I function as a force multiplier for software delivery teams. My multifaceted role encompasses hands-on coding, steering technical architecture, and guiding engineers to achieve their fullest potential. Since entering the tech scene in 2005, I've tackled complex challenges and delivered high-quality solutions across a diverse set of industries. But my efforts go beyond just the technical aspects; I'm deeply invested in developing professionals in both their hard and soft skills.
+Hello, I'm Tasos Piotopoulos. I am a Lead Software Engineer focused on building teams that deliver better software. My work blends hands-on coding, technical architecture and mentoring engineers so they can thrive in their craft and careers. Since 2005, I have worked in diverse industries, shaping systems and teams that create measurable business value while growing the people behind them.
 
-Leading engineering teams of various sizes, I've overseen technology projects that have either saved or generated tens of millions of dollars for businesses ranging from startups to Fortune 500 companies. Armed with a Master's degree in Software Engineering and Distributed Systems from University College Dublin, I also apply academic rigor to tackle real-world problems.
+I have led engineering teams of different sizes and guided projects that generated or saved tens of millions of dollars for organizations from startups to Fortune 500 companies. My academic foundation includes a Master's in Software Engineering and Distributed Systems from University College Dublin, and I am currently pursuing an MBA at Frederick University Cyprus. This combination of technical and business studies helps me bridge engineering excellence with organizational impact.
 
-In terms of technical expertise, my skill set spans Cloud-Native Distributed Systems, Site Reliability Engineering, and DevOps practices. Throughout my career, I've been hands-on with multiple programming languages such as Scala, Java, F#, and C#, and familiarized myself with key tools and platforms like Azure, GCP, AWS, MongoDB Atlas, Kafka, Docker, and Kubernetes.
+My technical experience spans cloud-native distributed systems, SRE, and DevOps. Over the years, I have mostly worked with Java, Scala, C#, F#, and Python, and built solutions on Azure, GCP, AWS, and Kubernetes, often integrating platforms such as MongoDB Atlas, Kafka, and Docker.
 
-But the quest for growth isn't solely a personal mission; I aim to uplift others along the way. Through blogging, creating online courses, hosting tech meet-ups, and speaking at various platforms, I'm committed to sharing valuable insights and experiences. Let's connect and learn together. Find me here on [drinkbird.com](https://blog.drinkbird.com) or on [LinkedIn](https://linkedin.com/in/piotopoulos).
+I believe growth is best when shared. Through blogging, teaching, organizing meetups and public speaking, I aim to pass on what I have learned and keep learning from others. You can find me on [drinkbird.com](https://blog.drinkbird.com) or [LinkedIn](https://linkedin.com/in/piotopoulos).
 
 ### What is this blog about?
 
-The tech landscape is not just about code; it's about leadership, too. You don't have to choose between being a great engineer and an inspiring leader — you can be both. In a profession where speed often trumps quality and shortcuts are the norm, it's easy to lose sight of the bigger picture. And all too often, we find ourselves mired in technical debt, team burnout, and dwindling productivity.
+The tech landscape is driven by code and leadership. You don't have to choose between being a great engineer and an inspiring leader. You can be both! In a profession where speed often trumps quality and shortcuts are the norm, it's easy to lose sight of the bigger picture. Technical debt and burnout are challenges we find ourselves facing again and again.
 
 This stops here.
 
-Welcome to a blog dedicated to empowering engineers to lead, in code and in character. Here, you'll find not just tutorials and technical guides but also advice on soft skills, leadership, and career growth. Whether you're a new graduate or a seasoned pro, there's something here to help you level up both your technical expertise and your ability to inspire and guide a team.
-
-Your transformation into a tech leader starts now. Ready to join the journey? You're in the right place.
+This blog explores engineering leadership through both code and collaboration. The goal is to show that technical excellence and people leadership are not separate paths. Here you will find tutorials, technical deep dives and reflections on soft skills, leadership and career growth. Whether you are starting your career or guiding a team of your own, my aim is to help you grow as both an engineer and a leader.
 
 <ul class="list-inline gallery">
     <li>
@@ -62,22 +60,20 @@ Your transformation into a tech leader starts now. Ready to join the journey? Yo
 
 ## Academic Credentials
 
-I have a Master's degree in Software Engineering and Distributed Systems from University College Dublin, where I graduated with first-class honours. I also have a B.Sc. in Computer and Telecommunications Engineering from the Technological Educational Institute of Thessaly, graduating with first-class honours.
+I have a Master's degree in Software Engineering and Distributed Systems from University College Dublin, where I graduated with first-class honours. I also have a B.Sc. in Computer and Telecommunications Engineering from the Technological Educational Institute of Thessaly, graduating with first-class honours. Currently, I'm an MBA candidate at Frederick University Cyprus.
 
 ## Why DrinkBird?
 
-It's not just a catchy name. It's a nod to my Greek heritage and translates my last name into English.
+The name is more than something that sounds playful. It comes from my Greek heritage and is a literal English translation of my last name.
 
 ## Disclaimer
 
-The views and opinions on this blog are solely mine and do not reflect those of my employer or clients. Reader discretion is advised.
+The views and opinions on this blog and social media under the *DrinkBird* banner are solely mine and do not reflect those of my employer or clients. Reader discretion is advised.
 
 ## Short Bio
 
-Tasos Piotopoulos is a Lead Software Engineer who empowers engineering teams to excel both technically and as leaders. With a career spanning since 2005, Tasos has a proven record of delivering high-impact projects across a diverse range of industries, generating or saving tens of millions of dollars in the process. His role combines hands-on coding, technical architecture, and coaching engineers to be the best versions of themselves. 
+Tasos Piotopoulos is a Lead Software Engineer who helps teams excel technically and grow as leaders. Since 2005, he has delivered high-impact projects across multiple industries while mentoring engineers to reach their full potential. He holds a Master's in Software Engineering and Distributed Systems from University College Dublin and is currently pursuing an MBA at Frederick University Cyprus. He shares his insights through blogging, teaching, organizing meetups and public speaking.
 
-Educationally grounded with a Master's degree in Software Engineering and Distributed Systems from University College Dublin, Tasos applies academic principles to solve real-world challenges. Beyond his work, he is dedicated to helping professionals grow in their career — blogging, creating online courses, hosting tech meet-ups, and speaking at various events. 
-
-Connect with Tasos to join a community focused on empowering engineers to lead. You can find him on [drinkbird.com](https://blog.drinkbird.com) and [LinkedIn](https://linkedin.com/in/piotopoulos).
+Connect with Tasos on [drinkbird.com](https://blog.drinkbird.com) and [LinkedIn](https://linkedin.com/in/piotopoulos).
 
 ![Tasos Piotopoulos]({{ site.baseurl }}/assets/media/drinkbird_shot.jpg)
