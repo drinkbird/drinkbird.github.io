@@ -166,7 +166,7 @@ reads:
     url: https://www.amazon.co.uk/You-Dont-Know-JS-Performance/dp/1491904224?tag=drin04-20
     isbn: "1491904224"
   accelerate:
-    title: 'Accelerate: The Science of Lean Software and DevOps: Building and Scaling High Performing Technology Organizations'
+    title: 'Accelerate: Building and Scaling High Performing Technology Organizations'
     url: https://www.amazon.co.uk/Accelerate-Software-Performing-Technology-Organizations/dp/1942788339?tag=drin04-20
     isbn: "1942788339"
   functionalreactive:
@@ -386,3 +386,11 @@ reads:
     title: "Turn the Ship Around!"
     url: https://www.amazon.com/Turn-Ship-Around-Turning-Followers/dp/1591846404?tag=drin04-20
     isbn: "1591846404"
+  thegoal:
+    title: "The Goal: A Process of Ongoing Improvement"
+    url: https://www.amazon.co.uk/Goal-Process-Ongoing-Improvement/dp/0566086654?tag=drin04-20
+    isbn: "0566086654"
+  thegoalgraphicnovel:
+    title: "The Goal: A Business Graphic Novel"
+    url: https://www.amazon.co.uk/Goal-Business-Graphic-Novel/dp/0815385137?tag=drin04-20
+    isbn: "0815385137"
