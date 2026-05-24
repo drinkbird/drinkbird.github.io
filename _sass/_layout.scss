@@ -1,0 +1,318 @@
+// Minimal vanilla replacement for the Bootstrap 3 classes used on this site.
+// Replaces the full ~10k-line `_sass/bootstrap/*` directory with ~200 lines
+// of plain CSS targeting just what the templates and posts actually use.
+
+// ---------------------------------------------------------------------------
+// Breakpoint variables (kept Bootstrap-3-compatible — custom CSS in main.scss
+// still references $screen-{sm,md,lg}-min)
+// ---------------------------------------------------------------------------
+
+$screen-xs-min: 480px  !default;
+$screen-sm-min: 768px  !default;
+$screen-md-min: 992px  !default;
+$screen-lg-min: 1200px !default;
+
+// Bootstrap-3-compatible gray scale, still referenced by main.scss custom rules.
+$gray:         #555 !default;
+$gray-lighter: #eee !default;
+
+// ---------------------------------------------------------------------------
+// Container
+// ---------------------------------------------------------------------------
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+
+  @media (min-width: 768px)  { width: 750px; }
+  @media (min-width: 992px)  { width: 970px; }
+  @media (min-width: 1200px) { width: 1170px; }
+}
+
+// ---------------------------------------------------------------------------
+// 12-column flex grid (drop-in for .row + .col-{xs,sm,md,lg}-{1..12})
+// ---------------------------------------------------------------------------
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+[class*="col-xs-"],
+[class*="col-sm-"],
+[class*="col-md-"],
+[class*="col-lg-"] {
+  position: relative;
+  padding-right: 15px;
+  padding-left: 15px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+$bs-breakpoints: (xs: 0, sm: 768px, md: 992px, lg: 1200px);
+
+@each $name, $min in $bs-breakpoints {
+  @if $min == 0 {
+    @for $i from 1 through 12 {
+      .col-#{$name}-#{$i}        { width: percentage($i / 12); }
+      .col-#{$name}-offset-#{$i} { margin-left: percentage($i / 12); }
+      .col-#{$name}-push-#{$i}   { order: 1; }
+      .col-#{$name}-pull-#{$i}   { order: -1; }
+    }
+  } @else {
+    @media (min-width: $min) {
+      @for $i from 1 through 12 {
+        .col-#{$name}-#{$i}        { width: percentage($i / 12); }
+        .col-#{$name}-offset-#{$i} { margin-left: percentage($i / 12); }
+        .col-#{$name}-push-#{$i}   { order: 1; }
+        .col-#{$name}-pull-#{$i}   { order: -1; }
+      }
+    }
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Visibility utilities
+// ---------------------------------------------------------------------------
+
+.hidden-xs { @media (max-width: 767px) { display: none !important; } }
+.hidden-sm { @media (min-width: 768px) and (max-width: 991px)  { display: none !important; } }
+.hidden-md { @media (min-width: 992px) and (max-width: 1199px) { display: none !important; } }
+.hidden-lg { @media (min-width: 1200px) { display: none !important; } }
+
+// ---------------------------------------------------------------------------
+// Text / image / list utilities
+// ---------------------------------------------------------------------------
+
+.text-center { text-align: center; }
+.text-left   { text-align: left; }
+.text-right  { text-align: right; }
+
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.list-inline {
+  padding-left: 0;
+  margin-left: -5px;
+  list-style: none;
+
+  > li {
+    display: inline-block;
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+// ---------------------------------------------------------------------------
+// Buttons
+// ---------------------------------------------------------------------------
+
+.btn {
+  display: inline-block;
+  padding: 6px 12px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  text-decoration: none;
+
+  &:hover, &:focus { text-decoration: none; }
+}
+
+.btn-default {
+  color: #333;
+  background-color: #fff;
+  border-color: #ccc;
+
+  &:hover, &:focus { background-color: #e6e6e6; border-color: #adadad; }
+}
+
+.btn-info {
+  color: #fff;
+  background-color: #5bc0de;
+  border-color: #46b8da;
+
+  &:hover, &:focus { background-color: #31b0d5; border-color: #269abc; }
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
+// ---------------------------------------------------------------------------
+// Jumbotron (used in index.html once)
+// ---------------------------------------------------------------------------
+
+.jumbotron {
+  padding: 30px 15px;
+  margin-bottom: 30px;
+  background-color: #eee;
+  border-radius: 6px;
+
+  @media (min-width: 768px) {
+    padding: 48px 60px;
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Nav and navbar
+// ---------------------------------------------------------------------------
+
+.nav {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+
+  > li > a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+  }
+}
+
+.nav-stacked > li {
+  display: block;
+
+  + li { margin-top: 2px; }
+}
+
+.navbar {
+  position: relative;
+  min-height: 50px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+
+  @media (min-width: 768px) {
+    border-radius: 4px;
+  }
+}
+
+// Theme variables (Bootstrap-3-compatible names — main.scss defines its own
+// values before importing this file, so the user's design wins. Defaults
+// here keep the file self-contained if used independently).
+$navbar-default-bg:                       #f8f8f8 !default;
+$navbar-default-border:                   #e7e7e7 !default;
+$navbar-default-color:                    #777    !default;
+$navbar-default-link-color:               #777    !default;
+$navbar-default-link-hover-color:         #333    !default;
+$navbar-default-link-hover-bg:            transparent !default;
+$navbar-default-brand-color:              $navbar-default-link-color !default;
+$navbar-default-toggle-hover-bg:          #ddd    !default;
+$navbar-default-toggle-border-color:      #ddd    !default;
+
+.navbar-default {
+  background-color: $navbar-default-bg;
+  border-color: $navbar-default-border;
+}
+
+.navbar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: $screen-sm-min) {
+    float: left;
+    display: block;
+  }
+}
+
+.navbar-brand {
+  padding: 15px 15px;
+  font-size: 18px;
+  line-height: 20px;
+  text-decoration: none;
+  color: $navbar-default-brand-color;
+}
+
+.navbar-toggle {
+  position: relative;
+  padding: 9px 10px;
+  background-color: transparent;
+  background-image: none;
+  border: 1px solid $navbar-default-toggle-border-color;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 18px;
+  color: $navbar-default-link-color;
+
+  &:hover, &:focus { background-color: $navbar-default-toggle-hover-bg; }
+
+  @media (min-width: $screen-sm-min) { display: none; }
+}
+
+.navbar-collapse {
+  overflow-x: visible;
+  border-top: 1px solid transparent;
+  display: none;
+
+  &.in { display: block; }
+
+  @media (min-width: $screen-sm-min) {
+    display: block !important;
+    border-top: 0;
+  }
+}
+
+.navbar-nav {
+  margin: 7.5px -15px;
+  padding-left: 0;
+  list-style: none;
+
+  > li > a {
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+    color: $navbar-default-link-color;
+
+    &:hover, &:focus {
+      color: $navbar-default-link-hover-color;
+      background-color: $navbar-default-link-hover-bg;
+    }
+  }
+
+  @media (min-width: $screen-sm-min) {
+    float: left;
+    margin: 0;
+
+    > li { float: left; }
+    > li > a {
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+  }
+}
+
+.navbar-right {
+  @media (min-width: 768px) {
+    float: right;
+    margin-right: -15px;
+  }
+}

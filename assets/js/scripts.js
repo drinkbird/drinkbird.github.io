@@ -8,13 +8,10 @@ $(function() {
 
     GLightbox({ selector: '.image-popup', loop: true });
 
-    // Navbar collapse icon toggle
-    $('#navbar').on('show.bs.collapse', function () {
-        $(".navbar button .glyphicon").addClass("gly-rotate-180");
-    });
-
-    $('#navbar').on('hide.bs.collapse', function () {
-        $(".navbar button .glyphicon").removeClass("gly-rotate-180");
+    // Mobile navbar toggle (replaces the Bootstrap collapse plugin)
+    $('.navbar-toggle').on('click', function () {
+        var open = $('#navbar').toggleClass('in').hasClass('in');
+        $(this).attr('aria-expanded', open);
     });
 
     // Sticky navbar
