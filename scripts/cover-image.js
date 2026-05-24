@@ -1,11 +1,17 @@
 #!/usr/bin/env node
 // Convert a source image (PNG / JPG / WebP / AVIF / GIF / TIFF) into a
-// 710×360 JPG optimized for use as a blog-post or course cover image.
+// 1420×720 JPG optimized for use as a blog-post or course cover image.
+//
+// The 1420×720 default is 2× the previous 710×360 canonical size. It holds
+// the same 1.972:1 aspect ratio (so existing layouts are unaffected) while
+// exceeding LinkedIn's 1200px-width recommendation for full-banner link
+// previews, and providing retina assets that browsers downscale on display.
 //
 // Usage:
 //   npm run cover -- path/to/source.png
 //   npm run cover -- path/to/source.png --quality 88
 //   npm run cover -- path/to/source.png --position center
+//   npm run cover -- path/to/source.png --size 1200x627
 //
 // Output is written next to the source with `-0` appended to the basename
 // and the extension forced to `.jpg`. Existing `*-0.jpg` files are
@@ -13,19 +19,31 @@
 //
 //   images/course-jekyll.png  ->  images/course-jekyll-0.jpg
 
-const path = require("path");
-const fs   = require("fs");
+const path  = require("path");
+const fs    = require("fs");
 const sharp = require("sharp");
 
-const TARGET_WIDTH  = 710;
-const TARGET_HEIGHT = 360;
+const DEFAULT_WIDTH  = 1420;
+const DEFAULT_HEIGHT = 720;
 
 function parseArgs(argv) {
-  const args = { input: null, quality: 88, position: "attention" };
+  const args = {
+    input:    null,
+    quality:  88,
+    position: "attention",
+    width:    DEFAULT_WIDTH,
+    height:   DEFAULT_HEIGHT
+  };
   for (let i = 0; i < argv.length; i++) {
     const v = argv[i];
-    if (v === "--quality")  { args.quality  = parseInt(argv[++i], 10); }
+    if (v === "--quality")       { args.quality  = parseInt(argv[++i], 10); }
     else if (v === "--position") { args.position = argv[++i]; }
+    else if (v === "--size") {
+      const m = (argv[++i] || "").match(/^(\d+)x(\d+)$/i);
+      if (!m) usage("--size must be WIDTHxHEIGHT, e.g. 1420x720");
+      args.width  = parseInt(m[1], 10);
+      args.height = parseInt(m[2], 10);
+    }
     else if (!args.input && !v.startsWith("--")) { args.input = v; }
   }
   return args;
@@ -33,8 +51,8 @@ function parseArgs(argv) {
 
 function usage(msg) {
   if (msg) console.error("Error: " + msg + "\n");
-  console.error("Usage: npm run cover -- <path-to-image> [--quality 1-100] [--position attention|center|...]");
-  console.error("  Output: <same-dir>/<basename>-0.jpg at " + TARGET_WIDTH + "×" + TARGET_HEIGHT);
+  console.error("Usage: npm run cover -- <path-to-image> [--quality 1-100] [--position attention|center|...] [--size WxH]");
+  console.error("  Default output: <same-dir>/<basename>-0.jpg at " + DEFAULT_WIDTH + "×" + DEFAULT_HEIGHT);
   process.exit(1);
 }
 
@@ -45,6 +63,9 @@ async function main() {
   if (!Number.isFinite(args.quality) || args.quality < 1 || args.quality > 100) {
     usage("--quality must be 1..100");
   }
+  if (!Number.isFinite(args.width) || !Number.isFinite(args.height) || args.width < 1 || args.height < 1) {
+    usage("--size dimensions must be positive integers");
+  }
 
   const dir    = path.dirname(args.input);
   const base   = path.basename(args.input, path.extname(args.input));
@@ -52,7 +73,7 @@ async function main() {
 
   const meta = await sharp(args.input).metadata();
   await sharp(args.input)
-    .resize(TARGET_WIDTH, TARGET_HEIGHT, {
+    .resize(args.width, args.height, {
       fit: "cover",            // matching aspect ratio: clean resize; mismatch: crop to fill
       position: args.position, // 'attention' = smart crop on salient region
       withoutEnlargement: false
@@ -66,7 +87,7 @@ async function main() {
   console.log("OK  " + args.input);
   console.log("    " + meta.width + "x" + meta.height + " " + (meta.format || "?") + ", " + fmt(sourceBytes));
   console.log(" -> " + output);
-  console.log("    " + TARGET_WIDTH + "x" + TARGET_HEIGHT + " jpg, " + fmt(outBytes) +
+  console.log("    " + args.width + "x" + args.height + " jpg, " + fmt(outBytes) +
               " (quality " + args.quality + ", position " + args.position + ")");
 }
 
