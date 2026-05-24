@@ -951,32 +951,46 @@ a.cover {
 }
 
 .author-inline {
-	figure > div > a > div {
-		display: block;
-		float: left;
-		margin-right: 10px;
+	figure {
+		display: flex;
+		// Vertically center the photo against the text block. With 2 lines
+		// (name + 1-line role) it sits slightly above center; with 3 lines
+		// (name + 2-line role on narrow viewports) the photo is mid-block and
+		// the text wraps cleanly around the photo's vertical center.
+		align-items: center;
+		gap: 12px;
+		text-align: left;
 
-		& > img {
-			display: block;
-			width: 60px;
-			height: 20p;
-			height: 60px;
-		}
-	}
-	figure > figcaption {
-		& > .name {
-			font-size: 16px;
-			padding-top: 6px;
-	
-			& > a {
-				font-weight: 800;
-				color: rgb(0, 0, 0);
+		& > div {
+			float: none;
+			flex: 0 0 auto;
+			margin-right: 0;
+
+			& > a > div > img {
+				display: block;
+				width: 60px;
+				height: 60px;
 			}
 		}
 
-		& > .title {
-			font-size: 14px;
-			color: rgba(0, 0, 0, 0.6);
+		& > figcaption {
+			flex: 1 1 auto;
+			min-width: 0;
+			text-align: left;
+
+			& > .name {
+				font-size: 16px;
+
+				& > a {
+					font-weight: 800;
+					color: rgb(0, 0, 0);
+				}
+			}
+
+			& > .title {
+				font-size: 14px;
+				color: rgba(0, 0, 0, 0.6);
+			}
 		}
 	}
 }

@@ -5,7 +5,7 @@ layout: default
 {% assign chapter_pages = site.courses | where: "course_slug", page.course_slug | where_exp: "p", "p.chapter_id" %}
 {% assign first_chapter = chapter_pages | first %}
 
-<div class="container-fluid course-layout">
+<div class="container course-layout">
   <div class="course-layout-grid">
     {% include course-sidebar.html course=course course_slug=page.course_slug chapter_pages=chapter_pages %}
 

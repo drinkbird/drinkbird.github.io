@@ -8,6 +8,15 @@ $course-sidebar-border:#e3e6ea;
 
 .course-layout {
 	padding: 0;
+
+	// At the `md` breakpoint Bootstrap's .container is fixed at 970px even up to
+	// 1199px-wide viewports, leaving big empty side margins while the sidebar +
+	// content get squeezed. Let the container go fluid until the `lg` desktop
+	// width kicks in (at lg+ it caps at 1170px and centers like the navbar).
+	@media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+		width: auto;
+		max-width: none;
+	}
 }
 
 .course-layout-grid {
@@ -15,7 +24,10 @@ $course-sidebar-border:#e3e6ea;
 
 	@media (min-width: $screen-md-min) {
 		display: grid;
-		grid-template-columns: $course-sidebar-width 1fr;
+		// `minmax(0, 1fr)` instead of `1fr` so long inline children (code lines,
+		// URLs, wide tables) can't force the column wider than its share — they
+		// scroll internally via their own overflow rules instead.
+		grid-template-columns: $course-sidebar-width minmax(0, 1fr);
 		gap: 0;
 		min-height: calc(100vh - 100px);
 	}
@@ -758,13 +770,16 @@ $course-sidebar-border:#e3e6ea;
 			display: none !important;
 		}
 
-		// Collapse the two-column grid; let main fill the page.
+		// Collapse the two-column grid; let main fill the page. Override
+		// Bootstrap's .container width so print isn't capped at the desktop max.
 		.course-layout,
 		.course-layout-grid {
 			display: block;
 			min-height: 0;
-			padding: 0;
-			margin: 0;
+			padding: 0 !important;
+			margin: 0 !important;
+			width: auto !important;
+			max-width: none !important;
 		}
 
 		.course-main {
