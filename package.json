@@ -4,7 +4,8 @@
   "description": "DrinkBird Blog",
   "main": "index.js",
   "scripts": {
-    "uglify": "uglifyjs ./assets/js/scripts.js -o ./assets/js/scripts.min.js"
+    "uglify": "uglifyjs ./assets/js/scripts.js -o ./assets/js/scripts.min.js",
+    "cover": "node scripts/cover-image.js"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,7 @@
   },
   "homepage": "https://github.com/drinkbird/drinkbird.github.io#readme",
   "devDependencies": {
+    "sharp": "^0.33.5",
     "uglify-js": "^2.7.0"
   }
 }

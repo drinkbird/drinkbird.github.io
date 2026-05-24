@@ -32,6 +32,27 @@ npm run uglify
 
 Commit both `scripts.js` and `scripts.min.js` together so they don't drift.
 
+## Generating cover images
+
+Posts and courses use ~1.97:1 JPGs as feature/cover images (the size `_includes/image-feature-list.html` and the course card both expect). To convert any source image (PNG / JPG / WebP / AVIF / GIF / TIFF) into that format:
+
+```sh
+npm install                              # first time only — installs sharp
+npm run cover -- images/source.png       # → images/source-0.jpg, 1420×720, ~90 KB
+```
+
+Output goes next to the input with `-0.jpg` appended to the basename. If the source aspect ratio matches the target it's just resized; otherwise sharp crops to fill using its `attention` strategy (picks the most salient region so faces/focal points survive).
+
+The 1420×720 default is 2× the on-page canonical 710×360 size — same aspect ratio (so existing layouts are unaffected), comfortably above LinkedIn's 1200px-width threshold for full-banner link previews, and provides retina assets that browsers downscale on display. Older 710-wide images keep working alongside new ones.
+
+Flags:
+
+- `--quality 1-100` (default `88`) — drop to `82` to squeeze tighter for photos; raise to `92`+ for maximum fidelity.
+- `--position center|top|bottom|left|right|entropy|attention` — override the crop strategy when sharp's smart crop guesses wrong.
+- `--size WxH` — override the dimensions, e.g. `--size 1200x627` (LinkedIn's exact ratio) or `--size 710x360` (the old preset).
+
+For courses, set the resulting filename as the `image:` value in `_courses/<slug>/course.json` and re-run `ruby scripts/sync-courses-data.rb` so Liquid picks it up.
+
 ## Writing posts
 
 - Posts live in `_posts/blog/` and are named `YYYY-MM-DD-slug.md`.

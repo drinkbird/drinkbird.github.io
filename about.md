@@ -70,6 +70,8 @@ The name is more than something that sounds playful. It comes from my Greek heri
 
 The views and opinions on this blog and social media under the *DrinkBird* banner are solely mine and do not reflect those of my employer or clients. Reader discretion is advised.
 
+Illustrations on this site are AI-generated, art-directed and curated by me.
+
 ## Short Bio
 
 Tasos Piotopoulos is a Lead Software Engineer who helps teams excel technically and grow as leaders. Since 2005, he has delivered high-impact projects across multiple industries while mentoring engineers to reach their full potential. He holds a Master's in Software Engineering and Distributed Systems from University College Dublin and is currently pursuing an MBA at Frederick University Cyprus. He shares his insights through blogging, teaching, organizing meetups and public speaking.
