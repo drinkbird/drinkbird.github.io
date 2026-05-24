@@ -27,7 +27,8 @@ excerpt: "Distilled thoughts from the tech industry and literature"
       <div class="col-md-6">
         <article class="article-list">
           <a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}">
-            {% include image-feature-list.html %}
+            {% if count <= 2 %}{% assign loadingMode = 'eager' %}{% else %}{% assign loadingMode = 'lazy' %}{% endif %}
+            {% include image-feature-list.html loading=loadingMode %}
             <h1>{{ post.title }}</h1>
           </a>
           {% comment %}

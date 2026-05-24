@@ -28,7 +28,8 @@ excerpt: "Some of the projects I've been involved with throughout my career"
       <div class="col-md-6">
         <article class="article-list">
           <a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}">
-            {% include image-feature-list.html %}
+            {% if count <= 2 %}{% assign loadingMode = 'eager' %}{% else %}{% assign loadingMode = 'lazy' %}{% endif %}
+            {% include image-feature-list.html loading=loadingMode %}
             <h1>{{ post.title }}</h1>
           </a>
           {% comment %}<time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time>{% endcomment %}
