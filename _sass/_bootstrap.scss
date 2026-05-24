@@ -4,7 +4,9 @@
 
 // Reset and dependencies
 @import "bootstrap/normalize";
-@import "bootstrap/print";
+// "bootstrap/print" intentionally not imported: its `* { color: #000 !important }`
+// reset broke syntax-highlighted code in print. Our own print rules live in
+// `_courses.scss` (scoped to course pages).
 @import "bootstrap/glyphicons";
 
 // Core CSS

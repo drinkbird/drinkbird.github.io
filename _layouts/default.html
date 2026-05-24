@@ -4,7 +4,7 @@
   {% include head.html %}
   {% include open-graph.html %}
   </head>
-  <body>
+  <body{% if page.page-key == 'courses' %} class="course-page"{% endif %}>
   {% include header.html %}
   {{ content }}
   {% include footer.html %}

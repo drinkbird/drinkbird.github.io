@@ -16,11 +16,25 @@
 {% include disqus-comments.html %}
 {% endif %}
 
-{% if page.mermaid %}
+{% assign needs_mermaid = page.mermaid %}
+{% if content contains 'language-mermaid' %}{% assign needs_mermaid = true %}{% endif %}
+{% if needs_mermaid %}
 <script>
     SVGElement.prototype.getTransformToElement = SVGElement.prototype.getTransformToElement || function(elem) {
         return elem.getScreenCTM().inverse().multiply(this.getScreenCTM());
     };
+    // Markdown ```mermaid fences render as <pre><code class="language-mermaid">;
+    // rewrite them into <div class="mermaid"> *before* mermaid scans the page,
+    // so its `startOnLoad: true` pass below picks them up.
+    document.addEventListener('DOMContentLoaded', function () {
+        var codeBlocks = document.querySelectorAll('pre > code.language-mermaid');
+        Array.prototype.forEach.call(codeBlocks, function (code) {
+            var div = document.createElement('div');
+            div.className = 'mermaid';
+            div.textContent = code.textContent;
+            code.parentNode.parentNode.replaceChild(div, code.parentNode);
+        });
+    });
 </script>
 <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/mermaid.css?v={{ site.time | date: '%s' }}">
 <script src="{{ site.baseurl }}/assets/js/mermaid.min.js?v={{ site.time | date: '%s' }}"></script>
