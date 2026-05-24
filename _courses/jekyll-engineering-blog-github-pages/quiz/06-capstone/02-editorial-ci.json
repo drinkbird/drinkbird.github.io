@@ -1,0 +1,41 @@
+{
+  "chapter_id": "jekyll-engineering-blog-github-pages/06-capstone/02-editorial-ci",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Why is `typos` a reasonable tool to *fail* a CI build on, while a typical spell-checker is not?",
+      "choices": [
+        "`typos` runs faster, so failures are cheaper.",
+        "`typos` uses a small dictionary of high-confidence misspellings, so it has near-zero false positives.",
+        "`typos` is written in Rust, which makes it more accurate.",
+        "`typos` only checks files in `_posts/`, so it can't flag code."
+      ],
+      "correct": 1,
+      "explanation": "The design choice in `typos` is a conservative dictionary - it flags only words it's very confident are misspellings. That low false-positive rate is what makes it safe as a build-failing check; a generic spell-checker would block builds on every proper noun."
+    },
+    {
+      "id": 2,
+      "question": "Which file path should your link/HTML checkers run against in CI?",
+      "choices": [
+        "The source `_posts/` directory of Markdown files.",
+        "The `_drafts/` directory, since drafts are where bugs hide.",
+        "The built `_site/` directory after `jekyll build` runs.",
+        "The repo root, so the checker can see both source and output."
+      ],
+      "correct": 2,
+      "explanation": "Checkers operate on rendered HTML, so they need the output of `jekyll build`, which lands in `_site/`. Running them on source `.md` files would mean they see unprocessed Liquid and Markdown."
+    },
+    {
+      "id": 3,
+      "question": "Which fail/warn split is the most sustainable for editorial CI?",
+      "choices": [
+        "Fail on every finding, internal or external - strict is better.",
+        "Warn on every finding so PRs are never blocked by editorial issues.",
+        "Fail on internal broken links and typos; warn on external link failures.",
+        "Fail on HTML validation only; warn on everything else."
+      ],
+      "correct": 2,
+      "explanation": "Internal broken links and typos are entirely under your control, so failing on them produces actionable signal. External links can break for reasons that have nothing to do with your PR (rate limits, downtime), so warn-only avoids flaky builds while still surfacing the problem."
+    }
+  ]
+}

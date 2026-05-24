@@ -39,7 +39,7 @@ Commit both `scripts.js` and `scripts.min.js` together so they don't drift.
 
 ### Linking to a book in body copy
 
-Use the `link.html` include with just the book key — title and affiliate URL come from `_config.yml`:
+Use the `link.html` include with just the book key - title and affiliate URL come from `_config.yml`:
 
 ```liquid
 {% include link.html tag="thefearlessorg" %}
@@ -51,6 +51,22 @@ Override the display text by passing `title="…"`. For non-book links, use `url
 
 - Sidebar list: add the key to the post's `reads:` front-matter array.
 - In-article card: `{% include book_inarticle.html %}` (set `book` first via Liquid).
+
+## Writing courses
+
+Courses live under `_courses/<course-slug>/`:
+
+- `course.json` - course metadata (modules + chapters)
+- `<NN-module-slug>/<NN-chapter-slug>.md` - chapter content (each must have YAML front matter; if it teaches Liquid, wrap the body in `{% raw %}…{% endraw %}`)
+- `<NN-module-slug>/<NN-chapter-slug>.quiz.json` - quiz for that chapter
+
+After editing `course.json` or any `.quiz.json`, regenerate the Liquid-readable mirror under `_data/`:
+
+```sh
+ruby scripts/sync-courses-data.rb
+```
+
+The course landing page lives at `_courses/<course-slug>/index.md` (overrides the layout to `course-index` and sets an explicit `permalink: /courses/<slug>/`). The top-level `/courses/` listing reads from `site.data.courses` - anything synced into `_data/courses/` shows up there automatically.
 
 ## Deployment
 

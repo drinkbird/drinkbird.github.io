@@ -20,20 +20,20 @@ We do **not** run advertising trackers, retargeting pixels, or marketing email l
 
 On your first visit you'll see a banner asking whether to accept cookies for analytics and comments. Your choice is stored locally in your browser (`localStorage`) and remembered for future visits. You can change your mind at any time by clearing site data in your browser.
 
-If you decline, no analytics or Disqus scripts load. If you accept, those scripts load and may set their own cookies — see the third-party policies above for details.
+If you decline, no analytics or Disqus scripts load. If you accept, those scripts load and may set their own cookies - see the third-party policies above for details.
 
 # Your rights
 
 If you're in the EU/EEA, UK, or California, you have specific rights over your personal data:
 
-- Access — find out what data we hold about you (in practice: very little, since we don't keep our own database).
-- Deletion — ask us to remove what we have.
-- Objection — tell us to stop processing your data.
-- Portability — get a copy in a usable format.
+- Access - find out what data we hold about you (in practice: very little, since we don't keep our own database).
+- Deletion - ask us to remove what we have.
+- Objection - tell us to stop processing your data.
+- Portability - get a copy in a usable format.
 
 Email the address above to exercise any of these. We will respond within 30 days.
 
-For data held by Google (analytics) or Disqus (comments), contact them directly using the links above — we can only delete what's in our control.
+For data held by Google (analytics) or Disqus (comments), contact them directly using the links above - we can only delete what's in our control.
 
 # Children
 

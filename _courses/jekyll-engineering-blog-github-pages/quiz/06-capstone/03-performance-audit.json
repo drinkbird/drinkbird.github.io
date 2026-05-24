@@ -1,0 +1,41 @@
+{
+  "chapter_id": "jekyll-engineering-blog-github-pages/06-capstone/03-performance-audit",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which Core Web Vital is most likely irrelevant on a typical static Jekyll blog with no JavaScript framework?",
+      "choices": [
+        "LCP - Largest Contentful Paint",
+        "CLS - Cumulative Layout Shift",
+        "INP - Interaction to Next Paint",
+        "FID - First Input Delay"
+      ],
+      "correct": 2,
+      "explanation": "INP measures how quickly the page responds to interaction, which is mostly a JavaScript concern. A static blog without an interactive framework rarely has INP problems; LCP and CLS are where the wins are. FID has been replaced by INP and is no longer a Core Web Vital."
+    },
+    {
+      "id": 2,
+      "question": "Your hero image is causing a noticeable layout jolt as the page loads. What is the highest-leverage single fix?",
+      "choices": [
+        "Add `loading=\"lazy\"` to the `<img>` element.",
+        "Add `width` and `height` attributes matching the intrinsic pixel dimensions.",
+        "Convert the image to AVIF.",
+        "Add a CSS `transition` so the shift is animated rather than instant."
+      ],
+      "correct": 1,
+      "explanation": "Setting `width` and `height` lets the browser compute the aspect-ratio box on first paint and reserve the correct space. Lazy-loading helps bandwidth but doesn't fix CLS - in fact, lazy-loading a hero image *hurts* LCP. AVIF reduces bytes but doesn't change layout behaviour."
+    },
+    {
+      "id": 3,
+      "question": "You self-host the body font and add `font-display: swap`. A reviewer says \"but users will see the text style change as the font loads.\" How do you respond to this trade-off?",
+      "choices": [
+        "Switch to `font-display: block` so users never see a style change.",
+        "Switch to `font-display: optional` so the web font is used only if cached, eliminating the swap.",
+        "Keep `swap`: invisible text during the font load is a worse user experience than a one-time style change, and `swap` is what avoids the FOIT.",
+        "Inline the entire font as base64 in the CSS to eliminate the load."
+      ],
+      "correct": 2,
+      "explanation": "`swap` accepts a brief visual swap (FOUT) in exchange for never blocking text rendering (FOIT). `block` reintroduces invisible text. `optional` is a valid choice for some sites but means most first-visit users never see your web font, which may not be what you want. Inlining the font bloats every page load."
+    }
+  ]
+}

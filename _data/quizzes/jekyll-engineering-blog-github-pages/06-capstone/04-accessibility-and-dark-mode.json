@@ -1,0 +1,41 @@
+{
+  "chapter_id": "jekyll-engineering-blog-github-pages/06-capstone/04-accessibility-and-dark-mode",
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is the WCAG 2.2 AA minimum contrast ratio for normal body text against its background?",
+      "choices": [
+        "2:1",
+        "3:1",
+        "4.5:1",
+        "7:1"
+      ],
+      "correct": 2,
+      "explanation": "AA requires 4.5:1 for normal text and 3:1 for large text and non-text UI elements. The 7:1 bar is AAA, which is stricter than what a typical blog targets."
+    },
+    {
+      "id": 2,
+      "question": "You're implementing a dark-mode toggle. A user with system dark mode enabled who has never clicked the toggle visits the site. What should happen?",
+      "choices": [
+        "Show light mode - manual control is more predictable.",
+        "Show dark mode, because the `prefers-color-scheme: dark` media query applies and no `data-theme` override is set.",
+        "Show dark mode, but only after the JavaScript runs and sets `data-theme=\"dark\"`.",
+        "Show whichever mode was last used by any visitor."
+      ],
+      "correct": 1,
+      "explanation": "If `localStorage` has no saved choice, the script should not set `data-theme` at all - letting the `@media (prefers-color-scheme: dark)` CSS rule apply naturally. This honours the system preference and avoids any flash because no JavaScript is needed to render the correct mode."
+    },
+    {
+      "id": 3,
+      "question": "A reset CSS in your theme includes `*:focus { outline: none; }`. A designer argues the default focus ring is ugly and should stay removed. What's the right response?",
+      "choices": [
+        "Agree - visual polish matters more than focus rings for a blog.",
+        "Keep `outline: none` but add a hover effect; that covers most users.",
+        "Remove the rule and restyle focus with `:focus-visible` - never delete keyboard focus indicators.",
+        "Only show focus rings to users with a screen reader enabled."
+      ],
+      "correct": 2,
+      "explanation": "Removing focus indicators breaks the page for keyboard users, who have no other signal for where focus is. The right trade-off is to keep them visible but restyle to match the design, and use `:focus-visible` so they appear only for keyboard navigation, not mouse clicks."
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "chapter_id": "jekyll-engineering-blog-github-pages/01-foundations/01-what-is-a-static-site-generator",
+  "questions": [
+    {
+      "id": 1,
+      "question": "In the static site generator model, when is the HTML for a blog post produced?",
+      "choices": [
+        "On every visitor request, by a Ruby process on the server",
+        "Once at build time, before the site is deployed",
+        "In the browser, from a JSON API response",
+        "Never - the Markdown is served directly to the browser"
+      ],
+      "correct": 1,
+      "explanation": "An SSG renders content into static HTML at build time. The output files are then served as-is, with no per-request rendering on the server."
+    },
+    {
+      "id": 2,
+      "question": "You're asked to build an internal dashboard that shows the team's live PagerDuty queue, updated every few seconds and personalised to each user. Is a Jekyll static site the right fit?",
+      "choices": [
+        "Yes - Jekyll can rebuild every few seconds via a cron job",
+        "Yes - JavaScript on the page can fetch the data, so static works fine",
+        "No - per-user, real-time content is a poor match for build-time rendering",
+        "No - static sites cannot serve any JavaScript at all"
+      ],
+      "correct": 2,
+      "explanation": "Per-user and real-time content is exactly the case build-time rendering handles badly. A server-rendered or API-backed app is a better choice; Jekyll is for content that's the same for every visitor between builds."
+    },
+    {
+      "id": 3,
+      "question": "Which trade-off is the strongest argument for choosing Jekyll + GitHub Pages over a server-rendered framework for a personal engineering blog?",
+      "choices": [
+        "It supports more interactive features out of the box than a server-rendered stack",
+        "Posts live as Markdown in Git, deploys are pushes, and hosting is free with no runtime to maintain",
+        "It renders pages faster on every request because Ruby is faster than Node",
+        "It makes per-user authentication trivial compared to other stacks"
+      ],
+      "correct": 1,
+      "explanation": "The pairing's value is operational: text files in Git, push-to-deploy, and free hosting with no app server. Static sites don't win on interactivity or auth - those have to come from elsewhere."
+    }
+  ]
+}

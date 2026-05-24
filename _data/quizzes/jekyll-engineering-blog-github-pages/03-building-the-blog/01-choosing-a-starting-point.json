@@ -1,0 +1,41 @@
+{
+  "chapter_id": "jekyll-engineering-blog-github-pages/03-building-the-blog/01-choosing-a-starting-point",
+  "questions": [
+    {
+      "id": 1,
+      "question": "You install `minima` as a Ruby gem and want to read its `_layouts/default.html`. Where does that file actually live on disk?",
+      "choices": [
+        "In your blog repo's `_layouts/` directory, created by `jekyll new`",
+        "Inside the installed gem's directory, which you can locate with `bundle info minima`",
+        "Inside `_site/`, generated on the first build",
+        "On GitHub only - Jekyll fetches it at build time"
+      ],
+      "correct": 1,
+      "explanation": "Gem-based theme files are not copied into your repo. They live inside the gem's install path and Jekyll reads them at build time; `bundle info minima` prints that path."
+    },
+    {
+      "id": 2,
+      "question": "Your design brief calls for a single-column blog with system fonts, a small header, and posts in reverse-chronological order. You also want to be able to change a few `<meta>` tags and the link colour. Which starting point matches the work best?",
+      "choices": [
+        "A blank `index.html` from scratch, so you control every byte",
+        "Fork `jekyll-theme-chirpy` and remove the features you don't want",
+        "Start with `minima` and override only `_includes/head.html` and a Sass variable",
+        "Skip a theme entirely and rely on the browser's default stylesheet"
+      ],
+      "correct": 2,
+      "explanation": "The brief matches what `minima` already does; the customisations needed are a couple of overrides. Forking Chirpy means inheriting a lot of opinions you didn't ask for, and from-scratch is more maintenance than the brief justifies."
+    },
+    {
+      "id": 3,
+      "question": "What is the strongest argument for preferring a gem-based theme over forking a community theme repo?",
+      "choices": [
+        "Gem-based themes are always faster at build time",
+        "Forks can't be deployed to GitHub Pages",
+        "Gem-based themes let you pull upstream fixes via `bundle update` instead of merging conflicts in your tree",
+        "Forks force you to use Ruby, whereas gem-based themes do not"
+      ],
+      "correct": 2,
+      "explanation": "With a gem-based theme you own only the files you've overridden, so upstream updates arrive cleanly as `bundle update`. A fork pulls every file into your repo, turning future upstream changes into merge conflicts."
+    }
+  ]
+}

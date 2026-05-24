@@ -26,7 +26,7 @@ After all, at its core, the art of software engineering is about problem-solving
 
 The transition from college coding to professional software engineering was, however, much rougher than a game of Flappy Bird. At the outset, I expected the company to spoon-feed me tasks and solutions to implement, following the classic 'monkey see, monkey do' approach. Little did I know, I was in for a surprise.
 
-As I progressed through my career, I discovered that the journey of a software engineer isn't a flat line—it's an inverted pyramid. Picture a pyramid turned upside-down, each level representing a new stage in problem-solving maturity, with a widening scope of influence and impact as you ascend.
+As I progressed through my career, I discovered that the journey of a software engineer isn't a flat line-it's an inverted pyramid. Picture a pyramid turned upside-down, each level representing a new stage in problem-solving maturity, with a widening scope of influence and impact as you ascend.
 
 ## Stage 1: The Couch Potato - "I'll just wait here for instructions."
 

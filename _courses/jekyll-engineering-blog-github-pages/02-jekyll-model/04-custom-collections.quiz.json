@@ -1,0 +1,41 @@
+{
+  "chapter_id": "jekyll-engineering-blog-github-pages/02-jekyll-model/04-custom-collections",
+  "questions": [
+    {
+      "id": 1,
+      "question": "What does `output: true` do when added to a collection's entry in `_config.yml`?",
+      "choices": [
+        "Tells Jekyll to print build logs for the collection.",
+        "Renders each source file in the collection as its own standalone HTML page.",
+        "Excludes the collection from `site.<name>` iteration.",
+        "Enables sorting of the collection by date."
+      ],
+      "correct": 1,
+      "explanation": "`output: true` writes one HTML page per source file. With `output: false` (the default) the collection is data-only - iterable via `site.<name>` but no per-item URLs."
+    },
+    {
+      "id": 2,
+      "question": "You want every file in `_projects/` to use `layout: project` and live at `/projects/<slug>/` without repeating those fields in each file. Which mechanism is correct?",
+      "choices": [
+        "Add `layout: project` to `_config.yml` under `collections.projects`.",
+        "Add a `defaults:` block with `scope.type: projects` and the values you want.",
+        "Add `permalink:` and `layout:` to one file and let inheritance handle the rest.",
+        "Put a `.front_matter` file in `_projects/`."
+      ],
+      "correct": 1,
+      "explanation": "`defaults:` is exactly the mechanism for injecting front-matter values across a scope. `scope.type: projects` matches every file in the projects collection; `values:` lists the fields to inject."
+    },
+    {
+      "id": 3,
+      "question": "You're modelling \"conference talks\" with a title, date, slides URL, and a paragraph of context. Each talk needs its own URL like `/talks/2026/cloud-summit/`. Collection, tag, or data file?",
+      "choices": [
+        "Tag - just tag relevant posts as `talks`.",
+        "Data file - drop them all into `_data/talks.yml`.",
+        "Custom collection - distinct schema, distinct URL space, and individual pages.",
+        "Posts - put them in `_posts/` with `category: talks`."
+      ],
+      "correct": 2,
+      "explanation": "Talks have a different schema from blog posts (slides URL, no body sometimes), live at distinct URLs, and each needs its own page. That's the textbook case for a custom collection."
+    }
+  ]
+}

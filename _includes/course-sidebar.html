@@ -1,0 +1,65 @@
+{% comment %}
+  Inputs:
+    include.course        - course metadata (from site.data.courses[slug])
+    include.course_slug   - course slug (matches site.data.courses key)
+    include.chapter_pages - site.courses docs for this course (chapter pages)
+    page.module_slug      - set on chapter pages; absent on the course landing
+    page.chapter_slug     - set on chapter pages; absent on the course landing
+{% endcomment %}
+{% assign course        = include.course %}
+{% assign course_slug   = include.course_slug %}
+{% assign chapter_pages = include.chapter_pages %}
+
+<aside class="course-sidebar" data-course-slug="{{ course_slug }}">
+  <button type="button" class="course-sidebar-toggle" aria-controls="course-sidebar-inner" aria-expanded="false">
+    <i class="fas fa-bars" aria-hidden="true"></i>
+    <span>Course menu</span>
+  </button>
+  <div id="course-sidebar-inner" class="course-sidebar-inner">
+    <a class="course-sidebar-title" href="{{ site.baseurl }}/courses/{{ course_slug }}/">
+      <span class="course-sidebar-eyebrow">Course</span>
+      <span class="course-sidebar-topic">{{ course.topic }}</span>
+    </a>
+
+    <div class="course-progress" data-course-progress-summary>
+      <div class="course-progress-bar"><span class="course-progress-bar-fill" style="width: 0%"></span></div>
+      <p class="course-progress-text"><span data-course-progress-count>0</span> / <span data-course-progress-total>0</span> chapters complete</p>
+    </div>
+
+    <ol class="course-modules">
+      {% for module in course.modules %}
+        {% assign module_is_current = false %}
+        {% if module.slug == page.module_slug %}{% assign module_is_current = true %}{% endif %}
+        <li class="course-module{% if module_is_current %} is-current{% endif %}">
+          <h3 class="course-module-title">
+            <span class="course-module-id">Module {{ module.id }}</span>
+            <span class="course-module-name">{{ module.title }}</span>
+          </h3>
+          <ol class="course-chapters">
+            {% for chapter in module.chapters %}
+              {% assign chapter_page = chapter_pages | where: "module_slug", module.slug | where: "chapter_slug", chapter.slug | first %}
+              {% assign chapter_is_current = false %}
+              {% if module.slug == page.module_slug and chapter.slug == page.chapter_slug %}{% assign chapter_is_current = true %}{% endif %}
+              <li class="course-chapter{% if chapter_is_current %} is-current{% endif %}"
+                  data-course-progress-key="{{ course_slug }}/{{ module.slug }}/{{ chapter.slug }}">
+                {% if chapter_page %}
+                <a href="{{ site.baseurl }}{{ chapter_page.url }}">
+                  <span class="course-chapter-status" aria-hidden="true"></span>
+                  <span class="course-chapter-id">{{ module.id }}.{{ chapter.id }}</span>
+                  <span class="course-chapter-title">{{ chapter.title }}</span>
+                </a>
+                {% else %}
+                <span class="course-chapter-disabled" title="Not yet published">
+                  <span class="course-chapter-status" aria-hidden="true"></span>
+                  <span class="course-chapter-id">{{ module.id }}.{{ chapter.id }}</span>
+                  <span class="course-chapter-title">{{ chapter.title }}</span>
+                </span>
+                {% endif %}
+              </li>
+            {% endfor %}
+          </ol>
+        </li>
+      {% endfor %}
+    </ol>
+  </div>
+</aside>

@@ -149,7 +149,7 @@ It's by no means a new concept. Numerous industries have been using it for hundr
 
 Event sourcing brings numerous other benefits to the table. Apart from providing a complete audit history, it can also provide data consistency and improve performance, scalability and responsiveness. Finally, as mentioned in [confluent's blog](https://www.confluent.io/blog/event-sourcing-cqrs-stream-processing-apache-kafka-whats-connection/):
 
-> Event sourcing enables building a forward-compatible application architecture — the ability to add more applications in the future that need to process the same event but create a different materialized view.
+> Event sourcing enables building a forward-compatible application architecture - the ability to add more applications in the future that need to process the same event but create a different materialized view.
 
 Wrapping up, there are a few more things that need to be mentioned:
 

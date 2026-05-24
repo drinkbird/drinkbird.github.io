@@ -1,0 +1,41 @@
+{
+  "chapter_id": "jekyll-engineering-blog-github-pages/03-building-the-blog/04-code-blocks-and-typography",
+  "questions": [
+    {
+      "id": 1,
+      "question": "After enabling Rouge, your code blocks render with the right `<span class=\"k\">` markup but no colours appear. What's missing?",
+      "choices": [
+        "Rouge needs to be added to the `plugins:` list in `_config.yml`",
+        "The fence tags are wrong - Rouge needs lowercase language names",
+        "A Rouge theme stylesheet - generate one with `rougify style <name> > _sass/_rouge.scss` and import it",
+        "GitHub Pages strips Rouge output unless `safe: false` is set"
+      ],
+      "correct": 2,
+      "explanation": "Rouge produces classed spans, not colours. The colour CSS is generated separately via the `rougify` CLI and imported into your stylesheet. Without it the markup is correct but unstyled."
+    },
+    {
+      "id": 2,
+      "question": "You want a 14-line code snippet rendered with line numbers and lines 5-7 highlighted. Markdown fenced blocks don't support this. What's the right tool?",
+      "choices": [
+        "Switch the site from Rouge to Pygments",
+        "Use Jekyll's `highlight` Liquid tag with `linenos` and `hl_lines` options",
+        "Add a JavaScript library like Prism.js to the page",
+        "Disable kramdown and use raw HTML `<pre>` tags"
+      ],
+      "correct": 1,
+      "explanation": "The `highlight` Liquid tag accepts options the Markdown fence can't express - line numbers, line offsets, and `hl_lines` for marking specific lines. It still goes through Rouge, so the colour scheme stays consistent."
+    },
+    {
+      "id": 3,
+      "question": "Why is `pre.innerText` (not `pre.innerHTML`) the right source for a copy-to-clipboard button on Rouge-highlighted code?",
+      "choices": [
+        "`innerHTML` is deprecated in modern browsers",
+        "`innerText` preserves the original source; `innerHTML` would paste the span markup Rouge added",
+        "`innerHTML` triggers a CSP violation on GitHub Pages",
+        "`innerText` is faster on large code blocks"
+      ],
+      "correct": 1,
+      "explanation": "Rouge wraps every token in `<span>` tags. `innerText` returns the rendered plain text - what the reader actually sees and wants to paste. `innerHTML` would copy the wrapped HTML, which is useless to anyone pasting it into a terminal or editor."
+    }
+  ]
+}

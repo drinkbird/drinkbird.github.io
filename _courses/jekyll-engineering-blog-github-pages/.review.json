@@ -1,0 +1,163 @@
+{
+  "generated_at": "2026-05-24T01:03:20Z",
+  "course_slug": "jekyll-engineering-blog-github-pages",
+  "chapters_reviewed": 30,
+  "findings": [
+    {
+      "id": "f001",
+      "type": "contradiction",
+      "confidence": "high",
+      "severity": "medium",
+      "auto_fixable": false,
+      "status": "fixed",
+      "summary": "CSS entrypoint filename inconsistent across chapters (style.css vs main.css)",
+      "details": {
+        "chapter_a": "03-building-the-blog/02-customising-layouts-and-styles",
+        "quote_a": "Create `assets/css/style.scss` in your repo... Update the `<link rel=\"stylesheet\">` to `/assets/css/style.css` (or whatever you named your entrypoint).",
+        "chapter_b": "04-production-polish/01-seo-basics",
+        "quote_b": "<link rel=\"stylesheet\" href=\"{{ '/assets/css/main.css' | relative_url }}\">",
+        "also_in": [
+          "02-jekyll-model/01-layouts-and-includes (uses /assets/css/main.css)",
+          "01-foundations/03-anatomy-of-a-jekyll-site (tree shows assets/css/main.scss)",
+          "06-capstone/03-performance-audit (/* assets/css/main.css */)"
+        ],
+        "issue": "Chapter 3.2 tells the reader to create assets/css/style.scss and update their head include to link to style.css. Later layout examples in chapters 4.1 and 6.3 link to main.css, and the tree in 1.3 also shows main.scss. A reader who followed 3.2 will have a style.css that the later examples never reference."
+      },
+      "alternatives": [
+        {
+          "label": "A",
+          "summary": "Rename 3.2's entrypoint to main.scss/main.css so it matches every other chapter",
+          "fix_instruction": "In 03-building-the-blog/02-customising-layouts-and-styles.md, change every reference to `assets/css/style.scss` and `/assets/css/style.css` to `assets/css/main.scss` and `/assets/css/main.css` respectively (Walkthrough section, Common pitfalls table, and any callout text). The Concepts paragraph that says the recommended override is `assets/css/style.scss` should be updated to `assets/css/main.scss`. Keep the rest of the chapter (the Sass-cascade pattern, the front-matter requirement, the @import \"minima\" guidance) unchanged.",
+          "affected_chapters": [
+            "03-building-the-blog/02-customising-layouts-and-styles"
+          ]
+        },
+        {
+          "label": "B",
+          "summary": "Update the later chapters to consistently reference style.css",
+          "fix_instruction": "In 04-production-polish/01-seo-basics.md change the layout's `<link rel=\"stylesheet\" href=\"{{ '/assets/css/main.css' | relative_url }}\">` to `<link rel=\"stylesheet\" href=\"{{ '/assets/css/style.css' | relative_url }}\">`. In 02-jekyll-model/01-layouts-and-includes.md change the same line in the default.html example to point at style.css. In 01-foundations/03-anatomy-of-a-jekyll-site.md change the tree entry from `assets/css/main.scss` to `assets/css/style.scss`. In 06-capstone/03-performance-audit.md change the `/* assets/css/main.css */` comment to `/* assets/css/style.css */`.",
+          "affected_chapters": [
+            "04-production-polish/01-seo-basics",
+            "02-jekyll-model/01-layouts-and-includes",
+            "01-foundations/03-anatomy-of-a-jekyll-site",
+            "06-capstone/03-performance-audit"
+          ]
+        }
+      ],
+      "recommendation": "A",
+      "rationale": "main.css/main.scss matches what `jekyll new` produces and what minima ships, and changing one chapter is a smaller surface area than four. The reader new to Jekyll will be less confused if the filename matches every Jekyll tutorial they read elsewhere.",
+      "auto_resolved": true,
+      "chosen_alternative": "A"
+    },
+    {
+      "id": "f002",
+      "type": "code_prose_mismatch",
+      "confidence": "high",
+      "severity": "medium",
+      "auto_fixable": true,
+      "status": "fixed",
+      "summary": "Page-weight budget: prose says 500 KB, Lighthouse YAML config sets 600 KB",
+      "details": {
+        "chapter": "04-production-polish/05-images-and-page-weight",
+        "issue": "The Concepts paragraph commits to a budget of 'under 500 KB total per post page'. The exercise also says '500 KB total-transfer budget per post page'. But the .lighthouserc.yml in the Walkthrough sets `resource-summary:total:size` to `maxNumericValue: 600000` (600 KB / ~586 KiB). The numbers don't agree.",
+        "quote_prose": "**under 500 KB total per post page**, hero images under 150 KB, inline screenshots under 100 KB each",
+        "quote_code": "resource-summary:total:size: [\"error\", { maxNumericValue: 600000 }]",
+        "quote_exercise": "Add a Lighthouse CI step to your GitHub Actions workflow with a 500 KB total-transfer budget per post page"
+      },
+      "suggested_fix": "In 04-production-polish/05-images-and-page-weight.md, change the Lighthouse config block so the `resource-summary:total:size` maxNumericValue is 500000 instead of 600000, matching the 500 KB total budget stated in the Concepts paragraph and the Exercises section. Also consider tightening `resource-summary:image:size` from 400000 to 350000 so the per-page sum (50 KB doc + 350 KB images) stays comfortably under 500 KB; this is optional but keeps the math honest."
+    },
+    {
+      "id": "f003",
+      "type": "broken_promise",
+      "confidence": "high",
+      "severity": "medium",
+      "auto_fixable": false,
+      "status": "fixed",
+      "summary": "Module 2.3 promises Module 3 will pick up jekyll-paginate-v2; Module 3 never mentions pagination",
+      "details": {
+        "promise_chapter": "02-jekyll-model/03-posts-and-permalinks",
+        "promise": "The default `jekyll-paginate` is barely usable; the community plugin [`jekyll-paginate-v2`](https://github.com/sverrirs/jekyll-paginate-v2) is what you want. Module 3 picks it up when we design the actual blog index page; for now, plan your permalinks knowing that pagination layers cleanly on top of any URL scheme.",
+        "expected_in": "03-building-the-blog/03-designing-homepage-post-archive",
+        "issue": "Module 3 chapter 3 designs the homepage, post page, and archive but never mentions pagination or jekyll-paginate-v2. The archive section actively argues against pagination ('Paginating it... is the wrong default') in favour of a year-grouped list. The homepage section uses `limit: 8` with no pagination. No other chapter in Module 3 covers it either."
+      },
+      "alternatives": [
+        {
+          "label": "A",
+          "summary": "Deliver the promised content in 3.3 by adding a short pagination section",
+          "fix_instruction": "In 03-building-the-blog/03-designing-homepage-post-archive.md, add a short Concepts paragraph (and a corresponding Walkthrough snippet) covering jekyll-paginate-v2: when to reach for it (e.g. if the homepage 'Recent' list grows beyond what `limit:` can serve, or if you want a /blog/page/2/ navigation), how to install it (Gemfile + _config.yml `pagination:` block with `enabled: true`, `per_page: 10`, `permalink: '/page:num/'`), and the front-matter switch on the index page (`pagination: enabled: true`). Note that it is NOT on the GitHub Pages safelist so it requires the Actions build from Module 5. Keep the rest of the chapter (homepage hierarchy, post typography, year-grouped archive) intact.",
+          "affected_chapters": [
+            "03-building-the-blog/03-designing-homepage-post-archive"
+          ]
+        },
+        {
+          "label": "B",
+          "summary": "Remove the promise from 2.3",
+          "fix_instruction": "In 02-jekyll-model/03-posts-and-permalinks.md, rewrite the paragraph about pagination so it does not commit Module 3 to picking it up. Replace it with: 'Pagination is the one feature this chapter only flags. The default `jekyll-paginate` is barely usable; the community plugin [`jekyll-paginate-v2`](https://github.com/sverrirs/jekyll-paginate-v2) is what you reach for if you outgrow the simple `limit:` pattern we use on the homepage in Module 3. It is not on the GitHub Pages safelist, so it requires the Actions build from Module 5. Plan your permalinks knowing pagination layers cleanly on top of any URL scheme.' This makes the reference informational rather than a promise.",
+          "affected_chapters": [
+            "02-jekyll-model/03-posts-and-permalinks"
+          ]
+        }
+      ],
+      "recommendation": "B",
+      "rationale": "Module 3.3's design explicitly argues against pagination on both the archive and (implicitly) the homepage, recommending year-grouped lists and `limit:`-based selections instead. Adding pagination content would conflict with the chapter's editorial stance; rewriting the 2.3 reference to be informational rather than promissory is more consistent with what the course actually teaches.",
+      "auto_resolved": true,
+      "chosen_alternative": "B"
+    },
+    {
+      "id": "f004",
+      "type": "contradiction",
+      "confidence": "high",
+      "severity": "medium",
+      "auto_fixable": false,
+      "status": "fixed",
+      "summary": "_includes/figure.html defined twice with incompatible signatures (4.5 and 6.3)",
+      "details": {
+        "chapter_a": "04-production-polish/05-images-and-page-weight",
+        "signature_a": "{% include figure.html src=\"2026-01-15-rate-limiting-hero\" alt=\"...\" caption=\"...\" %}",
+        "behaviour_a": "Treats `src` as a basename relative to /assets/img/posts/, emits an <img> with srcset for three WebP widths plus a JPEG fallback, defaults sizes/width/height/loading.",
+        "chapter_b": "06-capstone/03-performance-audit",
+        "signature_b": "{% include figure.html src=\"/x.jpg\" alt=\"...\" width=1600 height=900 %}",
+        "behaviour_b": "Treats `src` as a full URL path, emits a single <img> with no srcset and requires explicit width/height parameters.",
+        "issue": "Both chapters define a file at the same path `_includes/figure.html` with incompatible parameter conventions and markup. A reader who followed 4.5 has a srcset/WebP figure include; 6.3 instructs them to use a different include at the same path with a different calling convention. The two cannot coexist."
+      },
+      "alternatives": [
+        {
+          "label": "A",
+          "summary": "In 6.3, reuse 4.5's figure.html instead of redefining it",
+          "fix_instruction": "In 06-capstone/03-performance-audit.md, remove the `_includes/figure.html` redefinition block. Replace it with a paragraph that says: 'Module 4.5 already gave you `_includes/figure.html` with srcset, width, height, and lazy-loading defaults. For hero images that block LCP, call that include with `loading=\"eager\"` to opt out of lazy-loading on the above-the-fold image:' followed by a sample call like `{% include figure.html src=\"...\" alt=\"...\" loading=\"eager\" %}`. Adjust the surrounding prose so the chapter's point is still 'always set width/height; never lazy-load the hero', but defers the include itself to 4.5.",
+          "affected_chapters": [
+            "06-capstone/03-performance-audit"
+          ]
+        },
+        {
+          "label": "B",
+          "summary": "Rename the 6.3 include to avoid the collision",
+          "fix_instruction": "In 06-capstone/03-performance-audit.md, rename `_includes/figure.html` to `_includes/hero.html` (or `_includes/figure-simple.html`), update the usage comment, and add a one-line note that this is a deliberately simpler companion to the responsive figure include from 4.5, intended for hero images that don't need a srcset. Adjust the example call accordingly.",
+          "affected_chapters": [
+            "06-capstone/03-performance-audit"
+          ]
+        }
+      ],
+      "recommendation": "A",
+      "rationale": "A reader new to Jekyll building a single blog should not maintain two figure includes with different signatures. Reusing the existing include and adding an opt-out for lazy-loading is the smaller mental model and matches the course's 'one home for each concept' style.",
+      "auto_resolved": true,
+      "chosen_alternative": "A"
+    },
+    {
+      "id": "f005",
+      "type": "code_prose_mismatch",
+      "confidence": "high",
+      "severity": "low",
+      "auto_fixable": true,
+      "status": "fixed",
+      "summary": "Chapter 5.5 calls the checklist a 'five-line checklist' but lists seven items (and Recap says 'seven-step')",
+      "details": {
+        "chapter": "05-github-pages-and-custom-domain/05-https-and-verifying-the-deploy",
+        "issue": "The Walkthrough introduces 'a five-line checklist across the whole site' immediately before a numbered list of seven items (1-7). The Exercises section then refers to it as 'the seven-step checklist', and the Recap says 'seven-step checklist' as well. Only the introduction is wrong.",
+        "quote_intro": "Now run a five-line checklist across the whole site. Treat it as a gate before you tell anyone the blog exists:",
+        "quote_recap": "Run the seven-step checklist before announcing the site"
+      },
+      "suggested_fix": "In 05-github-pages-and-custom-domain/05-https-and-verifying-the-deploy.md, change 'Now run a five-line checklist across the whole site.' to 'Now run a seven-step checklist across the whole site.' so the wording matches the actual list length and the Recap/Exercises references."
+    }
+  ]
+}

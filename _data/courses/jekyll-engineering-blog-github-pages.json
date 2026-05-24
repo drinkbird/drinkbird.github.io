@@ -1,0 +1,498 @@
+{
+  "topic": "How to create an engineering blog with Jekyll and host it on GitHub Pages on a custom domain",
+  "slug": "jekyll-engineering-blog-github-pages",
+  "depth": "intermediate",
+  "image": "course-jekyll.jpg",
+  "created_at": "2026-05-24T00:41:11Z",
+  "answers": {
+    "prior_knowledge": "Familiar with static sites as a concept, new to Jekyll, some web dev background, no prior SSG experience (term unfamiliar).",
+    "goal": "Ship a polished personal engineering blog with a custom domain.",
+    "depth": "intermediate",
+    "time_budget": "10-15 hours (deep)",
+    "applied_vs_theory": "Heavily applied",
+    "avoid_include": "Skip Ruby internals beyond surface usage; skip alternative SSGs entirely; include analytics, SEO, and social previews."
+  },
+  "modules": [
+    {
+      "id": 1,
+      "slug": "foundations",
+      "title": "Foundations: From web pages to a Jekyll site",
+      "summary": "Get oriented to static site generation, install Jekyll locally, and understand the shape of a Jekyll project end-to-end.",
+      "learning_objectives": [
+        "Explain what a static site generator is and why Jekyll fits an engineering blog",
+        "Install Ruby and Jekyll on macOS/Linux without polluting the system Ruby",
+        "Read a Jekyll project layout and the role of `_config.yml`",
+        "Write a first post with front matter and Markdown",
+        "Run the local build and serve loop and inspect the generated `_site`"
+      ],
+      "chapters": [
+        {
+          "id": 1,
+          "slug": "what-is-a-static-site-generator",
+          "title": "What a static site generator is, and why Jekyll for an engineering blog",
+          "summary": "Defines static site generation by contrasting server-rendered, SPA, and static rendering paths, then positions Jekyll as the SSG GitHub Pages was built around. Explains build-time vs request-time rendering, why the Markdown-in-Git workflow suits engineering blogs, and when a static site is the wrong tool (per-user, real-time, heavy interactivity).",
+          "key_concepts": [
+            "Server-rendered vs. static vs. SPA",
+            "Build-time vs. request-time rendering",
+            "Why GitHub Pages and Jekyll are paired",
+            "When a static site is the wrong choice"
+          ],
+          "status": "done"
+        },
+        {
+          "id": 2,
+          "slug": "installing-ruby-and-jekyll",
+          "title": "Installing Ruby and Jekyll locally (just enough Ruby)",
+          "summary": "Walks through installing a managed Ruby via rbenv (with one-paragraph notes on asdf) on macOS and Linux, explains why the system Ruby is off-limits, and scaffolds a working site with `jekyll new`. Covers Bundler and the Gemfile at surface level only, and establishes the `bundle exec jekyll serve` habit.",
+          "key_concepts": [
+            "Why not to use system Ruby",
+            "rbenv vs. asdf vs. chruby",
+            "Bundler basics and `Gemfile` purpose",
+            "`jekyll new` and the minima starter"
+          ],
+          "status": "done"
+        },
+        {
+          "id": 3,
+          "slug": "anatomy-of-a-jekyll-site",
+          "title": "Anatomy of a Jekyll site: directory layout and `_config.yml`",
+          "summary": "Tours the conventional Jekyll directory tree, distinguishing special (underscore-prefixed) directories from regular content, and explains what belongs in `_layouts`, `_includes`, `_posts`, `_drafts`, `_data`, `_site`, and `assets`. Walks through the `_config.yml` keys that matter on day one (`title`, `description`, `url`, `baseurl`, `markdown`, `permalink`, `plugins`) and the gitignore rules around `_site/`.",
+          "key_concepts": [
+            "Special vs. regular directories",
+            "`_config.yml` keys that affect URLs and builds",
+            "Where generated output lives",
+            "What to commit and what to ignore"
+          ],
+          "status": "done"
+        },
+        {
+          "id": 4,
+          "slug": "front-matter-and-first-post",
+          "title": "Front matter, Markdown, and writing your first post",
+          "summary": "Covers YAML front matter, the `YYYY-MM-DD-slug.md` filename convention for posts, the kramdown dialect (attribute lists, footnotes, intra-word underscore gotchas), and the `_drafts/` plus `--drafts` workflow. Reader writes a real draft post, previews it, and publishes it via `git mv` into `_posts/`.",
+          "key_concepts": [
+            "Front matter keys: `layout`, `title`, `date`, `tags`",
+            "kramdown vs. CommonMark differences",
+            "Filename convention `YYYY-MM-DD-slug.md`",
+            "Draft posts in `_drafts/`"
+          ],
+          "status": "done"
+        },
+        {
+          "id": 5,
+          "slug": "the-jekyll-build-pipeline",
+          "title": "The build pipeline: `jekyll build` vs `jekyll serve`, and what ends up in `_site`",
+          "summary": "Explains the build pipeline end to end: `jekyll build` wipes and rewrites `_site/`, `jekyll serve` adds a watcher and local server with optional `--livereload`, and `--incremental` is a footgun for layout/include/config changes. Traces one post through kramdown, Liquid, nested layouts, and the permalink-derived output path; teaches the three common error shapes (YAML, Liquid, missing layout) and how to read them.",
+          "key_concepts": [
+            "`jekyll build` vs. `jekyll serve --livereload`",
+            "Incremental builds and their gotchas",
+            "Tracing a source file to its built output",
+            "Common build errors and how to read them"
+          ],
+          "status": "done"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "slug": "jekyll-model",
+      "title": "The Jekyll model: Layouts, Liquid, and content",
+      "summary": "Internalise Jekyll's templating and content model so you can shape it to your blog rather than fight the defaults.",
+      "learning_objectives": [
+        "Compose pages from layouts and includes",
+        "Read and write Liquid templates with confidence",
+        "Design a permalink structure deliberately",
+        "Decide when a custom collection is justified",
+        "Drive site-wide content from `_data/*.yml`"
+      ],
+      "chapters": [
+        {
+          "id": 1,
+          "slug": "layouts-and-includes",
+          "title": "Layouts and includes - composing pages from reusable parts",
+          "summary": "Introduces layouts as page chrome (with the layout-inheritance chain) and includes as inline reusable fragments, with concrete `default.html`/`post.html`/`header.html`/parameterised `callout.html` examples. Covers `include.` scoping, `relative_url`, and the layout-vs-include decision.",
+          "key_concepts": [
+            "Layout inheritance chain",
+            "`{% include %}` and passing parameters",
+            "When to use a layout vs. an include",
+            "Common pitfalls (relative paths, scope)"
+          ],
+          "status": "done"
+        },
+        {
+          "id": 2,
+          "slug": "liquid-templating",
+          "title": "Liquid templating - variables, filters, tags, and the data flow",
+          "summary": "Tours Liquid syntax - output `{{ }}` vs logic `{% %}` - the `site`/`page`/`content` globals, and the filters and control-flow forms used daily (`date`, `slugify`, `where`/`where_exp`, `group_by`, `sort`, `default`, `relative_url`, `for` with `limit`/`reversed`). Includes debugging-via-`jsonify` and `--trace` since Liquid has no REPL.",
+          "key_concepts": [
+            "Output `{{ }}` vs. logic `{% %}`",
+            "Useful filters: `date`, `slugify`, `where`, `group_by`",
+            "Looping and conditionals",
+            "Debugging Liquid in templates"
+          ],
+          "status": "done"
+        },
+        {
+          "id": 3,
+          "slug": "posts-and-permalinks",
+          "title": "The `_posts` collection and designing your permalink structure",
+          "summary": "Frames `_posts/` as the built-in collection with its filename contract, walks through permalink placeholders, and argues for `/blog/:year/:month/:slug/` over the default. Covers trailing-slash semantics, per-collection `defaults:` blocks, and using `jekyll-redirect-from` to migrate URLs safely.",
+          "key_concepts": [
+            "Default permalinks and their costs",
+            "Permalink placeholders",
+            "Trailing slash and SEO implications",
+            "Redirects with `jekyll-redirect-from`"
+          ],
+          "status": "done"
+        },
+        {
+          "id": 4,
+          "slug": "custom-collections",
+          "title": "Custom collections (notes, projects, talks) - when and how",
+          "summary": "Shows how to declare custom collections in `_config.yml` with `output: true` and a `defaults:` block for layout/permalink, using `projects` and `talks` as worked examples. Establishes the collection-vs-tag-vs-data decision rule and notes the GitHub Pages plugin-whitelist gotcha.",
+          "key_concepts": [
+            "Declaring a collection",
+            "Per-collection defaults",
+            "When a collection beats a tag",
+            "Cross-linking collections"
+          ],
+          "status": "done"
+        },
+        {
+          "id": 5,
+          "slug": "data-files",
+          "title": "Data files (`_data/*.yml`) and driving the site from structured data",
+          "summary": "Explains `_data/` as the home for structured, body-less content reachable via `site.data.<path>`, comparing YAML/JSON/CSV trade-offs. Provides a footer-links example, a CSV talks list, and the anchored-sections pattern for rendering pages from data without leaving the built-in primitives.",
+          "key_concepts": [
+            "YAML/JSON/CSV in `_data`",
+            "Accessing data in Liquid",
+            "Generating pages from data",
+            "When to use data vs. front matter"
+          ],
+          "status": "done"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "slug": "building-the-blog",
+      "title": "Applied: Building the blog itself",
+      "summary": "Use the Jekyll model to build the actual blog - pick a starting point, customise it tastefully, and shape the reader's path through the site.",
+      "learning_objectives": [
+        "Choose between a starter theme and building from scratch",
+        "Override theme files without forking the whole gem",
+        "Design the homepage, post page, and archive deliberately",
+        "Set up code blocks and typography suited to engineering writing",
+        "Build helpful navigation with tags and categories"
+      ],
+      "chapters": [
+        {
+          "id": 1,
+          "slug": "choosing-a-starting-point",
+          "title": "Choosing a starting point - `minima`, a community theme, or from scratch",
+          "summary": "Compares the three real starting points for an engineering blog - the default `minima` gem theme, a richer community theme (Chirpy, al-folio), and a blank from-scratch site - and recommends starting with `minima` plus selective overrides. Shows how to locate a gem theme's files on disk via `bundle info` and what signals indicate you've outgrown a theme.",
+          "key_concepts": [
+            "Gem-based themes vs. forked themes",
+            "Where theme files live and how to find them",
+            "Reading a theme's `_sass` and `_layouts`",
+            "Signs a theme will outgrow you"
+          ],
+          "status": "done"
+        },
+        {
+          "id": 2,
+          "slug": "customising-layouts-and-styles",
+          "title": "Customising layouts and styles without forking the whole theme",
+          "summary": "Walks through Jekyll's per-path theme-file precedence: copy only the files you want to change into your repo and let the rest stay in the gem. Demonstrates a concrete override of `_includes/head.html` and the Sass entrypoint pattern (variables before `@import \"minima\"`), and explains why pinning the theme's major version in `Gemfile` matters.",
+          "key_concepts": [
+            "Theme file precedence",
+            "Overriding `_layouts/default.html`",
+            "Importing the theme's Sass partials",
+            "Keeping diff with upstream small"
+          ],
+          "status": "done"
+        },
+        {
+          "id": 3,
+          "slug": "designing-homepage-post-archive",
+          "title": "Designing the homepage, post page, and archive",
+          "summary": "Designs the three pages every blog has: a homepage with a `featured: true`-driven 'selected' list plus a recent list, a post page with capped reading-line length and rhythmic typography, and a year-grouped archive built with `group_by_exp`. Covers `excerpt_separator` and per-post `excerpt:` front matter for varied list pages.",
+          "key_concepts": [
+            "Homepage hierarchy (latest vs. selected)",
+            "Reading-line length and post-page typography",
+            "Year-grouped vs. paginated archives",
+            "Excerpts: `excerpt_separator` and overrides"
+          ],
+          "status": "done"
+        },
+        {
+          "id": 4,
+          "slug": "code-blocks-and-typography",
+          "title": "Code blocks, syntax highlighting (Rouge), and engineering-friendly typography",
+          "summary": "Treats code blocks as the centrepiece of an engineering blog: how Rouge tokenises fenced code, generating a theme stylesheet with `rougify style`, when to reach for the `highlight` Liquid tag for line numbers, and a small vanilla-JS include for copy-to-clipboard. Includes guidance on monospace-vs-body type sizing and inline-vs-block code styling.",
+          "key_concepts": [
+            "Rouge highlighting and theme CSS",
+            "Inline code vs. block styling",
+            "Monospace font pairing with body type",
+            "Copy-to-clipboard via a small include"
+          ],
+          "status": "done"
+        },
+        {
+          "id": 5,
+          "slug": "tags-categories-navigation",
+          "title": "Tags, categories, and post navigation that actually helps readers",
+          "summary": "Adds tags and categories thoughtfully - one category per post, two or three tags, three-post minimum before introducing a tag. Builds a tag index page with a single Liquid loop over `site.tags`, wires up `page.previous`/`page.next` navigation, and introduces a `series:` + `series_order:` front-matter pattern for ordered multi-post sequences.",
+          "key_concepts": [
+            "Tag vs. category: when each helps",
+            "Generating a tag index via Liquid",
+            "Series navigation with front matter",
+            "Avoiding tag-spam and dead pages"
+          ],
+          "status": "done"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "slug": "production-polish",
+      "title": "Production polish: SEO, social, feeds, analytics",
+      "summary": "Add the production-grade niceties that turn a working blog into one people can actually find, share, and follow.",
+      "learning_objectives": [
+        "Set up SEO meta tags and a sitemap",
+        "Make shared links render rich previews on social platforms",
+        "Publish a sensible RSS feed",
+        "Add privacy-friendly analytics without dark patterns",
+        "Keep page weight under control with responsive images"
+      ],
+      "chapters": [
+        {
+          "id": 1,
+          "slug": "seo-basics",
+          "title": "SEO basics with `jekyll-seo-tag` - titles, descriptions, sitemap, robots",
+          "summary": "Installs `jekyll-seo-tag` and `jekyll-sitemap`, walks through per-page title/description/canonical resolution, and clarifies what `robots.txt` actually controls (crawling, not indexing - and not a security tool).",
+          "key_concepts": [
+            "Title and description per-page",
+            "Canonical URLs",
+            "`sitemap.xml` and submission",
+            "What `robots.txt` does and doesn't do"
+          ],
+          "status": "done"
+        },
+        {
+          "id": 2,
+          "slug": "open-graph-and-social-previews",
+          "title": "Open Graph and Twitter cards - making shared links look great",
+          "summary": "Shows the Open Graph and Twitter card meta `jekyll-seo-tag` emits, adds per-post `image:` front matter with site-wide fallback, and demonstrates the absolute-URL requirement plus the social debuggers used to validate previews.",
+          "key_concepts": [
+            "Open Graph required tags",
+            "Twitter card types",
+            "Per-post `image` front matter",
+            "Validating with social debuggers"
+          ],
+          "status": "done"
+        },
+        {
+          "id": 3,
+          "slug": "rss-feeds",
+          "title": "RSS feeds via `jekyll-feed` and giving readers a way to subscribe",
+          "summary": "Adds `jekyll-feed` for an Atom feed at `/feed.xml`, configures per-collection feeds, argues for full-content over excerpt-only on engineering blogs, and wires up autodiscovery plus a visible Subscribe link.",
+          "key_concepts": [
+            "Atom vs. RSS",
+            "Per-collection feeds",
+            "Excerpt vs. full content in the feed",
+            "Autodiscovery `<link>` tag"
+          ],
+          "status": "done"
+        },
+        {
+          "id": 4,
+          "slug": "privacy-friendly-analytics",
+          "title": "Privacy-friendly analytics (Plausible, Umami, or GoatCounter)",
+          "summary": "Compares Plausible (SaaS-first), Umami (self-host-friendly), and GoatCounter (minimalist) as cookie-free analytics; shows a config-gated include pattern so dev traffic doesn't pollute production; and reframes useful metrics vs vanity for a blog.",
+          "key_concepts": [
+            "Why not Google Analytics for a blog",
+            "Self-hosted vs. SaaS",
+            "Cookie consent and GDPR posture",
+            "Useful metrics vs. vanity metrics"
+          ],
+          "status": "done"
+        },
+        {
+          "id": 5,
+          "slug": "images-and-page-weight",
+          "title": "Images - responsive sizes, lazy loading, and a sensible page-weight budget",
+          "summary": "Sets a page-weight budget, recommends WebP as the default format, walks through `srcset`/`sizes`/`loading=\"lazy\"` with a reusable `_includes/figure.html`, contrasts manual exports with `jekyll-picture-tag`, and enforces the budget with Lighthouse CI.",
+          "key_concepts": [
+            "WebP/AVIF vs. JPEG",
+            "`srcset` and `sizes`",
+            "Native `loading=\"lazy\"`",
+            "A simple page-weight budget"
+          ],
+          "status": "done"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "slug": "github-pages-and-custom-domain",
+      "title": "GitHub Pages and a custom domain",
+      "summary": "Deploy the blog to GitHub Pages, switch to GitHub Actions when you outgrow the safelist, and wire up a custom domain end-to-end.",
+      "learning_objectives": [
+        "Understand the difference between the Pages built-in build and Actions-based builds",
+        "Set up a user or project Pages site correctly",
+        "Build with GitHub Actions for full plugin support",
+        "Configure DNS for an apex or `www` custom domain",
+        "Enforce HTTPS and verify the live deployment"
+      ],
+      "chapters": [
+        {
+          "id": 1,
+          "slug": "how-github-pages-builds-jekyll",
+          "title": "How GitHub Pages builds Jekyll - the safelist, and why you'll outgrow it",
+          "summary": "Explains GitHub Pages' built-in Jekyll build: the pinned `github-pages` meta-gem, the short plugin safelist, and the silent-failure mode where `--safe` drops unsafelisted gems without error. Shows how to reproduce the production build locally with `--safe` and lists the signals that you've outgrown the built-in build.",
+          "key_concepts": [
+            "Safelist plugins vs. arbitrary gems",
+            "The `github-pages` gem and version pinning",
+            "Build logs and where to find them",
+            "Signals you've outgrown the built-in build"
+          ],
+          "status": "done"
+        },
+        {
+          "id": 2,
+          "slug": "repo-setup-and-deploy-source",
+          "title": "Repo setup: user-site vs project-site, branches, and the deploy source",
+          "summary": "Covers the user-site (`<username>.github.io`) vs project-site repo shapes, the role of `url:` and `baseurl:` in `_config.yml`, and the three deploy sources (branch, `/docs`, GitHub Actions). Clarifies that `gh-pages` is a legacy convention and shows where the built-in build's logs surface in the Actions tab.",
+          "key_concepts": [
+            "User site vs. project site URLs",
+            "`baseurl` and `url` in `_config.yml`",
+            "Deploy from branch vs. from Actions",
+            "`gh-pages` branch conventions"
+          ],
+          "status": "done"
+        },
+        {
+          "id": 3,
+          "slug": "building-with-github-actions",
+          "title": "Building with GitHub Actions for full plugin support",
+          "summary": "Provides a complete `.github/workflows/pages.yml` using `actions/configure-pages`, `actions/upload-pages-artifact`, and `actions/deploy-pages` with `ruby/setup-ruby` and `bundler-cache`. Explains the required `pages: write` and `id-token: write` permissions, the `github-pages` environment, build/deploy job split, concurrency control, and `JEKYLL_ENV=production`.",
+          "key_concepts": [
+            "`actions/configure-pages`, `actions/upload-pages-artifact`, `actions/deploy-pages`",
+            "Caching Ruby gems for fast builds",
+            "Permissions and the Pages environment",
+            "Build matrix and preview deploys"
+          ],
+          "status": "done"
+        },
+        {
+          "id": 4,
+          "slug": "custom-domain-and-dns",
+          "title": "Buying and pointing a custom domain: DNS records, apex vs `www`, the `CNAME` file",
+          "summary": "Walks through registrar choice (Cloudflare/Porkbun/Namecheap), the DNS records GitHub requires - four `A` + four `AAAA` for the apex and a `CNAME` for `www`, with strict instructions to copy IPs only from the live GitHub docs - and the role of the repo's `CNAME` file. Covers canonical hostname choice, short TTLs during config, and `dig +short` verification.",
+          "key_concepts": [
+            "Apex domain A/AAAA records",
+            "`www` CNAME setup",
+            "The repo `CNAME` file",
+            "Propagation, TTLs, and verifying with `dig`"
+          ],
+          "status": "done"
+        },
+        {
+          "id": 5,
+          "slug": "https-and-verifying-the-deploy",
+          "title": "HTTPS, enforcing it, and verifying the live deploy",
+          "summary": "Closes the module with Let's Encrypt certificate provisioning, the 'Enforce HTTPS' checkbox, automatic HSTS, and the canonical 301 redirect. Provides three `curl` verification commands and a seven-step pre-launch checklist covering cert, redirects, meta tags, social previews, RSS, sitemap, and analytics. Bridges to Module 6's writing workflow.",
+          "key_concepts": [
+            "Let's Encrypt certificate provisioning",
+            "Apex vs. `www` canonical choice and redirects",
+            "Verifying HSTS",
+            "Final deploy checklist"
+          ],
+          "status": "done"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "slug": "capstone",
+      "title": "Capstone: Workflow, polish, and what's next",
+      "summary": "Make the blog something you can sustain - a writing workflow that fits your editor, CI guardrails for prose, performance and accessibility passes, and a sense of when to grow further.",
+      "learning_objectives": [
+        "Set up a writing workflow that respects drafts and scheduled posts",
+        "Add editorial CI: link checking, HTML validation, spell check",
+        "Run a meaningful performance audit and act on it",
+        "Pass an accessibility check and implement dark mode well",
+        "Decide what to invest in next (search, comments, newsletter)"
+      ],
+      "chapters": [
+        {
+          "id": 1,
+          "slug": "writing-workflow",
+          "title": "Writing workflow - drafts, scheduled posts, and an editor setup that doesn't fight you",
+          "summary": "A sustainable writing workflow built on `_drafts/`, `jekyll serve --drafts --future`, an editor that doesn't fight you (VS Code Front Matter, Obsidian, iA Writer, Typora), and a `new-post` shell function that stamps out a post with valid front matter and promotes drafts via `git mv` to preserve history.",
+          "key_concepts": [
+            "`_drafts/` vs. dated posts",
+            "`--future` and scheduled publishing",
+            "Editor: VS Code, Obsidian, Vim configs",
+            "A repeatable post template"
+          ],
+          "status": "done"
+        },
+        {
+          "id": 2,
+          "slug": "editorial-ci",
+          "title": "Editorial CI - link checking, HTML validation, and spell-check on PRs",
+          "summary": "An editorial CI pipeline that catches broken links (htmlproofer for internal, lychee for external), invalid HTML, and typos (`typos`). Walks through a `.github/workflows/editorial.yml` and the fail-vs-warn split: fail on things under your control (internal links, typos), warn on things that aren't (flaky external links).",
+          "key_concepts": [
+            "`htmlproofer` and `lychee` link checking",
+            "HTML validation in CI",
+            "Spell-check tools (`typos`, `codespell`)",
+            "Failing fast vs. warning-only"
+          ],
+          "status": "done"
+        },
+        {
+          "id": 3,
+          "slug": "performance-audit",
+          "title": "Performance audit - Lighthouse, font loading, and the things that actually matter",
+          "summary": "Running Lighthouse against the live blog and fixing the few things that actually move Core Web Vitals - self-hosting fonts as `.woff2` with `font-display: swap`, preloading the LCP weight, setting `width`/`height` on every image to eliminate CLS, and accepting GitHub Pages' default cache headers.",
+          "key_concepts": [
+            "LCP, CLS, INP for a blog",
+            "Font loading strategies (`font-display`, self-hosting)",
+            "Image dimensions and CLS",
+            "Caching headers on Pages"
+          ],
+          "status": "done"
+        },
+        {
+          "id": 4,
+          "slug": "accessibility-and-dark-mode",
+          "title": "Accessibility pass and dark mode that respects `prefers-color-scheme`",
+          "summary": "A practical WCAG 2.2 AA pass - contrast (4.5:1 body, 3:1 large), `:focus-visible` rings, semantic landmarks, skip link, single `<h1>` per page - plus a dark mode that defaults to `prefers-color-scheme` and adds a `data-theme` + `localStorage` manual override, with an inline pre-paint script to avoid the white flash.",
+          "key_concepts": [
+            "Colour contrast and focus states",
+            "Heading hierarchy and landmarks",
+            "`prefers-color-scheme` and a manual toggle",
+            "Skip links and keyboard navigation"
+          ],
+          "status": "done"
+        },
+        {
+          "id": 5,
+          "slug": "where-to-grow-next",
+          "title": "Where to grow next - search, comments, newsletter, and when to migrate off Pages",
+          "summary": "The final chapter: client-side search with Pagefind, comments via giscus or a Mastodon thread embed, newsletter via Buttondown (SaaS) or Listmonk (self-host), and concrete signals for migrating off GitHub Pages - usage limits, server-side needs, custom headers, build over 10 minutes. Closes the course with a recap of what was built and a call to write the first real post.",
+          "key_concepts": [
+            "Client-side search (Pagefind, lunr)",
+            "Comments without surveillance (giscus, Mastodon thread)",
+            "Newsletter via Buttondown/Listmonk",
+            "Signals it's time to leave Pages"
+          ],
+          "status": "done"
+        }
+      ]
+    }
+  ],
+  "generated_at": "2026-05-24T00:59:58Z"
+}

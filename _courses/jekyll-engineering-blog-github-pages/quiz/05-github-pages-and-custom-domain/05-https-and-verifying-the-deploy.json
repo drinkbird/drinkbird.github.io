@@ -1,0 +1,41 @@
+{
+  "chapter_id": "jekyll-engineering-blog-github-pages/05-github-pages-and-custom-domain/05-https-and-verifying-the-deploy",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Where does the TLS certificate for your custom GitHub Pages domain come from, and what does GitHub do to renew it?",
+      "choices": [
+        "GitHub issues its own internal cert; renewal is manual every 12 months",
+        "Let's Encrypt issues a 90-day cert; GitHub renews it automatically as long as DNS stays valid",
+        "You upload a cert you buy from your registrar; you renew it yourself",
+        "Cloudflare provides the cert through a GitHub partnership"
+      ],
+      "correct": 1,
+      "explanation": "GitHub Pages requests a Let's Encrypt certificate (90-day lifetime) once DNS and the `CNAME` file are correct. Renewal is automatic. The only way it breaks is if DNS records change such that Let's Encrypt can no longer validate the domain."
+    },
+    {
+      "id": 2,
+      "question": "You enabled 'Enforce HTTPS'. After 'announcing' the blog to a friend, they report that the social preview image is broken on Twitter. The image renders correctly when you open the post directly. What is the most likely cause?",
+      "choices": [
+        "Twitter caches social previews per URL; clear the cache via the Card Validator and re-check",
+        "Let's Encrypt revoked the cert because Twitter's fetcher doesn't validate it",
+        "HSTS is blocking Twitter's fetcher from loading the image",
+        "GitHub Pages strips Open Graph meta tags on the live site"
+      ],
+      "correct": 0,
+      "explanation": "Social platforms cache previews aggressively per URL and use what they saw at first fetch. Re-running the post through the Twitter Card Validator forces a refresh. (A separate, related gotcha is using a relative `og:image` URL - fix that with `absolute_url`, then re-validate.) HSTS and the cert have no effect on metadata fetching."
+    },
+    {
+      "id": 3,
+      "question": "Both `https://example.com/post/` and `https://www.example.com/post/` serve the same content with no redirect. Your `CNAME` file contains `example.com`. What is the trade-off in leaving this state versus fixing it?",
+      "choices": [
+        "It's fine - search engines automatically pick the canonical based on link count",
+        "Fix it: split traffic across two hostnames hurts SEO, analytics, and caching; the `CNAME` file is meant to make GitHub 301 one to the other, so investigate why the redirect isn't happening",
+        "Fix it: serving on both hostnames violates the Let's Encrypt terms of service",
+        "It's fine if you add `rel=canonical` link tags to every page"
+      ],
+      "correct": 1,
+      "explanation": "The point of putting one hostname in the `CNAME` file is to make GitHub 301 the other to it. Two live canonical hostnames split SEO signal, fragment analytics, and reduce cache effectiveness. If both serve without redirect despite a correct `CNAME` file, something is wrong (often a stale Pages config) - re-save Settings → Pages → Custom domain. `rel=canonical` helps SEO but doesn't solve the analytics/cache split."
+    }
+  ]
+}

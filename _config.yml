@@ -11,6 +11,9 @@ collections:
   books:
     output: true
     permalink: /books/:name
+  courses:
+    output: true
+    permalink: /courses/:path/
 
 defaults:
   -
@@ -24,6 +27,14 @@ defaults:
       type: "books"
     values:
       layout: "book-collection"
+  -
+    scope:
+      path: ""
+      type: "courses"
+    values:
+      layout: "course-chapter"
+      page-key: "courses"
+      excerpt: ""
 
 # Build settings
 markdown: kramdown
@@ -47,6 +58,9 @@ links:
   - title: Projects
     url: /projects/
     page-key: projects
+  - title: Courses
+    url: /courses/
+    page-key: courses
   - title: Books
     url: /books/
     page-key: books

@@ -1,0 +1,41 @@
+{
+  "chapter_id": "jekyll-engineering-blog-github-pages/04-production-polish/02-open-graph-and-social-previews",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which Twitter card type renders a large hero image alongside the post title and description?",
+      "choices": [
+        "summary",
+        "app",
+        "player",
+        "summary_large_image"
+      ],
+      "correct": 3,
+      "explanation": "`summary_large_image` is the variant with a wide hero image - typically what an engineering blog with custom share images wants. `summary` shows only a small square thumbnail."
+    },
+    {
+      "id": 2,
+      "question": "You set `image: /assets/img/posts/foo.png` on a post and the Facebook Sharing Debugger reports no image found. Why?",
+      "choices": [
+        "Facebook only supports `og:image` with `.jpg` extensions",
+        "The path needs to be absolute (include scheme and host); relative paths are not resolved by social scrapers",
+        "Open Graph images must be exactly 1200×630 - any other size is rejected",
+        "`og:image` cannot be set from front matter; it must be hardcoded in the layout"
+      ],
+      "correct": 1,
+      "explanation": "Social scrapers refuse relative paths. The URL needs scheme and host - use `absolute_url` in Liquid or let `jekyll-seo-tag` prefix it via `site.url`. Size, extension, and front-matter sourcing are all flexible."
+    },
+    {
+      "id": 3,
+      "question": "You updated a post's social image yesterday, but LinkedIn still shows the old one when you paste the URL. What's the best first action?",
+      "choices": [
+        "Wait 30 days for the platform's cache to expire naturally",
+        "Rename the post URL so LinkedIn treats it as new content",
+        "Run the URL through LinkedIn's Post Inspector to force a re-scrape",
+        "Delete the old image file from your repo so the broken-image fallback kicks in"
+      ],
+      "correct": 2,
+      "explanation": "Every social platform caches scrape results aggressively. The debugger/inspector tools let you force a re-fetch - that's their primary use. Renaming the URL works but breaks links; waiting is correct but slow; deleting the file makes things worse."
+    }
+  ]
+}

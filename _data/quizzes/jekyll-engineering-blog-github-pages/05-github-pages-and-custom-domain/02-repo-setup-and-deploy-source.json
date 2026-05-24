@@ -1,0 +1,41 @@
+{
+  "chapter_id": "jekyll-engineering-blog-github-pages/05-github-pages-and-custom-domain/02-repo-setup-and-deploy-source",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which repository name will GitHub Pages serve at `https://your-username.github.io/` (the apex of the github.io hostname) rather than under a subpath?",
+      "choices": [
+        "`blog`",
+        "`personal-site`",
+        "`your-username.github.io`",
+        "`gh-pages`"
+      ],
+      "correct": 2,
+      "explanation": "Only a repository named exactly `<username>.github.io` is treated as a user site and served at the apex of that hostname. Any other name is a project site served under `/<repo>/`."
+    },
+    {
+      "id": 2,
+      "question": "You move your blog into a repo called `my-notes` to be served at `https://your-username.github.io/my-notes/`. CSS and links 404 after deploy. What is the single most likely fix in `_config.yml`?",
+      "choices": [
+        "Add `url: \"https://your-username.github.io/my-notes\"` and leave `baseurl` empty",
+        "Set `baseurl: \"/my-notes\"` and pipe paths through the `relative_url` filter in templates",
+        "Rename `_config.yml` to `_config.production.yml`",
+        "Add `prefix: \"my-notes\"` under the `pages:` key"
+      ],
+      "correct": 1,
+      "explanation": "Project sites serve under a path. `baseurl: \"/my-notes\"` tells Jekyll's `relative_url`/`absolute_url` filters to prepend that path. Hardcoded `/assets/...` links bypass the filter and 404. There is no `prefix` or `pages` key in `_config.yml`."
+    },
+    {
+      "id": 3,
+      "question": "You can deploy from a branch (built-in Jekyll build) or from GitHub Actions (your own workflow). For a blog whose Module 4 setup uses `jekyll-picture-tag`, which path is the better starting point and why?",
+      "choices": [
+        "Deploy from a branch, because the built-in build is faster",
+        "Deploy from a branch, because Actions cannot publish to a user site",
+        "Deploy from Actions, because the built-in build's `--safe` mode won't load `jekyll-picture-tag` and the feature will silently disappear in production",
+        "Deploy from `/docs`, because Actions doesn't support custom domains"
+      ],
+      "correct": 2,
+      "explanation": "The built-in build runs `--safe` and only loads safelisted plugins; `jekyll-picture-tag` isn't on the list and is silently dropped. Actions runs your `Gemfile` as written, so the plugin works. Both paths support user sites and custom domains."
+    }
+  ]
+}

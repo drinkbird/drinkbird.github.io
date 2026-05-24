@@ -1,0 +1,41 @@
+{
+  "chapter_id": "jekyll-engineering-blog-github-pages/04-production-polish/01-seo-basics",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which Liquid tag does `jekyll-seo-tag` provide for you to drop into a layout's `<head>`?",
+      "choices": [
+        "{% jekyll_seo %}",
+        "{% seo %}",
+        "{% meta %}",
+        "{% head %}"
+      ],
+      "correct": 1,
+      "explanation": "The plugin exposes a single `{% seo %}` Liquid tag that emits title, description, canonical, Open Graph, Twitter card meta, and a JSON-LD block. You drop it inside `<head>` in your default layout."
+    },
+    {
+      "id": 2,
+      "question": "You syndicate a post to Dev.to a week after publishing it on your blog. What's the best way to tell search engines the version on your own site is the original?",
+      "choices": [
+        "Add `Disallow: /posts/syndicated/` to robots.txt so crawlers ignore the Dev.to copy",
+        "Delete the post from your sitemap so it appears only once",
+        "Set `canonical_url:` on your own post pointing to its blog URL, and have the syndicated copy point its canonical at the same URL",
+        "Add a 301 redirect from the Dev.to copy to your blog"
+      ],
+      "correct": 2,
+      "explanation": "Duplicate URLs split ranking signals. The canonical tag tells search engines which URL is authoritative; both copies should point to the same canonical URL - typically your own blog post. You can't add a 301 from Dev.to, and removing from a sitemap doesn't help."
+    },
+    {
+      "id": 3,
+      "question": "A colleague suggests putting `Disallow: /admin/` in robots.txt to hide an unfinished admin page from search engines. What's the most accurate critique?",
+      "choices": [
+        "robots.txt is the right tool - this will prevent the page from appearing in Google entirely",
+        "robots.txt prevents crawling but not indexing, and the line itself advertises that /admin/ exists; use `noindex` or HTTP auth instead",
+        "robots.txt only works for image files, not HTML pages",
+        "You should use a sitemap exclusion instead, since robots.txt is ignored by all major search engines"
+      ],
+      "correct": 1,
+      "explanation": "robots.txt is advisory and blocks crawling, not indexing - a page linked from elsewhere can still appear in search results without being crawled. It is also publicly readable, so a `Disallow:` line tells everyone the path exists. Use `<meta name=\"robots\" content=\"noindex\">` or real auth for pages you want hidden."
+    }
+  ]
+}

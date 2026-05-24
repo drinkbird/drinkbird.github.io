@@ -50,7 +50,7 @@ The 'Curse of Knowledge' isn't a concept devised by a bunch of developers strugg
 
 In 1990, a group of Stanford University psychologists introduced a simple game. They split the participants into two roles: 'tappers' and 'listeners.' The 'tappers' would select a well-known song and tap out its rhythm. The 'listeners' then had to guess the song purely from the tapping rhythm.
 
-For the 'tappers,' the song was playing loud and clear in their heads. They could hear the melody, the lyrics, the beat — everything. So, they expected the 'listeners' to guess the songs easily. However, the reality was far from this expectation. Only about 2.5% of the songs were correctly identified by the 'listeners.'
+For the 'tappers,' the song was playing loud and clear in their heads. They could hear the melody, the lyrics, the beat - everything. So, they expected the 'listeners' to guess the songs easily. However, the reality was far from this expectation. Only about 2.5% of the songs were correctly identified by the 'listeners.'
 
 This stark contrast between expectation and reality is a powerful illustration of the 'Curse of Knowledge.' The 'tappers' couldn't understand why the 'listeners' found it so hard to guess what were, in their minds, such easy and well-known melodies. Similarly, our project lead had trouble imagining what it was like to not understand the shipping system's intricacies.
 

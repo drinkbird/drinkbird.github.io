@@ -1,0 +1,41 @@
+{
+  "chapter_id": "jekyll-engineering-blog-github-pages/01-foundations/04-front-matter-and-first-post",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which filename will Jekyll recognise as a publishable post in `_posts/`?",
+      "choices": [
+        "welcome.md",
+        "2026-1-15-welcome.md",
+        "2026-01-15-welcome.md",
+        "welcome-2026-01-15.md"
+      ],
+      "correct": 2,
+      "explanation": "Posts must follow `YYYY-MM-DD-slug.ext` with zero-padded month and day. Files without a date prefix or with single-digit month/day are silently skipped - no warning is emitted."
+    },
+    {
+      "id": 2,
+      "question": "You add a new post to `_drafts/profiling.md` with valid front matter, run `bundle exec jekyll serve`, and the post doesn't appear. What's the simplest explanation and fix?",
+      "choices": [
+        "The Gemfile is missing the `jekyll-drafts` plugin - install it",
+        "Drafts are excluded from the default build; re-run with `--drafts`",
+        "Drafts must live under `_posts/_drafts/`, not the project root",
+        "The file is corrupted; recreate it"
+      ],
+      "correct": 1,
+      "explanation": "Files in `_drafts/` are deliberately excluded from `jekyll serve` and `jekyll build`. Use `jekyll serve --drafts` to include them during preview, and move the file into `_posts/` with a dated filename to publish."
+    },
+    {
+      "id": 3,
+      "question": "Your post title contains a colon: `Profiling Go: by way of an outage`. Setting `title: Profiling Go: by way of an outage` in front matter causes a YAML parse error. What's the right fix, and why?",
+      "choices": [
+        "Replace the colon with a dash - colons are forbidden in titles",
+        "Quote the value: `title: \"Profiling Go: by way of an outage\"` - colons inside unquoted strings confuse YAML's key/value parser",
+        "Move the title into the file body - front matter cannot hold titles",
+        "Switch the Markdown engine away from kramdown"
+      ],
+      "correct": 1,
+      "explanation": "YAML treats `:` followed by a space as a key/value separator, so an unquoted title with a colon parses ambiguously. Wrapping the value in double quotes tells YAML it's a single string."
+    }
+  ]
+}

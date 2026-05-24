@@ -22,7 +22,7 @@ In the second part, the book takes an unexpected turn. The author becomes highly
 
 ## Overview – Part 1 – “One Machine”
 
-*&#8220;…and likewise all parts of the system must be constructed with reference to all other parts, since, in one sense, all the parts form one machine.&#8221; —Thomas Edison*
+*&#8220;…and likewise all parts of the system must be constructed with reference to all other parts, since, in one sense, all the parts form one machine.&#8221; -Thomas Edison*
 
 The book starts in the mid-18<sup>th</sup> century, portraying Henry Burden’s impressive invention: the largest and most powerful power generating waterwheel ever created. Despite its huge potential, about half a century later, that machine along with numerous other power generating inventions like steam engines was abandoned in favor of a new, revolutionizing power source; cheap electricity produced in remote power plants and transmitted directly into factories through a wide structure of cables. It is stated that tapping into that power source became a competitive requirement, as individual producing power with such low cost was practically impossible for any company. Heavy investments in private complex, unreliable, and costly power generating systems was simply not an option any more.
 
@@ -40,7 +40,7 @@ There is also an extensive analysis of the societal consequences brought about b
 
 ## Overview – Part 2 – Living in the cloud
 
-*&#8220;We shape our tools and thereafter they shape us.&#8221; — John M. Culkin*
+*&#8220;We shape our tools and thereafter they shape us.&#8221; - John M. Culkin*
 
 In the second part of the book the tone changes dramatically. Carr repeatedly refers to the Web as “the programmable Internet” and “the world-wide computer”, keenly focusing on the negative impacts it makes on society. He explains how ARPANET transformed into the Internet, and how a CERN employee called Tim Berners-Lee laid the foundations of the World Wide Web. By making a universal medium available to a much broader audience, the Web had a huge impact on the Internet, transforming it into a commercial enterprise. Having said that, the author continues by explaining how computing actually differs from electricity.
 

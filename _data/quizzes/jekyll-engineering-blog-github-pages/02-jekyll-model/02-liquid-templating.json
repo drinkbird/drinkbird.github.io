@@ -1,0 +1,41 @@
+{
+  "chapter_id": "jekyll-engineering-blog-github-pages/02-jekyll-model/02-liquid-templating",
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is the difference between `{{ ... }}` and `{% ... %}` in Liquid?",
+      "choices": [
+        "`{{ ... }}` is for strings, `{% ... %}` is for numbers.",
+        "`{{ ... }}` outputs a value into the rendered HTML; `{% ... %}` is a logic tag that produces no output by itself.",
+        "`{{ ... }}` is evaluated at build time, `{% ... %}` is evaluated in the browser.",
+        "They are interchangeable; the difference is purely stylistic."
+      ],
+      "correct": 1,
+      "explanation": "Liquid has exactly two syntactic forms: output tags `{{ }}` emit a value, and logic tags `{% %}` control flow (assigns, loops, conditionals) without emitting output."
+    },
+    {
+      "id": 2,
+      "question": "You need a list of every post that is *not* the page currently being viewed. Which Liquid expression is correct?",
+      "choices": [
+        "{% assign others = site.posts | where: \"url\", page.url %}",
+        "{% assign others = site.posts | where_exp: \"p\", \"p.url != page.url\" %}",
+        "{% assign others = site.posts | reject: page.url %}",
+        "{% assign others = site.posts - page %}"
+      ],
+      "correct": 1,
+      "explanation": "`where` only does equality on a single key. To filter on an arbitrary boolean expression you need `where_exp`, which binds each item to a local name and evaluates the expression."
+    },
+    {
+      "id": 3,
+      "question": "Your template renders `<time>{{ post.date | date: \"%-d %b %Y\" }}</time>` correctly for `_posts/*.md`, but when you reuse the same snippet on a custom page with `date: \"2026-01-15\"` in front matter, the filter prints junk. Why?",
+      "choices": [
+        "The `date` filter only works on `post.*` paths.",
+        "Liquid `date` requires a Date value; quoted strings in front matter come through as strings unless YAML parses them as dates.",
+        "You need `date_to_string` for non-post dates.",
+        "Liquid `date` is locale-dependent and silently fails on non-English systems."
+      ],
+      "correct": 1,
+      "explanation": "Post filenames give Jekyll a real Date object. A front matter value like `date: \"2026-01-15\"` (in quotes) stays a string; unquote it so YAML parses it as a date, or convert with `| date: \"%s\"` first."
+    }
+  ]
+}

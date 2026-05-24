@@ -1,0 +1,65 @@
+---
+layout: default
+---
+{% assign course        = site.data.courses[page.course_slug] %}
+{% assign chapter_pages = site.courses | where: "course_slug", page.course_slug | where_exp: "p", "p.chapter_id" %}
+{% assign first_chapter = chapter_pages | first %}
+
+<div class="container-fluid course-layout">
+  <div class="course-layout-grid">
+    {% include course-sidebar.html course=course course_slug=page.course_slug chapter_pages=chapter_pages %}
+
+    <main class="course-main">
+      <nav class="course-breadcrumbs" aria-label="Breadcrumb">
+        <a href="{{ site.baseurl }}/courses/">Courses</a>
+        <span aria-hidden="true">›</span>
+        <span>{{ course.topic | truncate: 80 }}</span>
+      </nav>
+
+      <article class="course-content course-content-overview post-content"
+               data-course-slug="{{ page.course_slug }}">
+        <header class="course-overview-header">
+          <p class="course-overview-eyebrow">Course · {{ course.depth | capitalize }}</p>
+          <h1 class="course-overview-title">{{ course.topic }}</h1>
+          {% if course.answers.goal %}<p class="course-overview-goal">{{ course.answers.goal }}</p>{% endif %}
+          <div class="course-overview-meta">
+            <span><strong>{{ course.modules.size }}</strong> modules</span>
+            {% assign total_chapters = 0 %}
+            {% for m in course.modules %}{% assign total_chapters = total_chapters | plus: m.chapters.size %}{% endfor %}
+            <span><strong>{{ total_chapters }}</strong> chapters</span>
+            {% if course.answers.time_budget %}<span>{{ course.answers.time_budget }}</span>{% endif %}
+          </div>
+          {% if first_chapter %}
+          <p class="course-overview-cta">
+            <a class="btn btn-info btn-lg" href="{{ site.baseurl }}{{ first_chapter.url }}">Start the course →</a>
+          </p>
+          {% endif %}
+        </header>
+
+        <div class="course-content-body post-body">
+          {{ content }}
+
+          <h2>What you'll learn, module by module</h2>
+          <ol class="course-overview-modules">
+            {% for module in course.modules %}
+            <li class="course-overview-module">
+              <h3>
+                <span class="course-overview-module-id">Module {{ module.id }}</span>
+                {{ module.title }}
+              </h3>
+              {% if module.summary %}<p>{{ module.summary }}</p>{% endif %}
+              {% if module.learning_objectives %}
+              <ul class="course-overview-objectives">
+                {% for lo in module.learning_objectives %}
+                <li>{{ lo }}</li>
+                {% endfor %}
+              </ul>
+              {% endif %}
+            </li>
+            {% endfor %}
+          </ol>
+        </div>
+      </article>
+    </main>
+  </div>
+</div>

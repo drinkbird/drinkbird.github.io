@@ -1,0 +1,41 @@
+{
+  "chapter_id": "jekyll-engineering-blog-github-pages/04-production-polish/03-rss-feeds",
+  "questions": [
+    {
+      "id": 1,
+      "question": "What feed format does `jekyll-feed` actually emit?",
+      "choices": [
+        "RSS 2.0",
+        "Atom",
+        "JSON Feed",
+        "A custom Jekyll-specific format"
+      ],
+      "correct": 1,
+      "explanation": "Despite the colloquial 'RSS' label, `jekyll-feed` emits an Atom feed. Every modern feed reader supports both formats, so the distinction rarely matters in practice - but it's worth knowing when validating the output."
+    },
+    {
+      "id": 2,
+      "question": "Your blog has two collections: `posts` (long-form) and `notes` (short snippets). Some readers want only the long-form. What's the cleanest way to support this with `jekyll-feed`?",
+      "choices": [
+        "Tell readers to filter the main feed in their RSS reader",
+        "Configure per-collection feeds in `_config.yml` under `feed.collections` so `notes/` gets its own feed path",
+        "Manually maintain a second `notes-feed.xml` file outside of Jekyll",
+        "Move notes into a separate Jekyll site"
+      ],
+      "correct": 1,
+      "explanation": "`jekyll-feed` supports per-collection feeds out of the box - add the collection name under `feed.collections` and the plugin emits a separate feed file for it. Readers can then subscribe to one feed without manual filtering."
+    },
+    {
+      "id": 3,
+      "question": "Why is full-content (rather than excerpt-only) usually the right default for an engineering blog's RSS feed?",
+      "choices": [
+        "RSS readers can't render HTML, so excerpts often display incorrectly",
+        "Full content lets readers read offline and in their preferred typography, which is much of why they subscribe via RSS in the first place",
+        "Search engines penalise sites that don't ship full content in their feed",
+        "Excerpt-only feeds break autodiscovery"
+      ],
+      "correct": 1,
+      "explanation": "Readers choose RSS partly so they can read offline (planes, tunnels) and in the reader app's typography. Excerpt-only feeds force a click-through that defeats both. The other claims are false - RSS readers render HTML fine, search engines don't read feeds for ranking, and autodiscovery is unrelated to content length."
+    }
+  ]
+}

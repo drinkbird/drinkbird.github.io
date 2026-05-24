@@ -1,0 +1,97 @@
+---
+layout: default
+---
+{% assign course        = site.data.courses[page.course_slug] %}
+{% assign chapter_pages = site.courses | where: "course_slug", page.course_slug | where_exp: "p", "p.chapter_id" %}
+{% assign quiz          = site.data.quizzes[page.course_slug][page.module_dir][page.chapter_filename] %}
+
+{% comment %} Find prev/next by walking the flat, path-ordered list of chapter pages. {% endcomment %}
+{% assign current_idx = -1 %}
+{% for cp in chapter_pages %}
+  {% if cp.url == page.url %}{% assign current_idx = forloop.index0 %}{% endif %}
+{% endfor %}
+{% assign prev_chapter = nil %}
+{% assign next_chapter = nil %}
+{% if current_idx > 0 %}
+  {% assign prev_idx     = current_idx | minus: 1 %}
+  {% assign prev_chapter = chapter_pages[prev_idx] %}
+{% endif %}
+{% assign last_idx = chapter_pages.size | minus: 1 %}
+{% if current_idx >= 0 and current_idx < last_idx %}
+  {% assign next_idx     = current_idx | plus: 1 %}
+  {% assign next_chapter = chapter_pages[next_idx] %}
+{% endif %}
+
+<div class="container-fluid course-layout">
+  <div class="course-layout-grid">
+    {% include course-sidebar.html course=course course_slug=page.course_slug chapter_pages=chapter_pages %}
+
+    <main class="course-main">
+      <nav class="course-breadcrumbs" aria-label="Breadcrumb">
+        <a href="{{ site.baseurl }}/courses/">Courses</a>
+        <span aria-hidden="true">›</span>
+        <a href="{{ site.baseurl }}/courses/{{ page.course_slug }}/">{{ course.topic | truncate: 60 }}</a>
+        <span aria-hidden="true">›</span>
+        <span>Module {{ page.module_id }} · Chapter {{ page.chapter_id }}</span>
+      </nav>
+
+      <article class="course-content post-content"
+               data-course-slug="{{ page.course_slug }}"
+               data-module-slug="{{ page.module_slug }}"
+               data-chapter-slug="{{ page.chapter_slug }}"
+               data-chapter-key="{{ page.course_slug }}/{{ page.module_slug }}/{{ page.chapter_slug }}">
+        <div class="course-content-body post-body">
+          {{ content }}
+        </div>
+
+        {% if quiz %}
+        <section class="course-quiz" data-course-quiz>
+          <header class="course-quiz-header">
+            <h2>Check your understanding</h2>
+            <p>Answer the questions below to test what you just read. You can change answers and resubmit; your best score is saved on this device.</p>
+            <p class="course-quiz-best" data-course-quiz-best hidden>
+              Best score so far: <strong><span data-course-quiz-best-score></span> / <span data-course-quiz-best-total></span></strong>
+            </p>
+          </header>
+          <script type="application/json" data-course-quiz-data>{{ quiz | jsonify }}</script>
+          <form class="course-quiz-form" data-course-quiz-form>
+            <div data-course-quiz-questions></div>
+            <div class="course-quiz-actions">
+              <button type="submit" class="btn btn-info">Check answers</button>
+              <button type="reset" class="btn btn-default" data-course-quiz-reset>Clear</button>
+            </div>
+          </form>
+          <div class="course-quiz-summary" data-course-quiz-summary hidden role="status" aria-live="polite"></div>
+        </section>
+        {% endif %}
+
+        <section class="course-chapter-footer">
+          <div class="course-complete">
+            <button type="button" class="btn btn-info course-complete-toggle" data-course-complete-toggle>
+              <span class="course-complete-icon" aria-hidden="true"></span>
+              <span class="course-complete-label">Mark chapter as complete</span>
+            </button>
+          </div>
+          <nav class="course-chapter-nav" aria-label="Chapter navigation">
+            <div class="course-chapter-nav-prev">
+              {% if prev_chapter %}
+              <a href="{{ site.baseurl }}{{ prev_chapter.url }}">
+                <span class="course-chapter-nav-direction">← Previous</span>
+                <span class="course-chapter-nav-title">{{ prev_chapter.chapter_title }}</span>
+              </a>
+              {% endif %}
+            </div>
+            <div class="course-chapter-nav-next">
+              {% if next_chapter %}
+              <a href="{{ site.baseurl }}{{ next_chapter.url }}">
+                <span class="course-chapter-nav-direction">Next →</span>
+                <span class="course-chapter-nav-title">{{ next_chapter.chapter_title }}</span>
+              </a>
+              {% endif %}
+            </div>
+          </nav>
+        </section>
+      </article>
+    </main>
+  </div>
+</div>

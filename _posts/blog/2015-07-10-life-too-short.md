@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "[Image] Life is too short"
-excerpt: "A wallpaper-friendly reminder that your time is finite — spend it on the work and people that matter."
+excerpt: "A wallpaper-friendly reminder that your time is finite - spend it on the work and people that matter."
 date: 2015-07-10 00:00:00
 permalink: /life-too-short/
 comments: true

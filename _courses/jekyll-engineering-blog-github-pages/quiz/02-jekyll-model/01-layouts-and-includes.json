@@ -1,0 +1,36 @@
+{
+  "chapter_id": "jekyll-engineering-blog-github-pages/02-jekyll-model/01-layouts-and-includes",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Inside a layout file, which variable holds the rendered output of the page or child layout that is being wrapped?",
+      "choices": ["page.body", "content", "page.content", "include.content"],
+      "correct": 1,
+      "explanation": "Jekyll passes the rendered child output into a layout as the magic variable `content`. Every non-leaf layout must emit `{{ content }}` exactly once or the body disappears."
+    },
+    {
+      "id": 2,
+      "question": "You want a reusable callout box that accepts a `kind` parameter from its caller. How do you read that parameter inside `_includes/callout.html`?",
+      "choices": [
+        "{{ page.kind }}",
+        "{{ site.kind }}",
+        "{{ include.kind }}",
+        "{{ kind }}"
+      ],
+      "correct": 2,
+      "explanation": "Parameters passed to an include are scoped under the `include.` namespace. `{{ include.kind }}` reads the value the caller passed via `{% include callout.html kind=\"warning\" %}`."
+    },
+    {
+      "id": 3,
+      "question": "You have a site-wide footer used on every page and a small `<figure>` macro that appears in roughly half your posts. Which composition primitives fit?",
+      "choices": [
+        "Both are layouts - chain them under `default.html`.",
+        "Both are includes - call them from each page.",
+        "Footer in a layout (it's part of the page skeleton); figure as an include (a reusable inline fragment).",
+        "Footer in `_data/`, figure as a layout."
+      ],
+      "correct": 2,
+      "explanation": "Layouts express the outside chrome a page is wrapped in; includes express repeatable inside fragments. A site footer is chrome; a figure macro is an inline reusable piece."
+    }
+  ]
+}
