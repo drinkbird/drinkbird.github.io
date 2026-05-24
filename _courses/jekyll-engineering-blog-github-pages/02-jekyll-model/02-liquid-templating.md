@@ -8,6 +8,7 @@ module_id: 2
 chapter_id: 2
 module_title: "The Jekyll model: Layouts, Liquid, and content"
 chapter_title: "Liquid templating - variables, filters, tags, and the data flow"
+chapter_summary: "Tours Liquid syntax - output `{{ }}` vs logic `{% %}` - the `site`/`page`/`content` globals, and the filters and control-flow forms used daily (`date`, `slugify`, `where`/`where_exp`, `group_by`, `sort`, `default`, `relative_url`, `for` with `limit`/`reversed`). Includes debugging-via-`jsonify` and `--trace` since Liquid has no REPL."
 ---
 
 # Liquid Templating - Variables, Filters, Tags, and the Data Flow

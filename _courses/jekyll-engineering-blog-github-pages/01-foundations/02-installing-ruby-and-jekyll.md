@@ -8,6 +8,7 @@ module_id: 1
 chapter_id: 2
 module_title: "Foundations: From web pages to a Jekyll site"
 chapter_title: "Installing Ruby and Jekyll locally (just enough Ruby)"
+chapter_summary: "Walks through installing a managed Ruby via rbenv (with one-paragraph notes on asdf) on macOS and Linux, explains why the system Ruby is off-limits, and scaffolds a working site with `jekyll new`. Covers Bundler and the Gemfile at surface level only, and establishes the `bundle exec jekyll serve` habit."
 ---
 
 # Installing Ruby and Jekyll Locally (Just Enough Ruby)

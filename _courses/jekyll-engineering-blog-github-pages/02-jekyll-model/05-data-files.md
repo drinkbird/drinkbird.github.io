@@ -8,6 +8,7 @@ module_id: 2
 chapter_id: 5
 module_title: "The Jekyll model: Layouts, Liquid, and content"
 chapter_title: "Data files (`_data/*.yml`) and driving the site from structured data"
+chapter_summary: "Explains `_data/` as the home for structured, body-less content reachable via `site.data.<path>`, comparing YAML/JSON/CSV trade-offs. Provides a footer-links example, a CSV talks list, and the anchored-sections pattern for rendering pages from data without leaving the built-in primitives."
 ---
 
 # Data Files (`_data/*.yml`) and Driving the Site from Structured Data

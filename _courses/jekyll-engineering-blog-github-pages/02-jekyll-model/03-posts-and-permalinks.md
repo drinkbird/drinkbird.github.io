@@ -8,6 +8,7 @@ module_id: 2
 chapter_id: 3
 module_title: "The Jekyll model: Layouts, Liquid, and content"
 chapter_title: "The `_posts` collection and designing your permalink structure"
+chapter_summary: "Frames `_posts/` as the built-in collection with its filename contract, walks through permalink placeholders, and argues for `/blog/:year/:month/:slug/` over the default. Covers trailing-slash semantics, per-collection `defaults:` blocks, and using `jekyll-redirect-from` to migrate URLs safely."
 ---
 
 # The `_posts` Collection and Designing Your Permalink Structure

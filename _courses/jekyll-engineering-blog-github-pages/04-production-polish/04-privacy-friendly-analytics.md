@@ -8,6 +8,7 @@ module_id: 4
 chapter_id: 4
 module_title: "Production polish: SEO, social, feeds, analytics"
 chapter_title: "Privacy-friendly analytics (Plausible, Umami, or GoatCounter)"
+chapter_summary: "Compares Plausible (SaaS-first), Umami (self-host-friendly), and GoatCounter (minimalist) as cookie-free analytics; shows a config-gated include pattern so dev traffic doesn't pollute production; and reframes useful metrics vs vanity for a blog."
 ---
 
 # Privacy-Friendly Analytics (Plausible, Umami, or GoatCounter)

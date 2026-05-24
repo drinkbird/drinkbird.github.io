@@ -3,34 +3,20 @@
 
   Resolution order:
     title        : page.chapter_title > page.title > site.title
-    description  : page.excerpt > chapter summary > course-index description > course goal > site.description
+    description  : page.excerpt > page.chapter_summary > course-index description > course-index goal > course-index title > site.description
     image        : page.image.feature > course-index image > default-thumb
     card style   : summary_large_image when we have a real image, else summary
 
-  For course pages, blog-side presentation fields (image, description,
-  last_updated) live on _courses/<slug>/index.md front matter, not in
-  course.json. og_course_index is the index.md doc for the current page's
-  course; og_course is the structural data from site.data.courses[slug].
+  For course pages, all course-level metadata lives on the course's index.md
+  front matter (no JSON intermediate). og_course_index is the index.md doc
+  for the current page's course; for chapter pages, page.chapter_summary is
+  authoritative for OG description.
 {% endcomment %}
 
-{% comment %} Look up the course this page belongs to (if any). {% endcomment %}
-{% assign og_course = nil %}
+{% comment %} Look up the course-index page this page belongs to (if any). {% endcomment %}
 {% assign og_course_index = nil %}
 {% if page.course_slug %}
-  {% assign og_course = site.data.courses[page.course_slug] %}
   {% assign og_course_index = site.courses | where: "course_slug", page.course_slug | where_exp: "p", "p.chapter_id == nil" | first %}
-{% endif %}
-
-{% comment %} Look up the chapter entry inside course.modules[].chapters[] for its summary. {% endcomment %}
-{% assign og_chapter = nil %}
-{% if og_course and page.module_id and page.chapter_id %}
-  {% for m in og_course.modules %}
-    {% if m.id == page.module_id %}
-      {% for c in m.chapters %}
-        {% if c.id == page.chapter_id %}{% assign og_chapter = c %}{% endif %}
-      {% endfor %}
-    {% endif %}
-  {% endfor %}
 {% endif %}
 
 {% comment %} Title. {% endcomment %}
@@ -45,25 +31,26 @@
 {% comment %} Description. {% endcomment %}
 {% if page.excerpt and page.excerpt != "" %}
   {% assign og_description = page.excerpt | strip_html %}
-{% elsif og_chapter.summary %}
-  {% assign og_description = og_chapter.summary | strip_html %}
+{% elsif page.chapter_summary %}
+  {% assign og_description = page.chapter_summary | strip_html %}
 {% elsif og_course_index.description %}
   {% assign og_description = og_course_index.description | strip_html %}
-{% elsif og_course.answers.goal %}
-  {% assign og_description = og_course.answers.goal | strip_html %}
-{% elsif og_course.topic %}
-  {% assign og_description = og_course.topic | strip_html %}
+{% elsif og_course_index.goal %}
+  {% assign og_description = og_course_index.goal | strip_html %}
+{% elsif og_course_index.title %}
+  {% assign og_description = og_course_index.title | strip_html %}
 {% else %}
   {% assign og_description = site.description | strip_html %}
 {% endif %}
 
-{% comment %} Dates: published / modified. For course pages, course.json is
-   authoritative (page.date on collection docs is the file mtime, which drifts).
-   For blog posts, page.date (Jekyll-derived from the YYYY-MM-DD filename) is. {% endcomment %}
+{% comment %} Dates: published / modified. For course pages the index.md
+   front matter is authoritative (page.date on collection docs is the file
+   mtime, which drifts). For blog posts, page.date (Jekyll-derived from the
+   YYYY-MM-DD filename) is. {% endcomment %}
 {% assign og_published_time = nil %}
 {% assign og_modified_time  = nil %}
-{% if og_course %}
-  {% if og_course.created_at %}{% assign og_published_time = og_course.created_at | date_to_xmlschema %}{% endif %}
+{% if og_course_index %}
+  {% if og_course_index.created_at %}{% assign og_published_time = og_course_index.created_at | date_to_xmlschema %}{% endif %}
   {% if og_course_index.last_updated %}{% assign og_modified_time = og_course_index.last_updated | date_to_xmlschema %}{% endif %}
 {% else %}
   {% if page.date %}{% assign og_published_time = page.date | date_to_xmlschema %}{% endif %}

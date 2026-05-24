@@ -8,6 +8,14 @@ module_id: 2
 chapter_id: 1
 module_title: "The Jekyll model: Layouts, Liquid, and content"
 chapter_title: "Layouts and includes - composing pages from reusable parts"
+chapter_summary: "Introduces layouts as page chrome (with the layout-inheritance chain) and includes as inline reusable fragments, with concrete `default.html`/`post.html`/`header.html`/parameterised `callout.html` examples. Covers `include.` scoping, `relative_url`, and the layout-vs-include decision."
+module_summary: "Internalise Jekyll's templating and content model so you can shape it to your blog rather than fight the defaults."
+module_learning_objectives:
+  - "Compose pages from layouts and includes"
+  - "Read and write Liquid templates with confidence"
+  - "Design a permalink structure deliberately"
+  - "Decide when a custom collection is justified"
+  - "Drive site-wide content from `_data/*.yml`"
 ---
 
 # Layouts and Includes - Composing Pages from Reusable Parts

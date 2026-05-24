@@ -8,6 +8,7 @@ module_id: 5
 chapter_id: 5
 module_title: "GitHub Pages and a custom domain"
 chapter_title: "HTTPS, enforcing it, and verifying the live deploy"
+chapter_summary: "Closes the module with Let's Encrypt certificate provisioning, the 'Enforce HTTPS' checkbox, automatic HSTS, and the canonical 301 redirect. Provides three `curl` verification commands and a seven-step pre-launch checklist covering cert, redirects, meta tags, social previews, RSS, sitemap, and analytics. Bridges to Module 6's writing workflow."
 ---
 
 # HTTPS, Enforcing It, and Verifying the Live Deploy

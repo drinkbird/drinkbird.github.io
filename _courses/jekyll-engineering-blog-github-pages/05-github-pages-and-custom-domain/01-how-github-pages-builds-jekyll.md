@@ -8,6 +8,14 @@ module_id: 5
 chapter_id: 1
 module_title: "GitHub Pages and a custom domain"
 chapter_title: "How GitHub Pages builds Jekyll - the safelist, and why you'll outgrow it"
+chapter_summary: "Explains GitHub Pages' built-in Jekyll build: the pinned `github-pages` meta-gem, the short plugin safelist, and the silent-failure mode where `--safe` drops unsafelisted gems without error. Shows how to reproduce the production build locally with `--safe` and lists the signals that you've outgrown the built-in build."
+module_summary: "Deploy the blog to GitHub Pages, switch to GitHub Actions when you outgrow the safelist, and wire up a custom domain end-to-end."
+module_learning_objectives:
+  - "Understand the difference between the Pages built-in build and Actions-based builds"
+  - "Set up a user or project Pages site correctly"
+  - "Build with GitHub Actions for full plugin support"
+  - "Configure DNS for an apex or `www` custom domain"
+  - "Enforce HTTPS and verify the live deployment"
 ---
 
 # How GitHub Pages Builds Jekyll - the Safelist, and Why You'll Outgrow It

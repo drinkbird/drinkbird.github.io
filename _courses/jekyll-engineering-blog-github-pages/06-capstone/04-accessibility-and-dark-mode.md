@@ -8,6 +8,7 @@ module_id: 6
 chapter_id: 4
 module_title: "Capstone: Workflow, polish, and what's next"
 chapter_title: "Accessibility pass and dark mode that respects `prefers-color-scheme`"
+chapter_summary: "A practical WCAG 2.2 AA pass - contrast (4.5:1 body, 3:1 large), `:focus-visible` rings, semantic landmarks, skip link, single `<h1>` per page - plus a dark mode that defaults to `prefers-color-scheme` and adds a `data-theme` + `localStorage` manual override, with an inline pre-paint script to avoid the white flash."
 ---
 
 {% raw %}

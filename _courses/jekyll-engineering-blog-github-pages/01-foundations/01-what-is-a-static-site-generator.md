@@ -8,6 +8,14 @@ module_id: 1
 chapter_id: 1
 module_title: "Foundations: From web pages to a Jekyll site"
 chapter_title: "What a static site generator is, and why Jekyll for an engineering blog"
+chapter_summary: "Defines static site generation by contrasting server-rendered, SPA, and static rendering paths, then positions Jekyll as the SSG GitHub Pages was built around. Explains build-time vs request-time rendering, why the Markdown-in-Git workflow suits engineering blogs, and when a static site is the wrong tool (per-user, real-time, heavy interactivity)."
+module_summary: "Get oriented to static site generation, install Jekyll locally, and understand the shape of a Jekyll project end-to-end."
+module_learning_objectives:
+  - "Explain what a static site generator is and why Jekyll fits an engineering blog"
+  - "Install Ruby and Jekyll on macOS/Linux without polluting the system Ruby"
+  - "Read a Jekyll project layout and the role of `_config.yml`"
+  - "Write a first post with front matter and Markdown"
+  - "Run the local build and serve loop and inspect the generated `_site`"
 ---
 
 {% raw %}

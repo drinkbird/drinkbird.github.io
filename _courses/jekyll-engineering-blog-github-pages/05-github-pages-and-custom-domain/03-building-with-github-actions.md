@@ -8,6 +8,7 @@ module_id: 5
 chapter_id: 3
 module_title: "GitHub Pages and a custom domain"
 chapter_title: "Building with GitHub Actions for full plugin support"
+chapter_summary: "Provides a complete `.github/workflows/pages.yml` using `actions/configure-pages`, `actions/upload-pages-artifact`, and `actions/deploy-pages` with `ruby/setup-ruby` and `bundler-cache`. Explains the required `pages: write` and `id-token: write` permissions, the `github-pages` environment, build/deploy job split, concurrency control, and `JEKYLL_ENV=production`."
 ---
 
 {% raw %}

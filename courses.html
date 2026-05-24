@@ -21,42 +21,39 @@ excerpt: "Practical, opinionated courses on engineering craft, leadership, and c
       </div>
     </div>
 
-    {% assign course_slugs = site.data.courses | sort %}
+    {% assign course_indexes = site.courses | where_exp: "p", "p.chapter_id == nil" | sort: "title" %}
     {% assign count = 0 %}
-    {% for entry in site.data.courses %}
-      {% assign slug   = entry[0] %}
-      {% assign course = entry[1] %}
-      {% assign chapter_pages = site.courses | where: "course_slug", slug | where_exp: "p", "p.chapter_id" %}
-      {% assign course_index = site.courses | where: "course_slug", slug | where_exp: "p", "p.chapter_id == nil" | first %}
-      {% assign first_chapter = chapter_pages | first %}
-      {% assign total_chapters = 0 %}
-      {% for m in course.modules %}{% assign total_chapters = total_chapters | plus: m.chapters.size %}{% endfor %}
+    {% for course_index in course_indexes %}
+      {% assign slug           = course_index.course_slug %}
+      {% assign chapter_pages  = site.courses | where: "course_slug", slug | where_exp: "p", "p.chapter_id" %}
+      {% assign module_reps    = chapter_pages | where: "chapter_id", 1 %}
+      {% assign first_chapter  = chapter_pages | first %}
+      {% assign total_chapters = chapter_pages.size %}
+      {% assign total_modules  = module_reps.size %}
 
       {% assign count = count | plus: 1 %}
       {% assign result = count | modulo: 2 %}
       {% if result == 1 %}<div class="row">{% endif %}
       <div class="col-md-6">
         <article class="article-list course-card" data-course-card>
-          <a href="{{ site.baseurl }}/courses/{{ slug }}/" title="{{ course.topic }}" data-course-card-title-link>
+          <a href="{{ site.baseurl }}/courses/{{ slug }}/" title="{{ course_index.title }}" data-course-card-title-link>
             {% if course_index.image %}
             {% if count <= 2 %}{% assign courseLoading = 'eager' %}{% else %}{% assign courseLoading = 'lazy' %}{% endif %}
             <figure class="course-card-feature">
-              <img src="{{ site.baseurl }}/images/{{ course_index.image }}" alt="{{ course.topic }} feature image" class="img-responsive" width="710" height="360" loading="{{ courseLoading }}" decoding="async">
+              <img src="{{ site.baseurl }}/images/{{ course_index.image }}" alt="{{ course_index.title }} feature image" class="img-responsive" width="710" height="360" loading="{{ courseLoading }}" decoding="async">
             </figure>
             {% endif %}
-            <h1>{{ course.topic }}</h1>
+            <h1>{{ course_index.title }}</h1>
           </a>
           <p class="course-card-meta">
-            <span class="course-card-depth">{{ course.depth | capitalize }}</span>
-            <span>·</span>
-            <span>{{ course.modules.size }} modules</span>
+            {% if course_index.depth %}<span class="course-card-depth">{{ course_index.depth | capitalize }}</span><span>·</span>{% endif %}
+            <span>{{ total_modules }} modules</span>
             <span>·</span>
             <span>{{ total_chapters }} chapters</span>
-            {% if course.answers.time_budget %}<span>·</span><span>{{ course.answers.time_budget }}</span>{% endif %}
+            {% if course_index.time_budget %}<span>·</span><span>{{ course_index.time_budget }}</span>{% endif %}
           </p>
-          {% assign course_updated = course_index.last_updated | default: course.generated_at %}
-          {% if course_updated %}<p class="course-card-updated">Last updated on {{ course_updated | date: "%B %Y" }}</p>{% endif %}
-          {% if course.answers.goal %}<p>{{ course.answers.goal }}</p>{% endif %}
+          {% if course_index.last_updated %}<p class="course-card-updated">Last updated on {{ course_index.last_updated | date: "%B %Y" }}</p>{% endif %}
+          {% if course_index.goal %}<p>{{ course_index.goal }}</p>{% endif %}
 
           <div class="course-progress course-card-progress" data-course-card-progress hidden>
             <div class="course-progress-bar"><span class="course-progress-bar-fill" style="width: 0%"></span></div>
@@ -82,7 +79,7 @@ excerpt: "Practical, opinionated courses on engineering craft, leadership, and c
     {% endfor %}
     {% if result == 1 %}</div>{% endif %}
 
-    {% if site.data.courses.size == 0 %}
+    {% if course_indexes.size == 0 %}
     <div class="row">
       <div class="col-md-12">
         <p><em>No courses published yet - check back soon.</em></p>

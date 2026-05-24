@@ -8,6 +8,7 @@ module_id: 1
 chapter_id: 4
 module_title: "Foundations: From web pages to a Jekyll site"
 chapter_title: "Front matter, Markdown, and writing your first post"
+chapter_summary: "Covers YAML front matter, the `YYYY-MM-DD-slug.md` filename convention for posts, the kramdown dialect (attribute lists, footnotes, intra-word underscore gotchas), and the `_drafts/` plus `--drafts` workflow. Reader writes a real draft post, previews it, and publishes it via `git mv` into `_posts/`."
 ---
 
 # Front Matter, Markdown, and Writing Your First Post

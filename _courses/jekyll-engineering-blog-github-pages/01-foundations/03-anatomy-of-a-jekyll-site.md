@@ -8,6 +8,7 @@ module_id: 1
 chapter_id: 3
 module_title: "Foundations: From web pages to a Jekyll site"
 chapter_title: "Anatomy of a Jekyll site: directory layout and `_config.yml`"
+chapter_summary: "Tours the conventional Jekyll directory tree, distinguishing special (underscore-prefixed) directories from regular content, and explains what belongs in `_layouts`, `_includes`, `_posts`, `_drafts`, `_data`, `_site`, and `assets`. Walks through the `_config.yml` keys that matter on day one (`title`, `description`, `url`, `baseurl`, `markdown`, `permalink`, `plugins`) and the gitignore rules around `_site/`."
 ---
 
 {% raw %}

@@ -8,6 +8,7 @@ module_id: 3
 chapter_id: 3
 module_title: "Applied: Building the blog itself"
 chapter_title: "Designing the homepage, post page, and archive"
+chapter_summary: "Designs the three pages every blog has: a homepage with a `featured: true`-driven 'selected' list plus a recent list, a post page with capped reading-line length and rhythmic typography, and a year-grouped archive built with `group_by_exp`. Covers `excerpt_separator` and per-post `excerpt:` front matter for varied list pages."
 ---
 
 # Designing the Homepage, Post Page, and Archive

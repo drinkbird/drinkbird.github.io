@@ -8,6 +8,7 @@ module_id: 2
 chapter_id: 4
 module_title: "The Jekyll model: Layouts, Liquid, and content"
 chapter_title: "Custom collections (notes, projects, talks) - when and how"
+chapter_summary: "Shows how to declare custom collections in `_config.yml` with `output: true` and a `defaults:` block for layout/permalink, using `projects` and `talks` as worked examples. Establishes the collection-vs-tag-vs-data decision rule and notes the GitHub Pages plugin-whitelist gotcha."
 ---
 
 # Custom Collections (Notes, Projects, Talks) - When and How

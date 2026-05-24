@@ -1,7 +1,11 @@
 #!/usr/bin/env ruby
-# Mirror course metadata + quiz JSON from `_courses/` into `_data/` so Liquid
-# can read them. Canonical source stays under `_courses/`; `_data/` is rebuilt
-# from scratch on every run. Run after any change under `_courses/`.
+# Mirror chapter quiz JSON from `_courses/` into `_data/` so Liquid can read
+# them via `site.data.quizzes`. Course metadata lives entirely on Jekyll
+# front matter (no longer in `_data/courses/`); only quizzes need the mirror
+# because Jekyll's data system is the simplest way to look up JSON keyed by
+# course/module/chapter.
+#
+# Run after any change to `*.quiz.json` files under `_courses/`.
 #
 #   ruby scripts/sync-courses-data.rb
 
@@ -10,21 +14,12 @@ require "json"
 
 ROOT          = File.expand_path("..", __dir__)
 COURSES_ROOT  = File.join(ROOT, "_courses")
-DATA_COURSES  = File.join(ROOT, "_data", "courses")
 DATA_QUIZZES  = File.join(ROOT, "_data", "quizzes")
+DATA_COURSES  = File.join(ROOT, "_data", "courses")
 
-FileUtils.rm_rf(DATA_COURSES)
 FileUtils.rm_rf(DATA_QUIZZES)
-FileUtils.mkdir_p(DATA_COURSES)
+FileUtils.rm_rf(DATA_COURSES) # legacy: course metadata is now in front matter
 FileUtils.mkdir_p(DATA_QUIZZES)
-
-Dir.glob(File.join(COURSES_ROOT, "*", "course.json")).sort.each do |course_json|
-  slug = File.basename(File.dirname(course_json))
-  # Validate JSON parses, then copy verbatim.
-  JSON.parse(File.read(course_json))
-  FileUtils.cp(course_json, File.join(DATA_COURSES, "#{slug}.json"))
-  puts "course: #{slug}"
-end
 
 Dir.glob(File.join(COURSES_ROOT, "*", "*", "*.quiz.json")).sort.each do |src|
   rel       = src.sub(COURSES_ROOT + "/", "")
@@ -33,5 +28,5 @@ Dir.glob(File.join(COURSES_ROOT, "*", "*", "*.quiz.json")).sort.each do |src|
   JSON.parse(File.read(src))
   FileUtils.mkdir_p(File.dirname(dest))
   FileUtils.cp(src, dest)
-  puts "quiz:   #{dest_rel}"
+  puts "quiz: #{dest_rel}"
 end

@@ -8,6 +8,7 @@ module_id: 4
 chapter_id: 2
 module_title: "Production polish: SEO, social, feeds, analytics"
 chapter_title: "Open Graph and Twitter cards - making shared links look great"
+chapter_summary: "Shows the Open Graph and Twitter card meta `jekyll-seo-tag` emits, adds per-post `image:` front matter with site-wide fallback, and demonstrates the absolute-URL requirement plus the social debuggers used to validate previews."
 ---
 
 # Open Graph and Twitter Cards - Making Shared Links Look Great

@@ -8,6 +8,7 @@ module_id: 6
 chapter_id: 5
 module_title: "Capstone: Workflow, polish, and what's next"
 chapter_title: "Where to grow next - search, comments, newsletter, and when to migrate off Pages"
+chapter_summary: "The final chapter: client-side search with Pagefind, comments via giscus or a Mastodon thread embed, newsletter via Buttondown (SaaS) or Listmonk (self-host), and concrete signals for migrating off GitHub Pages - usage limits, server-side needs, custom headers, build over 10 minutes. Closes the course with a recap of what was built and a call to write the first real post."
 ---
 
 # Where to Grow Next - Search, Comments, Newsletter, and When to Migrate Off Pages

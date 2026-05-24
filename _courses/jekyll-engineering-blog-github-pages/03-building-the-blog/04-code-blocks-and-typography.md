@@ -8,6 +8,7 @@ module_id: 3
 chapter_id: 4
 module_title: "Applied: Building the blog itself"
 chapter_title: "Code blocks, syntax highlighting (Rouge), and engineering-friendly typography"
+chapter_summary: "Treats code blocks as the centrepiece of an engineering blog: how Rouge tokenises fenced code, generating a theme stylesheet with `rougify style`, when to reach for the `highlight` Liquid tag for line numbers, and a small vanilla-JS include for copy-to-clipboard. Includes guidance on monospace-vs-body type sizing and inline-vs-block code styling."
 ---
 
 # Code Blocks, Syntax Highlighting (Rouge), and Engineering-Friendly Typography

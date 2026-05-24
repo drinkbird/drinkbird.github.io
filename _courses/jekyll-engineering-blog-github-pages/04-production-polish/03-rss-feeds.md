@@ -8,6 +8,7 @@ module_id: 4
 chapter_id: 3
 module_title: "Production polish: SEO, social, feeds, analytics"
 chapter_title: "RSS feeds via `jekyll-feed` and giving readers a way to subscribe"
+chapter_summary: "Adds `jekyll-feed` for an Atom feed at `/feed.xml`, configures per-collection feeds, argues for full-content over excerpt-only on engineering blogs, and wires up autodiscovery plus a visible Subscribe link."
 ---
 
 # RSS Feeds via `jekyll-feed` and Giving Readers a Way to Subscribe

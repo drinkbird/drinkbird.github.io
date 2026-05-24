@@ -8,6 +8,7 @@ module_id: 5
 chapter_id: 2
 module_title: "GitHub Pages and a custom domain"
 chapter_title: "Repo setup: user-site vs project-site, branches, and the deploy source"
+chapter_summary: "Covers the user-site (`<username>.github.io`) vs project-site repo shapes, the role of `url:` and `baseurl:` in `_config.yml`, and the three deploy sources (branch, `/docs`, GitHub Actions). Clarifies that `gh-pages` is a legacy convention and shows where the built-in build's logs surface in the Actions tab."
 ---
 
 # Repo Setup: User-Site vs Project-Site, Branches, and the Deploy Source
