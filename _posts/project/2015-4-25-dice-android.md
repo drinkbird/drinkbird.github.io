@@ -18,27 +18,27 @@ Dice Radio Web Portal was extended using Microsoft Web API to expose a RESTful A
 <ul class="list-inline gallery">
 	<li>
 		<a href="{{ site.baseurl }}/images/dice_android_1_full.png" class="image-popup mfp-with-zoom" title="Dice Radio Android - Newsfeed">
-			<img src="{{ site.baseurl }}/images/dice_android_1_150.png" />
+			<img src="{{ site.baseurl }}/images/dice_android_1_150.png" alt="Dice Radio Android - Newsfeed" />
 		</a>
 	</li>
 	<li>
 		<a href="{{ site.baseurl }}/images/dice_android_2_full.png" class="image-popup mfp-with-zoom" title="Dice Radio Android - Navigation">
-			<img src="{{ site.baseurl }}/images/dice_android_2_150.png" />
+			<img src="{{ site.baseurl }}/images/dice_android_2_150.png" alt="Dice Radio Android - Navigation" />
 		</a>
 	</li>
 	<li>
 		<a href="{{ site.baseurl }}/images/dice_android_3_full.png" class="image-popup mfp-with-zoom" title="Dice Radio Android - Producers List">
-			<img src="{{ site.baseurl }}/images/dice_android_3_150.png" />
+			<img src="{{ site.baseurl }}/images/dice_android_3_150.png" alt="Dice Radio Android - Producers List" />
 		</a>
 	</li>
 	<li>
 		<a href="{{ site.baseurl }}/images/dice_android_4_full.png" class="image-popup mfp-with-zoom" title="Dice Radio Android - Producer Bio Part 1/2">
-			<img src="{{ site.baseurl }}/images/dice_android_4_150.png" />
+			<img src="{{ site.baseurl }}/images/dice_android_4_150.png" alt="Dice Radio Android - Producer Bio Part 1/2" />
 		</a>
 	</li>
 	<li>
 		<a href="{{ site.baseurl }}/images/dice_android_5_full.png" class="image-popup mfp-with-zoom" title="Dice Radio Android - Producer Bio Part 2/2">
-			<img src="{{ site.baseurl }}/images/dice_android_5_150.png" />
+			<img src="{{ site.baseurl }}/images/dice_android_5_150.png" alt="Dice Radio Android - Producer Bio Part 2/2" />
 		</a>
 	</li>
 </ul>

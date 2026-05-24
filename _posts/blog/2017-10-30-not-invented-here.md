@@ -22,11 +22,11 @@ reads:
   - legacycode
   - leanstartup
   - domaindrivendesign
-  - cleanarchitecture
   - softskills
   - themythicalmanmonth
   - effectiveusecases
   - userstoriesapplied
+
 ---
 
 Every modern software service or product is comprised of several different moving parts, from simple tooling to runtimes, frameworks, libraries, messaging systems, data stores, web servers, load balancers, caches and much more. Companies hire us, software engineers, to put that puzzle together and help them fulfill their business goals, which usually include making or saving money.

@@ -21,17 +21,17 @@ My role as a software developer included:
 <ul class="list-inline gallery">
 	<li>
 		<a href="{{ site.baseurl }}/images/schneider-itunes.jpg" class="image-popup mfp-with-zoom" title="Schneider Electric i-NRG4U on iTunes">
-			<img src="{{ site.baseurl }}/images/schneider-itunes_150.jpg" />
+			<img src="{{ site.baseurl }}/images/schneider-itunes_150.jpg" alt="Schneider Electric i-NRG4U on iTunes" />
 		</a>
 	</li>
 	<li>
 		<a href="{{ site.baseurl }}/images/schneider-mobile.jpg" class="image-popup mfp-with-zoom" title="Schneider Electric i-NRG4U mobile app screenshot">
-			<img src="{{ site.baseurl }}/images/schneider-mobile_150.jpg" />
+			<img src="{{ site.baseurl }}/images/schneider-mobile_150.jpg" alt="Schneider Electric i-NRG4U mobile app screenshot" />
 		</a>
 	</li>
 	<li>
 		<a href="{{ site.baseurl }}/images/schneider-webapp.jpg" class="image-popup mfp-with-zoom" title="Schneider Electric i-NRG4U web application screenshot">
-			<img src="{{ site.baseurl }}/images/schneider-webapp_150.jpg" />
+			<img src="{{ site.baseurl }}/images/schneider-webapp_150.jpg" alt="Schneider Electric i-NRG4U web application screenshot" />
 		</a>
 	</li>
 </ul>

@@ -27,12 +27,12 @@ reads:
   - gofdp
   - hfdesignpatterns
   - 97things
-  - softskills
   - dpruby
   - csharpindepth
   - interactiondesign
   - showyourwork
   - codecomplete
+
 ---
 
 Ask your boss what does she think is the most important aspect of a software project, and the response will usually be something along the lines of delivering a number of features *on time* and *on budget*. For software startups, the *time* part usually given more weight.

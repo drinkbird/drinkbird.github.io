@@ -35,6 +35,7 @@ permalink: /:title
 plugins:
   - jekyll-sitemap
   - jekyll-redirect-from
+  - jekyll-feed
 
 exclude: [node_modules]
 
@@ -79,7 +80,7 @@ reads:
     isbn: "0201835959"
   dpruby:
     title: Design Patterns in Ruby
-    url: http://www.amazon.co.uk/dp/0321490452?tag=drin04-20
+    url: https://www.amazon.co.uk/dp/0321490452?tag=drin04-20
     isbn: "0321490452"
   stylish-fsharp:
     title: 'Stylish F#: Crafting Elegant Functional Code for .NET and .NET Core'
@@ -87,7 +88,7 @@ reads:
     isbn: "1484239997"
   theworkingbrain:
     title: The Working Brain
-    url: http://www.amazon.co.uk/The-Working-Brain-Introduction-Neuropsychology/dp/046509208X?tag=drin04-20
+    url: https://www.amazon.co.uk/The-Working-Brain-Introduction-Neuropsychology/dp/046509208X?tag=drin04-20
     isbn: 046509208X
   microservicearch:
     title: 'Microservice Architecture: Aligning Principles, Practices, and Culture'
@@ -95,11 +96,11 @@ reads:
     isbn: "1491956259"
   thecleancoder:
     title: 'The Clean Coder: A Code of Conduct for Professional Programmers (Robert C. Martin)'
-    url: http://www.amazon.co.uk/dp/0137081073?tag=drin04-20
+    url: https://www.amazon.co.uk/dp/0137081073?tag=drin04-20
     isbn: "0137081073"
   softskills:
     title: "Soft Skills: The software developer's life manual"
-    url: http://www.amazon.co.uk/dp/1617292397?tag=drin04-20
+    url: https://www.amazon.co.uk/dp/1617292397?tag=drin04-20
     isbn: "1617292397"
   nojsyet1:
     title: "You Don't Know JS: Up & Going"
@@ -111,27 +112,27 @@ reads:
     isbn: "1680502395"
   leanstartup:
     title: The Lean Startup
-    url: http://www.amazon.co.uk/dp/0307887898?tag=drin04-20
+    url: https://www.amazon.co.uk/dp/0307887898?tag=drin04-20
     isbn: "0307887898"
   gofdp:
     title: 'Design patterns: elements of reusable object-oriented software'
-    url: http://www.amazon.co.uk/dp/0201633612?tag=drin04-20
+    url: https://www.amazon.co.uk/dp/0201633612?tag=drin04-20
     isbn: "0201633612"
   jsgoodparts:
     title: 'JavaScript: The Good Parts'
-    url: http://www.amazon.co.uk/dp/0596517742?tag=drin04-20
+    url: https://www.amazon.co.uk/dp/0596517742?tag=drin04-20
     isbn: "0596517742"
   thebigswitch:
     title: The Big Switch
-    url: http://www.amazon.co.uk/dp/0393333949?tag=drin04-20
+    url: https://www.amazon.co.uk/dp/0393333949?tag=drin04-20
     isbn: 039334522X
   refactoring:
     title: 'Refactoring: Improving the Design of Existing Code (Object Technology Series)'
-    url: http://www.amazon.co.uk/dp/0201485672?tag=drin04-20
+    url: https://www.amazon.co.uk/dp/0201485672?tag=drin04-20
     isbn: "0201485672"
   codecomplete:
     title: 'Code Complete: A Practical Handbook of Software Construction'
-    url: http://www.amazon.co.uk/dp/0735619670?tag=drin04-20
+    url: https://www.amazon.co.uk/dp/0735619670?tag=drin04-20
     isbn: "0735619670"
   domaindrivendesign:
     title: 'Domain-Driven Design: Tackling Complexity in the Heart of Software'
@@ -175,15 +176,15 @@ reads:
     isbn: "1617292249"
   agileppp:
     title: Agile Principles, Patterns, and Practices in C# (Robert C. Martin)
-    url: http://www.amazon.co.uk/dp/0131857258?tag=drin04-20
+    url: https://www.amazon.co.uk/dp/0131857258?tag=drin04-20
     isbn: "0131857258"
   steallikeanartist:
     title: Steal Like An Artist
-    url: http://www.amazon.co.uk/dp/0761169253?tag=drin04-20
+    url: https://www.amazon.co.uk/dp/0761169253?tag=drin04-20
     isbn: "0761169253"
   cleancode:
     title: 'Clean Code: A Handbook of Agile Software Craftsmanship'
-    url: http://www.amazon.co.uk/dp/0132350882?tag=drin04-20
+    url: https://www.amazon.co.uk/dp/0132350882?tag=drin04-20
     isbn: "0132350882"
   nojsyet6:
     title: "You Don't Know JS: ES6 & Beyond"
@@ -231,7 +232,7 @@ reads:
     isbn: "1449335586"
   interactiondesign:
     title: Interaction Design
-    url: http://www.amazon.co.uk/dp/1119020751?tag=drin04-20
+    url: https://www.amazon.co.uk/dp/1119020751?tag=drin04-20
     isbn: "1119020751"
   smartandgetsthingsdone:
     title: "Smart and Gets Things Done: Joel Spolsky's Concise Guide to Finding the Best Technical Talent"
@@ -267,7 +268,7 @@ reads:
     isbn: "0735667454"
   aspnetmvc5:
     title: Pro ASP.Net MVC 5 (Expert's Voice in ASP.Net)
-    url: http://www.amazon.co.uk/dp/1430265299?tag=drin04-20
+    url: https://www.amazon.co.uk/dp/1430265299?tag=drin04-20
     isbn: "1430265299"
   pragmaticprogrammer:
     title: 'The Pragmatic Programmer: 20th Anniversary Edition'
@@ -291,7 +292,7 @@ reads:
     isbn: "1449373321"
   learnazure:
     title: Learning Microsoft Azure
-    url: http://www.amazon.co.uk/dp/1782173374?tag=drin04-20
+    url: https://www.amazon.co.uk/dp/1782173374?tag=drin04-20
     isbn: "1782173374"
   showyourwork:
     title: 'Show Your Work!: 10 Ways to Share Your Creativity and Get Discovered'
@@ -319,7 +320,7 @@ reads:
     isbn: "1680502549"
   97things:
     title: 97 Things Every Programmer Should Know
-    url: http://www.amazon.co.uk/dp/0596809484?tag=drin04-20
+    url: https://www.amazon.co.uk/dp/0596809484?tag=drin04-20
     isbn: "0596809484"
   microservicespatterns:
     title: 'Microservice Patterns: With examples in Java'
@@ -339,11 +340,11 @@ reads:
     imgid: 618AcEIpzKL
   hfdesignpatterns:
     title: Head First Design Patterns
-    url: http://www.amazon.co.uk/dp/0596007124?tag=drin04-20
+    url: https://www.amazon.co.uk/dp/0596007124?tag=drin04-20
     isbn: "0596007124"
   csharpindepth:
     title: C# in Depth, 4th Edition
-    url: http://www.amazon.co.uk/dp/161729134X?tag=drin04-204e
+    url: https://www.amazon.co.uk/dp/161729134X?tag=drin04-204e
     isbn: "1617294535"
   xunit:
     title: 'xUnit Test Patterns: Refactoring Test Code'

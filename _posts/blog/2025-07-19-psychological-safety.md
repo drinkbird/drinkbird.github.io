@@ -17,10 +17,7 @@ reads:
   - accelerate-amazon
   - communicationforengineers
   - agiledev
-  - thefearlessorg
-  - radicalcandor
-  - turntheshiparound
-  - peopleware
+
 ---
 
 Think of an engineer spotting a design flaw during code review but choosing silence to avoid pushback from a stressed manager. Or a team member withholding concerns about integration risks in a sprint planning, fearing it might label them as negative. Or an engineer who knowingly cuts corners to hit an estimate, instead of raising the issue and proposing tradeoffs. Such behaviors point to how fear shapes decisions.
@@ -79,7 +76,7 @@ This echoes {% include link.html title="DeMarco and Lister's Peopleware" tag="pe
 
 Good leaders don't reward firefighting, but rather prevent fires from starting. They build teams that recognize risks early and act with clarity, not fear. And when mistakes happen, they make it safe to own them, learn from them, and improve the system.
 
-![]({{ site.baseurl }}/images/psychological-safety3.jpg)
+![Illustration evoking trust and openness in a team environment]({{ site.baseurl }}/images/psychological-safety3.jpg)
 
 ## Building better environments
 
