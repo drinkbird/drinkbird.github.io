@@ -32,6 +32,22 @@ npm run uglify
 
 Commit both `scripts.js` and `scripts.min.js` together so they don't drift.
 
+## Generating cover images
+
+Posts and courses use 710×360 JPGs as feature/cover images (the size `_includes/image-feature-list.html` and the course card both expect). To convert any source image (PNG / JPG / WebP / AVIF / GIF / TIFF) into that exact format:
+
+```sh
+npm install                              # first time only — installs sharp
+npm run cover -- images/source.png       # → images/source-0.jpg, 710×360, ~36 KB
+```
+
+Output goes next to the input with `-0.jpg` appended to the basename. If the source aspect ratio matches 710×360 it's just resized; otherwise sharp crops to fill using its `attention` strategy (picks the most salient region so faces/focal points survive). Flags:
+
+- `--quality 1-100` (default `88`) — drop to `82` to squeeze tighter for photos; raise to `92`+ for maximum fidelity.
+- `--position center|top|bottom|left|right|entropy|attention` — override the crop strategy when sharp's smart crop guesses wrong.
+
+For courses, set the resulting filename as the `image:` value in `_courses/<slug>/course.json` and re-run `ruby scripts/sync-courses-data.rb` so Liquid picks it up.
+
 ## Writing posts
 
 - Posts live in `_posts/blog/` and are named `YYYY-MM-DD-slug.md`.
