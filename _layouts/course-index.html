@@ -23,9 +23,9 @@ layout: default
       <article class="course-content course-content-overview post-content"
                data-course-slug="{{ page.course_slug }}"
                data-course-card>
-        {% if course.image %}
+        {% if page.image %}
         <figure class="course-overview-feature">
-          <img src="{{ site.baseurl }}/images/{{ course.image }}" alt="{{ course.topic }} feature image" class="img-responsive" width="710" height="360" loading="eager" decoding="async">
+          <img src="{{ site.baseurl }}/images/{{ page.image }}" alt="{{ course.topic }} feature image" class="img-responsive" width="710" height="360" loading="eager" decoding="async">
         </figure>
         {% endif %}
 
@@ -39,7 +39,7 @@ layout: default
             <span><strong>{{ course.modules.size }}</strong> modules</span>
             <span><strong>{{ total_chapters }}</strong> chapters</span>
             {% if course.answers.time_budget %}<span>{{ course.answers.time_budget }}</span>{% endif %}
-            {% assign course_updated = course.last_updated | default: course.generated_at %}
+            {% assign course_updated = page.last_updated | default: course.generated_at %}
             {% if course_updated %}<span>Last updated on {{ course_updated | date: "%B %Y" }}</span>{% endif %}
           </div>
 

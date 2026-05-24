@@ -3,6 +3,9 @@ layout: course-index
 course_slug: jekyll-engineering-blog-github-pages
 permalink: /courses/jekyll-engineering-blog-github-pages/
 title: "How to create an engineering blog with Jekyll and host it on GitHub Pages on a custom domain"
+image: course-jekyll.jpg
+description: "A free, hands-on course that takes you from your first `jekyll new` to a polished engineering blog live on your own domain - with SEO, social previews, GitHub Actions deployment, dark mode, and a writing workflow you can sustain."
+last_updated: 2026-05-24
 ---
 
 This course walks you end-to-end from "what is a static site generator?" to a polished engineering blog live on your own domain - with editorial CI, sensible analytics, social previews, dark mode, and a writing workflow you can actually sustain.

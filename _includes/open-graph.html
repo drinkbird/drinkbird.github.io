@@ -3,15 +3,22 @@
 
   Resolution order:
     title        : page.chapter_title > page.title > site.title
-    description  : page.excerpt > chapter summary > course goal > site.description
-    image        : page.image.feature > course.image > default-thumb
+    description  : page.excerpt > chapter summary > course-index description > course goal > site.description
+    image        : page.image.feature > course-index image > default-thumb
     card style   : summary_large_image when we have a real image, else summary
+
+  For course pages, blog-side presentation fields (image, description,
+  last_updated) live on _courses/<slug>/index.md front matter, not in
+  course.json. og_course_index is the index.md doc for the current page's
+  course; og_course is the structural data from site.data.courses[slug].
 {% endcomment %}
 
 {% comment %} Look up the course this page belongs to (if any). {% endcomment %}
 {% assign og_course = nil %}
+{% assign og_course_index = nil %}
 {% if page.course_slug %}
   {% assign og_course = site.data.courses[page.course_slug] %}
+  {% assign og_course_index = site.courses | where: "course_slug", page.course_slug | where_exp: "p", "p.chapter_id == nil" | first %}
 {% endif %}
 
 {% comment %} Look up the chapter entry inside course.modules[].chapters[] for its summary. {% endcomment %}
@@ -40,8 +47,8 @@
   {% assign og_description = page.excerpt | strip_html %}
 {% elsif og_chapter.summary %}
   {% assign og_description = og_chapter.summary | strip_html %}
-{% elsif og_course.description %}
-  {% assign og_description = og_course.description | strip_html %}
+{% elsif og_course_index.description %}
+  {% assign og_description = og_course_index.description | strip_html %}
 {% elsif og_course.answers.goal %}
   {% assign og_description = og_course.answers.goal | strip_html %}
 {% elsif og_course.topic %}
@@ -57,7 +64,7 @@
 {% assign og_modified_time  = nil %}
 {% if og_course %}
   {% if og_course.created_at %}{% assign og_published_time = og_course.created_at | date_to_xmlschema %}{% endif %}
-  {% if og_course.last_updated %}{% assign og_modified_time = og_course.last_updated | date_to_xmlschema %}{% endif %}
+  {% if og_course_index.last_updated %}{% assign og_modified_time = og_course_index.last_updated | date_to_xmlschema %}{% endif %}
 {% else %}
   {% if page.date %}{% assign og_published_time = page.date | date_to_xmlschema %}{% endif %}
   {% if page.last_modified_at %}{% assign og_modified_time = page.last_modified_at | date_to_xmlschema %}{% endif %}
@@ -71,8 +78,8 @@
 {% if page.image.feature %}
   {% capture og_image %}{{ site.url }}{{ site.baseurl }}/images/{{ page.image.feature }}{% endcapture %}
   {% assign og_image_is_large = true %}
-{% elsif og_course.image %}
-  {% capture og_image %}{{ site.url }}{{ site.baseurl }}/images/{{ og_course.image }}{% endcapture %}
+{% elsif og_course_index.image %}
+  {% capture og_image %}{{ site.url }}{{ site.baseurl }}/images/{{ og_course_index.image }}{% endcapture %}
   {% assign og_image_is_large = true %}
   {% assign og_image_known_dim = true %}
 {% elsif page.image.thumb %}
