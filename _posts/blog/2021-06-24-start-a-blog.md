@@ -46,7 +46,9 @@ Which one would you choose? I would undoubtedly choose the specialist. Moreover,
 
 ### 2. Set up your blog
 
-There are many tools to help you set up a blog quickly, e.g. WordPress, Jekyll, Gatsby, as well as plenty of hosting options. For example, the DrinkBird blog is created with [Jekyll](https://jekyllrb.com/) and hosted for free on [GitHub Pages](https://pages.github.com/).
+There are many tools to help you set up a blog quickly, e.g. WordPress, Ghost, Substack, Jekyll, Hugo, Astro, as well as plenty of hosting options. For example, the DrinkBird blog is created with [Jekyll](https://jekyllrb.com/) and hosted for free on [GitHub Pages](https://pages.github.com/).
+
+If you want to follow that exact path end-to-end — from your first `jekyll new` to a polished engineering blog on your own custom domain, with SEO, social previews, analytics, and a writing workflow you can sustain — I put it all into a free, hands-on course: [**How to create an engineering blog with Jekyll and host it on GitHub Pages on a custom domain**]({{ site.baseurl }}/courses/jekyll-engineering-blog-github-pages/).
 
 I highly recommend registering and using a domain name (e.g. mine is `drinkbird.com`). Not only is it a vital part of your personal branding, but it will also enable you to own your content.
 
@@ -54,7 +56,7 @@ If you choose to publish your posts on platforms like Medium or LinkedIn, be awa
 
 ### 3. Make a list of ideas on what to write about
 
-A good practice to get you started is to sit down and brainstorm. Spend at least half an hour and come up with 40-50 topics you can potentially write about. There are no bad ideas; just populate a list with whatever comes to you naturally. Then, after the brainstorming session, you can use tools like Trello, OneNote or Evernote to organise and prioritise your ideas.
+A good practice to get you started is to sit down and brainstorm. Spend at least half an hour and come up with 40-50 topics you can potentially write about. There are no bad ideas; just populate a list with whatever comes to you naturally. Then, after the brainstorming session, you can use tools like Notion, Obsidian, Trello, or OneNote to organise and prioritise your ideas.
 
 You may think you don't have much to say, but do yourself a favour and try it out; you will be pleasantly surprised. Here are some ideas on things you can expand upon:
 
@@ -75,9 +77,9 @@ Traffic will not be the easiest thing to generate, at least the meaningful kind 
 
 There is nothing wrong with paid promotions; the problem is that if you don't already have enough material to turn those random visitors into followers, you will probably lose money and not even break even.
 
-A good way of getting some organic traffic is to post comments on other blogs on related themes; just to clarify, I'm referring to *meaningful comments that add value*, and not shameless self-plugs!
+A good way of getting some organic traffic is to engage meaningfully on the platforms where your readers already gather — thoughtful comments on LinkedIn, technical discussion on Hacker News, dev.to, or the right community Discord or Slack. Just to clarify, I'm referring to *meaningful contributions that add value*, and not shameless self-plugs!
 
-Finally, you can include your blog address in your e-mail signature, business cards and all your profiles across social media and services, e.g. GitHub, LinkedIn, etc.
+Finally, include your blog address in your e-mail signature and across all your profiles, e.g. LinkedIn, GitHub, and the other services where people look you up.
 
 Remember, keep adding value, and people will notice.
 
@@ -88,6 +90,8 @@ You may be worried about lots of different details regarding your blog. It may f
 Remember that creating a blog is a marathon, not a sprint. It can certainly take a while before the compound interest of your investment becomes significant enough so that you can start reaping some of the more considerable benefits.
 
 I'll leave you with this final thought. You can write every day, every week, or every month. Try to be consistent on how often you want to publish. If you ever write more articles, hold onto them and schedule them on a date that accommodates your posting frequency.
+
+When you're ready to go from idea to a live blog you'd be proud of, the free [hands-on Jekyll course]({{ site.baseurl }}/courses/jekyll-engineering-blog-github-pages/) walks you through every step — local setup, Jekyll's content model, SEO and social previews, deploying via GitHub Actions, and a writing workflow you can actually sustain.
 
 All the best and happy blogging!
 Tasos

@@ -40,6 +40,8 @@
   {% assign og_description = page.excerpt | strip_html %}
 {% elsif og_chapter.summary %}
   {% assign og_description = og_chapter.summary | strip_html %}
+{% elsif og_course.description %}
+  {% assign og_description = og_course.description | strip_html %}
 {% elsif og_course.answers.goal %}
   {% assign og_description = og_course.answers.goal | strip_html %}
 {% elsif og_course.topic %}
@@ -48,15 +50,31 @@
   {% assign og_description = site.description | strip_html %}
 {% endif %}
 
-{% comment %} Image. Resolve to an absolute URL. {% endcomment %}
+{% comment %} Dates: published / modified. For course pages, course.json is
+   authoritative (page.date on collection docs is the file mtime, which drifts).
+   For blog posts, page.date (Jekyll-derived from the YYYY-MM-DD filename) is. {% endcomment %}
+{% assign og_published_time = nil %}
+{% assign og_modified_time  = nil %}
+{% if og_course %}
+  {% if og_course.created_at %}{% assign og_published_time = og_course.created_at | date_to_xmlschema %}{% endif %}
+  {% if og_course.last_updated %}{% assign og_modified_time = og_course.last_updated | date_to_xmlschema %}{% endif %}
+{% else %}
+  {% if page.date %}{% assign og_published_time = page.date | date_to_xmlschema %}{% endif %}
+  {% if page.last_modified_at %}{% assign og_modified_time = page.last_modified_at | date_to_xmlschema %}{% endif %}
+{% endif %}
+
+{% comment %} Image. Resolve to an absolute URL. Track when the source produced
+   a known-dimension image so we can emit og:image:width/height. {% endcomment %}
 {% assign og_image = nil %}
 {% assign og_image_is_large = false %}
+{% assign og_image_known_dim = false %}
 {% if page.image.feature %}
   {% capture og_image %}{{ site.url }}{{ site.baseurl }}/images/{{ page.image.feature }}{% endcapture %}
   {% assign og_image_is_large = true %}
 {% elsif og_course.image %}
   {% capture og_image %}{{ site.url }}{{ site.baseurl }}/images/{{ og_course.image }}{% endcapture %}
   {% assign og_image_is_large = true %}
+  {% assign og_image_known_dim = true %}
 {% elsif page.image.thumb %}
   {% capture og_image %}{{ site.url }}{{ site.baseurl }}/images/{{ page.image.thumb }}{% endcapture %}
 {% else %}
@@ -82,3 +100,10 @@
 <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 <meta property="og:site_name" content="{{ site.title }}">
 <meta property="og:image" content="{{ og_image }}">
+{% if og_image_known_dim %}
+<meta property="og:image:width" content="1420">
+<meta property="og:image:height" content="720">
+{% endif %}
+{% if og_published_time %}<meta property="article:published_time" content="{{ og_published_time }}">{% endif %}
+{% if og_modified_time %}<meta property="article:modified_time" content="{{ og_modified_time }}">{% endif %}
+{% if site.owner.name %}<meta property="article:author" content="{{ site.owner.name }}">{% endif %}
