@@ -1,0 +1,85 @@
+<style>
+  .cookie-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    background: #222;
+    color: #fff;
+    padding: 1em 1.25em;
+    font-size: 0.9em;
+    line-height: 1.4;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1em;
+  }
+  .cookie-banner[hidden] { display: none; }
+  .cookie-banner p { margin: 0; flex: 1 1 320px; }
+  .cookie-banner a { color: #fff; text-decoration: underline; }
+  .cookie-banner__buttons { display: flex; gap: 0.5em; flex-shrink: 0; }
+  .cookie-banner button {
+    border: 1px solid #fff;
+    background: transparent;
+    color: #fff;
+    padding: 0.4em 1em;
+    cursor: pointer;
+    font: inherit;
+    border-radius: 3px;
+  }
+  .cookie-banner button.is-primary { background: #fff; color: #222; }
+  .cookie-banner button:hover { opacity: 0.85; }
+</style>
+
+<div id="cookie-banner" class="cookie-banner" hidden>
+  <p>
+    This site uses cookies for analytics and to power the comments section.
+    See our <a href="{{ '/privacy-policy/' | prepend: site.baseurl }}">privacy policy</a>.
+  </p>
+  <div class="cookie-banner__buttons">
+    <button type="button" id="cookie-decline">Decline</button>
+    <button type="button" id="cookie-accept" class="is-primary">Accept</button>
+  </div>
+</div>
+
+<script>
+(function() {
+  var KEY = 'drinkbird-consent';
+  var banner = document.getElementById('cookie-banner');
+
+  function grantConsent() {
+    document.dispatchEvent(new CustomEvent('drinkbird:consent-granted'));
+  }
+
+  function hideBanner() { if (banner) banner.hidden = true; }
+  function showBanner() { if (banner) banner.hidden = false; }
+
+  document.getElementById('cookie-accept').addEventListener('click', function() {
+    try { localStorage.setItem(KEY, 'accepted'); } catch (e) {}
+    hideBanner();
+    grantConsent();
+  });
+
+  document.getElementById('cookie-decline').addEventListener('click', function() {
+    try { localStorage.setItem(KEY, 'declined'); } catch (e) {}
+    hideBanner();
+  });
+
+  var stored = null;
+  try { stored = localStorage.getItem(KEY); } catch (e) {}
+
+  if (stored === 'accepted') {
+    setTimeout(grantConsent, 0);
+  } else if (stored === null) {
+    showBanner();
+  }
+
+  window.drinkbirdResetConsent = function() {
+    try { localStorage.removeItem(KEY); } catch (e) {}
+    showBanner();
+  };
+})();
+</script>

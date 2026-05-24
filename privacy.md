@@ -4,52 +4,49 @@ title: Privacy Policy and Disclosure for DrinkBird
 permalink: /privacy-policy/
 ---
 
-If you require any more information or have any questions about our privacy policy, please feel free to contact us by email at [tasos [at] drinkbird.com](&#109;&#97;&#105;&#108;&#116;&#111;:&#116;&#97;&#115;&#111;&#115;&#64;&#100;&#114;&#105;&#110;&#107;&#98;&#105;&#114;&#100;&#46;&#99;&#111;&#109;).
+This page explains, in plain language, what data this site collects, why, and what your rights are. Questions go to [tasos [at] drinkbird.com](&#109;&#97;&#105;&#108;&#116;&#111;:&#116;&#97;&#115;&#111;&#115;&#64;&#100;&#114;&#105;&#110;&#107;&#98;&#105;&#114;&#100;&#46;&#99;&#111;&#109;).
 
-At drinkbird.com we consider the privacy of our visitors to be extremely important. This privacy policy document describes in detail the types of personal information is collected and recorded by drinkbird.com and how we process and use it.
+# What we collect
 
-# Log Files
+DrinkBird is a static personal blog. We collect as little as possible.
 
-Like many other Web sites, drinkbird.com makes use of log files. These files merely logs visitors to the site - usually a standard procedure for hosting companies and a part of hosting services's analytics. The information inside the log files includes internet protocol (IP) addresses, browser type, Internet Service Provider (ISP), date/time stamp, referring/exit pages, and possibly the number of clicks. This information is used to analyze trends, administer the site, track user's movement around the site, and gather demographic information. IP addresses, and other such information are not linked to any information that is personally identifiable.
+- **Server logs.** The hosting provider (GitHub Pages) keeps standard access logs containing IP address, browser type, referrer, and timestamp. These are used by the host to operate the service and detect abuse. We do not access or analyse them ourselves.
+- **Analytics (with your consent).** If you accept analytics cookies via the consent banner, the site loads Google Analytics 4. GA4 records page views and aggregate usage. IP addresses are truncated by Google before storage. No analytics scripts load until you accept.
+- **Comments (with your consent).** If you accept and choose to comment via Disqus, Disqus collects whatever you provide (name/email, comment text) plus their own usage data. The Disqus scripts do not load until you accept. See the [Disqus Privacy Policy](https://help.disqus.com/customer/en/portal/articles/466259-privacy-policy).
 
-# Cookies and Web Beacons
+We do **not** run advertising trackers, retargeting pixels, or marketing email lists on this site.
 
-drinkbird.com uses cookies to store information about visitors' preferences, to record user-specific information on which pages the site visitor accesses or visits, and to personalize or customize our web page content based upon visitors' browser type or other information that the visitor sends via their browser.
+# Cookies and consent
 
-# Disclosure
- 
-As an Amazon Associate I earn from qualifying purchases.
+On your first visit you'll see a banner asking whether to accept cookies for analytics and comments. Your choice is stored locally in your browser (`localStorage`) and remembered for future visits. You can change your mind at any time by clearing site data in your browser.
 
-# Third Party Privacy Policies
+If you decline, no analytics or Disqus scripts load. If you accept, those scripts load and may set their own cookies — see the third-party policies above for details.
 
-You should consult the respective privacy policies of these third-party ad servers for more detailed information on their practices as well as for instructions about how to opt-out of certain practices. drinkbird.com's privacy policy does not apply to, and we cannot control the activities of, such other advertisers or web sites.
+# Your rights
 
-You may find a comprehensive listing of these privacy policies and their links here: [Privacy Policy Links](http://www.privacypolicyonline.com/privacy-policies/).
+If you're in the EU/EEA, UK, or California, you have specific rights over your personal data:
 
-If you wish to disable cookies, you may do so through your individual browser options. More detailed information about cookie management with specific web browsers can be found at the browsers' respective websites. [What Are Cookies?](http://www.privacypolicyonline.com/what-are-cookies)
+- Access — find out what data we hold about you (in practice: very little, since we don't keep our own database).
+- Deletion — ask us to remove what we have.
+- Objection — tell us to stop processing your data.
+- Portability — get a copy in a usable format.
 
-- Google Analytics: *This website uses Google Analytics, a web analytics service provided by Google, Inc. ("Google"). Google Analytics uses "cookies", which are text files placed on your computer to help the website analyse how visitors use the site. The information generated by the cookie about your use of the website (including your IP address) will be transmitted to and stored by Google on servers in the United States. Google will use this information for the purpose of evaluating your use of the website, compiling reports on website activity for website operators and providing other services relating to website activity and internet usage. Google may also transfer this information to third parties where required to do so by law, or where such third parties process the information on Google's behalf. Google will not associate your IP address with any other data held by Google. You may refuse the use of cookies by selecting the appropriate settings on your browser, however please note that if you do this you may not be able to use the full functionality of this website. By using this website, you consent to the processing of data about you by Google in the manner and for the purposes set out above.* You can also view the latest version of [Google Privacy Policy](https://policies.google.com/privacy?hl=en)
-- Facebook Pixel: *This website uses Facebook Pixel, a statistics tool by Facebook that helps measuring the effectiveness of advertisements.* [Facebook Privacy Policy](https://www.facebook.com/about/privacy/)
-- Disqus: *This website uses Disqus to provide the users the ability to submit comments.* [Disqus Privacy Policy](https://help.disqus.com/customer/en/portal/articles/466259-privacy-policy)
-- Mailchimp: *This website uses Mailchimp to send out communication and marketing to users that have opted in.* [Mailchimp Privacy Policy](https://mailchimp.com/legal/privacy/)
+Email the address above to exercise any of these. We will respond within 30 days.
 
-# Children's Information
+For data held by Google (analytics) or Disqus (comments), contact them directly using the links above — we can only delete what's in our control.
 
-We believe it is important to provide added protection for children online. We encourage parents and guardians to spend time online with their children to observe, participate in and/or monitor and guide their online activity.
+# Children
 
-drinkbird.com does not knowingly collect any personally identifiable information from children under the age of 13. If a parent or guardian believes that drinkbird.com has in its database the personally-identifiable information of a child under the age of 13, please contact us immediately (using the contact in the first paragraph) and we will use our best efforts to promptly remove such information from our records.
+DrinkBird is aimed at adults and does not knowingly collect data from children under 13 (or 16 in the EU). If you believe a child has submitted personal data through this site, email us and we will remove it.
 
-# Online Privacy Policy Only
+# Amazon Associates disclosure
 
-This privacy policy applies only to our online activities and is valid for visitors to our website and regarding information shared and/or collected there.
-This policy does not apply to any information collected offline or via channels other than this website.
+DrinkBird participates in the Amazon Associates Program. Some links to books and products on this site are affiliate links, which means we may earn a small commission if you click through and make a purchase. This does not change the price you pay. The recommendations are based on what we genuinely think is worth reading.
 
-# Consent
+# Changes to this policy
 
-By using our website, you hereby consent to our privacy policy and agree to its terms.
+Material changes will be posted on this page with an updated date. Continued use of the site after changes constitutes acceptance.
 
 # Update
 
-This Privacy Policy was last updated on: Tuesday, May 24th, 2018.
-
-*Should we update, amend or make any changes to our privacy policy, those changes will be posted here.*
+This Privacy Policy was last updated on: 2026-05-24.
