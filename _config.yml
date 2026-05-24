@@ -38,6 +38,7 @@ plugins:
   - jekyll-feed
 
 exclude: [node_modules]
+include: [.well-known]
 
 links:
   - title: Stories
