@@ -3,29 +3,10 @@ $(function() {
     // FitVids options
     $('iframe[src*="youtube"]').parent().fitVids();
 
-    // Add lightbox class to all image links
+    // Add lightbox class to all image links so GLightbox picks them up
     $(".post-body a[href$='.jpg'], .post-body a[href$='.jpeg'], .post-body a[href$='.JPG'], .post-body a[href$='.png'], .post-body a[href$='.gif']").addClass("image-popup");
 
-    // Magnific-Popup options
-    $('.image-popup').magnificPopup({
-        type: 'image',
-        tLoading: 'Loading',
-        titleSrc: 'title',
-        gallery: {
-            enabled: true,
-            preload: [0,2],
-            navigateByImgClick: true,
-            arrowMarkup: '<button title="%title%" type="button" class="mfp-arrow mfp-arrow-%dir%"></button>',
-            tPrev: 'Previous (Left arrow key)',
-            tNext: 'Next (Right arrow key)',
-            tCounter: '<span class="mfp-counter">%curr%/%total%</span>'
-        },
-        image: {
-            tError: 'The image could not be loaded.',
-        },
-        removalDelay: 300,
-        mainClass: 'mfp-with-zoom'
-    });
+    GLightbox({ selector: '.image-popup', loop: true });
 
     // Navbar collapse icon toggle
     $('#navbar').on('show.bs.collapse', function () {
