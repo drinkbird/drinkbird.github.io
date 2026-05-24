@@ -1,3 +1,11 @@
+{% if page.chapter_title %}
+  {% capture share_title %}{{ page.chapter_title }} | {{ site.title }}{% endcapture %}
+{% elsif page.title %}
+  {% capture share_title %}{{ page.title }} | {{ site.title }}{% endcapture %}
+{% else %}
+  {% assign share_title = site.title %}
+{% endif %}
+
 <div class="social-share-slim">
   <ul>
     <li>
@@ -10,10 +18,10 @@
       <a href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ site.baseurl }}{{ page.url }}" target="_blank" title="Share"><i class="fab fa-facebook-square"></i></a>
     </li>
     <li>
-      <a href="https://reddit.com/submit?url={{ site.url }}{{ site.baseurl }}{{ page.url }}&title={{ page.title }}" target="_blank" title="Post"><i class="fab fa-reddit-alien"></i></a>
+      <a href="https://reddit.com/submit?url={{ site.url }}{{ site.baseurl }}{{ page.url }}&title={{ share_title | url_encode }}" target="_blank" title="Post"><i class="fab fa-reddit-alien"></i></a>
     </li>
     <li>
-      <a href="mailto:?subject={{ page.title }}&amp;body={{ site.url }}{{ site.baseurl }}{{ page.url }}" title="Email"><i class="far fa-envelope"></i></a>
+      <a href="mailto:?subject={{ share_title | url_encode }}&amp;body={{ site.url }}{{ site.baseurl }}{{ page.url }}" title="Email"><i class="far fa-envelope"></i></a>
     </li>
   </ul>
 </div>

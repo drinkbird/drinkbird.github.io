@@ -5,10 +5,18 @@
   function loadDisqus() {
     var disqus_shortname = '{{ site.owner.disqus-shortname }}';
 
+    {% if page.chapter_title %}
+      {% capture disqus_title %}{{ page.chapter_title }} | {{ site.title }}{% endcapture %}
+    {% elsif page.title %}
+      {% capture disqus_title %}{{ page.title }} | {{ site.title }}{% endcapture %}
+    {% else %}
+      {% assign disqus_title = site.title %}
+    {% endif %}
+    {% assign disqus_identifier = page.permalink | default: page.url %}
     window.disqus_config = function () {
       this.page.url = {{ site.url | append: site.baseurl | append: page.url | jsonify }};
-      this.page.identifier = {{ page.permalink | jsonify }};
-      this.page.title = {{ page.title | append: " - " | append: site.title | jsonify }};
+      this.page.identifier = {{ disqus_identifier | jsonify }};
+      this.page.title = {{ disqus_title | jsonify }};
     };
 
     var dsq = document.createElement('script');

@@ -1,28 +1,84 @@
-<!-- Twitter Cards -->
-<meta name="twitter:title" content="{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}">
-{% if page.excerpt %}<meta name="twitter:description" content="{{ page.excerpt | strip_html }}">{% endif %}
-{% if site.owner.twitter %}<meta name="twitter:site" content="@{{ site.owner.twitter }}">{% endif %}
+{% comment %}
+  Build a single source-of-truth for the OG/Twitter card per page.
+
+  Resolution order:
+    title        : page.chapter_title > page.title > site.title
+    description  : page.excerpt > chapter summary > course goal > site.description
+    image        : page.image.feature > course.image > default-thumb
+    card style   : summary_large_image when we have a real image, else summary
+{% endcomment %}
+
+{% comment %} Look up the course this page belongs to (if any). {% endcomment %}
+{% assign og_course = nil %}
+{% if page.course_slug %}
+  {% assign og_course = site.data.courses[page.course_slug] %}
+{% endif %}
+
+{% comment %} Look up the chapter entry inside course.modules[].chapters[] for its summary. {% endcomment %}
+{% assign og_chapter = nil %}
+{% if og_course and page.module_id and page.chapter_id %}
+  {% for m in og_course.modules %}
+    {% if m.id == page.module_id %}
+      {% for c in m.chapters %}
+        {% if c.id == page.chapter_id %}{% assign og_chapter = c %}{% endif %}
+      {% endfor %}
+    {% endif %}
+  {% endfor %}
+{% endif %}
+
+{% comment %} Title. {% endcomment %}
+{% if page.chapter_title %}
+  {% capture og_title %}{{ page.chapter_title }} | {{ site.title }}{% endcapture %}
+{% elsif page.title %}
+  {% capture og_title %}{{ page.title }} | {{ site.title }}{% endcapture %}
+{% else %}
+  {% assign og_title = site.title %}
+{% endif %}
+
+{% comment %} Description. {% endcomment %}
+{% if page.excerpt and page.excerpt != "" %}
+  {% assign og_description = page.excerpt | strip_html %}
+{% elsif og_chapter.summary %}
+  {% assign og_description = og_chapter.summary | strip_html %}
+{% elsif og_course.answers.goal %}
+  {% assign og_description = og_course.answers.goal | strip_html %}
+{% elsif og_course.topic %}
+  {% assign og_description = og_course.topic | strip_html %}
+{% else %}
+  {% assign og_description = site.description | strip_html %}
+{% endif %}
+
+{% comment %} Image. Resolve to an absolute URL. {% endcomment %}
+{% assign og_image = nil %}
+{% assign og_image_is_large = false %}
 {% if page.image.feature %}
+  {% capture og_image %}{{ site.url }}{{ site.baseurl }}/images/{{ page.image.feature }}{% endcapture %}
+  {% assign og_image_is_large = true %}
+{% elsif og_course.image %}
+  {% capture og_image %}{{ site.url }}{{ site.baseurl }}/images/{{ og_course.image }}{% endcapture %}
+  {% assign og_image_is_large = true %}
+{% elsif page.image.thumb %}
+  {% capture og_image %}{{ site.url }}{{ site.baseurl }}/images/{{ page.image.thumb }}{% endcapture %}
+{% else %}
+  {% capture og_image %}{{ site.url }}{{ site.baseurl }}/assets/media/default-thumb.png{% endcapture %}
+{% endif %}
+
+<!-- Twitter Cards -->
+<meta name="twitter:title" content="{{ og_title }}">
+<meta name="twitter:description" content="{{ og_description }}">
+{% if site.owner.twitter %}<meta name="twitter:site" content="@{{ site.owner.twitter }}">{% endif %}
+{% if og_image_is_large %}
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="{{ site.url }}{{ site.baseurl }}/images/{{ page.image.feature }}">
 {% else %}
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="{% if page.image.thumb %}{{ site.url }}{{ site.baseurl }}/images/{{ page.image.thumb }}{% else %}{{ site.url }}{{ site.baseurl }}/assets/media/default-thumb.png{% endif %}">
 {% endif %}
+<meta name="twitter:image" content="{{ og_image }}">
+
 <!-- Open Graph -->
 <meta property="og:locale" content="{{ site.locale }}">
 <meta property="og:type" content="article">
-<meta property="og:title" content="{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}">
-{% if page.excerpt %}
-<meta property="og:description" content="{{ page.excerpt | strip_html }}">
-{% else %}
-<meta property="og:description" content="{{ site.description | strip_html }}">
-{% endif %}
-
+<meta property="og:title" content="{{ og_title }}">
+<meta property="og:description" content="{{ og_description }}">
 <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 <meta property="og:site_name" content="{{ site.title }}">
-{% if page.image.feature %}
-<meta property="og:image" content="{{ site.url }}{{ site.baseurl }}/images/{{ page.image.feature }}">
-{% else %}
-<meta property="og:image" content="{% if page.image.thumb %}{{ site.url }}{{ site.baseurl }}/images/{{ page.image.thumb }}{% else %}{{ site.url }}{{ site.baseurl }}/assets/media/default-thumb.png{% endif %}">
-{% endif %}
+<meta property="og:image" content="{{ og_image }}">

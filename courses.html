@@ -32,7 +32,7 @@ excerpt: "Hands-on courses on building, shipping, and leading engineering teams"
       {% assign result = count | modulo: 2 %}
       {% if result == 1 %}<div class="row">{% endif %}
       <div class="col-md-6">
-        <article class="article-list course-card">
+        <article class="article-list course-card" data-course-card>
           <a href="{{ site.baseurl }}/courses/{{ slug }}/" title="{{ course.topic }}" data-course-card-title-link>
             {% if course.image %}
             {% if count <= 2 %}{% assign courseLoading = 'eager' %}{% else %}{% assign courseLoading = 'lazy' %}{% endif %}
@@ -64,7 +64,7 @@ excerpt: "Hands-on courses on building, shipping, and leading engineering teams"
 
           <p class="course-card-cta">
             <a class="btn btn-info" href="{{ site.baseurl }}/courses/{{ slug }}/">Course overview</a>
-            {% if first_chapter %}<a class="btn btn-default" href="{{ site.baseurl }}{{ first_chapter.url }}" data-course-card-resume><span data-course-card-resume-label>Start →</span></a>{% endif %}
+            {% if first_chapter %}<a class="btn btn-default" href="{{ site.baseurl }}{{ first_chapter.url }}" data-course-card-resume><span data-course-card-resume-label data-default-label="Start →">Start →</span></a>{% endif %}
           </p>
 
           <script type="application/json" data-course-card-data>{

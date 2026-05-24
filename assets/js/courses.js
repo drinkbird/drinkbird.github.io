@@ -331,7 +331,7 @@
       if (titleLink) titleLink.setAttribute("href", data.courseUrl);
       if (resumeBtn) {
         resumeBtn.setAttribute("href", data.chapters[0].url);
-        if (labelEl) labelEl.textContent = "Start →";
+        if (labelEl) labelEl.textContent = labelEl.dataset.defaultLabel || "Start →";
       }
       return;
     }
@@ -376,7 +376,7 @@
   }
 
   function hydrateCourseCards() {
-    var cards = document.querySelectorAll(".course-card");
+    var cards = document.querySelectorAll("[data-course-card]");
     Array.prototype.forEach.call(cards, function (card) {
       var data = readCardData(card);
       if (!data) return;

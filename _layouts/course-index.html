@@ -16,27 +16,53 @@ layout: default
         <span>{{ course.topic | truncate: 80 }}</span>
       </nav>
 
+      <div class="course-chapter-byline">
+        {% include author-inline.html verb="Produced by" %}
+      </div>
+
       <article class="course-content course-content-overview post-content"
-               data-course-slug="{{ page.course_slug }}">
+               data-course-slug="{{ page.course_slug }}"
+               data-course-card>
+        {% if course.image %}
+        <figure class="course-overview-feature">
+          <img src="{{ site.baseurl }}/images/{{ course.image }}" alt="{{ course.topic }} feature image" class="img-responsive" width="710" height="360" loading="eager" decoding="async">
+        </figure>
+        {% endif %}
+
         <header class="course-overview-header">
           <p class="course-overview-eyebrow">Course · {{ course.depth | capitalize }}</p>
           <h1 class="course-overview-title">{{ course.topic }}</h1>
           {% if course.answers.goal %}<p class="course-overview-goal">{{ course.answers.goal }}</p>{% endif %}
+          {% assign total_chapters = 0 %}
+          {% for m in course.modules %}{% assign total_chapters = total_chapters | plus: m.chapters.size %}{% endfor %}
           <div class="course-overview-meta">
             <span><strong>{{ course.modules.size }}</strong> modules</span>
-            {% assign total_chapters = 0 %}
-            {% for m in course.modules %}{% assign total_chapters = total_chapters | plus: m.chapters.size %}{% endfor %}
             <span><strong>{{ total_chapters }}</strong> chapters</span>
             {% if course.answers.time_budget %}<span>{{ course.answers.time_budget }}</span>{% endif %}
             {% assign course_updated = course.last_updated | default: course.generated_at %}
             {% if course_updated %}<span>Last updated on {{ course_updated | date: "%B %Y" }}</span>{% endif %}
           </div>
+
+          <div class="course-progress course-card-progress" data-course-card-progress hidden>
+            <div class="course-progress-bar"><span class="course-progress-bar-fill" style="width: 0%"></span></div>
+            <p class="course-progress-text">
+              <span><span data-course-card-progress-count>0</span> / <span data-course-card-progress-total>{{ total_chapters }}</span> chapters complete</span>
+              <button type="button" class="course-card-reset" data-course-card-reset>Reset progress</button>
+            </p>
+          </div>
+
           {% if first_chapter %}
           <p class="course-overview-cta">
-            <a class="btn btn-info btn-lg" href="{{ site.baseurl }}{{ first_chapter.url }}">Start the course →</a>
+            <a class="btn btn-info btn-lg" href="{{ site.baseurl }}{{ first_chapter.url }}" data-course-card-resume><span data-course-card-resume-label data-default-label="Start the course →">Start the course →</span></a>
           </p>
           {% endif %}
         </header>
+
+        <script type="application/json" data-course-card-data>{
+          "courseSlug": {{ page.course_slug | jsonify }},
+          "courseUrl":  {{ "/courses/" | append: page.course_slug | append: "/" | prepend: site.baseurl | jsonify }},
+          "chapters": [{% for cp in chapter_pages %}{ "moduleSlug": {{ cp.module_slug | jsonify }}, "chapterSlug": {{ cp.chapter_slug | jsonify }}, "url": {{ cp.url | prepend: site.baseurl | jsonify }} }{% unless forloop.last %},{% endunless %}{% endfor %}]
+        }</script>
 
         <div class="course-content-body post-body">
           {{ content }}
@@ -61,6 +87,9 @@ layout: default
             {% endfor %}
           </ol>
         </div>
+
+        {% include social-share.html %}
+        {% include disqus-comments.html %}
       </article>
     </main>
   </div>

@@ -300,6 +300,20 @@ $course-sidebar-border:#e3e6ea;
 
 /* Course overview ------------------------------------------------------- */
 
+.course-overview-feature {
+	margin: 0 0 24px;
+	border-radius: 6px;
+	overflow: hidden;
+	border: 1px solid $course-sidebar-border;
+
+	img {
+		display: block;
+		width: 100%;
+		height: auto;
+		margin-bottom: 0;
+	}
+}
+
 .course-overview-header {
 	padding-bottom: 24px;
 	border-bottom: 1px solid $course-sidebar-border;
@@ -602,6 +616,35 @@ $course-sidebar-border:#e3e6ea;
 
 /* Top-level /courses/ index --------------------------------------------- */
 
+// Progress bar + reset link — shared between the index card and the course
+// landing's CTA section.
+.course-card-progress {
+	margin: 14px 0 6px;
+
+	.course-progress-text {
+		font-size: 12px;
+		display: flex;
+		justify-content: space-between;
+		align-items: baseline;
+		gap: 12px;
+	}
+}
+
+.course-card-reset {
+	background: none;
+	border: none;
+	padding: 0;
+	font-size: 12px;
+	color: $brand-secondary;
+	text-transform: none;
+	letter-spacing: 0;
+	font-weight: 400;
+	text-decoration: underline;
+	cursor: pointer;
+
+	&:hover { color: $brand-secondary-dark; }
+}
+
 .course-card {
 	border: 1px solid $course-sidebar-border;
 	padding: 22px 24px;
@@ -626,33 +669,6 @@ $course-sidebar-border:#e3e6ea;
 			height: auto;
 			margin-bottom: 0;
 		}
-	}
-
-	.course-card-progress {
-		margin: 14px 0 6px;
-
-		.course-progress-text {
-			font-size: 12px;
-			display: flex;
-			justify-content: space-between;
-			align-items: baseline;
-			gap: 12px;
-		}
-	}
-
-	.course-card-reset {
-		background: none;
-		border: none;
-		padding: 0;
-		font-size: 12px;
-		color: $brand-secondary;
-		text-transform: none;
-		letter-spacing: 0;
-		font-weight: 400;
-		text-decoration: underline;
-		cursor: pointer;
-
-		&:hover { color: $brand-secondary-dark; }
 	}
 
 	.course-card-meta {
@@ -723,7 +739,9 @@ $course-sidebar-border:#e3e6ea;
 		.course-sidebar-toggle,
 		.course-quiz,
 		.course-chapter-footer,
-		.course-card-reset {
+		.course-card-reset,
+		.social-share-slim,
+		#disqus_thread {
 			display: none !important;
 		}
 
