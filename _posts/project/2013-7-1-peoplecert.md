@@ -23,7 +23,7 @@ My role as a software developer included:
 <ul class="list-inline gallery">
 	<li>
 		<a href="{{ site.baseurl }}/images/peoplecert_full.png" class="image-popup mfp-with-zoom" title="Peoplecert Partner Area">
-			<img src="{{ site.baseurl }}/images/peoplecert_150.png" />
+			<img src="{{ site.baseurl }}/images/peoplecert_150.png" alt="Peoplecert Partner Area" />
 		</a>
 	</li>
 </ul>

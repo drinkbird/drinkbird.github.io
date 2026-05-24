@@ -22,7 +22,7 @@ reads:
   - thephoenix
   - accelerate-amazon
   - peopleware
-  - algostoliveby
+
 ---
 
 An optimal decision for an individual and an optimal decision for a group often look quite different. That is the conclusion of a famous cognitive experiment, part of Game Theory, known as The Prisoner's Dilemma.

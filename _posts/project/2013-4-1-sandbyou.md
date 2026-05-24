@@ -27,7 +27,7 @@ This application becomes available only when S&amp;B announces a new recruitment
 <ul class="list-inline gallery">
 	<li>
 		<a href="{{ site.baseurl }}/images/sandbyou_full.png" class="image-popup mfp-with-zoom" title="You@S&amp;B Landing Page (In Greek)">
-			<img src="{{ site.baseurl }}/images/sandbyou-250x150.png" />
+			<img src="{{ site.baseurl }}/images/sandbyou-250x150.png" alt="You@S&amp;B Landing Page (In Greek)" />
 		</a>
 	</li>
 </ul>

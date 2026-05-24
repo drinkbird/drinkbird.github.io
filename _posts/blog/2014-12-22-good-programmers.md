@@ -1,6 +1,7 @@
 ---
 layout: page
 title: "[Image] A word on good programmers"
+excerpt: "A visual reminder of what truly separates a good programmer from the rest — and why technical skill is only half the story."
 date: 2014-12-22 00:00:00
 permalink: /good-programmers/
 comments: true

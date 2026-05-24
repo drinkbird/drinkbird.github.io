@@ -20,12 +20,12 @@ reads:
   - refactoring
   - gofdp
   - hfdesignpatterns
-  - refactoring
   - thecleancoder
   - softskills
   - legacycode
   - effectiveusecases
   - userstoriesapplied
+
 ---
 
 With modern web applications involving a considerable number of moving parts, it's only natural for software teams to often experience pain and friction; bug lists grow out of control, new features get delayed, maintenance becomes a nightmare.

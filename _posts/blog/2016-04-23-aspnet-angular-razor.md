@@ -19,9 +19,9 @@ reads:
   - refactoring
   - gofdp
   - hfdesignpatterns
-  - refactoring
   - thecleancoder
   - softskills
+
 ---
 
 [ASP.NET MVC](http://www.asp.net/) is an opensource framework, created by Microsoft, for developing next generation web applications, with focus on the
