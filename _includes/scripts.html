@@ -1,10 +1,10 @@
 <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha384-1H217gwSVyLSIfaLxHbE7dRb3v4mYCKbpQvzx0cegeju1MVsGrX5xXxAvs/HgeFs" crossorigin="anonymous"></script>
-<script>window.jQuery || document.write('<script src="{{ site.baseurl }}/assets/js/jquery-3.7.1.min.js"><\/script>')</script>
-<script src="{{ site.baseurl }}/assets/js/bootstrap.min.js"></script>
-<script src="{{ site.baseurl }}/assets/js/jquery.fitvids.js"></script>
-<script src="{{ site.baseurl }}/assets/js/jquery.sticky.js"></script>
-<script src="{{ site.baseurl }}/assets/js/glightbox.min.js"></script>
-<script src="{{ site.baseurl }}/assets/js/scripts.min.js"></script>
+<script>window.jQuery || document.write('<script src="{{ site.baseurl }}/assets/js/jquery-3.7.1.min.js?v={{ site.time | date: '%s' }}"><\/script>')</script>
+<script src="{{ site.baseurl }}/assets/js/bootstrap.min.js?v={{ site.time | date: '%s' }}"></script>
+<script src="{{ site.baseurl }}/assets/js/jquery.fitvids.js?v={{ site.time | date: '%s' }}"></script>
+<script src="{{ site.baseurl }}/assets/js/jquery.sticky.js?v={{ site.time | date: '%s' }}"></script>
+<script src="{{ site.baseurl }}/assets/js/glightbox.min.js?v={{ site.time | date: '%s' }}"></script>
+<script src="{{ site.baseurl }}/assets/js/scripts.min.js?v={{ site.time | date: '%s' }}"></script>
 
 {% include cookie-consent.html %}
 
@@ -18,7 +18,7 @@
         return elem.getScreenCTM().inverse().multiply(this.getScreenCTM());
     };
 </script>
-<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/mermaid.css">
-<script src="{{ site.baseurl }}/assets/js/mermaid.min.js"></script>
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/mermaid.css?v={{ site.time | date: '%s' }}">
+<script src="{{ site.baseurl }}/assets/js/mermaid.min.js?v={{ site.time | date: '%s' }}"></script>
 <script>mermaid.initialize({startOnLoad:true});</script>
 {% endif %}
