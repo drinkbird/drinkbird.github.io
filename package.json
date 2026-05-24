@@ -4,7 +4,7 @@
   "description": "DrinkBird Blog",
   "main": "index.js",
   "scripts": {
-    "uglify": "uglifyjs .\\assets\\js\\scripts.js -o .\\assets\\js\\scripts.min.js"
+    "uglify": "uglifyjs ./assets/js/scripts.js -o ./assets/js/scripts.min.js"
   },
   "repository": {
     "type": "git",
