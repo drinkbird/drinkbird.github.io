@@ -682,3 +682,120 @@ $course-sidebar-border:#e3e6ea;
 		.btn { text-transform: none; letter-spacing: 0; font-weight: 600; }
 	}
 }
+
+// On-screen, hide the print-only branding header.
+.course-print-header { display: none; }
+
+/* Print ----------------------------------------------------------------- */
+
+// `@page` lives outside `@media print` so it isn't subject to media-query
+// nesting quirks. It still only applies during print.
+@page { margin: 0.25in 0.5in; }
+@page :first { margin-top: 0.25in; }
+
+@media print {
+	// Force colour preservation on every element. NOTE: Chrome additionally
+	// requires "Background graphics" to be enabled in the print dialog before
+	// any of these declarations take effect — that's a user-side toggle no CSS
+	// can override.
+	*,
+	*::before,
+	*::after {
+		-webkit-print-color-adjust: exact !important;
+		print-color-adjust: exact !important;
+		color-adjust: exact !important;
+	}
+
+	html, body {
+		margin: 0 !important;
+		padding: 0 !important;
+		min-height: 0 !important;
+	}
+
+	body.course-page {
+		background: $white;
+
+		// Strip chrome that doesn't belong on paper.
+		#nav-wrapper,
+		.navbar,
+		footer.site-footer,
+		.course-sidebar,
+		.course-sidebar-toggle,
+		.course-quiz,
+		.course-chapter-footer,
+		.course-card-reset {
+			display: none !important;
+		}
+
+		// Collapse the two-column grid; let main fill the page.
+		.course-layout,
+		.course-layout-grid {
+			display: block;
+			min-height: 0;
+			padding: 0;
+			margin: 0;
+		}
+
+		.course-main {
+			padding: 0;
+			margin: 0;
+			max-width: none;
+		}
+
+		.course-breadcrumbs { margin: 0 0 12px; padding: 0; }
+		.course-chapter-byline { margin-top: 0; }
+
+		// Branded header — shows even when the user disables Chrome's auto print header.
+		.course-print-header {
+			display: block;
+			border-bottom: 1px solid #999;
+			padding-bottom: 6px;
+			margin: 0 0 14px;
+			font-size: 11px;
+			color: #444;
+			letter-spacing: 0.02em;
+
+			.course-print-site {
+				font-weight: 700;
+				color: $brand-primary-dark;
+			}
+			.course-print-sep  { margin: 0 6px; color: #aaa; }
+			.course-print-course { font-style: italic; }
+		}
+
+		// Force colors on syntax-highlighted code; browsers strip them by default.
+		.highlight,
+		.highlight *,
+		pre,
+		pre *,
+		code {
+			-webkit-print-color-adjust: exact !important;
+			print-color-adjust: exact !important;
+			color-adjust: exact !important;
+		}
+
+		pre {
+			background: #f6f8fa !important;
+			border: 1px solid #e3e6ea;
+		}
+
+		// Open links inline-ish; let the URL show after each link in articles.
+		.course-content a[href]::after {
+			content: " (" attr(href) ")";
+			font-size: 0.85em;
+			color: #555;
+			word-break: break-all;
+		}
+
+		// Don't print "(href)" for purely anchor or javascript links, nor for
+		// links whose visible text already IS the URL.
+		.course-content a[href^="#"]::after,
+		.course-content a[href^="javascript:"]::after { content: ""; }
+
+		// Keep code blocks readable across page breaks.
+		pre, code, blockquote, figure { page-break-inside: avoid; }
+
+		// Prevent orphaned headings.
+		h1, h2, h3 { page-break-after: avoid; }
+	}
+}

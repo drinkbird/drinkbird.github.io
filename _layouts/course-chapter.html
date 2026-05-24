@@ -27,6 +27,12 @@ layout: default
     {% include course-sidebar.html course=course course_slug=page.course_slug chapter_pages=chapter_pages %}
 
     <main class="course-main">
+      <header class="course-print-header" aria-hidden="true">
+        <span class="course-print-site">{{ site.title }}</span>
+        <span class="course-print-sep">·</span>
+        <span class="course-print-course">{{ course.topic }}</span>
+      </header>
+
       <nav class="course-breadcrumbs" aria-label="Breadcrumb">
         <a href="{{ site.baseurl }}/courses/">Courses</a>
         <span aria-hidden="true">›</span>
