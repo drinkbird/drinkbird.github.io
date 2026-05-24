@@ -55,15 +55,15 @@ links:
   - title: Stories
     url: /posts/
     page-key: posts
-  - title: Projects
-    url: /projects/
-    page-key: projects
   - title: Courses
     url: /courses/
     page-key: courses
   - title: Books
     url: /books/
     page-key: books
+  - title: Projects
+    url: /projects/
+    page-key: projects
   - title: About
     url: /about/
     page-key: about

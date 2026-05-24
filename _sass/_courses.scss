@@ -616,6 +616,19 @@ $course-sidebar-border:#e3e6ea;
 
 /* Top-level /courses/ index --------------------------------------------- */
 
+.courses-publisher {
+	display: inline-block;
+	text-align: left;
+	margin: 18px 0 36px;
+
+	.author-inline {
+		margin: 0;
+	}
+
+	figure { text-align: left; }
+}
+
+
 // Progress bar + reset link — shared between the index card and the course
 // landing's CTA section.
 .course-card-progress {
