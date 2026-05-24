@@ -35,6 +35,10 @@ layout: default
         <span>Module {{ page.module_id }} · Chapter {{ page.chapter_id }}</span>
       </nav>
 
+      <div class="course-chapter-byline">
+        {% include author-inline.html verb="Produced by" %}
+      </div>
+
       <article class="course-content post-content"
                data-course-slug="{{ page.course_slug }}"
                data-module-slug="{{ page.module_slug }}"

@@ -30,6 +30,17 @@ $course-sidebar-border:#e3e6ea;
 	}
 }
 
+.course-chapter-byline {
+	margin: 4px 0 22px;
+	padding-bottom: 18px;
+	border-bottom: 1px solid $course-sidebar-border;
+	text-align: left;
+
+	.author-inline { margin: 0; }
+
+	figure { text-align: left; }
+}
+
 .course-breadcrumbs {
 	font-size: 13px;
 	color: $gray;
@@ -599,6 +610,12 @@ $course-sidebar-border:#e3e6ea;
 	overflow: hidden;
 
 	h1 { font-size: 22px; line-height: 1.3; margin: 0 0 8px; }
+
+	.course-card-updated {
+		font-size: 12px;
+		color: $gray-light;
+		margin: -6px 0 12px;
+	}
 
 	.course-card-feature {
 		margin: -22px -24px 16px;

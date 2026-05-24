@@ -28,6 +28,8 @@ layout: default
             {% for m in course.modules %}{% assign total_chapters = total_chapters | plus: m.chapters.size %}{% endfor %}
             <span><strong>{{ total_chapters }}</strong> chapters</span>
             {% if course.answers.time_budget %}<span>{{ course.answers.time_budget }}</span>{% endif %}
+            {% assign course_updated = course.last_updated | default: course.generated_at %}
+            {% if course_updated %}<span>Last updated on {{ course_updated | date: "%B %Y" }}</span>{% endif %}
           </div>
           {% if first_chapter %}
           <p class="course-overview-cta">

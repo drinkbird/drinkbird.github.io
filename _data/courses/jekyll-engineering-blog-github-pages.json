@@ -3,6 +3,7 @@
   "slug": "jekyll-engineering-blog-github-pages",
   "depth": "intermediate",
   "image": "course-jekyll.jpg",
+  "last_updated": "2026-05-24",
   "created_at": "2026-05-24T00:41:11Z",
   "answers": {
     "prior_knowledge": "Familiar with static sites as a concept, new to Jekyll, some web dev background, no prior SSG experience (term unfamiliar).",
