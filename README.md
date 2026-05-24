@@ -21,6 +21,17 @@ bundle exec jekyll serve --livereload
 
 Then open <http://localhost:4000>.
 
+## Editing site JavaScript
+
+The site loads `assets/js/scripts.min.js` (not the unminified source). After editing `assets/js/scripts.js`, regenerate the minified file:
+
+```sh
+npm install                 # first time only
+npm run uglify
+```
+
+Commit both `scripts.js` and `scripts.min.js` together so they don't drift.
+
 ## Writing posts
 
 - Posts live in `_posts/blog/` and are named `YYYY-MM-DD-slug.md`.

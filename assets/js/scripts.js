@@ -1,7 +1,7 @@
 'use strict';
 $(function() {
     // FitVids options
-	$('iframe[src*="youtube"]').parent().fitVids();
+    $('iframe[src*="youtube"]').parent().fitVids();
 
     // Add lightbox class to all image links
     $(".post-body a[href$='.jpg'], .post-body a[href$='.jpeg'], .post-body a[href$='.JPG'], .post-body a[href$='.png'], .post-body a[href$='.gif']").addClass("image-popup");
@@ -23,7 +23,7 @@ $(function() {
         image: {
             tError: 'The image could not be loaded.',
         },
-        removalDelay: 300, 
+        removalDelay: 300,
         mainClass: 'mfp-with-zoom'
     });
 
@@ -33,34 +33,11 @@ $(function() {
     });
 
     $('#navbar').on('hide.bs.collapse', function () {
-        $(".navbar button .glyphicon").removeClass("gly-rotate-180");;
+        $(".navbar button .glyphicon").removeClass("gly-rotate-180");
     });
-
-    // Replace svg with png for unsupported browsers
-    if (!Modernizr.svg) {
-        var elem = $(".navbar-brand img");
-        var src = elem.attr("src"); 
-        elem.attr("src", src.replace("svg", "png"));
-    }
 
     // Sticky navbar
     $("#nav-wrapper").sticky({topSpacing:0});
-    
-    // Waypoints
-    var waypoints = $('article > .social-share').waypoint(function(direction) {
-        if (direction === "down") {
-          
-            ga('send', {
-                hitType: 'event',
-                eventCategory: 'Posts',
-                eventAction: 'Read To The Bottom',
-                eventLabel: 'DrinkBird Campaign'
-            });
-            this.destroy();
-       }
-    }, {
-        offset: '100%'
-    });
 
     // Add target blank to external links
     $("a[href^='http']").attr("target", "_blank");
@@ -80,7 +57,7 @@ $(function() {
         curNewsIndex++;
         curNewsIndex >= newsArray.length && (curNewsIndex = 0);
     }
-    
+
     if ($("#c").length) {
         setInterval(advanceNewsItem, 150);
     }
