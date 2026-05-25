@@ -1,0 +1,41 @@
+{
+  "chapter_id": "java-for-dotnet-developers/03-idiomatic-java/03-equals-hashcode-comparable",
+  "questions": [
+    {
+      "id": 1,
+      "question": "You override equals on a class to compare by 'name' but forget to override hashCode. What happens when you add two equal instances to a HashSet?",
+      "choices": [
+        "Both instances are rejected; HashSet enforces the contract.",
+        "Both end up in the set as distinct entries because the default identity hashCode places them in different buckets.",
+        "An exception is thrown the second time you add.",
+        "The set silently overwrites the first instance with the second."
+      ],
+      "correct": 1,
+      "explanation": "HashSet looks up by hash code first. With default identity hashCode, two equal instances get different hashes and land in different buckets. They both end up in the set even though equals would say they're the same - silent corruption."
+    },
+    {
+      "id": 2,
+      "question": "Why is it safer to use records for value-like types when storing in HashMap?",
+      "choices": [
+        "Records implement Comparable automatically.",
+        "Records generate equals and hashCode from their components automatically, so the contract is satisfied without manual code.",
+        "Records cannot be put into HashMap; they require TreeMap.",
+        "Records bypass HashMap's hash lookup, so the contract doesn't matter."
+      ],
+      "correct": 1,
+      "explanation": "Records auto-generate equals/hashCode/toString based on component values. You can't accidentally forget one and break collections. They don't implement Comparable automatically - you'd add that yourself if you wanted natural ordering."
+    },
+    {
+      "id": 3,
+      "question": "Which builder produces 'sort by department ascending, then salary descending'?",
+      "choices": [
+        "Comparator.comparing(Employee::department).thenComparing(Employee::salary).reversed()",
+        "Comparator.comparing(Employee::department).thenComparing(Comparator.comparing(Employee::salary).reversed())",
+        "Comparator.comparing(Employee::department, Employee::salary)",
+        "Comparator.descending(Employee::department, Employee::salary)"
+      ],
+      "correct": 1,
+      "explanation": "Append a .reversed() to the inner Comparator so only that segment is reversed. Putting .reversed() at the end of the whole chain reverses everything, including the department ordering. The form 'thenComparing(Comparator.comparing(salary).reversed())' isolates the reversal."
+    }
+  ]
+}

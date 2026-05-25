@@ -1,0 +1,41 @@
+{
+  "chapter_id": "java-for-dotnet-developers/01-foundations/05-hello-spring-boot-service",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which three annotations does @SpringBootApplication combine?",
+      "choices": [
+        "@RestController, @RequestMapping, @ResponseBody",
+        "@SpringBootConfiguration, @EnableAutoConfiguration, @ComponentScan",
+        "@Service, @Component, @Repository",
+        "@Autowired, @Bean, @Configuration"
+      ],
+      "correct": 1,
+      "explanation": "@SpringBootApplication is a meta-annotation that bundles @SpringBootConfiguration (this class is a config source), @EnableAutoConfiguration (turn on Boot's auto-config), and @ComponentScan (scan this package and below for components)."
+    },
+    {
+      "id": 2,
+      "question": "You add a controller in package com.example.other, but your main application class is in com.example.orders. Hitting the new endpoint returns 404. Why?",
+      "choices": [
+        "@RestController is no longer supported in Spring Boot 3.",
+        "@ComponentScan only scans the main class's package and its sub-packages; com.example.other is outside the scan path.",
+        "Spring Boot disables routing in dev mode unless explicitly enabled.",
+        "Tomcat must be replaced with Jetty to allow custom packages."
+      ],
+      "correct": 1,
+      "explanation": "@SpringBootApplication's implicit @ComponentScan starts at the main class's package. Components outside that tree aren't discovered. Either move the package or use @ComponentScan(basePackages = {...}) to widen the scan."
+    },
+    {
+      "id": 3,
+      "question": "You want a fast inner loop with sub-second restarts when editing Java files in IntelliJ. Which combination delivers it for Spring Boot 3?",
+      "choices": [
+        "Add spring-boot-devtools as a runtime dependency and enable IntelliJ's 'Build project automatically' plus 'Allow auto-make to start'.",
+        "Set spring.devtools.fastRestart=true in application.yml.",
+        "Use the Spring CLI's hot-reload-server command.",
+        "Switch from Maven to Gradle; only Gradle supports hot reload."
+      ],
+      "correct": 0,
+      "explanation": "Spring Boot DevTools restarts the application context when classpath resources change, using a two-classloader strategy for sub-second restarts. IntelliJ needs to auto-compile on save for DevTools to see the changes - that's what the two checkboxes enable."
+    }
+  ]
+}

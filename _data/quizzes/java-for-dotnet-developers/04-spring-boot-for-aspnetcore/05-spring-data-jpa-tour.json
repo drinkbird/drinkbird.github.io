@@ -1,0 +1,41 @@
+{
+  "chapter_id": "java-for-dotnet-developers/04-spring-boot-for-aspnetcore/05-spring-data-jpa-tour",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Why can a JPA @Entity not be a Java record?",
+      "choices": [
+        "Records can't be annotated.",
+        "JPA requires a no-arg constructor and mutable fields (for dirty checking and lazy loading); records are final and immutable.",
+        "JPA only works with classes from the java.util package.",
+        "Records can't be persisted to relational databases."
+      ],
+      "correct": 1,
+      "explanation": "JPA needs a no-arg constructor and the ability to set fields after construction (for both loading and dirty checking). Records are final and have only the canonical constructor - incompatible with the JPA lifecycle. Use classes for entities, records for DTOs."
+    },
+    {
+      "id": 2,
+      "question": "You load an Order with @OneToMany lineItems and access order.getLineItems() inside the controller's JSON serialization. You see 'LazyInitializationException: could not initialize proxy - no Session'. Best fix?",
+      "choices": [
+        "Mark the entity field as transient.",
+        "Move the @Transactional to the controller method so the session lives through serialization.",
+        "Fetch the collection eagerly in the query (@EntityGraph or 'join fetch' in JPQL), or project to a DTO that doesn't include the lazy collection. Avoid extending the transaction boundary into the controller.",
+        "Disable lazy loading globally with hibernate.enable_lazy_load_no_trans=true."
+      ],
+      "correct": 2,
+      "explanation": "Fetch eagerly at query time (via @EntityGraph or 'join fetch') or project to a DTO. Extending the transaction into the controller layer (the Open-Session-In-View anti-pattern) is widespread but considered bad practice - long-running transactions, harder error handling, surprising lazy queries during serialisation."
+    },
+    {
+      "id": 3,
+      "question": "Why doesn't a @Transactional method work correctly when called via 'this.transactionalMethod()' from another method in the same class?",
+      "choices": [
+        "Spring requires public visibility; self-invocation downgrades to package-private.",
+        "Spring's @Transactional is implemented via a proxy around the bean; self-invocation goes directly to the underlying object and bypasses the proxy, so the transaction interceptor never runs.",
+        "@Transactional requires JPMS modules.",
+        "Self-invocation always opens a nested transaction, which Spring rejects by default."
+      ],
+      "correct": 1,
+      "explanation": "Spring proxies the bean to add transactional behaviour. External callers go through the proxy; self-calls (this.x()) bypass it, so the transaction interceptor isn't invoked. The fix is to call via an injected reference or move the transactional method to a separate bean."
+    }
+  ]
+}

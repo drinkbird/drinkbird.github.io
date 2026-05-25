@@ -1,0 +1,41 @@
+{
+  "chapter_id": "java-for-dotnet-developers/06-production-and-next-steps/02-observability",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Spring Boot's /actuator/metrics returns 404. The dependency is present. Most likely cause and fix?",
+      "choices": [
+        "The endpoint requires authentication; provide credentials.",
+        "Most Actuator endpoints are gated for safety; expose them via management.endpoints.web.exposure.include (e.g. include: health, info, metrics, prometheus).",
+        "Actuator requires Spring Cloud; add the dependency.",
+        "The endpoint moved to /metrics in Spring Boot 3."
+      ],
+      "correct": 1,
+      "explanation": "Only health and info are exposed by default. To surface metrics, prometheus, env, threaddump, etc., add them to management.endpoints.web.exposure.include. The endpoint path /actuator/metrics is correct in Spring Boot 3."
+    },
+    {
+      "id": 2,
+      "question": "Spring Boot 3 replaced Spring Cloud Sleuth for distributed tracing. What's the modern stack?",
+      "choices": [
+        "Spring Cloud Sleuth is still the default in Spring Boot 3.",
+        "Micrometer Tracing + a bridge dependency (micrometer-tracing-bridge-otel or -brave) + an exporter (opentelemetry-exporter-otlp). The Observation API integrates with Micrometer Tracing automatically.",
+        "Spring Boot uses a custom in-house tracing library that doesn't interoperate with OpenTelemetry.",
+        "Tracing requires Spring Cloud and is unavailable in plain Spring Boot."
+      ],
+      "correct": 1,
+      "explanation": "Spring Boot 3 dropped Sleuth in favour of Micrometer Tracing - a vendor-neutral facade that bridges to OpenTelemetry or Zipkin's Brave. The Observation API (incl. @Observed) emits both metrics and trace spans through the same instrumentation."
+    },
+    {
+      "id": 3,
+      "question": "How do you split Spring Boot's health endpoint into Kubernetes-compatible liveness and readiness probes?",
+      "choices": [
+        "Spring Boot doesn't support that; write custom endpoints.",
+        "Set management.endpoint.health.probes.enabled=true; it exposes /actuator/health/liveness and /actuator/health/readiness, which K8s can use as separate probes.",
+        "Run two Spring Boot apps - one for liveness and one for readiness.",
+        "Configure ServletPath to /liveness and /readiness."
+      ],
+      "correct": 1,
+      "explanation": "Enabling probes splits the aggregate /actuator/health into liveness (the JVM is running) and readiness (the app is ready to serve traffic) groups. K8s pod specs reference each via livenessProbe and readinessProbe, allowing distinct restart vs. routing behaviour."
+    }
+  ]
+}

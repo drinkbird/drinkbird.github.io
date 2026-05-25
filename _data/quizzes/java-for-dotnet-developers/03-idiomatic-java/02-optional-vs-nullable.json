@@ -1,0 +1,41 @@
+{
+  "chapter_id": "java-for-dotnet-developers/03-idiomatic-java/02-optional-vs-nullable",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Where does Optional<T> earn its keep in Java?",
+      "choices": [
+        "As a field type, replacing nullable fields.",
+        "As a parameter type, to force callers to wrap.",
+        "As a return type, signalling 'this method may have no answer'.",
+        "As a collection type, replacing empty collections."
+      ],
+      "correct": 2,
+      "explanation": "Optional was designed for return types - communicating absence to the caller before they dereference. Fields, parameters, and Optional<Collection> are anti-patterns: empty collections are already a no-result signal, and Optional fields add allocations and serialization friction."
+    },
+    {
+      "id": 2,
+      "question": "Which of these expressions correctly produces a String 'anonymous' when the user is not found?",
+      "choices": [
+        "userRepo.findByEmail(email).get().name() ?? \"anonymous\"",
+        "userRepo.findByEmail(email).map(User::name).orElse(\"anonymous\")",
+        "userRepo.findByEmail(email).isPresent() ? \"anonymous\" : userRepo.findByEmail(email).get().name()",
+        "userRepo.findByEmail(email).name() ?: \"anonymous\""
+      ],
+      "correct": 1,
+      "explanation": "Compose Optional with .map (transform if present) and .orElse (default if absent). The other forms either use non-existent Java syntax (?? ?:), or duplicate the lookup, or defeat the type with .get()."
+    },
+    {
+      "id": 3,
+      "question": "What is the practical difference between Java's Optional<T> approach and C#'s nullable reference types (NRT)?",
+      "choices": [
+        "They are equivalent; both are compile-time annotations.",
+        "Optional is a runtime wrapper at API boundaries; NRT is a compile-time static analysis on plain reference types. Different mechanisms, similar intent.",
+        "Optional adds runtime null checks; NRT changes the JVM's handling of null.",
+        "NRT is a runtime feature; Optional is a compile-time annotation."
+      ],
+      "correct": 1,
+      "explanation": "Optional is a concrete wrapper type - every Optional<T> is an allocation, and presence is checked at runtime. C# NRT is purely a compiler analysis with no runtime effect. They both target the 'forgot to handle absence' bug class, but via different mechanisms."
+    }
+  ]
+}

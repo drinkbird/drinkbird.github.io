@@ -1,0 +1,41 @@
+{
+  "chapter_id": "java-for-dotnet-developers/05-integration/02-validation",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which Spring annotation, applied where, triggers Jakarta Bean Validation for a @RequestBody DTO?",
+      "choices": [
+        "@Validated on the controller class only.",
+        "@Valid on the @RequestBody method parameter; the DTO's fields are then checked against their Jakarta annotations.",
+        "@Validate on the DTO class.",
+        "No annotation is required; Jackson validates automatically."
+      ],
+      "correct": 1,
+      "explanation": "@Valid on the @RequestBody parameter is the trigger for body validation; it cascades into the DTO's constraint annotations. @Validated on the class is needed separately to enable constraint checks on @RequestParam/@PathVariable values."
+    },
+    {
+      "id": 2,
+      "question": "You add @Min(1) @Max(100) to a @RequestParam int limit. The constraint is silently ignored. Why?",
+      "choices": [
+        "@Min/@Max only work on field declarations, not parameters.",
+        "The controller class is missing @Validated; method-parameter constraints require it. With @Valid + DTOs the class-level annotation isn't needed, but for raw @RequestParam constraints it is.",
+        "Primitive int parameters can't be validated; switch to Integer.",
+        "Bean Validation 3.0 dropped support for @RequestParam constraints."
+      ],
+      "correct": 1,
+      "explanation": "Constraint validation on individual @RequestParam/@PathVariable values requires @Validated on the controller class. @Valid on a @RequestBody DTO works without it. This is a common silent failure for .NET developers expecting DataAnnotations to 'just work'."
+    },
+    {
+      "id": 3,
+      "question": "Why does a typical custom ConstraintValidator return true for null input?",
+      "choices": [
+        "Because Jakarta forbids ConstraintValidator from inspecting null.",
+        "By convention: null-handling belongs to @NotNull / @NotBlank. Returning true for null lets you compose validators cleanly (e.g. @NotNull @ValidSku) without each validator re-implementing the null check.",
+        "Because the JVM throws NullPointerException on any null-check inside a validator.",
+        "Because Spring caches null inputs and bypasses validators."
+      ],
+      "correct": 1,
+      "explanation": "The composition convention is: separate null-checking (@NotNull / @NotBlank) from format-checking (@ValidSku, @Email, ...). If every validator rejected null on its own, users couldn't opt into nullable-with-format-when-present semantics. Skipping null also keeps validators single-purpose."
+    }
+  ]
+}

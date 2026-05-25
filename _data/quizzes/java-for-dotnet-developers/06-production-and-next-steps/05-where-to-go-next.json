@@ -1,0 +1,41 @@
+{
+  "chapter_id": "java-for-dotnet-developers/06-production-and-next-steps/05-where-to-go-next",
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is the practical significance of Java 21's virtual threads for a Spring Boot service?",
+      "choices": [
+        "They replace ExecutorService entirely; old code stops working.",
+        "They let blocking I/O code scale like reactive code did, because virtual threads block cheaply and free their carrier thread. This often removes the motivation for Reactive/WebFlux stacks; Spring Boot 3.2+ can use them for request handling via spring.threads.virtual.enabled.",
+        "They make Java 21 incompatible with Spring Boot.",
+        "They lock the JVM to a single platform thread for safety."
+      ],
+      "correct": 1,
+      "explanation": "Virtual threads (JEP 444) let blocking calls scale to hundreds of thousands of concurrent operations per JVM. Spring Boot 3.2+ exposes them via configuration. Pinning gotchas (synchronized blocks) are mostly resolved in later releases (ReentrantLock cooperates)."
+    },
+    {
+      "id": 2,
+      "question": "When should a .NET developer learning the JVM consider Kotlin over Java?",
+      "choices": [
+        "Immediately - Kotlin is strictly better than Java.",
+        "After developing Java fluency. Kotlin is closer to C# syntax (data classes, null safety) and offers 100% Java interop, but learning two new languages at once doubles the load. Tackle Kotlin once Java idioms are second nature.",
+        "Never - Kotlin is not viable on the backend.",
+        "Only for Android development."
+      ],
+      "correct": 1,
+      "explanation": "Kotlin's ergonomics are appealing for .NET developers, but the JVM, the ecosystem, and Java's idioms are themselves a big learning curve. Tackling Java first and Kotlin later keeps the load manageable. Kotlin shines once you can read Java fluently enough to use its libraries directly."
+    },
+    {
+      "id": 3,
+      "question": "When does Quarkus or Micronaut typically win over Spring Boot for a new backend service?",
+      "choices": [
+        "Always - they are strictly faster and simpler.",
+        "Memory-constrained or scale-to-zero workloads (serverless functions, lambdas, ephemeral containers) where startup time and footprint dominate, and where AOT/native compilation is critical. For typical enterprise backends Spring Boot's ecosystem advantage usually wins.",
+        "When the team prefers Maven over Gradle.",
+        "When using Java 17 or older; they don't support Java 21."
+      ],
+      "correct": 1,
+      "explanation": "Quarkus and Micronaut focus on AOT-friendly architecture and native image: fast startup, low memory, scale-to-zero. For steady-state enterprise services, Spring Boot's ecosystem (libraries, community, hiring market) typically outweighs the startup-time gains. Pick the right tool for the deployment profile."
+    }
+  ]
+}

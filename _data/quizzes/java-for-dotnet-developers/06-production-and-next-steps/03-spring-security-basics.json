@@ -1,0 +1,41 @@
+{
+  "chapter_id": "java-for-dotnet-developers/06-production-and-next-steps/03-spring-security-basics",
+  "questions": [
+    {
+      "id": 1,
+      "question": "What replaced WebSecurityConfigurerAdapter in Spring Security 6 / Spring Boot 3?",
+      "choices": [
+        "@EnableWebSecurity is no longer needed; security is on by default.",
+        "Define a SecurityFilterChain @Bean in a @Configuration class and configure HttpSecurity inside it; the adapter class was removed.",
+        "Use @SecurityConfig on the main application class.",
+        "Spring Security itself was removed in favour of Resilience4j security."
+      ],
+      "correct": 1,
+      "explanation": "Spring Security 6 removed WebSecurityConfigurerAdapter. The modern pattern is a @Bean SecurityFilterChain that configures HttpSecurity and returns http.build(). Multiple beans can exist for different URL patterns, ordered via @Order."
+    },
+    {
+      "id": 2,
+      "question": "You want incoming JWT scopes like 'orders:write' to authorise a controller method annotated @PreAuthorize(\"hasAuthority(...)\"). What's the default authority string and how is it configured?",
+      "choices": [
+        "The default is the raw scope string; use hasAuthority(\"orders:write\").",
+        "The default JwtGrantedAuthoritiesConverter maps scope X to authority 'SCOPE_X'. Either match that literal (hasAuthority(\"SCOPE_orders:write\")) or supply a custom prefix on a JwtAuthenticationConverter bean.",
+        "Scopes become roles automatically; use hasRole(\"orders:write\").",
+        "Scopes are ignored unless mapped manually via a Filter."
+      ],
+      "correct": 1,
+      "explanation": "Spring's default JwtGrantedAuthoritiesConverter prefixes each scope with 'SCOPE_'. Either use the prefixed form in expressions or configure the converter with a different prefix / authority claim name."
+    },
+    {
+      "id": 3,
+      "question": "Why does Spring Security disable CSRF protection for typical REST APIs?",
+      "choices": [
+        "CSRF protection is a performance burden Spring removes by default.",
+        "Because CSRF protects browser sessions tied to cookies. Stateless token-based APIs (bearer JWTs) aren't vulnerable to CSRF in the same way, so the check just blocks legitimate POST/PUT requests from non-browser clients.",
+        "CSRF is irrelevant in HTTPS; Spring detects HTTPS and skips it.",
+        "CSRF is renamed to CORS in Spring Boot 3."
+      ],
+      "correct": 1,
+      "explanation": "CSRF defends against forged requests authenticated by ambient browser credentials (cookies). For bearer-token APIs, the attacker would need to steal the token first, which CSRF doesn't address. Keep CSRF on for form-based apps with session cookies; disable for stateless REST."
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "chapter_id": "java-for-dotnet-developers/03-idiomatic-java/05-packages-modules-visibility",
+  "questions": [
+    {
+      "id": 1,
+      "question": "What does Java's default (no-keyword) access modifier mean, and what is its closest C# analogue?",
+      "choices": [
+        "Public; closest to C# public.",
+        "Package-private (visible within the same package only); roughly analogous to C# internal but scoped per-package rather than per-assembly.",
+        "Private; closest to C# private.",
+        "Module-private; closest to C# internal."
+      ],
+      "correct": 1,
+      "explanation": "The default access in Java is package-private: visible to classes in the same package, invisible outside. C# has no per-package equivalent; the closest is internal, which is per-assembly. JPMS modules add a higher level but app code rarely adopts them."
+    },
+    {
+      "id": 2,
+      "question": "Your test in src/test/java/com/example/orders/OrderMapperTest.java needs to call a package-private OrderMapper. What's the standard approach in Java?",
+      "choices": [
+        "Use reflection to bypass the access check.",
+        "Place the test in the same package (com.example.orders) under src/test/java; package-private is visible because both source trees are merged into one logical package.",
+        "Add [InternalsVisibleTo(\"OrderMapperTest\")] to OrderMapper.",
+        "Make the method public; you cannot test package-private code otherwise."
+      ],
+      "correct": 1,
+      "explanation": "Tests under src/test/java mirror the main source's package structure; the compiler treats them as the same package, so package-private members are visible. This is Java's standard answer to C#'s InternalsVisibleTo and works without any special declarations."
+    },
+    {
+      "id": 3,
+      "question": "Should a typical Spring Boot service adopt JPMS (Java Platform Module System)?",
+      "choices": [
+        "Yes - JPMS is mandatory for Spring Boot 3.",
+        "No - JPMS adds friction (especially around reflection-heavy frameworks needing 'opens'), and most app code gets the boundaries it needs from packages plus tooling like ArchUnit.",
+        "Yes - JPMS replaces Maven for dependency management.",
+        "Only on Java 21; JPMS isn't available on Java 17."
+      ],
+      "correct": 1,
+      "explanation": "JPMS is optional for application code and uncommon in Spring Boot services. The JDK itself is modular, but adopting JPMS in a Spring app means declaring 'opens' for Jackson, Hibernate, and Spring reflection. Packages + ArchUnit-style rules cover the same need without the friction."
+    }
+  ]
+}

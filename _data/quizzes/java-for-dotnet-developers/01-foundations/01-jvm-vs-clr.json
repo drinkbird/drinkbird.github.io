@@ -1,0 +1,41 @@
+{
+  "chapter_id": "java-for-dotnet-developers/01-foundations/01-jvm-vs-clr",
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is the unit of bytecode produced by javac for a Java source file containing three top-level classes?",
+      "choices": [
+        "One .class file containing all three classes.",
+        "Three .class files, one per top-level class.",
+        "One .jar file with three entries.",
+        "One assembly (.dll) listing all three classes."
+      ],
+      "correct": 1,
+      "explanation": "javac emits one .class file per top-level class. JARs aggregate .class files for deployment but each top-level class is still its own .class - unlike .NET where types are bundled into an assembly."
+    },
+    {
+      "id": 2,
+      "question": "You measure a Java method's runtime by invoking it once and printing System.nanoTime() deltas. The result is much slower than the equivalent .NET method. What is the most likely flaw?",
+      "choices": [
+        "Java methods are inherently slower for single invocations and the result is correct.",
+        "HotSpot's two-tier JIT hasn't promoted the method yet; you measured the interpreter.",
+        "javac inserts debug instrumentation that dominates a single call.",
+        "The classpath was misconfigured and a slower fallback class was loaded."
+      ],
+      "correct": 1,
+      "explanation": "HotSpot interprets cold code, then promotes to C1 (~1,500 invocations) and later C2. A single invocation never reaches the optimized tiers, so the measurement reflects the interpreter, not steady-state performance."
+    },
+    {
+      "id": 3,
+      "question": "You want to ship a Spring Boot service as a single native binary with no JVM dependency. Which option matches and what is the main trade-off compared to .NET's NativeAOT?",
+      "choices": [
+        "Use jlink - it bundles the JVM and bytecode and is equivalent to NativeAOT.",
+        "Use GraalVM Native Image - it produces a native binary but reflection and dynamic class loading require explicit configuration.",
+        "Use the standard java launcher - Java has produced native binaries by default since Java 17.",
+        "Use Maven's shade plugin - it embeds the JVM into a fat JAR."
+      ],
+      "correct": 1,
+      "explanation": "GraalVM Native Image is Java's AOT-to-native answer. Unlike .NET NativeAOT, which has tighter first-party tooling, GraalVM historically required explicit metadata for reflection and resources - Spring Boot 3's AOT support has made this practical but not invisible."
+    }
+  ]
+}

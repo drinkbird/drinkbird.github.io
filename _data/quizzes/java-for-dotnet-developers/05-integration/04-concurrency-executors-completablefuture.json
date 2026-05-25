@@ -1,0 +1,41 @@
+{
+  "chapter_id": "java-for-dotnet-developers/05-integration/04-concurrency-executors-completablefuture",
+  "questions": [
+    {
+      "id": 1,
+      "question": "What's the difference between thenApply and thenCompose on a CompletableFuture?",
+      "choices": [
+        "Identical; thenApply is a deprecated alias for thenCompose.",
+        "thenApply takes a synchronous Function<T,R> and produces CompletableFuture<R>. thenCompose takes a Function<T, CompletableFuture<R>> and flattens the nested future, so chaining further async work doesn't produce CompletableFuture<CompletableFuture<R>>.",
+        "thenApply runs on the common pool; thenCompose blocks until done.",
+        "thenApply requires an executor; thenCompose does not."
+      ],
+      "correct": 1,
+      "explanation": "thenApply is the sync-transform combinator (like .NET's ContinueWith returning a value). thenCompose is the flatMap analogue: when the next step is itself async, thenCompose unwraps the nested future so the result type stays CompletableFuture<R>."
+    },
+    {
+      "id": 2,
+      "question": "Why is Executors.newCachedThreadPool() risky for a service with unknown or bursty load?",
+      "choices": [
+        "It only supports 8 threads at most.",
+        "It creates threads on demand without an upper bound; a sudden burst can spawn thousands of threads, exhausting memory and degrading throughput.",
+        "It doesn't support shutdown.",
+        "It uses single-thread execution under the hood."
+      ],
+      "correct": 1,
+      "explanation": "newCachedThreadPool has no max-pool-size bound. Under burst load it spawns one thread per submitted task, which can consume large amounts of memory (each thread is ~1MB of stack on default settings) and cause GC/CPU contention. Prefer a sized pool whose limit you've reasoned about."
+    },
+    {
+      "id": 3,
+      "question": "What is the closest analogue in Java 17 to C#'s 'await someAsyncCall()' inside a method?",
+      "choices": [
+        "An await keyword exists in Java 17 since LTS.",
+        "There is no language-level await. You compose explicitly: someAsyncCall().thenApply(...) or thenCompose(...). Virtual threads in Java 21 reduce the need for this style by making blocking I/O cheap on lightweight threads.",
+        "The synchronized keyword waits for an async result.",
+        "Spring's @Async automatically inserts await semantics."
+      ],
+      "correct": 1,
+      "explanation": "Java 17 has no await. CompletableFuture composition (thenApply, thenCompose, thenCombine, exceptionally) is the explicit alternative. Java 21's virtual threads let you write blocking code that scales without the await-style rewrite - a fundamentally different solution path."
+    }
+  ]
+}

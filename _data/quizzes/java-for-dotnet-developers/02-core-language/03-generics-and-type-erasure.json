@@ -1,0 +1,41 @@
+{
+  "chapter_id": "java-for-dotnet-developers/02-core-language/03-generics-and-type-erasure",
+  "questions": [
+    {
+      "id": 1,
+      "question": "What does 'type erasure' mean for Java generics at runtime?",
+      "choices": [
+        "Type arguments are kept by the JVM and recoverable via reflection.",
+        "The type argument is checked by javac and then removed; at runtime the JVM sees raw types.",
+        "Generics are translated into a single shared template at runtime.",
+        "The JIT specialises code per type argument, like C#."
+      ],
+      "correct": 1,
+      "explanation": "Java erases generic type arguments after compile-time checking. The bytecode operates on raw types (List, Map), which is the price the language paid for backward compatibility when generics were added in Java 5."
+    },
+    {
+      "id": 2,
+      "question": "You need to deserialize JSON into List<Order> using Jackson. Why is mapper.readValue(json, List.class) wrong, and what is the right pattern?",
+      "choices": [
+        "List.class is wrong; pass List<Order>.class instead.",
+        "List.class loses the Order type due to erasure; use new TypeReference<List<Order>>() {} so the anonymous subclass captures the parameterised type.",
+        "Use Class.forName(\"List<Order>\") to obtain a reified type token.",
+        "Both forms are equivalent; pick either."
+      ],
+      "correct": 1,
+      "explanation": "Class literals can't be parameterised - List.class is just the raw List class. The anonymous-subclass trick (new TypeReference<List<Order>>() {}) captures the full parameterised type in the subclass's metadata, which survives erasure."
+    },
+    {
+      "id": 3,
+      "question": "Which signature correctly applies PECS for a method that copies from a source to a destination?",
+      "choices": [
+        "copy(List<Number> src, List<Number> dst)",
+        "copy(List<? extends Number> src, List<? super Number> dst)",
+        "copy(List<? super Number> src, List<? extends Number> dst)",
+        "copy(List<Number> src, List<? extends Number> dst)"
+      ],
+      "correct": 1,
+      "explanation": "PECS: Producer Extends, Consumer Super. The source produces Numbers (read-only) so it's ? extends Number; the destination consumes Numbers (write-only) so it's ? super Number. This lets the caller pass List<Integer> as src and List<Object> as dst."
+    }
+  ]
+}

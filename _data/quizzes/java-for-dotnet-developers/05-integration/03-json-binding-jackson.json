@@ -1,0 +1,41 @@
+{
+  "chapter_id": "java-for-dotnet-developers/05-integration/03-json-binding-jackson",
+  "questions": [
+    {
+      "id": 1,
+      "question": "An Instant field in a Spring Boot 3 service serializes to a JSON array like [2026,5,25,...] instead of an ISO string. What's missing and what's the fix?",
+      "choices": [
+        "Instant is unsupported in Jackson; switch to LocalDateTime.",
+        "The jackson-datatype-jsr310 module isn't loaded. Spring Boot pulls it in by default - confirm the dependency is present; once registered, Instant serializes to an ISO 8601 string.",
+        "Use @JsonFormat on every Instant field manually.",
+        "Set spring.jackson.serialization.write-dates-as-arrays=false (it's true by default)."
+      ],
+      "correct": 1,
+      "explanation": "The jackson-datatype-jsr310 module teaches Jackson how to serialize java.time types as ISO 8601 strings. Without it, Jackson falls back to a generic field-by-field representation that produces the array shape. Spring Boot includes the module by default."
+    },
+    {
+      "id": 2,
+      "question": "You want JSON like {\"kind\":\"card\",\"last4\":\"4242\",\"brand\":\"VISA\"} for a sealed interface PaymentMethod with Card and BankTransfer subtypes. Which Jackson configuration works?",
+      "choices": [
+        "@JsonTypeInfo(use = JsonTypeInfo.Id.NAME, property = \"kind\") on the sealed interface, plus @JsonSubTypes listing each subtype with a name.",
+        "@JsonTypeName(\"card\") on the Card class only.",
+        "Jackson detects sealed interfaces and adds the discriminator automatically.",
+        "Use @JsonAlias(\"kind\") on the interface."
+      ],
+      "correct": 0,
+      "explanation": "@JsonTypeInfo declares the discriminator strategy (property name = \"kind\", use the registered name as the value); @JsonSubTypes lists the legal subtypes with their names. Jackson does NOT auto-detect sealed interfaces - you must wire the polymorphism explicitly."
+    },
+    {
+      "id": 3,
+      "question": "Why is creating a custom @Bean ObjectMapper risky in a Spring Boot app?",
+      "choices": [
+        "Spring forbids overriding the ObjectMapper.",
+        "It replaces the auto-configured ObjectMapper entirely, dropping registered modules (e.g. jackson-datatype-jsr310) and Spring's curated defaults. Prefer Jackson2ObjectMapperBuilderCustomizer for tweaks.",
+        "ObjectMapper is thread-unsafe and shouldn't be a bean.",
+        "Spring Boot uses Gson by default; a Jackson ObjectMapper bean is ignored."
+      ],
+      "correct": 1,
+      "explanation": "Custom @Bean ObjectMapper definitions take priority over the auto-configuration, which means you lose the modules and default settings Spring registers. Use Jackson2ObjectMapperBuilderCustomizer to apply tweaks on top of the auto-configured instance instead."
+    }
+  ]
+}

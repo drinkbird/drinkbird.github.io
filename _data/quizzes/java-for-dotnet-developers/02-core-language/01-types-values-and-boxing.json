@@ -1,0 +1,41 @@
+{
+  "chapter_id": "java-for-dotnet-developers/02-core-language/01-types-values-and-boxing",
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is the result of: Integer a = 200; Integer b = 200; System.out.println(a == b);",
+      "choices": [
+        "true - Java overloads == for wrapper types.",
+        "false - wrapper == compares references, and 200 is outside the Integer cache (-128..127).",
+        "true - autoboxing converts both to primitive int for the comparison.",
+        "Compile error - == is not allowed on Integer."
+      ],
+      "correct": 1,
+      "explanation": "== on wrappers compares references. The Integer cache (-128..127) means small values may compare equal by chance, but 200 is outside it, so a and b are distinct objects. Always use .equals() for wrapper comparison."
+    },
+    {
+      "id": 2,
+      "question": "Which is the best replacement for C#'s int? when returning a possibly-absent value from a method?",
+      "choices": [
+        "int with a sentinel value like -1.",
+        "Integer (the wrapper), or OptionalInt for return types where absence is meaningful.",
+        "Optional<Integer> - the canonical idiom.",
+        "Nullable<Integer> - Java's built-in nullable wrapper."
+      ],
+      "correct": 1,
+      "explanation": "Integer is the simplest replacement; OptionalInt is a primitive-specialised Optional that avoids boxing for return types. Optional<Integer> works but pays for both the Optional and the boxed Integer - avoid it. Java has no Nullable<T>."
+    },
+    {
+      "id": 3,
+      "question": "Why does the JIT often close the performance gap between 'Long sum' and 'long sum' in a tight loop, despite the boxing?",
+      "choices": [
+        "Java erases the difference at compile time.",
+        "HotSpot's escape analysis can scalar-replace short-lived boxes, allocating them on the stack or in registers.",
+        "Long is implemented as a value type in Java 17.",
+        "The Integer cache absorbs all allocations."
+      ],
+      "correct": 1,
+      "explanation": "HotSpot's escape analysis detects that the box doesn't escape the loop and can scalar-replace it (allocate on stack or in registers). The gap narrows after warm-up - but Long where you meant long is still a real bug pattern."
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "chapter_id": "java-for-dotnet-developers/04-spring-boot-for-aspnetcore/02-controllers-routing-binding",
+  "questions": [
+    {
+      "id": 1,
+      "question": "What does @RestController add compared to @Controller?",
+      "choices": [
+        "It enforces JSON-only request bodies.",
+        "It combines @Controller with @ResponseBody so every return value is serialized to the response body (typically JSON), removing the need to wrap returns in views.",
+        "It enables transactional methods.",
+        "It opts into reactive request handling."
+      ],
+      "correct": 1,
+      "explanation": "@RestController = @Controller + @ResponseBody. Every method's return value bypasses view resolution and is serialized to the response body via the configured message converters (Jackson by default)."
+    },
+    {
+      "id": 2,
+      "question": "Which Spring binding annotation matches ASP.NET Core's [FromBody]?",
+      "choices": [
+        "@PathVariable",
+        "@RequestParam",
+        "@RequestBody",
+        "@RequestHeader"
+      ],
+      "correct": 2,
+      "explanation": "@RequestBody binds the HTTP request body, typically deserialized from JSON via Jackson. @PathVariable matches [FromRoute], @RequestParam matches [FromQuery], and @RequestHeader matches [FromHeader]."
+    },
+    {
+      "id": 3,
+      "question": "You want POST /api/orders to return 201 Created with a Location header pointing to the new resource. Which is the idiomatic Spring approach?",
+      "choices": [
+        "Return the saved order directly; Spring auto-detects creation.",
+        "Return ResponseEntity.created(URI).body(saved), where URI is built via ServletUriComponentsBuilder or a hard-coded path.",
+        "Throw a ResponseStatusException(HttpStatus.CREATED).",
+        "Use @ResponseStatus(HttpStatus.CREATED) on the method; the Location header is added automatically."
+      ],
+      "correct": 1,
+      "explanation": "ResponseEntity.created(URI) sets 201 plus the Location header. @ResponseStatus alone sets the status code but does NOT add a Location header. ServletUriComponentsBuilder.fromCurrentRequest() builds the Location relative to the request, avoiding hard-coded base paths."
+    }
+  ]
+}

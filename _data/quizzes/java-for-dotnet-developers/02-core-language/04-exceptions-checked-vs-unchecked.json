@@ -1,0 +1,41 @@
+{
+  "chapter_id": "java-for-dotnet-developers/02-core-language/04-exceptions-checked-vs-unchecked",
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is the practical difference between checked and unchecked exceptions in Java?",
+      "choices": [
+        "Checked exceptions are caught at runtime; unchecked are caught at compile time.",
+        "Checked exceptions must be declared in the method's throws clause and caught or propagated; unchecked exceptions need no declaration.",
+        "Unchecked exceptions are subclasses of Error; checked are subclasses of Exception.",
+        "There is no functional difference since Java 8."
+      ],
+      "correct": 1,
+      "explanation": "Checked exceptions extend Exception (but not RuntimeException) and the compiler enforces a throws clause or catch block. Unchecked exceptions extend RuntimeException (or Error) and propagate freely without declarations - closer to how C# treats all exceptions."
+    },
+    {
+      "id": 2,
+      "question": "You declare three resources in a single try-with-resources statement. The body throws, and resource[1]'s close() also throws. What happens to the close exception?",
+      "choices": [
+        "It replaces the body exception (only the most recent is propagated).",
+        "It is silently discarded.",
+        "It is attached as a suppressed exception on the body's exception, visible via getSuppressed() and printed in the stack trace.",
+        "The JVM logs it to stderr but doesn't include it in the exception object."
+      ],
+      "correct": 2,
+      "explanation": "Try-with-resources preserves close exceptions as suppressed exceptions on the original. JVM stack-trace formatting prints them under 'Suppressed: ...' below the main exception. C#'s using historically discarded such exceptions."
+    },
+    {
+      "id": 3,
+      "question": "Why does this stream pipeline fail to compile, and what's the standard fix?\npaths.stream().map(p -> Files.readString(Path.of(p))).toList();",
+      "choices": [
+        "Files.readString isn't a static method; use a Files instance. Fix: instantiate Files.",
+        "readString throws checked IOException, but Function (used by map) doesn't declare exceptions. Fix: catch IOException inside the lambda and rethrow as UncheckedIOException.",
+        "toList() doesn't exist on Stream. Fix: use collect(Collectors.toList()).",
+        "Path.of is not a Path. Fix: use new Path(p)."
+      ],
+      "correct": 1,
+      "explanation": "The functional interface Function does not allow throwing checked exceptions, so a lambda that throws IOException doesn't satisfy it. The standard fix is to catch IOException inside the lambda and throw a runtime equivalent (UncheckedIOException is built in for exactly this)."
+    }
+  ]
+}

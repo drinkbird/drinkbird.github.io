@@ -1,0 +1,41 @@
+{
+  "chapter_id": "java-for-dotnet-developers/05-integration/05-testing",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which Spring Boot test annotation boots only the MVC layer (controllers, JSON, validation) and not JPA or other infrastructure?",
+      "choices": [
+        "@SpringBootTest",
+        "@WebMvcTest",
+        "@DataJpaTest",
+        "@ContextConfiguration"
+      ],
+      "correct": 1,
+      "explanation": "@WebMvcTest loads a slice of the application context: MVC, controllers, MockMvc, validation, message converters. It does not load JPA or service beans by default - use @MockBean to provide collaborators. @SpringBootTest boots the full context (slower)."
+    },
+    {
+      "id": 2,
+      "question": "What's the Mockito equivalent of Moq's mock.Setup(x => x.Save(It.IsAny<Order>())).Returns(saved)?",
+      "choices": [
+        "mock.Setup(Order.class).then(saved);",
+        "when(mock.save(any())).thenReturn(saved);",
+        "verify(mock).save(any());",
+        "given(mock).save(any()).willReturn(saved);"
+      ],
+      "correct": 1,
+      "explanation": "Mockito uses when(...).thenReturn(...) for stubbing and verify(...) for verification. any() is the wildcard matcher. The BDD-style alternative is given(...).willReturn(...) from BDDMockito, but the when/thenReturn form is standard."
+    },
+    {
+      "id": 3,
+      "question": "You want to integration-test a JPA repository against real Postgres (not H2). What's the standard approach in 2026?",
+      "choices": [
+        "Manually start Postgres before running tests and configure spring.datasource.url.",
+        "Use Testcontainers with @ServiceConnection on a PostgreSQLContainer - Spring Boot auto-wires the connection. Run tests with Docker available.",
+        "Switch to JdbcTemplate; JPA can't be tested against real Postgres.",
+        "Use @SpringBootTest(properties = \"spring.datasource.url=jdbc:postgresql://localhost\") with a pre-installed local server."
+      ],
+      "correct": 1,
+      "explanation": "Testcontainers boots a Postgres container per test class (or once per JVM with the static + @Container pattern) and Spring Boot's @ServiceConnection (3.1+) wires it into the data source automatically. No manual property registration needed."
+    }
+  ]
+}

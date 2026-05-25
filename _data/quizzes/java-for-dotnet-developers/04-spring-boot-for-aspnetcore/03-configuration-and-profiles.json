@@ -1,0 +1,41 @@
+{
+  "chapter_id": "java-for-dotnet-developers/04-spring-boot-for-aspnetcore/03-configuration-and-profiles",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which Spring binding mechanism is closest to ASP.NET Core's IOptions<T> pattern?",
+      "choices": [
+        "@Value(\"${key}\") on individual fields.",
+        "@ConfigurationProperties on a record or class that binds a configuration section as a typed object.",
+        "@Bean methods that read IConfiguration manually.",
+        "Spring profiles."
+      ],
+      "correct": 1,
+      "explanation": "@ConfigurationProperties binds a configuration section to a typed object (record or class) - the same role IOptions<T> plays in ASP.NET Core. @Value is closer to manually pulling individual values from IConfiguration."
+    },
+    {
+      "id": 2,
+      "question": "You set app.payments.url in application.yml, also export APP_PAYMENTS_URL=foo, and pass --app.payments.url=bar on the command line. Which value wins?",
+      "choices": [
+        "The application.yml value.",
+        "The environment variable APP_PAYMENTS_URL=foo.",
+        "The command-line argument --app.payments.url=bar.",
+        "Startup fails because of the conflict."
+      ],
+      "correct": 2,
+      "explanation": "Spring's precedence is CLI > env vars > profile files > base file. Command-line arguments win over both environment variables and configuration files - matching ASP.NET Core's typical precedence."
+    },
+    {
+      "id": 3,
+      "question": "What is the closest Spring concept to ASPNETCORE_ENVIRONMENT=Development?",
+      "choices": [
+        "Setting server.port=8080 in application.yml.",
+        "Activating the 'dev' profile via SPRING_PROFILES_ACTIVE=dev or --spring.profiles.active=dev; Spring then layers application-dev.yml on top of application.yml.",
+        "Adding @Profile(\"Development\") to every bean.",
+        "Setting SPRING_BOOT_ENV=dev."
+      ],
+      "correct": 1,
+      "explanation": "Spring profiles are the environment switch. Activating 'dev' layers application-dev.yml over application.yml - the same shape as ASP.NET Core's appsettings.Development.json layering. Note: Spring allows multiple active profiles simultaneously, unlike .NET's single-valued environment."
+    }
+  ]
+}

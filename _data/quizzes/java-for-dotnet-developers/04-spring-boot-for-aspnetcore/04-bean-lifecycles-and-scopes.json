@@ -1,0 +1,41 @@
+{
+  "chapter_id": "java-for-dotnet-developers/04-spring-boot-for-aspnetcore/04-bean-lifecycles-and-scopes",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which Spring scope corresponds to ASP.NET Core's AddTransient - a new instance every time the bean is injected?",
+      "choices": [
+        "@Scope(\"singleton\")",
+        "@Scope(\"prototype\")",
+        "@Scope(\"request\")",
+        "@Scope(\"session\")"
+      ],
+      "correct": 1,
+      "explanation": "Prototype creates a new instance for every injection or getBean call, matching AddTransient. Note that prototype-scoped beans don't get @PreDestroy callbacks - Spring doesn't track them after construction."
+    },
+    {
+      "id": 2,
+      "question": "You inject a request-scoped bean into a singleton service via a normal constructor. What goes wrong?",
+      "choices": [
+        "Nothing - Spring handles cross-scope injection automatically.",
+        "Either the application fails to start (no active request at construction time) or the singleton holds the first request's instance for the rest of the app's lifetime - a subtle but serious bug.",
+        "The request-scoped bean is duplicated per-thread.",
+        "Spring serialises requests through the singleton to keep the bean valid."
+      ],
+      "correct": 1,
+      "explanation": "Singletons hold their dependencies for the app's lifetime. Without a scoped proxy, the request-scoped bean either can't be resolved at startup or freezes to the first request's instance. The fix is proxyMode = TARGET_CLASS (or INTERFACES) so Spring injects a proxy that resolves the current request's instance per call."
+    },
+    {
+      "id": 3,
+      "question": "When does @PostConstruct fire for a singleton bean?",
+      "choices": [
+        "Just before the bean is destroyed.",
+        "After the bean is constructed and its dependencies have been injected, before the application context is considered fully started.",
+        "On every method invocation.",
+        "Only when called explicitly via reflection."
+      ],
+      "correct": 1,
+      "explanation": "@PostConstruct runs once, after construction and dependency injection complete, as part of the bean's initialization phase. It's the standard hook for one-time setup like cache warming or registration. For startup work that depends on the full context being ready, prefer ApplicationRunner."
+    }
+  ]
+}

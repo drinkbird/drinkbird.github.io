@@ -1,0 +1,41 @@
+{
+  "chapter_id": "java-for-dotnet-developers/02-core-language/05-collections-tour",
+  "questions": [
+    {
+      "id": 1,
+      "question": "What does List.of(\"a\", \"b\") return, and what happens if you call .add(\"c\") on it?",
+      "choices": [
+        "An ArrayList; .add(\"c\") appends successfully.",
+        "An immutable List; .add(\"c\") throws UnsupportedOperationException.",
+        "A LinkedList; .add(\"c\") appends successfully.",
+        "A read-only view of an internal ArrayList; .add(\"c\") throws IllegalStateException."
+      ],
+      "correct": 1,
+      "explanation": "List.of returns a truly immutable List backed by an internal type from java.util.ImmutableCollections. Any mutation method throws UnsupportedOperationException - there's no underlying mutable store you can swap in."
+    },
+    {
+      "id": 2,
+      "question": "Which collection should you reach for to safely increment counters from multiple threads?",
+      "choices": [
+        "Collections.synchronizedMap(new HashMap<>())",
+        "ConcurrentHashMap, using compute or merge for atomic updates.",
+        "TreeMap, because it's sorted.",
+        "HashMap with the synchronized keyword on the update method."
+      ],
+      "correct": 1,
+      "explanation": "ConcurrentHashMap supports atomic compute/merge operations and uses fine-grained locking. synchronizedMap is coarse-grained, slower, and should be considered legacy in 2026."
+    },
+    {
+      "id": 3,
+      "question": "Why does iterating a HashMap produce different orders across runs, and what fix preserves insertion order?",
+      "choices": [
+        "It's a JVM bug; upgrade the JDK.",
+        "HashMap has no iteration-order contract; iteration order can change. Use LinkedHashMap to preserve insertion order.",
+        "Iteration order depends on the hashCode of the values; switch to TreeMap.",
+        "HashMap iteration is undefined in Java 17; use ConcurrentHashMap instead."
+      ],
+      "correct": 1,
+      "explanation": "HashMap intentionally provides no iteration order guarantee, and the implementation can change between JDK versions or runs. LinkedHashMap preserves insertion order at a small overhead. TreeMap sorts by key, not by insertion."
+    }
+  ]
+}

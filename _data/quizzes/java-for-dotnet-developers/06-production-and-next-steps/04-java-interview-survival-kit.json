@@ -1,0 +1,41 @@
+{
+  "chapter_id": "java-for-dotnet-developers/06-production-and-next-steps/04-java-interview-survival-kit",
+  "questions": [
+    {
+      "id": 1,
+      "question": "An interviewer asks: 'If you override equals on a class without overriding hashCode, what specifically breaks?' What's the cleanest answer?",
+      "choices": [
+        "The compiler refuses to compile the class.",
+        "HashMap/HashSet lookups become unreliable: HashMap routes by hashCode first, so equal-but-different-hash objects land in different buckets - contains/get will fail to find the equal entry.",
+        "The class becomes non-serialisable.",
+        "Performance degrades because Java falls back to a slow O(n) scan."
+      ],
+      "correct": 1,
+      "explanation": "The contract is: equal objects must have equal hashCodes. If equals says two objects are equal but hashCode disagrees, HashMap routes them to different buckets and the equal-object lookup silently fails. The collection is corrupted; nothing else fails."
+    },
+    {
+      "id": 2,
+      "question": "An interview question asks why LinkedList is rarely the right choice over ArrayList in modern Java. Best framing?",
+      "choices": [
+        "LinkedList was removed in Java 17.",
+        "ArrayList has better cache locality, lower per-element memory overhead, and faster random access. LinkedList's O(1) middle-insertion advantage only materialises if you already hold the node - which you almost never do in practice.",
+        "LinkedList is single-threaded; ArrayList is concurrent.",
+        "LinkedList has unbounded memory growth."
+      ],
+      "correct": 1,
+      "explanation": "ArrayList is contiguous memory; CPU caches love it. LinkedList allocates a node per element with two pointers each, blowing cache and adding GC pressure. The textbook O(1) insert benefit requires holding the node - searching for an insert point is O(n), and then ArrayList's bulk shift is faster than chasing pointers."
+    },
+    {
+      "id": 3,
+      "question": "What's the canonical Java 17+ idiom for modelling a discriminated union of payment outcomes (Success, Declined, Pending)?",
+      "choices": [
+        "Three classes extending an abstract Payment, plus an enum field for the type.",
+        "A sealed interface Payment permits Success, Declined, Pending - with each variant as a record. Then handle with an exhaustive pattern-matching switch expression.",
+        "A single class with three boolean flags and nullable fields.",
+        "An enum with three constants and a payload Object."
+      ],
+      "correct": 1,
+      "explanation": "Sealed interface + record subtypes + pattern-matching switch is the modern Java 17+ idiom for discriminated unions. The compiler enforces exhaustiveness - adding a new permitted subtype breaks every switch at compile time, removing the runtime surprise."
+    }
+  ]
+}

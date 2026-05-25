@@ -1,0 +1,41 @@
+{
+  "chapter_id": "java-for-dotnet-developers/03-idiomatic-java/04-annotations-vs-attributes",
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is the practical effect of @Retention(RetentionPolicy.RUNTIME) on a custom annotation?",
+      "choices": [
+        "It prevents the annotation from being inherited by subclasses.",
+        "It makes the annotation visible to reflection at runtime; without it the default keeps the annotation only in class files, invisible to reflection.",
+        "It restricts the annotation to method targets only.",
+        "It generates code at compile time when the annotation is used."
+      ],
+      "correct": 1,
+      "explanation": "Retention controls when the annotation is preserved. RUNTIME means reflection (Class.getAnnotation, Method.getAnnotation) can find it. The default is CLASS, which keeps it in bytecode but not loaded into the runtime constant pool - invisible to reflection."
+    },
+    {
+      "id": 2,
+      "question": "Which is the .NET equivalent for Spring's @PreAuthorize(\"hasRole('ADMIN')\") method-level annotation?",
+      "choices": [
+        "[ApiController]",
+        "[Authorize(Roles = \"admin\")]",
+        "[HttpGet(\"admin\")]",
+        "[FromBody] AdminRequest"
+      ],
+      "correct": 1,
+      "explanation": "Both attach an authorisation requirement to a method. Spring's @PreAuthorize is more expression-driven (full SpEL); ASP.NET's [Authorize] uses roles or policy names, but the role analogue is exact."
+    },
+    {
+      "id": 3,
+      "question": "What does Lombok's @Data on a class do, and at what stage?",
+      "choices": [
+        "Generates getters, setters, equals, hashCode, and toString at runtime via bytecode manipulation.",
+        "Generates getters, setters, equals, hashCode, toString, and a no-args / required-args constructor at compile time via an annotation processor.",
+        "Modifies the source file in place to add the methods.",
+        "Throws an exception unless you also annotate every field with @Field."
+      ],
+      "correct": 1,
+      "explanation": "Lombok is an annotation processor: javac runs it during compilation, and it emits the generated methods into the bytecode. The source file is unchanged; the .class file contains the generated members. IDEs need Lombok integration to see the generated methods in autocomplete."
+    }
+  ]
+}

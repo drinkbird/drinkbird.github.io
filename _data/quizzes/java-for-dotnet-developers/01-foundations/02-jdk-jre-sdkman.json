@@ -1,0 +1,41 @@
+{
+  "chapter_id": "java-for-dotnet-developers/01-foundations/02-jdk-jre-sdkman",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which statement about JDK vs. JRE distributions in 2026 is correct?",
+      "choices": [
+        "The JRE is the developer-focused install; the JDK is runtime-only.",
+        "The JDK contains the JVM, standard library, and compiler; standalone JREs have been deprecated since Java 11.",
+        "Modern OpenJDK distributions ship only as JREs; you must add javac separately.",
+        "There is no functional difference; the names are aliases since Java 17."
+      ],
+      "correct": 1,
+      "explanation": "A JDK is JVM + standard library + compiler + tools. Standalone JREs were deprecated in favour of jlink-built runtimes in Java 11+. For development work, you always want the JDK."
+    },
+    {
+      "id": 2,
+      "question": "You want to use Temurin 17 on one project and Temurin 21 on another, switched per shell. Which tool fits and how does it work?",
+      "choices": [
+        "Use the dotnet CLI's --use-sdk flag.",
+        "Use SDKMAN: 'sdk install java' for each version, then 'sdk use java <version>' per shell.",
+        "Use OpenJDK's built-in version manager.",
+        "Manually edit JAVA_HOME each time; there is no equivalent of global.json in Java."
+      ],
+      "correct": 1,
+      "explanation": "SDKMAN installs and manages multiple JDK builds; 'sdk use' sets JAVA_HOME and PATH for the current shell. It's the de-facto Java equivalent of the per-project version selection that .NET handles through global.json."
+    },
+    {
+      "id": 3,
+      "question": "Your team needs an OpenJDK distribution with a permissive licence for production, free of Oracle's commercial terms, and widely adopted. Which is the safe default?",
+      "choices": [
+        "Oracle JDK - it's the canonical implementation.",
+        "Eclipse Temurin - community-backed, GPL-with-classpath-exception, widely deployed.",
+        "GraalVM Community Edition - it's the only free option.",
+        "OpenJ9 - it's the highest-performing JVM."
+      ],
+      "correct": 1,
+      "explanation": "Eclipse Temurin (formerly AdoptOpenJDK) is the mainstream community-built OpenJDK distribution and is free for any use under the GPLv2 with classpath exception. Oracle JDK 17 onwards may require commercial licensing for production depending on which Oracle build you take."
+    }
+  ]
+}

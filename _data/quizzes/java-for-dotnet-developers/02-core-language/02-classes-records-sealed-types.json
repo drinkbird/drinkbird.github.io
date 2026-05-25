@@ -1,0 +1,41 @@
+{
+  "chapter_id": "java-for-dotnet-developers/02-core-language/02-classes-records-sealed-types",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which is true about Java records in Java 17?",
+      "choices": [
+        "Records are mutable by default; mark them 'final' to make them immutable.",
+        "Records are immutable, final, and provide implicit equals/hashCode/toString and accessor methods named like the component (e.g. id(), not getId()).",
+        "Records require manual implementations of equals and hashCode.",
+        "Records can be extended via 'extends' to add behaviour."
+      ],
+      "correct": 1,
+      "explanation": "Java records are immutable, implicitly final, and generate equals/hashCode/toString plus bare-name accessors (id(), not getId()). The naming difference matters for framework integration."
+    },
+    {
+      "id": 2,
+      "question": "Why is the switch over a sealed interface exhaustive without a default case?",
+      "choices": [
+        "The Java compiler always allows missing default branches in switch expressions.",
+        "Because the sealed interface enumerates its permitted subtypes; the compiler can verify every case is covered and rejects new subtypes silently breaking the switch.",
+        "Because records are final, they can't add new alternatives.",
+        "Because pattern matching switch ignores missing cases at runtime."
+      ],
+      "correct": 1,
+      "explanation": "A sealed type declares its permitted subtypes. The compiler uses that closed set to verify exhaustiveness - and a new permitted subtype later forces every switch to add a case at compile time, removing the runtime surprise."
+    },
+    {
+      "id": 3,
+      "question": "You want to model a 'Customer' with id, name, and email, where the email must not be blank. Which approach is idiomatic in Java 17?",
+      "choices": [
+        "A class with private fields and manual setters that throw on invalid input.",
+        "A record with a compact constructor that validates and canonicalises the email before assignment.",
+        "A class with public fields and external validation; records can't validate.",
+        "A sealed interface - records can't enforce invariants."
+      ],
+      "correct": 1,
+      "explanation": "The idiomatic Java 17 form is a record with a compact constructor that validates and canonicalises components. The compact form has no parameter list and field assignment happens implicitly at the end of the block."
+    }
+  ]
+}

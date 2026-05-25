@@ -1,0 +1,41 @@
+{
+  "chapter_id": "java-for-dotnet-developers/01-foundations/04-project-layout-and-classpath",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which statement about Java packages vs. C# namespaces is correct?",
+      "choices": [
+        "Both are pure logical groupings; folder structure is convention-only in both languages.",
+        "A Java package must match the source file's directory path under src/main/java; the compiler enforces this. C# does not.",
+        "C# enforces folder/namespace matching; Java does not.",
+        "Java packages are a runtime concept only; folder layout is irrelevant."
+      ],
+      "correct": 1,
+      "explanation": "Java couples package declaration to directory path under src/main/java - javac rejects mismatches and classloading depends on the agreement. C# treats namespaces as logical groupings with no compiler-enforced folder mapping."
+    },
+    {
+      "id": 2,
+      "question": "What does the default (no keyword) access modifier on a Java class member mean?",
+      "choices": [
+        "Public - accessible from anywhere.",
+        "Private - accessible only inside the declaring class.",
+        "Package-private - accessible to other classes in the same package, invisible outside.",
+        "Protected - accessible to subclasses only."
+      ],
+      "correct": 2,
+      "explanation": "Java's default access is package-private: visible within the declaring package but not outside. It's roughly equivalent to C#'s internal, but scoped per-package rather than per-assembly."
+    },
+    {
+      "id": 3,
+      "question": "Your code calls getClass().getResourceAsStream(\"/config.yml\") and it returns null at runtime, but the file exists in src/main/resources/config.yml. Which is the most likely cause?",
+      "choices": [
+        "Resources cannot be loaded after packaging into a JAR; only File I/O works.",
+        "The file was not packaged onto the classpath (e.g. wrong source set, custom build excluding it, or the working directory was confused with the classpath).",
+        "Leading slashes are illegal in getResourceAsStream paths.",
+        "Spring Boot disables classpath loading by default."
+      ],
+      "correct": 1,
+      "explanation": "Resources are looked up on the classpath, not by file path. Returning null typically means the file wasn't included in the build output (target/classes or the JAR). Verify with `jar tf` and confirm src/main/resources is part of the active source set."
+    }
+  ]
+}

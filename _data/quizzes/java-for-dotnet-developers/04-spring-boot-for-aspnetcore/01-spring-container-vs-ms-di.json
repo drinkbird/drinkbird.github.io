@@ -1,0 +1,41 @@
+{
+  "chapter_id": "java-for-dotnet-developers/04-spring-boot-for-aspnetcore/01-spring-container-vs-ms-di",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Two beans of type DataSource are registered, and a service injects DataSource without a qualifier. What happens at startup?",
+      "choices": [
+        "Spring picks the first registered bean and continues.",
+        "Spring throws NoUniqueBeanDefinitionException. Fix with @Primary on one bean or @Qualifier at the injection point.",
+        "Spring injects a List<DataSource> automatically.",
+        "Spring randomly picks one and logs a warning."
+      ],
+      "correct": 1,
+      "explanation": "Ambiguous injections fail fast with NoUniqueBeanDefinitionException. Resolve by marking one bean @Primary (default winner) or using @Qualifier at the injection point to pick by name."
+    },
+    {
+      "id": 2,
+      "question": "Which Spring scope corresponds to ASP.NET Core's AddScoped (per-HTTP-request lifetime)?",
+      "choices": [
+        "@Scope(\"singleton\")",
+        "@Scope(\"prototype\")",
+        "@Scope(\"request\")",
+        "@Scope(\"session\")"
+      ],
+      "correct": 2,
+      "explanation": "@Scope(\"request\") creates one instance per HTTP request, matching AddScoped in ASP.NET Core. @Scope(\"prototype\") gives a new instance per injection, which is closer to AddTransient (but rarely the right choice)."
+    },
+    {
+      "id": 3,
+      "question": "Why is constructor injection preferred over field injection (@Autowired on a private field) in modern Spring code?",
+      "choices": [
+        "Field injection no longer works in Spring 6.",
+        "Constructor injection gives you final fields, immutable state, trivial unit testability (you instantiate the class directly with mocks), and an explicit dependency contract - field injection requires reflection to set test doubles.",
+        "Field injection is slower at runtime.",
+        "Field injection cannot be used with @Qualifier."
+      ],
+      "correct": 1,
+      "explanation": "Constructor injection makes dependencies explicit in the constructor signature, allows final fields, and makes the class testable without Spring (just call the constructor). Field injection requires reflection or a Spring context to populate, complicating tests and obscuring the contract."
+    }
+  ]
+}

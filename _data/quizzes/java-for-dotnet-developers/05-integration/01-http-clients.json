@@ -1,0 +1,41 @@
+{
+  "chapter_id": "java-for-dotnet-developers/05-integration/01-http-clients",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which is the recommended default HTTP client in a Spring Boot 3 application that uses Spring MVC (not WebFlux)?",
+      "choices": [
+        "RestTemplate - the most stable and well-known option.",
+        "RestClient (Spring 6.1+) - a modern blocking fluent client, closest equivalent of .NET's HttpClient.",
+        "WebClient - necessary for any HTTP outbound call.",
+        "HttpURLConnection - the JDK built-in."
+      ],
+      "correct": 1,
+      "explanation": "RestClient (Spring 6.1+) is the modern blocking default. WebClient is reactive - use only on WebFlux. RestTemplate is in maintenance mode and should not be used for new code."
+    },
+    {
+      "id": 2,
+      "question": "You're calling an upstream service and need to deserialize the response into List<Order>. Why is .body(List.class) wrong, and what's the fix?",
+      "choices": [
+        "Nothing's wrong; List.class works fine.",
+        "Type erasure means List.class is just the raw List. Use .body(new ParameterizedTypeReference<List<Order>>() {}) so the anonymous subclass preserves the generic type at runtime.",
+        "Lists can't be deserialized; use an array instead.",
+        "Use Spring's JsonList<Order>.class wrapper."
+      ],
+      "correct": 1,
+      "explanation": "Class literals can't be parameterised - List.class is raw List, so Jackson can't know the element type. ParameterizedTypeReference (an anonymous subclass capturing the type) preserves List<Order> across erasure, just like Jackson's TypeReference."
+    },
+    {
+      "id": 3,
+      "question": "What's the practical risk of using @Retry on a POST endpoint with no idempotency design, and how do you mitigate it?",
+      "choices": [
+        "No risk - retries are always safe.",
+        "Retried non-idempotent POSTs can duplicate side effects (multiple charges, multiple records). Mitigate by either restricting retry to safe methods (GET, PUT, DELETE) or supplying an idempotency key the upstream uses to de-duplicate.",
+        "Retries cause the JVM to deadlock; disable them entirely.",
+        "Resilience4j refuses to retry POSTs by default."
+      ],
+      "correct": 1,
+      "explanation": "POST is not idempotent in HTTP semantics - repeating it may create duplicates. Common fixes are limiting retry to idempotent verbs or making the operation idempotent at the application layer (e.g. send an Idempotency-Key header the upstream de-duplicates on). Resilience4j doesn't filter by method automatically."
+    }
+  ]
+}

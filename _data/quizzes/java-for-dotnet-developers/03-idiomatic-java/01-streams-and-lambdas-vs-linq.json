@@ -1,0 +1,41 @@
+{
+  "chapter_id": "java-for-dotnet-developers/03-idiomatic-java/01-streams-and-lambdas-vs-linq",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which Java Stream operation is equivalent to LINQ's FirstOrDefault(p)?",
+      "choices": [
+        "stream.first(p)",
+        "stream.filter(p).findFirst().orElse(default)",
+        "stream.filter(p).get()",
+        "stream.findAny(p)"
+      ],
+      "correct": 1,
+      "explanation": "Streams have no FirstOrDefault; you compose filter + findFirst + orElse. findFirst returns Optional<T>, and orElse supplies the default if the stream is empty."
+    },
+    {
+      "id": 2,
+      "question": "You group orders by status and want a count per group, not a list per group. Which collector composition is correct?",
+      "choices": [
+        "orders.stream().collect(groupingBy(Order::status))",
+        "orders.stream().collect(groupingBy(Order::status, counting()))",
+        "orders.stream().collect(toMap(Order::status, o -> 1))",
+        "orders.stream().count(groupingBy(Order::status))"
+      ],
+      "correct": 1,
+      "explanation": "groupingBy uses toList as the default downstream collector, producing Map<K, List<T>>. Passing counting() as the downstream replaces that with Long counts per group, giving Map<K, Long>."
+    },
+    {
+      "id": 3,
+      "question": "Why is mapToInt(Order::quantity).sum() preferred over map(Order::quantity).reduce(0, Integer::sum)?",
+      "choices": [
+        "It's mandatory in Java 17; the reduce form was removed.",
+        "It avoids per-element boxing - IntStream operates on primitive ints rather than autoboxed Integers - and is more readable.",
+        "reduce doesn't work with non-associative operations like addition.",
+        "mapToInt parallelises automatically; reduce does not."
+      ],
+      "correct": 1,
+      "explanation": "Primitive streams (IntStream, LongStream, DoubleStream) skip boxing entirely. The reduce form boxes each element to Integer before summing, which adds allocations and CPU work. Always prefer the primitive variant for arithmetic over numeric streams."
+    }
+  ]
+}

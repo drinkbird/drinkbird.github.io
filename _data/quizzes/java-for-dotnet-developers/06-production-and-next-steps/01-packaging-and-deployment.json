@@ -1,0 +1,41 @@
+{
+  "chapter_id": "java-for-dotnet-developers/06-production-and-next-steps/01-packaging-and-deployment",
+  "questions": [
+    {
+      "id": 1,
+      "question": "What does Spring Boot's layered JAR feature deliver in a Docker build?",
+      "choices": [
+        "It compresses the JAR for smaller storage.",
+        "It splits dependencies, loader, snapshot deps, and application code into separate directories so each maps to its own Docker layer - meaning code-only changes don't invalidate the heavy dependencies layer in the image cache.",
+        "It signs each layer cryptographically.",
+        "It bundles a custom JRE alongside the application classes."
+      ],
+      "correct": 1,
+      "explanation": "Layered JARs (default since Spring Boot 2.3) order content from cold to hot: dependencies (rarely change), Spring Boot loader, snapshot deps, application code. A Dockerfile that COPY's each into its own layer benefits from the cache when only the small application layer changes."
+    },
+    {
+      "id": 2,
+      "question": "You set Kubernetes memory limit to 1Gi for your Spring Boot pod and want the JVM to size its heap proportionally rather than hard-coding -Xmx. Which flag?",
+      "choices": [
+        "-Xmx512m (always set explicitly).",
+        "-XX:MaxRAMPercentage=75.0 - the JVM detects the cgroup limit (Java 10+) and sizes the heap as a percentage.",
+        "-XX:+UseContainerSupport=true (default since Java 8u131).",
+        "-Dspring.boot.memory.cap=1024."
+      ],
+      "correct": 1,
+      "explanation": "-XX:MaxRAMPercentage caps heap as a percentage of the available container memory. Combined with the JVM's automatic cgroup detection, this keeps the same image safe across different pod sizes. 75% is a common starting point - the remaining 25% covers native memory, metaspace, threads, and runtime overhead."
+    },
+    {
+      "id": 3,
+      "question": "When is GraalVM Native Image worth the trade-offs (longer build times, reflection caveats) for a Spring Boot service?",
+      "choices": [
+        "Always - native is faster than the JVM in every scenario.",
+        "For long-running services with heavy steady-state throughput.",
+        "For short-lived workloads where sub-second startup and low memory matter most: serverless functions, CLIs, scale-to-zero containers.",
+        "Only when Java 21 virtual threads aren't available."
+      ],
+      "correct": 2,
+      "explanation": "Native Image's wins are startup time and memory; its costs are build time, reflection metadata, and slightly worse peak throughput. For long-running JVM workloads the JIT-optimised steady state usually beats native; for serverless / scale-to-zero scenarios native dominates because cold start matters."
+    }
+  ]
+}

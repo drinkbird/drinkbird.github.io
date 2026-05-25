@@ -1,0 +1,41 @@
+{
+  "chapter_id": "java-for-dotnet-developers/01-foundations/03-maven-and-gradle-for-nuget-users",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which best describes Java dependency identification compared to NuGet?",
+      "choices": [
+        "Java uses a single package ID and version, identical to NuGet.",
+        "Java uses three-part coordinates: groupId:artifactId:version, globally unique on Maven Central.",
+        "Java uses a URL plus version, so every dependency points at a specific server.",
+        "Java has no central repository; dependencies are vendored per project."
+      ],
+      "correct": 1,
+      "explanation": "Java dependencies use groupId:artifactId:version coordinates, e.g. org.springframework.boot:spring-boot-starter-web:3.2.0. NuGet uses a single ID plus version and relies on author naming conventions; Java's three-part identity is enforced by Maven Central."
+    },
+    {
+      "id": 2,
+      "question": "You run 'mvn package' on a Spring Boot project. Which describes what executes?",
+      "choices": [
+        "Only the package phase runs; previous phases must be invoked manually.",
+        "Every Maven lifecycle phase up to and including package - validate, compile, test, then package.",
+        "Only compilation; tests are excluded unless mvn test is invoked separately.",
+        "An arbitrary set of tasks Maven chooses based on the project's build.gradle file."
+      ],
+      "correct": 1,
+      "explanation": "Maven's lifecycle is cumulative: invoking 'mvn package' runs validate, compile, test, then package in order. Tests run by default unless explicitly skipped with -DskipTests."
+    },
+    {
+      "id": 3,
+      "question": "Why does a Spring Boot project usually inherit from spring-boot-starter-parent or import its BOM?",
+      "choices": [
+        "It's required by Maven to build any Spring Boot app.",
+        "It pins curated versions for all spring-boot-starter-* dependencies and configures plugins, so you don't manage versions by hand.",
+        "It enables the Spring Boot dashboard in IntelliJ.",
+        "It auto-generates application.yml from the dependencies."
+      ],
+      "correct": 1,
+      "explanation": "The parent (or its BOM equivalent) provides curated, version-aligned dependency declarations and plugin configuration. You add a dependency without a version, and the parent picks one that's tested against the Boot version you're using."
+    }
+  ]
+}
