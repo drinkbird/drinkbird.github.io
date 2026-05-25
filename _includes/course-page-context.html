@@ -1,0 +1,29 @@
+{% comment %}
+  Derive course/module context for any course-collection page from page.path.
+  Chapter md files carry only chapter-unique data on their front matter; the
+  course-level and module-level info lives on the course's index.md (modules:
+  array). This include centralises the lookups so individual templates don't
+  repeat the split/filter dance.
+
+  Sets:
+    cpc_course_slug        - the course directory name under _courses/
+    cpc_course_index       - the index.md collection doc for this course
+    cpc_chapter_pages      - chapter docs for this course (path-sorted)
+    cpc_module_dir         - chapter pages only; "" on the index page
+    cpc_chapter_filename   - chapter pages only; matches the .quiz.json key
+    cpc_module             - the entry in cpc_course_index.modules for this
+                             page's module dir (chapter pages only)
+{% endcomment %}
+{% assign cpc_path_parts = page.path | split: "/" %}
+{% assign cpc_course_slug = cpc_path_parts[1] %}
+{% assign cpc_course_index = site.courses | where: "course_slug", cpc_course_slug | where_exp: "p", "p.chapter_id == nil" | first %}
+{% assign cpc_course_path_prefix = "_courses/" | append: cpc_course_slug | append: "/" %}
+{% assign cpc_chapter_pages = site.courses | where_exp: "p", "p.path contains cpc_course_path_prefix" | where_exp: "p", "p.chapter_id" %}
+{% assign cpc_module_dir = "" %}
+{% assign cpc_chapter_filename = "" %}
+{% assign cpc_module = nil %}
+{% if cpc_path_parts.size >= 4 %}
+  {% assign cpc_module_dir = cpc_path_parts[2] %}
+  {% assign cpc_chapter_filename = cpc_path_parts[3] | remove: ".md" %}
+  {% assign cpc_module = cpc_course_index.modules | where: "dir", cpc_module_dir | first %}
+{% endif %}

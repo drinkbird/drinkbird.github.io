@@ -1,21 +1,11 @@
 ---
-course_slug: jekyll-engineering-blog-github-pages
-module_slug: capstone
-chapter_slug: accessibility-and-dark-mode
-module_dir: 06-capstone
-chapter_filename: 04-accessibility-and-dark-mode
-module_id: 6
 chapter_id: 4
-module_title: "Capstone: Workflow, polish, and what's next"
+chapter_slug: accessibility-and-dark-mode
 chapter_title: "Accessibility pass and dark mode that respects `prefers-color-scheme`"
 chapter_summary: "A practical WCAG 2.2 AA pass - contrast (4.5:1 body, 3:1 large), `:focus-visible` rings, semantic landmarks, skip link, single `<h1>` per page - plus a dark mode that defaults to `prefers-color-scheme` and adds a `data-theme` + `localStorage` manual override, with an inline pre-paint script to avoid the white flash."
 ---
 
 {% raw %}
-# Accessibility Pass and Dark Mode That Respects `prefers-color-scheme`
-
-> Module 6 · Chapter 4 - Capstone: Workflow, polish, and what's next
-
 ## What you'll learn
 - A practical a11y audit: contrast, focus, heading hierarchy, landmarks, skip links.
 - The WCAG 2.2 AA contrast bar (4.5:1 for body text, 3:1 for large text and UI).

@@ -1,21 +1,11 @@
 ---
-course_slug: jekyll-engineering-blog-github-pages
-module_slug: foundations
-chapter_slug: the-jekyll-build-pipeline
-module_dir: 01-foundations
-chapter_filename: 05-the-jekyll-build-pipeline
-module_id: 1
 chapter_id: 5
-module_title: "Foundations: From web pages to a Jekyll site"
+chapter_slug: the-jekyll-build-pipeline
 chapter_title: "The build pipeline: `jekyll build` vs `jekyll serve`, and what ends up in `_site`"
 chapter_summary: "Explains the build pipeline end to end: `jekyll build` wipes and rewrites `_site/`, `jekyll serve` adds a watcher and local server with optional `--livereload`, and `--incremental` is a footgun for layout/include/config changes. Traces one post through kramdown, Liquid, nested layouts, and the permalink-derived output path; teaches the three common error shapes (YAML, Liquid, missing layout) and how to read them."
 ---
 
 {% raw %}
-# The Build Pipeline: `jekyll build` vs `jekyll serve`, and What Ends Up in `_site`
-
-> Module 1 · Chapter 5 - Foundations: From web pages to a Jekyll site
-
 ## What you'll learn
 - What `jekyll build` actually does, step by step, from source files to `_site/` output.
 - How `jekyll serve` extends `build` with a watcher and a local HTTP server.

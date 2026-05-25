@@ -13,10 +13,20 @@
   authoritative for OG description.
 {% endcomment %}
 
-{% comment %} Look up the course-index page this page belongs to (if any). {% endcomment %}
+{% comment %} Look up the course-index page this page belongs to (if any).
+   Course collection pages live under _courses/<slug>/...; chapter pages no
+   longer carry course_slug on their front matter, so we derive it from
+   page.path. Index pages still have course_slug on their own front matter. {% endcomment %}
 {% assign og_course_index = nil %}
+{% assign og_course_slug = nil %}
 {% if page.course_slug %}
-  {% assign og_course_index = site.courses | where: "course_slug", page.course_slug | where_exp: "p", "p.chapter_id == nil" | first %}
+  {% assign og_course_slug = page.course_slug %}
+{% elsif page.path contains "_courses/" %}
+  {% assign og_path_parts = page.path | split: "/" %}
+  {% assign og_course_slug = og_path_parts[1] %}
+{% endif %}
+{% if og_course_slug %}
+  {% assign og_course_index = site.courses | where: "course_slug", og_course_slug | where_exp: "p", "p.chapter_id == nil" | first %}
 {% endif %}
 
 {% comment %} Title. {% endcomment %}

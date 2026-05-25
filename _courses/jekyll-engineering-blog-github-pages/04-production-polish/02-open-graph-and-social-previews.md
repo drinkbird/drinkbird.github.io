@@ -1,19 +1,9 @@
 ---
-course_slug: jekyll-engineering-blog-github-pages
-module_slug: production-polish
-chapter_slug: open-graph-and-social-previews
-module_dir: 04-production-polish
-chapter_filename: 02-open-graph-and-social-previews
-module_id: 4
 chapter_id: 2
-module_title: "Production polish: SEO, social, feeds, analytics"
+chapter_slug: open-graph-and-social-previews
 chapter_title: "Open Graph and Twitter cards - making shared links look great"
 chapter_summary: "Shows the Open Graph and Twitter card meta `jekyll-seo-tag` emits, adds per-post `image:` front matter with site-wide fallback, and demonstrates the absolute-URL requirement plus the social debuggers used to validate previews."
 ---
-
-# Open Graph and Twitter Cards - Making Shared Links Look Great
-
-> Module 4 · Chapter 2 - Production polish: SEO, social, feeds, analytics
 
 ## What you'll learn
 - The required Open Graph tags that make a shared link render as a card.

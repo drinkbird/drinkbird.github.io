@@ -1,19 +1,9 @@
 ---
-course_slug: jekyll-engineering-blog-github-pages
-module_slug: building-the-blog
-chapter_slug: customising-layouts-and-styles
-module_dir: 03-building-the-blog
-chapter_filename: 02-customising-layouts-and-styles
-module_id: 3
 chapter_id: 2
-module_title: "Applied: Building the blog itself"
+chapter_slug: customising-layouts-and-styles
 chapter_title: "Customising layouts and styles without forking the whole theme"
 chapter_summary: "Walks through Jekyll's per-path theme-file precedence: copy only the files you want to change into your repo and let the rest stay in the gem. Demonstrates a concrete override of `_includes/head.html` and the Sass entrypoint pattern (variables before `@import \"minima\"`), and explains why pinning the theme's major version in `Gemfile` matters."
 ---
-
-# Customising Layouts and Styles Without Forking the Whole Theme
-
-> Module 3 · Chapter 2 - Applied: Building the blog itself
 
 ## What you'll learn
 - How Jekyll's theme-file precedence lets your repo shadow individual gem files.

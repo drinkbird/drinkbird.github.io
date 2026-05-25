@@ -1,19 +1,9 @@
 ---
-course_slug: jekyll-engineering-blog-github-pages
-module_slug: capstone
-chapter_slug: editorial-ci
-module_dir: 06-capstone
-chapter_filename: 02-editorial-ci
-module_id: 6
 chapter_id: 2
-module_title: "Capstone: Workflow, polish, and what's next"
+chapter_slug: editorial-ci
 chapter_title: "Editorial CI - link checking, HTML validation, and spell-check on PRs"
 chapter_summary: "An editorial CI pipeline that catches broken links (htmlproofer for internal, lychee for external), invalid HTML, and typos (`typos`). Walks through a `.github/workflows/editorial.yml` and the fail-vs-warn split: fail on things under your control (internal links, typos), warn on things that aren't (flaky external links)."
 ---
-
-# Editorial CI - Link Checking, HTML Validation, and Spell-Check on PRs
-
-> Module 6 · Chapter 2 - Capstone: Workflow, polish, and what's next
 
 ## What you'll learn
 - The three classes of editorial bugs CI can catch: broken links, invalid HTML, and typos.

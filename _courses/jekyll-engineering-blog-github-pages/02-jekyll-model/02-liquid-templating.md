@@ -1,19 +1,9 @@
 ---
-course_slug: jekyll-engineering-blog-github-pages
-module_slug: jekyll-model
-chapter_slug: liquid-templating
-module_dir: 02-jekyll-model
-chapter_filename: 02-liquid-templating
-module_id: 2
 chapter_id: 2
-module_title: "The Jekyll model: Layouts, Liquid, and content"
+chapter_slug: liquid-templating
 chapter_title: "Liquid templating - variables, filters, tags, and the data flow"
 chapter_summary: "Tours Liquid syntax - output `{{ }}` vs logic `{% %}` - the `site`/`page`/`content` globals, and the filters and control-flow forms used daily (`date`, `slugify`, `where`/`where_exp`, `group_by`, `sort`, `default`, `relative_url`, `for` with `limit`/`reversed`). Includes debugging-via-`jsonify` and `--trace` since Liquid has no REPL."
 ---
-
-# Liquid Templating - Variables, Filters, Tags, and the Data Flow
-
-> Module 2 · Chapter 2 - The Jekyll model: Layouts, Liquid, and content
 
 ## What you'll learn
 - The two syntactic forms in Liquid - output `{% raw %}{{ }}{% endraw %}` and logic `{% raw %}{% %}{% endraw %}` - and when to reach for each.

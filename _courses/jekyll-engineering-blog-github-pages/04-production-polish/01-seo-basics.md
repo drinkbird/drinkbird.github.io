@@ -1,26 +1,9 @@
 ---
-course_slug: jekyll-engineering-blog-github-pages
-module_slug: production-polish
-chapter_slug: seo-basics
-module_dir: 04-production-polish
-chapter_filename: 01-seo-basics
-module_id: 4
 chapter_id: 1
-module_title: "Production polish: SEO, social, feeds, analytics"
+chapter_slug: seo-basics
 chapter_title: "SEO basics with `jekyll-seo-tag` - titles, descriptions, sitemap, robots"
 chapter_summary: "Installs `jekyll-seo-tag` and `jekyll-sitemap`, walks through per-page title/description/canonical resolution, and clarifies what `robots.txt` actually controls (crawling, not indexing - and not a security tool)."
-module_summary: "Add the production-grade niceties that turn a working blog into one people can actually find, share, and follow."
-module_learning_objectives:
-  - "Set up SEO meta tags and a sitemap"
-  - "Make shared links render rich previews on social platforms"
-  - "Publish a sensible RSS feed"
-  - "Add privacy-friendly analytics without dark patterns"
-  - "Keep page weight under control with responsive images"
 ---
-
-# SEO Basics with `jekyll-seo-tag` - Titles, Descriptions, Sitemap, Robots
-
-> Module 4 · Chapter 1 - Production polish: SEO, social, feeds, analytics
 
 ## What you'll learn
 - What `jekyll-seo-tag` writes into your `<head>` and what it leaves to you.

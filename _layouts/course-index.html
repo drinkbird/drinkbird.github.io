@@ -1,15 +1,15 @@
 ---
 layout: default
 ---
-{% assign chapter_pages   = site.courses | where: "course_slug", page.course_slug | where_exp: "p", "p.chapter_id" %}
-{% assign module_reps     = chapter_pages | where: "chapter_id", 1 %}
+{% assign course_path_prefix = "_courses/" | append: page.course_slug | append: "/" %}
+{% assign chapter_pages   = site.courses | where_exp: "p", "p.path contains course_path_prefix" | where_exp: "p", "p.chapter_id" %}
 {% assign first_chapter   = chapter_pages | first %}
 {% assign total_chapters  = chapter_pages.size %}
-{% assign total_modules   = module_reps.size %}
+{% assign total_modules   = page.modules.size %}
 
 <div class="container course-layout">
   <div class="course-layout-grid">
-    {% include course-sidebar.html course_index=page chapter_pages=chapter_pages module_reps=module_reps %}
+    {% include course-sidebar.html course_index=page chapter_pages=chapter_pages %}
 
     <main class="course-main">
       <nav class="course-breadcrumbs" aria-label="Breadcrumb">
@@ -17,10 +17,6 @@ layout: default
         <span aria-hidden="true">›</span>
         <span>{{ page.title | truncate: 80 }}</span>
       </nav>
-
-      <div class="course-chapter-byline">
-        {% include author-inline.html verb="Produced by" %}
-      </div>
 
       <article class="course-content course-content-overview post-content"
                data-course-slug="{{ page.course_slug }}"
@@ -35,6 +31,9 @@ layout: default
           <p class="course-overview-eyebrow">Course · {{ page.depth | capitalize }}</p>
           <h1 class="course-overview-title">{{ page.title }}</h1>
           {% if page.goal %}<p class="course-overview-goal">{{ page.goal }}</p>{% endif %}
+          <div class="course-chapter-byline">
+            {% include author-inline.html verb="Produced by" producer=page.producer %}
+          </div>
           <div class="course-overview-meta">
             <span><strong>{{ total_modules }}</strong> modules</span>
             <span><strong>{{ total_chapters }}</strong> chapters</span>
@@ -60,7 +59,7 @@ layout: default
         <script type="application/json" data-course-card-data>{
           "courseSlug": {{ page.course_slug | jsonify }},
           "courseUrl":  {{ "/courses/" | append: page.course_slug | append: "/" | prepend: site.baseurl | jsonify }},
-          "chapters": [{% for cp in chapter_pages %}{ "moduleSlug": {{ cp.module_slug | jsonify }}, "chapterSlug": {{ cp.chapter_slug | jsonify }}, "url": {{ cp.url | prepend: site.baseurl | jsonify }} }{% unless forloop.last %},{% endunless %}{% endfor %}]
+          "chapters": [{% for cp in chapter_pages %}{% assign cp_parts = cp.path | split: "/" %}{% assign cp_module = page.modules | where: "dir", cp_parts[2] | first %}{ "moduleSlug": {{ cp_module.slug | jsonify }}, "chapterSlug": {{ cp.chapter_slug | jsonify }}, "url": {{ cp.url | prepend: site.baseurl | jsonify }} }{% unless forloop.last %},{% endunless %}{% endfor %}]
         }</script>
 
         <div class="course-content-body post-body">
@@ -68,16 +67,16 @@ layout: default
 
           <h2>What you'll learn, module by module</h2>
           <ol class="course-overview-modules">
-            {% for module_rep in module_reps %}
+            {% for module in page.modules %}
             <li class="course-overview-module">
               <h3>
-                <span class="course-overview-module-id">Module {{ module_rep.module_id }}</span>
-                {{ module_rep.module_title }}
+                <span class="course-overview-module-id">Module {{ module.id }}</span>
+                {{ module.title }}
               </h3>
-              {% if module_rep.module_summary %}<p>{{ module_rep.module_summary }}</p>{% endif %}
-              {% if module_rep.module_learning_objectives %}
+              {% if module.summary %}<p>{{ module.summary }}</p>{% endif %}
+              {% if module.learning_objectives %}
               <ul class="course-overview-objectives">
-                {% for lo in module_rep.module_learning_objectives %}
+                {% for lo in module.learning_objectives %}
                 <li>{{ lo }}</li>
                 {% endfor %}
               </ul>

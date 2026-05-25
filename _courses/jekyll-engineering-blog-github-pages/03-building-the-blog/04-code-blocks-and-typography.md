@@ -1,19 +1,9 @@
 ---
-course_slug: jekyll-engineering-blog-github-pages
-module_slug: building-the-blog
-chapter_slug: code-blocks-and-typography
-module_dir: 03-building-the-blog
-chapter_filename: 04-code-blocks-and-typography
-module_id: 3
 chapter_id: 4
-module_title: "Applied: Building the blog itself"
+chapter_slug: code-blocks-and-typography
 chapter_title: "Code blocks, syntax highlighting (Rouge), and engineering-friendly typography"
 chapter_summary: "Treats code blocks as the centrepiece of an engineering blog: how Rouge tokenises fenced code, generating a theme stylesheet with `rougify style`, when to reach for the `highlight` Liquid tag for line numbers, and a small vanilla-JS include for copy-to-clipboard. Includes guidance on monospace-vs-body type sizing and inline-vs-block code styling."
 ---
-
-# Code Blocks, Syntax Highlighting (Rouge), and Engineering-Friendly Typography
-
-> Module 3 · Chapter 4 - Applied: Building the blog itself
 
 ## What you'll learn
 - How Rouge - Jekyll's default highlighter - tokenises fenced code, and what controls the CSS classes it emits.

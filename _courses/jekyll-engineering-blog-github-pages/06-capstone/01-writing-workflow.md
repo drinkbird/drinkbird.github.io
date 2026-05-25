@@ -1,26 +1,9 @@
 ---
-course_slug: jekyll-engineering-blog-github-pages
-module_slug: capstone
-chapter_slug: writing-workflow
-module_dir: 06-capstone
-chapter_filename: 01-writing-workflow
-module_id: 6
 chapter_id: 1
-module_title: "Capstone: Workflow, polish, and what's next"
+chapter_slug: writing-workflow
 chapter_title: "Writing workflow - drafts, scheduled posts, and an editor setup that doesn't fight you"
 chapter_summary: "A sustainable writing workflow built on `_drafts/`, `jekyll serve --drafts --future`, an editor that doesn't fight you (VS Code Front Matter, Obsidian, iA Writer, Typora), and a `new-post` shell function that stamps out a post with valid front matter and promotes drafts via `git mv` to preserve history."
-module_summary: "Make the blog something you can sustain - a writing workflow that fits your editor, CI guardrails for prose, performance and accessibility passes, and a sense of when to grow further."
-module_learning_objectives:
-  - "Set up a writing workflow that respects drafts and scheduled posts"
-  - "Add editorial CI: link checking, HTML validation, spell check"
-  - "Run a meaningful performance audit and act on it"
-  - "Pass an accessibility check and implement dark mode well"
-  - "Decide what to invest in next (search, comments, newsletter)"
 ---
-
-# Writing Workflow - Drafts, Scheduled Posts, and an Editor That Doesn't Fight You
-
-> Module 6 · Chapter 1 - Capstone: Workflow, polish, and what's next
 
 ## What you'll learn
 - How `_drafts/` differs from `_posts/` and why drafts don't need dates.

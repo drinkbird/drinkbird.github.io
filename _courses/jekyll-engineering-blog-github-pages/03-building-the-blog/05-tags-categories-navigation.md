@@ -1,19 +1,9 @@
 ---
-course_slug: jekyll-engineering-blog-github-pages
-module_slug: building-the-blog
-chapter_slug: tags-categories-navigation
-module_dir: 03-building-the-blog
-chapter_filename: 05-tags-categories-navigation
-module_id: 3
 chapter_id: 5
-module_title: "Applied: Building the blog itself"
+chapter_slug: tags-categories-navigation
 chapter_title: "Tags, categories, and post navigation that actually helps readers"
 chapter_summary: "Adds tags and categories thoughtfully - one category per post, two or three tags, three-post minimum before introducing a tag. Builds a tag index page with a single Liquid loop over `site.tags`, wires up `page.previous`/`page.next` navigation, and introduces a `series:` + `series_order:` front-matter pattern for ordered multi-post sequences."
 ---
-
-# Tags, Categories, and Post Navigation That Actually Helps Readers
-
-> Module 3 · Chapter 5 - Applied: Building the blog itself
 
 ## What you'll learn
 - When tags help readers and when they create dead pages with one post each.

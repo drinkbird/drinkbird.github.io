@@ -1,21 +1,11 @@
 ---
-course_slug: jekyll-engineering-blog-github-pages
-module_slug: foundations
-chapter_slug: anatomy-of-a-jekyll-site
-module_dir: 01-foundations
-chapter_filename: 03-anatomy-of-a-jekyll-site
-module_id: 1
 chapter_id: 3
-module_title: "Foundations: From web pages to a Jekyll site"
+chapter_slug: anatomy-of-a-jekyll-site
 chapter_title: "Anatomy of a Jekyll site: directory layout and `_config.yml`"
 chapter_summary: "Tours the conventional Jekyll directory tree, distinguishing special (underscore-prefixed) directories from regular content, and explains what belongs in `_layouts`, `_includes`, `_posts`, `_drafts`, `_data`, `_site`, and `assets`. Walks through the `_config.yml` keys that matter on day one (`title`, `description`, `url`, `baseurl`, `markdown`, `permalink`, `plugins`) and the gitignore rules around `_site/`."
 ---
 
 {% raw %}
-# Anatomy of a Jekyll Site: Directory Layout and `_config.yml`
-
-> Module 1 · Chapter 3 - Foundations: From web pages to a Jekyll site
-
 ## What you'll learn
 - What each top-level directory in a Jekyll project is for, and which Jekyll treats specially.
 - The handful of `_config.yml` keys that matter on day one.

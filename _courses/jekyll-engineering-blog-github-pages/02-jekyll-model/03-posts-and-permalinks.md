@@ -1,19 +1,9 @@
 ---
-course_slug: jekyll-engineering-blog-github-pages
-module_slug: jekyll-model
-chapter_slug: posts-and-permalinks
-module_dir: 02-jekyll-model
-chapter_filename: 03-posts-and-permalinks
-module_id: 2
 chapter_id: 3
-module_title: "The Jekyll model: Layouts, Liquid, and content"
+chapter_slug: posts-and-permalinks
 chapter_title: "The `_posts` collection and designing your permalink structure"
 chapter_summary: "Frames `_posts/` as the built-in collection with its filename contract, walks through permalink placeholders, and argues for `/blog/:year/:month/:slug/` over the default. Covers trailing-slash semantics, per-collection `defaults:` blocks, and using `jekyll-redirect-from` to migrate URLs safely."
 ---
-
-# The `_posts` Collection and Designing Your Permalink Structure
-
-> Module 2 · Chapter 3 - The Jekyll model: Layouts, Liquid, and content
 
 ## What you'll learn
 - Why `_posts/` is a built-in collection, and what that buys you compared to a plain folder.

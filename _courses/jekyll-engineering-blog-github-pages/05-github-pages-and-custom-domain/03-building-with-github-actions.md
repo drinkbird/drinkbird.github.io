@@ -1,21 +1,11 @@
 ---
-course_slug: jekyll-engineering-blog-github-pages
-module_slug: github-pages-and-custom-domain
-chapter_slug: building-with-github-actions
-module_dir: 05-github-pages-and-custom-domain
-chapter_filename: 03-building-with-github-actions
-module_id: 5
 chapter_id: 3
-module_title: "GitHub Pages and a custom domain"
+chapter_slug: building-with-github-actions
 chapter_title: "Building with GitHub Actions for full plugin support"
 chapter_summary: "Provides a complete `.github/workflows/pages.yml` using `actions/configure-pages`, `actions/upload-pages-artifact`, and `actions/deploy-pages` with `ruby/setup-ruby` and `bundler-cache`. Explains the required `pages: write` and `id-token: write` permissions, the `github-pages` environment, build/deploy job split, concurrency control, and `JEKYLL_ENV=production`."
 ---
 
 {% raw %}
-# Building with GitHub Actions for Full Plugin Support
-
-> Module 5 · Chapter 3 - GitHub Pages and a custom domain
-
 ## What you'll learn
 - The three official actions that make up a Pages deploy from Actions: `configure-pages`, `upload-pages-artifact`, `deploy-pages`.
 - How to set up Ruby and cache Bundler so re-runs take seconds, not minutes.

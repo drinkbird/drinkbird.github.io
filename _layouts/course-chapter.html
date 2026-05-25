@@ -1,56 +1,57 @@
 ---
 layout: default
 ---
-{% assign course_index  = site.courses | where: "course_slug", page.course_slug | where_exp: "p", "p.chapter_id == nil" | first %}
-{% assign chapter_pages = site.courses | where: "course_slug", page.course_slug | where_exp: "p", "p.chapter_id" %}
-{% assign module_reps   = chapter_pages | where: "chapter_id", 1 %}
-{% assign quiz          = site.data.quizzes[page.course_slug][page.module_dir][page.chapter_filename] %}
+{% include course-page-context.html %}
+{% assign quiz = site.data.quizzes[cpc_course_slug][cpc_module_dir][cpc_chapter_filename] %}
 
 {% comment %} Find prev/next by walking the flat, path-ordered list of chapter pages. {% endcomment %}
 {% assign current_idx = -1 %}
-{% for cp in chapter_pages %}
+{% for cp in cpc_chapter_pages %}
   {% if cp.url == page.url %}{% assign current_idx = forloop.index0 %}{% endif %}
 {% endfor %}
 {% assign prev_chapter = nil %}
 {% assign next_chapter = nil %}
 {% if current_idx > 0 %}
   {% assign prev_idx     = current_idx | minus: 1 %}
-  {% assign prev_chapter = chapter_pages[prev_idx] %}
+  {% assign prev_chapter = cpc_chapter_pages[prev_idx] %}
 {% endif %}
-{% assign last_idx = chapter_pages.size | minus: 1 %}
+{% assign last_idx = cpc_chapter_pages.size | minus: 1 %}
 {% if current_idx >= 0 and current_idx < last_idx %}
   {% assign next_idx     = current_idx | plus: 1 %}
-  {% assign next_chapter = chapter_pages[next_idx] %}
+  {% assign next_chapter = cpc_chapter_pages[next_idx] %}
 {% endif %}
 
 <div class="container course-layout">
   <div class="course-layout-grid">
-    {% include course-sidebar.html course_index=course_index chapter_pages=chapter_pages module_reps=module_reps %}
+    {% include course-sidebar.html course_index=cpc_course_index chapter_pages=cpc_chapter_pages %}
 
     <main class="course-main">
       <header class="course-print-header" aria-hidden="true">
         <span class="course-print-site">{{ site.title }}</span>
         <span class="course-print-sep">·</span>
-        <span class="course-print-course">{{ course_index.title }}</span>
+        <span class="course-print-course">{{ cpc_course_index.title }}</span>
       </header>
 
       <nav class="course-breadcrumbs" aria-label="Breadcrumb">
         <a href="{{ site.baseurl }}/courses/">Courses</a>
         <span aria-hidden="true">›</span>
-        <a href="{{ site.baseurl }}/courses/{{ page.course_slug }}/">{{ course_index.title | truncate: 60 }}</a>
+        <a href="{{ site.baseurl }}/courses/{{ cpc_course_slug }}/">{{ cpc_course_index.title | truncate: 60 }}</a>
         <span aria-hidden="true">›</span>
-        <span>Module {{ page.module_id }} · Chapter {{ page.chapter_id }}</span>
+        <span>Module {{ cpc_module.id }} · Chapter {{ page.chapter_id }}</span>
       </nav>
 
-      <div class="course-chapter-byline">
-        {% include author-inline.html verb="Produced by" %}
-      </div>
-
       <article class="course-content post-content"
-               data-course-slug="{{ page.course_slug }}"
-               data-module-slug="{{ page.module_slug }}"
+               data-course-slug="{{ cpc_course_slug }}"
+               data-module-slug="{{ cpc_module.slug }}"
                data-chapter-slug="{{ page.chapter_slug }}"
-               data-chapter-key="{{ page.course_slug }}/{{ page.module_slug }}/{{ page.chapter_slug }}">
+               data-chapter-key="{{ cpc_course_slug }}/{{ cpc_module.slug }}/{{ page.chapter_slug }}">
+        <header class="course-chapter-header">
+          <h1 class="course-chapter-title">{{ page.chapter_title }}</h1>
+          <p class="course-chapter-module">Module {{ cpc_module.id }} · Chapter {{ page.chapter_id }} - {{ cpc_module.title }}</p>
+        </header>
+        <div class="course-chapter-byline">
+          {% include author-inline.html verb="Produced by" producer=cpc_course_index.producer %}
+        </div>
         <div class="course-content-body post-body">
           {{ content }}
         </div>

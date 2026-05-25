@@ -1,19 +1,9 @@
 ---
-course_slug: jekyll-engineering-blog-github-pages
-module_slug: production-polish
-chapter_slug: privacy-friendly-analytics
-module_dir: 04-production-polish
-chapter_filename: 04-privacy-friendly-analytics
-module_id: 4
 chapter_id: 4
-module_title: "Production polish: SEO, social, feeds, analytics"
+chapter_slug: privacy-friendly-analytics
 chapter_title: "Privacy-friendly analytics (Plausible, Umami, or GoatCounter)"
 chapter_summary: "Compares Plausible (SaaS-first), Umami (self-host-friendly), and GoatCounter (minimalist) as cookie-free analytics; shows a config-gated include pattern so dev traffic doesn't pollute production; and reframes useful metrics vs vanity for a blog."
 ---
-
-# Privacy-Friendly Analytics (Plausible, Umami, or GoatCounter)
-
-> Module 4 · Chapter 4 - Production polish: SEO, social, feeds, analytics
 
 ## What you'll learn
 - Why Google Analytics is the wrong default for a personal blog - practically, legally, and ethically.

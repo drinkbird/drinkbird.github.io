@@ -1,19 +1,9 @@
 ---
-course_slug: jekyll-engineering-blog-github-pages
-module_slug: production-polish
-chapter_slug: rss-feeds
-module_dir: 04-production-polish
-chapter_filename: 03-rss-feeds
-module_id: 4
 chapter_id: 3
-module_title: "Production polish: SEO, social, feeds, analytics"
+chapter_slug: rss-feeds
 chapter_title: "RSS feeds via `jekyll-feed` and giving readers a way to subscribe"
 chapter_summary: "Adds `jekyll-feed` for an Atom feed at `/feed.xml`, configures per-collection feeds, argues for full-content over excerpt-only on engineering blogs, and wires up autodiscovery plus a visible Subscribe link."
 ---
-
-# RSS Feeds via `jekyll-feed` and Giving Readers a Way to Subscribe
-
-> Module 4 · Chapter 3 - Production polish: SEO, social, feeds, analytics
 
 ## What you'll learn
 - What `jekyll-feed` generates (it's Atom, not RSS 2.0 - and that's fine).

@@ -1,19 +1,9 @@
 ---
-course_slug: jekyll-engineering-blog-github-pages
-module_slug: github-pages-and-custom-domain
-chapter_slug: custom-domain-and-dns
-module_dir: 05-github-pages-and-custom-domain
-chapter_filename: 04-custom-domain-and-dns
-module_id: 5
 chapter_id: 4
-module_title: "GitHub Pages and a custom domain"
+chapter_slug: custom-domain-and-dns
 chapter_title: "Buying and pointing a custom domain: DNS records, apex vs `www`, the `CNAME` file"
 chapter_summary: "Walks through registrar choice (Cloudflare/Porkbun/Namecheap), the DNS records GitHub requires - four `A` + four `AAAA` for the apex and a `CNAME` for `www`, with strict instructions to copy IPs only from the live GitHub docs - and the role of the repo's `CNAME` file. Covers canonical hostname choice, short TTLs during config, and `dig +short` verification."
 ---
-
-# Buying and Pointing a Custom Domain: DNS Records, Apex vs `www`, the `CNAME` File
-
-> Module 5 · Chapter 4 - GitHub Pages and a custom domain
 
 ## What you'll learn
 - Which registrars are sane choices for a personal domain, and what to ignore at sign-up.

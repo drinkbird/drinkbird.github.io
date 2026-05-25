@@ -1,19 +1,9 @@
 ---
-course_slug: jekyll-engineering-blog-github-pages
-module_slug: foundations
-chapter_slug: front-matter-and-first-post
-module_dir: 01-foundations
-chapter_filename: 04-front-matter-and-first-post
-module_id: 1
 chapter_id: 4
-module_title: "Foundations: From web pages to a Jekyll site"
+chapter_slug: front-matter-and-first-post
 chapter_title: "Front matter, Markdown, and writing your first post"
 chapter_summary: "Covers YAML front matter, the `YYYY-MM-DD-slug.md` filename convention for posts, the kramdown dialect (attribute lists, footnotes, intra-word underscore gotchas), and the `_drafts/` plus `--drafts` workflow. Reader writes a real draft post, previews it, and publishes it via `git mv` into `_posts/`."
 ---
-
-# Front Matter, Markdown, and Writing Your First Post
-
-> Module 1 · Chapter 4 - Foundations: From web pages to a Jekyll site
 
 ## What you'll learn
 - What YAML front matter is, the keys you'll set on every post, and what they control.

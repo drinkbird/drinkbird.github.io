@@ -1,19 +1,9 @@
 ---
-course_slug: jekyll-engineering-blog-github-pages
-module_slug: capstone
-chapter_slug: performance-audit
-module_dir: 06-capstone
-chapter_filename: 03-performance-audit
-module_id: 6
 chapter_id: 3
-module_title: "Capstone: Workflow, polish, and what's next"
+chapter_slug: performance-audit
 chapter_title: "Performance audit - Lighthouse, font loading, and the things that actually matter"
 chapter_summary: "Running Lighthouse against the live blog and fixing the few things that actually move Core Web Vitals - self-hosting fonts as `.woff2` with `font-display: swap`, preloading the LCP weight, setting `width`/`height` on every image to eliminate CLS, and accepting GitHub Pages' default cache headers."
 ---
-
-# Performance Audit - Lighthouse, Font Loading, and the Things That Actually Matter
-
-> Module 6 · Chapter 3 - Capstone: Workflow, polish, and what's next
 
 ## What you'll learn
 - The three Core Web Vitals - LCP, CLS, INP - and which ones matter on a static blog.

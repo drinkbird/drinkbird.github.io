@@ -1,15 +1,21 @@
 {% comment %}
   Inputs:
-    include.course_index  - the course's index.md page doc (front matter holds course-level metadata)
-    include.chapter_pages - site.courses docs filtered to chapters of this course (path-sorted)
-    include.module_reps   - chapter pages with chapter_id == 1, one per module (path-sorted = module order)
-    page.module_slug      - set on chapter pages; absent on the course landing
-    page.chapter_slug     - set on chapter pages; absent on the course landing
+    include.course_index  - the course's index.md doc; .modules holds the
+                            ordered list of {id, slug, dir, title, ...}
+    include.chapter_pages - site.courses docs filtered to chapters of this
+                            course (path-sorted; excludes the index)
+
+  Chapter pages no longer carry module_id/module_slug/module_title on their
+  front matter. We group them by matching module.dir against chapter.path.
 {% endcomment %}
-{% assign course_index   = include.course_index %}
-{% assign course_slug    = course_index.course_slug %}
-{% assign chapter_pages  = include.chapter_pages %}
-{% assign module_reps    = include.module_reps %}
+{% assign course_index  = include.course_index %}
+{% assign course_slug   = course_index.course_slug %}
+{% assign chapter_pages = include.chapter_pages %}
+{% comment %} Derive the current module's dir from the page path for the
+   highlighted-module affordance. On the course-index page this is "index.md"
+   and never matches any module dir, so no module is highlighted. {% endcomment %}
+{% assign sidebar_path_parts = page.path | split: "/" %}
+{% assign current_module_dir = sidebar_path_parts[2] %}
 
 <aside class="course-sidebar" data-course-slug="{{ course_slug }}">
   <button type="button" class="course-sidebar-toggle" aria-controls="course-sidebar-inner" aria-expanded="false">
@@ -28,24 +34,25 @@
     </div>
 
     <ol class="course-modules">
-      {% for module_rep in module_reps %}
+      {% for module in course_index.modules %}
+        {% capture mod_path_prefix %}/{{ module.dir }}/{% endcapture %}
+        {% assign module_chapters = chapter_pages | where_exp: "p", "p.path contains mod_path_prefix" | sort: "chapter_id" %}
         {% assign module_is_current = false %}
-        {% if module_rep.module_slug == page.module_slug %}{% assign module_is_current = true %}{% endif %}
-        {% assign module_chapters = chapter_pages | where: "module_id", module_rep.module_id | sort: "chapter_id" %}
+        {% if current_module_dir == module.dir %}{% assign module_is_current = true %}{% endif %}
         <li class="course-module{% if module_is_current %} is-current{% endif %}">
           <h3 class="course-module-title">
-            <span class="course-module-id">Module {{ module_rep.module_id }}</span>
-            <span class="course-module-name">{{ module_rep.module_title }}</span>
+            <span class="course-module-id">Module {{ module.id }}</span>
+            <span class="course-module-name">{{ module.title }}</span>
           </h3>
           <ol class="course-chapters">
             {% for chapter_page in module_chapters %}
               {% assign chapter_is_current = false %}
-              {% if chapter_page.module_slug == page.module_slug and chapter_page.chapter_slug == page.chapter_slug %}{% assign chapter_is_current = true %}{% endif %}
+              {% if chapter_page.url == page.url %}{% assign chapter_is_current = true %}{% endif %}
               <li class="course-chapter{% if chapter_is_current %} is-current{% endif %}"
-                  data-course-progress-key="{{ course_slug }}/{{ chapter_page.module_slug }}/{{ chapter_page.chapter_slug }}">
+                  data-course-progress-key="{{ course_slug }}/{{ module.slug }}/{{ chapter_page.chapter_slug }}">
                 <a href="{{ site.baseurl }}{{ chapter_page.url }}">
                   <span class="course-chapter-status" aria-hidden="true"></span>
-                  <span class="course-chapter-id">{{ chapter_page.module_id }}.{{ chapter_page.chapter_id }}</span>
+                  <span class="course-chapter-id">{{ module.id }}.{{ chapter_page.chapter_id }}</span>
                   <span class="course-chapter-title">{{ chapter_page.chapter_title }}</span>
                 </a>
               </li>

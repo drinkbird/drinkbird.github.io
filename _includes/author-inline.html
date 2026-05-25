@@ -1,19 +1,42 @@
+{% comment %}
+  Inline byline: photo + name + title, optionally prefixed with a verb.
+
+  Inputs:
+    include.verb       - optional, defaults to "Written by"
+    include.producer   - optional override object with {name, title, photo, url}.
+                         Treated as a unit: when set, ALL four fields come from
+                         it (no per-field fallback to site.owner).
+
+  Default = site.owner (configured in _config.yml).
+  url is treated as-is; prepend with {{ site.baseurl }} for site-internal paths
+  (the default /about does this) and leave external URLs untouched.
+{% endcomment %}
+{% if include.producer %}
+  {% assign producer = include.producer %}
+  {% assign producer_url = producer.url %}
+{% else %}
+  {% assign producer = site.owner %}
+  {% capture producer_url %}{{ site.baseurl }}{{ producer.url }}{% endcapture %}
+{% endif %}
+
 <div class="author-inline">
     <figure>
         <div>
-            <a href="{{ site.baseurl }}/about">
+            <a href="{{ producer_url }}">
                 <div>
-                    <img src="/assets/media/drinkbird_shot.jpg" class="img-circle" alt="Anastasios Piotopoulos">
+                    <img src="{{ producer.photo }}" class="img-circle" alt="{{ producer.name }}">
                 </div>
             </a>
         </div>
         <figcaption>
             <div class="name">
-                {{ include.verb | default: "Written by" }} <a href="{{ site.baseurl }}/about">Tasos Piotopoulos</a>
+                {{ include.verb | default: "Written by" }} <a href="{{ producer_url }}">{{ producer.name }}</a>
             </div>
+            {% if producer.title %}
             <div class="title">
-                Lead Engineer | MBA Candidate | M.Sc. Software Engineering &amp; Ubicomp
+                {{ producer.title }}
             </div>
+            {% endif %}
         </figcaption>
     </figure>
 </div>

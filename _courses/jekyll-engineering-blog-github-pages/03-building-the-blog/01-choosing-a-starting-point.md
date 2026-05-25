@@ -1,28 +1,11 @@
 ---
-course_slug: jekyll-engineering-blog-github-pages
-module_slug: building-the-blog
-chapter_slug: choosing-a-starting-point
-module_dir: 03-building-the-blog
-chapter_filename: 01-choosing-a-starting-point
-module_id: 3
 chapter_id: 1
-module_title: "Applied: Building the blog itself"
+chapter_slug: choosing-a-starting-point
 chapter_title: "Choosing a starting point - `minima`, a community theme, or from scratch"
 chapter_summary: "Compares the three real starting points for an engineering blog - the default `minima` gem theme, a richer community theme (Chirpy, al-folio), and a blank from-scratch site - and recommends starting with `minima` plus selective overrides. Shows how to locate a gem theme's files on disk via `bundle info` and what signals indicate you've outgrown a theme."
-module_summary: "Use the Jekyll model to build the actual blog - pick a starting point, customise it tastefully, and shape the reader's path through the site."
-module_learning_objectives:
-  - "Choose between a starter theme and building from scratch"
-  - "Override theme files without forking the whole gem"
-  - "Design the homepage, post page, and archive deliberately"
-  - "Set up code blocks and typography suited to engineering writing"
-  - "Build helpful navigation with tags and categories"
 ---
 
 {% raw %}
-# Choosing a Starting Point - `minima`, a Community Theme, or From Scratch
-
-> Module 3 · Chapter 1 - Applied: Building the blog itself
-
 ## What you'll learn
 - The three real starting points for an engineering blog and where each one breaks.
 - How gem-based themes work - and why most of the theme's files are invisible until you override them.

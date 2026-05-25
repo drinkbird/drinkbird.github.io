@@ -8,16 +8,18 @@
 //
 // course.json is read for metadata only - it is NOT copied into the blog.
 // Course / module / chapter metadata is materialised onto Jekyll front matter
-// so the blog has a single source per file and no JSON intermediate:
+// so the blog has no JSON intermediate. Chapter md carries only chapter-
+// unique data; everything shared at course or module level lives on the
+// course's index.md, and everything derivable from page.path is derived at
+// render time via _includes/course-page-context.html.
 //
-//   index.md (course-level): layout, course_slug, permalink, title, image,
-//                            description, last_updated, depth, goal,
-//                            time_budget, created_at
-//   chapter md (every):      course_slug, module_slug, chapter_slug,
-//                            module_dir, chapter_filename, module_id,
-//                            chapter_id, module_title, chapter_title,
-//                            chapter_summary
-//   chapter md (chapter 1):  + module_summary, module_learning_objectives
+//   index.md (course-level):  layout, course_slug, permalink, title, image,
+//                             description, last_updated, depth, goal,
+//                             time_budget, created_at, producer (optional),
+//                             modules: [ {id, slug, dir, title, summary,
+//                             learning_objectives} ]
+//   chapter md (lean):        chapter_id, chapter_slug, chapter_title,
+//                             chapter_summary
 //
 // Bodies are wrapped in {% raw %}...{% endraw %} so Liquid syntax in prose
 // renders literally; the wrap is skipped if the body already contains raw
@@ -74,39 +76,52 @@ function yamlArrayLines(key, items) {
   return out.join("\n");
 }
 
-function buildChapterFrontMatter(course, module_, chapter, moduleDir, chapterFilename) {
+// Lean chapter front matter: only fields that are unique to this chapter.
+// Course-level + module-level metadata lives on the course's index.md
+// (modules: array); everything else is derivable from page.path at render
+// time via _includes/course-page-context.html.
+function buildChapterFrontMatter(chapter) {
   const lines = [
     "---",
-    "course_slug: " + course.slug,
-    "module_slug: " + module_.slug,
-    "chapter_slug: " + chapter.slug,
-    "module_dir: " + moduleDir,
-    "chapter_filename: " + chapterFilename,
-    "module_id: " + module_.id,
     "chapter_id: " + chapter.id,
-    "module_title: " + yamlString(normalize(module_.title)),
+    "chapter_slug: " + chapter.slug,
     "chapter_title: " + yamlString(normalize(chapter.title)),
   ];
   if (chapter.summary) {
     lines.push("chapter_summary: " + yamlString(normalize(chapter.summary)));
   }
-  // Module-level metadata lives on chapter 1 of each module (the
-  // representative pattern), so course-index and sidebar templates can read
-  // it without duplicating across every chapter in the module.
-  if (chapter.id === 1) {
-    if (module_.summary) {
-      lines.push("module_summary: " + yamlString(normalize(module_.summary)));
-    }
-    if (Array.isArray(module_.learning_objectives) && module_.learning_objectives.length > 0) {
-      lines.push(yamlArrayLines("module_learning_objectives", module_.learning_objectives));
-    }
-  }
   lines.push("---", "", "");
   return lines.join("\n");
 }
 
+// Strip the leading `# Chapter Title` H1 and the immediately-following
+// `> Module X · Chapter Y - Module title` blockquote, both of which are now
+// rendered from the layout off front matter (so the body would otherwise show
+// duplicate headers). Bounded to the very start of body content (after blanks
+// and an optional `{% raw %}` opener) - idempotent and safe against stray
+// `# ...` or `> ...` lines later in the body (code blocks, examples).
+function stripBodyHeader(body) {
+  const lines = body.split("\n");
+  let i = 0;
+  while (i < lines.length && lines[i].trim() === "") i++;
+  if (i < lines.length && /^\{%\s*raw\s*%\}\s*$/.test(lines[i])) {
+    i++;
+    while (i < lines.length && lines[i].trim() === "") i++;
+  }
+  if (i >= lines.length || !/^#\s+/.test(lines[i])) return body;
+  const h1Idx = i;
+  i++;
+  while (i < lines.length && lines[i].trim() === "") i++;
+  if (i < lines.length && /^>\s+/.test(lines[i])) {
+    i++;
+    if (i < lines.length && lines[i].trim() === "") i++;
+  }
+  return lines.slice(0, h1Idx).concat(lines.slice(i)).join("\n");
+}
+
 function wrapBody(body) {
-  const trimmed = body.replace(/^﻿/, "").replace(/\s+$/g, "");
+  const stripped = stripBodyHeader(body);
+  const trimmed = stripped.replace(/^﻿/, "").replace(/\s+$/g, "");
   const normalized = normalize(trimmed);
   if (/\{%\s*(raw|endraw)\s*%\}/.test(normalized)) {
     return normalized + "\n";
@@ -116,6 +131,30 @@ function wrapBody(body) {
 
 function ensureDir(dir) {
   fs.mkdirSync(dir, { recursive: true });
+}
+
+// index.md carries the full course-level metadata AND the modules: array
+// (structural data that the templates iterate). On a first import it is
+// generated; on subsequent imports it is left alone so hand-edits survive.
+// To refresh the modules array after Sapling has changed, delete index.md
+// and re-run.
+function buildModulesYaml(modules) {
+  const lines = ["modules:"];
+  for (const m of modules) {
+    const moduleDir = pad2(m.id) + "-" + m.slug;
+    lines.push("  - id: " + m.id);
+    lines.push("    slug: " + m.slug);
+    lines.push("    dir: " + moduleDir);
+    lines.push("    title: " + yamlString(normalize(m.title)));
+    if (m.summary) lines.push("    summary: " + yamlString(normalize(m.summary)));
+    if (Array.isArray(m.learning_objectives) && m.learning_objectives.length > 0) {
+      lines.push("    learning_objectives:");
+      for (const lo of m.learning_objectives) {
+        lines.push("      - " + yamlString(normalize(lo)));
+      }
+    }
+  }
+  return lines.join("\n");
 }
 
 function writePlaceholderIndex(destSlugDir, course) {
@@ -140,6 +179,7 @@ function writePlaceholderIndex(destSlugDir, course) {
     lines.push("time_budget: " + yamlString(course.answers.time_budget));
   }
   if (course.created_at) lines.push("created_at: " + course.created_at);
+  lines.push(buildModulesYaml(course.modules || []));
   lines.push("---", "", goal, "");
   fs.writeFileSync(indexPath, lines.join("\n"));
   return true;
@@ -196,7 +236,7 @@ function main() {
         chaptersSkipped++;
       } else {
         const body = fs.readFileSync(srcMd, "utf8");
-        const front = buildChapterFrontMatter(course, module_, chapter, moduleDir, chapterFilename);
+        const front = buildChapterFrontMatter(chapter);
         fs.writeFileSync(destMd, front + wrapBody(body));
         chaptersWritten++;
       }

@@ -1,19 +1,9 @@
 ---
-course_slug: jekyll-engineering-blog-github-pages
-module_slug: production-polish
-chapter_slug: images-and-page-weight
-module_dir: 04-production-polish
-chapter_filename: 05-images-and-page-weight
-module_id: 4
 chapter_id: 5
-module_title: "Production polish: SEO, social, feeds, analytics"
+chapter_slug: images-and-page-weight
 chapter_title: "Images - responsive sizes, lazy loading, and a sensible page-weight budget"
 chapter_summary: "Sets a page-weight budget, recommends WebP as the default format, walks through `srcset`/`sizes`/`loading=\"lazy\"` with a reusable `_includes/figure.html`, contrasts manual exports with `jekyll-picture-tag`, and enforces the budget with Lighthouse CI."
 ---
-
-# Images - Responsive Sizes, Lazy Loading, and a Sensible Page-Weight Budget
-
-> Module 4 · Chapter 5 - Production polish: SEO, social, feeds, analytics
 
 ## What you'll learn
 - Why images are the page-weight problem on most blogs and the budget worth aiming for.

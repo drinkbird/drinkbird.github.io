@@ -1,19 +1,9 @@
 ---
-course_slug: jekyll-engineering-blog-github-pages
-module_slug: github-pages-and-custom-domain
-chapter_slug: repo-setup-and-deploy-source
-module_dir: 05-github-pages-and-custom-domain
-chapter_filename: 02-repo-setup-and-deploy-source
-module_id: 5
 chapter_id: 2
-module_title: "GitHub Pages and a custom domain"
+chapter_slug: repo-setup-and-deploy-source
 chapter_title: "Repo setup: user-site vs project-site, branches, and the deploy source"
 chapter_summary: "Covers the user-site (`<username>.github.io`) vs project-site repo shapes, the role of `url:` and `baseurl:` in `_config.yml`, and the three deploy sources (branch, `/docs`, GitHub Actions). Clarifies that `gh-pages` is a legacy convention and shows where the built-in build's logs surface in the Actions tab."
 ---
-
-# Repo Setup: User-Site vs Project-Site, Branches, and the Deploy Source
-
-> Module 5 · Chapter 2 - GitHub Pages and a custom domain
 
 ## What you'll learn
 - The difference between a user (or organisation) site and a project site, and which one a personal blog wants.

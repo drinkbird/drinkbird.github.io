@@ -1,19 +1,9 @@
 ---
-course_slug: jekyll-engineering-blog-github-pages
-module_slug: building-the-blog
-chapter_slug: designing-homepage-post-archive
-module_dir: 03-building-the-blog
-chapter_filename: 03-designing-homepage-post-archive
-module_id: 3
 chapter_id: 3
-module_title: "Applied: Building the blog itself"
+chapter_slug: designing-homepage-post-archive
 chapter_title: "Designing the homepage, post page, and archive"
 chapter_summary: "Designs the three pages every blog has: a homepage with a `featured: true`-driven 'selected' list plus a recent list, a post page with capped reading-line length and rhythmic typography, and a year-grouped archive built with `group_by_exp`. Covers `excerpt_separator` and per-post `excerpt:` front matter for varied list pages."
 ---
-
-# Designing the Homepage, Post Page, and Archive
-
-> Module 3 · Chapter 3 - Applied: Building the blog itself
 
 ## What you'll learn
 - How to give the homepage a deliberate hierarchy with a "selected" list and a "recent" list.

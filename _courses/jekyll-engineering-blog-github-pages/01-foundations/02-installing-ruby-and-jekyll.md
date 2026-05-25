@@ -1,19 +1,9 @@
 ---
-course_slug: jekyll-engineering-blog-github-pages
-module_slug: foundations
-chapter_slug: installing-ruby-and-jekyll
-module_dir: 01-foundations
-chapter_filename: 02-installing-ruby-and-jekyll
-module_id: 1
 chapter_id: 2
-module_title: "Foundations: From web pages to a Jekyll site"
+chapter_slug: installing-ruby-and-jekyll
 chapter_title: "Installing Ruby and Jekyll locally (just enough Ruby)"
 chapter_summary: "Walks through installing a managed Ruby via rbenv (with one-paragraph notes on asdf) on macOS and Linux, explains why the system Ruby is off-limits, and scaffolds a working site with `jekyll new`. Covers Bundler and the Gemfile at surface level only, and establishes the `bundle exec jekyll serve` habit."
 ---
-
-# Installing Ruby and Jekyll Locally (Just Enough Ruby)
-
-> Module 1 · Chapter 2 - Foundations: From web pages to a Jekyll site
 
 ## What you'll learn
 - Why not to use the Ruby that came pre-installed on your machine.
