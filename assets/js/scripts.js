@@ -25,21 +25,24 @@ $(function() {
 
     $(".book-aside a[href^='http://amazon.com/'], .book-inarticle a[href^='http://amazon.com/']").find('h4').append(' <span class="header-suffix"><i class="fab fa-amazon"></i></span>');
 
-    // Rotating word effect
-    var curNewsIndex = 0;
-    var newsArray = ["Create","Inspire","Collaborate","Disrupt","Evolve","Learn","Think","Build","Ship","Design","Analyze","Plan","Code","Produce","Follow","Refine","Deploy","Solve","Test","Appreciate","Craft","Share","Monetize","Consolidate"];
-
-    function setTickerNews(word) {
-        $("#c").html(word + "<span>.<\/span>");
-    }
-
-    function advanceNewsItem() {
-        setTickerNews(newsArray[curNewsIndex]);
-        curNewsIndex++;
-        curNewsIndex >= newsArray.length && (curNewsIndex = 0);
-    }
-
-    if ($("#c").length) {
-        setInterval(advanceNewsItem, 150);
+    // Hero destination-word rotator — strobes and freezes on "leaders".
+    var heroRotator = document.querySelector('.c-rotator');
+    if (heroRotator) {
+        var heroWords = [
+            "mentors", "builders", "owners", "coaches", "shapers", "crafters",
+            "thinkers", "doers", "shippers", "architects", "creators", "catalysts",
+            "multipliers", "teachers", "communicators", "collaborators", "strategists",
+            "educators", "storytellers", "designers", "partners", "pragmatists",
+            "changemakers", "leaders"
+        ];
+        var heroIndex = -1;
+        var heroInterval = setInterval(function () {
+            heroIndex++;
+            if (heroIndex >= heroWords.length) {
+                clearInterval(heroInterval);
+                return;
+            }
+            heroRotator.textContent = heroWords[heroIndex];
+        }, 150);
     }
 });
