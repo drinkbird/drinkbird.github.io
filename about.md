@@ -35,13 +35,33 @@ If any of that resonates, here's where to go from here:
 
 <ul class="list-inline gallery">
     <li>
-        <a href="{{ site.baseurl }}/images/mdb-discovery-2026.png" class="image-popup mfp-with-zoom" title="At MongoDB's Opening Doors to Discovery event, 2026">
-            <img src="{{ site.baseurl }}/images/mdb-discovery-2026-150x150.jpg" />
+        <a href="{{ site.baseurl }}/images/tu-presentation-2026.jpeg" class="image-popup mfp-with-zoom" title="Guest speaker at TU Dublin's C++ Society, Dublin 2026">
+            <img src="{{ site.baseurl }}/images/tu-presentation-2026-150x150.jpg" />
         </a>
     </li>
     <li>
-        <a href="{{ site.baseurl }}/images/tu-presentation-2026.jpeg" class="image-popup mfp-with-zoom" title="Guest speaker at TU Dublin's C++ Society, Dublin 2026">
-            <img src="{{ site.baseurl }}/images/tu-presentation-2026-150x150.jpg" />
+        <a href="{{ site.baseurl }}/images/mdb-discovery-2025.png" class="image-popup mfp-with-zoom" title="At MongoDB's Opening Doors to Discovery event, 2025">
+            <img src="{{ site.baseurl }}/images/mdb-discovery-2025-150x150.jpg" />
+        </a>
+    </li>
+    <li>
+        <a href="{{ site.baseurl }}/images/gdsc-devfest-tu-dulin-2024.jpeg" class="image-popup mfp-with-zoom" title="Speaking at the Google Developer Student Club DevFest, TU Dublin, 2024">
+            <img src="{{ site.baseurl }}/images/gdsc-devfest-tu-dulin-2024-150x150.jpg" />
+        </a>
+    </li>
+    <li>
+        <a href="{{ site.baseurl }}/images/webinar-ben-evans-java17-2021.jpeg" class="image-popup mfp-with-zoom" title="Interviewing Ben Evans on the Java 17 release and the future of the JVM, DubJUG Dublin, 2021">
+            <img src="{{ site.baseurl }}/images/webinar-ben-evans-java17-2021-150x150.jpg" />
+        </a>
+    </li>
+    <li>
+        <a href="{{ site.baseurl }}/images/testing-my-tram-forecasting-skill-alexa-fitbit-2020.png" class="image-popup mfp-with-zoom" title="Testing my Alexa tram forecasting skill running on a Fitbit, 2020">
+            <img src="{{ site.baseurl }}/images/testing-my-tram-forecasting-skill-alexa-fitbit-2020-150x150.jpg" />
+        </a>
+    </li>
+    <li>
+        <a href="{{ site.baseurl }}/images/azure-meetup-resilient-cloud-applications-2017.png" class="image-popup mfp-with-zoom" title="Presenting on resilient cloud applications: high availability, disaster recovery, and Azure design patterns, Azure Dublin meetup, 2017">
+            <img src="{{ site.baseurl }}/images/azure-meetup-resilient-cloud-applications-2017-150x150.jpg" />
         </a>
     </li>
     <li>
