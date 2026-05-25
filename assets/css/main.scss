@@ -271,6 +271,55 @@ a {
 	font-size: 40px;
 	margin-top: 0;
 	text-shadow: 0 0 15px #3C3C3C;
+	line-height: 1.15;
+}
+
+.hero-cta {
+	margin-top: 1.4em;
+
+	.btn-primary {
+		background-color: $brand-primary;
+		border-color: $brand-primary-darker;
+		color: $white;
+		text-shadow: none;
+		font-weight: 700;
+		letter-spacing: 0.4px;
+
+		&:hover, &:focus, &:active {
+			background-color: $brand-primary-darker;
+			border-color: $brand-primary-darker;
+			color: $white;
+		}
+	}
+
+	.hero-cta-secondary {
+		display: inline-block;
+		margin-left: 14px;
+		color: $white;
+		font-size: 14px;
+		text-transform: uppercase;
+		letter-spacing: 0.6px;
+		text-decoration: none;
+
+		i {
+			margin-left: 4px;
+			font-size: 12px;
+		}
+
+		&:hover {
+			color: $brand-primary-lighter;
+		}
+	}
+}
+
+@media (max-width: $screen-sm-max) {
+	.hero-cta {
+		.hero-cta-secondary {
+			display: block;
+			margin-left: 0;
+			margin-top: 10px;
+		}
+	}
 }
 
 @media (min-width: $screen-md-min) {
@@ -395,6 +444,7 @@ a {
 	h2 {
 		font-weight: normal;
 		font-size: 40px;
+		margin-bottom: 24px;
 	}
 
 	h1 {
@@ -406,6 +456,38 @@ a {
 		font-size: 18px;
 		padding-top: 0.8em;
 		font-weight: normal;
+	}
+
+	.kicker {
+		font-size: 12px;
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: 1.2px;
+		color: $brand-primary;
+		margin-bottom: 8px;
+		padding-top: 0;
+	}
+
+	.see-all {
+		margin-top: 10px;
+		font-size: 14px;
+		text-transform: uppercase;
+		letter-spacing: 0.5px;
+
+		.see-all-sep {
+			color: $gray-darker;
+			margin: 0 8px;
+			opacity: 0.5;
+		}
+
+		a {
+			color: $brand-secondary;
+			text-decoration: none;
+
+			&:hover {
+				color: $brand-secondary-dark;
+			}
+		}
 	}
 }
 
