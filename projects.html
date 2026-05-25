@@ -3,7 +3,7 @@ layout: default
 page-key: projects
 title: Projects
 permalink: /projects/
-excerpt: "Some of the projects I've been involved with throughout my career"
+excerpt: "Twenty years of building software, leading the engineers who build it, and shipping the systems they ship."
 ---
 <section class="posts">
   <div class="container">
@@ -12,36 +12,151 @@ excerpt: "Some of the projects I've been involved with throughout my career"
         <div class="col-md-12">
           <div class="content-headline">
             <h1>{{page.title}}</h1>
-            <p>{{page.excerpt}}</p>
-            <p><small>Note that due to IP concerns, the list is not exhaustive</small></p>
+            <p class="lead">Since 2005, I have built software, led the engineers who build it, and shipped systems for everything from gaming startups in Athens to Fortune-500 platforms in Dublin. The selected work below stands for some of those engagements. Older roles are summarised in the timeline. Recommendations and additional context live on <a href="https://linkedin.com/in/piotopoulos">LinkedIn</a>.</p>
+            <p><small>Due to IP and confidentiality concerns, the list is not exhaustive.</small></p>
           </div>
         </div>
       </div>
     </div>
-    {% assign count = 0 %}
-    {% for post in site.categories['project'] %}
-    {% assign count = count | plus: 1 %}
-    {% assign result = count | modulo: 2 %}
-    {% if result == 1 %}
-    <div class="row">
-    {% endif %}  
+
+    <h2 class="section-heading">Featured</h2>
+    <div class="row featured-projects">
+      {% assign featured_slugs = "mongodb,walmart" | split: "," %}
+      {% for slug in featured_slugs %}
+        {% for post in site.categories['project'] %}
+          {% if post.url contains slug %}
+            <div class="col-md-6">
+              <article class="article-list project-featured">
+                <a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}">
+                  {% include image-feature-list.html loading='eager' %}
+                  <h2>{{ post.title }}</h2>
+                </a>
+                {% if post.role %}<p class="role-meta">{{ post.role }} · {{ post.date_range }}</p>{% endif %}
+                <p>{{ post.excerpt | strip_html }}</p>
+                <p><a href="{{ site.baseurl }}{{ post.url }}" class="btn btn-default">Read more</a></p>
+              </article>
+            </div>
+          {% endif %}
+        {% endfor %}
+      {% endfor %}
+    </div>
+
+    <h2 class="section-heading">Career timeline</h2>
+    <ul class="career-timeline">
+      <li>
+        <span class="timeline-year">2021 – present</span>
+        <div class="timeline-content">
+          <strong>Lead Engineer, MongoDB</strong> · Atlas API Experience Platform (APIx Platform), Dublin (Remote)<br>
+          Leading the team behind the Atlas data platform's public API and the security primitives that protect it. <a href="/projects/mongodb/">More →</a>
+        </div>
+      </li>
+      <li>
+        <span class="timeline-year">2017 – 2021</span>
+        <div class="timeline-content">
+          <strong>Staff Software Engineer, Walmart Global Tech / Jet.com</strong> · Dublin<br>
+          Joined via the Jet.com acquisition as a Senior Engineer, promoted to Squad Lead (2018) and then Staff Engineer (2019). Led supply-chain and competitive-intelligence systems across distributed squads. <a href="/projects/walmart/">More →</a>
+        </div>
+      </li>
+      <li>
+        <span class="timeline-year">2015 – 2017</span>
+        <div class="timeline-content">
+          <strong>Software Engineer, Oneview Healthcare</strong> · Dublin<br>
+          In-patient clinical products team. Led the Configuration Manager portal using CQRS, NServiceBus, SignalR, .NET Web API, and Angular. Introduced Slack to the company. Mentored juniors, interviewed candidates, ran proofs of concept presented to the CTO.
+        </div>
+      </li>
+      <li>
+        <span class="timeline-year">2015</span>
+        <div class="timeline-content">
+          <strong>M.Sc. Intern, KeyedIn Solutions</strong> · Dublin<br>
+          <em>Konfigure</em>: enterprise rapid-application-development platform. M.Sc. industry internship while completing the master's at UCD. <a href="/projects/konfigure/">More →</a>
+        </div>
+      </li>
+      <li>
+        <span class="timeline-year">2014 - 2015</span>
+        <div class="timeline-content">
+          <strong>Dice Radio</strong> · personal projects<br>
+          Built the <a href="/projects/dice-web/">Dice Radio Web Portal</a> (ASP.NET MVC) alongside the SiEBEN day job, then <a href="/projects/dice-android/">Dice Radio on Android</a> as coursework for UCD's Android Development module. One of my favourite long-running projects.
+        </div>
+      </li>
+      <li>
+        <span class="timeline-year">2012 – 2014</span>
+        <div class="timeline-content">
+          <strong>Software Engineer, SiEBEN Innovative Solutions</strong> · Athens<br>
+          R&amp;D department. Led <em>Marera</em>, which became a Microsoft Azure case study. Delivered line-of-business cloud apps for clients including <a href="/projects/peoplecert/">PeopleCert</a>, <a href="/projects/schneider-electric/">Schneider Electric</a>, <a href="/projects/audi/">Audi</a>, <a href="/projects/dpam/">dpam</a>, <a href="/projects/pierce/">Pierce</a>, <a href="/projects/marera/">MAR.eRA</a>, <a href="/projects/notos/">Notos</a>, <a href="/projects/civilprotection/">ggpp</a>, <a href="/projects/sandbyou/">sandbyou</a>, <a href="/projects/favood/">Favood</a>, and <a href="/projects/kteo/">KTEO</a>. Final performance review 111%. Speaker at the Global Azure Bootcamp 2014.
+        </div>
+      </li>
+      <li>
+        <span class="timeline-year">2012</span>
+        <div class="timeline-content">
+          <strong>Communications Specialist, Hellenic Army</strong> · Lesvos / Athens<br>
+          Mandatory military service in the Communications division of the 475th Signals Battalion. Designed and implemented office-automation and data-processing software for the unit.
+        </div>
+      </li>
+      <li>
+        <span class="timeline-year">2011</span>
+        <div class="timeline-content">
+          <strong>B.Sc. Intern, Hellenic Telecommunications Organisation (OTE)</strong> · Athens<br>
+          Business Customer Service. Troubleshot MPLS VPN, Metro Ethernet, DNS, and web-hosting configurations for corporate clients. Wrote Bash automation that the department continued using long after the internship ended.
+        </div>
+      </li>
+      <li>
+        <span class="timeline-year">2011</span>
+        <div class="timeline-content">
+          <strong>iConomy (B.Sc. dissertation)</strong> · TEI of Thessaly<br>
+          Native iOS 4 personal-finance application. Graduated with First Class Honours. <a href="/projects/iconomy/">More →</a>
+        </div>
+      </li>
+      <li>
+        <span class="timeline-year">2005 – 2007</span>
+        <div class="timeline-content">
+          <strong>Software Developer, Bits and Bytes Internet Gaming</strong> · Athens<br>
+          First professional role. Built web apps and customer portals (ASP.NET, MS SQL). Developed features for online gaming servers in Java and Jython. The role led directly to pursuing the B.Sc. in Computer Engineering.
+        </div>
+      </li>
+    </ul>
+
+    <h2 class="section-heading">Author, speaker, organiser</h2>
+    <div class="row activities-row">
       <div class="col-md-6">
-        <article class="article-list">
-          <a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}">
-            {% if count <= 2 %}{% assign loadingMode = 'eager' %}{% else %}{% assign loadingMode = 'lazy' %}{% endif %}
-            {% include image-feature-list.html loading=loadingMode %}
-            <h1>{{ post.title }}</h1>
-          </a>
-          {% comment %}<time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time>{% endcomment %}
-          <p>{{ post.excerpt | strip_html | truncate: 160 }}</p>
-        </article>
+        <h3>Author and Packt</h3>
+        <ul>
+          <li><a href="{{ site.baseurl }}/azure-java-microservices-video-course-packt/"><em>Microservices Development on Azure with Java</em></a>, Packt Publishing, 2018 (ISBN 9781789808858)</li>
+          <li>Technical reviewer, Packt Publishing, 2014 and 2021</li>
+          <li>Writer, <a href="{{ site.baseurl }}/">DrinkBird</a>, since 2015</li>
+        </ul>
+
+        <h3>Community</h3>
+        <ul>
+          <li>Organiser, <em>Dublin Angular Meetup</em>, 2016–2024</li>
+          <li>Facilitator, <em>Dublin Java User Group</em>, 2019–2021</li>
+          <li>Guest speaker, <em>National College of Ireland</em>, 2015–2021</li>
+          <li>Mentor, <em>STEM Passport for Inclusion</em>, 2024</li>
+        </ul>
+
+        <h3>Education</h3>
+        <ul>
+          <li>MBA candidate, Frederick University Cyprus, 2025–2026</li>
+          <li>M.Sc. Software Engineering &amp; Ubicomp, University College Dublin, 2014–2015 (First Class Honours)</li>
+          <li>B.Sc. Computer &amp; Telecommunications Engineering, University of Thessaly, 2008–2011 (First Class Honours)</li>
+        </ul>
       </div>
-    {% if result == 0 %}
+
+      <div class="col-md-6">
+        <h3>Selected talks</h3>
+        <ul>
+          <li>2026 - TU Dublin C++ Society (student-to-engineer transitions)</li>
+          <li>2025 - MongoDB Opening Doors to Discovery</li>
+          <li>2024 - Google DevFest, TU Dublin</li>
+          <li>2021 - Dublin Java User Group, interviewing Ben Evans on Java 17 and the future of the JVM</li>
+          <li>2020 - Dublin meetup, Alexa skill running on a Fitbit</li>
+          <li>2017 - Azure Dublin Meetup, resilient cloud applications</li>
+          <li>2016 - AngularJS Dublin keynote, Google Dublin</li>
+          <li>2015 - UCD, Enterprise, Innovation and Entrepreneurship: The Lean Startup</li>
+          <li>2015 - National College of Ireland</li>
+          <li>2014 - Global Azure Bootcamp, Athens</li>
+          <li>2014 - Patterns and Practices for the Cloud, Athens</li>
+        </ul>
+      </div>
     </div>
-    {% endif %}
-    {% endfor %}
-    {% if result == 1 %}
-    </div>
-    {% endif %}
-  </div>     
+  </div>
 </section>

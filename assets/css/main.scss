@@ -965,6 +965,92 @@ p.affiliate-disclosure {
 	font-style: italic;
 }
 
+.section-heading {
+	margin-top: 56px;
+	margin-bottom: 24px;
+	padding-bottom: 12px;
+	border-bottom: 2px solid $gray-lighter;
+}
+
+.featured-projects {
+	margin-bottom: 32px;
+
+	.project-featured {
+		h2 {
+			margin-top: 16px;
+			margin-bottom: 4px;
+		}
+
+		.role-meta {
+			color: $gray;
+			font-style: italic;
+			margin-bottom: 12px;
+			font-size: 15px;
+		}
+	}
+}
+
+.career-timeline {
+	list-style: none;
+	padding: 0;
+	margin: 0 0 32px;
+
+	> li {
+		display: flex;
+		flex-wrap: wrap;
+		padding: 16px 0;
+		border-bottom: 1px solid $gray-lighter;
+
+		&:last-child {
+			border-bottom: none;
+		}
+	}
+
+	.timeline-year {
+		flex: 0 0 160px;
+		font-weight: bold;
+		color: $brand-primary;
+		font-size: 15px;
+		padding-top: 2px;
+	}
+
+	.timeline-content {
+		flex: 1 1 320px;
+		font-size: 16px;
+		line-height: 1.55;
+
+		strong {
+			font-size: 17px;
+		}
+	}
+}
+
+@media (max-width: $screen-sm-max) {
+	.career-timeline .timeline-year {
+		flex: 0 0 100%;
+		margin-bottom: 4px;
+	}
+}
+
+.activities-row {
+	margin-bottom: 48px;
+
+	h3 {
+		margin-top: 24px;
+		margin-bottom: 12px;
+		font-size: 20px;
+	}
+
+	ul {
+		padding-left: 18px;
+
+		li {
+			margin-bottom: 6px;
+			line-height: 1.5;
+		}
+	}
+}
+
 h2 a.collection-title-link,
 h2 .collection-title-link {
 	color: inherit;

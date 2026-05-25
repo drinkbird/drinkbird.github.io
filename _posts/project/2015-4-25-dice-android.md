@@ -9,7 +9,7 @@ image:
 featured: false
 ---
 
-About a year after sucessfully launching [Dice Radio Web Portal](http://blog.drinkbird.com/projects/dice-web/), I was asked to develop an Android application for Dice Radio.
+This Android application was developed as a course project for the Android Development module of my M.Sc. at University College Dublin (2014-2015). It built on top of [Dice Radio Web Portal](http://blog.drinkbird.com/projects/dice-web/), the side project I had launched a year earlier for the same online radio station.
 
 *Dice Radio on Android* is an extremely fast and lightweight (1.3 Mb) application which allows Android users to enjoy their favorite radio station on the go, as well as read latest news, producer biographies and the station's weekly timetable. The audio player keeps on streaming even when users switch tasks, allowing them to enjoy a seamless listening experience.
 
