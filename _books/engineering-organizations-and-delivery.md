@@ -20,7 +20,7 @@ books:
     - effectiveengineer
 ---
 
-Most engineering organisations are accidentally designed; these books are what deliberate design looks like. They cover how to instrument, structure, and continuously improve a software-delivery organisation: throughput, team topology, release engineering, lean and DevOps, operational maturity. If you have authority over how software is built (CTO, VP, director, product leader, or staff engineer), these are the books that will help you exercise that authority well.
+Most engineering organisations are accidentally designed. These books are what deliberate design looks like. They cover how to instrument, structure, and continuously improve a software-delivery organisation: throughput, team topology, release engineering, lean and DevOps, operational maturity. If you have authority over how software is built (CTO, VP, director, product leader, or staff engineer), these are the books that will help you exercise that authority well.
 
 > We are turning the U.S. Air Force into a software company that happens to deliver airpower. <br>
 > -- Adam Furtado, Chief Product Officer at Kessel Run / U.S. Air Force, UXDX 2018

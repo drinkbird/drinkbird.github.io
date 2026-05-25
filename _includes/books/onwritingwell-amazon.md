@@ -2,6 +2,6 @@ This book was recommended to me by [Dr. Venkat Subramaniam](https://nofluffjusts
 
 You might not be interested into writing a book or a blog yourself, so you may think this book isn't relevant. Think again!
 
-Working in the tech industry means that you are constantly expected to write; from documentation and proposals, to tons of emails.
+Working in the tech industry means that you are constantly expected to write, from documentation and proposals to tons of emails.
 
 And because your career progression is directly affected from how well you can communicate and influence others, this book can be a powerful weapon in your professional arsenal.

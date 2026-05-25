@@ -1,3 +1,3 @@
 The third in Austin Kleon's trilogy, after [Steal Like an Artist]({{ site.baseurl }}/books/craft-and-career#steallikeanartist) and [Show Your Work]({{ site.baseurl }}/books/craft-and-career#showyourwork). Where the first two focused on getting started and getting your work into the world, *Keep Going* is about staying at it: the long middle of any creative career, when the novelty has worn off and the discipline has to do the work.
 
-Short, illustrated, easy to finish in an afternoon. Useful for anyone whose creative work is also their job and who needs a periodic reminder that the routine isn't the enemy of the work; it is the work.
+Short, illustrated, easy to finish in an afternoon. Useful for anyone whose creative work is also their job and who needs a periodic reminder that the routine isn't the enemy of the work. It is the work.

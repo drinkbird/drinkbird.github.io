@@ -27,13 +27,15 @@ start_here:
 {% capture intro %}
 <div class="collection-anchor" id="collection-top"></div>
 
-These collections shaped how I think, how I build software, and how I lead engineers. *Leadership, People & Teams* is the centre of gravity; the rest is the rigging that holds it up. The lists are heavily weighted toward *fundamentals*: the underlying ideas that stay useful long after the stack changes.
+Most of these books I have read more than once, and a few I keep gifting to colleagues. They are the ones that actually shifted how I think about software and the teams that build it. Not the ones that sounded impressive on a reading list, and not the ones that go out of date when the framework does.
+
+The *Leadership, People & Teams* collection is the biggest. The higher I have gone in my career, the less my problems have been technical. The other three collections are the canon I leaned on while I was mostly writing code, and they still earn their place.
 
 I update this list every so often. *Last updated: May 2026.* To get notified of future updates, <a href="#mc_embed_signup">subscribe to the DrinkBird newsletter</a>.
 
 [My thoughts on books](#thoughts) live at the end.
 
-<p class="affiliate-disclosure"><small><strong>Affiliate disclosure:</strong> book links are Amazon affiliate links. Buying through them doesn't cost you more; it helps me buy the next round of books.</small></p>
+<p class="affiliate-disclosure"><small><strong>Affiliate disclosure:</strong> book links are Amazon affiliate links. Buying through them doesn't cost you more, and it helps me buy the next round of books.</small></p>
 
 <p class="collection-jumplist">
 {% for book_collection_key in page.book_collections %}{% assign book_collection = site.books | where: 'slug', book_collection_key | first %}<a href="#collection-{{ book_collection.slug }}">{{ book_collection.title }}</a>{% unless forloop.last %} · {% endunless %}{% endfor %}
@@ -43,10 +45,10 @@ I update this list every so often. *Last updated: May 2026.* To get notified of 
 
 <div class="row">
   <div class="col-md-3 col-md-push-9">
+    {% include author.html %}
     {% include subscribe-aside.html %}
   </div>
   <div class="col-md-9 col-md-pull-3">
-    {% include author-inline.html %}
     {{ intro | markdownify }}
   </div>
 </div>
@@ -129,7 +131,7 @@ Information is the specific knowledge that helps you solve today's problem in to
 
 ![The hierarchy of knowledge]({{ site.baseurl }}/images/hierarchy_of_knowledge.png)
 
-The lists above are heavily weighted toward fundamentals. A few entries live at the boundary; I keep them as long as they remain relevant and drop them when they don't.
+The lists above are heavily weighted toward fundamentals. A few entries live at the boundary. I keep them as long as they remain relevant and drop them when they don't.
 
 ### Success is a process, not a moment
 
