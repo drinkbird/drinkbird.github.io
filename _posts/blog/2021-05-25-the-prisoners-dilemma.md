@@ -20,7 +20,7 @@ reads:
   - thecleancoder
   - softskills
   - thephoenix
-  - accelerate-amazon
+  - accelerate
   - peopleware
 
 ---

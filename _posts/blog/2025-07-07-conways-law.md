@@ -10,7 +10,7 @@ mermaid: true
 image:
   feature: conway.jpg
 reads:
-  - accelerate-amazon
+  - accelerate
   - peopleware
   - communicationforengineers
   - habit

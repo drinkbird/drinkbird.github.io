@@ -13,7 +13,7 @@ reads:
   - microservicespatterns
   - agiledev
   - madetostick-amazon
-  - accelerate-amazon
+  - accelerate
   - peopleware
   - careerguide
   - themythicalmanmonth

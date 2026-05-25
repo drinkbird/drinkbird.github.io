@@ -27,7 +27,7 @@ reads:
   - agiledev
   - devops
   - thephoenix
-  - accelerate-amazon
+  - accelerate
   - domaindrivendesign
   - cleanarchitecture
   - madetostick-amazon

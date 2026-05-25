@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Recommended books for Software Industry professionals"
-excerpt: "Book collections on Software Engineering, DevOps, Architecture and Management."
+excerpt: "Recommended reading on engineering leadership, software architecture, craft, and career."
 permalink: /books/
 comments: true
 categories: blog
@@ -12,59 +12,29 @@ image:
 page-key: books
 subscribe_source: books
 book_collections:
-  - software-engineering-architecture-microservices
-  - software-engineering-software-development
-  - software-engineering-career-building-professionalism-inspiration
-  - governance-product-technical-project-management
-
-reads:
-  - careerguide
-  - cleanarchitecture
-  - buildingmicroservices
-  - dataintensive
-  - cleancode
-  - 97things
-  - softskills
-  - thecleancoder
-  - smartandgetsthingsdone
-  - pragmaticprogrammer
-  - codecomplete
-  - artofunittesting
-  - xunit
-  - refactoring
-  - hfdesignpatterns
-  - gofdp
-  - dpruby
-  - leanstartup
-  - theaccidentalcreative
-  - steallikeanartist
-  - showyourwork
-  - interactiondesign
-  - nojsyet1
-  - agileppp
-  - aspnetcoremvc
-  - csharpindepth
-  - fsharp3
-nextreads:
+  - leadership-people-and-teams
+  - engineering-organizations-and-delivery
+  - software-architecture-and-systems
+  - craft-and-career
+start_here:
   - peopleware
-  - themythicalmanmonth
-  - userstoriesapplied
-  - clrviacsharp
-  - legacycode
-  - realworldfp
+  - thephoenix
+  - accelerate
+  - turntheshiparound
+  - radicalcandor
 ---
 
 
 {% capture intro %}
 <div class="collection-anchor" id="collection-top"></div>
 
-These hand-picked book collections have helped me skyrocket my career in the Software Industry. Apart from pushing me to become a better professional, they have also inspired me to pursue personal goals and achieve more in life. This intro used to be much longer, and all the book descriptions used to be on this page, but I have decided to move [my thoughts on books](#thoughts) to the end and book descriptions to their respective collection's page.
+These hand-picked book collections shaped how I think, how I build software, and how I lead engineers. The first collection, Leadership, People & Teams, is the centre of gravity: this is an engineering leadership blog, and these are the books I would hand to any engineer growing into the work of running teams and organisations.
 
-Whether you are a Software Engineer, DevOps Engineer, Architect or Manager, I guarantee that you can find something that deserves a spot in your personal book collection. I have read most of the books in this list more than once, as the experiences I acquire between reads help me see that knowledge in a different light.
+Whether you are a Software Engineer, Tech Lead, Architect, or Manager, you will find something here that deserves a spot in your personal collection. I have read most of these more than once, as the experiences I acquire between reads help me see the same ideas in a different light. [My thoughts on books](#thoughts) live at the end.
 
 > You can only connect the dots looking backwards. -- Steve Jobs
 
-I tend to update this list about once or twice a year. To get notified when this happens, you can <a href="#mc_embed_signup">subscribe to the DrinkBird newsletter</a> (a very low frequency newsletter).
+I update this list once or twice a year. To get notified when that happens, <a href="#mc_embed_signup">subscribe to the DrinkBird newsletter</a> (a very low frequency newsletter).
 
 Jump to collection:
 
@@ -85,6 +55,28 @@ Jump to collection:
     {{ intro | markdownify }}
   </div>
 </div>
+
+{% if page.start_here %}
+-----
+
+<div class="collection-anchor" id="start-here"></div>
+
+## Start here
+
+If you only read five from this list, read these. Together they cover the people, the organisation, the systems, and the craft of leading engineers without losing what makes engineering good.
+
+<div class="row display-flex">
+{% for book_key in page.start_here %}
+  {% assign book = site.reads[book_key] %}
+  <div class="col-xs-6 col-sm-4 col-md-3">
+    {% include book-short.html %}
+  </div>
+{% endfor %}
+</div>
+
+<a href="#collection-top">Back to top</a>
+
+{% endif %}
 
 {% for book_collection_key in page.book_collections %}
   {% assign book_collection = site.books | where: 'slug', book_collection_key | first %}
