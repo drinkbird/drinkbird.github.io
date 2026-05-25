@@ -58,7 +58,7 @@ When we know something so well, it becomes second nature, and we struggle to und
 
 ## Clearing the Fog: Strategies for Embracing Clarity
 
-The first step towards breaking free from the 'Curse of Knowledge' involves organizational changes that facilitate clear, low-context communication. Let's see some strategies that can help us achieve this:
+The first step toward breaking free from the 'Curse of Knowledge' involves organizational changes that facilitate clear, low-context communication. Let's see some strategies that can help us achieve this:
 
 *1) Foster a Safe Space for Queries and Clarifications*
 
@@ -100,7 +100,7 @@ Revisiting our shipping system scenario, our first step was to delve into the in
 
 A picture, as they say, is worth a thousand words. Visual aids such as diagrams, charts, and illustrations can help convey complex concepts in a more digestible manner. They can also serve as a reference for the team throughout the project. Tools such as whiteboards, digital sketching tools, and diagramming software can be helpful in this regard.
 
-The power of whiteboarding is often underestimated. Countless times, I've been part of circular, verbal discussions about system flows that only became productive after a sketch was introduced. With our shipping system, for instance, our real breakthrough came when we started to visually map out various components and interactions. For example, we diagrammed how an order connects to the shipping system, then to the carrier selection process, the addressing system for identifying missing zip codes, and finally to the Zebra labeling service for actual shipping label printing. This visual representation became a crucial step towards our understanding and enhancement of the system.
+The power of whiteboarding is often underestimated. Countless times, I've been part of circular, verbal discussions about system flows that only became productive after a sketch was introduced. With our shipping system, for instance, our real breakthrough came when we started to visually map out various components and interactions. For example, we diagrammed how an order connects to the shipping system, then to the carrier selection process, the addressing system for identifying missing zip codes, and finally to the Zebra labeling service for actual shipping label printing. This visual representation became a crucial step toward our understanding and enhancement of the system.
 
 *5) Repeat, Review, Recap*
 
@@ -138,7 +138,7 @@ More importantly, the antidote to the 'Curse of Knowledge' lies in cultivating a
 
 In the end, it's about empowering everyone, from veterans to newbies, to participate in the exchange of ideas and knowledge. By doing so, we create a platform for innovation, drive effective collaboration, and ultimately build better products.
 
-So let's take the leap, break the curse, and move towards a future where the exchange of complex ideas isn't a daunting task but a gratifying journey of learning and growth, together.
+So let's take the leap, break the curse, and move toward a future where the exchange of complex ideas isn't a daunting task but a gratifying journey of learning and growth, together.
 
 ![Breaking the curse of knowledge together]({{ site.baseurl }}/images/sharing-knowledge.png)
 

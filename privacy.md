@@ -10,7 +10,7 @@ This page explains, in plain language, what data this site collects, why, and wh
 
 DrinkBird is a static personal blog. We collect as little as possible.
 
-- **Server logs.** The hosting provider (GitHub Pages) keeps standard access logs containing IP address, browser type, referrer, and timestamp. These are used by the host to operate the service and detect abuse. We do not access or analyse them ourselves.
+- **Server logs.** The hosting provider (GitHub Pages) keeps standard access logs containing IP address, browser type, referrer, and timestamp. These are used by the host to operate the service and detect abuse. We do not access or analyze them ourselves.
 - **Analytics (with your consent).** If you accept analytics cookies via the consent banner, the site loads Google Analytics 4. GA4 records page views and aggregate usage. IP addresses are truncated by Google before storage. No analytics scripts load until you accept.
 - **Comments (with your consent).** If you accept and choose to comment via Disqus, Disqus collects whatever you provide (name/email, comment text) plus their own usage data. The Disqus scripts do not load until you accept. See the [Disqus Privacy Policy](https://help.disqus.com/customer/en/portal/articles/466259-privacy-policy).
 

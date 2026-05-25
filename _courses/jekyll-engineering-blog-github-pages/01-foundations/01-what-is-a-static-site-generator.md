@@ -36,7 +36,7 @@ date: 2026-01-15
 ---
 
 A token bucket is the simplest algorithm that still
-captures the *burst, then steady* behaviour you want.
+captures the *burst, then steady* behavior you want.
 ```
 
 A layout template stamps every post into a full HTML page:
@@ -64,7 +64,7 @@ After `jekyll build`, the SSG converts the Markdown to HTML, substitutes `{{ pag
     <h1>On rate limiting</h1>
     <article>
       <p>A token bucket is the simplest algorithm that still
-      captures the <em>burst, then steady</em> behaviour you want.</p>
+      captures the <em>burst, then steady</em> behavior you want.</p>
     </article>
   </body>
 </html>

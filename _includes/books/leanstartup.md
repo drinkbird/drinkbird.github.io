@@ -1,5 +1,5 @@
-There is incredible failure that precedes every entrepreneurial success. Even the most promising idea can be doomed from day one if the entrepreneur is not familiar with a suitable process needed to turn that idea into a successful company.
+Most entrepreneurial failures don't come from bad ideas. They come from confidently shipping the wrong version of a decent idea. Eric Ries's contribution is a deliberate process for finding out what works before you've spent the budget building it.
 
-In *The Lean Startup*, Eric Ries lays out a scientific method for building a sustainable business and minimizing the time needed for a desired product to reach the customer’s hands. This method provides a solid foundation for driving a startup, understanding when to change course (pivot), when to persevere and ultimately learning how to achieve growth in the fastest pace possible, along with **avoiding the waste of development talent, energy, and effort**.
+The Lean Startup formalises the build-measure-learn loop, the validated-learning concept, and the discipline of pivoting versus persevering. The methods originated in startups but apply just as well to internal products inside large companies, where the cost of building the wrong thing is just as real.
 
-It's a marvelous book that have totally transformed my way of thinking in terms of designing a new product or adding features to an existing one. I've also written an [extensive review on the Lean Startup]({{ site.baseurl }}/lean-startup-book-review/).
+If you want my deeper take on it, see my [extensive review of The Lean Startup]({{ site.baseurl }}/lean-startup-book-review/).

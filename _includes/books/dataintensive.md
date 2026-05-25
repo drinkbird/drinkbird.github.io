@@ -2,6 +2,6 @@ This is an extremely valuable read, not only for architects, but also for those 
 
 Today, data is in the heart of most challenges related to systems design. Architects have plenty of data-centric challenges to tackle, including scalability, consistency, reliability, efficiency, and maintainability. On top of that there are numerous platforms and tools that can be leveraged to achieve each project's design goals, including relational / document / graph databases, stream / batch processors, web APIs and message brokers.
 
-Martin Kleppmann not only helps you make sense of all the buzzwords, but also guides you through this diverse landscape by doing deep dives of how each piece of technology works under the hood, what are their pros and cons, and under which circumstances it is a good idea to use them. Apart from the theory, the book comes with plenty of practical advice you can start leveraging on your day to day work right away.
+Martin Kleppmann doesn't just help you make sense of the buzzwords. He guides you through the landscape with deep dives into how each piece of technology works under the hood, what its trade-offs are, and when it's the right call. The book is part theory, part practical advice you can put to work the next morning.
 
-As of today, this is the most well-written, comprehensive and modern book about working with data. It's destined to become a classic.
+The 1st edition (2017) is already a modern classic, cited everywhere serious people talk about systems. The 2nd edition (2025) brings it up to date: cloud-native data, the evolved streaming landscape, refreshed examples, and several years of accumulated criticism worked back in. If you only own one architecture book, own this one.

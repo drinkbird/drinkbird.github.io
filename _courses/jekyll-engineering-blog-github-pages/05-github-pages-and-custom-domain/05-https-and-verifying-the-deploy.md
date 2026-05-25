@@ -9,7 +9,7 @@ chapter_summary: "Closes the module with Let's Encrypt certificate provisioning,
 - How GitHub provisions a Let's Encrypt certificate for your custom domain, and what can delay it.
 - What the "Enforce HTTPS" checkbox actually does, and when to enable it.
 - How HSTS gets added to your responses once HTTPS is enforced.
-- The canonical-redirect behaviour: which hostname becomes the 301 source and which the target.
+- The canonical-redirect behavior: which hostname becomes the 301 source and which the target.
 - A final, runnable checklist that catches the small things that would otherwise embarrass you in week one.
 
 ## Concepts

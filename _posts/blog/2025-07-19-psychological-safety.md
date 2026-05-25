@@ -14,7 +14,7 @@ reads:
   - radicalcandor
   - turntheshiparound
   - peopleware
-  - accelerate-amazon
+  - accelerate
   - communicationforengineers
   - agiledev
 

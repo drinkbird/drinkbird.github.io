@@ -6,7 +6,7 @@ chapter_summary: "Covers the user-site (`<username>.github.io`) vs project-site 
 ---
 
 ## What you'll learn
-- The difference between a user (or organisation) site and a project site, and which one a personal blog wants.
+- The difference between a user (or organization) site and a project site, and which one a personal blog wants.
 - How `url:` and `baseurl:` in `_config.yml` interact with the served URL, and when each matters.
 - The three deploy sources Pages supports: a branch, a `/docs` folder, or GitHub Actions.
 - Why `gh-pages` is a leftover convention rather than a requirement.
@@ -14,7 +14,7 @@ chapter_summary: "Covers the user-site (`<username>.github.io`) vs project-site 
 
 ## Concepts
 
-GitHub Pages has two repo shapes, and the rules differ between them. A **user site** lives in a repository named exactly `<username>.github.io` (the same applies for organisations: `<orgname>.github.io`). You get exactly one per account. It serves from the apex of that hostname - `https://<username>.github.io/` - and is the right shape for a personal engineering blog. A **project site** lives in any other repo and serves at `https://<username>.github.io/<repo>/`. Project sites are useful for project documentation but introduce a path prefix that complicates URL handling. The full rules are at [docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages](https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages).
+GitHub Pages has two repo shapes, and the rules differ between them. A **user site** lives in a repository named exactly `<username>.github.io` (the same applies for organizations: `<orgname>.github.io`). You get exactly one per account. It serves from the apex of that hostname - `https://<username>.github.io/` - and is the right shape for a personal engineering blog. A **project site** lives in any other repo and serves at `https://<username>.github.io/<repo>/`. Project sites are useful for project documentation but introduce a path prefix that complicates URL handling. The full rules are at [docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages](https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages).
 
 That path prefix is what `baseurl:` exists for. In Jekyll's `_config.yml`, `url:` is your scheme-and-host (`https://example.com`), and `baseurl:` is the path your site lives under (`""` for a user site, `"/my-project"` for a project site). Jekyll uses both to build internal links via the `relative_url` and `absolute_url` filters. Get `baseurl` wrong on a project site and every link 404s; get it wrong on a user site and you'll prepend a path that shouldn't be there. Once you point a custom domain at the repo (Chapter 5.4), `url:` becomes your domain and `baseurl:` returns to empty - the apex serves the site directly regardless of repo name.
 

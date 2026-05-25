@@ -14,11 +14,11 @@ chapter_summary: "Treats code blocks as the centrepiece of an engineering blog: 
 
 ## Concepts
 
-Rouge is the pure-Ruby syntax highlighter Jekyll uses by default - no Node, no external process, runs as part of the build. When Jekyll converts your Markdown to HTML, kramdown hands fenced code blocks to Rouge, which tokenises the source and wraps each token in a `<span>` with a short class (`k` for keyword, `s` for string, `c1` for comment, and so on). The colours come from a separate stylesheet you generate from Rouge itself. The [Rouge repo](https://github.com/rouge-ruby/rouge) lists every supported language; if your fence has a language tag Rouge recognises, you get coloured output for free.
+Rouge is the pure-Ruby syntax highlighter Jekyll uses by default - no Node, no external process, runs as part of the build. When Jekyll converts your Markdown to HTML, kramdown hands fenced code blocks to Rouge, which tokenises the source and wraps each token in a `<span>` with a short class (`k` for keyword, `s` for string, `c1` for comment, and so on). The colors come from a separate stylesheet you generate from Rouge itself. The [Rouge repo](https://github.com/rouge-ruby/rouge) lists every supported language; if your fence has a language tag Rouge recognizes, you get colored output for free.
 
 There are two ways to mark code in your Markdown. **Fenced blocks** with a language tag are the everyday workhorse: triple backticks, the language, the code, triple backticks. This is what 95% of your posts should use. For the other 5% - when you need line numbers, a starting line offset, or to highlight specific lines - reach for Liquid's [`highlight` tag](https://jekyllrb.com/docs/liquid/tags/#code-snippet-highlighting), which accepts options the Markdown fence can't express. Both routes go through Rouge; the difference is what options you can pass.
 
-The CSS is where most blogs trip up. Rouge ships with several built-in themes (`github`, `monokai`, `base16`, `gruvbox`, others), but the *stylesheet* isn't shipped - you have to generate it. The `rougify` CLI that comes with the Rouge gem prints a CSS file you can drop into your project. Once it's there, swapping themes is a one-line regeneration. Default `minima` includes a basic syntax stylesheet, but it's small and tied to the theme's colour palette; generating your own gives you control and the right contrast against your background.
+The CSS is where most blogs trip up. Rouge ships with several built-in themes (`github`, `monokai`, `base16`, `gruvbox`, others), but the *stylesheet* isn't shipped - you have to generate it. The `rougify` CLI that comes with the Rouge gem prints a CSS file you can drop into your project. Once it's there, swapping themes is a one-line regeneration. Default `minima` includes a basic syntax stylesheet, but it's small and tied to the theme's color palette; generating your own gives you control and the right contrast against your background.
 
 Typography for code is its own discipline. The body face is for reading prose; the monospace face is for reading structure. They need to sit next to each other without one shouting. JetBrains Mono, IBM Plex Mono, Berkeley Mono, and the open-source `Mono` cuts of common sans families are all reasonable choices. The key is **sizing them so the x-height looks similar to the body** - a 16px sans body usually wants a 14.5-15px monospace, not 16px, because most monospaces have a taller x-height. Inline code (`` `like this` ``) wants a small background tint and a tiny horizontal pad; block code wants more padding and a less aggressive background. Get those two right and the post looks engineered before anyone reads a word.
 
@@ -75,7 +75,7 @@ code {
   font-size: 0.9em;
 }
 
-// Block code: rouge handles colour; we handle the frame.
+// Block code: rouge handles color; we handle the frame.
 pre.highlight {
   padding: 1em 1.2em;
   border-radius: 6px;
@@ -156,14 +156,14 @@ flowchart LR
   js[codeblock-copy.html] --> page
 ```
 
-Rouge produces the HTML at build time; the CSS provides the colours; the include adds interactivity in the browser.
+Rouge produces the HTML at build time; the CSS provides the colors; the include adds interactivity in the browser.
 
 ## Common pitfalls
 
 | Pitfall | Why it happens | Fix |
 |---|---|---|
-| Code blocks render but have no colours. | Rouge produced the spans but no stylesheet is loaded. | Generate one with `rougify style <name> > _sass/_rouge.scss` and `@import "rouge";`. |
-| Wrong language colours after a fence change. | The fence tag is misspelt or unsupported (`js` vs `javascript`, `sh` vs `bash`). | Check Rouge's [list of lexers](https://github.com/rouge-ruby/rouge/tree/master/lib/rouge/lexers); use canonical names. |
+| Code blocks render but have no colors. | Rouge produced the spans but no stylesheet is loaded. | Generate one with `rougify style <name> > _sass/_rouge.scss` and `@import "rouge";`. |
+| Wrong language colors after a fence change. | The fence tag is misspelt or unsupported (`js` vs `javascript`, `sh` vs `bash`). | Check Rouge's [list of lexers](https://github.com/rouge-ruby/rouge/tree/master/lib/rouge/lexers); use canonical names. |
 | Copy button copies HTML, not source. | `innerHTML` was used instead of `innerText`. | Use `pre.innerText` (or `textContent`) - Rouge's spans don't leak that way. |
 | Inline code looks like block code. | A single `code` selector covers both, with block-level padding. | Style inline `code` separately from `pre code`/`pre.highlight`. |
 | Monospace dwarfs the body text. | Default 1em monospace against a 16-17px body face. | Set block code at ~0.875rem and inline code at ~0.9em. |
@@ -175,7 +175,7 @@ Rouge produces the HTML at build time; the CSS provides the colours; the include
 3. Use the `highlight` Liquid tag with `linenos` on one post that walks through a multi-step snippet. Note one situation where you reached for the tag instead of a fenced block.
 
 ## Recap & next
-- Rouge tokenises fenced code at build time; the colours come from a separate stylesheet you generate with `rougify`.
+- Rouge tokenises fenced code at build time; the colors come from a separate stylesheet you generate with `rougify`.
 - Fenced blocks cover 95% of cases; reach for the `highlight` tag when you need line numbers or line marking.
 - Style inline `code` and block `pre.highlight` separately - they have different jobs.
 - A 20-line vanilla-JS include is enough for copy-to-clipboard; no plugin required.

@@ -89,14 +89,14 @@ The gem provides defaults; your repo overrides them path-by-path. You only ever 
 |---|---|---|
 | Searching the repo for `default.html` and finding nothing. | Gem-based theme files don't live in your repo until you override them. | Run `bundle info minima` to find the gem path; read the layouts there. |
 | Adopting Chirpy/al-folio for "engineering polish", then spending weekends fighting its opinions. | Rich themes encode a lot of design decisions; deviating means undoing them. | Either commit to the theme's look or downgrade to a simpler base. |
-| Forking a theme repo to "customise easily", then never pulling upstream fixes. | A fork is now a maintenance burden, and merge conflicts grow with every change. | Prefer gem-based themes; reserve forking for when the override path runs out. |
+| Forking a theme repo to "customize easily", then never pulling upstream fixes. | A fork is now a maintenance burden, and merge conflicts grow with every change. | Prefer gem-based themes; reserve forking for when the override path runs out. |
 | Editing files inside the gem's install directory. | The path is read-write, and edits seem to "work" locally. | Don't. `bundle update` will silently wipe them; copy the file into your repo instead. |
 | Going from-scratch on day one. | Total control is appealing before you've felt the weight of maintaining it. | Use a theme for v1; rewrite from scratch on v3 when you actually know what you want. |
 
 ## Exercises
 
 1. Run `bundle info minima` and open the gem in your editor. Find the line in `_layouts/default.html` that renders the site footer. Note the path - you'll override exactly this file in the next chapter.
-2. Open the GitHub repo for one community theme (Chirpy or al-folio). List three opinions it encodes (layout, navigation, colour, typography) and ask yourself whether you want to inherit each one.
+2. Open the GitHub repo for one community theme (Chirpy or al-folio). List three opinions it encodes (layout, navigation, color, typography) and ask yourself whether you want to inherit each one.
 3. Write a one-paragraph "design brief" for your blog: what should the home page show, how many fonts, light or dark, sidebar or no sidebar. You'll measure your theme choice against this brief.
 
 ## Recap & next
@@ -105,7 +105,7 @@ The gem provides defaults; your repo overrides them path-by-path. You only ever 
 - Gem-based themes hide most files until you override them; `bundle info <theme>` shows you where they actually live.
 - Read a theme's `_layouts`, `_includes`, and `_sass` *before* adopting it, so you know what overrides you'll need.
 - For an engineering blog, the default recommendation is `minima` plus selective overrides - the rest of this module assumes that path.
-- You've outgrown a theme when the colour tokens, typography, or markup you want to change don't have hooks; that's the signal to fork or replace, not before.
+- You've outgrown a theme when the color tokens, typography, or markup you want to change don't have hooks; that's the signal to fork or replace, not before.
 
 Next, **Customising layouts and styles without forking the whole theme** - the exact override workflow that keeps your diff with the theme gem small.
 

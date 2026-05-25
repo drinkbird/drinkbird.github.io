@@ -44,7 +44,7 @@ By *code churn* we generally refer to the lines of code added, modified or remov
 
 As [research](https://www.researchgate.net/publication/2816801_Code_Churn_A_Measure_for_Estimating_the_Impact_of_Code_Change) has shown, there is a strong connection between high volumes of code churn and the number of defects discovered while testing, hence such measurements are great for predicting a system's fault density.
 
-By making changes in an uncontrollable fashion we force a system to live in a constant state of flux where bugs are easily introduced, the chance of merge conflicts is always high, and knowledge spreads thin amongst a team, as it becomes harder and harder for programmers to keep track of what is happening in their codebase.
+By making changes in an uncontrollable fashion we force a system to live in a constant state of flux where bugs are easily introduced, the chance of merge conflicts is always high, and knowledge spreads thin among a team, as it becomes harder and harder for programmers to keep track of what is happening in their codebase.
 
 Let's examine some of the prevailing root causes of such a situation.
 
@@ -94,7 +94,7 @@ Instead of focusing on the speed of writing, we should be focusing on the speed 
 
 The Zone (also known as Flow) is a state of consciousness we often reach after concentrating on a task for some time without being interrupted. Attention is increased, focus gets sharper and thoughts flow effortlessly. Athletes and musicians achieve their best performance in that state.
 
-It's a popular belief amongst programmers that we as well perform our best while in the Zone. Although that's a decent assumption, it's not a very accurate one.
+It's a popular belief among programmers that we as well perform our best while in the Zone. Although that's a decent assumption, it's not a very accurate one.
 
 Musicians and athletes perform well in the Zone because their practice is mostly consisted of repeatable actions that exercise both muscle and standard memory.
 
@@ -119,7 +119,7 @@ In some companies, code churn measurements are not used as a means of evaluating
 
 Can you spot the paradox?
 
-Such workplaces essentially push programmers towards stirring-up the codebase. It's usually the inexperienced programmers that take the bait and try to make their name appear on the source control history as much as possible, even if it means just moving chunks of code around. The more pointless changes they make, the more productive they are seen as.
+Such workplaces essentially push programmers toward stirring-up the codebase. It's usually the inexperienced programmers that take the bait and try to make their name appear on the source control history as much as possible, even if it means just moving chunks of code around. The more pointless changes they make, the more productive they are seen as.
 
 It's also the same people who will do whatever it takes to be the first ones to patch a production issue and collect more stars from the management, making a bigger mess in the process. What the management doesn't often realize is that those people's unrestrained stir-up is the root cause of many such issues.
 
@@ -135,7 +135,7 @@ Imagine your team building a house and one of your crew to spending their time t
 
 We should only build things that are unique to what our business does and can be considered as a strategic asset, and either buy commercial components or use open-sourced ones for everything else.
 
-It's always easy to experiment and learn on someone else's dollar, but as true professionals we should admit when there is no actual problem to be solved and push towards spending our time on things that really worth our employer's investment.
+It's always easy to experiment and learn on someone else's dollar, but as true professionals we should admit when there is no actual problem to be solved and push toward spending our time on things that really worth our employer's investment.
 
 It's also our obligation to mentor less experienced and less principled programmers, and help them understand how arbitrarily stirring-up the code can hurt themselves and their projects. On that end, we shouldn't forget that leading by example is much more effective than confrontation.
 

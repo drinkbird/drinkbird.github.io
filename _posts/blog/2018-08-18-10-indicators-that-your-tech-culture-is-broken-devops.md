@@ -50,7 +50,7 @@ DevOps is something wider that touches on every aspect of technology within an o
 
 > DevOps is a culture
 
-**Within a true DevOps culture, development, operations and product people work close together towards a common goal: delivering high-quality, reliable software that enables an organization to conduct its business.**
+**Within a true DevOps culture, development, operations and product people work close together toward a common goal: delivering high-quality, reliable software that enables an organization to conduct its business.**
 
 Of course, that culture can’t flourish when leadership is not 100% on board.
 
@@ -68,7 +68,7 @@ Here are 10 indicators that an organization's tech culture is broken. Such an or
 1. When simple procedures that should normally take a few minutes to complete, end up taking days or weeks, due to layers and layers of meaningless red tape.
 1. When projects fail one after another, but there are no lessons learned. The very same mistakes are repeated at the next project.
 1. When there's a constant need to work overtime, which is usually an indication of either poor management, the lack of good engineering practices, or both.
-1. When all incentives (bonuses, promotions etc.) point solely towards individual performance metrics, significantly impeding any chances of meaningful team work or inter-team collaboration, and encouraging people to keep pursuing their individual (and often conflicting) agendas.
+1. When all incentives (bonuses, promotions etc.) point solely toward individual performance metrics, significantly impeding any chances of meaningful team work or inter-team collaboration, and encouraging people to keep pursuing their individual (and often conflicting) agendas.
 1. When important technical decisions are made by “enterprise architects” (or any other flavor of architects) who don’t code. Code is all about details. Thinking of details as unimportant, and making decisions solely based on the “bigger picture” is a well-disguised death march.
 
 > Architects who don’t code are not architects; they are something else… -- Robert C. Martin

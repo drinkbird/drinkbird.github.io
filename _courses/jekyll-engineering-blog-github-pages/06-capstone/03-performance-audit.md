@@ -14,7 +14,7 @@ chapter_summary: "Running Lighthouse against the live blog and fixing the few th
 
 ## Concepts
 
-A static blog is already faster than most of the web. Your bottleneck is rarely your HTML - it's a hero image without dimensions, a font request that delays first paint, or a third-party script someone added a year ago. The job of a performance audit is to find which of those is currently the worst, fix it, and move on. Premature performance work is the same kind of waste as premature optimisation in code.
+A static blog is already faster than most of the web. Your bottleneck is rarely your HTML - it's a hero image without dimensions, a font request that delays first paint, or a third-party script someone added a year ago. The job of a performance audit is to find which of those is currently the worst, fix it, and move on. Premature performance work is the same kind of waste as premature optimization in code.
 
 **Core Web Vitals** are Google's three numbers. [LCP (Largest Contentful Paint)](https://web.dev/articles/lcp) measures when the biggest visible thing - usually a hero image or a paragraph of body text - finishes rendering; the target is under 2.5 seconds at the 75th percentile. [CLS (Cumulative Layout Shift)](https://web.dev/articles/cls) measures unexpected visual jumps as the page loads; target under 0.1. [INP (Interaction to Next Paint)](https://web.dev/articles/inp) measures how quickly the page responds to clicks and keypresses; target under 200ms. INP is rarely an issue on a static blog with no JavaScript framework - if you're seeing problems there, look at a third-party script before anything else.
 

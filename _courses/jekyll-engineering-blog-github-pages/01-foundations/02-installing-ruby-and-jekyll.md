@@ -21,7 +21,7 @@ The two version managers worth using are [`rbenv`](https://github.com/rbenv/rben
 
 Once Ruby is in place, `gem install bundler` gives you Bundler. Bundler reads a `Gemfile` (a small Ruby DSL listing your dependencies) and resolves a consistent set of versions into `Gemfile.lock`. For a Jekyll project this matters because the Jekyll ecosystem has plugins, and the plugin versions need to agree with your Jekyll version. Commit both files. Run `bundle install` once after cloning a Jekyll project. Run `bundle exec jekyll serve` instead of `jekyll serve` so Bundler chooses the right versions - the `bundle exec` prefix is a habit worth forming early. That's the entire Ruby toolchain you need to know about. The [official Jekyll installation guide](https://jekyllrb.com/docs/installation/) covers the same ground if you hit a platform-specific snag.
 
-`jekyll new mysite` scaffolds a project: a `Gemfile`, a `_config.yml`, a sample post, an About page, and a dependency on the [`minima`](https://github.com/jekyll/minima) theme - a clean, readable default that ships with Jekyll itself. Minima is good enough to publish, and we'll customise or replace it in Module 3. For now, the goal is a green build and a working preview at `http://127.0.0.1:4000`.
+`jekyll new mysite` scaffolds a project: a `Gemfile`, a `_config.yml`, a sample post, an About page, and a dependency on the [`minima`](https://github.com/jekyll/minima) theme - a clean, readable default that ships with Jekyll itself. Minima is good enough to publish, and we'll customize or replace it in Module 3. For now, the goal is a green build and a working preview at `http://127.0.0.1:4000`.
 
 ## Walkthrough
 

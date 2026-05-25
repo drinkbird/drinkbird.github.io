@@ -38,7 +38,7 @@ There's an undeniable simplicity to this stage, a comfort in its clarity. It is 
 
 However, while it's a necessary and often formative stage, the Couch Potato mode isn't without its limitations. Staying in this stage can curtail your growth, keeping you boxed into a reactive role. It limits your potential influence and impact, turning you into a passive player on the team rather than an active contributor.
 
-This stage has its value, though. It's where we all start, cutting our teeth on assigned tasks, learning the ropes, and becoming proficient in our chosen programming languages. We grow from these experiences, but to maximize our impact as software engineers, we must strive to evolve, to climb higher up the pyramid. And the first step towards doing that is to transform from a passive observer to a vigilant firefighter, which leads us to the next stage of our journey.
+This stage has its value, though. It's where we all start, cutting our teeth on assigned tasks, learning the ropes, and becoming proficient in our chosen programming languages. We grow from these experiences, but to maximize our impact as software engineers, we must strive to evolve, to climb higher up the pyramid. And the first step toward doing that is to transform from a passive observer to a vigilant firefighter, which leads us to the next stage of our journey.
 
 ## Stage 2: The Firefighter - "Houston, We Have a Problem."
 

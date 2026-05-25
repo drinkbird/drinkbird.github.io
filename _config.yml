@@ -88,10 +88,6 @@ reads:
     title: Microservices Development on Azure with Java [Video Course]
     url: https://blog.drinkbird.com/azure-java-microservices-video-course-packt/
     coverUrl: https://blog.drinkbird.com/images/azure-java-microservices-cover.jpg
-  buildingmicroservices2:
-    title: 'Building Microservices Second Edition: Designing Fine-Grained Systems'
-    url: https://www.amazon.co.uk/Building-Microservices-Second-Sam-Newman/dp/1492034029?tag=drin04-20
-    isbn: "1492034029"
   themythicalmanmonth:
     title: 'The Mythical Man-Month: Essays on Software Engineering, Anniversary Edition (2nd Edition)'
     url: https://www.amazon.com/Mythical-Man-Month-Software-Engineering-Anniversary/dp/0201835959?tag=drin04-20
@@ -100,10 +96,6 @@ reads:
     title: Design Patterns in Ruby
     url: https://www.amazon.co.uk/dp/0321490452?tag=drin04-20
     isbn: "0321490452"
-  stylish-fsharp:
-    title: 'Stylish F#: Crafting Elegant Functional Code for .NET and .NET Core'
-    url: https://www.amazon.co.uk/Stylish-Crafting-Elegant-Functional-Code/dp/1484239997?tag=drin04-20
-    isbn: "1484239997"
   theworkingbrain:
     title: The Working Brain
     url: https://www.amazon.co.uk/The-Working-Brain-Introduction-Neuropsychology/dp/046509208X?tag=drin04-20
@@ -117,13 +109,9 @@ reads:
     url: https://www.amazon.co.uk/dp/0137081073?tag=drin04-20
     isbn: "0137081073"
   softskills:
-    title: "Soft Skills: The software developer's life manual"
-    url: https://www.amazon.co.uk/dp/1617292397?tag=drin04-20
-    isbn: "1617292397"
-  nojsyet1:
-    title: "You Don't Know JS: Up & Going"
-    url: https://www.amazon.co.uk/You-Dont-Know-JS-Yet/dp/B084DFZ6GW?tag=drin04-20
-    isbn: "1491924462"
+    title: "Soft Skills: The Software Developer's Life Manual (2nd Edition)"
+    url: https://www.amazon.com/Soft-Skills-Software-Developers-Manual/dp/0999081446?tag=drin04-20
+    isbn: "0999081446"
   releaseit:
     title: Release It! 2nd Edition
     url: https://www.amazon.co.uk/Release-Design-Deploy-Production-Ready-Software/dp/1680502395?tag=drin04-20
@@ -161,32 +149,20 @@ reads:
     url: https://www.amazon.com/Microservices-Flexible-Architecture-Eberhard-Wolff/dp/0134602412?tag=drin04-20
     isbn: "0134602412"
   buildingmicroservices:
-    title: 'Building Microservices: Designing Fine-Grained Systems'
-    url: https://www.amazon.com/Building-Microservices-Designing-Fine-Grained-Systems/dp/1491950358?tag=drin04-20
-    isbn: "1491950358"
+    title: 'Building Microservices: Designing Fine-Grained Systems (2nd Edition)'
+    url: https://www.amazon.com/Building-Microservices-Designing-Fine-Grained-Systems/dp/1492034029?tag=drin04-20
+    isbn: "1492034029"
   legacycode:
     title: Working Effectively with Legacy Code
     url: https://www.amazon.com/Working-Effectively-Legacy-Michael-Feathers/dp/0131177052?tag=drin04-20
     isbn: "0131177052"
-  nojsyet3:
-    title: "You Don't Know JS: this & Object Prototypes"
-    url: https://www.amazon.co.uk/You-Dont-Know-JS-Prototypes/dp/1491904151?tag=drin04-20
-    isbn: "1491904151"
-  aspnet-core-inaction:
-    title: ASP.NET Core in Action
-    url: https://www.amazon.co.uk/ASP-NET-Core-Action_p1-Andrew-Lock/dp/1617294616?tag=drin04-20
-    isbn: "1617294616"
   streamingarch:
     title: 'Streaming Architecture: New Designs Using Apache Kafka and MapR Streams'
     url: https://www.amazon.com/Streaming-Architecture-Designs-Apache-Streams/dp/1491953926?tag=drin04-20
     isbn: "1491953926"
-  nojsyet5:
-    title: "You Don't Know JS: Async & Performance"
-    url: https://www.amazon.co.uk/You-Dont-Know-JS-Performance/dp/1491904224?tag=drin04-20
-    isbn: "1491904224"
   accelerate:
     title: 'Accelerate: Building and Scaling High Performing Technology Organizations'
-    url: https://www.amazon.co.uk/Accelerate-Software-Performing-Technology-Organizations/dp/1942788339?tag=drin04-20
+    url: https://www.amazon.com/Accelerate-Software-Performing-Technology-Organizations/dp/1942788339?tag=drin04-20
     isbn: "1942788339"
   functionalreactive:
     title: Functional and Reactive Domain Modeling
@@ -204,14 +180,6 @@ reads:
     title: 'Clean Code: A Handbook of Agile Software Craftsmanship'
     url: https://www.amazon.co.uk/dp/0132350882?tag=drin04-20
     isbn: "0132350882"
-  nojsyet6:
-    title: "You Don't Know JS: ES6 & Beyond"
-    url: https://www.amazon.co.uk/You-Dont-Know-JS-Beyond/dp/1491904240?tag=drin04-20
-    isbn: "1491904240"
-  nojsyet4:
-    title: "You Don't Know JS: Types & Grammar"
-    url: https://www.amazon.co.uk/You-Dont-Know-JS-Yet/dp/B086GD45ZG?tag=drin04-20
-    isbn: "1491904194"
   keepgoing:
     title: Keep Going
     url: https://www.amazon.co.uk/Keep-Going-Austin-Kleon/dp/1523506644?tag=drin04-20
@@ -228,26 +196,14 @@ reads:
     title: 'Peopleware: Productive Projects and Teams (3rd Edition)'
     url: https://www.amazon.com/Peopleware-Productive-Projects-Teams-3rd/dp/0321934113?tag=drin04-20
     isbn: "0321934113"
-  dddericevans:
-    title: 'Domain-Driven Design: Tackling Complexity in the Heart of Software'
-    url: https://www.amazon.co.uk/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215?tag=drin04-20
-    isbn: "0321125215"
   cleanarchitecture:
     title: "Clean Architecture: A Craftsman's Guide to Software Structure and Design"
     url: https://www.amazon.com/Clean-Architecture-Craftsmans-Software-Structure/dp/0134494164?tag=drin04-20
     isbn: "0134494164"
-  accelerate-amazon:
-    title: 'Accelerate: The Science of Lean Software and DevOps: Building and Scaling High Performing Technology Organizations'
-    url: https://www.amazon.co.uk/Accelerate-Software-Performing-Technology-Organizations-ebook/dp/B07B9F83WM?tag=drin04-20
-    isbn: B07B9F83WM
   onwritingwell-amazon:
     title: 'On Writing Well, 30th Anniversary Edition: An Informal Guide to Writing Nonfiction'
     url: https://www.amazon.co.uk/Writing-Well-30th-Anniversary-Nonfiction-ebook/dp/B0090RVGW0?tag=drin04-20
     isbn: B0090RVGW0
-  nojsyet2:
-    title: "You Don't Know JS: Scope & Closures"
-    url: https://www.amazon.co.uk/You-Dont-Know-JS-Yet/dp/B086GD45ZG?tag=drin04-20
-    isbn: "1449335586"
   interactiondesign:
     title: Interaction Design
     url: https://www.amazon.co.uk/dp/1119020751?tag=drin04-20
@@ -257,9 +213,9 @@ reads:
     url: https://www.amazon.com/Smart-Gets-Things-Done-Technical/dp/1590598385?tag=drin04-20
     isbn: "1590598385"
   building-evolutionary-architectures:
-    title: Building Evolutionary Architectures
-    url: https://www.amazon.co.uk/Building-Evolutionary-Architectures-Neal-Ford/dp/1491986360?tag=drin04-20
-    isbn: "1491986360"
+    title: 'Building Evolutionary Architectures: Automated Software Governance (2nd Edition)'
+    url: https://www.amazon.com/Building-Evolutionary-Architectures-Automated-Governance/dp/1492097543?tag=drin04-20
+    isbn: "1492097543"
   careerguide:
     title: The Complete Software Developer's Career Guide
     url: https://www.amazon.com/Complete-Software-Developers-Career-Guide/dp/0999081411?tag=drin04-20
@@ -276,14 +232,6 @@ reads:
     title: 'User Stories Applied: For Agile Software Development'
     url: https://www.amazon.com/User-Stories-Applied-Software-Development/dp/0321205685?tag=drin04-20
     isbn: "0321205685"
-  continuous-api-management:
-    title: Continuous API Management
-    url: https://www.amazon.co.uk/Continuous-API-Management-Mehdi-Medjaoui/dp/1492043559?tag=drin04-20
-    isbn: "1492043559"
-  clrviacsharp:
-    title: CLR via C# (4th Edition) (Developer Reference)
-    url: https://www.amazon.com/CLR-via-4th-Developer-Reference/dp/0735667454?tag=drin04-20
-    isbn: "0735667454"
   aspnetmvc5:
     title: Pro ASP.Net MVC 5 (Expert's Voice in ASP.Net)
     url: https://www.amazon.co.uk/dp/1430265299?tag=drin04-20
@@ -293,21 +241,17 @@ reads:
     url: https://www.amazon.co.uk/Pragmatic-Programmer-journey-mastery-Anniversary/dp/0135957052?tag=drin04-20
     isbn: "0135957052"
   managinghumans:
-    title: 'Managing Humans: Biting and Humorous Tales of a Software Engineering Manager'
-    url: https://www.amazon.co.uk/Managing-Humans-Humorous-Software-Engineering/dp/1484221575?tag=drin04-20
-    isbn: "1484221575"
-  fsharp3:
-    title: 'Programming F# 3.0: A Comprehensive Guide for Writing Simple Code to Solve Complex Problems'
-    url: https://www.amazon.co.uk/Programming-F-3-0-Chris-Smith/dp/1449320295?tag=drin04-20
-    isbn: "1449320295"
+    title: 'Managing Humans: More Biting and Humorous Tales of a Software Engineering Manager'
+    url: https://www.amazon.com/Managing-Humans-Humorous-Software-Engineering/dp/1484271157?tag=drin04-20
+    isbn: "1484271157"
   artofunittesting:
-    title: 'The Art of Unit Testing: with examples in C#'
-    url: https://www.amazon.com/Art-Unit-Testing-examples/dp/1617290890?tag=drin04-20
-    isbn: "1617290890"
+    title: 'The Art of Unit Testing, Third Edition: with examples in JavaScript'
+    url: https://www.amazon.com/Art-Unit-Testing-Third-JavaScript/dp/1617297488?tag=drin04-20
+    isbn: "1617297488"
   dataintensive:
-    title: 'Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems'
-    url: https://www.amazon.com/Designing-Data-Intensive-Applications-Reliable-Maintainable/dp/1449373321?tag=drin04-20
-    isbn: "1449373321"
+    title: 'Designing Data-Intensive Applications, 2nd Edition: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems'
+    url: https://www.amazon.com/Designing-Data-Intensive-Applications-Reliable-Maintainable/dp/1098119061?tag=drin04-20
+    isbn: "1098119061"
   learnazure:
     title: Learning Microsoft Azure
     url: https://www.amazon.co.uk/dp/1782173374?tag=drin04-20
@@ -316,26 +260,10 @@ reads:
     title: 'Show Your Work!: 10 Ways to Share Your Creativity and Get Discovered'
     url: https://www.amazon.com/Show-Your-Work-Creativity-Discovered/dp/076117897X?tag=drin04-20
     isbn: 076117897X
-  aspnetcoremvc:
-    title: Pro ASP.NET Core MVC
-    url: https://www.amazon.com/Pro-ASP-NET-Core-ADAM-FREEMAN/dp/1484203984?tag=drin04-20
-    isbn: "1484203984"
-  tao-amazon:
-    title: The Tao of Microservices
-    url: https://www.amazon.com/Tao-Microservices-Richard-Rodger/dp/1617293148?tag=drin04-20
-    isbn: "1617293148"
   habit:
     title: The Power of Habit
     url: https://www.amazon.co.uk/Power-Habit-Why-What-Change/dp/1847946240?tag=drin04-20
     isbn: "1847946240"
-  realworldfp:
-    title: 'Real-World Functional Programming: With Examples in F# and C#'
-    url: https://www.amazon.com/Real-World-Functional-Programming-Tomas-Petricek/dp/1933988924?tag=drin04-20
-    isbn: "1933988924"
-  domain-modeling-made-functional:
-    title: Domain Modeling Made Functional
-    url: https://www.amazon.co.uk/Domain-Modeling-Made-Functional-Domain-Driven/dp/1680502549?tag=drin04-20
-    isbn: "1680502549"
   97things:
     title: 97 Things Every Programmer Should Know
     url: https://www.amazon.co.uk/dp/0596809484?tag=drin04-20
@@ -345,21 +273,17 @@ reads:
     url: https://www.amazon.com/Microservices-Patterns-examples-Chris-Richardson/dp/1617294543?tag=drin04-20
     isbn: "1617294543"
   devops:
-    title: 'The Devops Handbook: How to Create World-Class Agility, Reliability, and Security in Technology Organizations'
-    url: https://www.amazon.com/DevOps-Handbook-World-Class-Reliability-Organizations/dp/1942788002?tag=drin04-20
-    isbn: "1942788002"
-  dotnetmicroservices:
-    title: '.NET Microservices: Architecture for Containerized .NET Applications'
-    url: https://docs.microsoft.com/en-us/dotnet/standard/microservices-architecture/
-    coverUrl: https://docs.microsoft.com/en-us/dotnet/standard/microservices-architecture/media/cover.png
+    title: 'The DevOps Handbook, 2nd Edition: How to Create World-Class Agility, Reliability, & Security in Technology Organizations'
+    url: https://www.amazon.com/DevOps-Handbook-World-Class-Reliability-Organizations/dp/1950508404?tag=drin04-20
+    isbn: "1950508404"
   communicationforengineers:
     title: Communication for Engineers
     url: https://www.amazon.co.uk/Communication-Engineers-developers-communicator-productivity/dp/B08W7SNN69?tag=drin04-20
     imgid: 618AcEIpzKL
   hfdesignpatterns:
-    title: Head First Design Patterns
-    url: https://www.amazon.co.uk/dp/0596007124?tag=drin04-20
-    isbn: "0596007124"
+    title: 'Head First Design Patterns: Building Extensible and Maintainable Object-Oriented Software (2nd Edition)'
+    url: https://www.amazon.com/Head-First-Design-Patterns-Object-Oriented/dp/149207800X?tag=drin04-20
+    isbn: "149207800X"
   csharpindepth:
     title: C# in Depth, 4th Edition
     url: https://www.amazon.co.uk/dp/161729134X?tag=drin04-204e
@@ -394,22 +318,94 @@ reads:
     url: https://www.amazon.com/F-C-Developers-Developer-Reference/dp/0735670269?tag=drin04-20
     isbn: "0735670269"
   radicalcandor:
-    title: "Radical Candor: Be a Kick-Ass Boss Without Losing Your Humanity"
-    url: https://www.amazon.com/Radical-Candor-Revised-Kick-Ass-Humanity/dp/1250235375?tag=drin04-20
-    isbn: "1250235375"
+    title: "Radical Candor: Fully Revised & Updated Edition"
+    url: https://www.amazon.com/Radical-Candor-Revised-Updated-Saying/dp/1529038340?tag=drin04-20
+    isbn: "1529038340"
   thefearlessorg:
     title: "The Fearless Organization: Creating Psychological Safety in the Workplace for Learning, Innovation, and Growth"
-    url: https://www.amazon.com/Fearless-Organization-Psychological-Workplace-Innovation/dp/1119477247?tag=drin04-20
-    isbn: "1119477247"
+    url: https://www.amazon.com/Fearless-Organization-Psychological-Workplace-Innovation/dp/139437335X?tag=drin04-20
+    isbn: "139437335X"
   turntheshiparound:
     title: "Turn the Ship Around!"
-    url: https://www.amazon.com/Turn-Ship-Around-Turning-Followers/dp/1591846404?tag=drin04-20
-    isbn: "1591846404"
+    url: https://www.amazon.com/Turn-Ship-Around-Building-Breaking/dp/0241250943?tag=drin04-20
+    isbn: "0241250943"
   thegoal:
     title: "The Goal: A Process of Ongoing Improvement"
-    url: https://www.amazon.co.uk/Goal-Process-Ongoing-Improvement/dp/0566086654?tag=drin04-20
-    isbn: "0566086654"
+    url: https://www.amazon.com/Goal-Process-Ongoing-Improvement/dp/0884271951?tag=drin04-20
+    isbn: "0884271951"
   thegoalgraphicnovel:
     title: "The Goal: A Business Graphic Novel"
-    url: https://www.amazon.co.uk/Goal-Business-Graphic-Novel/dp/0815385137?tag=drin04-20
+    url: https://www.amazon.com/Goal-Business-Graphic-Novel/dp/0815385137?tag=drin04-20
     isbn: "0815385137"
+  elegantpuzzle:
+    title: 'An Elegant Puzzle: Systems of Engineering Management'
+    url: https://www.amazon.com/Elegant-Puzzle-Systems-Engineering-Management/dp/1732265186?tag=drin04-20
+    isbn: "1732265186"
+  staffengineer:
+    title: 'Staff Engineer: Leadership Beyond the Management Track'
+    url: https://www.amazon.com/Staff-Engineer-Leadership-beyond-management/dp/1736417916?tag=drin04-20
+    isbn: "1736417916"
+  managerspath:
+    title: "The Manager's Path: A Guide for Tech Leaders Navigating Growth and Change"
+    url: https://www.amazon.com/Managers-Path-Camille-Fournier/dp/1491973897?tag=drin04-20
+    isbn: "1491973897"
+  highoutputmgmt:
+    title: High Output Management
+    url: https://www.amazon.com/High-Output-Management-Andrew-Grove/dp/0679762884?tag=drin04-20
+    isbn: "0679762884"
+  teamtopologies:
+    title: 'Team Topologies: Organizing Business and Technology Teams for Fast Flow'
+    url: https://www.amazon.com/Team-Topologies-Organizing-Business-Technology/dp/1942788819?tag=drin04-20
+    isbn: "1942788819"
+  fivedysfunctions:
+    title: 'The Five Dysfunctions of a Team: A Leadership Fable'
+    url: https://www.amazon.com/Five-Dysfunctions-Team-Leadership-Fable/dp/0787960756?tag=drin04-20
+    isbn: "0787960756"
+  multipliers:
+    title: 'Multipliers: How the Best Leaders Make Everyone Smarter'
+    url: https://www.amazon.com/Multipliers-Revised-Updated-Leaders-Everyone/dp/0062663070?tag=drin04-20
+    isbn: "0062663070"
+  drive:
+    title: 'Drive: The Surprising Truth About What Motivates Us'
+    url: https://www.amazon.com/Drive-Surprising-Truth-About-Motivates/dp/1786891700?tag=drin04-20
+    isbn: "1786891700"
+  crucialconversations:
+    title: 'Crucial Conversations: Tools for Talking When Stakes Are High, Third Edition'
+    url: https://www.amazon.com/Crucial-Conversations-Tools-Talking-Stakes/dp/1260474186?tag=drin04-20
+    isbn: "1260474186"
+  thinkingfastandslow:
+    title: Thinking, Fast and Slow
+    url: https://www.amazon.com/Thinking-Fast-Slow-Daniel-Kahneman/dp/0141033576?tag=drin04-20
+    isbn: "0141033576"
+  effectiveengineer:
+    title: 'The Effective Engineer: How to Leverage Your Efforts In Software Engineering to Make a Disproportionate and Meaningful Impact'
+    url: https://www.amazon.com/Effective-Engineer-Engineering-Disproportionate-Meaningful/dp/0996128107?tag=drin04-20
+    isbn: "0996128107"
+  resilientmgmt:
+    title: Resilient Management
+    url: https://www.amazon.com/Resilient-Management-Lara-Hogan/dp/B0DG4CSSGQ?tag=drin04-20
+    isbn: "B0DG4CSSGQ"
+  debuggingteams:
+    title: 'Debugging Teams: Better Productivity through Collaboration'
+    url: https://www.amazon.com/Debugging-Teams-Productivity-through-Collaboration/dp/1491932058?tag=drin04-20
+    isbn: "1491932058"
+  neversplitdiff:
+    title: 'Never Split the Difference: Negotiating As If Your Life Depended On It'
+    url: https://www.amazon.com/Never-Split-Difference-Negotiating-Depended/dp/0062407805?tag=drin04-20
+    isbn: "0062407805"
+  executiveprimer:
+    title: "The Engineering Executive's Primer: Impactful Technical Leadership"
+    url: https://www.amazon.com/Engineering-Executives-Primer-Impactful-Leadership/dp/1098149483?tag=drin04-20
+    isbn: "1098149483"
+  daretolead:
+    title: 'Dare to Lead: Brave Work. Tough Conversations. Whole Hearts.'
+    url: https://www.amazon.com/Dare-Lead-Brave-Conversations-Hearts/dp/0399592520?tag=drin04-20
+    isbn: "0399592520"
+  winargument:
+    title: 'Win Every Argument: The Art of Debating, Persuading, and Public Speaking'
+    url: https://www.amazon.com/Win-Every-Argument-Debating-Persuading/dp/1250853478?tag=drin04-20
+    isbn: "1250853478"
+  thinkinginsystems:
+    title: 'Thinking in Systems: A Primer'
+    url: https://www.amazon.com/Thinking-Systems-Primer-Donella-Meadows/dp/1603580557?tag=drin04-20
+    isbn: "1603580557"

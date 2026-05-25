@@ -1,7 +1,7 @@
 ---
 layout: page
-title: "Recommended books for Software Industry professionals"
-excerpt: "Book collections on Software Engineering, DevOps, Architecture and Management."
+title: "Books that shaped how I think about software and the teams that build it"
+excerpt: "Recommended reading on engineering leadership, software architecture, craft, and career."
 permalink: /books/
 comments: true
 categories: blog
@@ -12,67 +12,34 @@ image:
 page-key: books
 subscribe_source: books
 book_collections:
-  - software-engineering-architecture-microservices
-  - software-engineering-software-development
-  - software-engineering-career-building-professionalism-inspiration
-  - governance-product-technical-project-management
-
-reads:
-  - careerguide
-  - cleanarchitecture
-  - buildingmicroservices
-  - dataintensive
-  - cleancode
-  - 97things
-  - softskills
-  - thecleancoder
-  - smartandgetsthingsdone
-  - pragmaticprogrammer
-  - codecomplete
-  - artofunittesting
-  - xunit
-  - refactoring
-  - hfdesignpatterns
-  - gofdp
-  - dpruby
-  - leanstartup
-  - theaccidentalcreative
-  - steallikeanartist
-  - showyourwork
-  - interactiondesign
-  - nojsyet1
-  - agileppp
-  - aspnetcoremvc
-  - csharpindepth
-  - fsharp3
-nextreads:
+  - leadership-people-and-teams
+  - engineering-organizations-and-delivery
+  - software-architecture-and-systems
+  - craft-and-career
+start_here:
   - peopleware
-  - themythicalmanmonth
-  - userstoriesapplied
-  - clrviacsharp
-  - legacycode
-  - realworldfp
+  - thephoenix
+  - accelerate
+  - radicalcandor
 ---
 
 
 {% capture intro %}
 <div class="collection-anchor" id="collection-top"></div>
 
-These hand-picked book collections have helped me skyrocket my career in the Software Industry. Apart from pushing me to become a better professional, they have also inspired me to pursue personal goals and achieve more in life. This intro used to be much longer, and all the book descriptions used to be on this page, but I have decided to move [my thoughts on books](#thoughts) to the end and book descriptions to their respective collection's page.
+Most of these books I have read more than once, and a few I keep gifting to colleagues. They are the ones that earned a permanent place on the shelf. Not the ones that sounded impressive on a reading list, and not the ones that go out of date when the framework does.
 
-Whether you are a Software Engineer, DevOps Engineer, Architect or Manager, I guarantee that you can find something that deserves a spot in your personal book collection. I have read most of the books in this list more than once, as the experiences I acquire between reads help me see that knowledge in a different light.
+The *Leadership, People & Teams* collection is the biggest. The higher I have gone in my career, the less my problems have been technical. The other three collections are the canon I leaned on while I was mostly writing code, and they still earn their place.
 
-> You can only connect the dots looking backwards. -- Steve Jobs
+I update this list every so often. *Last updated: May 2026.* To get notified of future updates, <a href="#mc_embed_signup">subscribe to the DrinkBird newsletter</a>.
 
-I tend to update this list about once or twice a year. To get notified when this happens, you can <a href="#mc_embed_signup">subscribe to the DrinkBird newsletter</a> (a very low frequency newsletter).
+[My thoughts on books](#thoughts) live at the end.
 
-Jump to collection:
+<p class="affiliate-disclosure"><small><strong>Affiliate disclosure:</strong> book links are Amazon affiliate links. Buying through them doesn't cost you more, and it helps me buy the next round of books.</small></p>
 
-<ul>
-{% for book_collection_key in page.book_collections %}{% assign book_collection = site.books | where: 'slug', book_collection_key | first %}
-<li><a href="#collection-{{ book_collection.slug }}">{{ book_collection.title }}</a></li>
-{% endfor %}
-</ul>
+<div class="collection-jumplist">
+{% for book_collection_key in page.book_collections %}{% assign book_collection = site.books | where: 'slug', book_collection_key | first %}<a href="#collection-{{ book_collection.slug }}">{{ book_collection.title }}</a>{% endfor %}
+</div>
 
 {% endcapture %}
 
@@ -86,6 +53,28 @@ Jump to collection:
   </div>
 </div>
 
+{% if page.start_here %}
+-----
+
+<div class="collection-anchor" id="collection-start-here"></div>
+
+## Start here
+
+If you only read five from this list, read these. Together they cover the people, the organization, the systems, and the craft of leading engineers without losing what makes engineering good.
+
+<div class="row display-flex">
+{% for book_key in page.start_here %}
+  {% assign book = site.reads[book_key] %}
+  <div class="col-xs-6 col-sm-4 col-md-3">
+    {% include book-short.html %}
+  </div>
+{% endfor %}
+</div>
+
+<a href="#collection-top">Back to top</a>
+
+{% endif %}
+
 {% for book_collection_key in page.book_collections %}
   {% assign book_collection = site.books | where: 'slug', book_collection_key | first %}
 
@@ -93,18 +82,36 @@ Jump to collection:
 
 <div class="collection-anchor" id="collection-{{book_collection_key}}"></div>
 
-## {{ book_collection.title }}
+## [{{ book_collection.title }}]({{ book_collection.url }}){:.collection-title-link}
 {{ book_collection.content | markdownify }}
 
-<a href="{{ book_collection.url }}">View full book descriptions</a>
+{% if book_collection.spotlight %}
+  {% assign spotlight_key = book_collection.spotlight %}
+  {% assign spotlight_book = site.reads[spotlight_key] %}
+<div class="row collection-spotlight">
+  <div class="col-xs-6 col-sm-4 col-md-3">
+    {% assign book = spotlight_book %}
+    {% assign book_key = spotlight_key %}
+    {% include book-short.html %}
+  </div>
+  <div class="col-xs-12 col-sm-8 col-md-9">
+    <h3 class="spotlight-header">Spotlight: <em>{{ spotlight_book.title }}</em></h3>
+    <p class="lead">{{ book_collection.spotlight_pitch }}</p>
+    <div class="spotlight-actions">
+      <a href="{{ book_collection.url }}#{{ spotlight_key }}">Read why this book matters</a>
+    </div>
+  </div>
+</div>
+{% endif %}
 
-  {% assign collection_books = book_collection.books %}
 <div class="row display-flex">
-  {% for book_key in collection_books %}
-    {% assign book = site.reads[book_key] %}
+  {% for book_key in book_collection.books %}
+    {% unless book_key == book_collection.spotlight %}
+      {% assign book = site.reads[book_key] %}
   <div class="col-xs-6 col-sm-4 col-md-3">
     {% include book-short.html %}
   </div>
+    {% endunless %}
   {% endfor %}
 </div>
 
@@ -120,28 +127,16 @@ Jump to collection:
 
 ### Not all books have the same lifespan
 
-Some people believe that since technology advances so rapidly, books become obsolete the moment they hit the shelves. Although that's true in some occasions, it ignores an important distinction between different book types.
+Technologies move quickly, which makes some people believe books become obsolete the moment they hit the shelves. That's true in narrow cases. The more useful distinction is between *information* and *fundamentals*.
 
-Knowledge is divided into two categories, *information* and *fundamentals*. The former includes specific knowledge that helps people deal with certain problems and usually has a short lifespan, whereas the latter includes broadly applicable knowledge which isn't constrained to a specific implementation and can be relevant for years.
+Information is the specific knowledge that helps you solve today's problem in today's stack: API changes, framework idioms, configuration recipes. Short half-life. Fundamentals are the underlying ideas that apply across stacks and decades: how to model a domain, how to instrument a system, how to lead the people who build it. Books about people and behavior especially can be relevant for a lifetime, because technology changes but people don't.
 
 ![The hierarchy of knowledge]({{ site.baseurl }}/images/hierarchy_of_knowledge.png)
 
-Especially books about people and behaviour can be relevant for a lifetime, as technology changes but people don't.
-
-A solid skill set based on fundamentals can help us learn new technologies on demand, rapidly adapt to new requirements and ultimately live a more fulfilled professional life. We have to build skills based on information on top of fundamentals.
-
-*Note: I have included a few exceptional books that live in the cross-section between information and fundamentals. I try to keep those in my lists only as long as they remain relevant.*
-
-### Don't judge a book by its ~~cover~~ programming language
-
-It is common for books that target fundamental knowledge to utilise specific programming languages to illustrate their examples. Some people get discouraged and reject the book if they haven't worked with that language or have no intention of using it in the future.
-
-Fundamental knowledge is widely applicable. Learning a concept or technique in one technology stack and transferring the implementation to another should be business as usual. Smart engineers have no such limits.
+The lists above are heavily weighted toward fundamentals. A few entries live at the boundary. I keep them as long as they remain relevant and drop them when they don't.
 
 ### Success is a process, not a moment
 
-Investing in your craft takes a lot of time and effort. Reading one book won't bring you success overnight, but creating a habit of reading books regularly - along with plenty of practice - will transform you into a better engineer and stronger professional.
+Reading one book won't transform your career. Reading regularly across years, especially across topics outside your current job, will. The habit compounds faster than the work.
 
-Got any book suggestions of your own? Don't hesitate to drop a line in the comments below!
-
-Did you enjoy this post? Spread the word by giving it a share, and happy coding! `:)`
+Got a book worth adding to one of these lists? Drop a line in the comments.

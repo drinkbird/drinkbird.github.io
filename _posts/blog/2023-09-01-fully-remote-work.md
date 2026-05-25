@@ -27,7 +27,7 @@ reads:
   - agiledev
   - devops
   - thephoenix
-  - accelerate-amazon
+  - accelerate
   - domaindrivendesign
   - cleanarchitecture
   - madetostick-amazon
@@ -36,11 +36,11 @@ reads:
 
 ## Introduction: The remote work evolution
 
-The COVID-19 pandemic ushered in a chaotic period where remote work was often more about survival than optimisation. Home offices were set up in haste, kids attended virtual school in the next room, and people were unusually stressed. That may have led to misconceptions about the nature of remote work, as the lines between professional and personal life were blurred.
+The COVID-19 pandemic ushered in a chaotic period where remote work was often more about survival than optimization. Home offices were set up in haste, kids attended virtual school in the next room, and people were unusually stressed. That may have led to misconceptions about the nature of remote work, as the lines between professional and personal life were blurred.
 
 Fast forward to our present day, approaching 2024, and we stand at the threshold of a new era of professional collaboration, where the chaos and misconceptions of the pandemic have given way to reflection, learning, and adaptation.
 
-Across companies, reporting structures, and leadership styles, diverse perspectives on remote work have emerged, with some favouring traditional office spaces to optimise face-to-face collaboration, while others discover that the right combination of structure, discipline, and communication can make remote work not just a viable option but an enhanced way to connect, contribute and create.
+Across companies, reporting structures, and leadership styles, diverse perspectives on remote work have emerged, with some favoring traditional office spaces to optimize face-to-face collaboration, while others discover that the right combination of structure, discipline, and communication can make remote work not just a viable option but an enhanced way to connect, contribute and create.
 
 This rich and varied landscape is a recognition that the modern work environment is not bound by a one-size-fits-all approach but rather shaped by each individual's unique needs, preferences, and potential.
 
@@ -54,10 +54,10 @@ Configuring your space is an act of aligning ergonomics and comfort with product
 
 * Ergonomic chair: Your back will thank you. Skip the gaming bucket chairs and aim for stellar lumbar support.
 * Adjustable desk: While standing desks are all the rage, the key is adjustable height for optimal ergonomics.
-* Proper lighting: Don't underestimate the power of good lighting. It minimises eye strain, keeps you alert and contributes to a good mood.
+* Proper lighting: Don't underestimate the power of good lighting. It minimizes eye strain, keeps you alert and contributes to a good mood.
 * High-res screens: One to three, 2K or better, monitors with slim bezels and a high refresh rate? It's a game-changer. Using monitor arms instead of regular stands can help you make the most of your available desk area.
 * Quality keyboard: Given how much typing you'll be doing, invest in something robust and comfortable - say, a silent mechanical keyboard.
-* Noise-cancelling headphones: For those Zoom calls or your focus playlist, crystal-clear audio is non-negotiable.
+* Noise-canceling headphones: For those Zoom calls or your focus playlist, crystal-clear audio is non-negotiable.
 * HD Webcam: Go for 1080p or higher. A high-quality image delivers a more professional impression.
 * Podcast-quality mic: Clarity in communication is key. A top-notch microphone ensures you're heard, loud and clear.  
 * Tablet and stylus: For freehand virtual whiteboarding sessions, this duo can be surprisingly effective.
@@ -109,7 +109,7 @@ Now, how's that for nailing the lingua franca of remote engineering?
 
 *Further reading*: {% include link.html title="Communication for Engineers, by Chris Laffra" url="https://www.amazon.co.uk/Communication-Engineers-developers-communicator-productivity/dp/B08W7SNN69?tag=drin04-20" %}
 
-## 3. Discipline and time management: The organisational pillars of remote engineering
+## 3. Discipline and time management: The organizational pillars of remote engineering
 
 While traditional office settings offer a natural rhythm to your day, remote work requires a more intentional approach to discipline and time management. Let's delve into some effective strategies that can help you establish a structured, productive workday, and create a seamless boundary between your professional and personal lives.
 
@@ -123,17 +123,17 @@ The key to maintaining discipline lies in meticulous calendar management. Use vi
 
 ### Utilising technology for enhanced focus: Techniques and tools
 
-To maximise your efficiency, you’ll need a plan for each focus session. Utilise tools like Trello in combination with the [Eisenhower Matrix](https://blog.trello.com/eisenhower-matrix-productivity-tool-trello-board) to categorise and prioritise tasks. When it’s time to concentrate, implement techniques like the Pomodoro method to maintain deep focus. Also, consider enabling features like Focus mode on your computer to minimize digital distractions during these sessions.
+To maximize your efficiency, you’ll need a plan for each focus session. Utilise tools like Trello in combination with the [Eisenhower Matrix](https://blog.trello.com/eisenhower-matrix-productivity-tool-trello-board) to categorize and prioritize tasks. When it’s time to concentrate, implement techniques like the Pomodoro method to maintain deep focus. Also, consider enabling features like Focus mode on your computer to minimize digital distractions during these sessions.
 
 ### Setting boundaries: The importance of clocking out
 
-The fuzzy borders between work and personal time in a remote setting make it essential to designate a specific "end-of-day" for your professional responsibilities. Wondering what to do with the extra hours you've reclaimed from your commute? Think of it as a bonus level in your daily game of life. Use this newfound time to engage in activities that enhance your career or personal development - whether that's catching up on industry news, acquiring a new skill, or finally writing that blog post you've been putting off (hello!). And don't forget to disconnect at a reasonable time. Doing so not only helps you avoid burnout but also contributes to a happy and prolific team - something that heathy professional organisations consider a critical business goal.
+The fuzzy borders between work and personal time in a remote setting make it essential to designate a specific "end-of-day" for your professional responsibilities. Wondering what to do with the extra hours you've reclaimed from your commute? Think of it as a bonus level in your daily game of life. Use this newfound time to engage in activities that enhance your career or personal development - whether that's catching up on industry news, acquiring a new skill, or finally writing that blog post you've been putting off (hello!). And don't forget to disconnect at a reasonable time. Doing so not only helps you avoid burnout but also contributes to a happy and prolific team - something that heathy professional organizations consider a critical business goal.
 
 ### Aligning priorities: The last word on team communication 
 
 Transparency is crucial when working remotely. If you’re unsure about task prioritisation, consult your manager for guidance. Keep your team in the loop about your weekly capacity and clearly state what can be realistically achieved. This involves being explicit when tasks need to be deprioritised or dropped. Be aware of who's waiting for what, and manage expectations accordingly. Remember, capturing context and decisions in shared documents is a game changer for delivering quality results predictably. Knowing how to manage and communicate about priorities doesn't just make you a disciplined individual but a dependable team member.
 
-Organisational management is not just a personal productivity hack; it's a professional requirement in the remote work landscape. And your time is irreplaceable, so "Don't just count the hours. Make the hours count!"
+Organizational management is not just a personal productivity hack; it's a professional requirement in the remote work landscape. And your time is irreplaceable, so "Don't just count the hours. Make the hours count!"
 
 ![Presenting about Productivity and the Pomodoro technique at University College Dublin]({{ site.baseurl }}/images/remote-3.png)
 *Presenting about Productivity and the Pomodoro technique at University College Dublin*
@@ -158,7 +158,7 @@ While they may seem like just another calendar event, regular one-on-one meeting
 
 ### Virtual team building: Not just for fun
 
-Who says team building needs an actual building? Bring colleagues together with virtual activities that not just offer entertainment, but can facilitate unique ways to bring your team together. My personal favourite? [Music League](https://musicleague.com/). It's the stock market for people whose idea of diversifying assets means adding more indie rock to their playlists.
+Who says team building needs an actual building? Bring colleagues together with virtual activities that not just offer entertainment, but can facilitate unique ways to bring your team together. My personal favorite? [Music League](https://musicleague.com/). It's the stock market for people whose idea of diversifying assets means adding more indie rock to their playlists.
 
 In remote work, being close doesn't mean being near; it means being there. Show up, not just on screen, but in trust and teamwork.
 

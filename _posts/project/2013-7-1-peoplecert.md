@@ -9,7 +9,7 @@ image:
 featured: true
 ---
 
-[Peoplecert](http://www.peoplecert.org/) is one of the leading players in the global certification industry, partnering with multi-national organisations and government bodies for the development & management of globally recognised certification schemes and the delivery of their related standardized exams.
+[Peoplecert](http://www.peoplecert.org/) is one of the leading players in the global certification industry, partnering with multi-national organizations and government bodies for the development & management of globally recognized certification schemes and the delivery of their related standardized exams.
 
 This portal allows Peoplecert's Accredited Partners to search and book various types of trainings and examinations in large amounts, through an easy-to-use and appealing interface. All data is directly drawn from and stored to Peoplecert's Dynamic CRM server, including user accounts, form metadata, booking information and news posts. Peoplecert's staff is able to perfom all administration actions directly from Dynamics CRM.
 

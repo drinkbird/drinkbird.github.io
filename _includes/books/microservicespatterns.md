@@ -1,5 +1,5 @@
-This has been one of my favorite reads, and by far the best book about microservices out there. Chris Richardson has done a fantastic job combining theory with practical examples, while covering a wide range of patterns for Microservices from conception to execution.
+Chris Richardson's pattern catalog for microservices, covering the lifecycle from initial decomposition through API design, data management, deployment, and observability. Each pattern includes the trade-offs and the failure modes, not just the happy-path implementation.
 
-Although the code examples are in Java, they can easily be mapped to whatever stack you happen to be working with. As a matter of fact I've already utilized many of the illustrated patterns in .NET Core.
+The code examples are in Java but the patterns are framework-agnostic. The saga, transactional outbox, and CQRS chapters in particular apply to any stack.
 
-If you can only pick one book about microservices, this is it.
+A useful companion to [Building Microservices]({{ site.baseurl }}/books/software-architecture-and-systems#buildingmicroservices) and [Designing Data-Intensive Applications]({{ site.baseurl }}/books/software-architecture-and-systems#dataintensive) for anyone designing distributed systems.

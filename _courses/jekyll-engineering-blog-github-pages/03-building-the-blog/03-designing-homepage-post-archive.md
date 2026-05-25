@@ -10,7 +10,7 @@ chapter_summary: "Designs the three pages every blog has: a homepage with a `fea
 - The two or three CSS rules that make a post page actually readable on a phone.
 - How to build a year-grouped archive that scales as your post count grows.
 - How to use `excerpt_separator` and the per-post `excerpt:` front matter so list pages don't all look the same.
-- The judgement calls - what to leave plain, what to mark, what to hide on small screens.
+- The judgment calls - what to leave plain, what to mark, what to hide on small screens.
 
 ## Concepts
 
@@ -135,7 +135,7 @@ excerpt: "Token bucket vs. leaky bucket, and the cases where neither is enough."
 Body of the post...
 ```
 
-The `excerpt:` front-matter key wins over the separator and over the default-first-paragraph behaviour. Use it whenever the first paragraph isn't a summary.
+The `excerpt:` front-matter key wins over the separator and over the default-first-paragraph behavior. Use it whenever the first paragraph isn't a summary.
 
 ## How it fits together
 
@@ -156,7 +156,7 @@ The same `site.posts` collection feeds all three pages; front-matter flags shape
 | Homepage shows every post the same. | The template loops `site.posts` with no filter. | Add a `featured: true` flag and split into "selected" and "recent" sections. |
 | Long lines on desktop, fine on phone. | The body has no `max-width`; the column grows with the window. | Cap `.post-content` at ~40rem; let small screens fill naturally. |
 | Archive becomes unusable at 60+ posts. | Paginated 10-per-page hides everything behind clicks. | Group by year; one section per year, one line per post. |
-| Every excerpt is the same first sentence. | Default-first-paragraph behaviour with no overrides. | Set `excerpt_separator` and use `excerpt:` front matter for important posts. |
+| Every excerpt is the same first sentence. | Default-first-paragraph behavior with no overrides. | Set `excerpt_separator` and use `excerpt:` front matter for important posts. |
 | `group_by_exp` syntax error. | The second argument is a Liquid expression string, not a property name. | Use `group_by_exp: "post", "post.date \| date: '%Y'"` - both arguments quoted. |
 
 ## Exercises

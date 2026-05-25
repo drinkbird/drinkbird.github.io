@@ -56,9 +56,9 @@ If you choose to publish your posts on platforms like Medium or LinkedIn, be awa
 
 ### 3. Make a list of ideas on what to write about
 
-A good practice to get you started is to sit down and brainstorm. Spend at least half an hour and come up with 40-50 topics you can potentially write about. There are no bad ideas; just populate a list with whatever comes to you naturally. Then, after the brainstorming session, you can use tools like Notion, Obsidian, Trello, or OneNote to organise and prioritise your ideas.
+A good practice to get you started is to sit down and brainstorm. Spend at least half an hour and come up with 40-50 topics you can potentially write about. There are no bad ideas; just populate a list with whatever comes to you naturally. Then, after the brainstorming session, you can use tools like Notion, Obsidian, Trello, or OneNote to organize and prioritize your ideas.
 
-You may think you don't have much to say, but do yourself a favour and try it out; you will be pleasantly surprised. Here are some ideas on things you can expand upon:
+You may think you don't have much to say, but do yourself a favor and try it out; you will be pleasantly surprised. Here are some ideas on things you can expand upon:
 
 * Tutorials & how-to's
 * Book reviews
@@ -85,7 +85,7 @@ Remember, keep adding value, and people will notice.
 
 ## Final Thoughts
 
-You may be worried about lots of different details regarding your blog. It may feel uncomfortable at first; after all, you are going to step out of your comfort zone and do something new in public view! But worry not; you will quickly realise this is how growth feels.
+You may be worried about lots of different details regarding your blog. It may feel uncomfortable at first; after all, you are going to step out of your comfort zone and do something new in public view! But worry not; you will quickly realize this is how growth feels.
 
 Remember that creating a blog is a marathon, not a sprint. It can certainly take a while before the compound interest of your investment becomes significant enough so that you can start reaping some of the more considerable benefits.
 

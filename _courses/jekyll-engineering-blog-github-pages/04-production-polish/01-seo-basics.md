@@ -22,7 +22,7 @@ The **canonical URL** is the URL you tell search engines to treat as the origina
 
 `jekyll-sitemap` is even smaller. It walks every page and post and writes `sitemap.xml` at the root. You then submit that URL once to [Google Search Console](https://search.google.com/search-console) and [Bing Webmaster Tools](https://www.bing.com/webmasters); they re-fetch it on a schedule. Submission is not required - sitemaps help crawlers discover new pages faster and confirm canonical URLs, but Google will find your site through links anyway. See the [plugin README](https://github.com/jekyll/jekyll-sitemap) for what it includes and how to exclude pages.
 
-`robots.txt` is the file most often misunderstood. It is **advisory** - well-behaved crawlers honour it; badly-behaved ones do not. It tells search engines which paths to *crawl*, not which to *index*; a page can still be indexed if linked from elsewhere, even with `Disallow:` set. It is **not** a security mechanism - listing a path in `robots.txt` advertises that the path exists. For an engineering blog, you almost always want the same minimal file: allow everything and point at the sitemap.
+`robots.txt` is the file most often misunderstood. It is **advisory** - well-behaved crawlers honor it; badly-behaved ones do not. It tells search engines which paths to *crawl*, not which to *index*; a page can still be indexed if linked from elsewhere, even with `Disallow:` set. It is **not** a security mechanism - listing a path in `robots.txt` advertises that the path exists. For an engineering blog, you almost always want the same minimal file: allow everything and point at the sitemap.
 
 ## Walkthrough
 
@@ -112,7 +112,7 @@ flowchart LR
   xml --> crawler
 ```
 
-Plugins write into `<head>` and into a single sitemap file; the `robots.txt` line points crawlers at that sitemap. Everything else is fallback behaviour you do not have to think about.
+Plugins write into `<head>` and into a single sitemap file; the `robots.txt` line points crawlers at that sitemap. Everything else is fallback behavior you do not have to think about.
 
 ## Common pitfalls
 
@@ -131,7 +131,7 @@ Plugins write into `<head>` and into a single sitemap file; the `robots.txt` lin
 
 ## Recap & next
 - `jekyll-seo-tag` and `jekyll-sitemap` are two-line wins: install, declare, drop `{% raw %}{% seo %}{% endraw %}` into your layout.
-- Site-wide `title`, `description`, and `url` in `_config.yml` are the fallback that catches every page you didn't customise.
+- Site-wide `title`, `description`, and `url` in `_config.yml` are the fallback that catches every page you didn't customize.
 - `canonical_url` matters once you have any duplicate URLs - set it explicitly when you syndicate.
 - `robots.txt` controls crawling, not indexing, and is not a security tool.
 - Submission to Search Console is optional but useful - at minimum it shows you which pages Google sees.

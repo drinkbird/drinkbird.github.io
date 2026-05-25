@@ -154,7 +154,7 @@ Three navigation surfaces, all driven by the same per-post front matter. No plug
 | Wanting one URL per tag, no plugin available on GitHub Pages. | `jekyll-archives` isn't on the Pages safelist. | Use a single tag index page with anchors, or move to the Actions build (Module 5). |
 | "Previous" links forward in time, confusing readers. | `page.previous` is the post *before* this one in publish order - chronologically older. | Use explicit labels ("Older / Newer") or rely on series nav for ordered reading. |
 | Series posts published in different orders. | Sorting siblings by date when `series_order` isn't set. | Add a `series_order:` integer to every series post and sort by it explicitly. |
-| Categories accidentally appearing in URLs. | The `category` key participates in default permalink patterns. | Either choose this behaviour deliberately, or override `permalink:` to exclude `:categories`. |
+| Categories accidentally appearing in URLs. | The `category` key participates in default permalink patterns. | Either choose this behavior deliberately, or override `permalink:` to exclude `:categories`. |
 
 ## Exercises
 

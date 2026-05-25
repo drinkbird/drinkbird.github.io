@@ -1,3 +1,3 @@
-This was actually the first book I read about microservices, a couple of years ago.
+Eberhard Wolff's introduction to microservices is rooted in the European engineering tradition: methodical, precise, opinionated about what "microservice" actually means before it shows you how to build one. The book pays particular attention to the operational and integration challenges that the early microservices hype tended to skip over.
 
-Although a bit dated now, it still includes a ton of useful information, and can be proven quite valuable especially for anyone who's interested in working with the AWS cloud platform and the Netflix Java stack.
+The implementation chapters lean toward the AWS plus Netflix Java stack, which dates the examples but not the principles. A useful companion to [Microservices Patterns]({{ site.baseurl }}/books/software-architecture-and-systems#microservicespatterns) for anyone designing distributed systems and wanting more than one perspective on the trade-offs.

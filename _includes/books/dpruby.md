@@ -1,3 +1,3 @@
-Russ Olsen has done a great job at adapting fourteen commonly-used GoF design patterns to the Ruby language. He doesn't just list the patterns one by one, rather he presents a real-world problem, builds an initial solution for it, outlines its shortcomings, and then refactors it using design patterns.
+Russ Olsen adapts fourteen GoF design patterns to the Ruby language, working each one through a real-world problem: initial solution, shortcomings, refactor using the pattern. The format makes the patterns memorable in a way that the canonical Gang of Four book does not.
 
-It is a must-read for anyone who programs either in Ruby or in any other dynamically-typed language, such as Javascript. Also, the first two chapters provide a comprehensive introduction to Ruby, so the reader doesn't need any prior Ruby experience in order to start reading the book.
+The first two chapters cover Ruby itself, so prior Ruby experience isn't required. The dynamic-typing perspective also makes the book useful reading for developers working in JavaScript, Python, or other dynamic languages.
