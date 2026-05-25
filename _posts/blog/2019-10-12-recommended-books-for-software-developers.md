@@ -64,7 +64,7 @@ Whether you are a Software Engineer, DevOps Engineer, Architect or Manager, I gu
 
 > You can only connect the dots looking backwards. -- Steve Jobs
 
-I tend to update this list about once or twice a year. To get notified when this happens, you can <a href="http://eepurl.com/b_W2G9" target="_blank">subscribe to the DrinkBird newsletter</a> (a very low frequency newsletter).
+I tend to update this list about once or twice a year. To get notified when this happens, you can <a href="#mc_embed_signup">subscribe to the DrinkBird newsletter</a> (a very low frequency newsletter).
 
 Jump to collection:
 

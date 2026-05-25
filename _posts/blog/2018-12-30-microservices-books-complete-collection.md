@@ -138,7 +138,7 @@ I suggest that you carve out between 30 or 60 minutes of reading a day, perhaps 
 
 Have you already read any of the books above? Is there any other good read about Microservices that is missing from the list? Let me know by dropping a comment below.
 
-If you enjoyed this post and you would like to see more of my content, you can [subscribe to my newsletter](http://eepurl.com/b_W2G9) and I will keep you posted.
+If you enjoyed this post and you would like to see more of my content, you can [subscribe to my newsletter](#mc_embed_signup) and I will keep you posted.
 
 Happy new year and happy reading!<br>
 Cheers,<br>Tasos
