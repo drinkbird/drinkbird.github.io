@@ -9,7 +9,7 @@ chapter_summary: "Explains GitHub Pages' built-in Jekyll build: the pinned `gith
 - How the legacy "GitHub Pages built-in" Jekyll build actually runs, and what it pins.
 - What the plugin safelist is and which gems are on it.
 - Why your Module 4 setup almost certainly already needs more than the safelist gives you.
-- How to recognise that you've outgrown the built-in build before it costs you a debugging afternoon.
+- How to recognize that you've outgrown the built-in build before it costs you a debugging afternoon.
 - The exit path: building yourself with GitHub Actions (Chapter 3) so plugin choice stops being a deploy concern.
 
 ## Concepts
@@ -57,7 +57,7 @@ bundle list | head -30
 
 You will notice three things. Jekyll is downgraded - likely from 4.x to 3.10. Several of your direct gems are now pinned to older majors than you'd otherwise pick. And `jekyll-picture-tag` is still in the lockfile, because Bundler doesn't know the GitHub Pages build will refuse to load it.
 
-Now confirm the safelist behaviour locally with the same flag GitHub uses:
+Now confirm the safelist behavior locally with the same flag GitHub uses:
 
 ```bash
 # --safe is how GitHub Pages runs Jekyll on its servers.

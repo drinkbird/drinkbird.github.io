@@ -66,7 +66,7 @@ There are a few patterns we can leverage to avoid double writes. Which one to ch
 
 The premise of all the solutions presented here is embracing the [eventual consistency](https://en.wikipedia.org/wiki/Eventual_consistency) model while atomically performing each required step.
 
-That way, we can guarantee that services will get to know about the changes they are interested in, not at the exact time they happen but rather a few moments later (*eventually*). After all, sacrificing consistency in favour of high availability and partition tolerance is generally a good idea for [cloud applications¹](#anchor1).
+That way, we can guarantee that services will get to know about the changes they are interested in, not at the exact time they happen but rather a few moments later (*eventually*). After all, sacrificing consistency in favor of high availability and partition tolerance is generally a good idea for [cloud applications¹](#anchor1).
 
 In addition, the service's database becomes the source of truth for messages/events emitted to other consumers. That allows us not just to have better visibility into what and when something gets published but also be able to republish items if necessary.
 
@@ -75,7 +75,7 @@ Note that by using these patterns, the event consumers need to ensure `idempoten
 ---
 
 <div class="anchor" id="anchor1"></div>
-¹ For more information on the subject, you can read about [The CAP Theorem](https://en.wikipedia.org/wiki/CAP_theorem). Note that within a microservices-based application, not all components need to follow the same consistency model. For example, a `Payments` component could favour consistency over availability.
+¹ For more information on the subject, you can read about [The CAP Theorem](https://en.wikipedia.org/wiki/CAP_theorem). Note that within a microservices-based application, not all components need to follow the same consistency model. For example, a `Payments` component could favor consistency over availability.
 
 In Domain Driven Design terms, we only talk about eventual consistency between microservices / aggregate roots, not within the same one. An architect should be careful when designing subdomains to keep consistency levels inside one context and apply proper failure semantics across different domains. *(Many thanks to Hrvoje Hudoletnjak for contributing this paragraph to the article.)*
 
@@ -128,7 +128,7 @@ With [Event Sourcing](https://martinfowler.com/eaaDev/EventSourcing.html), we pe
 
 Since with Event Sourcing, we don't edit records but only insert new ones; we always change state in an inherently atomic way. The challenge lies in publishing events to a bus in an atomic way as well.
 
-When working with Event Sourcing, we refer to the database as the `Event Store`. Although there are products specialised in storing events, such as [Greg Young's Event Store](https://eventstore.org/), we can essentially use most SQL or NoSQL database products and adjust our custom event sourcing implementation to account for each database's strengths and weaknesses.
+When working with Event Sourcing, we refer to the database as the `Event Store`. Although there are products specialized in storing events, such as [Greg Young's Event Store](https://eventstore.org/), we can essentially use most SQL or NoSQL database products and adjust our custom event sourcing implementation to account for each database's strengths and weaknesses.
 
 The way we publish events reliably depends on the Event Store. For example, with a SQL implementation, we can have an `Events` table to store domain events and a flag that indicates whether a record has been published. It's similar to the Outbox pattern, but we don't need the additional Outbox entries.
 

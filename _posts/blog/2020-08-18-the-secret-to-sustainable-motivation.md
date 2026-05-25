@@ -48,7 +48,7 @@ Any attempt to tackle a high-level goal involves a vast amount of work; it may f
 
 ![Pushing a boulder up to a tall mountain]({{ site.baseurl }}/images/sustainable-motivation-4.png)
 
-After making the first few steps, we might look upwards and realise that the top is not visible. Then we get disheartened, we tell ourselves, "why even try pushing the boulder if the top is unreachable?" and our motivation plummets.
+After making the first few steps, we might look upwards and realize that the top is not visible. Then we get disheartened, we tell ourselves, "why even try pushing the boulder if the top is unreachable?" and our motivation plummets.
 
 The good news is that the size of the mountain is up to us.
 

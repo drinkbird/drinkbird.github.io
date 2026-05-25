@@ -104,7 +104,7 @@ Before proceeding any further, we'll have to open `app/Web.config`, locate the f
 <add name="BlockViewHandler" path="*" verb="*" preCondition="integratedMode" type="System.Web.HttpNotFoundHandler" />
 ```
 
-and change the value of the `path` attribute from `"*"` to `"*.cshtml"`. This setting blocks any direct web requests towards `.cshtml`
+and change the value of the `path` attribute from `"*"` to `"*.cshtml"`. This setting blocks any direct web requests toward `.cshtml`
 files, but allows all other file types to be served statically.
 
 Essentially, we need Razor files to be rendered through a controller, otherwise the C# code contained in them won't kick in. In this example,

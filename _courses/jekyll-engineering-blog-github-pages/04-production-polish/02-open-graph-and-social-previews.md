@@ -123,7 +123,7 @@ A single set of tags is read by every platform - there is no per-platform integr
 | The validator shows "Hmm, something went wrong" for a 200 page. | Often a redirect chain (http → https → trailing slash) that the scraper followed too many times. | Ensure one canonical URL with one redirect at most; the chapter on HTTPS covers this. |
 
 ## Exercises
-1. Pick three existing posts and create a 1200×630 social image for each. The image should be readable when cropped to a 1.91:1 aspect ratio; centre the headline. Add the `image:` front-matter key to each post.
+1. Pick three existing posts and create a 1200×630 social image for each. The image should be readable when cropped to a 1.91:1 aspect ratio; center the headline. Add the `image:` front-matter key to each post.
 2. Run a post URL through the [Facebook Sharing Debugger](https://developers.facebook.com/tools/debug/) and [LinkedIn Post Inspector](https://www.linkedin.com/post-inspector/). Confirm both render the expected card. Note any warnings.
 3. Add a site-wide fallback image at `/assets/img/social-default.png` and verify that a post without an `image:` key falls back to it (view source on the built page).
 

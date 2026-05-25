@@ -24,7 +24,7 @@ In Learning Microsoft Azure, Geoff helps you build pieces of an enterprise cloud
 
 I found that Chapter 8, regarding worker roles, is one of the most important chapters in the book. Worker roles are used to perform CPU- or network-intensive tasks in an asynchronous manner. Experience shows that almost every cloud application uses at least one worker role. Apart from the theoretical background offered on worker roles, Geoff demonstrates the internal life cycle of a cloud service, along with some solid code practices to follow when developing one.
 
-Geoff provides an excellent starting point for creating sound and maintainable cloud architectures. Those architectures involve proper separation of concerns and allow various parts of a solution to scale independently. The book is targeted towards intermediate software engineers who are already proficient in OOP and C#. Keep in mind that many of the design decisions described within the book are transferable, meaning that they can also be used while developing solutions for other cloud platforms.
+Geoff provides an excellent starting point for creating sound and maintainable cloud architectures. Those architectures involve proper separation of concerns and allow various parts of a solution to scale independently. The book is targeted toward intermediate software engineers who are already proficient in OOP and C#. Keep in mind that many of the design decisions described within the book are transferable, meaning that they can also be used while developing solutions for other cloud platforms.
 
 I enjoyed the book and I found it valuable. I consider it to be the missing manual for Microsoft Azure. I believe you will enjoy it too!
 

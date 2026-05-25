@@ -27,6 +27,6 @@ books:
     - thinkingfastandslow
 ---
 
-The most expensive skill in software is leading the people who build it, not building the software. These books shaped how I think about leading engineers: building psychologically safe teams, giving feedback that lands, designing organisations that ship, and growing into senior technical leadership without losing the craft. Whether you are a lead, a manager, a director, or a senior engineer who has just realised the problem is no longer technical, this is where I would start.
+The most expensive skill in software is leading the people who build it, not building the software. These books shaped how I think about leading engineers: building psychologically safe teams, giving feedback that lands, designing organizations that ship, and growing into senior technical leadership without losing the craft. Whether you are a lead, a manager, a director, or a senior engineer who has just realized the problem is no longer technical, this is where I would start.
 
 Heavily weighted toward books about people, which age slower than books about systems.

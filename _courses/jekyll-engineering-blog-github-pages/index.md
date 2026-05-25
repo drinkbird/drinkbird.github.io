@@ -37,7 +37,7 @@ modules:
     slug: building-the-blog
     dir: 03-building-the-blog
     title: "Applied: Building the blog itself"
-    summary: "Use the Jekyll model to build the actual blog - pick a starting point, customise it tastefully, and shape the reader's path through the site."
+    summary: "Use the Jekyll model to build the actual blog - pick a starting point, customize it tastefully, and shape the reader's path through the site."
     learning_objectives:
       - "Choose between a starter theme and building from scratch"
       - "Override theme files without forking the whole gem"

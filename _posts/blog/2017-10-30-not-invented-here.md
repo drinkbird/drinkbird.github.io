@@ -35,7 +35,7 @@ Oftentimes part of our job is to decide (or influence the decision) on whether t
 
 In many cases, such a decision might affect the system's overall cost, quality, security, timeline, required talent etc. Needless to say that it cannot be taken lightly.
 
-Unfortunately, the industry is plagued by a cognitive bias called [the Not Invented Here syndrome](https://en.wikipedia.org/wiki/Not_invented_here) (NIH), which drives us towards rejecting all possible existing solutions by default, in favor of implementing a new one from scratch.
+Unfortunately, the industry is plagued by a cognitive bias called [the Not Invented Here syndrome](https://en.wikipedia.org/wiki/Not_invented_here) (NIH), which drives us toward rejecting all possible existing solutions by default, in favor of implementing a new one from scratch.
 
 ![Reinvent all the things]({{ site.baseurl }}/images/reinvent.png)
 
@@ -85,7 +85,7 @@ The moment such an implementation leaves our hands it becomes legacy, and the ne
 
 ![Balancing costs]({{ site.baseurl }}/images/balance-2108024_640.jpg)
 
-Let's not forget opensource. For every standard component of a software system there are typically multiple opensource offerings we can take advantage of, and most of them can be used for free. Most importantly, we have the option to look at their source code, contribute, or even fork them and drive them towards a different direction if needed.
+Let's not forget opensource. For every standard component of a software system there are typically multiple opensource offerings we can take advantage of, and most of them can be used for free. Most importantly, we have the option to look at their source code, contribute, or even fork them and drive them toward a different direction if needed.
 
 Many opensource solutions come with optional support plans. Through these, we can get direct answer to specific questions, recommendations, and first class support when a problem occurs. That is also usually cheaper than having to develop, document, test and maintain the code ourselves.
 

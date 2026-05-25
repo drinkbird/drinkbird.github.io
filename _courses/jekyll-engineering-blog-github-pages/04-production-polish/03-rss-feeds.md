@@ -7,7 +7,7 @@ chapter_summary: "Adds `jekyll-feed` for an Atom feed at `/feed.xml`, configures
 
 ## What you'll learn
 - What `jekyll-feed` generates (it's Atom, not RSS 2.0 - and that's fine).
-- How to install it, customise per-collection feeds, and choose excerpt vs. full content.
+- How to install it, customize per-collection feeds, and choose excerpt vs. full content.
 - How autodiscovery `<link>` makes RSS readers find your feed automatically.
 - How to set per-post overrides like custom titles and authorship.
 - Why a "Subscribe" link in your site chrome is the missing piece most blogs forget.
@@ -35,7 +35,7 @@ group :jekyll_plugins do
 end
 ```
 
-Declare it and configure feed metadata in `_config.yml`. The defaults are sensible - these overrides matter only if you want to customise:
+Declare it and configure feed metadata in `_config.yml`. The defaults are sensible - these overrides matter only if you want to customize:
 
 ```yaml
 # _config.yml

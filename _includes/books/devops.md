@@ -1,4 +1,4 @@
-DevOps is in the heart of every digital transformation story. Within a true DevOps culture, Development, Operations and Product work closely together towards a common goal: delivering high-quality, reliable software that enables an organization to conduct its business in an agile, reliable, secure and effective way.
+DevOps is in the heart of every digital transformation story. Within a true DevOps culture, Development, Operations and Product work closely together toward a common goal: delivering high-quality, reliable software that enables an organization to conduct its business in an agile, reliable, secure and effective way.
 
 The DevOps Handbook is addressed to both technical and non-technical leaders and stakeholders. It provides a rich context about what DevOps is, the problems it tries to solve, plus a number of recommended strategies for adopting it. The 2nd edition (2021) adds Nicole Forsgren as a co-author and brings in fifteen new case studies, deepening the empirical backbone.
 

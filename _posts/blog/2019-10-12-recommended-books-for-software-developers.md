@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Recommended books for Software Industry professionals"
+title: "Books that shaped how I think about software and the teams that build it"
 excerpt: "Recommended reading on engineering leadership, software architecture, craft, and career."
 permalink: /books/
 comments: true
@@ -27,7 +27,7 @@ start_here:
 {% capture intro %}
 <div class="collection-anchor" id="collection-top"></div>
 
-Most of these books I have read more than once, and a few I keep gifting to colleagues. They are the ones that actually shifted how I think about software and the teams that build it. Not the ones that sounded impressive on a reading list, and not the ones that go out of date when the framework does.
+Most of these books I have read more than once, and a few I keep gifting to colleagues. They are the ones that earned a permanent place on the shelf. Not the ones that sounded impressive on a reading list, and not the ones that go out of date when the framework does.
 
 The *Leadership, People & Teams* collection is the biggest. The higher I have gone in my career, the less my problems have been technical. The other three collections are the canon I leaned on while I was mostly writing code, and they still earn their place.
 
@@ -60,7 +60,7 @@ I update this list every so often. *Last updated: May 2026.* To get notified of 
 
 ## Start here
 
-If you only read five from this list, read these. Together they cover the people, the organisation, the systems, and the craft of leading engineers without losing what makes engineering good.
+If you only read five from this list, read these. Together they cover the people, the organization, the systems, and the craft of leading engineers without losing what makes engineering good.
 
 <div class="row display-flex">
 {% for book_key in page.start_here %}
@@ -129,7 +129,7 @@ If you only read five from this list, read these. Together they cover the people
 
 Technologies move quickly, which makes some people believe books become obsolete the moment they hit the shelves. That's true in narrow cases. The more useful distinction is between *information* and *fundamentals*.
 
-Information is the specific knowledge that helps you solve today's problem in today's stack: API changes, framework idioms, configuration recipes. Short half-life. Fundamentals are the underlying ideas that apply across stacks and decades: how to model a domain, how to instrument a system, how to lead the people who build it. Books about people and behaviour especially can be relevant for a lifetime, because technology changes but people don't.
+Information is the specific knowledge that helps you solve today's problem in today's stack: API changes, framework idioms, configuration recipes. Short half-life. Fundamentals are the underlying ideas that apply across stacks and decades: how to model a domain, how to instrument a system, how to lead the people who build it. Books about people and behavior especially can be relevant for a lifetime, because technology changes but people don't.
 
 ![The hierarchy of knowledge]({{ site.baseurl }}/images/hierarchy_of_knowledge.png)
 

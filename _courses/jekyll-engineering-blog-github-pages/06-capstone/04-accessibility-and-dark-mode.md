@@ -17,7 +17,7 @@ chapter_summary: "A practical WCAG 2.2 AA pass - contrast (4.5:1 body, 3:1 large
 
 Accessibility on a blog is mostly about not breaking the defaults. The browser already gives you focus rings, semantic HTML, and reasonable defaults for screen readers; your theme either preserves that or breaks it. The job of an a11y audit is to find the places where a well-meaning bit of CSS or JS has stripped something users depend on, and put it back. The reference is [WCAG 2.2](https://www.w3.org/TR/WCAG22/); for a blog, you're aiming for AA, and most of that is honest contrast and honest markup.
 
-**Contrast.** Body text needs a 4.5:1 contrast ratio against its background. Large text (18pt+ regular or 14pt+ bold) and non-text UI elements need 3:1. The most common failure on a stylish theme is light-grey body text on white - it looks elegant in mock-ups, but `#999` on `#fff` is around 2.85:1 and fails for everyone over 40 and most people in bright light. Check your palette in the Chrome DevTools colour picker, which shows the contrast ratio live.
+**Contrast.** Body text needs a 4.5:1 contrast ratio against its background. Large text (18pt+ regular or 14pt+ bold) and non-text UI elements need 3:1. The most common failure on a stylish theme is light-gray body text on white - it looks elegant in mock-ups, but `#999` on `#fff` is around 2.85:1 and fails for everyone over 40 and most people in bright light. Check your palette in the Chrome DevTools color picker, which shows the contrast ratio live.
 
 **Focus.** Every interactive element needs a visible focus indicator. Modern themes use `:focus-visible` to show the ring only when navigating by keyboard and not on mouse clicks, which gives the best of both worlds. A worryingly common pattern is `*:focus { outline: none; }` in someone's reset - this is the single most damaging line of CSS for keyboard users. Remove it; if the default ring clashes with your design, restyle it with `:focus-visible`, don't delete it.
 
@@ -142,7 +142,7 @@ A toggle that respects the system default and persists via `localStorage`. Inlin
 
 ```html
 <!-- The toggle button (in your header) -->
-<button id="theme-toggle" type="button" aria-label="Toggle colour scheme">
+<button id="theme-toggle" type="button" aria-label="Toggle color scheme">
   Theme
 </button>
 <script>
@@ -167,7 +167,7 @@ flowchart LR
   attr --> vars
   toggle[Toggle button click] --> saved
   toggle --> attr
-  vars --> render[Rendered colours]
+  vars --> render[Rendered colors]
 ```
 
 System preference is the default; the toggle only sets `data-theme` and `localStorage` when the user wants to override. No saved value means "follow the system" - that's the polite default.
@@ -176,7 +176,7 @@ System preference is the default; the toggle only sets `data-theme` and `localSt
 
 | Pitfall | Why it happens | Fix |
 |---|---|---|
-| Light grey body text fails contrast. | `#999` on `#fff` looks classy but is around 2.85:1. | Darken to at least `#595959` (about 7:1 on white); verify with DevTools' colour picker. |
+| Light gray body text fails contrast. | `#999` on `#fff` looks classy but is around 2.85:1. | Darken to at least `#595959` (about 7:1 on white); verify with DevTools' color picker. |
 | Flash of white before dark mode kicks in. | The theme-detection script runs after first paint. | Inline a tiny `<script>` in `<head>` that sets `data-theme` synchronously before `<body>`. |
 | Focus rings invisible on buttons. | A reset CSS includes `outline: none`. | Replace with `:focus-visible { outline: ... }`; never delete focus indicators. |
 | Two `<h1>`s on a post page. | The layout has one and the post body opens with another. | Decide where the `<h1>` lives (layout, typically) and use `<h2>` onward in the body. |

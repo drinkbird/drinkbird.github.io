@@ -24,7 +24,7 @@ The last piece is **version pinning**. Override files are written against a spec
 
 ## Walkthrough
 
-A concrete, end-to-end override: change the site title's link colour and add a `<meta name="theme-color">` tag for mobile browser chrome.
+A concrete, end-to-end override: change the site title's link color and add a `<meta name="theme-color">` tag for mobile browser chrome.
 
 First, the Sass override. Create `assets/css/main.scss` in your repo:
 
@@ -34,8 +34,8 @@ First, the Sass override. Create `assets/css/main.scss` in your repo:
 ---
 
 // Override theme defaults before importing the partial - the import uses these values.
-$brand-color: #2c5282;        // site title link colour
-$link-base-color: #2c5282;    // body link colour, kept in sync
+$brand-color: #2c5282;        // site title link color
+$link-base-color: #2c5282;    // body link color, kept in sync
 
 @import "minima";
 
@@ -65,7 +65,7 @@ Then edit the copy:
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- Mobile address-bar colour - matches the body link colour set in Sass. -->
+  <!-- Mobile address-bar color - matches the body link color set in Sass. -->
   <meta name="theme-color" content="#2c5282">
 
   {%- seo -%}

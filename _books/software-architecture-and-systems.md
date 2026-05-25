@@ -15,7 +15,7 @@ books:
     - microservices
 ---
 
-Bad architecture compounds. Good architecture absorbs change. These books are how you tell which is which before the rewrite becomes inevitable. They cover the deeper material that separates teams shipping in year three from teams rewriting in year three: data systems, domain modelling, distributed-systems patterns, architecture that survives the next reorg. If you ship and operate complex systems for a living, this is the canon.
+Bad architecture compounds. Good architecture absorbs change. These books are how you tell which is which before the rewrite becomes inevitable. They cover the deeper material that separates teams shipping in year three from teams rewriting in year three: data systems, domain modeling, distributed-systems patterns, architecture that survives the next reorg. If you ship and operate complex systems for a living, this is the canon.
 
 Peer-reviewed books beat conference and blog signal-to-noise by an order of magnitude here. The ideas have had time to mature.
 

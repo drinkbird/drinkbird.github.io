@@ -52,18 +52,18 @@ But if everyone were to use the software for free, the creator wouldn't survive 
 
 > If everyone waits for everyone else to act, then nobody will.
 
-Another example, from the corporate world this time, is for different teams or executives of the same company to compete for turf. Rather than working together towards their common mission and vision, they choose to engage in micropolitics and foul practices with the sole purpose of promoting their localized agendas. And it doesn't stop there.
+Another example, from the corporate world this time, is for different teams or executives of the same company to compete for turf. Rather than working together toward their common mission and vision, they choose to engage in micropolitics and foul practices with the sole purpose of promoting their localized agendas. And it doesn't stop there.
 
-Sometimes a team expresses the need to feel superior to the rest of the company. The members of such a team are usually more interested in continuously demonstrating their "superiority" to others, rather than working towards achieving the company's goals.
+Sometimes a team expresses the need to feel superior to the rest of the company. The members of such a team are usually more interested in continuously demonstrating their "superiority" to others, rather than working toward achieving the company's goals.
 ![A peacock]({{ site.baseurl }}/images/pd-2.jpeg)
 
 Even within the boundaries of a team, members may be acting as adversaries, antagonizing each other, fighting for the next promotion, blaming, finger-pointing, and turning the workplace into another version of Hunger Games. Of course, all in the expense of meaningful work getting done.
 
 Any short-term benefits deriving from such approaches are never a good trade-off. From introducing blockers and derailing projects, to creating a toxic environment and destroying morale, the long-term consequences of such narcissistic behaviors can be dire for a company and its net results.
 
-On the other hand, when every group member is on the same page and works towards the same set of goals, everyone's force is amplified and multiplied, shifting focus from quick and shallow personal wins to a far more positive outcome for the whole group. To paraphrase Aristoteles:
+On the other hand, when every group member is on the same page and works toward the same set of goals, everyone's force is amplified and multiplied, shifting focus from quick and shallow personal wins to a far more positive outcome for the whole group. To paraphrase Aristoteles:
 
-> When a group works in harmony towards a common set of goals, the whole is greater than the sum of its parts.
+> When a group works in harmony toward a common set of goals, the whole is greater than the sum of its parts.
 
 In an ideal world, such an aspiration would be more than enough to put us in the right path. As you can imagine, that is not the case; we need something more.
 
@@ -71,9 +71,9 @@ In an ideal world, such an aspiration would be more than enough to put us in the
 
 Given the frequency humanity comes across the Prisoner's Dilemma, we have created some practical solutions to help us. Perhaps the most prevalent one is what we call *society*.
 
-Every society has members, rules, and mechanisms to ensure that members adhere to the rules or, in some cases, that members are incentivised towards desired objectives. In Game Theory, this is called *mechanism design*.
+Every society has members, rules, and mechanisms to ensure that members adhere to the rules or, in some cases, that members are incentivized toward desired objectives. In Game Theory, this is called *mechanism design*.
 
-Imagine that you and Alice are members of a criminal organisation called *The Mafia*. The Godfather, an authority who can change the rules of the game, makes you an offer you can't refuse: "If you betray your partner, you will sleep with the fishes".
+Imagine that you and Alice are members of a criminal organization called *The Mafia*. The Godfather, an authority who can change the rules of the game, makes you an offer you can't refuse: "If you betray your partner, you will sleep with the fishes".
 ![Two robbers holding loot]({{ site.baseurl }}/images/pd-3.jpeg)
 
 Now, if either of you chooses to snitch on the other, there is a huge risk of doing so for the last time. Once you get captured, the dominant strategy is to cooperate without hesitation, and strangely enough, the fear of death leads both of you to the optimal solution.
@@ -87,7 +87,7 @@ Therefore, another effective mechanism of society is *accountability through rep
 
 ## Conclusion
 
-So that is The Prisoner's Dilemma. Sometimes our dominant strategy is far from optimal. And even though cooperation would bring everyone to a much more advantageous position, anti-social behaviour can be observed everywhere.
+So that is The Prisoner's Dilemma. Sometimes our dominant strategy is far from optimal. And even though cooperation would bring everyone to a much more advantageous position, anti-social behavior can be observed everywhere.
 
 Don't just expect others to act; do your part and lead by example. Build trust, credibility, and rapport with others in your groups, as the reputation you build for yourself follows you everywhere. It doesn't only hold you personally accountable, but it also affects the decision-making process of others, contributing to the overall success or failure of your group's objectives.
 
