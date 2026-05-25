@@ -37,9 +37,9 @@ I update this list every so often. *Last updated: May 2026.* To get notified of 
 
 <p class="affiliate-disclosure"><small><strong>Affiliate disclosure:</strong> book links are Amazon affiliate links. Buying through them doesn't cost you more, and it helps me buy the next round of books.</small></p>
 
-<p class="collection-jumplist">
-{% for book_collection_key in page.book_collections %}{% assign book_collection = site.books | where: 'slug', book_collection_key | first %}<a href="#collection-{{ book_collection.slug }}">{{ book_collection.title }}</a>{% unless forloop.last %} · {% endunless %}{% endfor %}
-</p>
+<div class="collection-jumplist">
+{% for book_collection_key in page.book_collections %}{% assign book_collection = site.books | where: 'slug', book_collection_key | first %}<a href="#collection-{{ book_collection.slug }}">{{ book_collection.title }}</a>{% endfor %}
+</div>
 
 {% endcapture %}
 
@@ -82,7 +82,7 @@ If you only read five from this list, read these. Together they cover the people
 
 <div class="collection-anchor" id="collection-{{book_collection_key}}"></div>
 
-## {{ book_collection.title }}
+## [{{ book_collection.title }}]({{ book_collection.url }}){:.collection-title-link}
 {{ book_collection.content | markdownify }}
 
 {% if book_collection.spotlight %}
@@ -97,7 +97,9 @@ If you only read five from this list, read these. Together they cover the people
   <div class="col-xs-12 col-sm-8 col-md-9">
     <h3 class="spotlight-header">Spotlight: <em>{{ spotlight_book.title }}</em></h3>
     <p class="lead">{{ book_collection.spotlight_pitch }}</p>
-    <p><a href="{{ book_collection.url }}#{{ spotlight_key }}">Read why this book matters</a> · <a href="{{ book_collection.url }}">View the full collection</a></p>
+    <div class="spotlight-actions">
+      <a href="{{ book_collection.url }}#{{ spotlight_key }}">Read why this book matters</a>
+    </div>
   </div>
 </div>
 {% endif %}
