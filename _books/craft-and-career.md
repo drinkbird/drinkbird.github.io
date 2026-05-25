@@ -1,5 +1,7 @@
 ---
 title: Software Craft & Career
+spotlight: pragmaticprogrammer
+spotlight_pitch: "Twenty years of habits that separate craftsmen from coders, in a 300-page handbook you can finish on a long flight. The book to hand to any engineer two years into their career."
 redirect_from:
     - /books/software-engineering-software-development
     - /books/software-engineering-software-development/
@@ -38,5 +40,3 @@ The first half of this list is the canon of software craft: how to write code th
 Both halves matter. Strong craft without communication leaves you stuck at senior engineer. Strong communication without craft leaves you with nothing to communicate about.
 
 > Laborers are hired to take direction. Professionals are hired to ensure that the direction chosen makes sense. -- Robert C. Martin
-
-Full disclosure: the following are <strong>Amazon affiliate links</strong>. Using these links to buy books won't cost you more, but it will help me purchase more books. Thank you for your support!

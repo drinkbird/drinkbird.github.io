@@ -932,16 +932,63 @@ a.cover {
 			border: 1px solid $gray;
 			margin: 0 auto;
 		}
-		
+
 		h4 {
 			font-weight: bold;
 			font-size: 22px;
-			
+
 			.header-suffix {
 				font-weight: normal;
 				font-size: 16px
 			}
-		}		
+		}
+	}
+}
+
+p.affiliate-disclosure {
+	color: $gray;
+	border-left: 3px solid $gray-lighter;
+	padding: 10px 20px;
+	margin: 16px 0;
+	font-style: italic;
+}
+
+.collection-jumplist {
+	font-size: 16px;
+	margin: 8px 0 24px;
+
+	a {
+		display: inline-block;
+		margin: 4px 0;
+	}
+}
+
+.collection-spotlight {
+	background-color: lighten($gray-lighter, 5%);
+	border-left: 4px solid $brand-primary;
+	padding: 20px 16px;
+	margin: 16px 0 24px;
+
+	.spotlight-header {
+		margin-top: 0;
+		font-size: 18px;
+		text-transform: uppercase;
+		letter-spacing: 0.5px;
+		color: $gray;
+
+		em {
+			text-transform: none;
+			letter-spacing: normal;
+			color: $text-color;
+			font-style: normal;
+			font-weight: bold;
+		}
+	}
+
+	.lead {
+		font-size: 18px;
+		line-height: 1.5;
+		margin-bottom: 12px;
 	}
 }
 

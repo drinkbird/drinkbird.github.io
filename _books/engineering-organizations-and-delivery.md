@@ -1,5 +1,7 @@
 ---
 title: High-Performing Engineering Organizations
+spotlight: thephoenix
+spotlight_pitch: "The novel that taught a generation of engineering leaders to see their delivery pipeline as a system that can be diagnosed and improved, not a fact of nature."
 redirect_from:
     - /books/governance-product-technical-project-management
     - /books/governance-product-technical-project-management/
@@ -26,5 +28,3 @@ If you have authority over how software is built (CTO, VP, director, product lea
 > -- Adam Furtado, Chief Product Officer at [Kessel Run / U.S. Air Force](https://kesselrun.af.mil/), UXDX 2018
 
 If the world's largest bureaucracy can undergo such a significant digital transformation, then so can your business.
-
-Full disclosure: the following are <strong>Amazon affiliate links</strong>. Using these links to buy books won't cost you more, but it will help me purchase more books. Thank you for your support!
