@@ -457,7 +457,7 @@ $course-sidebar-border:#e3e6ea;
 	border-radius: 6px;
 }
 
-.course-quiz-header {
+.course-quiz .course-quiz-header {
 	h2 { margin: 0 0 8px; font-size: 22px; padding-bottom: 0; }
 	p  { margin: 0 0 4px; font-size: 15px; padding-bottom: 0; }
 
@@ -495,7 +495,7 @@ $course-sidebar-border:#e3e6ea;
 	margin: 0;
 }
 
-.course-quiz-choice {
+.course-quiz .course-quiz-choice {
 	margin: 0 0 6px;
 	font-size: 16px;
 
