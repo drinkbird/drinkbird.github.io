@@ -90,6 +90,16 @@ html,body,button {
     font-smoothing: antialiased
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+}
+
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	color: $brand-primary-dark;
 	font-weight: bold;
@@ -274,23 +284,23 @@ a {
 	line-height: 1.15;
 }
 
-.hero-cta {
-	margin-top: 1.4em;
+.btn-primary {
+	background-color: $brand-primary;
+	border-color: $brand-primary-darker;
+	color: $white;
+	text-shadow: none;
+	font-weight: 700;
+	letter-spacing: 0.4px;
 
-	.btn-primary {
-		background-color: $brand-primary;
+	&:hover, &:focus, &:active {
+		background-color: $brand-primary-darker;
 		border-color: $brand-primary-darker;
 		color: $white;
-		text-shadow: none;
-		font-weight: 700;
-		letter-spacing: 0.4px;
-
-		&:hover, &:focus, &:active {
-			background-color: $brand-primary-darker;
-			border-color: $brand-primary-darker;
-			color: $white;
-		}
 	}
+}
+
+.hero-cta {
+	margin-top: 1.4em;
 
 	.hero-cta-secondary {
 		display: inline-block;
@@ -981,11 +991,13 @@ a.cover {
 	float: left;
 	width: 100%;
 	color: white;
+	padding-bottom: 12px;
+	scroll-margin-top: 70px;
 
 	input.mce_inline_error {
 		border-color: $brand-danger !important;
 	}
-	
+
 	div.mce_inline_error {
 		background-color: inherit !important;
 		color: $brand-danger !important;
@@ -1001,14 +1013,92 @@ a.cover {
 		color: white;
 	}
 
-	input[type=email] {
-		-webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
-		box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
-		width: 100%;
+	& > p {
+		max-width: 520px;
+		margin: 0 auto 18px;
+		font-size: 15px;
+		opacity: 0.85;
 	}
 
-	button {
-		padding: 9px 16px 10px;
+	form {
+		max-width: 520px;
+		margin: 0 auto;
+	}
+
+	.mc-field-group {
+		margin-bottom: 14px;
+	}
+
+	input[type=email],
+	input[type=email].form-control {
+		width: 100%;
+		padding: 10px 14px;
+		font-size: 16px;
+		text-align: left;
+		color: $gray-darker;
+		background-color: $white;
+		border: 1px solid transparent;
+		border-radius: 3px;
+		box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+
+		&:focus {
+			outline: none;
+			border-color: $brand-primary;
+			box-shadow: 0 0 0 3px rgba(230, 126, 34, 0.35);
+		}
+
+		&::placeholder {
+			color: rgba(0, 0, 0, 0.4);
+		}
+	}
+
+	.subscribe-fineprint {
+		font-size: 12px;
+		line-height: 1.5;
+		margin-top: 16px;
+		margin-bottom: 0;
+		color: rgba(255, 255, 255, 0.7);
+		max-width: 460px;
+		margin-left: auto;
+		margin-right: auto;
+
+		a {
+			color: rgba(255, 255, 255, 0.9);
+			text-decoration: underline;
+
+			&:hover {
+				color: $brand-primary-lighter;
+			}
+		}
+	}
+
+	.submit-row {
+		margin-top: 18px;
+		text-align: center;
+	}
+
+	#mc-embedded-subscribe {
+		min-width: 200px;
+	}
+
+	#mce-responses {
+		margin-top: 10px;
+
+		.response {
+			padding: 8px 12px;
+			font-size: 14px;
+			border-radius: 3px;
+		}
+
+		#mce-success-response {
+			background-color: rgba(92, 184, 92, 0.18);
+			color: #d3f3d3;
+		}
+
+		#mce-error-response {
+			background-color: rgba(217, 83, 79, 0.18);
+			color: #fadbda;
+		}
 	}
 }
 
