@@ -1,0 +1,41 @@
+{
+  "chapter_id": "engineers-mba/03-markets-customers-gtm/04-gtm-motions",
+  "questions": [
+    {
+      "id": 1,
+      "question": "A PLG company has saturated its self-serve segment ($5k ACV customers) and wants to move upmarket to enterprise ($250k+ deals). Which is most likely to be the hardest part of the transition?",
+      "choices": [
+        "Updating the website.",
+        "Building the new engineering surface required by enterprise customers - SSO/SAML, audit logs, advanced RBAC, custom deployment options, compliance certifications (SOC 2, HIPAA), plus an entirely new account-management apparatus - and hiring/operating a sales-led motion that the company's culture isn't built for.",
+        "Hiring a CMO.",
+        "Translating the documentation."
+      ],
+      "correct": 1,
+      "explanation": "The PLG-to-enterprise transition affects every function. Engineering must build the enterprise feature surface (SSO, audit, RBAC, security certifications) that PLG customers don't need. Sales must hire account executives and sales engineers. Customer success transitions from help-doc-driven to white-glove. Pricing adds custom contracts. Marketing shifts to account-based. The cultural change is profound - companies that 'used to be PLG' frequently lose their developer-friendly DNA in the process. Atlassian and Figma are notable counterexamples that did this slowly and carefully."
+    },
+    {
+      "id": 2,
+      "question": "Which combination of homepage signals most strongly suggests a sales-led GTM motion?",
+      "choices": [
+        "A big 'Sign up free' button and visible pricing.",
+        "A big 'Contact sales' button, hidden pricing ('available on request'), Fortune 500 customer logos prominently featured, and analyst-report citations (Gartner, Forrester).",
+        "A free tier with credit card capture.",
+        "A pricing page with three transparent tiers."
+      ],
+      "correct": 1,
+      "explanation": "The sales-led signature is hidden pricing (because each deal is custom), 'Contact sales' as the primary CTA (because the buying motion routes through sales), enterprise customer logos (social proof targeting the same buyer), and analyst-report citations (which influence procurement and IT committees). These are visible within seconds of landing on the page - GTM motion is one of the easiest things to identify from the outside."
+    },
+    {
+      "id": 3,
+      "question": "A SaaS startup wants to operate both a free PLG motion and a sales-led enterprise motion simultaneously ('hybrid'). What's the most common reason this strategy fails?",
+      "choices": [
+        "Customers are confused by the dual model.",
+        "The company under-resources both motions - investing partway in PLG engineering (onboarding, telemetry, in-product expansion) and partway in enterprise engineering (SSO, audit, custom deployment) - and produces a worst-of-both result, with neither motion succeeding fully.",
+        "Hybrid motions are illegal under SEC regulations.",
+        "Pricing pages can't display both."
+      ],
+      "correct": 1,
+      "explanation": "Hybrid is harder than either pure motion because it requires investment in both sets of engineering capabilities, both sales motions, both marketing approaches, and both customer success models. Companies trying to run hybrid with one engineering org sized for a single motion ship a half-baked free tier and a half-baked enterprise tier. The hybrid winners (Datadog, HashiCorp, Atlassian) invested fully in both - and it took years."
+    }
+  ]
+}

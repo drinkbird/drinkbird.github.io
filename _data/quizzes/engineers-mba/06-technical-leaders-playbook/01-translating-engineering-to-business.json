@@ -1,0 +1,41 @@
+{
+  "chapter_id": "engineers-mba/06-technical-leaders-playbook/01-translating-engineering-to-business",
+  "questions": [
+    {
+      "id": 1,
+      "question": "An engineer presents 'We migrated 80% of services to Kubernetes' as a team achievement at a QBR. What's the most useful critique?",
+      "choices": [
+        "Kubernetes is a bad choice.",
+        "This is output, not outcome - it describes what was done but not what changed for the business. The translated version would be 'Migrated 80% of services to Kubernetes, which reduced infra cost by $X, cut deployment time from N to M minutes, and enables [next capability].' Until the consequence in business terms is articulated, the work is invisible to non-engineering audiences.",
+        "80% is too low.",
+        "Containers are deprecated."
+      ],
+      "correct": 1,
+      "explanation": "Output vs. outcome is the single most consistent engineering communication pattern. Output is what you produced; outcome is what changed in the world. Engineering audiences understand 'migrated to Kubernetes' immediately. Exec/cross-functional audiences need the business-outcome translation: cost saved, capability enabled, time recovered, capacity created. Without translation, engineering work is invisible at the exec level - which directly affects funding, prioritization, and recognition."
+    },
+    {
+      "id": 2,
+      "question": "Why is it sometimes the *right* call to NOT translate engineering work into business-outcome language?",
+      "choices": [
+        "Translation is always required.",
+        "Some work is genuinely foundational - technical debt paydown that enables future shipping, security hardening with bounded cost vs catastrophic downside, refactoring legacy systems before they break. Forcing every project into a contrived ROI narrative weakens credibility; naming table-stakes work honestly ('this is foundational; the cost of not doing it is catastrophic') is sometimes the more credible framing.",
+        "Engineers shouldn't have to explain themselves.",
+        "Translations always fail."
+      ],
+      "correct": 1,
+      "explanation": "Most engineering work translates cleanly to a business outcome (latency → conversion, reliability → NRR, features → ARR). But foundational work - debt paydown, security hardening, legacy refactor - sometimes doesn't have a tidy quarterly ROI; the rationale is 'we won't ship anything in 18 months without this' or 'the cost of not doing this is catastrophic.' Forcing these into contrived ROI narratives strains credibility. Strong leadership respects 'this is table stakes; here's why' when delivered confidently with clear reasoning."
+    },
+    {
+      "id": 3,
+      "question": "An engineer claims 'reducing incident rate by 50% directly caused our NRR to improve.' Why is this typically a credibility-damaging claim?",
+      "choices": [
+        "Engineers aren't allowed to discuss NRR.",
+        "NRR has many simultaneous drivers - pricing changes, customer success activities, product features, competitive landscape, account expansion. Claiming a single direct cause oversimplifies and invites pushback. The credibility-preserving framing attributes contribution rather than causation: 'reliability improvements were cited in N of M expansion-account conversations this quarter,' which is verifiable and honest.",
+        "Incident rates don't affect retention.",
+        "50% is impossible."
+      ],
+      "correct": 1,
+      "explanation": "Over-claiming a direct causal link between one engineering metric and one business metric is a common engineering credibility error. NRR moves because of many simultaneous factors; claiming sole credit invites legitimate pushback ('but pricing also changed, and customer success added two new motions'). The honest pattern: cite *contribution* with evidence - 'CS cited reliability in N of M expansion conversations' - which is testable, defensible, and credible. Over-claiming once damages future credibility on later, accurate claims."
+    }
+  ]
+}

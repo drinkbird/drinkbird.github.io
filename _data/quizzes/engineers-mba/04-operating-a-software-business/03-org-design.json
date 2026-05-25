@@ -1,0 +1,41 @@
+{
+  "chapter_id": "engineers-mba/04-operating-a-software-business/03-org-design",
+  "questions": [
+    {
+      "id": 1,
+      "question": "A company decides to migrate its monolith to microservices. They reorganise the codebase but leave team structure unchanged - the same 4 teams will continue to own all the new services. What does Conway's law predict?",
+      "choices": [
+        "Success - microservices and monoliths can coexist.",
+        "Likely failure - without team boundaries that match service boundaries, services end up jointly owned, unclearly owned, or owned-by-default-by-the-team-that-touched-it-last. This typically produces 'distributed monolith' anti-patterns that are worse than the original monolith.",
+        "Doesn't matter - Conway's law is informal.",
+        "Success because the codebase change is enough."
+      ],
+      "correct": 1,
+      "explanation": "Conway's law says the system architecture mirrors the communication structure of the organisation. If 4 teams continue to own all services with no clear team-to-service ownership, you get the worst of both worlds: distributed deployment with shared ownership confusion. The successful pattern is to align team boundaries with service boundaries - each team owns a service, its API contract, and its on-call. Architecture changes without org changes typically fail or take much longer than expected."
+    },
+    {
+      "id": 2,
+      "question": "An engineering manager has 14 direct reports. What's the most likely operational consequence?",
+      "choices": [
+        "Faster decision-making because fewer layers.",
+        "The manager loses depth on each individual report - career conversations, feedback quality, and stretch-opportunity matching all suffer. Span of 5-9 is the empirical sweet spot for engineering management; beyond that, sub-leads typically emerge informally.",
+        "Higher salary for the manager.",
+        "Better team cohesion."
+      ],
+      "correct": 1,
+      "explanation": "Engineering management span empirically caps around 8-9 direct reports. Beyond that, the manager can do logistics but cannot give depth: 1:1s become superficial, feedback gets generic, and stretch opportunities aren't matched well. Informal sub-leads emerge to handle the gap, effectively creating a hidden layer. The right fix is usually to add a layer with proper management - though that has its own costs. Flat-as-a-virtue advocates often discover this scaling cliff between 8 and 12 reports."
+    },
+    {
+      "id": 3,
+      "question": "A new CEO arrives and announces a major reorganisation within 90 days. What should employees most reasonably suspect?",
+      "choices": [
+        "The reorg is well-justified by strategy.",
+        "The reorg may be primarily a leadership-signaling exercise rather than a strategy-driven change - strategic reorgs typically follow 6-12 months of leadership embedding, customer research, and explicit problem identification. 'Reorg within 90 days of arrival' is a common pattern that often does more damage than it solves.",
+        "Engineering will love it.",
+        "The board demanded it."
+      ],
+      "correct": 1,
+      "explanation": "Reorgs should be tied to specific strategic shifts and have a 12-month-measurable outcome. New-leadership-within-90-days reorgs are typically about leadership presence and identity rather than strategy. They cost 6-12 months of velocity, create attrition, and rarely deliver the promised benefit. Healthy reorgs come after the leader has spent time understanding the business, talked to customers and teams, and can articulate a *specific* problem the reorg solves. Without that, the reorg is often more pain than gain."
+    }
+  ]
+}

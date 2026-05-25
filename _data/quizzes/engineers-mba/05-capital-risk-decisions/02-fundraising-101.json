@@ -1,0 +1,41 @@
+{
+  "chapter_id": "engineers-mba/05-capital-risk-decisions/02-fundraising-101",
+  "questions": [
+    {
+      "id": 1,
+      "question": "A startup raises a Series B of $30M at $200M pre-money. What's the post-money valuation and the new investors' ownership?",
+      "choices": [
+        "$200M post, 30% ownership.",
+        "$230M post, ~13.04% ownership (investment / post-money = $30M / $230M).",
+        "$170M post, 17.6% ownership.",
+        "$230M post, 30% ownership."
+      ],
+      "correct": 1,
+      "explanation": "Post-money = pre-money + investment = $200M + $30M = $230M. Investor ownership = investment / post-money = $30M / $230M = 13.04%. Founders prefer to anchor on pre-money (sounds smaller); investors prefer post-money (sounds larger). Same arithmetic. Existing shareholders are diluted by 13.04% (their ownership multiplied by 86.96%), unless an option pool refresh shifts some of that dilution to them as well."
+    },
+    {
+      "id": 2,
+      "question": "A company is acquired for $50M. The total preferred stack across rounds is $60M (with 1x liquidation preference). What do common shareholders typically receive?",
+      "choices": [
+        "Their pro-rata share of $50M.",
+        "Approximately $0 - preferred holders have first claim with 1x liquidation preference, so they absorb the entire $50M (recovering $50M of their $60M, with $10M shortfall to preferred itself). Common shareholders, including founders and employees with options, get nothing from this exit.",
+        "$50M minus a small percentage fee.",
+        "Common gets paid before preferred in distress."
+      ],
+      "correct": 1,
+      "explanation": "Preferred stock with 1x liquidation preference gets paid first at exit, up to their invested amount. With $60M of preferred stack and a $50M exit, preferred holders absorb the entire $50M (still short their full investment). Common shareholders get $0. This is why understanding the preference stack is critical - a $50M exit can be a wipeout for employees with options. The risk is real and frequently underestimated by employees who assume any exit produces value for everyone."
+    },
+    {
+      "id": 3,
+      "question": "An engineer is offered 0.10% equity in a Series B company. The current 409A is $2.50 and the Series B preferred price was $11.50. What's the most useful follow-up information to evaluate the offer?",
+      "choices": [
+        "The CEO's background.",
+        "The total preferred stack (affects exit math), expected future dilution rounds before exit, vesting schedule and cliff, the strike price of these options (relative to 409A), and the company's revenue/growth trajectory toward a credible exit scenario. The 0.10% is a *starting* number that will be diluted further before exit.",
+        "The office location.",
+        "Whether equity is preferred or common."
+      ],
+      "correct": 1,
+      "explanation": "Equity offers should be evaluated with: (1) the preference stack (does the exit produce common-share value?), (2) expected future rounds and resulting dilution (your 0.10% becomes 0.07% after one more round), (3) vesting (a 4-year cliff means you only realize equity if you stay), (4) strike price (cost to exercise), (5) credible exit math (revenue × multiple → valuation). 'Just look at the percentage' misses most of the math that determines actual outcome."
+    }
+  ]
+}

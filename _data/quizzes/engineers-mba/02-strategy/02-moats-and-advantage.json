@@ -1,0 +1,41 @@
+{
+  "chapter_id": "engineers-mba/02-strategy/02-moats-and-advantage",
+  "questions": [
+    {
+      "id": 1,
+      "question": "An exec claims 'our world-class engineering culture is our moat.' Why is this usually wrong as a strategic claim?",
+      "choices": [
+        "Because engineering culture is impossible to build.",
+        "Because operational excellence is rarely a structural moat - competitors can hire your engineers, copy your patterns, and adopt your tools. A real moat is a structural reason it's *hard* to compete with you regardless of execution speed.",
+        "Because culture is unmeasurable.",
+        "Because culture doesn't show up in financials."
+      ],
+      "correct": 1,
+      "explanation": "Operational excellence is a force multiplier on whatever moats you have, but it isn't a moat itself. The diagnostic question is: if a well-funded competitor poached your top 50 engineers tomorrow, would they catch up to you? If yes, the 'moat' was execution, not structure. Real moats - network effects, switching costs, scale, data, brand - persist even under heavy attack."
+    },
+    {
+      "id": 2,
+      "question": "Which combination of financial signals is most consistent with a company having genuine switching-cost and scale moats?",
+      "choices": [
+        "Falling gross margins, rising churn, S&M growing faster than revenue.",
+        "Stable or rising gross margins year-over-year, NRR >110%, logo churn under 7%, operating margin expanding as the company scales.",
+        "Rising revenue but no operating margin improvement.",
+        "Falling S&M ratio combined with falling revenue."
+      ],
+      "correct": 1,
+      "explanation": "Real moats leave fingerprints in financials. Stable/rising gross margins indicate pricing power. NRR >110% and low churn indicate switching costs or value-from-use. Operating margin expansion at scale indicates scale economies. A company claiming moats but showing none of these signals is usually marketing - the financials are the audit."
+    },
+    {
+      "id": 3,
+      "question": "Slack's collaboration product benefits from network effects. Which condition would most weaken this moat?",
+      "choices": [
+        "Slack adding more features.",
+        "Multi-homing: organisations and individuals routinely using Slack alongside Teams, Discord, or other channels simultaneously, so the cost of leaving any single network is low.",
+        "Slack increasing prices.",
+        "Slack improving reliability."
+      ],
+      "correct": 1,
+      "explanation": "Network effects are strongest when users *can't* multi-home. If every team you collaborate with is on the same platform, leaving means coordinating a mass move. If teams routinely use Slack for one project, Teams for another, and Discord for a third, the network advantage of any single platform is diluted. Multi-homing is the structural threat to network-effect moats in software."
+    }
+  ]
+}

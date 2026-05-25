@@ -1,0 +1,41 @@
+{
+  "chapter_id": "engineers-mba/02-strategy/01-porters-five-forces",
+  "questions": [
+    {
+      "id": 1,
+      "question": "An engineer is doing a Five Forces analysis of their employer, a vertical SaaS company selling exclusively to dental practices. They draw the industry boundary as 'B2B SaaS.' Why is this likely a critical error?",
+      "choices": [
+        "B2B SaaS is fine as a boundary; the analysis will work.",
+        "The industry boundary should be the set of substitutes the *customer* treats as interchangeable - for a dental SaaS, that's other dental practice management tools, not all B2B SaaS. The wrong boundary will produce a useless analysis.",
+        "B2B SaaS is too narrow.",
+        "Porter's framework doesn't apply to vertical SaaS."
+      ],
+      "correct": 1,
+      "explanation": "The most common Porter mistake is drawing the industry boundary too broadly. The boundary is the set of substitutes the customer considers - a dental practice does not see Salesforce as a substitute for Dentrix. Drawing the boundary as 'B2B SaaS' will produce nonsense forces because the customer's actual decision set is much narrower."
+    },
+    {
+      "id": 2,
+      "question": "Datadog operates in a market with high rivalry, low capital barriers to entry, and credible open-source substitutes (Prometheus, Grafana). What strategic response do these forces tend to push companies toward?",
+      "choices": [
+        "Raise prices to maximise short-term capture.",
+        "Build product *breadth* so customers consolidate on one platform rather than mixing vendors - this raises switching costs and reduces the substitution threat.",
+        "Exit the market.",
+        "Acquire competitors regardless of cost."
+      ],
+      "correct": 1,
+      "explanation": "When entry is easy and substitutes are credible, single-product differentiation gets eroded. Datadog's response has been to expand into APM, infrastructure monitoring, logs, security, and many adjacencies - once a customer uses 4+ Datadog products, the switching cost to a mix of OSS or competitors is enormous. Product breadth is a direct strategic response to the Porter profile."
+    },
+    {
+      "id": 3,
+      "question": "Cloudflare's industry structure has lower rivalry and higher entry barriers than Datadog's. Which of these structural factors most explains the difference?",
+      "choices": [
+        "Cloudflare has better marketing.",
+        "Cloudflare operates its own global edge network - a capital-intensive asset that few competitors can replicate. This raises the barrier to entry and limits the field of credible rivals.",
+        "Cloudflare's product is simpler.",
+        "Cloudflare's customers are larger."
+      ],
+      "correct": 1,
+      "explanation": "Cloudflare's global edge network requires significant capital to build and operate (data centres in 300+ cities, peering relationships, custom hardware). This capital intensity is a structural barrier - it limits how many companies can credibly enter the market. Datadog faces the opposite: an observability startup can be built with $5M and an open-source baseline. The capital requirements are part of the structural profitability difference."
+    }
+  ]
+}

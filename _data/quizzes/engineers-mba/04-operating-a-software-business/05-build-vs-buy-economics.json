@@ -1,0 +1,41 @@
+{
+  "chapter_id": "engineers-mba/04-operating-a-software-business/05-build-vs-buy-economics",
+  "questions": [
+    {
+      "id": 1,
+      "question": "An engineering team compares 'Auth0 for $50k/year' to 'build internal auth for $200k of engineering work.' Why is this comparison usually misleading?",
+      "choices": [
+        "Auth0 is too expensive.",
+        "It compares Year-1 build cost to a single year of subscription, omitting (a) ongoing maintenance - typically 0.5-1 FTE/year of an internal auth system, (b) the long tail of features the vendor already has (MFA, federation, audit logging, compliance), and (c) opportunity cost of those engineers not building product. The 3-year TCO of build is typically 5-10x the simple Year-1 comparison.",
+        "Auth0 doesn't support enterprise customers.",
+        "Internal auth is always cheaper."
+      ],
+      "correct": 1,
+      "explanation": "Engineers consistently underestimate the build case because they compare upfront build cost to a single year of vendor pricing. The full 3-year TCO of an internal auth system, including maintenance (security patches, OIDC/SAML evolution, MFA support, audit logs), edge-case handling, and opportunity cost, is typically $1.5-2M+ - vs. a few hundred thousand for the vendor. Build occasionally wins (e.g. when the capability is core to differentiation), but the naive Year-1 comparison gets the answer wrong by an order of magnitude."
+    },
+    {
+      "id": 2,
+      "question": "Why are vendor decisions in deeply regulated or commoditised categories (payments, identity, email delivery, error tracking) almost always 'buy' rather than 'build'?",
+      "choices": [
+        "Vendors lobby successfully.",
+        "These categories have high regulatory/compliance overhead (PCI DSS for payments, SOC2 for everything, GDPR/HIPAA depending on data), accumulated engineering complexity that no in-house team can replicate (fraud detection, deliverability, identity federation), and significant operational expertise that's commoditised by specialists - so building costs 5-10x the vendor option and never reaches feature parity.",
+        "Buying is always cheaper.",
+        "Engineering teams can't write secure code."
+      ],
+      "correct": 1,
+      "explanation": "Categories like payments and identity have decades of accumulated engineering complexity: PCI DSS Level 1 certification, card-network agreements, fraud-detection ML, settlement and chargeback handling, federation protocols (SAML, OIDC), and edge cases that are invisible until they bite. Vendors amortise this across thousands of customers; internal builds amortise it across one. The build case loses on TCO and on capability - the internal version is usually a worse version of the vendor product, at higher cost."
+    },
+    {
+      "id": 3,
+      "question": "A company depends heavily on a single SaaS vendor for a critical-path capability. The vendor announces a 4x pricing increase at next renewal. The company's options are limited because they have 2 years of integration accumulated. What's the structural lesson?",
+      "choices": [
+        "Always use open-source.",
+        "Critical-path single-vendor dependencies are a structural risk that should be actively managed - through thin abstractions over the vendor (matching your domain not their API), a tested second-source even if not used daily, and contractual protections (price caps, deprecation notice, data portability). The 'we can switch when we need to' assumption is rarely accurate because switching costs accumulate over time.",
+        "Vendor decisions don't matter long-term.",
+        "Only use vendors that promise never to raise prices."
+      ],
+      "correct": 1,
+      "explanation": "Single-vendor critical-path dependencies become semi-permanent because switching costs compound: data migration, integration re-work, training, parallel operation, and risk of the new vendor being worse. By renewal time, the customer is trapped. Mitigation requires upfront work: thin abstractions matching your domain (not vendor APIs), a tested but unused second source, contractual price caps and data-portability clauses, and active vendor relationship management. The 2022-2024 era taught many companies these lessons the hard way as vendors raised prices."
+    }
+  ]
+}

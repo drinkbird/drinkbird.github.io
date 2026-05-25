@@ -1,0 +1,41 @@
+{
+  "chapter_id": "engineers-mba/05-capital-risk-decisions/01-capital-allocation",
+  "questions": [
+    {
+      "id": 1,
+      "question": "A project has consumed $5M of engineering investment so far. The original justification has weakened, and finishing the project would require another $3M. A staff engineer argues 'we've already spent $5M; we have to finish it.' What's the rigorous capital-allocation response?",
+      "choices": [
+        "Finish the project - sunk costs matter.",
+        "Re-evaluate forward: the $5M already spent is gone regardless of decision. The relevant question is whether the *remaining* $3M is the best use of $3M, compared to alternative projects competing for the same capital. Past investment is informational (about feasibility) but not financially relevant to the go-forward decision.",
+        "Cancel any project that gets re-evaluated.",
+        "Continue because momentum matters."
+      ],
+      "correct": 1,
+      "explanation": "Sunk-cost trap is one of the most consistent capital-allocation errors. The $5M spent is gone whether you continue or cancel. The decision should compare 'remaining $3M to finish this' against 'remaining $3M to fund the next-best alternative.' The fact that we've spent money doesn't change the forward economics. Past investment is informational (tells you what you've learned, what's been built) but isn't financially relevant. Strong leadership teams have the discipline to walk away from a project they've invested heavily in when the forward analysis says so."
+    },
+    {
+      "id": 2,
+      "question": "Why do prioritisation frameworks like RICE (Reach × Impact × Confidence / Effort) often disappoint in practice?",
+      "choices": [
+        "They're too complex.",
+        "The scores are largely fabricated, the framework doesn't model dependencies or sequencing, it doesn't capture strategic value separate from user impact, and it implies objectivity in what is fundamentally a judgement call. Teams that succeed with these frameworks treat them as conversation tools (force the relevant questions) rather than decision rules (the score decides).",
+        "They're proprietary to specific companies.",
+        "They produce too many ideas."
+      ],
+      "correct": 1,
+      "explanation": "RICE and similar frameworks fail because the scores aren't defensible - there's no rigorous way to compute 'Impact: 7 of 10' that the team won't game. They also don't model the things that actually matter: project sequencing, strategic value (which can be high even when user impact is low - e.g. a platform investment), risk profile, or capital constraints. The best use is as *conversation* tools that force teams to articulate reach, impact, and confidence - not as decision rules that produce a number to defer to."
+    },
+    {
+      "id": 3,
+      "question": "An engineering team requests $4M for an AI-powered feature with high uncertainty (could be 10x ROI or 0). Compared to a $1.5M reliability project that's a clear 5x ROI. How should a rational exec team typically size these bets?",
+      "choices": [
+        "Both at full ask.",
+        "Asymmetric bet sizing: fund the reliable, high-ROI reliability project at its full $1.5M, and fund the high-variance AI project at a *smaller* initial investment with explicit kill criteria (e.g. $1.5M with re-evaluation at 6 months). This preserves optionality on the AI bet while not over-committing capital on something that might not work.",
+        "Fund the AI project, cancel the reliability project.",
+        "Treat them identically because both are 'engineering work.'"
+      ],
+      "correct": 1,
+      "explanation": "Smart capital allocation sizes bets asymmetrically by conviction. High-conviction, clear-ROI projects can be fully funded. High-variance bets should be funded in stages with explicit kill criteria - small initial investment to learn, expansion only if early signals are positive. This preserves capital for the projects that are working and lets you walk away from the ones that aren't. The naive 'fund everything fully' approach destroys capital because it can't pivot when high-variance bets reveal themselves as misses."
+    }
+  ]
+}

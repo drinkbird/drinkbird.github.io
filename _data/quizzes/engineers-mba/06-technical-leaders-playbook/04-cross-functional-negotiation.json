@@ -1,0 +1,41 @@
+{
+  "chapter_id": "engineers-mba/06-technical-leaders-playbook/04-cross-functional-negotiation",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Sales commits to a feature for a $1.5M deal closing in 6 weeks. Engineering estimates 12 weeks. What's the most productive engineering response?",
+      "choices": [
+        "Refuse the ask and tell sales they overcommitted.",
+        "Decompose the ask: what specifically does the customer need? Identify the narrow scope deliverable in 6 weeks (e.g. SAML SSO with one IdP) and commit to that, with the broader scope (full federation) committed on a defined roadmap. Sales gets the deal; engineering ships honest scope; the customer gets a credible roadmap.",
+        "Tell sales the deal isn't worth it.",
+        "Build a different feature instead."
+      ],
+      "correct": 1,
+      "explanation": "Naive 'we can't ship that' responses make engineering look like a blocker and don't solve the deal. The productive pattern is decomposition: most large feature asks contain a narrow critical-path component that's deliverable quickly and a broader scope that takes longer. Commit to the critical path on the deal timeline; commit to the broader scope on a roadmap. This pattern works for most engineering-sales conflicts and builds engineering's credibility as a problem-solver rather than a blocker."
+    },
+    {
+      "id": 2,
+      "question": "Why is the framing 'finance doesn't understand engineering' usually counter-productive when there's a budget conflict?",
+      "choices": [
+        "Finance does understand engineering perfectly.",
+        "Each function is competently doing its job under its own incentive structure. Finance is incentivised on forecast accuracy, capital efficiency, and cash runway - they're not wrong; they have different priorities. Reframing the conflict as 'differing incentives, not differing competence' enables productive negotiation; the 'they don't understand' frame escalates the conflict and damages the relationship.",
+        "Engineering should never argue with finance.",
+        "Finance is always wrong."
+      ],
+      "correct": 1,
+      "explanation": "Cross-functional conflicts are almost always trade-offs between functions optimising different things, not incompetence on one side. Finance is measured on forecast accuracy and capital efficiency; their conservatism on hiring is rational from their incentive structure. Engineering is measured on shipping and capacity; the desire for headcount is rational from its incentive structure. The conflict is real but doesn't reflect anyone's incompetence. Reframing this enables productive negotiation; the 'they don't understand' framing prevents it."
+    },
+    {
+      "id": 3,
+      "question": "When is the right time to bring legal or compliance into a project that touches data-protection requirements?",
+      "choices": [
+        "After the feature is built, for the security review.",
+        "At the *start* of design, before architectural decisions are baked in. Late-stage legal review can require expensive rework (data residency, audit logging, consent management are architectural). Early consultation lets legal partner with engineering on design rather than block at the end. Legal is often happy to be brought in early and frustrated to be brought in late.",
+        "Never - engineering should handle compliance.",
+        "Only if a customer requests it."
+      ],
+      "correct": 1,
+      "explanation": "Late-stage legal involvement creates the worst experience for both sides: legal sees a near-complete feature with embedded compliance issues that require rework; engineering sees its work blocked at the finish line. Early consultation - at the design stage - lets compliance requirements shape the architecture, makes legal a partner rather than a blocker, and dramatically reduces rework. The pattern generalises: bring conservative, risk-managing functions in *early*, not *late*. They'll be more useful and less obstructive when they're partners from the start."
+    }
+  ]
+}

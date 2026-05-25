@@ -1,0 +1,41 @@
+{
+  "chapter_id": "engineers-mba/01-foundations-business-os/02-reading-a-pnl",
+  "questions": [
+    {
+      "id": 1,
+      "question": "A SaaS company reports 50% gross margin. Why is this typically a red flag for a pure-SaaS business?",
+      "choices": [
+        "50% gross margin is normal for SaaS; nothing unusual.",
+        "Typical SaaS gross margins are 70–85%; 50% suggests significant infrastructure costs, hidden services revenue, or a non-SaaS business model masquerading as SaaS.",
+        "Gross margin should always be near 100% for software companies.",
+        "It indicates the company is over-investing in R&D."
+      ],
+      "correct": 1,
+      "explanation": "Pure-software SaaS at scale is typically 70–85% gross margin because the marginal cost of serving another customer is mostly cloud infrastructure plus support. A 50% gross margin usually means: lots of professional services revenue (people-cost), significant pass-through hosting, hardware involvement, or the model isn't really SaaS. Gross margin is also a strategic constraint - it caps how much you can spend on R&D and S&M."
+    },
+    {
+      "id": 2,
+      "question": "Atlassian's FY24 P&L shows R&D at 47% of revenue and S&M at only 20%, while Salesforce shows R&D at ~15% and S&M at ~36%. Both are SaaS companies. What does this tell you?",
+      "choices": [
+        "Atlassian is more profitable than Salesforce.",
+        "Salesforce has weaker engineering than Atlassian.",
+        "The two companies have very different go-to-market strategies - Atlassian is product-led and self-service-heavy; Salesforce is sales-led and enterprise.",
+        "Atlassian's expenses are misclassified."
+      ],
+      "correct": 2,
+      "explanation": "The P&L ratios are the visible footprint of GTM strategy. A high R&D / low S&M ratio is the signature of a product-led, self-service motion: you invest in product to make sales unnecessary. A low R&D / high S&M ratio is the signature of a sales-led enterprise motion: you invest in account executives, marketing programs, and channel partners to win complex deals. Same industry, different strategies."
+    },
+    {
+      "id": 3,
+      "question": "A platform engineer building internal developer tools is reclassified from R&D to COGS by the finance team. Which is most likely to happen to the P&L?",
+      "choices": [
+        "Gross margin falls (because COGS goes up); R&D ratio improves.",
+        "Gross margin rises; R&D ratio worsens.",
+        "Operating income changes but no ratios are affected.",
+        "Revenue falls."
+      ],
+      "correct": 0,
+      "explanation": "Moving headcount cost from R&D into COGS increases COGS, which reduces gross profit and therefore gross margin. R&D-as-%-of-revenue drops, which can look like better R&D efficiency. The total operating income is unchanged (it's the same dollar of cost), but the *ratios* shift - which matters because investors and execs benchmark companies by those ratios. Finance teams sometimes argue over these classifications because they materially affect how the business is perceived."
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "chapter_id": "engineers-mba/01-foundations-business-os/04-unit-economics",
+  "questions": [
+    {
+      "id": 1,
+      "question": "A SaaS company reports: ACV $24k, gross margin 75%, blended CAC $25k, annual logo churn 12%. What is the CAC payback period?",
+      "choices": [
+        "12 months",
+        "16.7 months",
+        "20 months",
+        "25 months"
+      ],
+      "correct": 1,
+      "explanation": "CAC payback = CAC / monthly gross profit per customer. Annual gross profit = $24k × 75% = $18k → monthly $1,500. Payback = $25,000 / $1,500 = 16.7 months. This falls in the healthy growth-stage range (12–18 months). 24 months is the rough industry bar; anything longer requires unusually cheap capital."
+    },
+    {
+      "id": 2,
+      "question": "Which is typically the strongest lever on LTV for a B2B SaaS company?",
+      "choices": [
+        "Reducing infrastructure costs to improve gross margin by a few points.",
+        "Reducing churn by a few percentage points.",
+        "Adding more marketing spend.",
+        "Hiring more sales reps."
+      ],
+      "correct": 1,
+      "explanation": "Because LTV = (ARPU × margin) / churn rate, churn enters the denominator. A drop from 12% to 8% extends average customer lifetime from 8.3 years to 12.5 years - a 50% increase in LTV. A few points of gross margin (75% → 80%) only adds ~7%. This is why reliability, performance, and integration depth investments are usually the highest-leverage engineering work in unit-economic terms."
+    },
+    {
+      "id": 3,
+      "question": "A founder quotes 'Our LTV:CAC is 8x' as evidence the business is great. What's the most important follow-up question?",
+      "choices": [
+        "What's the gross margin assumption - is this revenue LTV or gross-profit LTV?",
+        "Why isn't it 10x?",
+        "What's the company name?",
+        "Are competitors lower?"
+      ],
+      "correct": 0,
+      "explanation": "The most common LTV manipulation is computing LTV in *revenue* terms rather than *gross profit* terms - this inflates LTV by the inverse of gross margin (a 75%-margin company's revenue LTV is 1.33× its gross-profit LTV). The second-most-common is using a CAC variant (blended vs paid vs fully-loaded) that flatters the ratio. Always pin down both definitions before believing the number."
+    }
+  ]
+}

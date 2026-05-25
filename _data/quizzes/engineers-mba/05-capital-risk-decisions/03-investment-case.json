@@ -1,0 +1,41 @@
+{
+  "chapter_id": "engineers-mba/05-capital-risk-decisions/03-investment-case",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Why does specifying *kill criteria* in an investment-case memo counterintuitively increase the probability of funding?",
+      "choices": [
+        "It doesn't.",
+        "Kill criteria demonstrate honest engagement with downside risk, pre-commit the team to walking away if signals are bad, and limit the worst-case loss without limiting the upside. Approvers are more comfortable funding bets they know they can stop cleanly - vs bets that turn into 'sunk cost' projects that resist cancellation.",
+        "Approvers like specific numbers.",
+        "Kill criteria are legally required."
+      ],
+      "correct": 1,
+      "explanation": "Approvers worry about funding a project that becomes unkillable - that consumes resources for years past its useful life. Specifying kill criteria upfront (specific, time-bound, observable signals) makes the bet recoverable. It also signals that the proposer has thought about failure modes honestly, which builds credibility for the upside case. Many engineers skip kill criteria thinking they look weak; they're actually one of the strongest signals of a well-reasoned proposal."
+    },
+    {
+      "id": 2,
+      "question": "An engineer writes an investment-case memo showing only the 'base case' outcome of their proposal. Why is this typically a weak memo?",
+      "choices": [
+        "It's too short.",
+        "Showing only one scenario hides the range of plausible outcomes and the assumptions behind them. A rigorous memo shows base/upside/downside with rough probabilities, lets the approver pressure-test each, and produces an expected-value comparison to cost. Single-scenario memos look like marketing pitches rather than honest analysis.",
+        "Base cases are forbidden.",
+        "Memos must use 3 colors."
+      ],
+      "correct": 1,
+      "explanation": "Showing one scenario is marketing, not analysis. Real proposals carry uncertainty: how likely is the optimistic outcome? what does the downside look like? Three-scenario memos with rough probabilities force the proposer to engage with the uncertainty and let the approver evaluate whether to take the bet given the range. Single-scenario memos often hide the assumptions that would change the answer if challenged."
+    },
+    {
+      "id": 3,
+      "question": "Which is the most important section of an investment-case memo for the executive who has 5 minutes to read it?",
+      "choices": [
+        "The technical architecture appendix.",
+        "Section 1 (the problem and 'why now') plus section 5 (decision required + kill criteria). Most executive readers skim sections 1-4 and look for the decision at the bottom; if section 1 doesn't establish a problem worth solving urgently, the rest doesn't matter.",
+        "The risk register.",
+        "The author's biography."
+      ],
+      "correct": 1,
+      "explanation": "Executive readers under time pressure look for two things: 'what's the problem and why does it matter now?' and 'what's the decision I need to make?' Sections 1 and 5 carry that load. The middle sections (proposal, scenarios, cost) provide the evidence - but if section 1 doesn't establish urgency and section 5 isn't crisp about the decision, the memo fails regardless of the analysis quality. Write the memo with the time-constrained skim-reader in mind."
+    }
+  ]
+}

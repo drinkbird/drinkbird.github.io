@@ -1,0 +1,41 @@
+{
+  "chapter_id": "engineers-mba/01-foundations-business-os/03-cash-profit-accruals",
+  "questions": [
+    {
+      "id": 1,
+      "question": "A SaaS company reports a $15M net loss on its P&L for the quarter, but its cash flow statement shows $22M of positive cash from operations. Which combination most plausibly explains the gap?",
+      "choices": [
+        "The P&L is wrong.",
+        "Stock-based compensation (a non-cash expense), growth in deferred revenue (customers prepaying for future service), and a small increase in receivables - net positive cash despite accrual loss.",
+        "Revenue recognition fraud.",
+        "The company issued bonds during the quarter."
+      ],
+      "correct": 1,
+      "explanation": "The cash flow statement reconciles accrual-basis P&L to actual cash movement. The biggest reconciling items for SaaS are SBC (non-cash compensation), deferred revenue (annual prepayments that create cash today for future-period revenue), and changes in receivables. Together these typically swing a high-growth SaaS company from net loss on accrual to positive cash from operations."
+    },
+    {
+      "id": 2,
+      "question": "Why does a SaaS company billing annual contracts upfront often have a *negative* cash conversion cycle?",
+      "choices": [
+        "Because software has no inventory and customers pay before service is delivered, while the company pays its own suppliers on standard 30–60 day terms.",
+        "Because revenue is recognised faster than cash arrives.",
+        "Because SBC reduces operating expenses.",
+        "Because deferred revenue is a current asset."
+      ],
+      "correct": 0,
+      "explanation": "Cash conversion cycle = DSO + DIO − DPO. Software has zero inventory (DIO=0). With annual-billing-upfront, DSO is effectively negative - customers pay before the company delivers. The company pays its bills on standard terms (DPO of 30-60 days). The result: the company is financed by its customers, one of the structural reasons SaaS is a beloved business model."
+    },
+    {
+      "id": 3,
+      "question": "An engineer is asked to evaluate the financial health of a private company before joining. Which statement should they read first to understand whether the business is generating its own fuel?",
+      "choices": [
+        "The income statement (P&L), because it shows profitability.",
+        "The balance sheet, because it shows assets and liabilities.",
+        "The cash flow statement - specifically the 'cash from operating activities' line - because it reveals whether the core business is generating cash regardless of accrual-based profitability.",
+        "The audit report, because it confirms the numbers are accurate."
+      ],
+      "correct": 2,
+      "explanation": "The 'cash from operations' line on the cash flow statement is the single most diagnostic figure for whether a business is sustainable. It strips out non-cash items (SBC, depreciation) and reveals whether the company is funding itself or burning capital. Many growth-stage SaaS companies have ugly P&Ls but positive operating cash flow - that's a structurally healthier business than the reverse."
+    }
+  ]
+}

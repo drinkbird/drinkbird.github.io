@@ -1,0 +1,41 @@
+{
+  "chapter_id": "engineers-mba/01-foundations-business-os/01-why-businesses-exist",
+  "questions": [
+    {
+      "id": 1,
+      "question": "A startup builds a product that customers love, gets glowing reviews, and grows rapidly. Two years later, it goes bankrupt while a worse-engineered competitor with better distribution thrives. What concept best explains this?",
+      "choices": [
+        "The competitor created more value.",
+        "Value creation and value capture are different; the startup created value but failed to capture enough of it.",
+        "Engineering quality is irrelevant to business outcomes.",
+        "The startup's transaction costs exceeded its revenue."
+      ],
+      "correct": 1,
+      "explanation": "Value creation (the gap between customer willingness-to-pay and opportunity cost of inputs) and value capture (the slice the firm keeps as price minus cost) are independent. The Linux/Red Hat/AWS pattern is the canonical example - Linux created enormous value; very few firms managed to capture much of it."
+    },
+    {
+      "id": 2,
+      "question": "Ronald Coase's transaction-cost theory of the firm says firms exist because:",
+      "choices": [
+        "Managers are more efficient than markets at every scale.",
+        "Hierarchies always outperform networks.",
+        "When the cost of coordinating work via market transactions exceeds the cost of doing it inside a managed organisation, work moves inside the firm.",
+        "Regulators require certain functions to live inside a single legal entity."
+      ],
+      "correct": 2,
+      "explanation": "Coase's 1937 insight: every market transaction has costs (search, negotiation, contracting, monitoring). When those exceed the cost of doing the same work under managerial direction, the work moves in-house. When they fall (as with SaaS or AWS), the work moves back out to the market. This silently drives every build-vs-buy decision."
+    },
+    {
+      "id": 3,
+      "question": "An engineer proposes a $300k project to reduce p99 latency on checkout from 800ms to 200ms. To frame this as a business case rather than an engineering case, the strongest move is to:",
+      "choices": [
+        "Argue that performance matters because users expect fast software.",
+        "Estimate the conversion-rate lift (e.g. 0.5% on $200M ARR) and present the resulting revenue impact alongside the cost.",
+        "Show benchmark graphs of the latency improvement.",
+        "Note that competitors have lower p99 latency."
+      ],
+      "correct": 1,
+      "explanation": "Engineering metrics (latency, throughput) only become business cases when translated into value-capture language: revenue enabled, cost reduced, churn avoided. 'Performance matters' is not a business case; '0.5% conversion lift on $200M ARR = $1M/year' is. The translation is the entire point of this course."
+    }
+  ]
+}

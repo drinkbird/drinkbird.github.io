@@ -1,0 +1,41 @@
+{
+  "chapter_id": "engineers-mba/06-technical-leaders-playbook/03-reading-exec-reviews",
+  "questions": [
+    {
+      "id": 1,
+      "question": "An engineer attends their first QBR with a new, important position they want to advance. They've never raised it with leadership before. What's the most likely outcome?",
+      "choices": [
+        "Their position will be adopted because QBRs are designed for this.",
+        "The position will likely be tabled or rejected without serious discussion - positions are typically shaped in 1:1 pre-meetings with relevant decision-makers, and by the time the QBR happens, alignment has already formed. New positions arriving cold at the QBR are usually unsuccessful. The right pattern is to socialize positions in pre-meetings first.",
+        "The position will be adopted unanimously.",
+        "Only juniors should attend QBRs."
+      ],
+      "correct": 1,
+      "explanation": "QBRs are coordination/ratification events, not the venue where most strategic decisions are formed. Senior leaders meet pairwise in pre-meetings to align on positions before the public meeting. Engineers who bring novel positions to the QBR for the first time often find them dismissed or tabled - not because the position is wrong, but because the room hasn't had time to integrate it. The leverage point is the pre-meeting: build relationships, share thinking, refine positions, then the QBR is where alignment is publicly stated."
+    },
+    {
+      "id": 2,
+      "question": "A senior engineer is presenting a 5-minute team update at QBR. They lead with 'we shipped 47 PRs this quarter and reduced flaky tests by 30%.' What's the most likely effect on the audience?",
+      "choices": [
+        "The audience will be impressed by the technical detail.",
+        "The audience (CRO, CFO, CEO, CMO) doesn't engage with engineering metrics - they engage with business outcomes. 'We reduced incidents by 50%, which CS cites as contributing to NRR recovery' connects to their world. PR-count and test-flakiness metrics are output, not outcome - engineering-internal vocabulary that produces audience disengagement at exec forums.",
+        "Sales will ask for more flaky-test reduction.",
+        "The CFO will increase R&D budget."
+      ],
+      "correct": 1,
+      "explanation": "QBR audiences are cross-functional. Engineering-internal metrics (PRs, test flakiness, refactoring) don't connect to the mental models of CRO, CFO, CMO, CEO. The translation skill from Chapter 6.1 is critical here. Same work, framed in outcome language: 'We reduced incidents 50% - CS says reliability concerns dropped out of 3 of 8 at-risk renewals.' The work is the same; the framing makes the difference between the audience engaging or disengaging."
+    },
+    {
+      "id": 3,
+      "question": "When should a senior engineer interject during a strategic exec discussion they're attending?",
+      "choices": [
+        "Whenever they have any opinion.",
+        "When the interjection will *materially change the decision being made* - correcting a factual error, providing missing context for a number being cited, surfacing a concern that's been pre-raised but not yet addressed, or noting a critical risk the room is about to miss. Interjections that add slight nuance without changing the decision should wait for after-meeting follow-up.",
+        "Never - junior engineers should remain quiet.",
+        "Only when asked."
+      ],
+      "correct": 1,
+      "explanation": "Calibration matters. Interjecting too rarely makes engineers invisible at the exec table; interjecting too often makes them exhausting. The right heuristic: ask 'will this materially change the decision being made?' If yes, speak. If you're adding nuance that doesn't change the outcome, save it for offline. Senior engineers earn credibility by interjecting at the right moments - and equally, by *not* interjecting at the wrong ones."
+    }
+  ]
+}
