@@ -20,7 +20,6 @@ start_here:
   - peopleware
   - thephoenix
   - accelerate
-  - turntheshiparound
   - radicalcandor
 ---
 
@@ -28,7 +27,7 @@ start_here:
 {% capture intro %}
 <div class="collection-anchor" id="collection-top"></div>
 
-These collections shaped how I think, how I build software, and how I lead engineers. *Leadership, People & Teams* is the centre of gravity; the rest is the rigging that holds it up.
+These collections shaped how I think, how I build software, and how I lead engineers. *Leadership, People & Teams* is the centre of gravity; the rest is the rigging that holds it up. The lists are heavily weighted toward *fundamentals*: the underlying ideas that stay useful long after the stack changes.
 
 I update this list every so often. *Last updated: May 2026.* To get notified of future updates, <a href="#mc_embed_signup">subscribe to the DrinkBird newsletter</a>.
 

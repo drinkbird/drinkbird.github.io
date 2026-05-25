@@ -109,9 +109,9 @@ reads:
     url: https://www.amazon.co.uk/dp/0137081073?tag=drin04-20
     isbn: "0137081073"
   softskills:
-    title: "Soft Skills: The software developer's life manual"
-    url: https://www.amazon.co.uk/dp/1617292397?tag=drin04-20
-    isbn: "1617292397"
+    title: "Soft Skills: The Software Developer's Life Manual (2nd Edition)"
+    url: https://www.amazon.com/Soft-Skills-Software-Developers-Manual/dp/0999081446?tag=drin04-20
+    isbn: "0999081446"
   releaseit:
     title: Release It! 2nd Edition
     url: https://www.amazon.co.uk/Release-Design-Deploy-Production-Ready-Software/dp/1680502395?tag=drin04-20
@@ -213,9 +213,9 @@ reads:
     url: https://www.amazon.com/Smart-Gets-Things-Done-Technical/dp/1590598385?tag=drin04-20
     isbn: "1590598385"
   building-evolutionary-architectures:
-    title: Building Evolutionary Architectures
-    url: https://www.amazon.co.uk/Building-Evolutionary-Architectures-Neal-Ford/dp/1491986360?tag=drin04-20
-    isbn: "1491986360"
+    title: 'Building Evolutionary Architectures: Automated Software Governance (2nd Edition)'
+    url: https://www.amazon.com/Building-Evolutionary-Architectures-Automated-Governance/dp/1492097543?tag=drin04-20
+    isbn: "1492097543"
   careerguide:
     title: The Complete Software Developer's Career Guide
     url: https://www.amazon.com/Complete-Software-Developers-Career-Guide/dp/0999081411?tag=drin04-20
@@ -245,13 +245,13 @@ reads:
     url: https://www.amazon.com/Managing-Humans-Humorous-Software-Engineering/dp/1484271157?tag=drin04-20
     isbn: "1484271157"
   artofunittesting:
-    title: 'The Art of Unit Testing: with examples in C#'
-    url: https://www.amazon.com/Art-Unit-Testing-examples/dp/1617290890?tag=drin04-20
-    isbn: "1617290890"
+    title: 'The Art of Unit Testing, Third Edition: with examples in JavaScript'
+    url: https://www.amazon.com/Art-Unit-Testing-Third-JavaScript/dp/1617297488?tag=drin04-20
+    isbn: "1617297488"
   dataintensive:
-    title: 'Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems'
-    url: https://www.amazon.com/Designing-Data-Intensive-Applications-Reliable-Maintainable/dp/1449373321?tag=drin04-20
-    isbn: "1449373321"
+    title: 'Designing Data-Intensive Applications, 2nd Edition: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems'
+    url: https://www.amazon.com/Designing-Data-Intensive-Applications-Reliable-Maintainable/dp/1098119061?tag=drin04-20
+    isbn: "1098119061"
   learnazure:
     title: Learning Microsoft Azure
     url: https://www.amazon.co.uk/dp/1782173374?tag=drin04-20
@@ -273,17 +273,17 @@ reads:
     url: https://www.amazon.com/Microservices-Patterns-examples-Chris-Richardson/dp/1617294543?tag=drin04-20
     isbn: "1617294543"
   devops:
-    title: 'The Devops Handbook: How to Create World-Class Agility, Reliability, and Security in Technology Organizations'
-    url: https://www.amazon.com/DevOps-Handbook-World-Class-Reliability-Organizations/dp/1942788002?tag=drin04-20
-    isbn: "1942788002"
+    title: 'The DevOps Handbook, 2nd Edition: How to Create World-Class Agility, Reliability, & Security in Technology Organizations'
+    url: https://www.amazon.com/DevOps-Handbook-World-Class-Reliability-Organizations/dp/1950508404?tag=drin04-20
+    isbn: "1950508404"
   communicationforengineers:
     title: Communication for Engineers
     url: https://www.amazon.co.uk/Communication-Engineers-developers-communicator-productivity/dp/B08W7SNN69?tag=drin04-20
     imgid: 618AcEIpzKL
   hfdesignpatterns:
-    title: Head First Design Patterns
-    url: https://www.amazon.co.uk/dp/0596007124?tag=drin04-20
-    isbn: "0596007124"
+    title: 'Head First Design Patterns: Building Extensible and Maintainable Object-Oriented Software (2nd Edition)'
+    url: https://www.amazon.com/Head-First-Design-Patterns-Object-Oriented/dp/149207800X?tag=drin04-20
+    isbn: "149207800X"
   csharpindepth:
     title: C# in Depth, 4th Edition
     url: https://www.amazon.co.uk/dp/161729134X?tag=drin04-204e

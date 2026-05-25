@@ -1,7 +1,5 @@
-An excellent book from a fantastic author, which became an instant classic the moment it hit the shelves.
+Soft Skills covers the parts of a software-engineering career that aren't about writing code: career planning, learning strategies, personal branding, productivity, money, fitness, even mental health. Short chapters, easy to dip into rather than read straight through.
 
-John Sonmez does a great job in providing quality advice and unique insights on numerous topics such as career development, personal branding, learning, productivity, finance, even fitness and psychology. It is broken down into many small chapters, which make it easier to read and digest.
+The 2nd edition (2020) updates the content and adds a few new sections, but the core stays the same: a wide-angle view of life as a working programmer, opinionated where most career advice is generic.
 
-I was totally amazed by Soft Skills. It gave me a fresh perspective on professionalism and life in general, and encouraged me to become a better version of myself while thriving as a programmer.
-
-If you have already read and enjoyed Soft Skills, make sure to check out John's newest hit, [The Complete Software Developer's Career Guide](#careerguide).
+If this resonates, [The Complete Software Developer's Career Guide]({{ site.baseurl }}/books/craft-and-career#careerguide) is the much-longer follow-up with broader coverage.

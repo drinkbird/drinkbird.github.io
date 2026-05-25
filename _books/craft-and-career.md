@@ -33,10 +33,8 @@ books:
     - agiledev
 ---
 
-The work itself, and the working life around it.
-
-The first half of this list is the canon of software craft: how to write code that other people can read, how to refactor without breaking things, how to design at the boundary of the code. The second half is the canon of being a working professional: communicating clearly, writing well, staying creative across decades, building a body of work you can be proud of.
-
-Both halves matter. Strong craft without communication leaves you stuck at senior engineer. Strong communication without craft leaves you with nothing to communicate about.
+The work itself, and the working life around it. Strong craft without communication leaves you stuck at senior engineer; strong communication without craft leaves you with nothing to communicate about. The first half of this list is the canon of software craft: how to write code other people can read, how to refactor without breaking things, how to design at the boundary of the code. The second half is the canon of being a working professional: communicating clearly, writing well, staying creative across decades, building a body of work you can be proud of.
 
 > Laborers are hired to take direction. Professionals are hired to ensure that the direction chosen makes sense. -- Robert C. Martin
+
+*Heavily weighted toward books that age across language fashions and management trends.*
