@@ -39,6 +39,26 @@
 
   // ---------- quiz ----------
 
+  // Render text with single-backtick inline code into `el`, replacing its
+  // contents. Quiz JSON authors use Markdown-style `foo` to mark code spans
+  // (file paths, commands, identifiers); render them as <code>. Unmatched
+  // backticks degrade to plain text segments - good enough for hand-written
+  // quiz content.
+  function setInlineCode(el, text) {
+    while (el.firstChild) el.removeChild(el.firstChild);
+    var parts = String(text == null ? "" : text).split("`");
+    for (var i = 0; i < parts.length; i++) {
+      if (parts[i] === "") continue;
+      if (i % 2 === 1) {
+        var code = document.createElement("code");
+        code.textContent = parts[i];
+        el.appendChild(code);
+      } else {
+        el.appendChild(document.createTextNode(parts[i]));
+      }
+    }
+  }
+
   function initQuiz(article) {
     var quizRoot = article.querySelector("[data-course-quiz]");
     if (!quizRoot) return null;
@@ -69,7 +89,7 @@
 
       var legend = document.createElement("legend");
       legend.className = "course-quiz-question-prompt";
-      legend.textContent = (qIdx + 1) + ". " + q.question;
+      setInlineCode(legend, (qIdx + 1) + ". " + q.question);
       fieldset.appendChild(legend);
 
       var choicesList = document.createElement("ol");
@@ -90,7 +110,7 @@
 
         var text = document.createElement("span");
         text.className = "course-quiz-choice-text";
-        text.textContent = choiceText;
+        setInlineCode(text, choiceText);
 
         label.appendChild(input);
         label.appendChild(icon);
@@ -156,9 +176,9 @@
           unanswered++;
           fs.classList.remove("is-correct");
           fs.classList.add("is-incorrect");
-          fb.textContent = "No answer selected. Correct answer: " +
+          setInlineCode(fb, "No answer selected. Correct answer: " +
             (q.choices[correctIdx] || "") +
-            (q.explanation ? " - " + q.explanation : "");
+            (q.explanation ? " - " + q.explanation : ""));
           fb.hidden = false;
           return;
         }
@@ -169,15 +189,15 @@
           score++;
           fs.classList.add("is-correct");
           fs.classList.remove("is-incorrect");
-          fb.textContent = q.explanation ? "Correct. " + q.explanation : "Correct.";
+          setInlineCode(fb, q.explanation ? "Correct. " + q.explanation : "Correct.");
         } else {
           fs.classList.add("is-incorrect");
           fs.classList.remove("is-correct");
           var pickedLi = fs.querySelectorAll(".course-quiz-choice")[pickedIdx];
           if (pickedLi) pickedLi.classList.add("is-selected-wrong");
-          fb.textContent = "Not quite. Correct answer: " +
+          setInlineCode(fb, "Not quite. Correct answer: " +
             (q.choices[correctIdx] || "") +
-            (q.explanation ? " - " + q.explanation : "");
+            (q.explanation ? " - " + q.explanation : ""));
         }
         fb.hidden = false;
       });

@@ -20,6 +20,11 @@
 //                             learning_objectives} ]
 //   chapter md (lean):        chapter_id, chapter_slug, chapter_title,
 //                             chapter_summary
+//   chapter quiz:             written straight to
+//                             _data/quizzes/<slug>/<module-dir>/<chapter-filename>.json
+//                             (Jekyll only loads JSON into site.data from
+//                             _data/, and the chapter layout reads it as
+//                             site.data.quizzes[slug][module_dir][chapter_filename])
 //
 // Bodies are wrapped in {% raw %}...{% endraw %} so Liquid syntax in prose
 // renders literally; the wrap is skipped if the body already contains raw
@@ -34,20 +39,15 @@
 // To force a refresh of a specific chapter, delete the destination file first
 // (or fix the authoring tool upstream and re-import).
 //
-// After copying files the script runs `ruby scripts/sync-courses-data.rb` so
-// `_data/quizzes/` reflects the new content. (Course metadata no longer needs
-// data-mirroring - it's read directly from front matter.)
-//
 // Usage:
 //   npm run import-course -- /absolute/path/to/source-course-dir
 
 const path = require("path");
 const fs = require("fs");
-const { execFileSync } = require("child_process");
 
 const ROOT = path.resolve(__dirname, "..");
 const COURSES_ROOT = path.join(ROOT, "_courses");
-const SYNC_SCRIPT = path.join(ROOT, "scripts", "sync-courses-data.rb");
+const DATA_QUIZZES = path.join(ROOT, "_data", "quizzes");
 
 function usage(msg) {
   if (msg) console.error("Error: " + msg + "\n");
@@ -220,12 +220,15 @@ function main() {
       continue;
     }
 
+    const destQuizModuleDir = path.join(DATA_QUIZZES, course.slug, moduleDir);
+    ensureDir(destQuizModuleDir);
+
     for (const chapter of module_.chapters || []) {
       const chapterFilename = pad2(chapter.id) + "-" + chapter.slug;
       const srcMd = path.join(srcModuleDir, chapterFilename + ".md");
       const srcQuiz = path.join(srcModuleDir, chapterFilename + ".quiz.json");
       const destMd = path.join(destModuleDir, chapterFilename + ".md");
-      const destQuiz = path.join(destModuleDir, chapterFilename + ".quiz.json");
+      const destQuiz = path.join(destQuizModuleDir, chapterFilename + ".json");
 
       if (!fs.existsSync(srcMd)) {
         missing.push(moduleDir + "/" + chapterFilename + ".md");
@@ -251,8 +254,6 @@ function main() {
   }
 
   const createdIndex = writePlaceholderIndex(destSlugDir, course);
-
-  execFileSync("ruby", [SYNC_SCRIPT], { stdio: "inherit", cwd: ROOT });
 
   console.log("");
   console.log("Imported course: " + course.slug);
