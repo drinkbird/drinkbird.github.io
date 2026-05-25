@@ -35,13 +35,18 @@ If any of that resonates, here's where to go from here:
 
 <ul class="list-inline gallery">
     <li>
-        <a href="{{ site.baseurl }}/images/DSCN6650.jpg" class="image-popup mfp-with-zoom" title="At the Global Azure Bootcamp as a guest speaker, Athens 2014">
-            <img src="{{ site.baseurl }}/images/DSCN6650-150x150.jpg" />
+        <a href="{{ site.baseurl }}/images/mdb-discovery-2026.png" class="image-popup mfp-with-zoom" title="At MongoDB's Opening Doors to Discovery event, 2026">
+            <img src="{{ site.baseurl }}/images/mdb-discovery-2026-150x150.jpg" />
         </a>
     </li>
     <li>
-        <a href="{{ site.baseurl }}/images/10461621_10204160249869197_1374694601253781239_n.jpg" class="image-popup mfp-with-zoom" title="At the Patterns and Practices for the Cloud Event as a guest speaker, Athens 2014">
-            <img src="{{ site.baseurl }}/images/10461621_10204160249869197_1374694601253781239_n_150x150.png" />
+        <a href="{{ site.baseurl }}/images/tu-presentation-2026.jpeg" class="image-popup mfp-with-zoom" title="Guest speaker at TU Dublin's C++ Society, Dublin 2026">
+            <img src="{{ site.baseurl }}/images/tu-presentation-2026-150x150.jpg" />
+        </a>
+    </li>
+    <li>
+        <a href="{{ site.baseurl }}/images/angularjs_keynote.jpg" class="image-popup mfp-with-zoom" title="Delivering the AngularJS Dublin keynote, Google, Dublin 2016">
+            <img src="{{ site.baseurl }}/images/angularjs_keynote_150x150.jpg" />
         </a>
     </li>
     <li>
@@ -60,8 +65,13 @@ If any of that resonates, here's where to go from here:
         </a>
     </li>
     <li>
-        <a href="{{ site.baseurl }}/images/angularjs_keynote.jpg" class="image-popup mfp-with-zoom" title="Delivering the AngularJS Dublin keynote, Google, Dublin 2016">
-            <img src="{{ site.baseurl }}/images/angularjs_keynote_150x150.jpg" />
+        <a href="{{ site.baseurl }}/images/DSCN6650.jpg" class="image-popup mfp-with-zoom" title="At the Global Azure Bootcamp as a guest speaker, Athens 2014">
+            <img src="{{ site.baseurl }}/images/DSCN6650-150x150.jpg" />
+        </a>
+    </li>
+    <li>
+        <a href="{{ site.baseurl }}/images/10461621_10204160249869197_1374694601253781239_n.jpg" class="image-popup mfp-with-zoom" title="At the Patterns and Practices for the Cloud Event as a guest speaker, Athens 2014">
+            <img src="{{ site.baseurl }}/images/10461621_10204160249869197_1374694601253781239_n_150x150.png" />
         </a>
     </li>
 </ul>
