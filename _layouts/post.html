@@ -43,8 +43,18 @@ layout: default
 						</div>
 					</div>
 				</div>
-				{% include social-share.html %}
-				<div id="disqus_thread"></div>
+				<footer class="post-footer">
+					<section class="post-footer-share">
+						<h3 class="post-footer-heading">Share this post</h3>
+						{% include social-share.html %}
+					</section>
+					{% if page.comments and site.owner.disqus-shortname %}
+					<section class="post-footer-comments" data-requires-consent hidden>
+						<h3 class="post-footer-heading">Comments</h3>
+						<div id="disqus_thread"></div>
+					</section>
+					{% endif %}
+				</footer>
 			</article>
 		</div>
 	</div>

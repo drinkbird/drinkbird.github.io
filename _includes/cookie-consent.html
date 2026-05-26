@@ -54,6 +54,13 @@
     document.dispatchEvent(new CustomEvent('drinkbird:consent-granted'));
   }
 
+  document.addEventListener('drinkbird:consent-granted', function() {
+    var gated = document.querySelectorAll('[data-requires-consent]');
+    for (var i = 0; i < gated.length; i++) {
+      gated[i].removeAttribute('hidden');
+    }
+  });
+
   function hideBanner() { if (banner) banner.hidden = true; }
   function showBanner() { if (banner) banner.hidden = false; }
 

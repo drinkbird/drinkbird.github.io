@@ -65,6 +65,10 @@ layout: default
         <div class="course-content-body post-body">
           {{ content }}
 
+          <div class="course-overview-share">
+            {% include social-share.html %}
+          </div>
+
           <h2>What you'll learn, module by module</h2>
           <ol class="course-overview-modules">
             {% for module in page.modules %}
@@ -86,8 +90,18 @@ layout: default
           </ol>
         </div>
 
-        {% include social-share.html %}
-        {% include disqus-comments.html %}
+        <footer class="post-footer">
+          <section class="post-footer-share">
+            <h3 class="post-footer-heading">Share this course</h3>
+            {% include social-share.html %}
+          </section>
+          {% if site.owner.disqus-shortname %}
+          <section class="post-footer-comments" data-requires-consent hidden>
+            <h3 class="post-footer-heading">Comments</h3>
+            {% include disqus-comments.html %}
+          </section>
+          {% endif %}
+        </footer>
       </article>
     </main>
   </div>

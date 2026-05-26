@@ -53,6 +53,12 @@ $course-sidebar-border:#e3e6ea;
 	figure { text-align: left; }
 }
 
+.course-content > .course-chapter-byline {
+	border-bottom: 0;
+	padding-bottom: 0;
+	margin-bottom: 16px;
+}
+
 .course-breadcrumbs {
 	font-size: 13px;
 	color: $gray;
@@ -303,10 +309,18 @@ $course-sidebar-border:#e3e6ea;
 		}
 
 		h1 { font-size: 32px; }
-		h2 { font-size: 24px; margin-top: 1.6em; }
-		h3 { font-size: 20px; margin-top: 1.4em; }
+		h2 { font-size: 24px; margin-top: 1em; margin-bottom: 8px; }
+		h2:first-child { margin-top: 1.3em; }
+		h3 { font-size: 20px; margin-top: 0.6em; margin-bottom: 6px; }
 
 		p, li { font-size: 18px; }
+
+		// Reset .post-content's padding-bottom: 10px on lists and list items
+		// so the gap before an h2 is the same whether the previous block is a
+		// paragraph or a list. Otherwise lists stack ~20px more padding than
+		// paragraphs, making consecutive h2s look unevenly spaced.
+		ul, ol { padding-bottom: 0; }
+		li { padding-bottom: 0; }
 
 		pre {
 			font-size: 14px;
@@ -368,9 +382,52 @@ $course-sidebar-border:#e3e6ea;
 }
 
 .course-overview-header {
-	padding-bottom: 24px;
+	padding-bottom: 12px;
 	border-bottom: 1px solid $course-sidebar-border;
-	margin-bottom: 28px;
+	margin-bottom: 16px;
+
+	.course-chapter-byline {
+		border-bottom: 0;
+		padding-bottom: 0;
+		margin: 16px 0;
+	}
+}
+
+.course-overview-share {
+	margin: 0;
+	padding: 12px 0;
+	border-top: 1px solid $course-sidebar-border;
+	border-bottom: 1px solid $course-sidebar-border;
+
+	.social-share-slim {
+		margin: 0;
+
+		ul {
+			margin: 0;
+			padding: 0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			gap: 14px;
+
+			li {
+				margin: 0;
+				padding: 0;
+
+				a {
+					padding: 0;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					line-height: 1;
+				}
+			}
+		}
+	}
+
+	.brand-icon-x {
+		vertical-align: 0;
+	}
 }
 
 .course-overview-eyebrow {
@@ -391,6 +448,7 @@ $course-sidebar-border:#e3e6ea;
 .course-overview-goal {
 	font-size: 18px;
 	color: $gray-dark;
+	margin: 0;
 }
 
 .course-overview-meta {
@@ -406,17 +464,25 @@ $course-sidebar-border:#e3e6ea;
 
 .course-overview-cta {
 	margin-top: 18px;
+	margin-bottom: 0;
+
+	.btn {
+		font-size: 20px;
+		font-weight: 600;
+		padding: 16px 36px;
+		letter-spacing: 0.01em;
+	}
 }
 
 .course-overview-modules {
 	list-style: none;
 	padding: 0;
-	margin: 24px 0 0;
+	margin: 0;
 	counter-reset: course-modules;
 }
 
 .course-overview-module {
-	padding: 18px 0;
+	padding: 12px 0;
 	border-top: 1px solid $course-sidebar-border;
 
 	h3 {
@@ -625,6 +691,10 @@ $course-sidebar-border:#e3e6ea;
 	}
 }
 
+.course-chapter-footer + .post-footer {
+	margin-top: 24px;
+}
+
 .course-chapter-nav {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
@@ -799,6 +869,7 @@ $course-sidebar-border:#e3e6ea;
 
 		// Strip chrome that doesn't belong on paper.
 		#nav-wrapper,
+		.sticky-wrapper,
 		.navbar,
 		footer.site-footer,
 		.course-sidebar,
@@ -807,9 +878,18 @@ $course-sidebar-border:#e3e6ea;
 		.course-chapter-footer,
 		.course-card-reset,
 		.social-share-slim,
+		.course-overview-share,
+		.post-footer,
 		#disqus_thread {
 			display: none !important;
 		}
+
+		// Don't print the (href) annotation after links inside the byline —
+		// the link target ("/about") is uninteresting on paper. Selector
+		// duplicates .course-content as an ancestor to outweigh the general
+		// .course-content a[href]::after rule defined later in this block.
+		.course-content .course-chapter-byline a[href]::after,
+		.course-content .author-inline a[href]::after { content: ""; }
 
 		// Collapse the two-column grid; let main fill the page. Override
 		// Bootstrap's .container width so print isn't capped at the desktop max.
@@ -830,6 +910,10 @@ $course-sidebar-border:#e3e6ea;
 		}
 
 		.course-breadcrumbs { margin: 0 0 12px; padding: 0; }
+		// On paper, the early breadcrumb steps ("Courses › [course title] ›")
+		// are noise. Keep only the trailing "Module X · Chapter Y" span.
+		.course-breadcrumbs a,
+		.course-breadcrumbs span[aria-hidden] { display: none; }
 		.course-chapter-byline { margin-top: 0; }
 
 		// Branded header — shows even when the user disables Chrome's auto print header.

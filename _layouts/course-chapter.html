@@ -27,7 +27,7 @@ layout: default
 
     <main class="course-main">
       <header class="course-print-header" aria-hidden="true">
-        <span class="course-print-site">{{ site.title }}</span>
+        <span class="course-print-site">DrinkBird.com</span>
         <span class="course-print-sep">·</span>
         <span class="course-print-course">{{ cpc_course_index.title }}</span>
       </header>
@@ -51,6 +51,9 @@ layout: default
         </header>
         <div class="course-chapter-byline">
           {% include author-inline.html verb="Produced by" producer=cpc_course_index.producer %}
+        </div>
+        <div class="course-overview-share">
+          {% include social-share.html %}
         </div>
         <div class="course-content-body post-body">
           {{ content }}
@@ -104,8 +107,18 @@ layout: default
           </nav>
         </section>
 
-        {% include social-share.html %}
-        {% include disqus-comments.html %}
+        <footer class="post-footer">
+          <section class="post-footer-share">
+            <h3 class="post-footer-heading">Share this chapter</h3>
+            {% include social-share.html %}
+          </section>
+          {% if site.owner.disqus-shortname %}
+          <section class="post-footer-comments" data-requires-consent hidden>
+            <h3 class="post-footer-heading">Comments</h3>
+            {% include disqus-comments.html %}
+          </section>
+          {% endif %}
+        </footer>
       </article>
     </main>
   </div>

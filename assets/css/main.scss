@@ -1430,6 +1430,44 @@ time.post-updated {
 	}
 }
 
+.post-footer {
+	margin-top: 64px;
+	border-top: 1px solid $gray-lighter;
+
+	.post-footer-heading {
+		font-size: 14px;
+		font-weight: bold;
+		letter-spacing: 0.08em;
+		text-transform: uppercase;
+		color: $gray;
+		margin: 0 0 16px;
+		text-align: center;
+	}
+
+	.post-footer-share {
+		padding: 32px 0 24px;
+
+		.social-share-slim {
+			margin: 0;
+
+			ul {
+				margin: 0;
+			}
+		}
+	}
+
+	.post-footer-comments {
+		padding-top: 24px;
+		border-top: 1px solid $gray-lighter;
+	}
+}
+
+.brand-icon-x {
+	width: 14px;
+	height: 14px;
+	vertical-align: -2px;
+}
+
 .social-share-slim {
 	text-align: center;
 	margin: 20px 0;
