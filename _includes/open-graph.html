@@ -251,16 +251,64 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Person",
-  "name": {{ site.owner.name | jsonify }},
+  "@type": "ProfilePage",
   "url": "{{ site.url }}/about/",
-  "image": "{{ site.url }}{{ site.owner.photo }}",
-  "sameAs": [
-    {% if site.owner.linkedin %}"https://www.linkedin.com/in/{{ site.owner.linkedin }}"{% if site.owner.github or site.owner.twitter or site.owner.youtube %},{% endif %}{% endif %}
-    {% if site.owner.github %}"https://github.com/{{ site.owner.github }}"{% if site.owner.twitter or site.owner.youtube %},{% endif %}{% endif %}
-    {% if site.owner.twitter %}"https://twitter.com/{{ site.owner.twitter }}"{% if site.owner.youtube %},{% endif %}{% endif %}
-    {% if site.owner.youtube %}"https://www.youtube.com/@{{ site.owner.youtube }}"{% endif %}
-  ]
+  "name": {{ og_title | jsonify }},
+  "description": {{ og_description | jsonify }},
+  "inLanguage": {{ og_lang | jsonify }},
+  "mainEntity": {
+    "@type": "Person",
+    "@id": "{{ site.url }}/about/#person",
+    "name": {{ site.owner.name | jsonify }},
+    "alternateName": "DrinkBird",
+    "url": "{{ site.url }}/about/",
+    "image": "{{ site.url }}{{ site.owner.photo }}",
+    "jobTitle": "Lead Software Engineer",
+    "description": "Lead Software Engineer who helps engineers become leaders without leaving the craft. Since 2005 building systems and growing teams across startups and Fortune 500s.",
+    "knowsAbout": [
+      "Engineering Leadership",
+      "Software Architecture",
+      "Distributed Systems",
+      "Cloud-Native Systems",
+      "Site Reliability Engineering",
+      "DevOps",
+      "Mentoring",
+      "Team Building",
+      "Java",
+      "Scala",
+      "Python",
+      "C#",
+      "F#",
+      "Kubernetes",
+      "MongoDB",
+      "Apache Kafka"
+    ],
+    "alumniOf": [
+      {
+        "@type": "CollegeOrUniversity",
+        "name": "University College Dublin",
+        "url": "https://www.ucd.ie/",
+        "description": "M.Sc. in Software Engineering and Distributed Systems, First-Class Honours"
+      },
+      {
+        "@type": "CollegeOrUniversity",
+        "name": "Technological Educational Institute of Thessaly",
+        "description": "B.Sc. in Computer and Telecommunications Engineering, First-Class Honours"
+      }
+    ],
+    "affiliation": {
+      "@type": "CollegeOrUniversity",
+      "name": "Frederick University Cyprus",
+      "url": "https://www.frederick.ac.cy/",
+      "description": "MBA candidate"
+    },
+    "sameAs": [
+      {% if site.owner.linkedin %}"https://www.linkedin.com/in/{{ site.owner.linkedin }}"{% if site.owner.github or site.owner.twitter or site.owner.youtube %},{% endif %}{% endif %}
+      {% if site.owner.github %}"https://github.com/{{ site.owner.github }}"{% if site.owner.twitter or site.owner.youtube %},{% endif %}{% endif %}
+      {% if site.owner.twitter %}"https://twitter.com/{{ site.owner.twitter }}"{% if site.owner.youtube %},{% endif %}{% endif %}
+      {% if site.owner.youtube %}"https://www.youtube.com/@{{ site.owner.youtube }}"{% endif %}
+    ]
+  }
 }
 </script>
 {% elsif page.url == "/" %}
@@ -269,16 +317,39 @@
   "@context": "https://schema.org",
   "@type": "WebSite",
   "name": {{ site.title | jsonify }},
+  "alternateName": "DrinkBird Blog",
   "url": "{{ site.url }}/",
   "description": {{ site.longdescription | jsonify }},
+  "inLanguage": {{ og_lang | jsonify }},
   "publisher": {
-    "@type": "Organization",
-    "name": {{ site.title | jsonify }},
-    "logo": {
-      "@type": "ImageObject",
-      "url": "{{ site.url }}{{ site.baseurl }}/assets/media/logo_400.png"
-    }
+    "@id": "{{ site.url }}/#organization"
   }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "{{ site.url }}/#organization",
+  "name": {{ site.title | jsonify }},
+  "alternateName": "DrinkBird Blog",
+  "url": "{{ site.url }}/",
+  "description": {{ site.longdescription | jsonify }},
+  "logo": {
+    "@type": "ImageObject",
+    "url": "{{ site.url }}{{ site.baseurl }}/assets/media/logo_400.png",
+    "width": 444,
+    "height": 400
+  },
+  "founder": {
+    "@id": "{{ site.url }}/about/#person"
+  },
+  "sameAs": [
+    {% if site.owner.linkedin %}"https://www.linkedin.com/in/{{ site.owner.linkedin }}"{% if site.owner.github or site.owner.twitter or site.owner.youtube %},{% endif %}{% endif %}
+    {% if site.owner.github %}"https://github.com/{{ site.owner.github }}"{% if site.owner.twitter or site.owner.youtube %},{% endif %}{% endif %}
+    {% if site.owner.twitter %}"https://twitter.com/{{ site.owner.twitter }}"{% if site.owner.youtube %},{% endif %}{% endif %}
+    {% if site.owner.youtube %}"https://www.youtube.com/@{{ site.owner.youtube }}"{% endif %}
+  ]
 }
 </script>
 {% endif %}
