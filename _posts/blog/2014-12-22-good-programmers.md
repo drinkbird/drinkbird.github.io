@@ -6,6 +6,7 @@ date: 2014-12-22 00:00:00
 permalink: /good-programmers/
 comments: true
 categories: blog
+archived: true
 image:
   feature: a-word-on-good-programmers.png
 ---

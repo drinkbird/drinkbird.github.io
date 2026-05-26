@@ -6,6 +6,7 @@ date: 2015-01-13 00:00:00
 permalink: /man-in-hot-air-balloon/
 comments: true
 categories: blog
+archived: true
 image:
   feature: balloon.jpg
   credit: NY Daily News

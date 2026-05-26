@@ -6,6 +6,7 @@ permalink: /books/
 comments: true
 categories: blog
 featured: true
+updated: 2026-05-26
 image:
   feature: books2.png
 # creditlink: http://www.freepik.com/free-vector/book-collection-in-flat-design_764791.htm
@@ -31,7 +32,7 @@ Most of these books I have read more than once, and a few I keep gifting to coll
 
 The *Leadership, People & Teams* collection is the biggest. The higher I have gone in my career, the less my problems have been technical. The other three collections are the canon I leaned on while I was mostly writing code, and they still earn their place.
 
-I update this list every so often. *Last updated: May 2026.* To get notified of future updates, <a href="#mc_embed_signup">subscribe to the DrinkBird newsletter</a>.
+I update this list every so often. To get notified of future updates, <a href="#mc_embed_signup">subscribe to the DrinkBird newsletter</a>.
 
 [My thoughts on books](#thoughts) live at the end.
 

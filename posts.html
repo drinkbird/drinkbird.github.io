@@ -17,13 +17,15 @@ excerpt: "Distilled thoughts from the tech industry and literature"
         </div>
       </div>
     </div>
+    {% assign visible_posts = site.categories['blog'] | where_exp: "post", "post.archived != true" %}
+    {% assign archived_count = site.categories['blog'] | where_exp: "post", "post.archived == true" | size %}
     {% assign count = 0 %}
-    {% for post in site.categories['blog'] %}
+    {% for post in visible_posts %}
     {% assign count = count | plus: 1 %}
     {% assign result = count | modulo: 2 %}
     {% if result == 1 %}
     <div class="row">
-    {% endif %}  
+    {% endif %}
       <div class="col-md-6">
         <article class="article-list">
           <a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}">
@@ -31,9 +33,8 @@ excerpt: "Distilled thoughts from the tech industry and literature"
             {% include image-feature-list.html loading=loadingMode %}
             <h1>{{ post.title }}</h1>
           </a>
-          {% comment %}
           <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time>
-          {% endcomment %}
+          {% if post.updated %}<time class="post-updated" datetime="{{ post.updated | date_to_xmlschema }}">Last updated {{ post.updated | date: "%B %d, %Y" }}</time>{% endif %}
           <p>{{ post.excerpt | strip_html | truncate: 160 }}</p>
         </article>
       </div>
@@ -44,5 +45,15 @@ excerpt: "Distilled thoughts from the tech industry and literature"
     {% if result == 1 %}
     </div>
     {% endif %}
-  </div>     
+    {% if archived_count > 0 %}
+    <div class="row">
+      <div class="col-md-12">
+        <p class="archive-link">
+          <a href="{{ site.baseurl }}/archive/">Browse the archive &rarr;</a>
+          <span class="archive-link-note">Older posts kept for historical reasons.</span>
+        </p>
+      </div>
+    </div>
+    {% endif %}
+  </div>
 </section>

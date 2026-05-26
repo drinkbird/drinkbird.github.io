@@ -5,6 +5,7 @@ excerpt: "Here's a few recommendations from my personal backlog"
 permalink: /which-technology-to-pickup-next
 comments: true
 categories: blog
+archived: true
 featured: true
 image:
   feature: whattopickupnext.png

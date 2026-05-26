@@ -6,6 +6,7 @@ date: 2014-10-18 00:00:00
 permalink: /web-development-online-tools-bookmark-collection/
 comments: true
 categories: blog
+archived: true
 image:
   feature: bookmarks-feat.jpg
 ---

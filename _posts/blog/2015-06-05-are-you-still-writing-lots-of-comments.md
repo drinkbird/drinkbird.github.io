@@ -6,6 +6,7 @@ date: 2015-06-05 00:00:00
 permalink: /lots-of-comments/
 comments: true
 categories: blog
+archived: true
 image:
   feature: comments.jpg
 ---

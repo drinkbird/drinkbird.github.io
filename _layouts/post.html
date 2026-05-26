@@ -10,15 +10,15 @@ layout: default
 						{% include image-feature-post.html %}
 						<h1 class="posts-header">{{page.title}}</h1>
 						{% include social-share.html %}
-						{% comment %}
 						<time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time>
-						{% endcomment %}
+						{% if page.updated %}<time class="post-updated" datetime="{{ page.updated | date_to_xmlschema }}">Last updated {{ page.updated | date: "%B %d, %Y" }}</time>{% endif %}
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-md-9">
 						<div class="post-body">
 							{% include author-inline.html %}
+							{% if page.archived %}{% include archived-banner.html %}{% endif %}
 							{{ content }}
 						</div>
 					</div>

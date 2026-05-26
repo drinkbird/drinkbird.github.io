@@ -1,11 +1,12 @@
 ---
-layout: page
-title: "3 great books on Software Architecture"
-excerpt: "Level-up your architecture skills!"
+layout: post
+title: "Three architecture books I keep handing to engineers"
+excerpt: "The patterns and trade-offs in these books outlast every framework cycle."
 permalink: /best-books-on-software-architecture/
 comments: true
 categories: blog
 featured: true
+updated: 2026-05-26
 image:
   feature: archbooks.jpg
 # https://pixabay.com/en/architect-book-books-shelf-791707/
@@ -16,11 +17,9 @@ reads:
   - dataintensive
 ---
 
-Having survived an intensive year of designing, developing, shipping and operating numerous cloud-native microservices at scale, makes me appreciate the books that helped me step up my engineering game.
+Architecture is one of those areas where the fundamentals barely move. Stacks change every couple of years, the patterns and trade-offs underneath them change far more slowly. These three books are the ones I keep handing to engineers stepping into distributed systems work, whether they're building cloud-native services or wrestling with a legacy monolith.
 
-The following 3 books are by far the best resources on software architecture you can add to your *TODO* list. They are ideal for all software engineers and technical architects who deal with any kind of cloud / distributed systems.
-
-Full disclosure: the following are <strong>Amazon affiliate links</strong>. Using these links to buy books won't cost you more, but it will help me purchase more books. Thank you for your support!.
+<p class="affiliate-disclosure"><small><strong>Affiliate disclosure:</strong> book links are Amazon affiliate links. Buying through them doesn't cost you more, and it helps me buy the next round of books.</small></p>
 
 -----
 

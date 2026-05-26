@@ -1287,6 +1287,74 @@ h2 .collection-title-link {
 	}
 }
 
+time.post-updated {
+	font-size: $font-size-base * 0.75;
+	font-style: italic;
+	color: $gray;
+	margin-top: -16px;
+}
+
+.posts article.article-list time.post-updated {
+	margin-top: -4px;
+}
+
+.archived-banner {
+	background-color: lighten($gray-lighter, 5%);
+	border-left: 4px solid $brand-primary;
+	padding: 14px 18px;
+	margin: 0 0 28px;
+	border-radius: 2px;
+
+	p {
+		font-size: 15px;
+		line-height: 1.5;
+		margin: 0;
+		padding: 0;
+		color: $gray-darker;
+	}
+
+	strong {
+		color: $brand-primary-dark;
+	}
+
+	a {
+		color: $brand-secondary;
+		text-decoration: underline;
+
+		&:hover {
+			color: $brand-secondary-dark;
+		}
+	}
+}
+
+.archive-link {
+	text-align: center;
+	margin-top: 24px;
+	padding-top: 24px;
+	border-top: 1px solid $gray-lighter;
+	font-size: 16px;
+
+	a {
+		font-weight: bold;
+		text-transform: uppercase;
+		letter-spacing: 0.5px;
+		font-size: 14px;
+		color: $brand-secondary;
+
+		&:hover {
+			color: $brand-secondary-dark;
+		}
+	}
+
+	.archive-link-note {
+		display: block;
+		margin-top: 6px;
+		font-size: 13px;
+		color: $gray;
+		font-style: italic;
+	}
+}
+
 .author {
 	margin-bottom: 20px;
 

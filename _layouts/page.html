@@ -10,12 +10,17 @@ layout: default
 						<h1 class="posts-header">{{page.title}}</h1>
 						{% include social-share.html %}
 						{% include image-feature-post.html %}
+						{% if page.categories contains 'blog' %}
+							<time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time>
+							{% if page.updated %}<time class="post-updated" datetime="{{ page.updated | date_to_xmlschema }}">Last updated {{ page.updated | date: "%B %d, %Y" }}</time>{% endif %}
+						{% endif %}
 					</div>
 				</div>
 				<div class="post-body">
 					{% if page.category == 'project' %}
 					{% include author-inline.html %}
 					{% endif %}
+					{% if page.archived %}{% include archived-banner.html %}{% endif %}
 					{{ content }}
 				</div>
 				{% include social-share.html %}

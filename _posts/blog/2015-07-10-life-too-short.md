@@ -6,6 +6,7 @@ date: 2015-07-10 00:00:00
 permalink: /life-too-short/
 comments: true
 categories: blog
+archived: true
 image:
   feature: life-too-short.png
 ---
