@@ -1,5 +1,10 @@
 ---
 title: High-Performing Engineering Organizations
+excerpt: "Curated reading on delivery, flow, and the systems that turn good engineers into a high-performing organization."
+date: 2026-05-25
+updated: 2026-05-25
+image:
+    feature: books2.png
 spotlight: thephoenix
 spotlight_pitch: "The novel that taught a generation of engineering leaders to see their delivery pipeline as a system that can be diagnosed and improved, not a fact of nature."
 redirect_from:

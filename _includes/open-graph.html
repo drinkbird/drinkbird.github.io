@@ -73,7 +73,7 @@
    override via page.og_type. {% endcomment %}
 {% if page.og_type %}
   {% assign og_type = page.og_type %}
-{% elsif page.path contains "_posts/" or page.path contains "_courses/" %}
+{% elsif page.path contains "_posts/" or page.path contains "_courses/" or page.path contains "_books/" %}
   {% assign og_type = "article" %}
 {% elsif page.url == "/about/" %}
   {% assign og_type = "profile" %}

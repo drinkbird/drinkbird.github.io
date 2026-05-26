@@ -1,5 +1,10 @@
 ---
 title: Software Architecture & Systems
+excerpt: "Curated reading on architecture, distributed systems, and the data platforms underneath modern software."
+date: 2026-05-25
+updated: 2026-05-25
+image:
+    feature: books2.png
 spotlight: dataintensive
 spotlight_pitch: "Kleppmann's tour of the data systems behind every modern product, with the rigour of a textbook and the readability of an essay. The most useful architecture book of the past decade."
 redirect_from:

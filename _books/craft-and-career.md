@@ -1,5 +1,10 @@
 ---
 title: Software Craft & Career
+excerpt: "Curated reading on the craft of software, communication, and the long arc of an engineering career."
+date: 2026-05-25
+updated: 2026-05-25
+image:
+    feature: books2.png
 spotlight: pragmaticprogrammer
 spotlight_pitch: "Twenty years of habits that separate craftsmen from coders, in a 300-page handbook you can finish on a long flight. The book to hand to any engineer two years into their career."
 redirect_from:

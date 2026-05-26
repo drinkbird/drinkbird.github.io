@@ -1,5 +1,10 @@
 ---
 title: Leadership, People & Teams
+excerpt: "Curated reading on leading engineers, growing teams, and the long, human work of management."
+date: 2026-05-25
+updated: 2026-05-25
+image:
+    feature: books2.png
 spotlight: peopleware
 spotlight_pitch: "DeMarco and Lister's 1980s classic documents almost everything tech still gets wrong about how people actually work. The conscience of engineering management."
 books:
