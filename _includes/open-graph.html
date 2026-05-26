@@ -354,6 +354,87 @@
 </script>
 {% endif %}
 
+{% comment %} ItemList carousels for index pages. Each summary page lists
+   items that link out to detail pages carrying the full rich-result schema
+   (BlogPosting for posts and project posts, Course for course indexes).
+   Google can then render these as Carousel rich results. /books/ is
+   included for parity, but book-collection pages don't yet carry their own
+   rich-result schema, so /books/ won't trigger Carousel until that lands. {% endcomment %}
+{% if page.url == "/posts/" %}
+{% assign idx_posts = site.categories.blog | where_exp: "p", "p.archived != true" %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": {{ page.title | jsonify }},
+  "url": {{ og_canonical_url | jsonify }},
+  "numberOfItems": {{ idx_posts | size }},
+  "itemListOrder": "https://schema.org/ItemListOrderDescending",
+  "itemListElement": [{% for post in idx_posts %}{% unless forloop.first %},{% endunless %}
+    {
+      "@type": "ListItem",
+      "position": {{ forloop.index }},
+      "url": "{{ site.url }}{{ post.url }}"
+    }{% endfor %}
+  ]
+}
+</script>
+{% elsif page.url == "/courses/" %}
+{% assign idx_courses = site.courses | where_exp: "p", "p.chapter_id == nil" | sort: "title" %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": {{ page.title | jsonify }},
+  "url": {{ og_canonical_url | jsonify }},
+  "numberOfItems": {{ idx_courses | size }},
+  "itemListElement": [{% for c in idx_courses %}{% unless forloop.first %},{% endunless %}
+    {
+      "@type": "ListItem",
+      "position": {{ forloop.index }},
+      "url": "{{ site.url }}/courses/{{ c.course_slug }}/"
+    }{% endfor %}
+  ]
+}
+</script>
+{% elsif page.url == "/projects/" %}
+{% assign idx_projects = site.categories.project %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": {{ page.title | jsonify }},
+  "url": {{ og_canonical_url | jsonify }},
+  "numberOfItems": {{ idx_projects | size }},
+  "itemListOrder": "https://schema.org/ItemListOrderDescending",
+  "itemListElement": [{% for proj in idx_projects %}{% unless forloop.first %},{% endunless %}
+    {
+      "@type": "ListItem",
+      "position": {{ forloop.index }},
+      "url": "{{ site.url }}{{ proj.url }}"
+    }{% endfor %}
+  ]
+}
+</script>
+{% elsif page.url == "/books/" %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": {{ page.title | jsonify }},
+  "url": {{ og_canonical_url | jsonify }},
+  "numberOfItems": {{ page.book_collections | size }},
+  "itemListElement": [{% for slug in page.book_collections %}{% unless forloop.first %},{% endunless %}
+    {
+      "@type": "ListItem",
+      "position": {{ forloop.index }},
+      "url": "{{ site.url }}/books/{{ slug }}"
+    }{% endfor %}
+  ]
+}
+</script>
+{% endif %}
+
 {% comment %} BreadcrumbList for course pages. Helps Google render the
    "Home > Courses > Course > Chapter" trail in search results. {% endcomment %}
 {% if og_course_index %}
