@@ -1,11 +1,12 @@
 {% comment %}
-  Build a single source-of-truth for the OG/Twitter card per page.
+  Build a single source-of-truth for the OG/Twitter card per page, plus JSON-LD.
 
   Resolution order:
     title        : page.chapter_title > page.title > site.title
     description  : page.excerpt > page.chapter_summary > course-index description > course-index goal > course-index title > site.description
     image        : page.image.feature > course-index image > default-thumb
     card style   : summary_large_image when we have a real image, else summary
+    og:type      : page.og_type override > article (posts/courses) > profile (/about/) > website (default)
 
   For course pages, all course-level metadata lives on the course's index.md
   front matter (no JSON intermediate). og_course_index is the index.md doc
@@ -64,7 +65,20 @@
   {% if og_course_index.last_updated %}{% assign og_modified_time = og_course_index.last_updated | date_to_xmlschema %}{% endif %}
 {% else %}
   {% if page.date %}{% assign og_published_time = page.date | date_to_xmlschema %}{% endif %}
-  {% if page.last_modified_at %}{% assign og_modified_time = page.last_modified_at | date_to_xmlschema %}{% endif %}
+  {% if page.updated %}{% assign og_modified_time = page.updated | date_to_xmlschema %}{% endif %}
+{% endif %}
+
+{% comment %} og:type. Article for blog/project posts and course pages;
+   profile for /about/; website for everything else. Front matter can
+   override via page.og_type. {% endcomment %}
+{% if page.og_type %}
+  {% assign og_type = page.og_type %}
+{% elsif page.path contains "_posts/" or page.path contains "_courses/" %}
+  {% assign og_type = "article" %}
+{% elsif page.url == "/about/" %}
+  {% assign og_type = "profile" %}
+{% else %}
+  {% assign og_type = "website" %}
 {% endif %}
 
 {% comment %} Image. Resolve to an absolute URL. Track when the source produced
@@ -85,6 +99,8 @@
   {% capture og_image %}{{ site.url }}{{ site.baseurl }}/assets/media/default-thumb.png{% endcapture %}
 {% endif %}
 
+{% capture og_canonical_url %}{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}{% endcapture %}
+
 <!-- Twitter Cards -->
 <meta name="twitter:title" content="{{ og_title }}">
 <meta name="twitter:description" content="{{ og_description }}">
@@ -98,16 +114,89 @@
 
 <!-- Open Graph -->
 <meta property="og:locale" content="{{ site.locale }}">
-<meta property="og:type" content="article">
+<meta property="og:type" content="{{ og_type }}">
 <meta property="og:title" content="{{ og_title }}">
 <meta property="og:description" content="{{ og_description }}">
-<meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+<meta property="og:url" content="{{ og_canonical_url }}">
 <meta property="og:site_name" content="{{ site.title }}">
 <meta property="og:image" content="{{ og_image }}">
 {% if og_image_known_dim %}
 <meta property="og:image:width" content="1420">
 <meta property="og:image:height" content="720">
 {% endif %}
+{% if og_type == "article" %}
 {% if og_published_time %}<meta property="article:published_time" content="{{ og_published_time }}">{% endif %}
 {% if og_modified_time %}<meta property="article:modified_time" content="{{ og_modified_time }}">{% endif %}
 {% if site.owner.name %}<meta property="article:author" content="{{ site.owner.name }}">{% endif %}
+{% endif %}
+{% if og_type == "profile" %}
+<meta property="profile:first_name" content="Tasos">
+<meta property="profile:last_name" content="Piotopoulos">
+{% if site.owner.github %}<meta property="profile:username" content="{{ site.owner.github }}">{% endif %}
+{% endif %}
+
+{% comment %} JSON-LD / schema.org structured data. {% endcomment %}
+{% if og_type == "article" and og_published_time %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": {{ og_canonical_url | jsonify }}
+  },
+  "headline": {{ page.title | jsonify }},
+  "description": {{ og_description | jsonify }},
+  "image": {{ og_image | jsonify }},
+  "datePublished": {{ og_published_time | jsonify }},
+  "dateModified": {% if og_modified_time %}{{ og_modified_time | jsonify }}{% else %}{{ og_published_time | jsonify }}{% endif %},
+  "author": {
+    "@type": "Person",
+    "name": {{ site.owner.name | jsonify }},
+    "url": "{{ site.url }}/about/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": {{ site.title | jsonify }},
+    "logo": {
+      "@type": "ImageObject",
+      "url": "{{ site.url }}{{ site.baseurl }}/assets/media/logo_400.png"
+    }
+  }
+}
+</script>
+{% elsif og_type == "profile" %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": {{ site.owner.name | jsonify }},
+  "url": "{{ site.url }}/about/",
+  "image": "{{ site.url }}{{ site.owner.photo }}",
+  "sameAs": [
+    {% if site.owner.linkedin %}"https://www.linkedin.com/in/{{ site.owner.linkedin }}"{% if site.owner.github or site.owner.twitter or site.owner.youtube %},{% endif %}{% endif %}
+    {% if site.owner.github %}"https://github.com/{{ site.owner.github }}"{% if site.owner.twitter or site.owner.youtube %},{% endif %}{% endif %}
+    {% if site.owner.twitter %}"https://twitter.com/{{ site.owner.twitter }}"{% if site.owner.youtube %},{% endif %}{% endif %}
+    {% if site.owner.youtube %}"https://www.youtube.com/@{{ site.owner.youtube }}"{% endif %}
+  ]
+}
+</script>
+{% elsif page.url == "/" %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": {{ site.title | jsonify }},
+  "url": "{{ site.url }}/",
+  "description": {{ site.longdescription | jsonify }},
+  "publisher": {
+    "@type": "Organization",
+    "name": {{ site.title | jsonify }},
+    "logo": {
+      "@type": "ImageObject",
+      "url": "{{ site.url }}{{ site.baseurl }}/assets/media/logo_400.png"
+    }
+  }
+}
+</script>
+{% endif %}
