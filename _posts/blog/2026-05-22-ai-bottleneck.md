@@ -18,6 +18,25 @@ reads:
   - radicalcandor
   - turntheshiparound
   - peopleware
+  - thinkinginsystems
+  - thinkingfastandslow
+  - leanstartup
+  - teamtopologies
+  - managerspath
+  - elegantpuzzle
+  - staffengineer
+  - effectiveengineer
+  - pragmaticprogrammer
+  - cleancode
+  - cleanarchitecture
+  - codecomplete
+  - thecleancoder
+  - refactoring
+  - legacycode
+  - dataintensive
+  - building-evolutionary-architectures
+  - microservices
+  - releaseit
 ---
 
 # The bottleneck AI just moved

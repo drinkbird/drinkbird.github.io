@@ -932,6 +932,10 @@ a.cover {
 	margin: 0;
 	padding: 0;
 
+	li[hidden] {
+		display: none;
+	}
+
 	.book-aside {
 		text-align: center;
 		margin-bottom: 25px;
@@ -954,6 +958,12 @@ a.cover {
 				font-size: 16px
 			}
 		}
+	}
+}
+
+@media (max-width: $screen-sm-max) {
+	.books-aside > li:nth-child(n+4) {
+		display: none;
 	}
 }
 

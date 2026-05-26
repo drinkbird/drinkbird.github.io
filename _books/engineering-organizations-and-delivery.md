@@ -21,6 +21,7 @@ books:
     - cleanagile
     - smartandgetsthingsdone
     - userstoriesapplied
+    - effectiveusecases
     - releaseit
     - effectiveengineer
 ---

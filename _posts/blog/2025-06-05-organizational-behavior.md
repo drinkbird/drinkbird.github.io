@@ -25,6 +25,22 @@ reads:
   - legacycode
   - effectiveusecases
   - userstoriesapplied
+  - thefearlessorg
+  - radicalcandor
+  - turntheshiparound
+  - daretolead
+  - crucialconversations
+  - multipliers
+  - fivedysfunctions
+  - drive
+  - managerspath
+  - elegantpuzzle
+  - staffengineer
+  - highoutputmgmt
+  - thephoenix
+  - devops
+  - teamtopologies
+  - thinkinginsystems
 ---
 
 At some point in the past, I witnessed a company invest three years of collective ambition in breaking down a monolith into microservices. The vision was bold: empower teams to be more autonomous and move faster. Everyone wanted to be part of something transformative, and no one wanted to be the one who played it safe.

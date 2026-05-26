@@ -17,6 +17,25 @@ reads:
   - accelerate
   - communicationforengineers
   - agiledev
+  - daretolead
+  - crucialconversations
+  - multipliers
+  - fivedysfunctions
+  - debuggingteams
+  - resilientmgmt
+  - drive
+  - managerspath
+  - elegantpuzzle
+  - staffengineer
+  - highoutputmgmt
+  - managinghumans
+  - executiveprimer
+  - thinkingfastandslow
+  - thinkinginsystems
+  - habit
+  - creativityincbook
+  - neversplitdiff
+  - winargument
 
 ---
 
