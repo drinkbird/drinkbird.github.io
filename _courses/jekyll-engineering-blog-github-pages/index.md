@@ -9,6 +9,7 @@ last_updated: 2026-05-24
 depth: intermediate
 goal: "Ship a polished personal engineering blog with a custom domain."
 time_budget: "10-15 hours (deep)"
+course_workload_iso: PT15H
 created_at: 2026-05-24T00:41:11Z
 modules:
   - id: 1

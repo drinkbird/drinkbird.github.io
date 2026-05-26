@@ -15,7 +15,9 @@
 //
 //   index.md (course-level):  layout, course_slug, permalink, title, image,
 //                             description, last_updated, depth, goal,
-//                             time_budget, created_at, producer (optional),
+//                             time_budget, course_workload_iso (optional, ISO
+//                             8601, used by schema.org Course rich result),
+//                             created_at, producer (optional),
 //                             modules: [ {id, slug, dir, title, summary,
 //                             learning_objectives} ]
 //   chapter md (lean):        chapter_id, chapter_slug, chapter_title,
@@ -44,6 +46,7 @@
 
 const path = require("path");
 const fs = require("fs");
+const { timeBudgetToIso } = require("./lib/duration");
 
 const ROOT = path.resolve(__dirname, "..");
 const COURSES_ROOT = path.join(ROOT, "_courses");
@@ -177,6 +180,16 @@ function writePlaceholderIndex(destSlugDir, course) {
   lines.push("goal: " + yamlString(normalize(goal)));
   if (course.answers && course.answers.time_budget) {
     lines.push("time_budget: " + yamlString(course.answers.time_budget));
+  }
+  // ISO 8601 duration for schema.org Course rich result. Prefer an explicit
+  // field from the source; otherwise derive from time_budget. Falls through
+  // (no line written) when neither is available.
+  const workloadIso =
+    course.workload_iso ||
+    (course.answers && course.answers.workload_iso) ||
+    (course.answers && timeBudgetToIso(course.answers.time_budget));
+  if (workloadIso) {
+    lines.push("course_workload_iso: " + workloadIso);
   }
   if (course.created_at) lines.push("created_at: " + course.created_at);
   lines.push(buildModulesYaml(course.modules || []));

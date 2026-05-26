@@ -6,7 +6,8 @@
   "scripts": {
     "uglify": "uglifyjs ./assets/js/scripts.js -o ./assets/js/scripts.min.js",
     "cover": "node scripts/cover-image.js",
-    "import-course": "node scripts/import-course.js"
+    "import-course": "node scripts/import-course.js",
+    "retrofit-course-workload": "node scripts/retrofit-course-workload.js"
   },
   "repository": {
     "type": "git",

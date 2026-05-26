@@ -136,7 +136,89 @@
 {% endif %}
 
 {% comment %} JSON-LD / schema.org structured data. {% endcomment %}
-{% if og_type == "article" and og_published_time %}
+{% assign og_lang = site.locale | replace: "_", "-" %}
+{% capture og_course_url %}{{ site.url }}{{ site.baseurl }}{{ og_course_index.url }}{% endcapture %}
+{% if og_course_index and page.chapter_id == nil %}
+{% comment %} Course index → schema.org Course (eligible for Google's Course rich result) {% endcomment %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Course",
+  "url": {{ og_canonical_url | jsonify }},
+  "name": {{ page.title | jsonify }},
+  "description": {{ og_description | jsonify }},
+  "image": {{ og_image | jsonify }},
+  "inLanguage": {{ og_lang | jsonify }},
+  {% if page.depth %}"educationalLevel": {{ page.depth | jsonify }},{% endif %}
+  {% if og_published_time %}"datePublished": {{ og_published_time | jsonify }},{% endif %}
+  {% if og_modified_time %}"dateModified": {{ og_modified_time | jsonify }},{% endif %}
+  "provider": {
+    "@type": "Organization",
+    "name": {{ site.title | jsonify }},
+    "sameAs": "{{ site.url }}/"
+  },
+  "instructor": {
+    "@type": "Person",
+    "name": {{ site.owner.name | jsonify }},
+    "url": "{{ site.url }}/about/"
+  },
+  "hasCourseInstance": [{
+    "@type": "CourseInstance",
+    "courseMode": "Online",
+    {% if page.course_workload_iso %}"courseWorkload": {{ page.course_workload_iso | jsonify }},{% endif %}
+    "instructor": {
+      "@type": "Person",
+      "name": {{ site.owner.name | jsonify }}
+    }
+  }],
+  "offers": [{
+    "@type": "Offer",
+    "category": "Free",
+    "price": "0",
+    "priceCurrency": "USD",
+    "availability": "https://schema.org/InStock"
+  }]
+}
+</script>
+{% elsif og_course_index %}
+{% comment %} Course chapter → schema.org Article (rich-result eligible), linked to parent Course via isPartOf {% endcomment %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": {{ og_canonical_url | jsonify }}
+  },
+  "headline": {% if page.chapter_title %}{{ page.chapter_title | jsonify }}{% else %}{{ page.title | jsonify }}{% endif %},
+  "description": {{ og_description | jsonify }},
+  "image": {{ og_image | jsonify }},
+  "inLanguage": {{ og_lang | jsonify }},
+  "learningResourceType": "Tutorial",
+  {% if og_course_index.depth %}"educationalLevel": {{ og_course_index.depth | jsonify }},{% endif %}
+  {% if og_published_time %}"datePublished": {{ og_published_time | jsonify }},
+  "dateModified": {% if og_modified_time %}{{ og_modified_time | jsonify }}{% else %}{{ og_published_time | jsonify }}{% endif %},{% endif %}
+  "isPartOf": {
+    "@type": "Course",
+    "name": {{ og_course_index.title | jsonify }},
+    "url": {{ og_course_url | jsonify }}
+  },
+  "author": {
+    "@type": "Person",
+    "name": {{ site.owner.name | jsonify }},
+    "url": "{{ site.url }}/about/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": {{ site.title | jsonify }},
+    "logo": {
+      "@type": "ImageObject",
+      "url": "{{ site.url }}{{ site.baseurl }}/assets/media/logo_400.png"
+    }
+  }
+}
+</script>
+{% elsif og_type == "article" and og_published_time %}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -199,4 +281,95 @@
   }
 }
 </script>
+{% endif %}
+
+{% comment %} BreadcrumbList for course pages. Helps Google render the
+   "Home > Courses > Course > Chapter" trail in search results. {% endcomment %}
+{% if og_course_index %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "{{ site.url }}/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Courses",
+      "item": "{{ site.url }}/courses/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": {{ og_course_index.title | jsonify }}{% if page.chapter_id %},
+      "item": {{ og_course_url | jsonify }}
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": {% if page.chapter_title %}{{ page.chapter_title | jsonify }}{% else %}{{ page.title | jsonify }}{% endif %}{% endif %}
+    }
+  ]
+}
+</script>
+{% endif %}
+
+{% comment %} Quiz schema for chapters that ship with a `_data/quizzes/...`
+   JSON sidecar. Emitted as a separate JSON-LD block alongside the chapter's
+   Article block, with isPartOf pointing back at the chapter URL so search
+   engines can stitch the two together. Reads quizzes via site.data (no
+   front matter or content edits required - works for every existing course
+   without retrofitting). {% endcomment %}
+{% if og_course_index and page.chapter_id and og_path_parts %}
+  {% assign quiz_module_dir = og_path_parts[2] %}
+  {% assign quiz_chapter_filename = og_path_parts[3] | remove: ".md" %}
+  {% assign quiz_data = site.data.quizzes[og_course_slug][quiz_module_dir][quiz_chapter_filename] %}
+  {% if quiz_data and quiz_data.questions and quiz_data.questions.size > 0 %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Quiz",
+  "name": {% if page.chapter_title %}{{ page.chapter_title | prepend: "Quiz: " | jsonify }}{% else %}{{ page.title | prepend: "Quiz: " | jsonify }}{% endif %},
+  "about": {
+    "@type": "Thing",
+    "name": {% if page.chapter_title %}{{ page.chapter_title | jsonify }}{% else %}{{ page.title | jsonify }}{% endif %}
+  },
+  "learningResourceType": "Self Assessment",
+  "inLanguage": {{ og_lang | jsonify }},
+  {% if og_course_index.depth %}"educationalLevel": {{ og_course_index.depth | jsonify }},{% endif %}
+  "isPartOf": {
+    "@type": "Article",
+    "url": {{ og_canonical_url | jsonify }}
+  },
+  "hasPart": [{% for q in quiz_data.questions %}{% unless forloop.first %},{% endunless %}
+    {
+      "@type": "Question",
+      "eduQuestionType": "Multiple choice",
+      "text": {{ q.question | jsonify }},
+      "suggestedAnswer": [{% for c in q.choices %}{% unless forloop.first %},{% endunless %}
+        {
+          "@type": "Answer",
+          "text": {{ c | jsonify }},
+          "position": {{ forloop.index0 }}
+        }{% endfor %}
+      ],
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": {{ q.choices[q.correct] | jsonify }},
+        "position": {{ q.correct }}{% if q.explanation %},
+        "comment": {
+          "@type": "Comment",
+          "text": {{ q.explanation | jsonify }}
+        }{% endif %}
+      }
+    }{% endfor %}
+  ]
+}
+</script>
+  {% endif %}
 {% endif %}
