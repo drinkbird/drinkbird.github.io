@@ -7,8 +7,11 @@ layout: default
 			<article class="post-content">
 				<div class="skew-between">
 					<div class="content-headline">
+						{% include image-feature-post.html %}
 						<h1 class="posts-header">{{page.title}}</h1>
 						{% include social-share.html %}
+						{% if page.date %}<time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time>{% endif %}
+						{% if page.updated %}<time class="post-updated" datetime="{{ page.updated | date_to_xmlschema }}">Last updated {{ page.updated | date: "%B %d, %Y" }}</time>{% endif %}
 					</div>
 				</div>
 
