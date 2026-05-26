@@ -6,6 +6,7 @@ permalink: /books/
 comments: true
 categories: blog
 featured: true
+date: 2015-08-07
 updated: 2026-05-26
 image:
   feature: books2.png
