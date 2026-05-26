@@ -12,6 +12,8 @@ reads:
   - leanstartup
 ---
 
+*Looking back (2026): I wrote this enthusiastically in 2014, when Lean Startup was the default frame for early-stage product work. The core ideas (validated learning, MVPs, fast feedback loops) still hold up. What I'd add today is that iterating and pivoting are not a universal answer. Approaches like Jobs-to-be-Done and deeper customer research are now treated as complementary rather than optional. Read this as a snapshot of my 2014 thinking, not a finished position.*
+
 ##Introduction
 There is incredible failure that precedes every entrepreneurial success. Even the most promising idea can be doomed from day one if the entrepreneur is not familiar with a suitable process needed to turn that idea into a successful company.
 

@@ -166,7 +166,7 @@ These people usually end up keeping a passive-aggressive stance that not only do
 
 ![Passive-aggressive]({{ site.baseurl }}/images/passive-aggressive.jpg)
 
-Programmers who feel that way should be paid minimum wage, because that's how much their work output is worth - if not less.
+That posture has real costs on both sides. The team doesn't get the judgement it hired for, and the engineer never grows into someone whose perspective shapes the work.
 
 Of course, it's your boss's right to fire you if they don't agree with your methods, but if your professionalism makes you lose your job, chances are that you work for the wrong boss in the first place.
 
@@ -174,7 +174,7 @@ Of course, it's your boss's right to fire you if they don't agree with your meth
 
 At this point you may be wondering, does everything discussed still apply for any kind of software, or just for high-risk systems? What if you are working on a chat application, or a simplistic web portal where users can order t-shirts?
 
-What if someone using your chat application has a heart attack and the last thing he does is to send a message for help? What would happen if that message goes nowhere because your software is problematic?
+What if your chat application is what a remote team relies on to coordinate during an incident, and a bug in it causes messages to go missing at the worst possible moment?
 
 What if your t-shirt portal leaks sensitive information that will be used by somebody to steal your customers' money?
 

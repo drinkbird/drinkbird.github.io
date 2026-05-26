@@ -72,7 +72,7 @@ On the other hand, through his exaggeration, the author achieves to disprove of 
 
 Despite the book’s shortcomings, Carr strikes the reader to having legitimate intentions in terms of raising awareness. Ultimately he manages to stimulate thoughts that will possibly stick to the reader’s mind for a substantial amount of time. Also cloud computing has dramatically increased in terms of popularity since the book has been published, so the reader is aided in realizing what the society is dealing with, either voluntarily or not.
 
-Finally, the President of the US, Barrack Obama, has recently stated that Internet access should be classified as a utility, promoting the so called “net neutrality” (Eadicicco, 2014). This can be definitely characterized a step toward realizing some of Carr’s major predictions.
+Finally, the President of the US, Barack Obama, has recently stated that Internet access should be classified as a utility, promoting the so called “net neutrality” (Eadicicco, 2014). This can be definitely characterized a step toward realizing some of Carr’s major predictions.
 
 ## Conclusion
 
