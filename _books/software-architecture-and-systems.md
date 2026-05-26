@@ -1,8 +1,8 @@
 ---
 title: Software Architecture & Systems
 excerpt: "Curated reading on architecture, distributed systems, and the data platforms underneath modern software."
-date: 2026-05-25
-updated: 2026-05-25
+date: 2019-10-12
+updated: 2026-05-26
 image:
     feature: books2.png
 spotlight: dataintensive

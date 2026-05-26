@@ -1,8 +1,8 @@
 ---
 title: Leadership, People & Teams
 excerpt: "Curated reading on leading engineers, growing teams, and the long, human work of management."
-date: 2026-05-25
-updated: 2026-05-25
+date: 2019-10-12
+updated: 2026-05-26
 image:
     feature: books2.png
 spotlight: peopleware

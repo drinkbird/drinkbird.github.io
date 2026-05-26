@@ -1,8 +1,8 @@
 ---
 title: Software Craft & Career
 excerpt: "Curated reading on the craft of software, communication, and the long arc of an engineering career."
-date: 2026-05-25
-updated: 2026-05-25
+date: 2019-10-12
+updated: 2026-05-26
 image:
     feature: books2.png
 spotlight: pragmaticprogrammer
