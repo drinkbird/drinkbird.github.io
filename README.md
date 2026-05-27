@@ -121,3 +121,32 @@ The `Gemfile` pins Jekyll 4 directly (no `github-pages` gem). Deployment goes th
 ### Force-running a deploy
 
 From the [Actions tab](https://github.com/drinkbird/drinkbird.github.io/actions/workflows/jekyll.yml), use **Run workflow** (the `workflow_dispatch` trigger). Useful for redeploying after fixing something external, e.g. flipping a feature flag in `_config.yml`.
+
+## Editorial CI
+
+`.github/workflows/editorial.yml` runs three checks on every PR and on push to `master`, in parallel with (not gating) the deploy:
+
+| Check        | Tool                                         | Behaviour                    |
+| ------------ | -------------------------------------------- | ---------------------------- |
+| Internal links + image refs | [htmlproofer](https://github.com/gjtorikian/html-proofer) | Hard fail |
+| External URLs | [lychee](https://github.com/lycheeverse/lychee) | Soft fail (`continue-on-error`) |
+| Prose typos  | [typos](https://github.com/crate-ci/typos)   | Hard fail                    |
+
+htmlproofer is run with `--disable-external` so it stays in its lane and leaves external URLs to lychee. `--ignore-urls '/^mailto:\?/'` skips share-by-email links (valid mailto URIs that htmlproofer's overly-strict mailto validator rejects).
+
+### Running the checks locally
+
+```sh
+gem install html-proofer                 # one-time
+brew install typos-cli lychee            # one-time
+
+bundle exec jekyll build                 # always re-build first
+htmlproofer ./_site --disable-external --allow-hash-href \
+  --ignore-empty-alt --no-enforce-https --ignore-urls '/^mailto:\?/'
+typos                                    # respects _typos.toml at the repo root
+lychee './_site/**/*.html' --max-concurrency 8 --accept 200,206,429
+```
+
+### `_typos.toml`
+
+Bootstrap 3 Sass, minified JS bundles (`*.min.js`, `mermaid.min.js`, `glightbox.min.js`), the synced `_data/courses/` mirror, and lockfiles are excluded so we don't fight false positives in code we don't maintain. The `[default.extend-words]` block whitelists intentional words that look like typos: `Packt` (publisher), `Skelton` (Matthew Skelton, Team Topologies co-author), `Ceaser` (the CSS easing tool at matthewlein.com/ceaser/), and `teh` (used as a literal typo example in the editorial-CI course chapter).
