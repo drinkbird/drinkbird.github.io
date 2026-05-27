@@ -9,6 +9,8 @@
     "pagefind": "npx -y pagefind --site _site",
     "build": "npm run uglify && bundle exec jekyll build && npm run pagefind",
     "serve": "npm run build && bundle exec jekyll serve --skip-initial-build",
+    "serve:drafts": "npm run build && bundle exec jekyll serve --skip-initial-build --drafts --future",
+    "new-post": "node scripts/new-post.js",
     "cover": "node scripts/cover-image.js",
     "import-course": "node scripts/import-course.js",
     "retrofit-course-workload": "node scripts/retrofit-course-workload.js"
