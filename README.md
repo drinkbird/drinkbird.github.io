@@ -52,6 +52,10 @@ The script writes a pair next to the input:
 
 `_includes/image-feature-post.html` and `_includes/image-feature-list.html` detect the `-1x.` infix on the `feature:` filename and emit `<img srcset="...-1x.jpg 1x, ...-2x.jpg 2x">`. To opt a post in, set `feature: source-1x.jpg` in front matter. Bare filenames (no `-1x` suffix) keep rendering as a single `<img src>`, so existing posts are unchanged until you re-run the script and switch the front-matter reference.
 
+Only use `-1x.jpg` in front matter when both files exist on disk. The include unconditionally derives `-2x.jpg` from the filename, so if you ran the script with `--no-2x` the browser will 404 on the missing retina file. For single-resolution images keep the bare filename and let the include fall back to single-src.
+
+Retrofit warning: srcset only pays off when the source has more pixels than the 1x slot. If the source is already 710 wide, the script just upscales it to make the `-2x.jpg`, which means retina visitors download ~2.5× the bytes for the same visual quality. Only retrofit posts where you have a high-res original on hand.
+
 If the source aspect ratio matches the target it's just resized; otherwise sharp crops to fill using its `attention` strategy (picks the most salient region so faces/focal points survive).
 
 Flags:
