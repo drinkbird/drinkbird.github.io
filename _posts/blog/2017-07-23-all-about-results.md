@@ -125,7 +125,7 @@ Yes, there will probably be some confrontation, and yes, it will most likely be 
 ![Negotiating]({{ site.baseurl }}/images/negotiation.jpg)
 <p class="text-center">Image source: <a href="http://www.stoneupdate.com/news-info/company-insider/979-caesarstone-fends-off-kibbutz-challenge">stoneupdate.com</a></p>
 
-As an engineer you have [responsibilities that no boss can override](http://blog.drinkbird.com/the-doctor-and-the-demanding-patient-metaphor-do-no-harm/). You don't need permission to do your duty, you just do it. Taking responsibility for things of great importance and sticking to your guns to protect them is the professional thing to do.
+As an engineer you have [responsibilities that no boss can override]({{ site.baseurl }}/the-doctor-and-the-demanding-patient-metaphor-do-no-harm/). You don't need permission to do your duty, you just do it. Taking responsibility for things of great importance and sticking to your guns to protect them is the professional thing to do.
 
 On that extend, no software system should ship unless a software engineer approves it. It's the exact same principle as with [civil engineers](https://en.wikipedia.org/wiki/Civil_engineering) and buildings.
 
@@ -163,7 +163,7 @@ These startups would be much better off, and they would go much faster, if they 
 
 That mentality of rushing usually stems from the Business side, as they keep trying to discover the right product to build. Although that's a legit concern, it should not affect the Engineering side negatively.
 
-There are [proven techniques](http://blog.drinkbird.com/lean-startup-book-review/) for building a product incrementally, using it as a subject of rapid experimentation, and pivoting or persevering depending on the findings. This approach results in the Business engaging with Engineering only when necessary, and at the right basis. That way there are no excuses for making a mess.
+There are [proven techniques]({{ site.baseurl }}/lean-startup-book-review/) for building a product incrementally, using it as a subject of rapid experimentation, and pivoting or persevering depending on the findings. This approach results in the Business engaging with Engineering only when necessary, and at the right basis. That way there are no excuses for making a mess.
 
 # What if you don't want all that responsibility?
 

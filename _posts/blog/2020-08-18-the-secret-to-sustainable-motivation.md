@@ -66,6 +66,6 @@ Every hill we climb makes us stronger and more determined for the next, slightly
 
 That is not just a recipe for organic personal growth but also the secret to sustainable motivation.
 
-Until next time, stay safe and go conquer them hills!
+Take care, Tasos.
 
 

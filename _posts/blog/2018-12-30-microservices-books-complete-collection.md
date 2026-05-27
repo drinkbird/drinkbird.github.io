@@ -141,5 +141,6 @@ Have you already read any of the books above? Is there any other good read about
 
 If you enjoyed this post and you would like to see more of my content, you can [subscribe to my newsletter](#mc_embed_signup) and I will keep you posted.
 
-Happy new year and happy reading!<br>
-Cheers,<br>Tasos
+Happy new year and happy reading!
+
+Take care, Tasos.

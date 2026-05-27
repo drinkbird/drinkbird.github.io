@@ -102,7 +102,7 @@ The practice of "assumption verification" documents has proven invaluable for bu
 
 ### Simplify to amplify: Breaking the curse of knowledge
 
-To really hit the nail on the head on engineering communication, you've got to break down what you know into digestible chunks. To put it more elegantly, you've got to beat the "Curse of Knowledge" with a stick. I delve deeper into this challenge in my article, [Breaking the Curse of Knowledge: Clear communication in a world overflowing with insights](https://blog.drinkbird.com/the-curse-of-knowledge/).
+To really hit the nail on the head on engineering communication, you've got to break down what you know into digestible chunks. To put it more elegantly, you've got to beat the "Curse of Knowledge" with a stick. I delve deeper into this challenge in my article, [Breaking the Curse of Knowledge: Clear communication in a world overflowing with insights]({{ site.baseurl }}/the-curse-of-knowledge/).
 
 ### The professional's mini guide to A+ video conferencing
 
@@ -177,5 +177,6 @@ In remote work, being close doesn't mean being near; it means being there. Show 
 
 So there you have it - a playbook for remote work, from setting up your digital dojo to building relationships so solid you'd think they were built by LEGO. But hey, even if you're an office aficionado, these tips are just as crucial if your colleagues are remote, whether they're in different time zones or just another floor of your skyscraper-sized office. As we tread further into this digital era, 'remote' is less a place and more a state of work. Being able to effectively communicate, manage your time, and build relationships across screens and miles is a top 21st-century work skillset.
 
-If this guide was as helpful as that first sip of Monday morning coffee, don't keep it to yourself. Share it and spread the love folks. Until next time,
-Tasos
+If this guide was as helpful as that first sip of Monday morning coffee, don't keep it to yourself. Share it and spread the love folks.
+
+Take care, Tasos.

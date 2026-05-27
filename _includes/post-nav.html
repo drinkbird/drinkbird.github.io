@@ -1,0 +1,56 @@
+{% comment %}
+  Render prev/next navigation cards for the current blog post.
+
+  Walks the non-archived blog posts in chronological order (oldest-first) and
+  finds the slot for `page`. `prev` = the older neighbor, `next` = the newer
+  neighbor. Archived posts are skipped entirely, so a post adjacent to an
+  archived one points directly to the next non-archived sibling. The nav is
+  not rendered on archived posts themselves or on non-blog posts (e.g.,
+  project posts).
+{% endcomment %}
+{% if page.categories contains 'blog' and page.archived != true %}
+  {% comment %} Filter out archived posts and the /books/ index page (which lives in
+     _posts/blog/ for legacy reasons but is a curated landing page, not an essay,
+     and is identified by carrying a `book_collections:` front-matter list). {% endcomment %}
+  {% assign post_nav_active = site.categories.blog | where_exp: "p", "p.archived != true" | where_exp: "p", "p.book_collections == nil" | sort: "date" %}
+  {% assign post_nav_prev = nil %}
+  {% assign post_nav_next = nil %}
+  {% assign post_nav_found = false %}
+  {% for p in post_nav_active %}
+    {% if post_nav_found %}
+      {% assign post_nav_next = p %}
+      {% break %}
+    {% endif %}
+    {% if p.url == page.url %}
+      {% assign post_nav_found = true %}
+    {% else %}
+      {% assign post_nav_prev = p %}
+    {% endif %}
+  {% endfor %}
+
+  {% if post_nav_prev or post_nav_next %}
+  {% assign post_nav_class = "post-nav" %}
+  {% if post_nav_prev and post_nav_next == nil %}{% assign post_nav_class = "post-nav post-nav-only-prev" %}{% endif %}
+  {% if post_nav_next and post_nav_prev == nil %}{% assign post_nav_class = "post-nav post-nav-only-next" %}{% endif %}
+  <nav class="{{ post_nav_class }}" aria-label="Post navigation">
+    {% if post_nav_prev %}
+    <div class="post-nav-prev">
+      <a href="{{ site.baseurl }}{{ post_nav_prev.url }}" rel="prev">
+        <span class="post-nav-direction">&larr; Previous</span>
+        <span class="post-nav-title">{{ post_nav_prev.title }}</span>
+        <time class="post-nav-date" datetime="{{ post_nav_prev.date | date_to_xmlschema }}">{{ post_nav_prev.date | date: "%b %Y" }}</time>
+      </a>
+    </div>
+    {% endif %}
+    {% if post_nav_next %}
+    <div class="post-nav-next">
+      <a href="{{ site.baseurl }}{{ post_nav_next.url }}" rel="next">
+        <span class="post-nav-direction">Next &rarr;</span>
+        <span class="post-nav-title">{{ post_nav_next.title }}</span>
+        <time class="post-nav-date" datetime="{{ post_nav_next.date | date_to_xmlschema }}">{{ post_nav_next.date | date: "%b %Y" }}</time>
+      </a>
+    </div>
+    {% endif %}
+  </nav>
+  {% endif %}
+{% endif %}

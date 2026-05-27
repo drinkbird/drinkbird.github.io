@@ -29,7 +29,8 @@ This blog explores engineering leadership through both code and collaboration. T
 
 If any of that resonates, here's where to go from here:
 
-- **[Get the newsletter](#mc_embed_signup)**: new articles and courses delivered to your inbox. Sent sparingly.
+- **[Start here](/start-here/)**: a curated entry into the blog. The essays I'd hand you first.
+- **[Get the newsletter](#mc_embed_signup)**: an email when there's a new essay on engineering leadership. No fixed cadence, no spam.
 - **[Browse the courses](/courses/)**: structured, opinionated deep dives on engineering craft, leadership, and career growth.
 - **[Read the stories](/posts/)**: shorter pieces on tech, teams, and what I've learned along the way.
 

@@ -50,5 +50,5 @@ This metaphor was originally introduced by Robert C. Martin [in his blog](https:
 
 ## Other resources
 
-* Next article: [The Surgeon and the Deadline, another metaphor about professionalism in software development](http://blog.drinkbird.com/the-surgeon-and-the-deadline/)
-* [Recommended books for Software Developers](http://blog.drinkbird.com/books/)
+* Next article: [The Surgeon and the Deadline, another metaphor about professionalism in software development]({{ site.baseurl }}/the-surgeon-and-the-deadline/)
+* [Recommended books for Software Developers]({{ site.baseurl }}/books/)

@@ -177,6 +177,4 @@ Finally, when we need to keep data consistent across microservices, we should em
 
 Want to build expertise in microservices? Check out my [complete Collection of Microservices Books]({{ site.baseurl }}/microservices-books-complete-collection/) and don't hesitate to drop me a line with your feedback.
 
-Until next time!
-
-Cheers, Tasos.
+Take care, Tasos.

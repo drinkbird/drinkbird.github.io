@@ -43,7 +43,7 @@ It is apparent that the magnitude of responsibility, as well as the amount of qu
 ## The curse of knowledge
 During the process of writing code for a new feature, we have a good understanding of what this feature is supposed to do and how it fits in the bigger picture. We are in a unique position to know exactly what we are thinking at the time we are writing the code. Everyone else doesn’t know what we know and we are obviously aware of that. However, it is almost impossible for us to imagine not knowing what we know at a certain moment in time. 
 
-This is in fact a cognitive bias called *the curse of knowledge*, which constitutes a major, insidious cause of code 
+This is in fact a cognitive bias called [*the curse of knowledge*]({{ site.baseurl }}/the-curse-of-knowledge/), which constitutes a major, insidious cause of code 
 deterioration and technical debt. It directly affects our decision making process and relentlessly short-circuits our sense of objectivity. Although the code we produce appears to be perfectly readable at the moment of writing, it may in fact be hard to read by everyone else, **including the future versions of ourselves** as our memory is volatile.
 
 In his [blog](http://blogs.msdn.com/b/peterhal/archive/2006/01/04/509302.aspx), Peter Hallam mentions that as software developers, we tend to spend more than 70% of our time understanding existing code, as this is a fundamental prerequisite in maintaining, correcting or extending a system. Now, imagine what could happen if every one of us would always produce code that clearly shows its intentions, that can be easily read and understood by anyone, and it's so expressive that comments could be regarded as mere noise.

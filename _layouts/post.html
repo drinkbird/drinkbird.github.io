@@ -9,9 +9,19 @@ layout: default
 					<div class="content-headline">
 						{% include image-feature-post.html %}
 						<h1 class="posts-header">{{page.title}}</h1>
+						<div class="post-meta">
+							<time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time>
+							{% if page.updated %}
+							<span class="post-meta-sep" aria-hidden="true">·</span>
+							<time class="post-updated" datetime="{{ page.updated | date_to_xmlschema }}">Last updated {{ page.updated | date: "%B %d, %Y" }}</time>
+							{% endif %}
+							{% if page.categories contains 'blog' %}
+							{% assign reading_time = content | strip_html | number_of_words | divided_by: 225 | plus: 1 %}
+							<span class="post-meta-sep" aria-hidden="true">·</span>
+							<span class="post-reading-time">{{ reading_time }} min read</span>
+							{% endif %}
+						</div>
 						{% include social-share.html %}
-						<time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time>
-						{% if page.updated %}<time class="post-updated" datetime="{{ page.updated | date_to_xmlschema }}">Last updated {{ page.updated | date: "%B %d, %Y" }}</time>{% endif %}
 						{% include post-tags.html %}
 					</div>
 				</div>
@@ -20,6 +30,12 @@ layout: default
 						<div class="post-body" data-aside-anchor>
 							{% include author-inline.html %}
 							{% if page.archived %}{% include archived-banner.html %}{% endif %}
+							{% if page.categories contains 'blog' and page.excerpt and page.excerpt != "" %}
+							<aside class="post-tldr" aria-label="Summary">
+								<p class="post-tldr-heading">TL;DR</p>
+								<p class="post-tldr-body">{{ page.excerpt | strip_html }}</p>
+							</aside>
+							{% endif %}
 							{{ content }}
 						</div>
 					</div>
@@ -44,6 +60,7 @@ layout: default
 						</div>
 					</div>
 				</div>
+				{% include post-nav.html %}
 				<footer class="post-footer">
 					<section class="post-footer-share">
 						<h3 class="post-footer-heading">Share this post</h3>

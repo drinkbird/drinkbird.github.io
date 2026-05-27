@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Your org chart might be your biggest architectural constraint"
-excerpt: "How structure, incentives and collaboration shape the systems we build"
+excerpt: "Architecture mirrors how your teams communicate, not how the wiki diagrams say it should. To change the system, change the org chart first."
 permalink: /conways-law/
 comments: true
 categories: blog
@@ -23,33 +23,11 @@ reads:
   - codecomplete
   - pragmaticprogrammer
   - agiledev
-  - legacycode
-  - teamtopologies
-  - building-evolutionary-architectures
-  - microservices
-  - buildingmicroservices
-  - microservicespatterns
-  - dataintensive
-  - cleanarchitecture
-  - cleancode
-  - domaindrivendesign
-  - refactoring
-  - releaseit
-  - thephoenix
-  - devops
-  - thegoal
-  - managerspath
-  - elegantpuzzle
-  - radicalcandor
-  - thefearlessorg
-  - multipliers
-  - thinkinginsystems
-  - staffengineer
 ---
 
 It always starts quietly enough. One team takes on the customer portal, another handles authentication, and somewhere a platform group builds tools that nobody explicitly requested, but everyone will eventually need. As time passes, these boundaries between teams harden and become visible seams in the system itself. Communication flows smoothly within each unit, but it slows and sometimes stalls at the edges. The evidence appears in duplicated integrations, mismatched naming, critical paths that wind through multiple teams, and a growing backlog of cross-team handoffs that never seems to shrink.
 
-This is not the result of poor planning or a lack of engineering skill. Even when teams are working in good faith, the architecture inevitably reflects the ways the organization communicates. Interfaces form exactly where conversations stop. In my [previous article](https://blog.drinkbird.com/organizational-behavior/), I introduced Organizational Behavior, the study of how human factors shape technical outcomes. Here, I continue that exploration by examining why your system architecture so often ends up as a mirror of your org chart.
+This is not the result of poor planning or a lack of engineering skill. Even when teams are working in good faith, the architecture inevitably reflects the ways the organization communicates. Interfaces form exactly where conversations stop. In my [previous article]({{ site.baseurl }}/organizational-behavior/), I introduced Organizational Behavior, the study of how human factors shape technical outcomes. Here, I continue that exploration by examining why your system architecture so often ends up as a mirror of your org chart.
 
 ![conway's law]({{ site.baseurl }}/images/conway-1.jpg)
 
@@ -112,7 +90,6 @@ The shape of your system reflects the habits and choices of the people building 
 
 If you have faced similar challenges such as distributed ownership, fragmented systems or team-level misalignment, I'd be interested to hear how you've approached them.
 
-In the next article, I'll focus on another foundational topic of Organizational Behavior, *psychological safety*. It plays a central role in how teams collaborate under pressure, make decisions and take ownership of outcomes that shape your architecture.
+In the next article, I'll focus on another foundational topic of Organizational Behavior, [*psychological safety*]({{ site.baseurl }}/psychological-safety/). It plays a central role in how teams collaborate under pressure, make decisions and take ownership of outcomes that shape your architecture.
 
-Best,
-Tasos
+Take care, Tasos.

@@ -20,7 +20,7 @@ reads:
   - 97things
 ---
 
-In the [previous article](http://blog.drinkbird.com/the-doctor-and-the-demanding-patient-metaphor-do-no-harm/) we saw the doctor-patient metaphor, and we discussed about our responsibility as software experts to ensure that we don't let others corrupt our work.
+In the [previous article]({{ site.baseurl }}/the-doctor-and-the-demanding-patient-metaphor-do-no-harm/) we saw the doctor-patient metaphor, and we discussed about our responsibility as software experts to ensure that we don't let others corrupt our work.
 
 In this article we are going to discuss about the other side of the coin: handling pressure and not letting ourselves corrupt our work. 
 
@@ -55,4 +55,4 @@ The last quote about speed is from the book {% include link.html title="97 Thing
 
 ## Other resources
 
-* [Recommended books for Software Developers](http://blog.drinkbird.com/books/)
+* [Recommended books for Software Developers]({{ site.baseurl }}/books/)

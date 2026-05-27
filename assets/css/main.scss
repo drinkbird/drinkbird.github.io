@@ -1301,8 +1301,135 @@ time.post-updated {
 	font-size: $font-size-base * 0.75;
 	font-style: italic;
 	color: $gray;
-	margin-top: -16px;
 }
+
+.post-meta {
+	margin: 10px 0 18px;
+	font-size: $font-size-base * 0.8;
+	color: $gray;
+	line-height: 1.4;
+
+	time,
+	.post-reading-time {
+		color: $gray;
+	}
+
+	.post-updated {
+		font-size: inherit;
+	}
+}
+
+.post-meta-sep {
+	display: inline-block;
+	margin: 0 8px;
+	color: $gray;
+	opacity: 0.6;
+}
+
+.post-reading-time {
+	font-size: $font-size-base * 0.85;
+	color: $gray;
+	letter-spacing: 0.2px;
+}
+
+.post-tldr {
+	background: $brand-primary-dark-lighter;
+	padding: 16px 20px;
+	margin: 32px 0 24px;
+
+	.post-tldr-heading {
+		font-size: 14px;
+		font-weight: bold;
+		letter-spacing: 0.08em;
+		text-transform: uppercase;
+		color: $gray;
+		margin: 0 0 8px;
+		padding-bottom: 0;
+	}
+
+	.post-tldr-body {
+		font-size: 16px;
+		line-height: 1.4;
+		color: $gray-darker;
+		margin: 0;
+		padding-bottom: 0;
+	}
+}
+
+.post-nav {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 16px;
+	margin: 32px 0 24px;
+
+	a {
+		display: block;
+		padding: 16px 18px;
+		border: 1px solid $brand-gray-darker;
+		border-radius: 4px;
+		text-decoration: none;
+		color: $brand-primary-dark;
+		background: $white;
+		height: 100%;
+		transition: border-color 0.15s ease, background 0.15s ease;
+
+		&:hover,
+		&:focus {
+			border-color: $brand-secondary;
+			background: rgba($brand-secondary, 0.04);
+			text-decoration: none;
+		}
+	}
+
+	.post-nav-direction {
+		display: block;
+		font-size: 12px;
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: 0.08em;
+		color: $gray;
+		margin-bottom: 6px;
+	}
+
+	.post-nav-title {
+		display: block;
+		font-size: 16px;
+		line-height: 1.35;
+		font-weight: 600;
+		color: $brand-primary-dark;
+	}
+
+	.post-nav-date {
+		display: block;
+		margin-top: 6px;
+		font-size: 12px;
+		color: $gray;
+	}
+
+	.post-nav-next {
+		text-align: right;
+	}
+
+	&.post-nav-only-prev,
+	&.post-nav-only-next {
+		grid-template-columns: 1fr;
+
+		.post-nav-next {
+			text-align: left;
+		}
+	}
+}
+
+@media (max-width: 600px) {
+	.post-nav {
+		grid-template-columns: 1fr;
+
+		.post-nav-next {
+			text-align: left;
+		}
+	}
+}
+
 
 .posts article.article-list time.post-updated {
 	margin-top: -4px;

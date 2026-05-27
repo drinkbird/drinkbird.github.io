@@ -148,4 +148,4 @@ I highly encourage everyone to attend conferences like [Voxxed Days](https://vox
 
 So which was your favorite part of the interview? What do you think about John's advice? Don't hesitate to leave your comments below!
 
-Cheers,<br/>Tasos
+Take care, Tasos.

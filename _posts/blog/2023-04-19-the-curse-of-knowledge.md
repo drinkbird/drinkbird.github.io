@@ -150,5 +150,4 @@ So let's take the leap, break the curse, and move toward a future where the exch
 
 Do you have any other techniques or tips to understand complex systems? I'm always looking for ways to improve. Please drop your thoughts in the comments below or reach out via email.
 
-Until next time!
--- Tasos
+Take care, Tasos.

@@ -34,7 +34,7 @@ For such an organization to be able to create unique value propositions and exec
 
 ![Stop Side Effects]({{ site.baseurl }}/images/stop-side-effects.jpg)
 
-In other words, software quality has to be kept high throughout the software's life span - [from the very beginning](http://blog.drinkbird.com/all-about-results). And although quality is so important, paradoxically organizations often choose to sacrifice it in favor of speed, or more accurately, a false promise of speed. According to [the First Law of Programming](http://wiki.c2.com/?FirstLawOfProgramming):
+In other words, software quality has to be kept high throughout the software's life span - [from the very beginning]({{ site.baseurl }}/all-about-results). And although quality is so important, paradoxically organizations often choose to sacrifice it in favor of speed, or more accurately, a false promise of speed. According to [the First Law of Programming](http://wiki.c2.com/?FirstLawOfProgramming):
 
 > Lowering quality lengthens development time.
 

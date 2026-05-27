@@ -130,5 +130,4 @@ Moreover, don't forget the power of the "Thought-Provoker" stage, a secret weapo
 
 Ultimately, the essence of being a software engineer, or indeed any professional, is not about how well we can follow a script, but how effectively we can navigate the unpredictable, complex, and exciting landscape of problem-solving. As you continue to climb the inverted pyramid, remember that each stage offers valuable insights and experiences, equipping you with the tools you need to scale the heights of impact. Embrace the journey, rise to the challenges, and become the problem-solving champion you are destined to be!
 
-Until next time!
--- Tasos
+Take care, Tasos.

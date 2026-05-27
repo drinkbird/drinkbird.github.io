@@ -23,34 +23,13 @@ reads:
   - peopleware
   - thinkinginsystems
   - thinkingfastandslow
-  - leanstartup
-  - teamtopologies
-  - managerspath
-  - elegantpuzzle
-  - staffengineer
-  - effectiveengineer
-  - pragmaticprogrammer
-  - cleancode
-  - cleanarchitecture
-  - codecomplete
-  - thecleancoder
-  - refactoring
-  - legacycode
-  - dataintensive
-  - building-evolutionary-architectures
-  - microservices
-  - thefearlessorg
-  - communicationforengineers
-  - agiledev
-  - multipliers
-  - releaseit
 ---
 
 # The bottleneck AI just moved
 
 A familiar pattern is playing out across the industry. Generative AI tools land in the IDE, leadership sets expectations that output should rise accordingly, and in many places the message goes further: ship faster with fewer engineers, or with no engineers at all. The intent is understandable. The execution, in most cases I have observed, optimizes the wrong part of the system.
 
-In my [previous post](https://blog.drinkbird.com/ai-speed/) I argued that AI accelerates code creation but engineering still depends on clarity and deliberate decisions, and that speed without judgment is not engineering. That post looked at the cultural and decision-making cost of the current moment. This one pulls a different thread from the same situation and looks at the *system* cost, what happens to throughput when a non-constraint suddenly runs faster and the constraint does not.
+In my [previous post]({{ site.baseurl }}/ai-speed/) I argued that AI accelerates code creation but engineering still depends on clarity and deliberate decisions, and that speed without judgment is not engineering. That post looked at the cultural and decision-making cost of the current moment. This one pulls a different thread from the same situation and looks at the *system* cost, what happens to throughput when a non-constraint suddenly runs faster and the constraint does not.
 
 ## A short detour through The Goal
 
@@ -104,4 +83,4 @@ Engineering leaders are in a good position to reframe the conversation upward. T
 
 In a future post I want to take the positive half of this seriously and go deeper into what it actually looks like to put AI at the constraint, with concrete patterns for review, testing, observability, and documentation. The framing matters, but the practice is where the throughput shows up.
 
-Until next time, Tasos.
+Take care, Tasos.

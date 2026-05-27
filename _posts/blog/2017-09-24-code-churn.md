@@ -39,7 +39,7 @@ reads:
   - dpruby
 ---
 
-In the [previous article](http://blog.drinkbird.com/all-about-results) we discussed about a high-impact mistake of many software companies, especially startups, and that is focusing on a program's behavior while letting its structure decay.
+In the [previous article]({{ site.baseurl }}/all-about-results) we discussed about a high-impact mistake of many software companies, especially startups, and that is focusing on a program's behavior while letting its structure decay.
 
 It's now time to discuss an often overlooked symptom of serious, underlying problems of software projects: *high code churn*. 
 
@@ -185,7 +185,7 @@ For that reason we expect changes in code to be as targeted and minimal as the s
 <div style="width:100%;height:0;padding-bottom:75%;position:relative;"><iframe src="https://giphy.com/embed/iRTWQWg3cSEfe" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
 </div>
 
-Hence, churn caused by extensive refactoring is generally a symptom of decayed code structure. As we've discussed before, it's our responsibility as engineers to [protect the structure](http://blog.drinkbird.com/all-about-results) at all costs.
+Hence, churn caused by extensive refactoring is generally a symptom of decayed code structure. As we've discussed before, it's our responsibility as engineers to [protect the structure]({{ site.baseurl }}/all-about-results) at all costs.
 
 
 ## High churn + Lack of automated tests = Death march

@@ -22,32 +22,12 @@ reads:
   - daretolead
   - crucialconversations
   - multipliers
-  - fivedysfunctions
-  - debuggingteams
-  - resilientmgmt
-  - drive
-  - managerspath
-  - elegantpuzzle
-  - staffengineer
-  - highoutputmgmt
-  - managinghumans
-  - executiveprimer
-  - thinkingfastandslow
-  - thinkinginsystems
-  - habit
-  - creativityincbook
-  - neversplitdiff
-  - winargument
-  - devops
-  - thephoenix
-  - teamtopologies
-  - softskills
 
 ---
 
 Think of an engineer spotting a design flaw during code review but choosing silence to avoid pushback from a stressed manager. Or a team member withholding concerns about integration risks in a sprint planning, fearing it might label them as negative. Or an engineer who knowingly cuts corners to hit an estimate, instead of raising the issue and proposing tradeoffs. Such behaviors point to how fear shapes decisions.
 
-In my last post we covered [Conway's Law](https://blog.drinkbird.com/conways-law/), describing how organizational structure influences system design. Yet the behaviors within that structure determine the outcome.
+In my last post we covered [Conway's Law]({{ site.baseurl }}/conways-law/), describing how organizational structure influences system design. Yet the behaviors within that structure determine the outcome.
 
 Engineering depends on steady judgment. That means surfacing ambiguity, weighing tradeoffs, challenging plans, offering feedback that redirects work before it derails. Fear blocks it all. Leaders may aim to reinforce accountability and spark urgency, but fear often strips away the very conditions that allow effective engineering to happen.
 
@@ -79,7 +59,7 @@ Without psychological safety, engineering becomes theater. Risks stay buried, qu
 
 Under fear, priorities shift. The work stops being about building the right thing well and becomes about avoiding (or even worse, redirecting) blame. Teams make choices that are easy to defend rather than correct, ideas stay inside drafts, reviews become rubber-stamps, doubts stay hidden and feedback dries up.
 
-This is well documented in Organizational Behavior. Fear narrows focus, lowers creativity, weakens feedback loops and suppresses learning. People seek safety in silence.
+This is well documented in [Organizational Behavior]({{ site.baseurl }}/organizational-behavior/). Fear narrows focus, lowers creativity, weakens feedback loops and suppresses learning. People seek safety in silence.
 
 Sometimes the stress is self-imposed, shaped by past experiences, role ambiguity, or toxic patterns inherited from previous teams. Leaders need to spot this too. Not all fear comes from above. But all fear interferes with engineering judgment.
 
@@ -93,7 +73,7 @@ As the environment worsens, the effects compound. Shallow fixes ship, quality er
 
 ## What good leadership looks like instead
 
-Effective leaders create space for thinking, dissent, deliberate tradeoffs and [self-improvement](https://blog.drinkbird.com/twenty-percent-rule/). They ask more than they tell and they admit when they're unsure, while making it easier to raise risks than to hide them.
+Effective leaders create space for thinking, dissent, deliberate tradeoffs and [self-improvement]({{ site.baseurl }}/twenty-percent-rule/). They ask more than they tell and they admit when they're unsure, while making it easier to raise risks than to hide them.
 
 Some would be quick to call this *soft leadership*. I call it *high-leverage* leadership, as it builds teams that adapt, grow and improve under pressure. One model that supports this is called *Servant Leadership*, where the leader's role is to serve the team by removing friction and enabling judgment. 
 
@@ -111,6 +91,6 @@ This ties back directly to Conway's Law. Structural communication boundaries sha
 
 Teams working in high-trust, psychological safe environments cross communication boundaries fluidly, leading to systems that are maintainable and adaptable, aligned with real-world needs.
 
-In the next post, we'll explore how AI tools augment engineering judgment by handling routine tasks. This augmentation frees engineers to focus on complex decisions requiring deep human insight, further emphasizing the role of psychological safety in enabling teams to thrive around these new capabilities.
+In the [next post]({{ site.baseurl }}/ai-speed/), we'll explore how AI tools augment engineering judgment by handling routine tasks. This augmentation frees engineers to focus on complex decisions requiring deep human insight, further emphasizing the role of psychological safety in enabling teams to thrive around these new capabilities.
 
-Until next time, Tasos.
+Take care, Tasos.

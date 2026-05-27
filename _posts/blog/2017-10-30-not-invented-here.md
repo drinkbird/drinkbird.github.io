@@ -148,7 +148,7 @@ Under most circumstances, building such components from scratch is a waste of re
 
 # Reinventing the wheel is immoral
 
-In a previous story we discussed that [as engineers we are also stakeholders](http://blog.drinkbird.com/all-about-results) of the systems we work on, which means that we bear much responsibility for ensuring their long-term success and prosperity.
+In a previous story we discussed that [as engineers we are also stakeholders]({{ site.baseurl }}/all-about-results) of the systems we work on, which means that we bear much responsibility for ensuring their long-term success and prosperity.
 
 As we discussed, there are many common preconceptions about in-house implementations. We need to make sure that we are fully aware of them before affecting any relevant decisions in our team or organization.
 
