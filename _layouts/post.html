@@ -12,12 +12,12 @@ layout: default
 						<div class="post-meta">
 							<time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time>
 							{% if page.updated %}
-							<span class="post-meta-sep" aria-hidden="true">·</span>
+							<span class="post-meta-sep" aria-hidden="true">|</span>
 							<time class="post-updated" datetime="{{ page.updated | date_to_xmlschema }}">Last updated {{ page.updated | date: "%B %d, %Y" }}</time>
 							{% endif %}
 							{% if page.categories contains 'blog' %}
 							{% assign reading_time = content | strip_html | number_of_words | divided_by: 225 | plus: 1 %}
-							<span class="post-meta-sep" aria-hidden="true">·</span>
+							<span class="post-meta-sep" aria-hidden="true">|</span>
 							<span class="post-reading-time">{{ reading_time }} min read</span>
 							{% endif %}
 						</div>

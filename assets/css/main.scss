@@ -1309,13 +1309,18 @@ time.post-updated {
 	color: $gray;
 	line-height: 1.4;
 
+	// Override the global `time { display: block; margin-bottom: 20px; }`
+	// so the date / last updated / reading-time all sit on one row.
 	time,
 	.post-reading-time {
+		display: inline;
+		margin: 0;
 		color: $gray;
 	}
 
 	.post-updated {
 		font-size: inherit;
+		font-family: inherit;
 	}
 }
 
