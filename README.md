@@ -17,12 +17,14 @@ npm install                 # also runs `npm run uglify` via postinstall
 Run the site locally:
 
 ```sh
-npm run serve               # uglifies, then runs `bundle exec jekyll serve`
+npm run serve               # uglify → jekyll build → pagefind → jekyll serve
 ```
 
 Then open <http://localhost:4000>.
 
-`npm run serve` is preferred over `bundle exec jekyll serve` directly because it regenerates `assets/js/scripts.min.js` from the source first. If `scripts.min.js` is already fresh and you want `--livereload`, plain `bundle exec jekyll serve --livereload` still works.
+`npm run serve` does the full pipeline so local previews match production: uglify the JS, build the site, build the Pagefind search index against `_site/`, then start `jekyll serve --skip-initial-build`. The Pagefind index survives jekyll's watch-mode rebuilds because `_site/pagefind/` is in `keep_files`, so search keeps working as you edit content. If you make a structural change and want a fresh index, restart with `npm run serve` (or just run `npm run pagefind` in another terminal).
+
+If you don't care about local search and want a faster loop, `bundle exec jekyll serve --livereload` still works on its own (assuming `scripts.min.js` is already built).
 
 ## Editing site JavaScript
 

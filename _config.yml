@@ -51,6 +51,13 @@ plugins:
 exclude: [node_modules, vendor, .bundle, Gemfile, Gemfile.lock]
 include: [.well-known]
 
+# Preserve the Pagefind index across Jekyll rebuilds. CI rebuilds it
+# from scratch after every `jekyll build`, but locally we generate it
+# once via `npm run serve` (jekyll build + pagefind + jekyll serve
+# --skip-initial-build) and we don't want subsequent watch-mode
+# rebuilds to wipe _site/pagefind/.
+keep_files: [.git, .svn, pagefind]
+
 links:
   - title: Stories
     url: /posts/
