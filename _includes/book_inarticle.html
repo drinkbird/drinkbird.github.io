@@ -1,3 +1,4 @@
+{% if book and book.url and book.title %}
 <div class="book-inarticle text-center">
 	<a class="book-link" target="_blank" href="{{ book.url }}" aria-label="View '{{ book.title }}'{% if book.url contains 'amazon.com' %} on Amazon {% endif %} (affiliate link)">
 		{% if book.url contains 'amazon.com' %}
@@ -15,3 +16,4 @@
 		{% endif %}
 	</a>
 </div>
+{% endif %}

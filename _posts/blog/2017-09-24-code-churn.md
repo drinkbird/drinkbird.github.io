@@ -85,7 +85,7 @@ One problem with that line of thought is that writing code is only a small part 
 * meetings
 * research
 
-Even if we assume that every new line of code has a clear puprose, is easily readable and defect-free, we can still realize that writing code fast would only have a negligible positive effect on the overall productivity of a team.
+Even if we assume that every new line of code has a clear purpose, is easily readable and defect-free, we can still realize that writing code fast would only have a negligible positive effect on the overall productivity of a team.
 
 In reality, most new lines of code written under a distorted urge for productivity don't present these values. That way of thinking is in fact actually harmful for productivity, both the individual's and the team's.
 
@@ -153,7 +153,7 @@ Have you ever found yourself changing one little thing in one side of a project 
 * High-level modules should not depend on low-level modules. Both should depend on abstractions.
 * Abstractions should not depend on details. Details should depend on abstractions.
 
-*Leaky abstractions* are those that *do* depend on details. Every module depending on such abstractions gets tighly-coupled to such details, resulting in high-viscosity, fragile systems where is often easier to add a hack than change the code in a way that fits the program's design.
+*Leaky abstractions* are those that *do* depend on details. Every module depending on such abstractions gets tightly-coupled to such details, resulting in high-viscosity, fragile systems where is often easier to add a hack than change the code in a way that fits the program's design.
 
 As an example, imagine an MVC application that handles user registrations using the following flow of control:
 
@@ -161,10 +161,10 @@ As an example, imagine an MVC application that handles user registrations using 
 graph TD;
     uc[User Controller]-->ubl[User Business Logic];
     ubl-->urp[User Repository];
-    urp-->upsql[User SQL Persistance];
+    urp-->upsql[User SQL Persistence];
 </div>
 
-What would happen if the the SQL implementation details of the persistance layer were leaked all the way up to the business layer? If we had to make changes to the SQL-specific code, such as restructuring tables for better performance, or even swapping the SQL implementation altogether in favor of another technology, both the repository and business logic layers would have to change as well.
+What would happen if the the SQL implementation details of the persistence layer were leaked all the way up to the business layer? If we had to make changes to the SQL-specific code, such as restructuring tables for better performance, or even swapping the SQL implementation altogether in favor of another technology, both the repository and business logic layers would have to change as well.
 
 I'll never forget a fellow programmer's reply when I once asked how things were going at his workplace:
 

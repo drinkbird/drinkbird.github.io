@@ -29,7 +29,7 @@ Software engineering is a vast, continuously evolving field that one can spend y
 No modern software system is a result of a single technology, but rather of a mixture of different platforms, programming languages, frameworks, libraries, patterns and practices.
 
 Depending on the type and scale of a system, there are different goals to be achieved, and each case is in need of a tailored approach to planning, design, development and quality assurance.
-Consider the construction analogy: Would you use the same practices to buld a a hospital, a shopping mall, a dog house and a nuclear reactor?
+Consider the construction analogy: Would you use the same practices to build a a hospital, a shopping mall, a dog house and a nuclear reactor?
 
 ![Complexity]({{ site.baseurl }}/images/complexity.png)
 
@@ -74,7 +74,7 @@ For a few decades hardware engineers were able to steadily increase the throughp
 
 ![Microprocessor Trends]({{ site.baseurl }}/images/microprocessor.jpg)
 
-It seems that about ten years ago, harware engineers hit a wall on processor speeds, mostly due to physical limitations of the materials the chips are made of. They couldn't keep increasing throughput with clock rate anymore, so they started multiplying the number of cores per CPU, which means that throughput goes up *only if* we can take advantage of those cores.
+It seems that about ten years ago, hardware engineers hit a wall on processor speeds, mostly due to physical limitations of the materials the chips are made of. They couldn't keep increasing throughput with clock rate anymore, so they started multiplying the number of cores per CPU, which means that throughput goes up *only if* we can take advantage of those cores.
 
 That's a major challenge for programmers, as we are -in general- extremely inefficient in writing multithreaded code, and that's exactly why functional languages have suddenly become so popular, even though some of them are quite old. Some of the most used ones in the industry are:
 
@@ -96,14 +96,14 @@ Furthermore, you have an extensive set of tools and functions to manipulate thos
 
 ![Reactive Programming]({{ site.baseurl }}/images/reactive.png)
 
-[Reactive Extensions](http://reactivex.io/languages.html) is a feture-rich, battle-tested API for doing reactive programming. It's used for both server-side and client-side applications and it's implemented accross a wide variety of programming languages, platforms and frameworks. It's so reliable that Google has decided to use the JavaScript flavor of Reactive Extensions, aka [RxJS](https://github.com/Reactive-Extensions/RxJS), as a core dependency of [Angular](https://angular.io/). 
+[Reactive Extensions](http://reactivex.io/languages.html) is a feature-rich, battle-tested API for doing reactive programming. It's used for both server-side and client-side applications and it's implemented across a wide variety of programming languages, platforms and frameworks. It's so reliable that Google has decided to use the JavaScript flavor of Reactive Extensions, aka [RxJS](https://github.com/Reactive-Extensions/RxJS), as a core dependency of [Angular](https://angular.io/). 
 
 You can find much more information about reactive programming in an excellent [post by André Staltz](https://gist.github.com/staltz/868e7e9bc2a7b8c1f754), from which I've also taken the image above.
 
 
 ## Microservices
 
-In 2006, Werner Vogels (Amazon's CTO) gave a presentation at the JAOO conference, where he dicussed -among other things- how small teams build and run services that have their own databases. Fast forward in the future, this structure is now known as DevOps, and the underlying architecture is known as microservices.
+In 2006, Werner Vogels (Amazon's CTO) gave a presentation at the JAOO conference, where he discussed -among other things- how small teams build and run services that have their own databases. Fast forward in the future, this structure is now known as DevOps, and the underlying architecture is known as microservices.
 
 Microservices is an emerging paradigm of software modularization. In summary, microservices are the result of applying the [Single Responsibility Principle](https://en.wikipedia.org/wiki/Single_responsibility_principle) at a service level.
 
@@ -114,7 +114,7 @@ Each microservice has its own data storage, can be deployed / upgraded / replace
 ![Microservices]({{ site.baseurl }}/images/microservices.png)
 *image taken from [microsoft.com](https://msdn.microsoft.com/en-us/magazine/mt595752.aspx)*
 
-Most importantly, work can be distributed accross teams more efficiently, since each microservice includes a full vertical slice of the application. That way dependencies between teams are minimized, development is faster, and practices such as [continuous delivery](https://en.wikipedia.org/wiki/Continuous_delivery) and [blue-green deployment](https://martinfowler.com/bliki/BlueGreenDeployment.html) become much more possible.
+Most importantly, work can be distributed across teams more efficiently, since each microservice includes a full vertical slice of the application. That way dependencies between teams are minimized, development is faster, and practices such as [continuous delivery](https://en.wikipedia.org/wiki/Continuous_delivery) and [blue-green deployment](https://martinfowler.com/bliki/BlueGreenDeployment.html) become much more possible.
 
 Of course the organization adopting the microservices approach has to adapt its structure accordingly, since teams have to organize around business capabilities and not different application tiers or technologies. Furthermore, the organization has to adopt the DevOps mindset and invest on infrastructure automation, as managing all those moving parts manually is proven to be not such a good idea.
 
@@ -130,7 +130,7 @@ It's the problem domain that needs to be understood, because that's the magic sa
 
 If you're going to apply DDD outside of a microservice architecture, then start by reading {% include link.html title="Domain Driven Design, by Eric Evans" url="https://www.amazon.co.uk/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215?tag=drin04-20" %}. If on the other hand you plan to use it in a microservice driven architecture, you can skip Eric Evans's book and read {% include link.html title="Building Microservices: Designing Fine-Grained Systems, by Sam Newman" url="https://www.amazon.com/Building-Microservices-Designing-Fine-Grained-Systems/dp/1491950358?tag=drin04-20" %} directly.
 
-#### 2. Command and Query Responsibility Segragation (CQRS)
+#### 2. Command and Query Responsibility Segregation (CQRS)
 
 This pattern was first described by [Greg Young](https://twitter.com/gregyoung). In a nutshell, we separate operations that read data from those that update data by using different interfaces. It is primarily used to increase scalability, maximize performance, improve security, and overall make systems more flexible.
 
@@ -165,4 +165,4 @@ You can read more about Event Sourcing at [microsoft.com](https://msdn.microsoft
 
 There is always something new to learn, and as a software professional you should never stop learning and evolving. I hope this post gave you a few ideas on what to study next, as well as a number of useful sources for further reading.
 
-Feel free to use the comment section below and tell me about the top technologies from your backlog, or suggest corrections to any inconsistencies you've come accross in the article. Most importantly, have fun learning!
+Feel free to use the comment section below and tell me about the top technologies from your backlog, or suggest corrections to any inconsistencies you've come across in the article. Most importantly, have fun learning!

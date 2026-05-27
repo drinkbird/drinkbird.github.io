@@ -63,7 +63,7 @@ Security on the Internet is a matter of great concern for everybody. It is true 
 
 The book concludes by examining the potential impacts of artificial intelligence on human. By achieving singularity – the human and computer intelligences merged and acting as one entity – humanity may vastly improve its physical limitations in terms of accessing, processing or storing information. At that point, we will be able “to interact directly with computers by merely thinking”. But the author is also deeply concerned that our behavior will be prone to direct influence, and like computers, humans will become programmable too. To stress out the potential danger even more, Carr wraps up by assuming that the “world-wide machine” will eventually learn enough from us and, while developing its own rules, will stop following our instructions.
 
-# <a name="_Toc406384895"></a>Evaluation
+# Evaluation
 
 Nicholas Carr is a gifted author and his reputation of being highly controversial in nature precedes him. He initially became popular by publishing an article called “IT doesn’t matter” (Carr, 2003), causing wide discussions and endless debates between IT professionals. After reading both the article and “The Big Switch” book, one can easily conclude that the latter serves as an extended defense of the former.
 

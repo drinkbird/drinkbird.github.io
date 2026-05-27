@@ -132,7 +132,7 @@ Posts feed the plugin; the plugin writes one Atom file; the autodiscovery `<link
 - Default to full-content feeds for an engineering blog; readers use RSS for offline and typography reasons.
 - Add `{% raw %}{% feed_meta %}{% endraw %}` to your `<head>` so autodiscovery works in RSS readers and browsers.
 - Per-collection feeds let readers subscribe to just one kind of content if your blog has more than one.
-- Don't change post URLs after publishing - every subscriber's reader will treat re-IDed entries as new.
+- Don't change post URLs after publishing - every subscriber's reader will treat re-assigned IDs as new entries.
 
 Next, **Privacy-friendly analytics (Plausible, Umami, or GoatCounter)** - measure what matters on a blog without inheriting cookie banners or surveillance.
 

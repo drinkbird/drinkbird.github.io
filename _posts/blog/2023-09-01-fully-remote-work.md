@@ -133,7 +133,7 @@ To maximize your efficiency, you’ll need a plan for each focus session. Utilis
 
 ### Setting boundaries: The importance of clocking out
 
-The fuzzy borders between work and personal time in a remote setting make it essential to designate a specific "end-of-day" for your professional responsibilities. Wondering what to do with the extra hours you've reclaimed from your commute? Think of it as a bonus level in your daily game of life. Use this newfound time to engage in activities that enhance your career or personal development - whether that's catching up on industry news, acquiring a new skill, or finally writing that blog post you've been putting off (hello!). And don't forget to disconnect at a reasonable time. Doing so not only helps you avoid burnout but also contributes to a happy and prolific team - something that heathy professional organizations consider a critical business goal.
+The fuzzy borders between work and personal time in a remote setting make it essential to designate a specific "end-of-day" for your professional responsibilities. Wondering what to do with the extra hours you've reclaimed from your commute? Think of it as a bonus level in your daily game of life. Use this newfound time to engage in activities that enhance your career or personal development - whether that's catching up on industry news, acquiring a new skill, or finally writing that blog post you've been putting off (hello!). And don't forget to disconnect at a reasonable time. Doing so not only helps you avoid burnout but also contributes to a happy and prolific team - something that healthy professional organizations consider a critical business goal.
 
 ### Aligning priorities: The last word on team communication 
 

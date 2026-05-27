@@ -87,7 +87,7 @@ Domain-Driven Design has been proven to be an effective approach for splitting a
 
 Although the book was published long before microservices were a thing, it turns out that the *DDD* methodology is a natural fit for designing microservices. Hence, this is an essential read for anyone who works with microservices or intends to do so.
 
-{% assign read_key = "dddericevans" %}
+{% assign read_key = "domaindrivendesign" %}
 {% assign book = site.reads[read_key] %}
 {% include book_inarticle.html %}
 
@@ -135,7 +135,7 @@ My gratitude goes to the authors, who have managed to distill their precious kno
 
 The books in this post can keep you happily busy for a really long time; depending on your reading pace, this could be more than a full year. A good goal would be roughly one book per month or two months. And if you're hungry for more, have a look at at my full hand-picked collection of [recommended books for software developers]({{ site.url }}/books/).
 
-I suggest that you carve out between 30 or 60 minutes of reading a day, perhaps while commuting or during lunch, and I promise that it won't be long before you start noticing the difference in your perfomance at work.
+I suggest that you carve out between 30 or 60 minutes of reading a day, perhaps while commuting or during lunch, and I promise that it won't be long before you start noticing the difference in your performance at work.
 
 Have you already read any of the books above? Is there any other good read about Microservices that is missing from the list? Let me know by dropping a comment below.
 

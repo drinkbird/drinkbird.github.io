@@ -269,7 +269,7 @@ We can now run the application. Here is the final result:
 
 As previously mentioned, building templates in a strongly-typed fashion can save us much time and frustration. The most common scenario is changing
 a C# model class property name, where the template will be automatically be updated thanks to dynamic tag generation through Razor helpers. Furthermore,
-we have full access to ASP.NET MVC's model metadata, giving us the opportunity to use verfy advanced features like
+we have full access to ASP.NET MVC's model metadata, giving us the opportunity to use verify advanced features like
 [reflection](https://msdn.microsoft.com/en-us/library/ms173183.aspx). Sky is the limit.
 
 ## Considerations
