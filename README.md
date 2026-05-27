@@ -41,25 +41,32 @@ Edit `assets/js/scripts.js`, then run any of:
 Posts and courses use ~1.97:1 JPGs as feature/cover images (the size `_includes/image-feature-list.html` and the course card both expect). To convert any source image (PNG / JPG / WebP / AVIF / GIF / TIFF) into that format:
 
 ```sh
-npm install                              # first time only — installs sharp
-npm run cover -- images/source.png       # → images/source-0.jpg, 1420×720, ~90 KB
+npm install                              # first time only - installs sharp
+npm run cover -- images/source.png       # → images/source-1x.jpg + source-2x.jpg
 ```
 
-Output goes next to the input with `-0.jpg` appended to the basename. If the source aspect ratio matches the target it's just resized; otherwise sharp crops to fill using its `attention` strategy (picks the most salient region so faces/focal points survive).
+The script writes a pair next to the input:
 
-The 1420×720 default is 2× the on-page canonical 710×360 size — same aspect ratio (so existing layouts are unaffected), comfortably above LinkedIn's 1200px-width threshold for full-banner link previews, and provides retina assets that browsers downscale on display. Older 710-wide images keep working alongside new ones.
+- `<basename>-1x.jpg` at 710×360 (standard-density displays)
+- `<basename>-2x.jpg` at 1420×720 (retina / hi-DPI)
+
+`_includes/image-feature-post.html` and `_includes/image-feature-list.html` detect the `-1x.` infix on the `feature:` filename and emit `<img srcset="...-1x.jpg 1x, ...-2x.jpg 2x">`. To opt a post in, set `feature: source-1x.jpg` in front matter. Bare filenames (no `-1x` suffix) keep rendering as a single `<img src>`, so existing posts are unchanged until you re-run the script and switch the front-matter reference.
+
+If the source aspect ratio matches the target it's just resized; otherwise sharp crops to fill using its `attention` strategy (picks the most salient region so faces/focal points survive).
 
 Flags:
 
-- `--quality 1-100` (default `88`) — drop to `82` to squeeze tighter for photos; raise to `92`+ for maximum fidelity.
-- `--position center|top|bottom|left|right|entropy|attention` — override the crop strategy when sharp's smart crop guesses wrong.
-- `--size WxH` — override the dimensions, e.g. `--size 1200x627` (LinkedIn's exact ratio) or `--size 710x360` (the old preset).
+- `--quality 1-100` (default `88`) - drop to `82` to squeeze tighter for photos; raise to `92`+ for maximum fidelity.
+- `--position center|top|bottom|left|right|entropy|attention` - override the crop strategy when sharp's smart crop guesses wrong.
+- `--size WxH` - override the **2x** dimensions, e.g. `--size 1200x627` (LinkedIn's exact ratio). The 1x is half each axis.
+- `--no-2x` - skip the retina file when the source is already small enough that upscaling would just bloat bytes without adding detail.
 
 For courses, set the resulting filename as the `image:` value in `_courses/<slug>/course.json` and re-run `ruby scripts/sync-courses-data.rb` so Liquid picks it up.
 
 ## Writing posts
 
 - Posts live in `_posts/blog/` and are named `YYYY-MM-DD-slug.md`.
+- Drafts live in `_drafts/` (no date prefix). Scaffold one with `npm run new-post -- "My Title"`; preview drafts locally with `npm run serve:drafts` (passes `--drafts --future` to Jekyll). When the draft is ready, move it into `_posts/blog/` and prefix the filename with the publish date.
 - Book metadata (title, URL, cover) is defined once in `_config.yml` under `reads:` and reused everywhere.
 
 ### Linking to a book in body copy
@@ -105,7 +112,7 @@ Pushes to `master` trigger `.github/workflows/jekyll.yml`, which:
 
 Production is served at <https://blog.drinkbird.com>. The whole pipeline takes ~1.5 minutes end to end.
 
-The `Gemfile` still pins to the `github-pages` gem so local Jekyll/Liquid versions match production. Moving to plain Jekyll 4.x is unlocked by Actions but hasn't been done yet — see [issue #34](https://github.com/drinkbird/drinkbird.github.io/issues/34).
+The `Gemfile` pins Jekyll 4 directly (no `github-pages` gem). Deployment goes through `actions/upload-pages-artifact` + `deploy-pages` so the github-pages safelist no longer applies and we can use any plugin we want. The pinned plugins are declared explicitly: `jekyll-sitemap`, `jekyll-redirect-from`, `jekyll-feed`. `jekyll-sass-converter` is pinned to `~> 2.2` (libsass / sassc) because the bundled Bootstrap 3 Sass uses legacy syntax that dart-sass 3.x rejects.
 
 ### Force-running a deploy
 
