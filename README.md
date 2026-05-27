@@ -1,6 +1,6 @@
 # DrinkBird Blog
 
-Source for [blog.drinkbird.com](https://blog.drinkbird.com), a Jekyll site published via GitHub Pages.
+Source for [blog.drinkbird.com](https://blog.drinkbird.com), a Jekyll site deployed to GitHub Pages via GitHub Actions.
 
 ## Local development
 
@@ -11,26 +11,28 @@ brew bundle                 # installs ruby@3.3 + node
 echo 'export PATH="/opt/homebrew/opt/ruby@3.3/bin:$PATH"' >> ~/.zshrc
 exec zsh
 bundle install
+npm install                 # also runs `npm run uglify` via postinstall
 ```
 
 Run the site locally:
 
 ```sh
-bundle exec jekyll serve --livereload
+npm run serve               # uglifies, then runs `bundle exec jekyll serve`
 ```
 
 Then open <http://localhost:4000>.
 
+`npm run serve` is preferred over `bundle exec jekyll serve` directly because it regenerates `assets/js/scripts.min.js` from the source first. If `scripts.min.js` is already fresh and you want `--livereload`, plain `bundle exec jekyll serve --livereload` still works.
+
 ## Editing site JavaScript
 
-The site loads `assets/js/scripts.min.js` (not the unminified source). After editing `assets/js/scripts.js`, regenerate the minified file:
+Edit `assets/js/scripts.js`, then run any of:
 
-```sh
-npm install                 # first time only
-npm run uglify
-```
+- `npm run serve` — uglifies and starts the local server
+- `npm run uglify` — regenerates `scripts.min.js` only
+- `npm install` — also runs uglify (via `postinstall`)
 
-Commit both `scripts.js` and `scripts.min.js` together so they don't drift.
+`assets/js/scripts.min.js` is gitignored and not committed. CI regenerates it from source on every deploy, so the only file in the repo is `scripts.js`.
 
 ## Generating cover images
 
@@ -91,4 +93,18 @@ The course landing page lives at `_courses/<course-slug>/index.md` (overrides th
 
 ## Deployment
 
-Pushes to `master` are built and deployed automatically by GitHub Pages. The `Gemfile` pins to the `github-pages` gem so local builds match production.
+Pushes to `master` trigger `.github/workflows/jekyll.yml`, which:
+
+1. Checks out the repo
+2. Sets up Ruby (3.3) + Node (24) with Bundler and npm caches
+3. `npm ci` (which also re-runs `npm run uglify` via the `postinstall` hook)
+4. `bundle exec jekyll build` with `JEKYLL_ENV=production`
+5. Uploads `_site/` as a Pages artifact and deploys via `actions/deploy-pages`
+
+Production is served at <https://blog.drinkbird.com>. The whole pipeline takes ~1.5 minutes end to end.
+
+The `Gemfile` still pins to the `github-pages` gem so local Jekyll/Liquid versions match production. Moving to plain Jekyll 4.x is unlocked by Actions but hasn't been done yet — see [issue #34](https://github.com/drinkbird/drinkbird.github.io/issues/34).
+
+### Force-running a deploy
+
+From the [Actions tab](https://github.com/drinkbird/drinkbird.github.io/actions/workflows/jekyll.yml), use **Run workflow** (the `workflow_dispatch` trigger). Useful for redeploying after fixing something external, e.g. flipping a feature flag in `_config.yml`.
