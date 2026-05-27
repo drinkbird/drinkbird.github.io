@@ -166,6 +166,36 @@ button, input[type=submit], .btn {
 }
 
 
+/* Skip link */
+.skip-link {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 10000;
+	padding: 10px 16px;
+	background: $brand-secondary-dark;
+	color: $white;
+	font-family: $font-family-primary;
+	font-size: 14px;
+	font-weight: 700;
+	text-decoration: none;
+	letter-spacing: 0.4px;
+	transform: translateY(-110%);
+	transition: transform 0.15s ease;
+
+	&:focus,
+	&:focus-visible {
+		transform: translateY(0);
+		outline: 3px solid $brand-primary;
+		outline-offset: 2px;
+		color: $white;
+	}
+}
+
+main:focus {
+	outline: none;
+}
+
 /* Header */
 #nav-wrapper {
 	z-index: 999;

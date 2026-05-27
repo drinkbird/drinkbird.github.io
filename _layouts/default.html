@@ -5,8 +5,11 @@
   {% include open-graph.html %}
   </head>
   <body{% if page.page-key == 'courses' %} class="course-page"{% endif %}{% if page.pagefind_ignore or page.archived %} data-pagefind-ignore{% endif %}>
+  <a class="skip-link" href="#main">Skip to content</a>
   {% include header.html %}
+  <main id="main" tabindex="-1">
   {{ content }}
+  </main>
   {% include footer.html %}
 
   <pagefind-modal></pagefind-modal>
