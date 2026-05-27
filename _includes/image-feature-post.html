@@ -3,9 +3,14 @@
       {% assign imageSource = page.image.feature %}
   {% else %}
       {% capture imageSource %}{{ site.baseurl }}/images/{{ page.image.feature }}{% endcapture %}
-  {% endif %}  
+  {% endif %}
+  {% assign imageSource2x = imageSource | replace: '-1x.', '-2x.' %}
   <figure>
+  {% if imageSource2x != imageSource %}
+    <img src="{{ imageSource }}" srcset="{{ imageSource }} 1x, {{ imageSource2x }} 2x" alt="{{ page.title }} feature image" class="img-responsive">
+  {% else %}
     <img src="{{ imageSource }}" alt="{{ page.title }} feature image" class="img-responsive">
+  {% endif %}
   {% if page.image.credit %}
     <figcaption>Image by <a href="{{ page.image.creditlink }}" target="_blank">{{ page.image.credit }}</a></figcaption>
   {% endif %}

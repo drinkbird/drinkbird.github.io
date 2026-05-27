@@ -3,8 +3,13 @@
       {% assign imageSource = post.image.feature %}
   {% else %}
       {% capture imageSource %}{{ site.baseurl }}/images/{{ post.image.feature }}{% endcapture %}
-  {% endif %}  
+  {% endif %}
+  {% assign imageSource2x = imageSource | replace: '-1x.', '-2x.' %}
   <figure>
+  {% if imageSource2x != imageSource %}
+    <img src="{{ imageSource }}" srcset="{{ imageSource }} 1x, {{ imageSource2x }} 2x" alt="{{ post.title }} feature image" class="img-responsive" width="710" height="360" loading="{{ include.loading | default: 'lazy' }}" decoding="async">
+  {% else %}
     <img src="{{ imageSource }}" alt="{{ post.title }} feature image" class="img-responsive" width="710" height="360" loading="{{ include.loading | default: 'lazy' }}" decoding="async">
+  {% endif %}
   </figure>
 {% endif %}
