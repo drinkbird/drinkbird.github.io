@@ -59,6 +59,7 @@ cp "$(bundle info --path minima)/_includes/head.html" _includes/head.html
 
 Then edit the copy:
 
+{% raw %}
 ```html
 <head>
   <meta charset="utf-8">
@@ -73,6 +74,7 @@ Then edit the copy:
   {%- feed_meta -%}
 </head>
 ```
+{% endraw %}
 
 Note `/assets/css/main.css` - Jekyll compiles `main.scss` to `main.css`, and the URL drops the leading underscore conventions. The Liquid tags `{% raw %}{%- seo -%}{% endraw %}` and `{% raw %}{%- feed_meta -%}{% endraw %}` come from gems we'll add in Module 4; leave them in even if you haven't installed those plugins yet - they'll no-op silently until you do.
 
