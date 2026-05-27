@@ -14,6 +14,13 @@ permissions:
   pages: write
   id-token: write
 
+# Force JS-based actions onto Node 24 ahead of the June 2026 default switch.
+# The actions we use (checkout, setup-node, configure-pages, upload-pages-artifact,
+# deploy-pages) still declare Node 20 in their action.yml; this overrides that
+# per the deprecation notice on the runner.
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: 'true'
+
 # Allow one concurrent deploy. Don't cancel an in-flight production deploy if
 # another push lands; queue the new one behind it.
 concurrency:
@@ -36,7 +43,7 @@ jobs:
       - name: Set up Node
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '24'
           cache: npm
 
       - name: Install npm dependencies
