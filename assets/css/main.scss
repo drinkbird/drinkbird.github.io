@@ -123,11 +123,66 @@ a:active, a:hover {
 
 pre {
 	font-size: 14px;
-	
+
 	code {
 		overflow-x: scroll;
 		white-space: pre;
 	}
+}
+
+.post-body pre.has-copy-btn {
+	position: relative;
+}
+
+.code-copy-btn {
+	position: absolute;
+	top: 6px;
+	right: 6px;
+	padding: 4px 10px;
+	font-family: $font-family-primary;
+	font-size: 11px;
+	font-weight: 700;
+	letter-spacing: 0.6px;
+	text-transform: uppercase;
+	color: $brand-secondary;
+	background: $white;
+	border: 1px solid $brand-gray-darker;
+	border-radius: 3px;
+	cursor: pointer;
+	opacity: 0;
+	transition: opacity 0.15s ease, color 0.15s ease, border-color 0.15s ease, background 0.15s ease;
+
+	&:hover,
+	&:focus,
+	&:focus-visible {
+		color: $white;
+		background: $brand-secondary;
+		border-color: $brand-secondary;
+		opacity: 1;
+	}
+
+	&.is-copied {
+		color: $white;
+		background: $brand-success;
+		border-color: $brand-success;
+		opacity: 1;
+	}
+
+	&.is-error {
+		color: $white;
+		background: $brand-danger;
+		border-color: $brand-danger;
+		opacity: 1;
+	}
+}
+
+.post-body pre.has-copy-btn:hover .code-copy-btn,
+.post-body pre.has-copy-btn:focus-within .code-copy-btn {
+	opacity: 1;
+}
+
+@media (pointer: coarse) {
+	.code-copy-btn { opacity: 1; }
 }
 
 textarea, textarea.form-control, input.form-control, input[type=text], input[type=password], input[type=email], input[type=number], [type=text].form-control, [type=password].form-control, [type=email].form-control, [type=tel].form-control, [contenteditable].form-control {

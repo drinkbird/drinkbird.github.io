@@ -69,6 +69,50 @@ $(function() {
         window.addEventListener('load', trimAside);
     }
 
+    // Copy-to-clipboard buttons on code blocks inside post / chapter bodies.
+    // Skip mermaid fences (those get replaced by a diagram by scripts.html).
+    var codeBlocks = document.querySelectorAll('.post-body pre');
+    Array.prototype.forEach.call(codeBlocks, function (pre) {
+        if (pre.querySelector('code.language-mermaid')) { return; }
+        if (pre.querySelector('.code-copy-btn')) { return; }
+
+        var btn = document.createElement('button');
+        btn.type = 'button';
+        btn.className = 'code-copy-btn';
+        btn.setAttribute('aria-label', 'Copy code to clipboard');
+        btn.textContent = 'Copy';
+
+        pre.classList.add('has-copy-btn');
+        pre.appendChild(btn);
+
+        var resetTimer;
+        btn.addEventListener('click', function () {
+            var codeEl = pre.querySelector('code') || pre;
+            var text = codeEl.innerText.replace(/\n$/, '');
+
+            var done = function (ok) {
+                btn.textContent = ok ? 'Copied' : 'Press ⌘C';
+                btn.classList.toggle('is-copied', ok);
+                btn.classList.toggle('is-error', !ok);
+                window.clearTimeout(resetTimer);
+                resetTimer = window.setTimeout(function () {
+                    btn.textContent = 'Copy';
+                    btn.classList.remove('is-copied');
+                    btn.classList.remove('is-error');
+                }, 1600);
+            };
+
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+                navigator.clipboard.writeText(text).then(
+                    function () { done(true); },
+                    function () { done(false); }
+                );
+            } else {
+                done(false);
+            }
+        });
+    });
+
     // Hero destination-word rotator — strobes and freezes on "leaders".
     var heroRotator = document.querySelector('.c-rotator');
     if (heroRotator) {
