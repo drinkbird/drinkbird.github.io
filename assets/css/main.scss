@@ -1385,14 +1385,10 @@ time.post-updated {
 	}
 }
 
-.nav-search {
-	display: flex;
-	align-items: center;
-}
-
 .nav-search pagefind-modal-trigger {
 	display: inline-flex;
 	align-items: center;
+	vertical-align: middle;
 }
 
 .post-nav {
@@ -1734,7 +1730,7 @@ time.post-updated {
 		padding-top: 39px;
 
 		&:hover {
-			border-top: 5px solid $brand-primary;		
+			border-top: 5px solid $brand-primary;
 		}
 	}
 
@@ -1742,8 +1738,22 @@ time.post-updated {
 		border-top: 5px solid $brand-primary;
 	}
 
+	// Match the trigger to the same vertical rhythm as `<li > a>` so the
+	// magnifying-glass icon and `mod+k` hint sit on the same baseline as
+	// the Stories / Courses / Books / Projects / About links.
+	.navbar-nav > .nav-search > pagefind-modal-trigger {
+		border-top: 5px solid transparent;
+		padding: 39px 15px 15px;
+		box-sizing: border-box;
+	}
+
 	.is-sticky {
 		.navbar-nav > li > a {
+			padding-top: 15px;
+			padding-bottom: 15px;
+		}
+
+		.navbar-nav > .nav-search > pagefind-modal-trigger {
 			padding-top: 15px;
 			padding-bottom: 15px;
 		}
