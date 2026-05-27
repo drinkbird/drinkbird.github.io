@@ -1,0 +1,44 @@
+# typos config: https://github.com/crate-ci/typos
+#
+# Scope is limited to authored content + templates. Third-party Sass
+# (Bootstrap 3), minified JS bundles, generated mermaid/glightbox
+# libraries, and built artifacts are excluded so we don't fight false
+# positives in code we don't maintain.
+
+[files]
+extend-exclude = [
+  "_sass/bootstrap/",
+  "assets/js/*.min.js",
+  "assets/js/mermaid.min.js",
+  "assets/js/glightbox.min.js",
+  "assets/js/jquery*.js",
+  "assets/js/bootstrap.js",
+  "assets/css/glightbox.min.css",
+  "_site/",
+  "_data/courses/",
+  "node_modules/",
+  "vendor/",
+  "package-lock.json",
+  "Gemfile.lock",
+]
+
+[default.extend-words]
+# "Packt" is the publisher's name (Packt Publishing), not a typo for "Packet".
+Packt = "Packt"
+# Skelton is Matthew Skelton, co-author of Team Topologies.
+Skelton = "Skelton"
+# Ceaser is the deliberate name of a CSS easing tool by Matthew Lein
+# (matthewlein.com/ceaser/), not a misspelling of Caesar.
+Ceaser = "Ceaser"
+# "teh" appears in instructional course content as a literal example of
+# a common typo. The surrounding double quotes make typos's regex skip
+# fail because the example is unquoted code.
+teh = "teh"
+
+[default]
+# Skip lines flagged inside fenced code blocks within markdown - course
+# chapters frequently quote code that contains intentional typos as
+# teaching examples (`teh`, `titel`).
+extend-ignore-re = [
+  "`[^`]*`",
+]

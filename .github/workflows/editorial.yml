@@ -1,0 +1,82 @@
+name: Editorial CI
+
+# Runs three editorial checks in parallel with the deploy:
+#   1. htmlproofer    - internal links + image/script refs (hard fail)
+#   2. lychee         - external URLs (soft fail; the world breaks links)
+#   3. typos          - prose typos (hard fail)
+#
+# Triggered on PRs, master pushes, and manual dispatch. None of these
+# gate the deploy workflow; they run side by side and surface findings
+# on the commit / PR.
+
+on:
+  pull_request:
+  push:
+    branches: [master]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: 'true'
+
+jobs:
+  links:
+    name: Link check
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.3'
+          bundler-cache: true
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+
+      - name: Install npm dependencies
+        run: npm ci
+
+      - name: Build site
+        env:
+          JEKYLL_ENV: production
+        run: bundle exec jekyll build
+
+      - name: Install html-proofer
+        run: gem install html-proofer
+
+      - name: htmlproofer (internal links + images)
+        # mailto:?subject=... share links are valid but htmlproofer's
+        # mailto validator wants a recipient. External URLs are lychee's
+        # job, not htmlproofer's.
+        run: |
+          htmlproofer ./_site \
+            --disable-external \
+            --allow-hash-href \
+            --ignore-empty-alt \
+            --no-enforce-https \
+            --ignore-urls '/^mailto:\?/'
+
+      - name: lychee (external links, soft fail)
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: --no-progress --max-concurrency 8 --accept 200,206,429 './_site/**/*.html'
+          fail: false
+        continue-on-error: true
+
+  typos:
+    name: Typos
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Check for typos
+        uses: crate-ci/typos@master
