@@ -9,80 +9,20 @@
   {{ content }}
   {% include footer.html %}
 
-  <div id="search-overlay" class="search-overlay" hidden aria-hidden="true">
-    <div class="search-overlay-backdrop" data-search-close></div>
-    <div class="search-overlay-panel" role="dialog" aria-modal="true" aria-label="Search">
-      <button type="button" class="search-overlay-close" data-search-close aria-label="Close search">&times;</button>
-      <div id="search-overlay-mount" class="post-search"></div>
-      <p class="search-overlay-fallback">
-        Prefer a full-page experience? <a href="{{ site.baseurl }}/search/">Open the search page &rarr;</a>
-      </p>
-    </div>
-  </div>
+  <pagefind-modal></pagefind-modal>
   <script>
   (function () {
-    var overlay = document.getElementById('search-overlay');
-    var mount = document.getElementById('search-overlay-mount');
     var trigger = document.querySelector('.nav-search a');
-    if (!overlay || !mount || !trigger) return;
-
-    var pagefindReady = null;
-
-    function loadAsset(tag, attrs) {
-      return new Promise(function (resolve, reject) {
-        var el = document.createElement(tag);
-        Object.keys(attrs).forEach(function (k) { el[k] = attrs[k]; });
-        el.onload = resolve;
-        el.onerror = function () { reject(new Error('failed: ' + (attrs.src || attrs.href))); };
-        document.head.appendChild(el);
+    var modal = document.querySelector('pagefind-modal');
+    if (!trigger || !modal) return;
+    trigger.addEventListener('click', function (e) {
+      // Modifier / middle click still navigates to /search/ in a new tab.
+      if (e.metaKey || e.ctrlKey || e.shiftKey || e.button === 1) return;
+      e.preventDefault();
+      // Wait for the custom element to be upgraded before calling open().
+      customElements.whenDefined('pagefind-modal').then(function () {
+        modal.open();
       });
-    }
-
-    function ensurePagefind() {
-      if (pagefindReady) return pagefindReady;
-      pagefindReady = Promise.all([
-        loadAsset('link', { rel: 'stylesheet', href: '{{ site.baseurl }}/pagefind/pagefind-ui.css' }),
-        loadAsset('script', { src: '{{ site.baseurl }}/pagefind/pagefind-ui.js' })
-      ]).then(function () {
-        new PagefindUI({
-          element: '#search-overlay-mount',
-          showSubResults: true,
-          showImages: false,
-          resetStyles: false,
-          placeholder: 'Search essays, courses, projects, books…'
-        });
-      });
-      return pagefindReady;
-    }
-
-    function open(e) {
-      // Let users still open /search/ in a new tab via modifier or middle click.
-      if (e && (e.metaKey || e.ctrlKey || e.shiftKey || e.button === 1)) return;
-      if (e) e.preventDefault();
-      overlay.hidden = false;
-      overlay.setAttribute('aria-hidden', 'false');
-      document.body.classList.add('search-overlay-open');
-      ensurePagefind().then(function () {
-        var input = overlay.querySelector('input');
-        if (input) input.focus();
-      }).catch(function () {
-        mount.innerHTML = '<p class="search-overlay-error">Search index unavailable here. ' +
-          'Local previews need <code>npx pagefind --site _site</code> after <code>jekyll build</code>.</p>';
-      });
-    }
-
-    function close() {
-      overlay.hidden = true;
-      overlay.setAttribute('aria-hidden', 'true');
-      document.body.classList.remove('search-overlay-open');
-    }
-
-    trigger.addEventListener('click', open);
-    overlay.addEventListener('click', function (e) {
-      if (e.target.closest('[data-search-close]')) close();
-    });
-    document.addEventListener('keydown', function (e) {
-      if (e.key === 'Escape' && !overlay.hidden) close();
     });
   })();
   </script>

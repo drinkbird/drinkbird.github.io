@@ -1356,26 +1356,21 @@ time.post-updated {
 	}
 }
 
+// Pagefind Component UI brand overrides.
+// Defaults are sensible; we only touch the few tokens that should match the
+// site's typography and accent palette. See `--pf-*` in the Component UI docs.
+:root {
+	--pf-font: #{$font-family-primary};
+	--pf-text: #{$gray-darker};
+	--pf-text-secondary: #{$gray};
+	--pf-border: #{$brand-gray-darker};
+	--pf-outline-focus: #{$brand-secondary};
+	--pf-border-radius: 4px;
+	--pf-modal-max-width: 720px;
+}
+
 .post-search {
 	margin: 16px 0 28px;
-
-	// Override Pagefind UI tokens to match the brand palette.
-	// See https://pagefind.app/docs/ui/#customising-the-styles
-	--pagefind-ui-primary: #{$brand-secondary};
-	--pagefind-ui-text: #{$gray-darker};
-	--pagefind-ui-background: #{$white};
-	--pagefind-ui-border: #{$brand-gray-darker};
-	--pagefind-ui-tag: #{$brand-primary-dark-lighter};
-	--pagefind-ui-border-width: 1px;
-	--pagefind-ui-border-radius: 4px;
-	--pagefind-ui-font: #{$font-family-primary};
-	--pagefind-ui-image-border-radius: 0;
-	--pagefind-ui-image-box-ratio: 1.97 / 1;
-	--pagefind-ui-scale: 0.9;
-
-	.pagefind-ui__search-input {
-		font-size: 18px;
-	}
 }
 
 .post-search-fineprint {
@@ -1392,88 +1387,6 @@ time.post-updated {
 
 .nav-search a {
 	font-size: 16px;
-}
-
-.search-overlay[hidden] {
-	display: none;
-}
-
-.search-overlay {
-	position: fixed;
-	inset: 0;
-	z-index: 1050;
-	display: flex;
-	align-items: flex-start;
-	justify-content: center;
-	padding: 80px 16px 24px;
-}
-
-.search-overlay-backdrop {
-	position: absolute;
-	inset: 0;
-	background: rgba(0, 0, 0, 0.55);
-	cursor: pointer;
-}
-
-.search-overlay-panel {
-	position: relative;
-	width: 100%;
-	max-width: 720px;
-	background: $white;
-	border-radius: 6px;
-	padding: 28px 28px 22px;
-	box-shadow: 0 24px 60px rgba(0, 0, 0, 0.35);
-	max-height: calc(100vh - 104px);
-	overflow-y: auto;
-}
-
-.search-overlay-close {
-	position: absolute;
-	top: 6px;
-	right: 12px;
-	background: transparent;
-	border: 0;
-	font-size: 28px;
-	line-height: 1;
-	color: $gray;
-	cursor: pointer;
-	padding: 4px 10px;
-
-	&:hover,
-	&:focus {
-		color: $brand-secondary;
-		outline: none;
-	}
-}
-
-.search-overlay-fallback {
-	margin: 18px 0 0;
-	font-size: 13px;
-	color: $gray;
-	text-align: right;
-
-	a {
-		color: $brand-secondary;
-		text-decoration: none;
-
-		&:hover {
-			text-decoration: underline;
-		}
-	}
-}
-
-.search-overlay-error {
-	margin: 8px 0 0;
-	font-size: 14px;
-	color: $gray;
-
-	code {
-		font-size: 12px;
-	}
-}
-
-body.search-overlay-open {
-	overflow: hidden;
 }
 
 .post-nav {

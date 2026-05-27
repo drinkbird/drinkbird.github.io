@@ -20,20 +20,11 @@ sitemap: true
     </div>
     <div class="row">
       <div class="col-md-12">
-        <link href="{{ site.baseurl }}/pagefind/pagefind-ui.css" rel="stylesheet">
-        <div id="search" class="post-search"></div>
-        <script src="{{ site.baseurl }}/pagefind/pagefind-ui.js"></script>
-        <script>
-          window.addEventListener('DOMContentLoaded', function () {
-            new PagefindUI({
-              element: '#search',
-              showSubResults: true,
-              showImages: false,
-              resetStyles: false,
-              placeholder: 'Search essays, courses, projects, books…'
-            });
-          });
-        </script>
+        <div class="post-search">
+          <pagefind-input placeholder="Search essays, courses, projects, books…" autofocus></pagefind-input>
+          <pagefind-summary></pagefind-summary>
+          <pagefind-results></pagefind-results>
+        </div>
         {% if jekyll.environment != "production" %}
         <p class="post-search-fineprint">
           The search index is built at deploy time. Local previews won't return results until
