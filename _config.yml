@@ -48,7 +48,7 @@ plugins:
   - jekyll-redirect-from
   - jekyll-feed
 
-exclude: [node_modules]
+exclude: [node_modules, vendor, .bundle, Gemfile, Gemfile.lock]
 include: [.well-known]
 
 links:
