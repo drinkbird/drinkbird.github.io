@@ -15,7 +15,7 @@
         {% for link in site.links %}
           <li{% if link.page-key == page.page-key %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ link.url }}">{{ link.title }}</a></li>
         {% endfor %}
-          <li class="nav-search{% if page.page-key == 'search' %} active{% endif %}"><a href="{{ site.baseurl }}/search/" title="Search" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i><span class="sr-only">Search</span></a></li>
+          <li class="nav-search{% if page.page-key == 'search' %} active{% endif %}"><pagefind-modal-trigger compact></pagefind-modal-trigger></li>
         </ul>
       </div>
     </div>

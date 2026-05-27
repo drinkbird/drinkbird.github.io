@@ -5,6 +5,7 @@ permalink: /start-here/
 excerpt: "If you're new to DrinkBird, these essays are a good place to land."
 page-key: posts
 sitemap: true
+pagefind_ignore: true
 ---
 
 DrinkBird is a blog about engineering leadership: the craft of building software and the craft of leading the people who build it. The essays below are a good place to start.
