@@ -5,6 +5,8 @@ excerpt: "Why are we so confused about this?"
 permalink: /people-vs-ideas
 comments: true
 categories: blog
+tags:
+  - leadership
 featured: true
 image:
   feature: people-vs-ideas.jpg
@@ -13,6 +15,10 @@ reads:
   - creativityincbook
   - leanstartup
   - softskills
+  - peopleware
+  - daretolead
+  - multipliers
+  - drive
   - theaccidentalcreative
 ---
 

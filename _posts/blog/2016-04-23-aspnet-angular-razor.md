@@ -5,6 +5,8 @@ excerpt: "'Blending ASP.NET MVC with Angular' post series"
 permalink: /aspnet-mvc-angular-razor-templates/
 comments: true
 categories: blog
+tags:
+  - architecture
 featured: true
 image:
   feature: aspnet-angular.png
@@ -21,6 +23,10 @@ reads:
   - hfdesignpatterns
   - thecleancoder
   - softskills
+  - dpruby
+  - 97things
+  - legacycode
+  - cleanarchitecture
 
 ---
 

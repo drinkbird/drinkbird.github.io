@@ -1,0 +1,60 @@
+---
+layout: default
+---
+<section class="posts">
+  <div class="container">
+    <div class="skew-between">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="content-headline">
+            <p class="kicker">Topic</p>
+            <h1 class="posts-header">{{ page.title }}</h1>
+            <p>{{ page.excerpt }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% assign tag_posts = site.categories['blog'] | where_exp: "post", "post.archived != true" | where_exp: "post", "post.tags contains page.tag" %}
+    {% if tag_posts.size == 0 %}
+    <div class="row">
+      <div class="col-md-12">
+        <p><em>No posts under this topic yet.</em></p>
+      </div>
+    </div>
+    {% else %}
+    {% assign count = 0 %}
+    {% for post in tag_posts %}
+    {% assign count = count | plus: 1 %}
+    {% assign result = count | modulo: 2 %}
+    {% if result == 1 %}
+    <div class="row">
+    {% endif %}
+      <div class="col-md-6">
+        <article class="article-list">
+          <a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}">
+            {% if count <= 2 %}{% assign loadingMode = 'eager' %}{% else %}{% assign loadingMode = 'lazy' %}{% endif %}
+            {% include image-feature-list.html loading=loadingMode %}
+            <h1>{{ post.title }}</h1>
+          </a>
+          <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time>
+          {% if post.updated %}<time class="post-updated" datetime="{{ post.updated | date_to_xmlschema }}">Last updated {{ post.updated | date: "%B %d, %Y" }}</time>{% endif %}
+          <p>{{ post.excerpt | strip_html | truncate: 160 }}</p>
+        </article>
+      </div>
+    {% if result == 0 %}
+    </div>
+    {% endif %}
+    {% endfor %}
+    {% if result == 1 %}
+    </div>
+    {% endif %}
+    {% endif %}
+    <div class="row">
+      <div class="col-md-12">
+        <p class="archive-link">
+          <a href="{{ site.baseurl }}/posts/">&larr; All stories</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>

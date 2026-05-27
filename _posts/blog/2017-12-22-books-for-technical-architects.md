@@ -5,6 +5,9 @@ excerpt: "The patterns and trade-offs in these books outlast every framework cyc
 permalink: /best-books-on-software-architecture/
 comments: true
 categories: blog
+tags:
+  - books
+  - architecture
 featured: true
 updated: 2026-05-26
 image:
@@ -14,6 +17,10 @@ subscribe_source: arch-books
 reads:
   - cleanarchitecture
   - buildingmicroservices
+  - domaindrivendesign
+  - releaseit
+  - building-evolutionary-architectures
+  - microservicespatterns
   - dataintensive
 ---
 

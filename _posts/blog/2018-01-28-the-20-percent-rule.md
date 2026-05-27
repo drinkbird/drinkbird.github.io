@@ -5,6 +5,8 @@ excerpt: "Slack time is vital to growth"
 permalink: /twenty-percent-rule/
 comments: true
 categories: blog
+tags:
+  - career
 featured: true
 image:
   feature: collaboration.jpg
@@ -19,6 +21,10 @@ reads:
   - softskills
   - thecleancoder
   - themythicalmanmonth
+  - pragmaticprogrammer
+  - effectiveengineer
+  - habit
+  - showyourwork
 # https://about.gitlab.com/handbook/values/
 ---
 

@@ -5,6 +5,8 @@ excerpt: "'I would do it but I'm not feeling motivated right now'. How often do 
 permalink: /motivation/
 comments: true
 categories: blog
+tags:
+  - career
 featured: true
 image:
   feature: sustainable-motivation.jpeg
@@ -16,6 +18,10 @@ reads:
   - pragmaticprogrammer
   - thecleancoder
   - softskills
+  - drive
+  - habit
+  - careerguide
+  - daretolead
   - 97things
 ---
 

@@ -5,6 +5,9 @@ excerpt: "Generative AI makes writing code faster. That speeds up a step that wa
 permalink: /ai-bottleneck/
 comments: true
 categories: blog
+tags:
+  - ai
+  - leadership
 featured: true
 mermaid: true
 image:
@@ -36,6 +39,10 @@ reads:
   - dataintensive
   - building-evolutionary-architectures
   - microservices
+  - thefearlessorg
+  - communicationforengineers
+  - agiledev
+  - multipliers
   - releaseit
 ---
 

@@ -5,6 +5,8 @@ excerpt: "Some ideas for your first steps"
 permalink: /start-a-blog/
 comments: true
 categories: blog
+tags:
+  - career
 featured: false
 image:
   feature: start-a-blog.png
@@ -15,6 +17,10 @@ reads:
   - cleanagile
   - pragmaticprogrammer
   - careerguide
+  - showyourwork
+  - onwritingwell-amazon
+  - steallikeanartist
+  - keepgoing
   - thecleancoder
 ---
 

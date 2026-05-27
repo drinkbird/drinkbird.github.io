@@ -5,6 +5,8 @@ excerpt: "Get started with building and deploying containerized Java microservic
 permalink: /azure-java-microservices-video-course-packt/
 comments: true
 categories: blog
+tags:
+  - architecture
 featured: true
 image:
   feature: video-course-packt.jpg
@@ -12,6 +14,10 @@ reads:
   - microservicespatterns
   - buildingmicroservices
   - microservices
+  - cleanarchitecture
+  - releaseit
+  - dataintensive
+  - domaindrivendesign
   - microservicearch
 ---
 

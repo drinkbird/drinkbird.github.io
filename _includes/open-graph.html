@@ -433,6 +433,25 @@
   ]
 }
 </script>
+{% elsif page.tag %}
+{% assign idx_tag_posts = site.categories.blog | where_exp: "p", "p.archived != true" | where_exp: "p", "p.tags contains page.tag" %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": {{ page.title | jsonify }},
+  "url": {{ og_canonical_url | jsonify }},
+  "numberOfItems": {{ idx_tag_posts | size }},
+  "itemListOrder": "https://schema.org/ItemListOrderDescending",
+  "itemListElement": [{% for post in idx_tag_posts %}{% unless forloop.first %},{% endunless %}
+    {
+      "@type": "ListItem",
+      "position": {{ forloop.index }},
+      "url": "{{ site.url }}{{ post.url }}"
+    }{% endfor %}
+  ]
+}
+</script>
 {% endif %}
 
 {% comment %} BreadcrumbList for course pages. Helps Google render the

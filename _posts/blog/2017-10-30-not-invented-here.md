@@ -5,6 +5,9 @@ excerpt: "The Not Invented Here syndrome is a disease for the software industry.
 permalink: /not-invented-here
 comments: true
 categories: blog
+tags:
+  - architecture
+  - leadership
 featured: true
 image:
   feature: NIH.png
@@ -26,6 +29,10 @@ reads:
   - themythicalmanmonth
   - effectiveusecases
   - userstoriesapplied
+  - pragmaticprogrammer
+  - 97things
+  - codecomplete
+  - building-evolutionary-architectures
 
 ---
 

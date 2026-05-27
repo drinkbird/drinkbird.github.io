@@ -6,10 +6,17 @@ date: 2015-02-04 00:00:00
 permalink: /learning-microsoft-azure-review/
 comments: true
 categories: blog
+tags:
+  - books
+  - architecture
 image:
   feature: learning-azure.png
 reads:
   - learnazure
+  - releaseit
+  - dataintensive
+  - building-evolutionary-architectures
+  - devops
 ---
 
 Cloud computing has already consolidated its presence in the tech industry, and it is quickly becoming a standard choice for hosting enterprise applications. The greatest advantage of the cloud is that resources are provisioned rapidly and on demand, without human intervention on the provider's part. Moreover, every provider offers a wide range of services that can significantly extend the capabilities of hosted applications.

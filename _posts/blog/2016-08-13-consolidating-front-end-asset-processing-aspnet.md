@@ -5,6 +5,8 @@ excerpt: "Apply modern Building techniques to any version of ASP.NET"
 permalink: /consolidating-front-end-asset-processing-aspnet/
 comments: true
 categories: blog
+tags:
+  - architecture
 featured: true
 mermaid: true
 image:
@@ -25,6 +27,10 @@ reads:
   - legacycode
   - effectiveusecases
   - userstoriesapplied
+  - 97things
+  - dpruby
+  - cleanarchitecture
+  - themythicalmanmonth
 
 ---
 

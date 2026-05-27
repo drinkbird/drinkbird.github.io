@@ -5,6 +5,8 @@ excerpt: "Scaling the Heights of Impact: A guide for software engineers and the 
 permalink: /the-inverted-pyramid-of-problem-solving/
 comments: true
 categories: blog
+tags:
+  - leadership
 featured: true
 image:
   feature: invpyr-cover.png
@@ -17,6 +19,10 @@ reads:
   - softskills
   - careerguide
   - cleanarchitecture
+  - onwritingwell-amazon
+  - madetostick-amazon
+  - thinkingfastandslow
+  - communicationforengineers
   - thecleancoder
 ---
 

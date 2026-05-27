@@ -5,6 +5,8 @@ excerpt: "Recommended reading on engineering leadership, software architecture, 
 permalink: /books/
 comments: true
 categories: blog
+tags:
+  - books
 featured: true
 date: 2015-08-07
 updated: 2026-05-26

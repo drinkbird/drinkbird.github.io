@@ -5,6 +5,9 @@ excerpt: "How structure, incentives and collaboration shape the systems we build
 permalink: /conways-law/
 comments: true
 categories: blog
+tags:
+  - leadership
+  - architecture
 featured: true
 mermaid: true
 image:
@@ -37,6 +40,10 @@ reads:
   - thegoal
   - managerspath
   - elegantpuzzle
+  - radicalcandor
+  - thefearlessorg
+  - multipliers
+  - thinkinginsystems
   - staffengineer
 ---
 

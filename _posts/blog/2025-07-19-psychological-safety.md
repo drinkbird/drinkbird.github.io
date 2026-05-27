@@ -5,6 +5,8 @@ excerpt: "Effective systems are engineered through sound judgment and deliberate
 permalink: /psychological-safety/
 comments: true
 categories: blog
+tags:
+  - leadership
 featured: true
 mermaid: true
 image:
@@ -36,6 +38,10 @@ reads:
   - creativityincbook
   - neversplitdiff
   - winargument
+  - devops
+  - thephoenix
+  - teamtopologies
+  - softskills
 
 ---
 

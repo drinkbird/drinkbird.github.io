@@ -5,6 +5,8 @@ excerpt: "Learn how to avoid double writes, a common pitfall of microservices de
 permalink: /reliable-microservices-messaging/
 comments: true
 categories: blog
+tags:
+  - architecture
 featured: true
 mermaid: true
 image:
@@ -26,6 +28,10 @@ reads:
   - dataintensive
   - functionalreactive
   - buildingmicroservices
+  - releaseit
+  - devops
+  - streamingarch
+  - building-evolutionary-architectures
 
 ---
 

@@ -5,6 +5,8 @@ excerpt: "3+1 root causes of high code churn that can kill your project"
 permalink: /code-churn
 comments: true
 categories: blog
+tags:
+  - craft
 featured: true
 mermaid: true
 image:
@@ -30,6 +32,10 @@ reads:
   - gofdp
   - hfdesignpatterns
   - 97things
+  - cleanarchitecture
+  - peopleware
+  - accelerate
+  - devops
   - dpruby
 ---
 

@@ -1365,6 +1365,40 @@ time.post-updated {
 	}
 }
 
+.post-tags {
+	list-style: none;
+	padding: 0;
+	margin: 14px 0 0;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 6px;
+
+	li {
+		display: inline-flex;
+		margin: 0;
+	}
+
+	.post-tag {
+		display: inline-block;
+		padding: 4px 11px;
+		font-size: 12px;
+		font-weight: 600;
+		text-transform: lowercase;
+		letter-spacing: 0.4px;
+		color: $brand-secondary;
+		background: $brand-primary-dark-lighter;
+		border-radius: 999px;
+		text-decoration: none;
+		transition: background 0.15s ease, color 0.15s ease;
+
+		&:hover,
+		&:focus {
+			background: $brand-secondary;
+			color: $white;
+		}
+	}
+}
+
 .author {
 	margin-bottom: 20px;
 

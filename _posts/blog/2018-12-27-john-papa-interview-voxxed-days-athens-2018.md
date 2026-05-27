@@ -5,6 +5,8 @@ excerpt: "A motivational discussion with wonderful career advice for technology 
 permalink: /john-papa-interview-voxxed-days-athens-2018/
 comments: true
 categories: blog
+tags:
+  - leadership
 featured: true
 image:
   feature: john-papa-cover.jpg
@@ -28,6 +30,10 @@ reads:
   - functionalreactive
   - buildingmicroservices
   - cleanarchitecture
+  - communicationforengineers
+  - pragmaticprogrammer
+  - devops
+  - radicalcandor
 
 ---
 

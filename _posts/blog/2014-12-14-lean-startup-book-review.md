@@ -6,10 +6,17 @@ date: 2014-12-14 00:00:00
 permalink: /lean-startup-book-review/
 comments: true
 categories: blog
+tags:
+  - books
+  - career
 image:
   feature: the-lean-startup-eric-ries.png
 reads:
   - leanstartup
+  - thegoal
+  - accelerate
+  - thephoenix
+  - madetostick-amazon
 ---
 
 *Looking back (2026): I wrote this enthusiastically in 2014, when Lean Startup was the default frame for early-stage product work. The core ideas (validated learning, MVPs, fast feedback loops) still hold up. What I'd add today is that iterating and pivoting are not a universal answer. Approaches like Jobs-to-be-Done and deeper customer research are now treated as complementary rather than optional. Read this as a snapshot of my 2014 thinking, not a finished position.*

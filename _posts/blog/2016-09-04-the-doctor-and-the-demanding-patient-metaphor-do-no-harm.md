@@ -6,11 +6,18 @@ permalink: /do-no-harm
 redirect_from: /the-doctor-and-the-demanding-patient-metaphor-do-no-harm/
 comments: true
 categories: blog
+tags:
+  - craft
+  - leadership
 featured: true
 image:
   feature: demanding_patient.jpg
 reads:
   - thecleancoder
+  - 97things
+  - pragmaticprogrammer
+  - cleancode
+  - codecomplete
 ---
 
 Imagine the following conversation between a doctor and a patient:

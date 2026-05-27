@@ -5,6 +5,8 @@ excerpt: "Why Software Engineers who master Organizational Behavior outbuild, ou
 permalink: /organizational-behavior/
 comments: true
 categories: blog
+tags:
+  - leadership
 featured: true
 mermaid: true
 image:
@@ -40,6 +42,10 @@ reads:
   - thephoenix
   - devops
   - teamtopologies
+  - managinghumans
+  - debuggingteams
+  - neversplitdiff
+  - thinkingfastandslow
   - thinkinginsystems
 ---
 

@@ -5,6 +5,8 @@ excerpt: "What do we mean by resiliency, why is it so important for cloud system
 permalink: /azure-resiliency
 comments: true
 categories: blog
+tags:
+  - architecture
 featured: true
 image:
   feature: redundancy-cover.jpg
@@ -18,6 +20,10 @@ reads:
   - cleancode
   - agileppp
   - leanstartup
+  - releaseit
+  - devops
+  - thephoenix
+  - dataintensive
   - userstoriesapplied
 ---
 

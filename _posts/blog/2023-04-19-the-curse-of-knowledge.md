@@ -5,6 +5,8 @@ excerpt: "Unraveling the art of making complexity understandable"
 permalink: /the-curse-of-knowledge/
 comments: true
 categories: blog
+tags:
+  - leadership
 featured: true
 image:
   feature: tappers-listeners.png
@@ -17,6 +19,10 @@ reads:
   - softskills
   - careerguide
   - cleanarchitecture
+  - communicationforengineers
+  - madetostick-amazon
+  - onwritingwell-amazon
+  - radicalcandor
   - thecleancoder
 ---
 

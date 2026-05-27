@@ -5,6 +5,9 @@ excerpt: "Is it all about fast results? What's your true role as an engineer?"
 permalink: /all-about-results
 comments: true
 categories: blog
+tags:
+  - leadership
+  - craft
 featured: true
 image:
   feature: crash-test.jpg
@@ -32,6 +35,10 @@ reads:
   - interactiondesign
   - showyourwork
   - codecomplete
+  - cleanarchitecture
+  - peopleware
+  - devops
+  - accelerate
 
 ---
 

@@ -5,6 +5,9 @@ excerpt: "Knowing when to act is equally important to knowing when not to"
 permalink: /design-patterns-strategic-approach/
 comments: true
 categories: blog
+tags:
+  - architecture
+  - craft
 featured: true
 image:
   feature: nautilus.png
@@ -15,6 +18,10 @@ reads:
   - hfdesignpatterns
   - dpruby
   - refactoring
+  - cleancode
+  - cleanarchitecture
+  - pragmaticprogrammer
+  - 97things
   - theworkingbrain
 ---
 

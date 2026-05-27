@@ -12,6 +12,7 @@ layout: default
 						{% include social-share.html %}
 						<time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time>
 						{% if page.updated %}<time class="post-updated" datetime="{{ page.updated | date_to_xmlschema }}">Last updated {{ page.updated | date: "%B %d, %Y" }}</time>{% endif %}
+						{% include post-tags.html %}
 					</div>
 				</div>
 				<div class="row">

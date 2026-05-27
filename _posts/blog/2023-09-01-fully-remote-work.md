@@ -5,6 +5,8 @@ excerpt: "Mastering the skills to succeed in remote work without missing a beat 
 permalink: /fully-remote-work/
 comments: true
 categories: blog
+tags:
+  - leadership
 featured: true
 image:
   feature: remote.png
@@ -31,6 +33,10 @@ reads:
   - domaindrivendesign
   - cleanarchitecture
   - madetostick-amazon
+  - thefearlessorg
+  - radicalcandor
+  - teamtopologies
+  - managinghumans
   - onwritingwell-amazon
 ---
 

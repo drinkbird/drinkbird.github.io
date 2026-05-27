@@ -1,0 +1,15 @@
+{% comment %}
+  Tag chip block. Callers either iterate a loop (so `post` is the current item)
+  or render a single post page (where the post is `page`). Fall back accordingly.
+
+  Optional include.class lets callers vary the styling per placement
+  (e.g. "post-tags-card" on listing cards vs the default on post pages).
+{% endcomment %}
+{% assign tags_post = post | default: page %}
+{% if tags_post.tags and tags_post.tags.size > 0 %}
+<ul class="post-tags{% if include.class %} {{ include.class }}{% endif %}">
+  {% for tag in tags_post.tags %}
+  <li><a href="{{ site.baseurl }}/tag/{{ tag }}/" class="post-tag" rel="tag">{{ tag }}</a></li>
+  {% endfor %}
+</ul>
+{% endif %}

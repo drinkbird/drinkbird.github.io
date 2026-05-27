@@ -5,6 +5,9 @@ excerpt: "I must admit that I used to be a bit territorial about my code, but no
 permalink: /bursting-the-bubble-of-ego/
 comments: true
 categories: blog
+tags:
+  - craft
+  - leadership
 featured: true
 image:
   feature: change-of-heart.jpg
@@ -15,6 +18,10 @@ reads:
   - cleancode
   - refactoring
   - codecomplete
+  - 97things
+  - pragmaticprogrammer
+  - radicalcandor
+  - legacycode
   - softskills
 ---
 

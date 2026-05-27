@@ -5,6 +5,8 @@ excerpt: "How self-interest can undermine a group's outcome"
 permalink: /the-prisoners-dilemma/
 comments: true
 categories: blog
+tags:
+  - leadership
 featured: true
 image:
   feature: the-prisoners-dilemma.png
@@ -22,6 +24,10 @@ reads:
   - thephoenix
   - accelerate
   - peopleware
+  - thinkingfastandslow
+  - thinkinginsystems
+  - neversplitdiff
+  - fivedysfunctions
 
 ---
 

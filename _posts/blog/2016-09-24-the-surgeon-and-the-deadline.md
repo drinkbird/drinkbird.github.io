@@ -5,11 +5,18 @@ excerpt: "Another metaphor about professionalism in software development"
 permalink: /the-surgeon-and-the-deadline/
 comments: true
 categories: blog
+tags:
+  - craft
+  - leadership
 featured: true
 image:
   feature: surgeon.jpg
 reads:
   - thecleancoder
+  - pragmaticprogrammer
+  - cleancode
+  - themythicalmanmonth
+  - peopleware
   - 97things
 ---
 

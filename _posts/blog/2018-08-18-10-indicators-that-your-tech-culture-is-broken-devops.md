@@ -5,6 +5,8 @@ excerpt: "spoiler: DevOps to the rescue"
 permalink: /devops/
 comments: true
 categories: blog
+tags:
+  - leadership
 featured: true
 image:
   feature: ducktape.jpg
@@ -18,6 +20,10 @@ reads:
   - softskills
   - careerguide
   - cleanarchitecture
+  - accelerate
+  - teamtopologies
+  - radicalcandor
+  - building-evolutionary-architectures
   - thecleancoder
 ---
 
