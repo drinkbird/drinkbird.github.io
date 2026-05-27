@@ -8,7 +8,7 @@ layout: default
 				<div class="skew-between">
 					<div class="content-headline">
 						<h1 class="posts-header">{{page.title}}</h1>
-						{% include social-share.html %}
+						{% unless page.top_share == false %}{% include social-share.html %}{% endunless %}
 						{% include image-feature-post.html %}
 						{% if page.categories contains 'blog' %}
 							<time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time>

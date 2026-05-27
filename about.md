@@ -1,8 +1,9 @@
 ---
 layout: page
-title: About
+title: About Tasos
 permalink: /about/
 page-key: about
+top_share: false
 image:
   feature: about_ontherock.jpg
 ---
