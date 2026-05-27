@@ -1389,6 +1389,10 @@ time.post-updated {
 	display: inline-flex;
 	align-items: center;
 	vertical-align: middle;
+	// Mobile: match the horizontal/vertical padding of `.navbar-nav > li > a`
+	// so the icon starts at the same x-offset as Stories / Courses / etc.
+	// Desktop media query below overrides these with the 39px top padding.
+	padding: 15px;
 }
 
 .post-nav {
@@ -1742,8 +1746,8 @@ time.post-updated {
 	// magnifying-glass icon and `mod+k` hint sit on the same baseline as
 	// the Stories / Courses / Books / Projects / About links.
 	.navbar-nav > .nav-search > pagefind-modal-trigger {
-		border-top: 5px solid transparent;
-		padding: 39px 15px 15px;
+		border-top: 3px solid transparent;
+		padding: 41px 15px 15px;
 		box-sizing: border-box;
 	}
 
