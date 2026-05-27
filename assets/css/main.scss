@@ -1539,9 +1539,10 @@ time.post-updated {
 .post-tags {
 	list-style: none;
 	padding: 0;
-	margin: 14px 0 0;
+	margin: 6px 0 0;
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: center;
 	gap: 6px;
 
 	li {
@@ -1598,6 +1599,9 @@ time.post-updated {
 		// (name + 2-line role on narrow viewports) the photo is mid-block and
 		// the text wraps cleanly around the photo's vertical center.
 		align-items: center;
+		// Zero out the browser default <figure> margin so the byline sits
+		// closer to the tag chips above (which now end .content-headline).
+		margin: 0;
 		gap: 12px;
 		text-align: left;
 
