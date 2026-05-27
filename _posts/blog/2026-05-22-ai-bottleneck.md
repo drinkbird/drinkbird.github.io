@@ -11,7 +11,7 @@ tags:
 featured: true
 mermaid: true
 image:
-  feature: ai-bottleneck.jpg
+  feature: ai-bottleneck-1x.jpg
 reads:
   - thegoal
   - thegoalgraphicnovel

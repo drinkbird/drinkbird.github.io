@@ -87,8 +87,16 @@
 {% assign og_image_is_large = false %}
 {% assign og_image_known_dim = false %}
 {% if page.image.feature %}
-  {% capture og_image %}{{ site.url }}{{ site.baseurl }}/images/{{ page.image.feature }}{% endcapture %}
+  {% comment %} When the feature image follows the -1x.jpg / -2x.jpg pair convention,
+     point social cards at the 2x file. It's 1420w, comfortably above LinkedIn's
+     ~1200w threshold for the full-banner card; the 1x at 710w would be demoted
+     to the smaller square layout. {% endcomment %}
+  {% assign og_feature_filename = page.image.feature | replace: '-1x.', '-2x.' %}
+  {% capture og_image %}{{ site.url }}{{ site.baseurl }}/images/{{ og_feature_filename }}{% endcapture %}
   {% assign og_image_is_large = true %}
+  {% if og_feature_filename != page.image.feature %}
+    {% assign og_image_known_dim = true %}
+  {% endif %}
 {% elsif og_course_index.image %}
   {% capture og_image %}{{ site.url }}{{ site.baseurl }}/images/{{ og_course_index.image }}{% endcapture %}
   {% assign og_image_is_large = true %}
