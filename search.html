@@ -34,10 +34,12 @@ sitemap: true
             });
           });
         </script>
+        {% if jekyll.environment != "production" %}
         <p class="post-search-fineprint">
           The search index is built at deploy time. Local previews won't return results until
           you run <code>npx pagefind --site _site</code> after <code>jekyll build</code>.
         </p>
+        {% endif %}
       </div>
     </div>
   </div>
