@@ -416,3 +416,7 @@ reads:
     title: 'Thinking in Systems: A Primer'
     url: https://www.amazon.com/Thinking-Systems-Primer-Donella-Meadows/dp/1603580557?tag=drin04-20
     isbn: "1603580557"
+  apprenticeship:
+    title: 'Apprenticeship Patterns: Guidance for the Aspiring Software Craftsman'
+    url: https://www.amazon.com/Apprenticeship-Patterns-Guidance-Aspiring-Craftsman/dp/0596518382?tag=drin04-20
+    isbn: "0596518382"
