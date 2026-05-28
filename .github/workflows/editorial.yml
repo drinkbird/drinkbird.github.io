@@ -49,6 +49,9 @@ jobs:
           JEKYLL_ENV: production
         run: bundle exec jekyll build
 
+      - name: Build Pagefind search index
+        run: npm run pagefind
+
       - name: Install html-proofer
         run: gem install html-proofer
 
