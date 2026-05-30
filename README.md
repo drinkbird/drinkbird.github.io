@@ -126,7 +126,7 @@ From the [Actions tab](https://github.com/drinkbird/drinkbird.github.io/actions/
 
 `.github/workflows/editorial.yml` runs three checks on every PR and on push to `master`, in parallel with (not gating) the deploy:
 
-| Check        | Tool                                         | Behaviour                    |
+| Check        | Tool                                         | Behavior                    |
 | ------------ | -------------------------------------------- | ---------------------------- |
 | Internal links + image refs | [htmlproofer](https://github.com/gjtorikian/html-proofer) | Hard fail |
 | External URLs | [lychee](https://github.com/lycheeverse/lychee) | Soft fail (`continue-on-error`) |

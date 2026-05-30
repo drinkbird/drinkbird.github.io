@@ -28,7 +28,7 @@ All three are cookie-free, but **cookie consent law isn't just about cookies**. 
 
 ## Walkthrough
 
-Pick one. Sign up (or stand up the self-hosted instance). You'll receive a snippet - a `<script>` tag with a data attribute or src parameter that identifies your site. Put it in `_includes/analytics.html` so it's centralised. Plausible looks like this:
+Pick one. Sign up (or stand up the self-hosted instance). You'll receive a snippet - a `<script>` tag with a data attribute or src parameter that identifies your site. Put it in `_includes/analytics.html` so it's centralized. Plausible looks like this:
 
 ```html
 <!-- _includes/analytics.html (Plausible example) -->
@@ -73,7 +73,7 @@ Locally you run `bundle exec jekyll serve` with a `_config_dev.yml` override tha
 
 For an engineering blog, **the useful metrics are short**: top pages this month, referrers (who's linking to you), and rough visit count. That's it. Conversion funnels and bounce rate don't mean anything when your "goal" is "someone read a post." Time-on-page is unreliable because RSS readers and reading-list apps skew it. Resist the temptation to track every click - you're measuring a personal blog, not running an ad business. A weekly five-minute glance is the right interaction.
 
-Here is the comparison summarised:
+Here is the comparison summarized:
 
 | Tool | Hosting | Cost | Best for |
 |---|---|---|---|

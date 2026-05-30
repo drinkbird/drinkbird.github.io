@@ -85,7 +85,7 @@ Two 301s funnel every visitor onto a single canonical HTTPS URL; the HSTS header
 
 | Pitfall | Why it happens | Fix |
 |---|---|---|
-| "Enforce HTTPS" is greyed out | Certificate hasn't provisioned yet; DNS records may be wrong. | Re-check `A`/`AAAA` records match GitHub's published IPs; wait. If still stuck after a few hours, remove and re-add the custom domain. |
+| "Enforce HTTPS" is grayed out | Certificate hasn't provisioned yet; DNS records may be wrong. | Re-check `A`/`AAAA` records match GitHub's published IPs; wait. If still stuck after a few hours, remove and re-add the custom domain. |
 | Cert provisioning hangs for 24h+ | A `CAA` record at the registrar disallows Let's Encrypt, or one of the apex IPs is wrong. | Remove the `CAA` record (or add `letsencrypt.org` to the allowlist); reverify all four `A` records. |
 | Social previews show no image after going live | Open Graph image was a relative URL that worked in dev but resolves wrong when fetched from outside. | Use `absolute_url` in `<meta property="og:image">`; reset cache in the Facebook/Twitter validators. |
 | `www` and apex both serve content with no redirect | The `CNAME` file is missing or contains both hostnames. | Ensure the file is one line, one hostname; re-save Settings → Pages → Custom domain. |

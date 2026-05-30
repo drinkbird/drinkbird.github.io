@@ -6,7 +6,7 @@ updated: 2026-05-26
 image:
     feature: books2.png
 spotlight: dataintensive
-spotlight_pitch: "Kleppmann's tour of the data systems behind every modern product, with the rigour of a textbook and the readability of an essay. The most useful architecture book of the past decade."
+spotlight_pitch: "Kleppmann's tour of the data systems behind every modern product, with the rigor of a textbook and the readability of an essay. The most useful architecture book of the past decade."
 redirect_from:
     - /books/software-engineering-architecture-microservices
     - /books/software-engineering-architecture-microservices/

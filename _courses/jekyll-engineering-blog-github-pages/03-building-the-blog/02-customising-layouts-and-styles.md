@@ -1,7 +1,7 @@
 ---
 chapter_id: 2
 chapter_slug: customising-layouts-and-styles
-chapter_title: "Customising layouts and styles without forking the whole theme"
+chapter_title: "Customizing layouts and styles without forking the whole theme"
 chapter_summary: "Walks through Jekyll's per-path theme-file precedence: copy only the files you want to change into your repo and let the rest stay in the gem. Demonstrates a concrete override of `_includes/head.html` and the Sass entrypoint pattern (variables before `@import \"minima\"`), and explains why pinning the theme's major version in `Gemfile` matters."
 ---
 
@@ -14,7 +14,7 @@ chapter_summary: "Walks through Jekyll's per-path theme-file precedence: copy on
 
 ## Concepts
 
-Jekyll resolves theme files in a strict precedence order: **your repo first, the theme gem second.** For any path Jekyll looks up - `_layouts/default.html`, `_includes/head.html`, `_sass/minima/_base.scss`, `assets/main.css` - it checks your repo before the gem. If your repo has a file at that path, the gem's copy is shadowed entirely. There is no merge; there is no partial override. Either your file wins, or the gem's does. That binary is the mechanic that makes targeted customisation pleasant and broad customisation painful.
+Jekyll resolves theme files in a strict precedence order: **your repo first, the theme gem second.** For any path Jekyll looks up - `_layouts/default.html`, `_includes/head.html`, `_sass/minima/_base.scss`, `assets/main.css` - it checks your repo before the gem. If your repo has a file at that path, the gem's copy is shadowed entirely. There is no merge; there is no partial override. Either your file wins, or the gem's does. That binary is the mechanic that makes targeted customization pleasant and broad customization painful.
 
 The practical implication is that you should copy *only* the file you want to change. If you want a different `<head>`, copy `_includes/head.html` into your repo and edit it. If you want a different page skeleton, copy `_layouts/default.html`. Leave the rest in the gem. Your diff with the theme is now exactly the files you've touched - when `minima` ships a fix, you `bundle update minima` and inherit it everywhere except the files you've taken responsibility for. Compare that to forking the whole theme, where every file is yours and every upstream fix is a merge.
 

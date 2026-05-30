@@ -45,7 +45,7 @@ That also means that we become solely responsible for kickstarting and maintaini
 
 > You can't wait for motivation. You have to go after it with a club.
 
-It is easy to visualise this feedback loop working well once there is enough momentum, but what about getting started?
+It is easy to visualize this feedback loop working well once there is enough momentum, but what about getting started?
 
 ![Start by doing]({{ site.baseurl }}/images/sustainable-motivation-3.jpeg)
 <p class="text-center">Image source: <a href="https://www.instagram.com/shencomix/">Shen Comix</a></p>

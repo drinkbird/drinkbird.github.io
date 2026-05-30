@@ -86,7 +86,7 @@ Written communication is the linchpin of remote engineering work. If you can wri
 
 ### Straight to the point: Unambiguous communication
 
-Utilise [low-context](https://www.psychologytoday.com/us/blog/communication-success/202206/10-traits-of-low-context-communicators), direct, unambiguous communication. Always be on point, radiating intent and demonstrating a strong bias for outcomes. Express the goals of a meeting up front, and then skillfully shift from "discuss" to "decide and schedule". When addressing concerns, set the context first and confirm your assumptions with the people available. Then, either propose a solution or seek constructive input. Always be clear about what you want to achieve from each discussion, and avoid bringing up the same subject unless it’s to seek a different outcome.
+Utilize [low-context](https://www.psychologytoday.com/us/blog/communication-success/202206/10-traits-of-low-context-communicators), direct, unambiguous communication. Always be on point, radiating intent and demonstrating a strong bias for outcomes. Express the goals of a meeting up front, and then skillfully shift from "discuss" to "decide and schedule". When addressing concerns, set the context first and confirm your assumptions with the people available. Then, either propose a solution or seek constructive input. Always be clear about what you want to achieve from each discussion, and avoid bringing up the same subject unless it’s to seek a different outcome.
 
 ### Building trust with words: The nuances of language
 
@@ -127,9 +127,9 @@ Begin your day by allowing time to fully wake up and prepare for work. Gone are 
 
 The key to maintaining discipline lies in meticulous calendar management. Use virtual calendars like Google or Outlook to schedule your day down to the last detail - your work hours, lunch breaks, and focus periods. To go a step further, link your calendar with your chat software to automatically update your availability. This is particularly important when you're out of office; make sure to set auto-responders and update your chat name accordingly. Greetings from "Tasos_OOO_until_Oct9"!
 
-### Utilising technology for enhanced focus: Techniques and tools
+### Utilizing technology for enhanced focus: Techniques and tools
 
-To maximize your efficiency, you’ll need a plan for each focus session. Utilise tools like Trello in combination with the [Eisenhower Matrix](https://blog.trello.com/eisenhower-matrix-productivity-tool-trello-board) to categorize and prioritize tasks. When it’s time to concentrate, implement techniques like the Pomodoro method to maintain deep focus. Also, consider enabling features like Focus mode on your computer to minimize digital distractions during these sessions.
+To maximize your efficiency, you’ll need a plan for each focus session. Utilize tools like Trello in combination with the [Eisenhower Matrix](https://blog.trello.com/eisenhower-matrix-productivity-tool-trello-board) to categorize and prioritize tasks. When it’s time to concentrate, implement techniques like the Pomodoro method to maintain deep focus. Also, consider enabling features like Focus mode on your computer to minimize digital distractions during these sessions.
 
 ### Setting boundaries: The importance of clocking out
 
@@ -137,7 +137,7 @@ The fuzzy borders between work and personal time in a remote setting make it ess
 
 ### Aligning priorities: The last word on team communication 
 
-Transparency is crucial when working remotely. If you’re unsure about task prioritisation, consult your manager for guidance. Keep your team in the loop about your weekly capacity and clearly state what can be realistically achieved. This involves being explicit when tasks need to be deprioritised or dropped. Be aware of who's waiting for what, and manage expectations accordingly. Remember, capturing context and decisions in shared documents is a game changer for delivering quality results predictably. Knowing how to manage and communicate about priorities doesn't just make you a disciplined individual but a dependable team member.
+Transparency is crucial when working remotely. If you’re unsure about task prioritization, consult your manager for guidance. Keep your team in the loop about your weekly capacity and clearly state what can be realistically achieved. This involves being explicit when tasks need to be deprioritized or dropped. Be aware of who's waiting for what, and manage expectations accordingly. Remember, capturing context and decisions in shared documents is a game changer for delivering quality results predictably. Knowing how to manage and communicate about priorities doesn't just make you a disciplined individual but a dependable team member.
 
 Organizational management is not just a personal productivity hack; it's a professional requirement in the remote work landscape. And your time is irreplaceable, so "Don't just count the hours. Make the hours count!"
 

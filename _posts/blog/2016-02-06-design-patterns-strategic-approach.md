@@ -51,7 +51,7 @@ Asking the right questions is essential for keeping us on track. We always need 
 
 The last question is probably the trickiest to answer, because conditions leading to the application of a pattern are usually not quite apparent. That's when studying the brain can be more than revealing. In his book {% include link.html title="The Working Brain" url="http://www.amazon.co.uk/The-Working-Brain-Introduction-Neuropsychology/dp/046509208X?tag=drin04-20" %}, Aleksandr R. Luria, a famous neuropsychologist and developmental psychologist, presents an intriguing view on how humans solve problems: 
 
-> "Man not only reacts passively to incoming information, but creates intentions, forms plans and programmes of his actions, inspects their performance, and regulates his behavior so that it conforms to these plans and programmes; finally, he verifies his conscious activity, comparing the effects of his actions with the original intentions and correcting any mistakes he has made." -- Aleksandr R. Luria
+> "Man not only reacts passively to incoming information, but creates intentions, forms plans and programs of his actions, inspects their performance, and regulates his behavior so that it conforms to these plans and programs; finally, he verifies his conscious activity, comparing the effects of his actions with the original intentions and correcting any mistakes he has made." -- Aleksandr R. Luria
 
 This sentence describes lots of common elements with what we actually do in software design cycles.
 

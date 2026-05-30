@@ -120,7 +120,7 @@ Posts feed the plugin; the plugin writes one Atom file; the autodiscovery `<link
 | Feed shows only the first sentence of each post. | Either `excerpt_only: true` is set, or you configured the plugin to emit excerpts. | Remove `excerpt_only` and leave the default - full content is what readers want. |
 | Every subscriber sees old posts re-appear as new. | A permalink change altered the `<id>` on existing entries; readers treat them as new items. | Don't rename URLs after publishing; if you must, set up redirects with `jekyll-redirect-from` and keep the feed `<id>` stable by pinning it manually. |
 | Per-collection feed for `notes` is missing. | The `feed.collections.notes` config block uses the wrong collection name. | The key must match the collection's `_config.yml` declaration exactly - case-sensitive. |
-| Images in the feed show as broken in the reader app. | Images use relative `src` paths and the reader app doesn't resolve against the feed's `<base>`. | Use `absolute_url` for image paths in your post Liquid, or rely on `jekyll-feed`'s URL absolutising (recent versions handle this for HTML content). |
+| Images in the feed show as broken in the reader app. | Images use relative `src` paths and the reader app doesn't resolve against the feed's `<base>`. | Use `absolute_url` for image paths in your post Liquid, or rely on `jekyll-feed`'s URL absolutizing (recent versions handle this for HTML content). |
 
 ## Exercises
 1. Install `jekyll-feed`, add `{% raw %}{% feed_meta %}{% endraw %}` to `<head>`, and confirm `/feed.xml` validates at the [W3C Feed Validator](https://validator.w3.org/feed/). Subscribe to it in your own RSS reader and verify your latest post appears.

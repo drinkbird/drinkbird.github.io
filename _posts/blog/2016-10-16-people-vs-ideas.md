@@ -75,7 +75,7 @@ What are the chances for that team to be something more than mediocre?
 
 Apart from focusing on the wrong things while recruiting, these people have something else in common: they identify too closely with their idea. Naturally, every founder would prefer to be told that his or her idea is genius.
 
-By identifying themselves too closely with their idea, they make themselves prone to taking offence when that idea is challenged, when revisions are needed or flows are apparent.
+By identifying themselves too closely with their idea, they make themselves prone to taking offense when that idea is challenged, when revisions are needed or flows are apparent.
 
 As previously discussed, great ideas are never formed in a vacuum. Also, most successful products are not a result of a single idea. In fact, they are comprised of a multitude of ideas, contributed by many different people.
 

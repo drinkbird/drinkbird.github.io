@@ -118,7 +118,7 @@ The browser, not your code, decides which file to fetch - your job is to give it
 | Page jumps as images load. | `<img>` has no `width`/`height`, so the browser can't reserve space. | Always set `width` and `height` attributes (intrinsic pixels); CSS controls displayed size. |
 | Lazy-loaded hero image hurts LCP. | `loading="lazy"` on an above-the-fold image delays the largest paint. | Omit `loading="lazy"` on hero images; add it only below the fold. |
 | `srcset` widths don't help - same file always fetched. | `sizes` is missing or wrong, so the browser falls back to the largest candidate. | Write `sizes` to match how the image actually renders at each breakpoint. |
-| WebP saves 200 KB per image but the page is still 3 MB. | The original PNG/JPEG sources weren't compressed before conversion. | Run an optimiser (`squoosh`, `imageoptim`) on sources before exporting; compression compounds. |
+| WebP saves 200 KB per image but the page is still 3 MB. | The original PNG/JPEG sources weren't compressed before conversion. | Run an optimizer (`squoosh`, `imageoptim`) on sources before exporting; compression compounds. |
 | Plugin adds 30s to every build. | `jekyll-picture-tag` regenerates derivatives by default; first build is slow. | Cache the derived `_site/assets/...` between CI runs, or commit pre-generated images and skip the plugin. |
 
 ## Exercises

@@ -114,7 +114,7 @@ Illustrations on this site are AI-generated, art-directed and curated by me.
 
 ## Short Bio
 
-*For event organisers and podcast hosts, feel free to reuse this:*
+*For event organizers and podcast hosts, feel free to reuse this:*
 
 Tasos Piotopoulos is a Lead Software Engineer who helps teams excel technically and grow as leaders. Since 2005, he has delivered high-impact projects across multiple industries while mentoring engineers to reach their full potential. He holds a Master's in Software Engineering and Distributed Systems from University College Dublin and is currently pursuing an MBA at Frederick University Cyprus. He shares his insights through blogging, teaching, organizing meetups and public speaking.
 

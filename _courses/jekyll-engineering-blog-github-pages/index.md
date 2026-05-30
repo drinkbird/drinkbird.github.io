@@ -27,7 +27,7 @@ modules:
     slug: jekyll-model
     dir: 02-jekyll-model
     title: "The Jekyll model: Layouts, Liquid, and content"
-    summary: "Internalise Jekyll's templating and content model so you can shape it to your blog rather than fight the defaults."
+    summary: "Internalize Jekyll's templating and content model so you can shape it to your blog rather than fight the defaults."
     learning_objectives:
       - "Compose pages from layouts and includes"
       - "Read and write Liquid templates with confidence"

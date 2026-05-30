@@ -173,7 +173,7 @@ These people usually end up keeping a passive-aggressive stance that not only do
 
 ![Passive-aggressive]({{ site.baseurl }}/images/passive-aggressive.jpg)
 
-That posture has real costs on both sides. The team doesn't get the judgement it hired for, and the engineer never grows into someone whose perspective shapes the work.
+That posture has real costs on both sides. The team doesn't get the judgment it hired for, and the engineer never grows into someone whose perspective shapes the work.
 
 Of course, it's your boss's right to fire you if they don't agree with your methods, but if your professionalism makes you lose your job, chances are that you work for the wrong boss in the first place.
 

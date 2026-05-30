@@ -2,7 +2,7 @@
 chapter_id: 1
 chapter_slug: layouts-and-includes
 chapter_title: "Layouts and includes - composing pages from reusable parts"
-chapter_summary: "Introduces layouts as page chrome (with the layout-inheritance chain) and includes as inline reusable fragments, with concrete `default.html`/`post.html`/`header.html`/parameterised `callout.html` examples. Covers `include.` scoping, `relative_url`, and the layout-vs-include decision."
+chapter_summary: "Introduces layouts as page chrome (with the layout-inheritance chain) and includes as inline reusable fragments, with concrete `default.html`/`post.html`/`header.html`/parameterized `callout.html` examples. Covers `include.` scoping, `relative_url`, and the layout-vs-include decision."
 ---
 
 ## What you'll learn
@@ -20,7 +20,7 @@ A Jekyll source file rarely contains a full HTML document. Instead, the post or 
 
 The trade-off between the two is about direction of flow. A layout receives its child's rendered output and decides where to put it. An include receives parameters from its parent and renders inline. If the same chrome wraps many pages, that's a layout. If the same widget appears at a known spot inside many layouts or pages, that's an include. Mixing them up - for example, trying to "wrap" a page with an include - leads to brittle markup where you forget to render `content` or repeat the doctype five times.
 
-Variables in an include are *scoped* but not isolated. An include can read every site-level and page-level variable (`site.title`, `page.title`, etc.) just like its caller can. Parameters you pass via `{% raw %}{% include foo.html label="Read more" %}{% endraw %}` are available inside the include as `include.label`. That `include.` prefix is the only sandbox; it stops your include's local names from leaking back to the caller and vice versa. This is a small but important detail when you start parameterising includes.
+Variables in an include are *scoped* but not isolated. An include can read every site-level and page-level variable (`site.title`, `page.title`, etc.) just like its caller can. Parameters you pass via `{% raw %}{% include foo.html label="Read more" %}{% endraw %}` are available inside the include as `include.label`. That `include.` prefix is the only sandbox; it stops your include's local names from leaking back to the caller and vice versa. This is a small but important detail when you start parameterizing includes.
 
 The pragmatic rule of thumb: layouts handle the page skeleton (doctype, `<head>`, header, footer, the slot for `content`), and includes handle reusable fragments. Resist the urge to make everything an include - three layers of indirection for a five-line snippet hurts more than it helps.
 
@@ -90,7 +90,7 @@ The header is a small, parameter-free include:
 </header>{% endraw %}
 ```
 
-A parameterised include is more interesting - say a callout box you can drop into any page:
+A parameterized include is more interesting - say a callout box you can drop into any page:
 
 ```liquid
 {% raw %}<!-- _includes/callout.html -->

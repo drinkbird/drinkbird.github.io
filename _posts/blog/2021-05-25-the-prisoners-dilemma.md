@@ -52,7 +52,7 @@ From a mathematical standpoint, each party's choice was solid. But the result of
 
 As it turns out, we deal with situations like the Prisoner's Dilemma all the time, in various forms and sizes. By acting in our self-interest and focusing on immediate rewards, we can easily undermine the outcome of a whole group, with potentially devastating long-term consequences.
 
-A typical example would be the use of pirated software. In theory, a creator should be able to survive financially, even if a small number of individuals use unauthorised copies of his software. For any individual, the ideal scenario would be to use the software for free and let everyone else deal with supporting the creator.
+A typical example would be the use of pirated software. In theory, a creator should be able to survive financially, even if a small number of individuals use unauthorized copies of his software. For any individual, the ideal scenario would be to use the software for free and let everyone else deal with supporting the creator.
 
 But if everyone were to use the software for free, the creator wouldn't survive in their profession, hence it wouldn't be viable to create the software in the first place. Preventing software to be created is a negative outcome for all parties, so perhaps in the long run it is preferable for everyone to do their part and support creativity, rather than punish it.
 
@@ -84,7 +84,7 @@ Imagine that you and Alice are members of a criminal organization called *The Ma
 
 Now, if either of you chooses to snitch on the other, there is a huge risk of doing so for the last time. Once you get captured, the dominant strategy is to cooperate without hesitation, and strangely enough, the fear of death leads both of you to the optimal solution.
 
-Fear is not the only effective mechanism though. If Alice had more robberies planned, she would soon face the same dilemma again. Hence, her choice to betray you or not would have a significant impact on all her future endeavours.
+Fear is not the only effective mechanism though. If Alice had more robberies planned, she would soon face the same dilemma again. Hence, her choice to betray you or not would have a significant impact on all her future endeavors.
 
 According to an experiment by Robert Axelrod, described in [The Evolution of Cooperation](https://en.wikipedia.org/wiki/The_Evolution_of_Cooperation), the prevalent strategy in a repeating Prisoner's Dilemma is not betrayal, but that of *tit for tat*. A player always starts as trustworthy and loyal, then subsequently imitates the other player's previous action; if he got trusted, he would trust again, but if he got betrayed, he would betray.
 ![Five star rating]({{ site.baseurl }}/images/pd-4.jpeg)

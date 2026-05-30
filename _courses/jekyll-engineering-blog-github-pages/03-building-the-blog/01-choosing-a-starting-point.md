@@ -68,7 +68,7 @@ minima-2.5.1/
     minima-social-icons.svg
 ```
 
-Three things are worth noticing. First, `_layouts/default.html` is the page skeleton - `<html>`, `<head>`, header, footer, and `{{ content }}`. Every other layout extends it. Second, the Sass is split into a top-level `minima.scss` partial plus `_base.scss`, `_layout.scss`, and `_syntax-highlighting.scss` - that structure is what makes selective overrides possible. Third, `_includes/head.html` is where you'll edit `<meta>` tags later in the course. Knowing this map before you commit to a theme means you can predict whether a customisation will be a five-minute override or a fork-and-maintain situation.
+Three things are worth noticing. First, `_layouts/default.html` is the page skeleton - `<html>`, `<head>`, header, footer, and `{{ content }}`. Every other layout extends it. Second, the Sass is split into a top-level `minima.scss` partial plus `_base.scss`, `_layout.scss`, and `_syntax-highlighting.scss` - that structure is what makes selective overrides possible. Third, `_includes/head.html` is where you'll edit `<meta>` tags later in the course. Knowing this map before you commit to a theme means you can predict whether a customization will be a five-minute override or a fork-and-maintain situation.
 
 For a community theme, do the equivalent on GitHub: read `_layouts/`, `_includes/`, and `_sass/` before adopting it. If you can't picture the override you'd need for the first three things you'd want to change, pick a simpler theme.
 
@@ -107,7 +107,7 @@ The gem provides defaults; your repo overrides them path-by-path. You only ever 
 - For an engineering blog, the default recommendation is `minima` plus selective overrides - the rest of this module assumes that path.
 - You've outgrown a theme when the color tokens, typography, or markup you want to change don't have hooks; that's the signal to fork or replace, not before.
 
-Next, **Customising layouts and styles without forking the whole theme** - the exact override workflow that keeps your diff with the theme gem small.
+Next, **Customizing layouts and styles without forking the whole theme** - the exact override workflow that keeps your diff with the theme gem small.
 
 
 {% endraw %}
