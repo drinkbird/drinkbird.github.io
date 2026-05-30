@@ -21,7 +21,7 @@ reads:
 
 *Looking back (2026): I wrote this enthusiastically in 2014, when Lean Startup was the default frame for early-stage product work. The core ideas (validated learning, MVPs, fast feedback loops) still hold up. What I'd add today is that iterating and pivoting are not a universal answer. Approaches like Jobs-to-be-Done and deeper customer research are now treated as complementary rather than optional. Read this as a snapshot of my 2014 thinking, not a finished position.*
 
-##Introduction
+## Introduction
 There is incredible failure that precedes every entrepreneurial success. Even the most promising idea can be doomed from day one if the entrepreneur is not familiar with a suitable process needed to turn that idea into a successful company.
 
 Eric Ries is a talented author, blogger, and Silicon Valley entrepreneur. In his early career he consistently worked hard on products that ultimately failed in the marketplace. He initially treated these failures as technical problems that required technical solutions, most likely due to his background as a computer scientist (Businessweek, 2014). Surprisingly, this approach was yet another mistake.
@@ -34,7 +34,7 @@ The Lean Startup lays out a scientific method for building a sustainable busines
 
 This book was found to be particularly interesting, even inspiring, as the author is engaged in continuous storytelling, offering an affluence of insights on how some real 21th century startups repeatedly overcame imminent failure and became success stories by applying the lean startup methodology. Every entrepreneur, manager, engineer or marketer should read this book because it can literally impact their lives for the better.
 
-##Overview of Part One – Vision
+## Overview of Part One – Vision
 > Startup success can be engineered by following the process, which means it can be learned, which means it can be taught.
 > -- <cite>Eric Ries</cite>
 
@@ -63,7 +63,7 @@ Figuring out whether a customer is actually being benefitted by a product or ser
 
 The first part of the book ends by providing two startup success stories, the Village Laundry Service which provides low cost laundry services in India, and the Consumer Federal Protection Bureau, a US government agency that used the lean startup approach to succeed, clearly demonstrating that this approach can actually be used in any type of organization.
 
-##Overview of Part Two – Steer
+## Overview of Part Two – Steer
 
 In the second part of the book, the author focuses on the importance of the *Build-Measure-Learn* feedback loop, which is perceived as the heart of the lean approach, and can be of great value to startups in means of saving time and resources while developing a product and adapting their strategy around it.
 
