@@ -2,7 +2,7 @@
 layout: post
 title: "The decision everyone agreed with and no one believed"
 excerpt: "Three leaders approved a plan none of them trusted. Six months later, the team was spending a quarter of its capacity maintaining the agreement."
-permalink: /the-decision-everyone-agreed-with-and-no-one-believed/
+permalink: /false-consensus/
 comments: true
 categories: blog
 tags:
@@ -18,11 +18,30 @@ reads:
   - radicalcandor
   - turntheshiparound
   - peopleware
+  - multipliers
+  - daretolead
+  - debuggingteams
+  - communicationforengineers
+  - resilientmgmt
+  - managinghumans
+  - highoutputmgmt
+  - managerspath
+  - executiveprimer
+  - thinkinginsystems
+  - creativityincbook
+  - accelerate
+  - devops
+  - leanstartup
+  - thegoal
+  - toyotakata
+  - effectiveengineer
 ---
 
 The meeting lasted fifty minutes.
 
-The technical lead thought the plan would create an integration problem that the team would spend years maintaining. The product manager thought it committed the roadmap to a capability customers had not actually asked for. The VP thought the timeline was optimistic and the return uncertain.
+The technical lead suspected the plan would create an integration problem that the team would spend years maintaining. They mentioned some implementation complexity, then described it as manageable. The product manager doubted that customers had asked for the capability, but raised the point as something to validate later rather than a reason to stop. The VP thought the timeline was optimistic and the return uncertain, then asked whether the team could tighten the milestones.
+
+The real concerns never emerged in a form the meeting could act on. Each was softened into a non-blocking comment, a detail to manage or a question about execution.
 
 All three approved it.
 
@@ -32,15 +51,15 @@ Six months later, the decision was consuming roughly a quarter of the team's cap
 
 This was one of the meetings behind [the $2M bug that wasn't in the code]({{ site.baseurl }}/organizational-behavior/). The expensive failure did not begin when somebody implemented the wrong thing. It began when a room full of capable people produced an agreement that none of them believed.
 
-![the meeting where nobody noticed]({{ site.baseurl }}/images/decision-meeting-cover.png)
+![three approvals casting different shadows]({{ site.baseurl }}/images/decision-meeting-alignment.png)
 
 ## Agreement is not alignment
 
 We tend to treat a unanimous decision as evidence that a group is aligned. Sometimes it is. Sometimes it means the group has successfully removed every signal that would reveal disagreement.
 
-The technical lead stayed quiet because the VP appeared enthusiastic and because challenging the direction without a fully formed alternative felt unhelpful. The product manager stayed quiet because engineering had already invested time in the proposal and reopening the customer case felt like moving the goalposts. The VP stayed quiet because the lead and the PM, the people closest to the work, did not raise an objection.
+The technical lead did not make the integration risk blocking because the VP appeared enthusiastic and because challenging the direction without a fully formed alternative felt unhelpful. The product manager turned a weak customer case into a follow-up because engineering had already invested time in the proposal and reopening it felt like moving the goalposts. The VP converted doubt into a delivery question because the lead and the PM, the people closest to the work, did not raise an objection.
 
-Each person interpreted the silence of the others as confidence. Each person's own silence then became evidence for everyone else.
+Each person interpreted the absence of a clear objection as confidence. Each person's softened concern then became evidence for everyone else.
 
 This pattern is often described through *groupthink*, the term Irving Janis introduced for the way cohesive groups can prioritize agreement over realistic evaluation. Groupthink does not require weak people or an overbearing leader. It only requires the social cost of disagreement to become slightly higher than the immediate cost of going along.
 
@@ -70,7 +89,9 @@ Leaders often respond to this problem by saying that anyone can speak up. The in
 
 Psychological safety, as described in {% include link.html title="Amy Edmondson's The Fearless Organization" tag="thefearlessorg" %}, is the shared belief that speaking up is safe. But safety is not established by announcing it. It is established by what happens when somebody delays a decision, challenges a favored proposal or admits that they cannot yet support the plan.
 
-The test is not whether dissent is permitted. The test is whether dissent changes the conversation without damaging the dissenter.
+As I argued in [You can't threaten your way to effective engineering]({{ site.baseurl }}/psychological-safety/), engineering judgment does not survive fear. People surface their strongest objections only when they trust that colleagues will treat the objection as an attempt to improve the decision, not evidence that they are negative, obstructive or difficult to work with. In a low-trust environment, concerns arrive pre-softened because the person raising them is managing both the risk to the project and the risk to their reputation.
+
+The test is not whether dissent is permitted. The test is whether dissent changes the conversation without damaging the dissenter. A high-trust team does not merely allow someone to slow the meeting down. It treats that interruption as part of doing the work well.
 
 ## Once public, the decision started defending itself
 
@@ -78,11 +99,15 @@ The first bad decision was approving the plan. The more expensive decision was a
 
 As implementation continued, evidence accumulated that the original concerns were valid. The integration was harder than expected. Customer demand remained unclear. Delivery dates moved. Yet each review framed the question as how to get the plan back on track, not whether the plan still deserved to exist.
 
-This is *escalation of commitment*. Once a decision is public, reversing it feels like admitting that the earlier judgment was wrong. The effort already spent becomes an argument for spending more, and the reputations attached to the plan become part of what the organization is protecting.
+This is *escalation of commitment*, reinforced by the *sunk cost fallacy*. Once a decision is public, reversing it feels like admitting that the earlier judgment was wrong. Time and money already spent cannot improve the future value of the plan, but they still become arguments for spending more. The reputations attached to the plan become part of what the organization is protecting. {% include link.html title="Daniel Kahneman's Thinking, Fast and Slow" tag="thinkingfastandslow" %} is a useful guide to the broader family of biases that make evidence feel less persuasive once a story and a commitment have formed.
+
+*Cognitive dissonance* helps explain why this happens. Publicly supporting a plan while privately doubting it creates psychological tension. One way to resolve that tension is to reopen the decision. The easier way is to revise the private story: perhaps the concern was overstated, perhaps the team only needs more time, perhaps commitment itself will make the plan work. The longer people act as though they believe the decision, the easier it becomes to defend it as one they believed all along.
 
 The group also had a story available: difficult transformations always look worse in the middle. That story was not false, which made it especially useful. It converted warning signs into proof that the team needed to stay committed.
 
 This is where artificial harmony, one of the dysfunctions described in {% include link.html title="Patrick Lencioni's The Five Dysfunctions of a Team" tag="fivedysfunctions" %}, becomes expensive. Avoiding conflict does not remove disagreement. It pushes disagreement out of the meeting and leaves the decision itself untouched. People comply publicly, doubt privately and gradually detach from an outcome they are still responsible for delivering.
+
+The phrase *disagree and commit* can make this worse when it is used too early. Properly applied, it means the disagreement was made explicit and examined, then a clear decision owner made the call, after which the group commits to execution. It does not mean hint at a concern, watch it pass without scrutiny and treat further challenge as a failure to commit. You cannot disagree and commit if the disagreement never became visible.
 
 By the time the plan was finally reduced, the organization had paid for the original decision many times over.
 
@@ -107,6 +132,8 @@ Silence is not neutral information. In a decision meeting, silence can mean agre
 ## Build dissent into the process
 
 The answer is not to demand more courage from individuals. Courage helps, but a decision process that depends on someone volunteering to become the difficult person in the room is badly designed.
+
+Toyota's [*andon cord*](https://mag.toyota.co.uk/toyota-manufacturing-25-objects-andon-cord/) offers a useful model. In the Toyota Production System, a worker who sees a problem can signal it and stop the production line so the issue can be addressed before defective work continues downstream. Pulling the cord is not treated as obstructing production. It is part of protecting production. Decision meetings need the same norm: raising a credible concern should summon attention and help, not suspicion about whether the person is a smooth collaborator.
 
 A few practices make dissent easier to surface.
 
