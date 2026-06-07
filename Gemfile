@@ -11,6 +11,7 @@ gem "kramdown-parser-gfm"
 # Stick with the libsass (sassc) Sass converter rather than the dart-sass
 # default of jekyll-sass-converter 3.x. The bundled Bootstrap 3 Sass was
 # written for libsass and dart-sass would error on its legacy syntax.
+# On Windows, RubyInstaller's MSYS2/MinGW toolchain is required to build sassc.
 gem "jekyll-sass-converter", "~> 2.2"
 
 # Plugins. Same set as before, just declared directly instead of inherited

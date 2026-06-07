@@ -4,6 +4,8 @@
   "description": "DrinkBird Blog",
   "main": "index.js",
   "scripts": {
+    "doctor": "node scripts/doctor.js",
+    "setup:windows": "powershell.exe -NoProfile -ExecutionPolicy Bypass -File scripts/setup-windows.ps1",
     "uglify": "uglifyjs ./assets/js/scripts.js -o ./assets/js/scripts.min.js",
     "postinstall": "npm run uglify",
     "pagefind": "npx -y pagefind --site _site",

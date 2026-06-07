@@ -4,7 +4,13 @@ Source for [blog.drinkbird.com](https://blog.drinkbird.com), a Jekyll site deplo
 
 ## Local development
 
-First-time setup on a fresh machine:
+The local toolchain matches CI: Ruby 3.3, Bundler, Node.js 24 and npm. Run
+`npm run doctor` (`npm.cmd run doctor` on Windows) at any time to check the
+environment and installed dependencies.
+
+### macOS setup
+
+First-time setup on a fresh Mac:
 
 ```sh
 brew bundle                 # installs ruby@3.3 + node
@@ -12,7 +18,29 @@ echo 'export PATH="/opt/homebrew/opt/ruby@3.3/bin:$PATH"' >> ~/.zshrc
 exec zsh
 bundle install
 npm install                 # also runs `npm run uglify` via postinstall
+npm run doctor
 ```
+
+### Windows setup
+
+Install [RubyInstaller with Devkit](https://rubyinstaller.org/) Ruby 3.3 and
+[Node.js](https://nodejs.org/) 24 LTS first. The Ruby Devkit is required
+because the pinned `sassc` gem contains native code.
+
+Then run from PowerShell in the repository root:
+
+```powershell
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File scripts/setup-windows.ps1
+npm.cmd run doctor
+```
+
+The setup script initializes RubyInstaller's MSYS2/MinGW toolchain when needed,
+installs the Bundler and npm dependencies and verifies the result. It does not
+install Ruby or Node itself.
+
+Use `npm.cmd`, `bundle.bat` and `ridk.cmd` in PowerShell if the machine's
+execution policy blocks unsigned `npm.ps1`, `bundle.ps1` or `ridk.ps1` command
+shims. This does not require changing the system execution policy.
 
 Run the site locally:
 
@@ -22,9 +50,11 @@ npm run serve               # uglify → jekyll build → pagefind → jekyll se
 
 Then open <http://localhost:4000>.
 
+On Windows PowerShell, run `npm.cmd run serve` instead of `npm run serve`.
+
 `npm run serve` does the full pipeline so local previews match production: uglify the JS, build the site, build the Pagefind search index against `_site/`, then start `jekyll serve --skip-initial-build`. The Pagefind index survives jekyll's watch-mode rebuilds because `_site/pagefind/` is in `keep_files`, so search keeps working as you edit content. If you make a structural change and want a fresh index, restart with `npm run serve` (or just run `npm run pagefind` in another terminal).
 
-If you don't care about local search and want a faster loop, `bundle exec jekyll serve --livereload` still works on its own (assuming `scripts.min.js` is already built).
+If you don't care about local search and want a faster loop, `bundle exec jekyll serve --livereload` still works on its own (use `bundle.bat exec jekyll serve --livereload` in PowerShell, assuming `scripts.min.js` is already built).
 
 ## Editing site JavaScript
 
@@ -136,6 +166,8 @@ htmlproofer is run with `--disable-external` so it stays in its lane and leaves 
 
 ### Running the checks locally
 
+macOS:
+
 ```sh
 gem install html-proofer                 # one-time
 brew install typos-cli lychee            # one-time
@@ -144,6 +176,19 @@ bundle exec jekyll build                 # always re-build first
 htmlproofer ./_site --disable-external --allow-hash-href \
   --ignore-empty-alt --no-enforce-https --ignore-urls '/^mailto:\?/'
 typos                                    # respects _typos.toml at the repo root
+lychee './_site/**/*.html' --max-concurrency 8 --accept 200,206,429
+```
+
+Windows PowerShell:
+
+```powershell
+gem install html-proofer                 # one-time
+# Install typos and lychee from their release pages, then ensure both are on PATH.
+
+bundle.bat exec jekyll build
+htmlproofer ./_site --disable-external --allow-hash-href `
+  --ignore-empty-alt --no-enforce-https --ignore-urls '/^mailto:\?/'
+typos
 lychee './_site/**/*.html' --max-concurrency 8 --accept 200,206,429
 ```
 
