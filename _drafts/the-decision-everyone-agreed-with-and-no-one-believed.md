@@ -37,7 +37,7 @@ reads:
   - effectiveengineer
 ---
 
-The meeting lasted fifty minutes and ended early. The technical lead suspected the plan would leave the team maintaining a difficult integration for years, but described the complexity as manageable. The product manager doubted that customers had asked for the capability, yet turned that concern into something to validate later. The VP thought the timeline was optimistic, but asked whether tighter milestones would make it work.
+The meeting lasted fifty minutes and ended early, even though the technical lead suspected the plan would leave the team maintaining a difficult integration for years and described the complexity as manageable. The product manager doubted that customers had asked for the capability, yet turned that concern into something to validate later. The VP thought the timeline was optimistic, but asked whether tighter milestones would make it work.
 
 The concerns were technically raised, but only as implementation details or follow-up work that could not affect the decision, so all three approved the plan.
 
@@ -65,15 +65,15 @@ The *Abilene paradox* describes this particular case more precisely: a group cho
 
 The agenda said the meeting was about deciding *whether* to proceed. Most of the conversation was about *how* to proceed.
 
-Questions about sequencing, staffing and delivery sound like scrutiny, but they quietly assume the decision itself has already been made. Once a room has spent twenty minutes discussing milestones, returning to "should we do this at all?" feels like taking the meeting backwards. I have seen this happen often enough that implementation detail now makes me suspicious when the decision is supposedly still open.
+Questions about how to deliver the plan sound like scrutiny, but they quietly assume the decision itself has already been made. Once a room has spent twenty minutes discussing milestones, returning to "should we do this at all?" feels like taking the meeting backwards. I have seen this happen often enough that implementation detail now makes me suspicious when the decision is supposedly still open.
 
 The proposal also arrived after several weeks of visible preparation. None of that made it the right plan, but it changed the social weight of saying no: rejecting it meant invalidating work from people in the room, while approving it kept things moving.
 
-A proof of concept can settle far more than the narrow question it was built to answer. An experienced engineer may present it as an experiment, while the room experiences it as a nearly completed decision whose technology and structural choices arrive together with something that already runs. Anyone proposing a different direction now carries the burden of arguing against visible progress, often without having been given equivalent time to build an alternative.
+A proof of concept can settle far more than the narrow question it was built to answer. An experienced engineer may present it as an experiment, while the room experiences it as a nearly completed decision because it already runs. Anyone proposing a different direction now carries the burden of arguing against its technology and structure, often without having been given equivalent time to build an alternative.
 
 Prototypes are useful, but the team should write down which question the prototype is testing and which choices remain open. Otherwise, the proof of concept acquires production status simply because it is the only option that already exists.
 
-{% include link.html title="Daniel Kahneman's Thinking, Fast and Slow" tag="thinkingfastandslow" %} describes how readily we search for evidence that supports the story already in front of us. In a group, that confirmation bias becomes social. Once a proposal looks like the emerging consensus, people stop asking what would disprove it and start contributing reasons it could work.
+{% include link.html title="Daniel Kahneman's Thinking, Fast and Slow" tag="thinkingfastandslow" %} describes how readily we search for evidence that supports the story already in front of us. In a group, that confirmation bias becomes social: once a proposal looks like the emerging consensus, people stop asking what would disprove it and start contributing reasons it could work.
 
 ![the one item nobody actually discussed]({{ site.baseurl }}/images/decision-meeting-agenda.png)
 
@@ -99,7 +99,7 @@ There is an uncomfortable individual version of the same dynamic. Publicly suppo
 
 The team also had a convenient explanation that was not entirely false: difficult transformations always look worse in the middle, so every warning sign could be interpreted as proof that the team needed to stay committed.
 
-{% include link.html title="Patrick Lencioni's The Five Dysfunctions of a Team" tag="fivedysfunctions" %} calls this *artificial harmony*. Avoiding conflict does not remove disagreement. It moves disagreement into private conversations while leaving the decision untouched. People continue delivering a plan they no longer defend when speaking honestly.
+{% include link.html title="Patrick Lencioni's The Five Dysfunctions of a Team" tag="fivedysfunctions" %} calls this *artificial harmony*: avoiding conflict does not remove disagreement, but moves it into private conversations while leaving the decision untouched. People continue delivering a plan they no longer defend when speaking honestly.
 
 I also dislike how casually *disagree and commit* gets used in these situations. The principle is useful after the disagreement has been examined and a clear decision owner needs to make the call. It becomes a way to close discussion when somebody's concern passes without scrutiny and further challenge is treated as a failure to commit. There has to be a real disagreement before anyone can reasonably be asked to commit.
 
@@ -111,7 +111,7 @@ Looking back, the warning signs were present in the first meeting, although none
 
 Look for these signals:
 
-1. *Fast unanimity on a consequential decision.* Real tradeoffs usually create real disagreement. Immediate consensus should increase scrutiny, not end it.
+1. *Fast unanimity on a consequential decision.* Real tradeoffs usually create real disagreement, so immediate consensus should increase scrutiny rather than end it.
 2. *The senior person frames the answer before others have formed a view.* Even a casual preference can anchor the room.
 3. *Nobody asks to think overnight.* Important decisions sometimes deserve a slower cognitive pace than the meeting calendar allows.
 4. *Concerns appear after the meeting, one person at a time.* The corridor conversation is evidence that the meeting process failed.
@@ -125,11 +125,13 @@ Silence in a decision meeting can reflect agreement, but it can also mean that s
 
 Asking people to be braver is not much of a process improvement, because a consequential decision should not depend on somebody volunteering to become the difficult person in the room.
 
+There is still craft in how an objection is raised. In [The Inverted Pyramid of Problem-Solving]({{ site.baseurl }}/the-inverted-pyramid-of-problem-solving/), I described the *Thought-Provoker* as someone who can say, "Here is the problem; what do you think we should do about it?" That framing matters here because dissent lands better when it invites the room to solve a shared problem rather than asking one person to win an argument.
+
 I like Toyota's *andon cord* as a comparison because a worker who sees a problem can stop the production line before defective work continues downstream. The interruption protects production, and the improvement routines described in {% include link.html title="Toyota Kata" tag="toyotakata" %} similarly depend on making problems visible early enough to learn from them. Decision meetings need the same norm: a credible concern should bring attention and help, not a debate about whether the person is being a smooth collaborator.
 
-A few practices make dissent easier to surface.
+The following practices make dissent easier to surface without relying on someone to interrupt the room.
 
-1. *Run an anonymous straw poll before discussion.* Ask everyone to rate their confidence in the proposal before senior voices anchor the room. Show the distribution, not only the average. A room that looks aligned may discover that everybody independently voted three out of ten.
+1. *Run an anonymous straw poll before discussion.* Ask everyone to rate their confidence in the proposal before senior voices anchor the room, then show the distribution rather than only the average. A room that looks aligned may discover that everybody independently voted three out of ten.
 2. *Have the most senior person speak last.* They can ask questions, but should avoid offering an early position that everyone else will unconsciously edit around.
 3. *Assign a rotating Devil's Advocate.* Give somebody responsibility for building the strongest case against the proposal, regardless of their personal view. Rotating the role prevents dissent from becoming one person's permanent job.
 4. *Run a pre-mortem.* Assume the decision failed badly twelve months from now and ask people to write down why before discussing answers. I have found that concerns are easier to raise when they arrive as part of the exercise rather than as an interruption to momentum.
