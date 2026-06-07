@@ -50,9 +50,7 @@ npm run serve               # uglify → jekyll build → pagefind → jekyll se
 
 Then open <http://localhost:4000>.
 
-On Windows PowerShell, run `npm.cmd run serve` instead of `npm run serve`.
-
-`npm run serve` does the full pipeline so local previews match production: uglify the JS, build the site, build the Pagefind search index against `_site/`, then start `jekyll serve --skip-initial-build`. The Pagefind index survives jekyll's watch-mode rebuilds because `_site/pagefind/` is in `keep_files`, so search keeps working as you edit content. If you make a structural change and want a fresh index, restart with `npm run serve` (or just run `npm run pagefind` in another terminal).
+`npm run serve` does the full pipeline so local previews match production: uglify the JS, build the site, build the Pagefind search index against `_site/`, then start `jekyll serve --skip-initial-build`. The workflow automatically uses `npm.cmd` and `bundle.bat` on Windows, and `npm` and `bundle` elsewhere. The Pagefind index survives jekyll's watch-mode rebuilds because `_site/pagefind/` is in `keep_files`, so search keeps working as you edit content. If you make a structural change and want a fresh index, restart with `npm run serve` (or just run `npm run pagefind` in another terminal).
 
 If you don't care about local search and want a faster loop, `bundle exec jekyll serve --livereload` still works on its own (use `bundle.bat exec jekyll serve --livereload` in PowerShell, assuming `scripts.min.js` is already built).
 
