@@ -35,7 +35,7 @@ The project shipped on the date everyone had circled. There was a launch channel
 
 A quarter later, two of the strongest engineers had left, a third had asked to move, and the people who stayed talked about the project the way you talk about an illness you have recovered from. We had delivered the thing. We had spent the team to do it, and nobody had put that cost on the same slide as the win.
 
-This was about five years ago, and I have turned it over many times since, because by the measures we used it still counts as a success. I keep arriving at the same answer. We had the right goals. We had them in the wrong order.
+This was several years ago, and I have turned it over many times since, because by the measures we used it still counts as a success. I keep arriving at the same answer: we had the right goals, we just had them in the wrong order.
 
 ## An old ordering of priorities
 
@@ -63,7 +63,11 @@ I made the related argument in [Senior engineers aren't a renewable resource]({{
 
 ## Why serving the team is the leadership, not a nicety
 
-The reason *man* sits at the top is not sentiment. It is that the leader's actual job, the thing that is left once you stop doing the work yourself, is to make the team able to do the work. The most useful sentence I have on this came from James as well: my job is not to deliver projects, but to deliver teams capable of delivering projects while growing their skills. The projects are the output. The team is the thing I am actually building, and a team that finishes each project a little more capable than it started is the only result that compounds.
+The reason *man* sits at the top is not sentiment. It is that the leader's actual job, the thing that is left once you stop doing the work yourself, is to make the team able to do the work. The most useful sentence I have on this came from James as well:
+
+> My job is not to deliver projects, but to deliver teams capable of delivering projects while growing their skills.
+ 
+The projects are the output. The team is the thing I am actually building, and a team that finishes each project a little more capable than it started is the only result that compounds.
 
 {% include link.html title="DeMarco and Lister's Peopleware" tag="peopleware" %} put it more bluntly than I can: *the manager's function is not to make people work, but to make it possible for people to work.* That sentence quietly inverts the instinct most new leaders arrive with. You are not there to extract output. You are there to remove the things that stop output from happening, and the people who produce it are the asset you are stewarding, not the lever you are pulling.
 
