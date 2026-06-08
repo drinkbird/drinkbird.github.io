@@ -24,26 +24,26 @@ reads:
   - managerspath
   - resilientmgmt
   - debuggingteams
+  - accelerate
   - managinghumans
   - effectiveengineer
   - executiveprimer
   - thinkinginsystems
-  - accelerate
 ---
 
 The project shipped on the date everyone had circled. There was a launch channel, a round of congratulations, a line in the next business review with my name near the top of it. By every measure the organization used to decide such things, it was a success.
 
 A quarter later, two of the strongest engineers had left, a third had asked to move, and the people who stayed talked about the project the way you talk about an illness you have recovered from. We had delivered the thing. We had spent the team to do it, and nobody had put that cost on the same slide as the win.
 
-I have been turning over why an outcome like that still gets counted as a success, and I keep arriving at the same answer. We had the right goals. We had them in the wrong order.
+This was about five years ago, and I have turned it over many times since, because by the measures we used it still counts as a success. I keep arriving at the same answer. We had the right goals. We had them in the wrong order.
 
 ## An old ordering of priorities
 
-There is an ordering of a leader's priorities, borrowed from the military and worn smooth by repetition, that I keep coming back to: *man, mission, me*.
+There is an ordering of a leader's priorities that I keep coming back to: *man, mission, me*. I learned it from James Broadhead, a mentor from earlier in my career, who had taken it in turn from the military, where it had been worn smooth by long repetition. He told me even then that the wording was of its era and might not travel well, and he was right about that. I have kept it as he gave it to me, because the meaning underneath has not aged a day. Read *man* as the people, all of them.
 
-The team comes first. Before anything ships, we make sure we work well together, that we help each other, that the person next to you trusts you to cover them and is willing to cover you. Once that holds, it lets us deliver. The mission comes second, and it comes *through* the team rather than instead of it. My own velocity, my recognition, my preferences about how the work should look, those come third. Last. As a consequence of the first two, never as the thing I optimize for directly.
+The team comes first. Before anything ships, we make sure we work well together, that we help each other, that the person next to you trusts you to cover them and is willing to cover you. Once that holds, it lets us deliver. The mission comes second, and it comes *through* the team rather than instead of it. My own velocity, my recognition, my preferences about how the work should look, those come third, last, as a consequence of the first two, and never as the thing I optimize for directly.
 
-That is the whole model. The reason it is worth a post is not the three items, which are unremarkable, but the order, which is the entire point. These are not three independent goals you balance against each other. They are a dependency chain. People enable the mission. The mission, accomplished well and repeatedly, earns the recognition. Recognition pursued on its own enables nothing. Reverse any link and the chain stops carrying load.
+That is the whole model. The reason it is worth a post is not the three items, which are unremarkable, but the order, which is the entire point. These are not three independent goals you balance against each other but a dependency chain. People enable the mission. The mission, accomplished well and repeatedly, earns the recognition. Recognition pursued on its own enables nothing. Reverse any link and the chain stops carrying load.
 
 ![three priorities stacked in order]({{ site.baseurl }}/images/man-mission-me-order.png)
 
@@ -53,7 +53,7 @@ I want to be precise about what this is not, because the soft reading is the wro
 
 The model is easiest to understand through its failure modes, because most of us have lived at least one of them.
 
-**Me first.** This is the version that is hardest to admit, because it rarely looks like selfishness from the inside. It looks like ambition, which the industry rewards. When recognition becomes the target rather than the byproduct, collaboration quietly turns into positioning. Decisions get made for how they will read rather than whether they are right. The work starts optimizing for the things that are visible to the people who hand out credit, and quality, which is mostly invisible until it fails, is the first thing traded away. I wrote in [The $2M bug that wasn't in the code]({{ site.baseurl }}/organizational-behavior/) about a project where the unspoken goal had shifted from solving the problem to leaving an architectural fingerprint on the company. That is *me first* wearing the costume of technical ambition. The project was namely delivered. It checked the boxes. It also accumulated two million dollars of organizational debt, because once the target is recognition, everything else becomes negotiable.
+**Me first.** This is the version that is hardest to admit, because it rarely looks like selfishness from the inside. It looks like ambition, which the industry rewards. When recognition becomes the target rather than the byproduct, collaboration quietly turns into positioning. Decisions get made for how they will read rather than whether they are right. The work starts optimizing for the things that are visible to the people who hand out credit, and quality, which is mostly invisible until it fails, is the first thing traded away. I wrote in [The $2M bug that wasn't in the code]({{ site.baseurl }}/organizational-behavior/) about a project where the unspoken goal had shifted from solving the problem to leaving an architectural fingerprint on the company. That is *me first* wearing the costume of technical ambition. The project was namely delivered and checked the boxes. It also accumulated two million dollars of organizational debt, because once the target is recognition, everything else becomes negotiable.
 
 **Mission first.** This is the respectable inversion, the one you can defend in any review, and it is the one I see most often in good leaders under pressure. Delivery goes above everything. The date is sacred, the scope holds, and the team absorbs the difference in evenings and weekends and quiet resentment. You can win this way, once. It is not worth much to win the battle if you are left with no team to fight the next one. It is not worth much to deliver a project if the people who delivered it walk away burned out or disgruntled, because the next project arrives with a thinner, more fragile team than the one you started with, and you have taught everyone watching that this is what success costs them here.
 
@@ -63,7 +63,7 @@ I made the related argument in [Senior engineers aren't a renewable resource]({{
 
 ## Why serving the team is the leadership, not a nicety
 
-The reason *man* sits at the top is not sentiment. It is that the leader's actual job, the thing that is left once you stop doing the work yourself, is to make the team able to do the work.
+The reason *man* sits at the top is not sentiment. It is that the leader's actual job, the thing that is left once you stop doing the work yourself, is to make the team able to do the work. The most useful sentence I have on this came from James as well: my job is not to deliver projects, but to deliver teams capable of delivering projects while growing their skills. The projects are the output. The team is the thing I am actually building, and a team that finishes each project a little more capable than it started is the only result that compounds.
 
 {% include link.html title="DeMarco and Lister's Peopleware" tag="peopleware" %} put it more bluntly than I can: *the manager's function is not to make people work, but to make it possible for people to work.* That sentence quietly inverts the instinct most new leaders arrive with. You are not there to extract output. You are there to remove the things that stop output from happening, and the people who produce it are the asset you are stewarding, not the lever you are pulling.
 
@@ -99,6 +99,6 @@ The argument is narrower and, I think, harder. Recognition cannot be the target.
 
 I have had the recognition. I have also had the quarter where the project shipped and the team did not survive it, and I know now which of those I would trade away to keep the other. The team accomplishes the mission. My job is to serve the team. Everything I want for myself sits behind both of those, and the day I put it in front, I should expect to be told, gently or otherwise, that I have stopped doing the job.
 
-Man, mission, me. The order is not a slogan. It is the job description.
+Man, mission, me. The order is not a slogan but the actual job description.
 
 Take care, Tasos.
