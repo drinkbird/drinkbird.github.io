@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Man, mission, me"
-excerpt: "An ordering of a leader's priorities. Serve the team first, deliver the mission through them, and let recognition arrive last as a side effect. Invert any of the three and you stop leading."
+excerpt: "A leader's priorities, in order: serve the team, deliver the mission through them, put yourself last. Invert any of the three and you stop leading."
 permalink: /man-mission-me/
 comments: true
 categories: blog
