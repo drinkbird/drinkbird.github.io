@@ -40,12 +40,21 @@ pagefind_ignore: true
           <a href="{{ site.baseurl }}/courses/{{ slug }}/" title="{{ course_index.title }}" data-course-card-title-link>
             {% if course_index.image %}
             {% if count <= 2 %}{% assign courseLoading = 'eager' %}{% else %}{% assign courseLoading = 'lazy' %}{% endif %}
+            {% assign _img1x = site.baseurl | append: "/images/" | append: course_index.image %}
+            {% assign _img2x = _img1x | replace: '-1x.', '-2x.' %}
             <figure class="course-card-feature">
-              <img src="{{ site.baseurl }}/images/{{ course_index.image }}" alt="{{ course_index.title }} feature image" class="img-responsive" width="710" height="360" loading="{{ courseLoading }}" decoding="async">
+              <img src="{{ _img1x }}" srcset="{{ _img1x }} 1x, {{ _img2x }} 2x" alt="{{ course_index.title }} feature image" class="img-responsive" width="710" height="360" loading="{{ courseLoading }}" decoding="async">
             </figure>
             {% endif %}
-            <h1>{{ course_index.title }}</h1>
+            <h1>{{ course_index.title }}{% if course_index.retired %} <span class="course-retired-badge">Retired</span>{% endif %}</h1>
           </a>
+          {% if course_index.retired %}
+          <p class="course-card-meta">
+            <span class="course-card-depth">Video</span>
+            {% if course_index.publisher %}<span>·</span><span>{{ course_index.publisher }}</span>{% endif %}
+            {% if course_index.released %}<span>·</span><span>{{ course_index.released | date: "%Y" }}</span>{% endif %}
+          </p>
+          {% else %}
           <p class="course-card-meta">
             {% if course_index.depth %}<span class="course-card-depth">{{ course_index.depth | capitalize }}</span><span>·</span>{% endif %}
             <span>{{ total_modules }} modules</span>
@@ -54,8 +63,10 @@ pagefind_ignore: true
             {% if course_index.time_budget %}<span>·</span><span>{{ course_index.time_budget }}</span>{% endif %}
           </p>
           {% if course_index.last_updated %}<p class="course-card-updated">Last updated on {{ course_index.last_updated | date: "%B %Y" }}</p>{% endif %}
+          {% endif %}
           {% if course_index.goal %}<p>{{ course_index.goal }}</p>{% endif %}
 
+          {% unless course_index.retired %}
           <div class="course-progress course-card-progress" data-course-card-progress hidden>
             <div class="course-progress-bar"><span class="course-progress-bar-fill" style="width: 0%"></span></div>
             <p class="course-progress-text">
@@ -63,6 +74,7 @@ pagefind_ignore: true
               <button type="button" class="course-card-reset" data-course-card-reset>Reset progress</button>
             </p>
           </div>
+          {% endunless %}
 
           <p class="course-card-cta">
             <a class="btn btn-info" href="{{ site.baseurl }}/courses/{{ slug }}/">Course overview</a>

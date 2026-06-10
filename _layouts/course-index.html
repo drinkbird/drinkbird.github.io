@@ -8,8 +8,10 @@ layout: default
 {% assign total_modules   = page.modules.size %}
 
 <div class="container course-layout">
-  <div class="course-layout-grid">
+  <div class="course-layout-grid{% if total_chapters > 0 %} course-layout-grid--with-sidebar{% endif %}">
+    {% if total_chapters > 0 %}
     {% include course-sidebar.html course_index=page chapter_pages=chapter_pages %}
+    {% endif %}
 
     <main class="course-main">
       <nav class="course-breadcrumbs" aria-label="Breadcrumb">
@@ -22,18 +24,31 @@ layout: default
                data-course-slug="{{ page.course_slug }}"
                data-course-card>
         {% if page.image %}
+        {% assign _img1x = site.baseurl | append: "/images/" | append: page.image %}
+        {% assign _img2x = _img1x | replace: '-1x.', '-2x.' %}
         <figure class="course-overview-feature">
-          <img src="{{ site.baseurl }}/images/{{ page.image }}" alt="{{ page.title }} feature image" class="img-responsive" width="710" height="360" loading="eager" decoding="async">
+          <img src="{{ _img1x }}" srcset="{{ _img1x }} 1x, {{ _img2x }} 2x" alt="{{ page.title }} feature image" class="img-responsive" width="710" height="360" loading="eager" decoding="async">
         </figure>
         {% endif %}
 
         <header class="course-overview-header">
+          {% if page.retired %}
+          <p class="course-overview-eyebrow">Video Course · {% if page.publisher %}{{ page.publisher }} · {% endif %}<span class="course-retired-badge">Retired</span></p>
+          {% else %}
           <p class="course-overview-eyebrow">Course · {{ page.depth | capitalize }}</p>
+          {% endif %}
           <h1 class="course-overview-title">{{ page.title }}</h1>
           {% if page.goal %}<p class="course-overview-goal">{{ page.goal }}</p>{% endif %}
           <div class="course-chapter-byline">
             {% include author-inline.html verb="Produced by" producer=page.producer %}
           </div>
+          {% if page.retired %}
+          <div class="course-overview-meta">
+            {% if page.released %}<span>Released {{ page.released | date: "%B %Y" }}</span>{% endif %}
+            {% if page.publisher %}<span>{{ page.publisher }}</span>{% endif %}
+            {% if page.github_url %}<span><a href="{{ page.github_url }}">Code on GitHub</a></span>{% endif %}
+          </div>
+          {% else %}
           <div class="course-overview-meta">
             <span><strong>{{ total_modules }}</strong> modules</span>
             <span><strong>{{ total_chapters }}</strong> chapters</span>
@@ -54,6 +69,7 @@ layout: default
             <a class="btn btn-info btn-lg" href="{{ site.baseurl }}{{ first_chapter.url }}" data-course-card-resume><span data-course-card-resume-label data-default-label="Start the course →">Start the course →</span></a>
           </p>
           {% endif %}
+          {% endif %}
         </header>
 
         <script type="application/json" data-course-card-data>{
@@ -63,12 +79,21 @@ layout: default
         }</script>
 
         <div class="course-content-body post-body">
+          {% if page.retired %}
+          <div class="course-retired-notice">
+            <strong>This course is retired.</strong> The content reflects the state of the platform at the time of release (October 2018) and is no longer actively maintained. The source code is still available on GitHub.
+          </div>
+          {% endif %}
+
           {{ content }}
 
+          {% unless page.retired %}
           <div class="course-overview-share">
             {% include social-share.html %}
           </div>
+          {% endunless %}
 
+          {% if total_modules > 0 %}
           <h2>What you'll learn, module by module</h2>
           <ol class="course-overview-modules">
             {% for module in page.modules %}
@@ -88,6 +113,7 @@ layout: default
             </li>
             {% endfor %}
           </ol>
+          {% endif %}
         </div>
 
         <footer class="post-footer">

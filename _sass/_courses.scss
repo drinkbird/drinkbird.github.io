@@ -27,9 +27,21 @@ $course-sidebar-border:#e3e6ea;
 		// `minmax(0, 1fr)` instead of `1fr` so long inline children (code lines,
 		// URLs, wide tables) can't force the column wider than its share — they
 		// scroll internally via their own overflow rules instead.
-		grid-template-columns: $course-sidebar-width minmax(0, 1fr);
+		grid-template-columns: minmax(0, 1fr);
 		gap: 0;
 		min-height: calc(100vh - 100px);
+	}
+}
+
+.course-layout-grid--with-sidebar {
+	@media (min-width: $screen-md-min) {
+		grid-template-columns: $course-sidebar-width minmax(0, 1fr);
+	}
+
+	.course-main {
+		@media (min-width: $screen-md-min) {
+			max-width: 880px;
+		}
 	}
 }
 
@@ -38,7 +50,6 @@ $course-sidebar-border:#e3e6ea;
 
 	@media (min-width: $screen-md-min) {
 		padding: 30px 40px 60px;
-		max-width: 880px;
 	}
 }
 
@@ -735,6 +746,32 @@ $course-sidebar-border:#e3e6ea;
 	.course-chapter-nav-next {
 		text-align: right;
 	}
+}
+
+/* Retired courses ------------------------------------------------------- */
+
+.course-retired-badge {
+	display: inline-block;
+	font-size: 10px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.07em;
+	padding: 2px 7px;
+	border-radius: 3px;
+	background: rgba($brand-danger, 0.12);
+	color: darken($brand-danger, 10%);
+	vertical-align: middle;
+	line-height: 1.6;
+}
+
+.course-retired-notice {
+	margin-bottom: 24px;
+	padding: 14px 18px;
+	background: rgba($brand-danger, 0.06);
+	border-left: 4px solid $brand-danger;
+	border-radius: 0 4px 4px 0;
+	font-size: 15px;
+	color: $gray-dark;
 }
 
 /* Top-level /courses/ index --------------------------------------------- */

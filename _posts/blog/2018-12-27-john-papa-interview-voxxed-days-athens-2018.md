@@ -140,7 +140,7 @@ John traditionally works with lots of different technologies, therefore I asked 
 
 John's advice made perfect sense to me, and I'm really thankful for our discussion, which you can also [watch on YouTube](https://www.youtube.com/watch?v=c2UZjZF6j0A).
 
-It also paid off really quickly. As a matter of fact, not long after the interview, I published my first [online video course]({{ site.baseurl }}/azure-java-microservices-video-course-packt/) about microservices, and I'm already planning some conference talks for next year. 
+It also paid off really quickly. As a matter of fact, not long after the interview, I published my first [online video course]({{ site.baseurl }}/courses/azure-java-microservices-video-course-packt/) about microservices, and I'm already planning some conference talks for next year. 
 
 At the same conference I also got to talk to [Venkat Subramaniam](https://twitter.com/venkat_s), [Ted Neward](https://twitter.com/tedneward), [Christina Aldan](https://twitter.com/luckygirliegirl) and more, but that's a story for another time.
 

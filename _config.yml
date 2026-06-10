@@ -93,7 +93,7 @@ owner:
 reads:
   azure-java-microservices:
     title: Microservices Development on Azure with Java [Video Course]
-    url: https://blog.drinkbird.com/azure-java-microservices-video-course-packt/
+    url: https://blog.drinkbird.com/courses/azure-java-microservices-video-course-packt/
     coverUrl: https://blog.drinkbird.com/images/azure-java-microservices-cover.jpg
   themythicalmanmonth:
     title: 'The Mythical Man-Month: Essays on Software Engineering, Anniversary Edition (2nd Edition)'
