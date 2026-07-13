@@ -154,7 +154,7 @@ Engineers who learn to read these signals contribute more effectively. It's a sk
 
 Almost every meeting ends with "let's follow up on that offline." Take this seriously. The follow-ups are where the actual coordination happens between the formal meeting moments.
 
-A useful practice: end each meeting with a clear list of follow-ups, each with an owner and a deadline. Track them through completion. Most meetings drift because the follow-ups go uncatalogued.
+A useful practice: end each meeting with a clear list of follow-ups, each with an owner and a deadline. Track them through completion. Most meetings drift because the follow-ups go uncataloged.
 
 ## Walkthrough
 

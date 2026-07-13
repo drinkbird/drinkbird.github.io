@@ -126,7 +126,7 @@ A common engineering frustration: "We're working on the right things, but the re
 
 ### The funnel as a feedback loop
 
-Every funnel stage produces information about earlier stages. If 90% of opps that include a security review fail at the SQL stage, marketing should pre-qualify on security maturity. If 60% of demos in a vertical lose to a specific competitor, product should look at differentiation in that vertical.
+Every funnel stage produces information about earlier stages. If 90% of opportunities that include a security review fail at the SQL stage, marketing should pre-qualify on security maturity. If 60% of demos in a vertical lose to a specific competitor, product should look at differentiation in that vertical.
 
 The information flow:
 
