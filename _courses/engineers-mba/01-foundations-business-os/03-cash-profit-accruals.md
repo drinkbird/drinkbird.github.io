@@ -30,7 +30,7 @@ For SaaS, this matters constantly. Suppose a customer signs a $1.2M annual contr
 
 Revenue is recognised *ratably* - earned across the period of service. The cash is in the bank from day one. The difference creates an entry called *deferred revenue* on the balance sheet: a liability that says "we owe this customer eleven more months of service we've already been paid for."
 
-Now flip it. The same customer signs a $1.2M annual contract on December 31st with [Net 60 payment terms](https://www.investopedia.com/terms/n/netdays.asp). The customer pays in two months but starts using the product immediately:
+Now flip it. The same customer signs a $1.2M annual contract on December 31st with [Net 60 payment terms](https://www.capitalone.com/learn-grow/business-resources/net-60/). The customer pays in two months but starts using the product immediately:
 
 | | Jan | Feb | Mar | ... | Dec | Total |
 |---|---|---|---|---|---|---|

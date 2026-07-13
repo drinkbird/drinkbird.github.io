@@ -14,7 +14,7 @@ chapter_summary: "Walks through the Amazon 6-pager and PRFAQ formats, the silent
 
 ## Concepts
 
-The investment-case memo from [Chapter 5.3](/courses/engineers-mba/05-capital-risk-decisions/03-investment-case/) is the short form. For larger bets - new products, major strategic shifts, multi-year platform investments - the canonical format is the *long memo*. The best-known instance is the [Amazon 6-pager](https://www.businessinsider.com/jeff-bezos-amazon-six-page-memo-meetings-2018-4).
+The investment-case memo from [Chapter 5.3](/courses/engineers-mba/05-capital-risk-decisions/03-investment-case/) is the short form. For larger bets - new products, major strategic shifts, multi-year platform investments - the canonical format is the *long memo*. The best-known instance is the [Amazon 6-pager](https://www.aboutamazon.com/news/company-news/2017-letter-to-shareholders).
 
 The 6-pager isn't six pages because of magic. It's six pages because (a) it's enough space to think rigorously about a real decision, (b) it's short enough that the audience will actually read it, (c) the constraint forces the writer to cut everything that isn't load-bearing. Companies that adopt it (Amazon, Stripe partially, Coinbase, many others) report that decision quality improves measurably.
 

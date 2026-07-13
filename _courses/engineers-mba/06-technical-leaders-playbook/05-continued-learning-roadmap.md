@@ -77,7 +77,7 @@ Stratechery alone is worth more than any single book on this list. Ben Thompson 
 If you commute or run, podcasts are an efficient way to absorb operator thinking.
 
 - **[Acquired](https://www.acquired.fm/)** - Deep-dive episodes (3-4 hours each) on individual company histories. Some of the highest-quality strategy content available.
-- **[Invest Like the Best](https://joincolossus.com/episodes)** - Patrick O'Shaughnessy interviews investors, operators, and thinkers. Strong for capital allocation.
+- **[Invest Like the Best](https://colossus.com/series/invest-like-the-best/)** - Patrick O'Shaughnessy interviews investors, operators, and thinkers. Strong for capital allocation.
 - **[Lenny's Podcast](https://www.lennysnewsletter.com/podcast)** - Product-management-focused interviews.
 - **[Founders](https://founders.simplecast.com/)** - Long biographical sketches of business leaders. Great for the historical context most operators miss.
 - **[The Twenty Minute VC](https://www.thetwentyminutevc.com/)** - Harry Stebbings; covers fundraising, growth, and the VC perspective.
@@ -104,7 +104,7 @@ For any company you work for or aspire to work for, read their last 10-K. You'll
 
 A few are essential reading:
 
-- **[Jeff Bezos' annual shareholder letters](https://www.aboutamazon.com/news/company-news/2023-letter-to-shareholders)** (1997-2020). The collected version is its own book ([*Invent and Wander* <small>(Amazon affiliate link)</small>](https://www.amazon.com/Invent-Wander-Collected-Writings-Introduction/dp/1647820715?tag=drin04-20)).
+- **[Jeff Bezos' annual shareholder letters](https://www.aboutamazon.com/about-us/shareholder-letters)** (1997-2020). The collected version is its own book ([*Invent and Wander* <small>(Amazon affiliate link)</small>](https://www.amazon.com/Invent-Wander-Collected-Writings-Introduction/dp/1647820715?tag=drin04-20)).
 - **[Buffett's letters](https://www.berkshirehathaway.com/letters/letters.html)** (1965-present). The capital-allocation master class.
 - **[Stripe's annual letters](https://stripe.com/annual-updates/2025)** (2019-present). Patrick Collison's writing is exceptional.
 
@@ -147,7 +147,7 @@ For honesty: this course is *introductory*. Deeper areas worth specialised study
 - **Sales and GTM.** [*The Challenger Sale* <small>(Amazon affiliate link)</small>](https://www.amazon.com/Challenger-Sale-Customer-Conversation-Control/dp/1591844355?tag=drin04-20) (Dixon & Adamson) for the sales-led motion.
 - **Finance and accounting.** Beyond Berman/Knight, [*Damodaran on Valuation* <small>(Amazon affiliate link)</small>](https://www.amazon.com/Damodaran-Valuation-Security-Analysis-Investment/dp/0471751219?tag=drin04-20) for the deep version.
 - **Macroeconomics and monetary policy.** [The Diff](https://www.thediff.co/) covers this regularly; classic books include [*Manias, Panics, and Crashes* <small>(Amazon affiliate link)</small>](https://www.amazon.com/Manias-Panics-Crashes-History-Financial/dp/0230365353?tag=drin04-20) (Kindleberger).
-- **Negotiation.** [*Getting to Yes* <small>(Amazon affiliate link)</small>](https://www.amazon.com/Getting-Yes-Negotiating-Agreement-Without/dp/0143118757?tag=drin04-20) (Fisher & Ury), [*Never Split the Difference* <small>(Amazon affiliate link)</small>](https://www.amazon.com/Never-Split-Difference-Chris-Voss/dp/B0GX6BSY1X?tag=drin04-20) (Voss).
+- **Negotiation.** [*Getting to Yes* <small>(Amazon affiliate link)</small>](https://www.amazon.com/Getting-Yes-Negotiating-Agreement-Without/dp/0143118757?tag=drin04-20) (Fisher & Ury), [*Never Split the Difference* <small>(Amazon affiliate link)</small>](https://www.amazon.com/Never-Split-Difference-Negotiating-Depended/dp/0062407805?tag=drin04-20) (Voss).
 
 ### One closing thought
 
