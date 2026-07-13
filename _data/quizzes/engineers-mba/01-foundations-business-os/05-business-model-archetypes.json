@@ -1,0 +1,41 @@
+{
+  "chapter_id": "engineers-mba/01-foundations-business-os/05-business-model-archetypes",
+  "questions": [
+    {
+      "id": 1,
+      "question": "A SaaS company reports 63% gross margin, 25% S&M as a percentage of revenue, and 125% net revenue retention. Which business model archetype is most consistent with this profile?",
+      "choices": [
+        "Pure subscription SaaS with an enterprise sales motion.",
+        "Usage-based / consumption (e.g. Snowflake-flavoured).",
+        "Marketplace with a take-rate model.",
+        "Transactional payments (e.g. Stripe-flavoured)."
+      ],
+      "correct": 1,
+      "explanation": "63% gross margin is below pure-SaaS range (70–85%) but above hardware/transactional (suggests usage-based COGS). 25% S&M is unusually low for SaaS because much expansion is automatic - customers' usage grows without negotiation. 125% NRR is the signature of usage-based expansion. These ratios collectively point to a consumption model."
+    },
+    {
+      "id": 2,
+      "question": "Why is the LTV concept misleading when applied to a usage-based / consumption business with NRR consistently above 100%?",
+      "choices": [
+        "Because consumption businesses don't have customers.",
+        "Because the standard LTV formula assumes steady-state ARPU; if ARPU grows over time (NRR > 100%), the formula either explodes toward infinity or understates the value depending on the assumption used.",
+        "Because LTV is only meaningful for hardware companies.",
+        "Because consumption businesses don't recognise revenue."
+      ],
+      "correct": 1,
+      "explanation": "LTV = (ARPU × margin) / churn assumes a customer pays the same ARPU forever. In a usage-based business with strong expansion, ARPU grows year-over-year. Applying the standard formula naively either treats this as 'negative churn' and explodes the LTV to infinity, or ignores expansion and severely undercounts it. Usage-based companies typically report 'net dollar retention' as the primary efficiency metric instead of LTV."
+    },
+    {
+      "id": 3,
+      "question": "A subscription SaaS company is considering moving to a usage-based pricing model. Which is the most likely *engineering-side* consequence the team should prepare for?",
+      "choices": [
+        "Reduced need for engineering staff overall.",
+        "Faster feature development.",
+        "Substantial investment in metering infrastructure (accurate, real-time usage capture and rating), plus increased focus on cost-per-unit since infrastructure cost now directly drives margin.",
+        "Migration to a different cloud provider."
+      ],
+      "correct": 2,
+      "explanation": "Usage-based billing requires precise, real-time metering - every API call, byte stored, or compute-second has to be captured, deduplicated, rated, and billed correctly. This is a non-trivial systems investment. Additionally, because COGS now scales with usage rather than being amortised across seats, infrastructure cost per unit becomes a first-order engineering concern. The model transition is multi-year for most companies."
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "chapter_id": "engineers-mba/03-markets-customers-gtm/03-pricing-and-packaging",
+  "questions": [
+    {
+      "id": 1,
+      "question": "A SaaS company decides to add usage-based pricing alongside its existing seat-based model. What engineering investment is most directly required?",
+      "choices": [
+        "More marketing pages.",
+        "Real-time, accurate metering of usage events (idempotent, deduplicated, attributable to the right account); a rating engine that converts usage to charges per the price sheet; plus billing aggregation and cost-control features (caps, alerts) to prevent customer sticker-shock.",
+        "A new front-end framework.",
+        "Migration of all customers to a new CRM."
+      ],
+      "correct": 1,
+      "explanation": "Usage-based pricing is a deep engineering commitment. You need every billable event captured exactly once, attributed to the right account, rated per pricing rules, aggregated for billing, with cost-control surfaces so customers don't get $50k surprise bills. Companies routinely underestimate this work by 2-3x. The pricing page can be updated in an afternoon; the metering and rating infrastructure is a multi-quarter project."
+    },
+    {
+      "id": 2,
+      "question": "Why does B2B SaaS pricing typically use three tiers with feature differentiation rather than a single tier with simple seat-based pricing?",
+      "choices": [
+        "Three is a marketing-conventional number.",
+        "Price discrimination - different customer segments have different willingness-to-pay for the same underlying capability. By bundling features that enterprise customers genuinely require (SSO, audit logs, advanced RBAC) into a higher tier, the company charges more to larger customers without changing the list price for the same feature.",
+        "Engineering can only build three tiers.",
+        "Customers demand three tiers."
+      ],
+      "correct": 1,
+      "explanation": "Tiering implements price discrimination. Enterprise customers need SSO/SAML, audit logs, and advanced security; SMBs don't. By packaging those features into a top tier, the company captures more revenue from customers with higher WTP (enterprise) while not pricing out customers with lower WTP (SMB). Customer perception of fairness requires *different bundles*, not the same bundle at different prices. Three tiers is canonical because it gives a 'just right' middle option (Goldilocks) that most paying customers select."
+    },
+    {
+      "id": 3,
+      "question": "An engineering team is asked to ship a free tier 'with limits' in two weeks. What's the most important non-obvious risk?",
+      "choices": [
+        "Free tier customers might be unhappy.",
+        "Without race-free, enforceable, code-level limit enforcement (not just a UI banner), the free tier rapidly becomes the de facto product as customers find ways to use it for full workloads - destroying paid conversion and creating a long-tail of free abusers.",
+        "Marketing won't have time to update the page.",
+        "Customers will demand annual contracts."
+      ],
+      "correct": 1,
+      "explanation": "A free tier is an architectural commitment, not a marketing choice. Limits must be enforced at the code level - atomic counters, server-side validation, race-resistant rate limiting. A UI-only enforcement gets bypassed via API in days. The downstream effect is cumulative: free becomes the de facto product, paid conversion drops, and S&M ROI collapses. Companies routinely underestimate the engineering work to make a free tier *actually free* rather than *promised free*."
+    }
+  ]
+}

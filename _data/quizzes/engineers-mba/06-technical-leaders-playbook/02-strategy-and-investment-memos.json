@@ -1,0 +1,41 @@
+{
+  "chapter_id": "engineers-mba/06-technical-leaders-playbook/02-strategy-and-investment-memos",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Why does Amazon's 6-pager meeting format begin with 20-30 minutes of silent reading?",
+      "choices": [
+        "To save speaker preparation time.",
+        "To flip the dynamic that dominates most meetings, where whoever speaks fastest and loudest controls the discussion. With silent reading, everyone arrives at the discussion having engaged with the same content; junior contributors can ask grounded questions; senior contributors can't dominate by reciting from memory. The conversation is grounded in the memo, not in opinions formed before the memo existed.",
+        "Because Amazon's offices are noisy.",
+        "Because writing is more efficient than speaking."
+      ],
+      "correct": 1,
+      "explanation": "The silent-read is the most underrated component of the 6-pager format. It ensures everyone in the meeting has actually engaged with the proposal before discussion. Without it, the discussion would be dominated by whoever read the memo (sometimes only the author) or by whoever speaks fastest. With it, the discussion is grounded in the document - and the document becomes the shared reference rather than people's pre-existing opinions. Most companies that try the format find this single discipline transforms decision quality."
+    },
+    {
+      "id": 2,
+      "question": "Which section of a 6-pager is most often under-invested but adds the most value?",
+      "choices": [
+        "The cover page.",
+        "The Appendix FAQ - the section anticipating hard questions and answering them in writing. A strong FAQ converts a 90-minute discussion into 30 minutes because the obvious questions are already addressed. It also forces the writer to engage with the proposal's weaknesses before the audience does, which strengthens the proposal overall.",
+        "The cost section.",
+        "The proposal section."
+      ],
+      "correct": 1,
+      "explanation": "The FAQ is the highest-leverage section because (a) it converts meeting time from clarification to substantive discussion, (b) it forces the author to anticipate hard questions and address them before pushback, and (c) it builds credibility - a strong FAQ signals 'we've thought hard about this' more than any other section. Most first-time 6-pager writers under-invest here, leading to meetings that get bogged down in basic clarification. The FAQ should be the longest single section, often 1-2 pages of 6-8 total."
+    },
+    {
+      "id": 3,
+      "question": "When is a deck more appropriate than a memo for a decision?",
+      "choices": [
+        "Always - decks are easier to skim.",
+        "Decks are stronger for *communication* (presenting a finalized story to a broad audience with visual elements). Memos are stronger for *decision-making* (a critical, time-constrained reader forming an independent opinion). Some companies use both: a memo to decide, a deck to communicate the decision afterward.",
+        "Memos are obsolete; always use decks.",
+        "Whichever is shorter."
+      ],
+      "correct": 1,
+      "explanation": "The distinction tracks audience and purpose. Decks excel at presenting a finalised story with visual elements live, on stage, to a broad audience. Memos excel at forcing a critical reader to engage with complete arguments and form an independent assessment - the format prevents hiding weak reasoning behind bullet points. The Amazon convention pushes decision-making into memos; communication afterward often uses decks. Choosing the format is itself a decision: ask 'is this for decision or communication?'"
+    }
+  ]
+}

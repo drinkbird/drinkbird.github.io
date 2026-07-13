@@ -1,0 +1,41 @@
+{
+  "chapter_id": "engineers-mba/02-strategy/04-build-buy-partner",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Stripe acquired Paystack and preserved Paystack's brand, leadership, and product autonomy. Atlassian acquired Trello and similarly kept it as a separate product. What does this pattern suggest about M&A success?",
+      "choices": [
+        "It's easier to leave acquired products alone than to integrate them.",
+        "When the value of an acquisition depends on culture, brand, or a distinct product DNA, preserving autonomy for an extended period is often the difference between value creation and destruction. Forced integration is the most common failure mode.",
+        "Acquired companies should always rebrand immediately.",
+        "Acquisitions only succeed in payments or project management."
+      ],
+      "correct": 1,
+      "explanation": "The acquired company's value usually depends on factors that integration can break: founder presence, distinct culture, beloved brand, autonomous roadmap. McKinsey-flavoured post-mortems on hundreds of deals consistently find that successful acquisitions preserve autonomy longer than feels comfortable. The Yahoo-era pattern of buy-and-fold is the classic value destroyer."
+    },
+    {
+      "id": 2,
+      "question": "An engineering team frames a strategic capability gap as 'we could build this in 12 months for $5M, vs. a partner option at $300k/year.' Why is the engineering team's framing likely incomplete?",
+      "choices": [
+        "The build estimate is too optimistic.",
+        "It omits time-to-market opportunity cost - 12 months of customers going elsewhere, of being absent from RFPs, of competitive positioning lost - which often dwarfs the dollar-cost of building or partnering.",
+        "The partner cost is unrealistic.",
+        "Engineering teams should not estimate."
+      ],
+      "correct": 1,
+      "explanation": "Engineers reflexively compute build cost as engineering salaries × months. The strategic question includes: what does the customer base look like 12 months from now if we ship vs don't ship? What deals close or don't close because we lack this capability? What does the competitive landscape look like? Once those factors are included, the partner option that gets you to market in 2 months is often dramatically cheaper than the build option even when annualised licensing exceeds the salary equivalent."
+    },
+    {
+      "id": 3,
+      "question": "Which acquisition rationale most cleanly applies to Microsoft's purchase of GitHub in 2018?",
+      "choices": [
+        "Defensive - to prevent GitHub from becoming a competitor.",
+        "Capability acquisition - buying the developer community, developer tools brand, and product surface area that Microsoft could not reasonably build organically in the relevant timeframe.",
+        "Time-to-market - GitHub had a feature Microsoft urgently needed in months.",
+        "Talent acqui-hire - Microsoft wanted GitHub's engineers."
+      ],
+      "correct": 1,
+      "explanation": "Microsoft could not have built GitHub's developer community or brand position organically - these assets are *capabilities* that took GitHub a decade to accumulate and were not for sale individually. The acquisition was about getting the capability (community + brand + product) intact. Time-to-market and defensive considerations contributed, but the dominant rationale was capability acquisition. The preservation of GitHub's autonomy under Nat Friedman and later leadership reflects the importance of keeping that capability intact post-deal."
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "chapter_id": "engineers-mba/06-technical-leaders-playbook/05-continued-learning-roadmap",
+  "questions": [
+    {
+      "id": 1,
+      "question": "An engineer wants to deepen their understanding of moats and competitive advantage beyond what this course covered. Which book is the most direct modern follow-up?",
+      "choices": [
+        "Zero to One - Peter Thiel.",
+        "7 Powers by Hamilton Helmer - short, dense, and the modern canonical treatment of moats. Builds on Porter's foundational work but updated for software-era examples and competitive dynamics.",
+        "The Lean Startup - Eric Ries.",
+        "Atomic Habits - James Clear."
+      ],
+      "correct": 1,
+      "explanation": "Hamilton Helmer's 7 Powers (2016) is the most directly relevant follow-up to the moats material in this course. It's short (200 pages), dense, and exceptionally well-structured. It covers the seven structural powers (scale economies, network effects, switching costs, cornered resource, counter-positioning, process power, branding) with software-era examples. Porter's Competitive Strategy is the foundational work; 7 Powers is the modern compact version that builds on it."
+    },
+    {
+      "id": 2,
+      "question": "Why are public-company S-1 filings (and 10-Ks, 10-Qs) considered some of the highest-quality, lowest-cost business education available?",
+      "choices": [
+        "They're famous.",
+        "They're audited, legally binding 200-400 page documents that lay out the business, financials, strategy, risks, and capital structure in detail - signed by executives and verifiable. They're free to access via SEC EDGAR. Reading 3-4 S-1s from companies in your space teaches more about how those businesses actually run than any internal company document.",
+        "They're easy to read.",
+        "They contain trade secrets."
+      ],
+      "correct": 1,
+      "explanation": "S-1s and 10-Ks are required disclosure documents - every claim, number, and risk factor is legally signed off. They contain extensive MD&A (Management Discussion and Analysis) where executives explain results in their own words. They're free at sec.gov. Almost no engineer reads them, which is unfortunate because they offer the single highest-quality business education available - and one well-spent afternoon with a relevant S-1 builds intuition that's hard to acquire any other way."
+    },
+    {
+      "id": 3,
+      "question": "An engineer who completes this course wants to build a sustainable learning cadence. Which structure is most likely to produce long-term compounding benefit?",
+      "choices": [
+        "Read 30 books in the next 3 months, then stop.",
+        "A consistent monthly cadence: 1 canonical book per month, weekly newsletter (Stratechery), 1 podcast episode per commute, quarterly reading of S-1s/letters. After 2 years, you'll have absorbed 20+ canonical books, hundreds of newsletters, and several S-1s - and the strategic vocabulary and frameworks will feel natural in conversation.",
+        "Watch 10 YouTube videos per week.",
+        "Take another course."
+      ],
+      "correct": 1,
+      "explanation": "The compounding benefit of a sustained learning cadence is dramatic, while burst-reading produces little durable benefit. The practical structure: 1 canonical book per month, daily/weekly newsletter reading (Stratechery is the highest-leverage), podcast on commute, quarterly S-1/shareholder-letter reading. Over 2 years, this produces both depth (20+ canonical books) and breadth (newsletters, podcasts, primary-source filings). The vocabulary, frameworks, and intuitions accumulate; strategic conversations that used to feel foreign become legible. Start small; build the habit."
+    }
+  ]
+}

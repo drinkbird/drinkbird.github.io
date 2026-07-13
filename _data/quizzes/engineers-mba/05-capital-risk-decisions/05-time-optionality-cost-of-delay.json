@@ -1,0 +1,41 @@
+{
+  "chapter_id": "engineers-mba/05-capital-risk-decisions/05-time-optionality-cost-of-delay",
+  "questions": [
+    {
+      "id": 1,
+      "question": "An engineering team is deliberating between two SaaS vendors for two weeks. Both meet requirements; switching cost between them is moderate. How should this decision be characterized using Bezos' framework?",
+      "choices": [
+        "One-way door - vendor selection is permanent.",
+        "Two-way door - both options can be switched to the other with moderate cost. Treating it as a one-way door (slow deliberation) imposes the cost of delay (typically project blocks, idle time, slipped commitments) without compensating decision-quality improvement. A senior engineer should make this call quickly and unwind if wrong.",
+        "Two-way door but only if the team is small.",
+        "It's not a real decision."
+      ],
+      "correct": 1,
+      "explanation": "Bezos' insight: most decisions are two-way doors but get treated as one-way doors, slowing the team without improving outcomes. Vendor selection where both options work and switching is doable is a textbook two-way door. The cost of two weeks of deliberation (project blocks, slipped commitments, decision fatigue) usually exceeds the marginal decision quality gained from extra analysis. Make the call fast; unwind if wrong."
+    },
+    {
+      "id": 2,
+      "question": "A project worth $4M/year is delayed by one quarter due to analysis-paralysis on a moderate technical decision. What's the approximate cost of delay?",
+      "choices": [
+        "Zero - delay doesn't cost anything if the project eventually ships.",
+        "Roughly $1M of direct revenue (one quarter at $4M/year run-rate), plus opportunity cost of resources idling, plus competitive risk if a rival ships during the delay, plus strategic positioning lost. Cost of delay is often the *largest* single factor in project economics and is routinely under-measured.",
+        "Just the engineering salaries during the delay period.",
+        "About $100k."
+      ],
+      "correct": 1,
+      "explanation": "Cost of delay = expected revenue impact during delay + idle resource cost + competitive entry risk + strategic positioning loss. For a $4M/year project, a one-quarter delay costs ~$1M of direct revenue alone - usually 10-100x more than the 'cost' of the engineering decision being deliberated. Most organizations don't track cost of delay explicitly, which is why projects routinely slip without anyone framing the economic impact. Reinertsen's Principles of Product Development Flow is the canonical treatment."
+    },
+    {
+      "id": 3,
+      "question": "An engineering team builds an abstraction layer to keep the code portable across cloud providers, in case they need to switch. Years pass; they never switch. How should the abstraction be evaluated?",
+      "choices": [
+        "It was a great decision - optionality is always worth it.",
+        "Real options thinking justifies the abstraction only if the *probability of exercising* the option exceeded the cost of building and maintaining it. If the switch never happens (and was unlikely from the start), the abstraction's value was lower than its cost - paid for optionality that didn't pay off. Optionality is valuable but not free; pay for it when the option is likely to be exercised.",
+        "Cloud abstractions are always required.",
+        "Switch immediately."
+      ],
+      "correct": 1,
+      "explanation": "Real-options thinking can justify deferring or hedging decisions - but optionality has cost (engineering complexity, performance overhead, ongoing maintenance). The value of optionality is roughly the probability of exercising the option × the value of exercising. If probability is low and the abstraction is expensive, the option costs more than it's worth. Multi-cloud abstractions, vendor-portability layers, and similar 'just in case' investments need a real probability story; otherwise they're paid optionality with no expected payoff."
+    }
+  ]
+}

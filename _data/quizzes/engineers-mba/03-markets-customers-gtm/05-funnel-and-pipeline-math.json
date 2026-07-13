@@ -1,0 +1,41 @@
+{
+  "chapter_id": "engineers-mba/03-markets-customers-gtm/05-funnel-and-pipeline-math",
+  "questions": [
+    {
+      "id": 1,
+      "question": "A company has 100 open opportunities, $50k average ACV, 25% win rate, and 90-day sales cycles. What's the sales velocity?",
+      "choices": [
+        "$1.4M per day",
+        "~$14k per day, or roughly $1.25-1.3M per quarter from current opportunities",
+        "$250k per quarter",
+        "$5M per year"
+      ],
+      "correct": 1,
+      "explanation": "Sales Velocity = (Opportunities × ACV × Win Rate) / Sales Cycle = (100 × $50k × 0.25) / 90 = ~$14k per day. Over a 90-day quarter, that's ~$1.25-1.3M. The formula's value is in exposing the four levers: increasing any single one of (opportunity count, ACV, win rate) by 25%, or decreasing sales cycle by 25%, has the same impact on velocity. Engineers usually focus on win-rate via features; cycle-length is often the easier lever."
+    },
+    {
+      "id": 2,
+      "question": "A B2B SaaS company has pipeline coverage of 2.5x quota at quarter start. What's the practical implication?",
+      "choices": [
+        "Coverage is healthy; nothing to worry about.",
+        "Coverage is below the standard 3x minimum. Given typical conversion rates of ~30% from opportunity to closed-won, the company likely lacks enough pipeline to hit quota. The quarter is at risk before it starts, regardless of execution quality.",
+        "It means the company is over-investing in marketing.",
+        "Coverage ratios are made up; ignore them."
+      ],
+      "correct": 1,
+      "explanation": "The 3x coverage rule comes from typical conversion math: if your win rate at the opportunity stage is ~30%, you need at least $30M of pipeline to close $10M. Below 3x, the math doesn't add up - even perfect execution won't close enough. When coverage drops below 3x, sales scrambles to add pipeline, marketing gets pressured, and product gets pulled into 'ship something this week to unblock this deal.' Engineers feel this pressure through the chain quickly."
+    },
+    {
+      "id": 3,
+      "question": "An engineering team ships a major feature this quarter. Revenue doesn't change. Three months later, leadership questions whether the feature mattered. What's the most reasonable engineering response?",
+      "choices": [
+        "Admit the feature didn't work.",
+        "Point to *leading* indicators that the feature should have moved - signup activation, time-to-first-value, demo-request volume, deal velocity, win rate against named competitors - and show whether those moved. Revenue is a lagging indicator that typically takes 2-4 quarters to reflect product investments.",
+        "Claim the feature was about technical excellence and shouldn't be measured.",
+        "Suggest ripping the feature out."
+      ],
+      "correct": 1,
+      "explanation": "Engineering work primarily affects leading indicators - signup-to-activation, engagement depth, demo requests, win rate. Those move within weeks. Revenue is the lagging indicator that aggregates them, and it typically lags by 2-4 quarters. The mistake is to evaluate engineering on the lagging indicator at a 3-month interval. The correct pattern: identify the leading indicator the feature was *intended* to move, measure it, and use that to evaluate the work. If no leading indicator was named upfront, that's the deeper problem to fix going forward."
+    }
+  ]
+}

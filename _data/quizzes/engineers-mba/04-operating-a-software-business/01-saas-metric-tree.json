@@ -1,0 +1,41 @@
+{
+  "chapter_id": "engineers-mba/04-operating-a-software-business/01-saas-metric-tree",
+  "questions": [
+    {
+      "id": 1,
+      "question": "A SaaS company reports NRR of 130% and GRR of 88%. What does the combination tell you?",
+      "choices": [
+        "The company is failing to retain customers.",
+        "The company loses ~12% of last year's revenue to churn and contraction (GRR captures losses only, capped at 100%), but existing customers expand by ~42% net (the gap between GRR and NRR), so the expansion engine is exceptional but the underlying retention is mediocre - typical of usage-based businesses where high-growth accounts dominate.",
+        "GRR and NRR should be equal.",
+        "The metrics are gamed."
+      ],
+      "correct": 1,
+      "explanation": "GRR captures only losses (churn + contraction). NRR includes expansion. The gap (NRR − GRR) reveals the strength of the expansion engine. A 130/88 combination is common in usage-based businesses where a few large accounts grow rapidly while smaller ones churn. Either component alone is incomplete: NRR alone hides churn; GRR alone misses the growth engine. Both together give a structurally honest picture."
+    },
+    {
+      "id": 2,
+      "question": "A SaaS company has YoY revenue growth of 30%, GAAP operating margin of -15%. What's its Rule of 40 score, and what's the interpretation?",
+      "choices": [
+        "45 - excellent, growing fast.",
+        "15 - well below the 40 benchmark. Either growth needs to accelerate or burn needs to come down; the current combination doesn't justify the burn rate. Most public-company analyst notes flag this as a concern.",
+        "30 - fine because growth is strong.",
+        "Rule of 40 only applies to private companies."
+      ],
+      "correct": 1,
+      "explanation": "Rule of 40 = growth rate + operating margin = 30 + (-15) = 15. The Rule of 40 premise is that high growth justifies high burn, and high profitability justifies slower growth - but the *sum* should exceed 40. At 15, neither is high enough to justify the other. The corrective action is either to accelerate growth (hard) or cut burn dramatically (controllable) - usually both. Analysts use Rule of 40 to evaluate public SaaS companies in nearly every research note."
+    },
+    {
+      "id": 3,
+      "question": "An engineering team improves p99 latency from 2 seconds to 200ms. Six months later, leadership asks 'what did this do for the business?' Which SaaS metric is most likely to have moved measurably as a direct result?",
+      "choices": [
+        "Rule of 40 (it doesn't measure latency).",
+        "Net Revenue Retention (NRR) and Gross Revenue Retention (GRR) - better performance reduces churn risk and reduces contraction events from frustrated customers. Magic Number can also improve indirectly via shorter sales cycles.",
+        "Burn multiple.",
+        "ARR (latency doesn't affect revenue directly)."
+      ],
+      "correct": 1,
+      "explanation": "Latency improvements show up in retention metrics - customers don't downgrade or churn from products they're using and enjoying. NRR and GRR both improve via reduced contraction and churn. Indirect effects include better win rate (faster product wins demos) and shorter sales cycles (technical reviews go faster). The connection is real but slow - 2-4 quarter lag is typical, which is why engineering work should be evaluated on leading indicators (retention trend, churn cohort analysis) before the metric tree fully reflects it."
+    }
+  ]
+}

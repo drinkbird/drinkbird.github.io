@@ -1,0 +1,41 @@
+{
+  "chapter_id": "engineers-mba/04-operating-a-software-business/02-operating-cadence",
+  "questions": [
+    {
+      "id": 1,
+      "question": "An engineering team writes an OKR: 'Objective: Improve reliability. KR1: 99.95% uptime. KR2: Reduce incidents.' What's most likely wrong with this OKR?",
+      "choices": [
+        "The objective is too short.",
+        "These are steady-state KPIs disguised as OKRs - 99.95% uptime is an ongoing operational target, not a change goal with a baseline and a defined improvement. A real OKR would have specific baselines, specific targets, and represent a *change* the team is committed to driving (e.g. 'Reduce P0/P1 incidents from 2.3/month to <1/month').",
+        "OKRs must have exactly 3 key results.",
+        "Reliability is not measurable."
+      ],
+      "correct": 1,
+      "explanation": "The KPI/OKR distinction is foundational. KPIs are steady-state operational metrics with relatively stable targets ('we maintain 99.95% uptime'). OKRs are change goals: a baseline, a target, and a theory of how the change will happen. Writing KPIs as OKRs is the most common OKR failure mode - it produces 'OKR theater' where targets are met by definition because they're the operational baseline. A real OKR would have concrete numerical change from baseline."
+    },
+    {
+      "id": 2,
+      "question": "A senior engineer is invited to present at the upcoming QBR. The CTO says '5 minutes on what your team did this quarter.' Which is the most effective framing?",
+      "choices": [
+        "List shipped PRs, percent of tests fixed, services migrated.",
+        "Frame outcomes against business metrics - incident reduction → NRR contribution, SSO ship → unblocked enterprise pipeline, platform migration → next-quarter capability - and surface risks and asks in business terms.",
+        "Walk through architectural diagrams.",
+        "Apologize for what didn't ship."
+      ],
+      "correct": 1,
+      "explanation": "QBR audiences are cross-functional - sales, marketing, finance, customer success. They need engineering outcomes translated into business terms they understand. 'We reduced incidents 50%' is more useful when framed as '...which contributed to NRR uptick.' 'We shipped SSO' is more useful as '...which unblocked $4M of stalled enterprise pipeline.' The translation is the difference between engineering work being valued at the exec table and being invisible."
+    },
+    {
+      "id": 3,
+      "question": "When does engineering have the highest-leverage opportunity to shape what gets funded for the next 12 months?",
+      "choices": [
+        "In the weekly engineering standup.",
+        "During the Annual Operating Plan (AOP) cycle - typically September-November for January fiscal years - where headcount, budget, infrastructure capex, and strategic priorities are negotiated bottom-up and approved by the board. Once the AOP is set, course-correcting requires re-justifying changes against the agreed plan.",
+        "At the next all-hands.",
+        "During the quarterly board meeting."
+      ],
+      "correct": 1,
+      "explanation": "The AOP is the single biggest annual decision point. Headcount, budget, R&D allocation, and strategic priorities for the year are negotiated during this cycle. Once approved, changes require re-justifying against an agreed plan - which is much harder than shaping the plan in the first place. Engineers who only see the AOP as 'what we're given to work on' miss the most valuable opportunity to influence their own next 12 months. Active participation - drafts, asks, strategic bets - is where senior engineers add disproportionate value."
+    }
+  ]
+}

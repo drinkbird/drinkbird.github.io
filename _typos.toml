@@ -30,6 +30,11 @@ Skelton = "Skelton"
 # Ceaser is the deliberate name of a CSS easing tool by Matthew Lein
 # (matthewlein.com/ceaser/), not a misspelling of Caesar.
 Ceaser = "Ceaser"
+# Common business names and acronyms used throughout The Engineer's MBA.
+CMO = "CMO"
+Collison = "Collison"
+Feld = "Feld"
+Hashi = "Hashi"
 # "teh" appears in instructional course content as a literal example of
 # a common typo. The surrounding double quotes make typos's regex skip
 # fail because the example is unquoted code.

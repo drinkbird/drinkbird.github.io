@@ -1,0 +1,41 @@
+{
+  "chapter_id": "engineers-mba/05-capital-risk-decisions/04-risk-categories",
+  "questions": [
+    {
+      "id": 1,
+      "question": "A company spends $3M/year on its security team and tooling. Some executives question whether this is too much. How should the spend be evaluated economically?",
+      "choices": [
+        "$3M is high; cut it.",
+        "Run the EV math: a major breach typically costs $50-500M in legal, customer churn, and brand damage. Even at low annual probability (say 2-5%), expected annual loss is $1-25M - comparable to or exceeding the $3M mitigation. The asymmetry strongly favours over-investment in prevention, and most companies under-invest because mitigation costs are visible/ongoing while downside is invisible/possible.",
+        "Cybersecurity is a marketing expense.",
+        "Compare to other companies."
+      ],
+      "correct": 1,
+      "explanation": "Risk economics is structurally asymmetric. The annual cost of a security team and tooling is visible and bounded ($1-5M typical). The downside of a major breach (Equifax-class, Target-class) is $50-500M+ and frequently includes regulatory penalties, class-action settlements, customer churn, brand damage, and executive turnover. Even modest breach probabilities make the EV of investment overwhelmingly positive. The most expensive risk mistakes in tech history have mostly been under-investment in prevention because the downside felt distant."
+    },
+    {
+      "id": 2,
+      "question": "An engineering team has one engineer who's the only person who deeply understands the production database failover procedure. The engineer is well-compensated and engaged. Is this still a risk worth mitigating?",
+      "choices": [
+        "No - the engineer is happy.",
+        "Yes - key-person risk doesn't depend solely on the engineer's intent to stay. Health events, family circumstances, sudden recruiting offers, or burnout can all remove a critical person without notice. The cost of cross-training, documentation, and rotation is modest ($200k of investment); the cost of incident recovery without that knowledge is $1-5M and significant time-to-recovery. Mitigation is high-leverage.",
+        "Only if the engineer says they're leaving.",
+        "Document everything in Slack."
+      ],
+      "correct": 1,
+      "explanation": "Key-person risk is independent of intent. People leave or become unavailable for many reasons that don't show in current engagement signals: health events, family changes, sudden outside offers, burnout, retirement. The mitigation (cross-training, runbooks, rotation, periodic drills) is cheap compared to the recovery cost when the person becomes unavailable unexpectedly. 'He'd never leave' is one of the most expensive assumptions in operational risk management."
+    },
+    {
+      "id": 3,
+      "question": "Where does engineering typically have the most direct ownership in the risk register?",
+      "choices": [
+        "Only key-person risk for engineering teams.",
+        "Engineering is the *primary executor* of mitigation across most risk categories - security (auth, encryption, secrets, vuln management), regulatory (data deletion, consent, audit logs, region pinning), reputational (reliability, transparency, incident response), and key-person (cross-training, documentation). Legal/CFO/CISO set policy, but engineering implements.",
+        "Engineering owns nothing on the risk register; legal owns it.",
+        "Only outage risk."
+      ],
+      "correct": 1,
+      "explanation": "The risk register is typically owned by General Counsel and CFO at the policy level, but engineering executes the controls. Security risk → engineering builds encryption, auth, SDLC. Regulatory risk → engineering implements GDPR deletion, consent, data residency. Reputational risk → engineering owns reliability, performance, incident transparency. Key-person risk → engineering owns documentation, cross-training, rotation. Engineers who understand which of their team's work *also* counts as risk mitigation gain a much clearer picture of the team's strategic value."
+    }
+  ]
+}

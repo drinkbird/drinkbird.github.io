@@ -1,0 +1,41 @@
+{
+  "chapter_id": "engineers-mba/02-strategy/03-disruption-theory",
+  "questions": [
+    {
+      "id": 1,
+      "question": "An incumbent enterprise software vendor dismisses a new low-cost entrant whose product is missing 60% of the incumbent's features. The incumbent's largest customers don't want the entrant's product. Why is this dismissal often a critical strategic error per Christensen's theory?",
+      "choices": [
+        "Because new entrants always win.",
+        "Because disruptors usually start out worse than the incumbent on the dimensions existing customers care about - that's the *signature* of disruption, not evidence the threat is small. The relevant question is whether the entrant's rate of improvement exceeds the rate at which the incumbent's customers' needs grow.",
+        "Because feature counts don't matter.",
+        "Because customer dismissal is itself a positive signal."
+      ],
+      "correct": 1,
+      "explanation": "The whole point of disruption theory is that disruptors *start* inferior. The rational incumbent response - ignore the worse, lower-margin product - is exactly what makes them vulnerable. The diagnostic isn't feature count today; it's the rate of improvement relative to the rate at which existing customers' needs grow. If the curves cross, the incumbent's customers start defecting and the cost structure makes a response infeasible."
+    },
+    {
+      "id": 2,
+      "question": "Was the iPhone a 'disruptive innovation' in Christensen's strict sense?",
+      "choices": [
+        "Yes - it disrupted Nokia and BlackBerry.",
+        "No - it was a high-end *sustaining* innovation in a new category. It entered at the top of the market with higher prices, better margins, and a feature-rich product, which is the opposite of low-end disruption.",
+        "Yes - any product that destroys incumbents is disruptive.",
+        "It doesn't apply because Apple is American."
+      ],
+      "correct": 1,
+      "explanation": "The iPhone is the classic example of how the term 'disruptive' is overused. It entered at the high end with premium pricing - a sustaining innovation in the smartphone category, not a low-end or new-market disruptor in Christensen's sense. The fact that it destroyed incumbents doesn't make it a disruption per the theory's definition. This distinction matters because the strategic responses to sustaining vs disruptive threats are completely different."
+    },
+    {
+      "id": 3,
+      "question": "An incumbent decides to respond to a disruptor by launching a 'disruptor-class' product as a separate division within the existing company. What does Christensen's theory predict?",
+      "choices": [
+        "Success - the company has access to capital and brand.",
+        "Failure most of the time - the corporate parent's resource allocation, customer feedback loops, and cost structure tend to leak into the new division and pull it back toward sustaining innovation in the parent's market.",
+        "Indifference - internal vs spin-out doesn't matter.",
+        "Success only if the new division is in a different country."
+      ],
+      "correct": 1,
+      "explanation": "Christensen documented many incumbents who tried this. The corporate parent has many gravitational pulls: shared sales teams (who push the incumbent's high-margin products), shared engineering processes (optimised for the existing market), shared resource-allocation processes (which kill low-margin bets). The result is that the internal disruptor often gets pulled upmarket and loses the disruptor's economics. Successful responses usually require genuine independence - sometimes physical and legal separation."
+    }
+  ]
+}

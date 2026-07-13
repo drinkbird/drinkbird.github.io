@@ -1,0 +1,41 @@
+{
+  "chapter_id": "engineers-mba/03-markets-customers-gtm/01-icp-and-jtbd",
+  "questions": [
+    {
+      "id": 1,
+      "question": "A company's stated ICP is 'growing B2B SaaS companies.' What's the most important diagnostic question to ask?",
+      "choices": [
+        "How much marketing spend is allocated to this ICP?",
+        "Is this an *operational* ICP - narrow enough that the CEO and a junior salesperson can independently describe the same customer in a sentence, and the segment can be turned into a filterable list - or is it an aspirational slogan?",
+        "Are the customers in this ICP profitable?",
+        "What's the LTV?"
+      ],
+      "correct": 1,
+      "explanation": "An ICP needs three properties to be operational: (1) firmographic + technographic + behavioural criteria precise enough to filter a list, (2) diagnostic (where you actually win) rather than aspirational (where you wish you'd win), and (3) sharable - internally consistent so all functions optimise for the same customer. 'Growing B2B SaaS' fails all three; it's a slogan, not an ICP."
+    },
+    {
+      "id": 2,
+      "question": "What's the most important distinction between an ICP and a persona?",
+      "choices": [
+        "ICPs are larger than personas.",
+        "ICPs describe the *company* you sell to (firmographic, technographic, behavioural); personas describe *individual people* in the buying decision (economic buyer, technical buyer, champion, end user). A product can have one ICP and multiple personas simultaneously.",
+        "Personas are for marketing; ICPs are for sales.",
+        "ICPs are deprecated; personas are modern."
+      ],
+      "correct": 1,
+      "explanation": "Conflating these is a common, costly mistake. A B2B SaaS company has *one* ICP and *several* personas - a VP/CIO (economic), a director of platform (technical), a senior engineer (champion/user). Marketing targets the technical buyer and champion; sales handles the economic buyer; product designs for the end user. The ICP keeps everyone aligned on which *company* we're solving for; personas describe how to message each role."
+    },
+    {
+      "id": 3,
+      "question": "Why does the Jobs-to-be-Done framework tend to expose competitive threats that personas miss?",
+      "choices": [
+        "JTBD has more data.",
+        "Personas describe *demographics and roles* shared with competitors who serve the same persona. JTBD describes the *outcome* the customer is trying to achieve - and the competitive set expands to *every* product that achieves that outcome, including products in adjacent categories.",
+        "JTBD ignores buyer behaviour.",
+        "Personas only apply to consumer markets."
+      ],
+      "correct": 1,
+      "explanation": "A CRM and a workflow tool might serve identical personas (sales manager at mid-market SaaS) but be in different categories. If both perform the job 'free up time from manual pipeline data entry,' they're competing - even though personas wouldn't reveal it. JTBD's competitive frame is broader and more accurate because customers compare any candidate that performs the job, regardless of category. This is the same insight that drives Christensen's disruption framing."
+    }
+  ]
+}

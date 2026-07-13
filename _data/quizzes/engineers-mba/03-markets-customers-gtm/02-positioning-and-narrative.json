@@ -1,0 +1,41 @@
+{
+  "chapter_id": "engineers-mba/03-markets-customers-gtm/02-positioning-and-narrative",
+  "questions": [
+    {
+      "id": 1,
+      "question": "A product team writes a positioning statement that opens 'We are the leading X platform.' What's the most likely flaw using Dunford's positioning canvas?",
+      "choices": [
+        "The word 'leading' is illegal.",
+        "It skips the foundational step of identifying competitive *alternatives* - what the customer does today if they don't buy this product. Without that, the unique attributes, value, best-fit customer, and category claims are all unanchored.",
+        "Platform is too narrow a category.",
+        "X should be replaced by a brand name."
+      ],
+      "correct": 1,
+      "explanation": "Dunford's framework starts with competitive alternatives precisely because every other element depends on them. Without knowing what the customer currently does (spreadsheets, in-house build, do-nothing, named competitor), you can't define what's *unique* about your offering, what *value* it creates, who finds it valuable, or which category frame fits. 'The leading X platform' is the kind of statement that's true of every B2B SaaS company and informative of none."
+    },
+    {
+      "id": 2,
+      "question": "Engineering ships a public API with OAuth and webhooks. Marketing positions the product as 'enterprise-grade with strict access controls.' What does this inconsistency typically produce?",
+      "choices": [
+        "Customers ignore the API and the positioning works fine.",
+        "Confusion in the market and a positioning that reflects the engineering reality more than the marketing claim - customers experience the product, not the homepage, and 'platform with permissive integration' will be how the product gets known.",
+        "Higher conversion rates.",
+        "No effect, since marketing and engineering are independent."
+      ],
+      "correct": 1,
+      "explanation": "Engineering decisions silently encode positioning. A public API + OAuth + webhooks positions the product as a *platform* that participates in ecosystems. The marketing claim of strict access controls reads as inconsistent - and customers experience the product. When there's conflict between engineering reality and marketing rhetoric, the reality almost always wins because that's what customers actually use. Alignment between the two is one of the more under-managed product disciplines."
+    },
+    {
+      "id": 3,
+      "question": "A startup considers creating a new market category vs. reframing an existing one (e.g. Slack's 'channels for work' reframe vs. trying to coin a new category from scratch). Which is generally lower-risk and why?",
+      "choices": [
+        "Creating a new category - first-mover advantage.",
+        "Reframing an existing category - the customer already understands the base category and the reframe gives the product a defensible niche within it, without requiring market-education investment to teach customers a new word for a thing they didn't know existed.",
+        "They're equivalent.",
+        "Whichever has more keywords."
+      ],
+      "correct": 1,
+      "explanation": "Category creation requires market-education budget, sales-motion patience, and significant air-cover. Most attempts fail because customers won't pay for an 'unknown thing from a new vendor.' Reframing - taking an existing, understood category and giving it new boundaries (Slack: 'channels for work,' Datadog: 'observability' from 'monitoring') - leverages existing customer understanding while still creating differentiation. Reframing is usually the right play unless the existing categories genuinely don't describe what you do."
+    }
+  ]
+}

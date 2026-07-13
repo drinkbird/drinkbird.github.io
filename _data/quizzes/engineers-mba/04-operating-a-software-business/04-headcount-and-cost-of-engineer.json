@@ -1,0 +1,41 @@
+{
+  "chapter_id": "engineers-mba/04-operating-a-software-business/04-headcount-and-cost-of-engineer",
+  "questions": [
+    {
+      "id": 1,
+      "question": "An engineer with $200k base salary, $30k bonus, $80k equity grant, and standard benefits - what's the approximate fully-loaded annual cost to the company?",
+      "choices": [
+        "$200,000 - base salary is the relevant number.",
+        "About $400-450k - adding employer taxes, full benefits, allocated overhead (HR, IT, finance, recruiting, real estate), and a share of engineering management time pushes fully-loaded cost to roughly 1.5-2x the direct compensation.",
+        "About $310k - just direct comp.",
+        "$1M because of equity dilution."
+      ],
+      "correct": 1,
+      "explanation": "Fully-loaded cost includes the visible direct compensation (~$310k in this case) plus employer payroll taxes (~$18k), full benefits (health, 401k match, life, disability - ~$25-35k), and allocated overhead (HR, recruiting, IT, finance, real estate, plus a share of engineering management and tooling - ~$50-70k). The factor is typically 1.5-2x base comp. Engineers planning project costs almost always use comp instead of fully-loaded, which underestimates capital commitment by ~50%."
+    },
+    {
+      "id": 2,
+      "question": "A VP of Engineering says 'we'll hire 5 senior engineers to ship the feature by Q3.' Assuming a 16-week req-to-seated time and 4-month ramp, when are those hires actually productive?",
+      "choices": [
+        "Within 4 weeks.",
+        "Approximately 8 months from when reqs open - 4 months to seat (req → offer accepted → start), then ~4 more months until productive net-positive contribution. By that time, Q3 is past and the gap has compounded.",
+        "Immediately after onboarding.",
+        "In ~12 weeks total."
+      ],
+      "correct": 1,
+      "explanation": "Hiring senior engineers is a 6-9 month investment, not a quarterly fix. 12-20 weeks from req open to seated (depending on level and market), then 4-6 months until net-positive contribution. New senior engineers spend the early months learning systems and producing code that requires significant review and rework. 'We'll hire to fix this' is rarely a real plan for current-quarter problems - it's an investment in next year's capacity."
+    },
+    {
+      "id": 3,
+      "question": "An engineering team has 6 engineers. The manager budgets 100% of their time for the new feature roadmap. Why does this almost always fail?",
+      "choices": [
+        "Engineers should work less.",
+        "Capacity (the theoretical max) differs from velocity (sustained delivery) by 30-50% on most teams - time goes to on-call, support, bugs, meetings, hiring, mentoring, document writing. Budgeting at capacity guarantees over-commitment; budgeting at observed velocity with a 30-40% buffer for non-feature work matches reality.",
+        "Engineers refuse to work weekends.",
+        "The CEO will reject the plan."
+      ],
+      "correct": 1,
+      "explanation": "Capacity vs velocity confusion is the most common cause of engineering over-commitment. A team of 6 has theoretical capacity ~15,000 person-hours/year but observed velocity on feature work is typically 6,000-8,000. The rest is operational: on-call, support tickets, bugs, code reviews, meetings, hiring, mentoring, documentation. Planning at capacity guarantees a quarterly miss. The right pattern: plan at *observed* velocity, leave 30-40% buffer for non-feature work, and revisit assumptions if velocity changes."
+    }
+  ]
+}

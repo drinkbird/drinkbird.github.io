@@ -1,0 +1,41 @@
+{
+  "chapter_id": "engineers-mba/02-strategy/05-strategy-as-portfolio",
+  "questions": [
+    {
+      "id": 1,
+      "question": "A CFO insists every R&D project show a 24-month payback period. Why is this problematic when applied across the three horizons?",
+      "choices": [
+        "24 months is too short for any software work.",
+        "H1 (core) work can clear a 24-month payback bar, but H3 (transformative) bets - by definition uncertain, low-revenue, and long-horizon - cannot. Applying H1 ROI discipline to H3 systematically kills the long-term bets the company needs to seed its future H1.",
+        "Payback period is irrelevant in software.",
+        "CFOs should never set R&D criteria."
+      ],
+      "correct": 1,
+      "explanation": "Different horizons require different success metrics. H1 work is appropriately evaluated on revenue, margin, and payback. H3 should be evaluated on learning, validated assumptions, and risk-reduction. Forcing H3 to clear H1 ROI hurdles is the most common failure mode in large companies - it's why they consistently get out-innovated by startups whose investors apply venture-style metrics."
+    },
+    {
+      "id": 2,
+      "question": "An engineering team's roadmap consists of: reliability improvements, technical debt paydown, internal developer platform work, and new features for existing customers. What horizon mix is this?",
+      "choices": [
+        "Mostly H2 - the internal platform is innovative.",
+        "Almost entirely H1 - every item defends or extends the existing core business; none of it builds new markets, new customer segments, or genuinely new businesses.",
+        "Balanced across H1/H2/H3.",
+        "H3 - innovation in tooling is transformative."
+      ],
+      "correct": 1,
+      "explanation": "Engineering teams routinely classify internal platform work or rearchitecture as 'innovation' (H2/H3). It isn't - it's defending the core (H1). H1 work is essential and shouldn't be apologised for, but conflating it with H2/H3 hides the fact that the company has nothing in genuine new-business creation. Most engineering roadmaps are 95% H1, and the diagnostic worth running is whether *somewhere else* in the company someone is doing H2/H3 work."
+    },
+    {
+      "id": 3,
+      "question": "A company's earnings calls heavily emphasise H2/H3 initiatives, but its R&D spend, capex, and exec attention are 95% H1. How should you interpret this gap?",
+      "choices": [
+        "The company is being modest about its innovation work.",
+        "The H2/H3 narrative is mostly marketing - without resource allocation matching the rhetoric, the bets aren't real. This is a common warning sign that the company has rhetoric about innovation but is structurally trapped in core optimisation.",
+        "The company's accounting is unusual.",
+        "Earnings calls are unreliable signals."
+      ],
+      "correct": 1,
+      "explanation": "Resource flow is the audit on strategy rhetoric. A company can talk about transformation in every earnings call but if 95% of capital, engineering capacity, and executive time goes to the current core, the new bets aren't actually being made. This gap is one of the most useful diagnostic patterns in reading a company from the outside - and one of the most common warning signs for the inside."
+    }
+  ]
+}
