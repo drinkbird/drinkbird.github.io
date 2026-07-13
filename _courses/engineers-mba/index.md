@@ -1,6 +1,7 @@
 ---
 layout: course-index
 course_slug: engineers-mba
+course_order: 1
 permalink: /courses/engineers-mba/
 title: "The Engineer's MBA: Business fluency for technical leaders"
 image: engineers-mba.jpg

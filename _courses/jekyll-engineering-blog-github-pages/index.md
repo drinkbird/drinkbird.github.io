@@ -1,6 +1,7 @@
 ---
 layout: course-index
 course_slug: jekyll-engineering-blog-github-pages
+course_order: 2
 permalink: /courses/jekyll-engineering-blog-github-pages/
 title: "How to create an engineering blog with Jekyll and host it on GitHub Pages on a custom domain"
 image: course-jekyll.jpg

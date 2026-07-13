@@ -1,6 +1,7 @@
 ---
 layout: course-index
 course_slug: azure-java-microservices-video-course-packt
+course_order: 3
 permalink: /courses/azure-java-microservices-video-course-packt/
 title: "Microservices Development on Azure with Java"
 image: course-packt-java-azure-1x.jpg

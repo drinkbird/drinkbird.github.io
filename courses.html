@@ -22,7 +22,7 @@ pagefind_ignore: true
       </div>
     </div>
 
-    {% assign course_indexes = site.courses | where_exp: "p", "p.chapter_id == nil" | sort: "title" %}
+    {% assign course_indexes = site.courses | where_exp: "p", "p.chapter_id == nil" | sort: "course_order" %}
     {% assign count = 0 %}
     {% for course_index in course_indexes %}
       {% assign slug           = course_index.course_slug %}
