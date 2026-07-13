@@ -94,7 +94,7 @@ Recommended reading list:
 
 - [Snowflake S-1 (2020)](https://www.sec.gov/Archives/edgar/data/1640147/000119312520245725/d427360ds1.htm) - usage-based pricing strategy, NRR-led growth narrative.
 - [HashiCorp S-1 (2021)](https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001783029) - open-source-to-commercial business model.
-- [Stripe (not public yet, but their annual letters are public)](https://stripe.com/annual-updates).
+- [Stripe (not public yet, but their annual letters are public)](https://stripe.com/annual-updates/2025).
 - [Atlassian S-1 (2015)](https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001650372) - self-service/PLG enterprise narrative.
 - [GitLab S-1 (2021)](https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001653482) - open-source plus enterprise tier.
 
@@ -106,7 +106,7 @@ A few are essential reading:
 
 - **[Jeff Bezos' annual shareholder letters](https://www.aboutamazon.com/news/company-news/2023-letter-to-shareholders)** (1997-2020). The collected version is its own book ([*Invent and Wander* <small>(Amazon affiliate link)</small>](https://www.amazon.com/Invent-Wander-Collected-Writings-Introduction/dp/1647820715?tag=drin04-20)).
 - **[Buffett's letters](https://www.berkshirehathaway.com/letters/letters.html)** (1965-present). The capital-allocation master class.
-- **[Stripe's annual letters](https://stripe.com/annual-updates)** (2019-present). Patrick Collison's writing is exceptional.
+- **[Stripe's annual letters](https://stripe.com/annual-updates/2025)** (2019-present). Patrick Collison's writing is exceptional.
 
 Reading 5-10 of these gives you a feel for how operators think and communicate. The writing style alone is worth absorbing.
 
