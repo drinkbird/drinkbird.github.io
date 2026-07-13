@@ -92,7 +92,7 @@ Quarterly, public companies file [10-Qs](https://www.sec.gov/page/searchedgar-fo
 
 Recommended reading list:
 
-- [Snowflake S-1 (2020)](https://www.sec.gov/Archives/edgar/data/1640147/000119312520245725/d427360ds1.htm) - usage-based pricing strategy, NRR-led growth narrative.
+- [Snowflake S-1 (2020)](https://www.sec.gov/Archives/edgar/data/1640147/000162828020013010/snowflakes-1.htm) - usage-based pricing strategy, NRR-led growth narrative.
 - [HashiCorp S-1 (2021)](https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001783029) - open-source-to-commercial business model.
 - [Stripe (not public yet, but their annual letters are public)](https://stripe.com/annual-updates/2025).
 - [Atlassian S-1 (2015)](https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001650372) - self-service/PLG enterprise narrative.

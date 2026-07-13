@@ -213,7 +213,7 @@ flowchart LR
 ## Exercises
 
 1. For your own company (if private), find out the current valuation, the total preferred stack, and the size of the option pool. If you have options, compute the breakeven exit price (the price at which your options become worth exercising).
-2. Read a Form S-1 from a recent tech IPO ([Snowflake](https://www.sec.gov/Archives/edgar/data/1640147/000119312520245725/d427360ds1.htm), [HashiCorp](https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001783029), etc). Find the cap table section. Note the dilution pattern from seed to IPO, and the founder vs. employee vs. investor splits.
+2. Read a Form S-1 from a recent tech IPO ([Snowflake](https://www.sec.gov/Archives/edgar/data/1640147/000162828020013010/snowflakes-1.htm), [HashiCorp](https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001783029), etc). Find the cap table section. Note the dilution pattern from seed to IPO, and the founder vs. employee vs. investor splits.
 3. Pretend you've been offered a job at three companies - pre-PMF startup, Series B, and pre-IPO. For each, write down what you'd want to know before signing. The list is longer than most engineers realise.
 
 ## Recap & next

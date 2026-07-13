@@ -9,7 +9,7 @@ chapter_summary: "Distinguishes value creation from value capture and uses Coase
 ## What you'll learn
 - The difference between *value creation* and *value capture*, and why a great product can still be a bad business.
 - Why firms exist at all instead of every engineer being a freelance contractor - Coase's transaction-cost argument.
-- Where engineering work sits in the [value chain](https://hbr.org/1985/07/from-competitive-advantage-to-corporate-strategy) and why that position determines what your work is worth.
+- Where engineering work sits in the [value chain](https://hbr.org/1987/05/from-competitive-advantage-to-corporate-strategy) and why that position determines what your work is worth.
 - Why "we built the best product" is not a strategy and what the actual strategic levers are.
 
 ## Concepts
@@ -92,7 +92,7 @@ The loop closes. A firm that captures more than it spends compounds. A firm that
 
 1. Pick a product you use daily. Identify two activities in its value chain that *create* value for you. Identify one activity that exists primarily to *capture* value (a paywall, a tiering decision, a sales process). Notice that the third one is often invisible to engineers.
 2. Take a recent engineering project you led. Write one sentence describing the value *created* and one sentence describing how the firm *captures* it. If the second sentence is hard to write, that's information.
-3. Find a public S-1 (e.g. [Snowflake's](https://www.sec.gov/Archives/edgar/data/1640147/000119312520245725/d427360ds1.htm)) and identify the top three "risk factors" the company names. Almost all of them are about value capture, not value creation. Why?
+3. Find a public S-1 (e.g. [Snowflake's](https://www.sec.gov/Archives/edgar/data/1640147/000162828020013010/snowflakes-1.htm)) and identify the top three "risk factors" the company names. Almost all of them are about value capture, not value creation. Why?
 
 ## Recap & next
 
