@@ -123,7 +123,7 @@ The 2022-2024 era taught many companies that "single vendor is fine" was an unhe
 
 ### Build / buy / partner - revisited from the engineering side
 
-[Module 2 Chapter 4](../02-strategy/04-build-buy-partner.md) covered build/buy/partner at the strategic level (acquisitions, market entry). The engineering-level version is the same question for individual capabilities. The framework:
+[Module 2 Chapter 4](/courses/engineers-mba/02-strategy/04-build-buy-partner/) covered build/buy/partner at the strategic level (acquisitions, market entry). The engineering-level version is the same question for individual capabilities. The framework:
 
 | Capability type | Default choice |
 |---|---|

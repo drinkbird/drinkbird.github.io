@@ -14,7 +14,7 @@ chapter_summary: "Covers QBR mechanics, board-deck reading, the role of pre-meet
 
 ## Concepts
 
-[Module 4 Chapter 2](../04-operating-a-software-business/02-operating-cadence.md) introduced the operating cadence. This chapter goes deeper into the *mechanics* - the rhythm, etiquette, and unwritten rules of exec reviews.
+[Module 4 Chapter 2](/courses/engineers-mba/04-operating-a-software-business/02-operating-cadence/) introduced the operating cadence. This chapter goes deeper into the *mechanics* - the rhythm, etiquette, and unwritten rules of exec reviews.
 
 The reason it matters: most strategic decisions get made in these meetings or in the conversations that surround them. Engineers who can participate fluently extract disproportionate value for their teams and their careers. Engineers who can't either skip the meetings or attend them passively, missing the windows where their work could shape the strategy.
 

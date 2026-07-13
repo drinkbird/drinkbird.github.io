@@ -114,8 +114,8 @@ Public software companies are evaluated against rule of 40 in nearly every analy
 
 ### Other commonly-tracked metrics
 
-- **CAC payback period** - covered in [Module 1 Chapter 4](../01-foundations-business-os/04-unit-economics.md). Typically 12-24 months for healthy SaaS.
-- **Gross margin** - covered in [Module 1 Chapter 2](../01-foundations-business-os/02-reading-a-pnl.md). 70-85% for pure SaaS.
+- **CAC payback period** - covered in [Module 1 Chapter 4](/courses/engineers-mba/01-foundations-business-os/04-unit-economics/). Typically 12-24 months for healthy SaaS.
+- **Gross margin** - covered in [Module 1 Chapter 2](/courses/engineers-mba/01-foundations-business-os/02-reading-a-pnl/). 70-85% for pure SaaS.
 - **Sales productivity** - average ARR per quota-carrying rep per year. $1-2M for enterprise; $500k-$1M for mid-market.
 - **Free-to-paid conversion** (PLG only) - 1-5% of free signups become paying customers.
 - **Time to value** - minutes/hours/days from signup to first useful action. PLG companies obsess over this.

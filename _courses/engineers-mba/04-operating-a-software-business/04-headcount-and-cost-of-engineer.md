@@ -144,7 +144,7 @@ A worked headcount conversation. The CEO asks the VP Eng: "Can you ship the new 
 > Alternative options:
 > 1. Ship the analytics product Q4 next year with current team size (more realistic).
 > 2. Ship a minimum version Q3 this year with current team, full version a year later.
-> 3. Acquire a small analytics startup ($5-10M, see [Module 2 Chapter 4](../02-strategy/04-build-buy-partner.md)) - possibly faster to market.
+> 3. Acquire a small analytics startup ($5-10M, see [Module 2 Chapter 4](/courses/engineers-mba/02-strategy/04-build-buy-partner/)) - possibly faster to market.
 > 4. Pull from other product teams temporarily, accepting their roadmaps slip.
 >
 > My recommendation: option 2 (MVP Q3 + full Q3 next year). Option 3 is worth investigating in parallel."

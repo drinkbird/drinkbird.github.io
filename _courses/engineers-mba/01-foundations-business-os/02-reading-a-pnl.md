@@ -41,7 +41,7 @@ You read top-to-bottom. Each section answers one question.
 
 ### Revenue: what did customers pay us this period?
 
-For SaaS, this is almost always recognised *ratably* - a $120k annual contract becomes $10k of revenue each month, not a $120k spike at signing. The cash hit the bank account upfront; the *revenue* line on the P&L doesn't. This is why "ARR" (annualised run-rate revenue) and "revenue" can diverge sharply when a company is growing fast or signing long deals - more on that in [Cash, profit, accruals](./03-cash-profit-accruals.md).
+For SaaS, this is almost always recognised *ratably* - a $120k annual contract becomes $10k of revenue each month, not a $120k spike at signing. The cash hit the bank account upfront; the *revenue* line on the P&L doesn't. This is why "ARR" (annualised run-rate revenue) and "revenue" can diverge sharply when a company is growing fast or signing long deals - more on that in [Cash, profit, accruals](/courses/engineers-mba/01-foundations-business-os/03-cash-profit-accruals/).
 
 Read the year-over-year growth rate (typically shown alongside the absolute number). For B2B SaaS, the rough bar is: 100%+ is hypergrowth, 40–60% is solid growth-stage, 20–30% is late-stage but healthy, sub-20% with profitability is mature, sub-20% without profitability is a problem.
 
@@ -66,7 +66,7 @@ A SaaS company with 50% gross margin is doing something wrong, or isn't really S
 These are the costs of *growing* the business, not delivering what the customer already paid for. Public companies break them into three buckets:
 
 - **R&D (Research & Development)** - the salaries of engineers building new features, plus a slice of management, plus product/design. For most SaaS companies, R&D is 15–30% of revenue. Under-investing here is a slow death; over-investing without a clear product strategy burns cash.
-- **S&M (Sales & Marketing)** - sales team comp, ad spend, marketing programs, demand gen, partner programs. For SaaS, this is often the largest single line item - 30–50% of revenue is common at growth stage, and the line on which "is this company efficient?" is most often litigated. It encodes [CAC](./04-unit-economics.md): every dollar of S&M is buying some amount of new ARR.
+- **S&M (Sales & Marketing)** - sales team comp, ad spend, marketing programs, demand gen, partner programs. For SaaS, this is often the largest single line item - 30–50% of revenue is common at growth stage, and the line on which "is this company efficient?" is most often litigated. It encodes [CAC](/courses/engineers-mba/01-foundations-business-os/04-unit-economics/): every dollar of S&M is buying some amount of new ARR.
 - **G&A (General & Administrative)** - finance, HR, legal, the CEO's office, real estate. The "boring overhead." Typically 8–15% of revenue; if it's bigger than that, something is structurally off.
 
 ### Operating income, net income

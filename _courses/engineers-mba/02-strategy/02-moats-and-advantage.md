@@ -96,7 +96,7 @@ The corollary: the engineering work that *builds* moats is often less glamorous 
 
 ### How moats interact with Porter
 
-If [Porter Five Forces](./01-porters-five-forces.md) tells you the structural profitability of an industry, moats tell you whether your *firm* will sit above or below the industry average. A firm with multiple moats in a structurally attractive industry compounds - Visa, ASML, Stripe. A firm with no moat in a structurally unattractive industry is a slow death.
+If [Porter Five Forces](/courses/engineers-mba/02-strategy/01-porters-five-forces/) tells you the structural profitability of an industry, moats tell you whether your *firm* will sit above or below the industry average. A firm with multiple moats in a structurally attractive industry compounds - Visa, ASML, Stripe. A firm with no moat in a structurally unattractive industry is a slow death.
 
 ## Walkthrough
 

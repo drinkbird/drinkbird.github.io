@@ -59,7 +59,7 @@ Engineering at MBR: usually a slide on uptime, incident summary, and roadmap pro
 For private companies, the board meets quarterly. The board pre-read (a "board deck") goes out 5-7 days before the meeting. It covers:
 
 - CEO's strategic update
-- Financial performance (the metric tree from [Chapter 4.1](./01-saas-metric-tree.md))
+- Financial performance (the metric tree from [Chapter 4.1](/courses/engineers-mba/04-operating-a-software-business/01-saas-metric-tree/))
 - Functional updates (product, sales, marketing, customer success)
 - Major risks and asks
 - Specific board decisions required
@@ -143,7 +143,7 @@ Same work, completely different impact. The frame is:
 - Asks and risks in business terms, not technical terms
 - Calibrated to the audience's mental model
 
-This is the translation skill that [Module 6 Chapter 1](../06-technical-leaders-playbook/01-translating-engineering-to-business.md) covers in depth. It's the difference between engineering work being valued at the exec table and being invisible.
+This is the translation skill that [Module 6 Chapter 1](/courses/engineers-mba/06-technical-leaders-playbook/01-translating-engineering-to-business/) covers in depth. It's the difference between engineering work being valued at the exec table and being invisible.
 
 ## How it fits together
 

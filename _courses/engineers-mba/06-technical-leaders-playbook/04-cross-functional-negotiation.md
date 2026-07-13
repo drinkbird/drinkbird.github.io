@@ -52,12 +52,12 @@ Sales reps work on *quota* - a target for how much new ARR they need to close in
 Finance teams optimise for accurate forecasting, capital efficiency, and not surprising the board. Their incentives flow from the CFO down: hit the operating plan, beat consensus, manage cash.
 
 **Finance vocabulary:**
-- **Burn rate** / **runway** - covered in [Module 1 Chapter 3](../01-foundations-business-os/03-cash-profit-accruals.md).
+- **Burn rate** / **runway** - covered in [Module 1 Chapter 3](/courses/engineers-mba/01-foundations-business-os/03-cash-profit-accruals/).
 - **OpEx / CapEx** - operating expense vs. capital expense (different P&L treatment).
 - **FTE** - Full-Time Equivalent (1.0 FTE = one full-time employee).
 - **Headcount budget** - the plan for hiring; usually quarterly.
 - **Above plan / below plan** - variance to commitment.
-- **Magic number, burn multiple, rule of 40** - covered in [Module 4 Chapter 1](../04-operating-a-software-business/01-saas-metric-tree.md).
+- **Magic number, burn multiple, rule of 40** - covered in [Module 4 Chapter 1](/courses/engineers-mba/04-operating-a-software-business/01-saas-metric-tree/).
 
 **What finance is optimising for:**
 - Forecast accuracy (hitting commitments)
@@ -82,7 +82,7 @@ Product managers own the *what* and *why* of the roadmap; engineering owns the *
 
 **Product vocabulary:**
 - **PRD** - Product Requirements Document, the spec for a feature.
-- **OKR / KPI** - covered in [Module 4 Chapter 2](../04-operating-a-software-business/02-operating-cadence.md).
+- **OKR / KPI** - covered in [Module 4 Chapter 2](/courses/engineers-mba/04-operating-a-software-business/02-operating-cadence/).
 - **NSM** - North Star Metric, the single metric the product team optimises.
 - **Adoption / activation / engagement / retention** - funnel metrics for a feature.
 - **MVP / scope** - Minimum Viable Product; what's in vs. out.

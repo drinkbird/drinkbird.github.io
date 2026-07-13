@@ -92,7 +92,7 @@ Downside (20% prob): Win 1, deals delayed → $700k ARR. EV contribution: $140k
 Total expected value: ~$2.4M ARR
 ```
 
-Compare to the cost ($400-500k of engineering, see [Module 4 Chapter 4](../04-operating-a-software-business/04-headcount-and-cost-of-engineer.md)). EV/cost ratio of 5-6x is excellent. The proposal funds itself.
+Compare to the cost ($400-500k of engineering, see [Module 4 Chapter 4](/courses/engineers-mba/04-operating-a-software-business/04-headcount-and-cost-of-engineer/)). EV/cost ratio of 5-6x is excellent. The proposal funds itself.
 
 The discipline of writing down the scenarios is more valuable than the math. It surfaces what you're really betting on. If you can't construct a credible upside or downside, you don't understand the problem well enough.
 
@@ -100,7 +100,7 @@ The discipline of writing down the scenarios is more valuable than the math. It 
 
 Three components:
 
-- **Capital cost** - fully-loaded engineering cost, plus any vendor, infrastructure, or third-party costs. See [Module 4 Chapter 4](../04-operating-a-software-business/04-headcount-and-cost-of-engineer.md) for fully-loaded.
+- **Capital cost** - fully-loaded engineering cost, plus any vendor, infrastructure, or third-party costs. See [Module 4 Chapter 4](/courses/engineers-mba/04-operating-a-software-business/04-headcount-and-cost-of-engineer/) for fully-loaded.
 - **Time cost** - calendar time. "4 engineer-months" can mean 4 months × 1 engineer or 2 months × 2 engineers - different time-to-value.
 - **Opportunity cost** - what else those engineers won't do. Be specific.
 
@@ -149,7 +149,7 @@ The intensity of the memo should match the size of the ask.
 | < 1 engineer-month | Slack message, paragraph |
 | 1-3 engineer-months | 1-page memo |
 | 3-6 engineer-months | 2-3 page memo, includes the five sections |
-| 6+ engineer-months | Full memo, often a 6-pager (see [Module 6 Chapter 2](../06-technical-leaders-playbook/02-strategy-and-investment-memos.md)) |
+| 6+ engineer-months | Full memo, often a 6-pager (see [Module 6 Chapter 2](/courses/engineers-mba/06-technical-leaders-playbook/02-strategy-and-investment-memos/)) |
 | Strategic bets (multi-team, $5M+) | Full memo + verbal pitch + Q&A cycle |
 
 Over-investing in the memo for small asks looks weird; under-investing for big asks gets you rejected.

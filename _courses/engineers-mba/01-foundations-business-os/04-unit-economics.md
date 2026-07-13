@@ -53,7 +53,7 @@ The components:
 
 - **ARPU** - annual or monthly average revenue per customer. Watch which.
 - **Gross margin** - the LTV is in *gross-profit* dollars, not revenue dollars. A customer paying $10k with 80% gross margin contributes $8k gross profit per period. Some companies report "revenue LTV" without margin - that's the *most common* manipulation.
-- **Churn** - fraction of customers lost per period (more in [GRR/NRR](../04-operating-a-software-business/01-saas-metric-tree.md)). For B2B SaaS, annual logo churn of 5–7% is healthy, 7–10% is typical, 15%+ is concerning.
+- **Churn** - fraction of customers lost per period (more in [GRR/NRR](/courses/engineers-mba/04-operating-a-software-business/01-saas-metric-tree/)). For B2B SaaS, annual logo churn of 5–7% is healthy, 7–10% is typical, 15%+ is concerning.
 
 Quirks:
 
@@ -86,7 +86,7 @@ Logo churn = (Customers lost in period) / (Customers at start of period)
 Revenue churn = (Revenue lost in period from existing customers) / (Revenue at start)
 ```
 
-For B2B SaaS, the more meaningful metric is *gross revenue retention* (GRR, only counting losses) and *net revenue retention* (NRR, including expansion). We cover those in [the SaaS metric tree](../04-operating-a-software-business/01-saas-metric-tree.md). For unit economics, the key idea: low churn extends the LTV multiplier dramatically.
+For B2B SaaS, the more meaningful metric is *gross revenue retention* (GRR, only counting losses) and *net revenue retention* (NRR, including expansion). We cover those in [the SaaS metric tree](/courses/engineers-mba/04-operating-a-software-business/01-saas-metric-tree/). For unit economics, the key idea: low churn extends the LTV multiplier dramatically.
 
 A customer with 90% retention has an expected lifetime of 10 years (1 / 10% churn). At 80% retention, lifetime is 5 years. At 70%, 3.3 years. Tiny shifts in retention map to massive shifts in LTV.
 

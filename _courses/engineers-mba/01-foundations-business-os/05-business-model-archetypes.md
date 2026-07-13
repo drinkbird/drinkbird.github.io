@@ -22,7 +22,7 @@ The customer pays a recurring fee - monthly or annual - for ongoing access to th
 
 **Mechanics:**
 - Revenue is recurring and predictable. Annual contracts are the norm in B2B; monthly is common in SMB and consumer.
-- Revenue is recognised ratably across the service period (see [accruals](./03-cash-profit-accruals.md)).
+- Revenue is recognised ratably across the service period (see [accruals](/courses/engineers-mba/01-foundations-business-os/03-cash-profit-accruals/)).
 - Cash often comes upfront (annual billing) → deferred revenue → negative cash conversion cycle.
 - Gross margins are typically high (70–85%) because the marginal cost of an extra seat is small.
 
