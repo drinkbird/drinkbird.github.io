@@ -2,7 +2,7 @@
 title: High-Performing Engineering Organizations
 excerpt: "Curated reading on delivery, flow, and the systems that turn good engineers into a high-performing organization."
 date: 2015-08-07
-updated: 2026-05-26
+updated: 2026-11-12
 image:
     feature: books2.png
 spotlight: thephoenix
@@ -14,6 +14,7 @@ books:
     - accelerate
     - thephoenix
     - devops
+    - sre
     - teamtopologies
     - thegoal
     - thegoalgraphicnovel
