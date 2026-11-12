@@ -12,6 +12,33 @@ image:
 tags:
   - ai
   - leadership
+reads:
+  - madetostick-amazon
+  - thinkingfastandslow
+  - communicationforengineers
+  - onwritingwell-amazon
+  - thefearlessorg
+  - effectiveusecases
+  - userstoriesapplied
+  - pragmaticprogrammer
+  - apprenticeship
+  - debuggingteams
+  - radicalcandor
+  - crucialconversations
+  - creativityincbook
+  - multipliers
+  - turntheshiparound
+  - peopleware
+  - staffengineer
+  - toyotakata
+  - thinkinginsystems
+  - effectiveengineer
+  - teamtopologies
+  - managerspath
+  - resilientmgmt
+  - highoutputmgmt
+  - accelerate
+  - thegoal
 ---
 
 Three years ago I wrote about [the curse of knowledge](https://blog.drinkbird.com/the-curse-of-knowledge/), a cognitive bias that affects the way we communicate and work. Once we know something, we struggle to imagine not knowing it.
