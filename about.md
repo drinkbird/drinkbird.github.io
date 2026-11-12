@@ -10,7 +10,7 @@ image:
 
 ## Background
 
-I help engineers become leaders, without leaving the craft. I'm Tasos Piotopoulos, a Lead Software Engineer focused on building teams that deliver better software. My work blends hands-on coding, technical architecture and mentoring engineers so they can thrive in their craft and careers. Since 2005, I have worked in diverse industries, shaping systems and teams that create measurable business value while growing the people behind them.
+I help engineers become leaders, without leaving the craft. I'm Tasos Piotopoulos, a Senior Engineering Manager focused on building teams that deliver better software. My work blends hands-on coding, technical architecture and mentoring engineers so they can thrive in their craft and careers. Since 2005, I have worked in diverse industries, shaping systems and teams that create measurable business value while growing the people behind them.
 
 I have led engineering teams of different sizes and guided projects that generated or saved tens of millions of dollars for organizations from startups to Fortune 500 companies. My academic foundation includes a Master's in Software Engineering from University College Dublin, and I am currently pursuing an MBA at Frederick University Cyprus. This combination of technical and business studies helps me bridge engineering excellence with organizational impact.
 
@@ -116,7 +116,7 @@ Illustrations on this site are AI-generated, art-directed and curated by me.
 
 *For event organizers and podcast hosts, feel free to reuse this:*
 
-Tasos Piotopoulos is a Lead Software Engineer who helps teams excel technically and grow as leaders. Since 2005, he has delivered high-impact projects across multiple industries while mentoring engineers to reach their full potential. He holds a Master's in Software Engineering from University College Dublin and is currently pursuing an MBA at Frederick University Cyprus. He shares his insights through blogging, teaching, organizing meetups and public speaking.
+Tasos Piotopoulos is a Senior Engineering Manager who helps teams excel technically and grow as leaders. Since 2005, he has delivered high-impact projects across multiple industries while mentoring engineers to reach their full potential. He holds a Master's in Software Engineering from University College Dublin and is currently pursuing an MBA at Frederick University Cyprus. He shares his insights through blogging, teaching, organizing meetups and public speaking.
 
 Connect with Tasos on [drinkbird.com](https://blog.drinkbird.com) and [LinkedIn](https://linkedin.com/in/piotopoulos).
 

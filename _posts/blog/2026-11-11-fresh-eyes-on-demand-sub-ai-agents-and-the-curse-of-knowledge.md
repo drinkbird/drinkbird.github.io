@@ -107,6 +107,8 @@ Anthropic's engineers [described the same failure](https://www.anthropic.com/eng
 
 So the curse has not gone away, but it gets concentrated to one short artifact ("the handoff") and I think that is a real improvement. A bias that is spread across several conversations is materially invisible, but one sitting in a 12-line brief can be read, iterated and fixed.
 
+This is the [low-context communication](https://blog.drinkbird.com/the-curse-of-knowledge/) I argued for in the earlier post. The brief should make sense without the conversation behind it, and a fresh sub-agent lets us test whether it does.
+
 ### A few habits keep the brief clean:
 
 * Give the sub-agent only what the real audience will have.
@@ -126,4 +128,5 @@ By the way, none of that retires the advice from 2023. We have to close the gaps
 
 In that earlier post, I wrote about breaking the curse. I would put it more modestly now, as we cannot unhear the song, and no tool will change that. What has changed is that we can summon a listener whenever we want one, and that turns a bias we could only warn people about into one we can test for.
 
-Take care, Tasos.
+Take care,
+Tasos.
