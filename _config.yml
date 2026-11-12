@@ -137,12 +137,12 @@ reads:
     isbn: "0596517742"
   thebigswitch:
     title: The Big Switch
-    url: https://www.amazon.co.uk/dp/0393333949?tag=drin04-20
+    url: https://www.amazon.com/dp/039334522X?tag=drin04-20
     isbn: 039334522X
   refactoring:
-    title: 'Refactoring: Improving the Design of Existing Code (Object Technology Series)'
-    url: https://www.amazon.co.uk/dp/0201485672?tag=drin04-20
-    isbn: "0201485672"
+    title: 'Refactoring: Improving the Design of Existing Code (2nd Edition)'
+    url: https://www.amazon.com/dp/0134757599?tag=drin04-20
+    isbn: "0134757599"
   codecomplete:
     title: 'Code Complete: A Practical Handbook of Software Construction'
     url: https://www.amazon.co.uk/dp/0735619670?tag=drin04-20
@@ -150,6 +150,7 @@ reads:
   domaindrivendesign:
     title: 'Domain-Driven Design: Tackling Complexity in the Heart of Software'
     url: https://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215?tag=drin04-20
+    isbn: "0321125215"
     imgid: 81W--zzdAhL
   microservices:
     title: 'Microservices: Flexible Software Architecture'
@@ -180,13 +181,13 @@ reads:
     url: https://www.amazon.co.uk/dp/0131857258?tag=drin04-20
     isbn: "0131857258"
   steallikeanartist:
-    title: Steal Like An Artist
-    url: https://www.amazon.co.uk/dp/0761169253?tag=drin04-20
-    isbn: "0761169253"
+    title: 'Steal Like an Artist: 10th Anniversary Gift Edition with a New Afterword by the Author'
+    url: https://www.amazon.com/dp/1523516321?tag=drin04-20
+    isbn: "1523516321"
   cleancode:
-    title: 'Clean Code: A Handbook of Agile Software Craftsmanship'
-    url: https://www.amazon.co.uk/dp/0132350882?tag=drin04-20
-    isbn: "0132350882"
+    title: 'Clean Code: A Handbook of Agile Software Craftsmanship (2nd Edition)'
+    url: https://www.amazon.com/dp/0135398576?tag=drin04-20
+    isbn: "0135398576"
   keepgoing:
     title: Keep Going
     url: https://www.amazon.co.uk/Keep-Going-Austin-Kleon/dp/1523506644?tag=drin04-20
@@ -212,9 +213,9 @@ reads:
     url: https://www.amazon.co.uk/Writing-Well-30th-Anniversary-Nonfiction-ebook/dp/B0090RVGW0?tag=drin04-20
     isbn: B0090RVGW0
   interactiondesign:
-    title: Interaction Design
-    url: https://www.amazon.co.uk/dp/1119020751?tag=drin04-20
-    isbn: "1119020751"
+    title: 'Interaction Design: Beyond Human-Computer Interaction (6th Edition)'
+    url: https://www.amazon.com/dp/111990109X?tag=drin04-20
+    isbn: "111990109X"
   smartandgetsthingsdone:
     title: "Smart and Gets Things Done: Joel Spolsky's Concise Guide to Finding the Best Technical Talent"
     url: https://www.amazon.com/Smart-Gets-Things-Done-Technical/dp/1590598385?tag=drin04-20
@@ -232,9 +233,9 @@ reads:
     url: https://www.amazon.com/Writing-Effective-Cases-Alistair-Cockburn/dp/0201702258?tag=drin04-20
     isbn: "0201702258"
   thephoenix:
-    title: 'The Phoenix Project: A Novel about It, Devops, and Helping Your Business Win'
-    url: https://www.amazon.co.uk/Phoenix-Project-Devops-Helping-Business/dp/1942788290?tag=drin04-20
-    isbn: "1942788290"
+    title: 'The Phoenix Project: A Novel About IT, DevOps, and Helping Your Business Win (4th Edition)'
+    url: https://www.amazon.com/dp/1950508943?tag=drin04-20
+    isbn: "1950508943"
   userstoriesapplied:
     title: 'User Stories Applied: For Agile Software Development'
     url: https://www.amazon.com/User-Stories-Applied-Software-Development/dp/0321205685?tag=drin04-20
@@ -259,6 +260,12 @@ reads:
     title: 'Designing Data-Intensive Applications, 2nd Edition: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems'
     url: https://www.amazon.com/Designing-Data-Intensive-Applications-Reliable-Maintainable/dp/1098119061?tag=drin04-20
     isbn: "1098119061"
+  sre:
+    title: 'Site Reliability Engineering: How Google Runs Production Systems (2nd Edition)'
+    # This 979 ISBN has no ISBN-10; Amazon uses a separate ASIN.
+    url: https://www.amazon.com/dp/B0GTYSKFKY?tag=drin04-20
+    isbn: "9798341607682"
+    imgid: 81BprwGZPKL
   learnazure:
     title: Learning Microsoft Azure
     url: https://www.amazon.co.uk/dp/1782173374?tag=drin04-20
@@ -286,6 +293,7 @@ reads:
   communicationforengineers:
     title: Communication for Engineers
     url: https://www.amazon.co.uk/Communication-Engineers-developers-communicator-productivity/dp/B08W7SNN69?tag=drin04-20
+    isbn: "9798707037603"
     imgid: 618AcEIpzKL
   hfdesignpatterns:
     title: 'Head First Design Patterns: Building Extensible and Maintainable Object-Oriented Software (2nd Edition)'
@@ -293,7 +301,7 @@ reads:
     isbn: "149207800X"
   csharpindepth:
     title: C# in Depth, 4th Edition
-    url: https://www.amazon.co.uk/dp/161729134X?tag=drin04-204e
+    url: https://www.amazon.com/dp/1617294535?tag=drin04-20
     isbn: "1617294535"
   xunit:
     title: 'xUnit Test Patterns: Refactoring Test Code'
@@ -304,9 +312,9 @@ reads:
     url: https://www.amazon.co.uk/dp/0135781868?tag=drin04-20
     isbn: "0135781868"
   creativityincbook:
-    title: 'Creativity, Inc.: Overcoming the Unseen Forces That Stand in the Way of True Inspiration'
-    url: https://www.amazon.com/Creativity-Inc-Overcoming-Unseen-Inspiration/dp/0812993012?tag=drin04-20
-    isbn: "0593070097"
+    title: 'Creativity, Inc. (The Expanded Edition): Overcoming the Unseen Forces That Stand in the Way of True Inspiration'
+    url: https://www.amazon.com/dp/0593594649?tag=drin04-20
+    isbn: "0593594649"
   algostoliveby:
     title: Algorithms to live by
     url: https://www.amazon.co.uk/Algorithms-Live-Computer-Science-Decisions/dp/0007547994?tag=drin04-20
@@ -337,7 +345,7 @@ reads:
     url: https://www.amazon.com/Turn-Ship-Around-Building-Breaking/dp/0241250943?tag=drin04-20
     isbn: "0241250943"
   thegoal:
-    title: "The Goal: A Process of Ongoing Improvement"
+    title: "The Goal: 40th Anniversary Edition: A Process of Ongoing Improvement"
     url: https://www.amazon.com/Goal-Process-Ongoing-Improvement/dp/0884271951?tag=drin04-20
     isbn: "0884271951"
   thegoalgraphicnovel:
@@ -361,11 +369,11 @@ reads:
     url: https://www.amazon.com/High-Output-Management-Andrew-Grove/dp/0679762884?tag=drin04-20
     isbn: "0679762884"
   teamtopologies:
-    title: 'Team Topologies: Organizing Business and Technology Teams for Fast Flow'
-    url: https://www.amazon.com/Team-Topologies-Organizing-Business-Technology/dp/1942788819?tag=drin04-20
-    isbn: "1942788819"
+    title: 'Team Topologies, 2nd Edition: Organizing Business and Technology for Fast Flow of Value'
+    url: https://www.amazon.com/dp/1966280009?tag=drin04-20
+    isbn: "1966280009"
   fivedysfunctions:
-    title: 'The Five Dysfunctions of a Team: A Leadership Fable'
+    title: 'The Five Dysfunctions of a Team: A Leadership Fable, 20th Anniversary Edition'
     url: https://www.amazon.com/Five-Dysfunctions-Team-Leadership-Fable/dp/0787960756?tag=drin04-20
     isbn: "0787960756"
   multipliers:
@@ -374,8 +382,8 @@ reads:
     isbn: "0062663070"
   drive:
     title: 'Drive: The Surprising Truth About What Motivates Us'
-    url: https://www.amazon.com/Drive-Surprising-Truth-About-Motivates/dp/1786891700?tag=drin04-20
-    isbn: "1786891700"
+    url: https://www.amazon.com/dp/1594484805?tag=drin04-20
+    isbn: "1594484805"
   crucialconversations:
     title: 'Crucial Conversations: Tools for Talking When Stakes Are High, Third Edition'
     url: https://www.amazon.com/Crucial-Conversations-Tools-Talking-Stakes/dp/1260474186?tag=drin04-20
