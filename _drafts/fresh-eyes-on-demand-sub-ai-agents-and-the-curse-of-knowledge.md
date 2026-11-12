@@ -6,6 +6,9 @@ date: 2026-11-11 00:00:00
 permalink: /fresh-eyes-on-demand-ai-sub-agents-and-the-curse-of-knowledge/
 comments: true
 categories: blog
+image:
+  feature: curse-ai-cover-1x.jpg
+  alt: "A robot points out a missing connection in a diagram while an engineer considers the context held in his mind."
 tags:
   - ai
   - leadership
@@ -14,6 +17,8 @@ tags:
 Three years ago I wrote about [the curse of knowledge](https://blog.drinkbird.com/the-curse-of-knowledge/), a cognitive bias that affects the way we communicate and work. Once we know something, we struggle to imagine not knowing it.
 
 In Elizabeth Newton's 1990 Stanford experiment, people tapped out well-known songs for others to identify. They expected listeners to name the tune half the time, but listeners managed 1 song in 40. The tappers could hear the melody in their heads and could not switch it off.
+
+![A man taps a tune on a table, hearing a full melody in his mind, while the listener hears only isolated beats.]({{ site.baseurl }}/images/curse-ai-1.png)
 
 Most of my advice was about team culture, including psychological safety, plain language and a habit of asking questions. I also suggested a simple test, to ask a colleague who has not worked on your project to try your documentation and see how it reads.
 
@@ -49,6 +54,8 @@ In [The bottleneck AI just moved](https://blog.drinkbird.com/ai-bottleneck/) I a
 
 1. **The maintainer's review, for pull requests.** Give the reviewer only the diff and the description. The author knows the reasoning behind the change, but will an on-call engineer understand it at 3 am next year?
 
+![A robot pauses at a gap in a path of instruction sheets as an engineer looks back from farther along the path.]({{ site.baseurl }}/images/curse-ai-2.png)
+
 ## Where the idea breaks
 
 A fresh context does not make the AI objective. I think that is the wrong lesson, as there are limits to what such check can tell you.
@@ -66,6 +73,8 @@ A fresh context does not make the AI objective. I think that is the wrong lesson
 The brief has to come from someone who already holds the context. That is either you or an orchestrating agent deep into a long session, and both are tappers.
 
 Ask a reviewer to "check that my fix for the race condition in the cache is correct" and you have handed over your conclusions ("there was a race, it lived in the cache and this change fixes it"). You essentially asked for fresh eyes and then told them where to look.
+
+![An engineer guides a robot's magnifying glass toward one part of a diagram while a broken connection elsewhere goes unnoticed.]({{ site.baseurl }}/images/curse-ai-3.png)
 
 Anthropic's engineers [described the same failure](https://www.anthropic.com/engineering/built-multi-agent-research-system) from the other side. When a lead agent handed out short and vague tasks, the sub-agents misread them or repeated each other's work.
 
